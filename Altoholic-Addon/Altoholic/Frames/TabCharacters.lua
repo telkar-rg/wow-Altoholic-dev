@@ -32,21 +32,23 @@ local ICON_VIEW_COMPANIONS = "Interface\\Icons\\INV_Box_Birdcage_01"
 local ICON_VIEW_MOUNTS = "Interface\\Icons\\Ability_Mount_RidingHorse"
 local ICON_VIEW_REP = "Interface\\Icons\\INV_BannerPVP_02"
 local ICON_VIEW_EQUIP = "Interface\\Icons\\INV_Chest_Plate04"
+local ICON_VIEW_KEY = "Interface\\Icons\\inv_misc_key_11"
 local ICON_VIEW_TALENTS = "Interface\\Icons\\Spell_Nature_NatureGuardian"
 local ICON_VIEW_TOKENS = "Interface\\Icons\\Spell_Holy_SummonChampion"
 
 local CharInfoButtons = {
-	"AltoholicTabCharacters_Bags",
-	"AltoholicTabCharacters_Talents",
-	"AltoholicTabCharacters_Mails",
-	"AltoholicTabCharacters_Quests",
-	"AltoholicTabCharacters_Auctions",
-	"AltoholicTabCharacters_Bids",
-	"AltoholicTabCharacters_Pets",
-	"AltoholicTabCharacters_Mounts",
-	"AltoholicTabCharacters_Factions",
-	"AltoholicTabCharacters_Equipment",
-	"AltoholicTabCharacters_Tokens",
+	"AltoholicTabCharacters_Bags", 		--[1]
+	"AltoholicTabCharacters_Talents", 	--[2]
+	"AltoholicTabCharacters_Mails", 	--[3]
+	"AltoholicTabCharacters_Quests", 	--[4]
+	"AltoholicTabCharacters_Auctions", 	--[5]
+	"AltoholicTabCharacters_Bids", 		--[6]
+	"AltoholicTabCharacters_Pets", 		--[7]
+	"AltoholicTabCharacters_Mounts", 	--[8]
+	"AltoholicTabCharacters_Factions", 	--[9]
+	"AltoholicTabCharacters_Equipment",	--[10]
+	"AltoholicTabCharacters_Tokens", 	--[11]
+	"AltoholicTabCharacters_Keys", 		--[12]
 }
 
 local lastButton
@@ -124,6 +126,11 @@ function ns:UpdateViewIcons()
 	addon:SetItemButtonTexture("AltoholicTabCharacters_Equipment", ICON_VIEW_EQUIP, size, size)
 	AltoholicTabCharacters_Equipment.text = L["Equipment"]
 	AltoholicTabCharacters_Equipment:Show()
+	
+	-- KEYS
+	addon:SetItemButtonTexture("AltoholicTabCharacters_Keys", ICON_VIEW_KEY, size, size)
+	AltoholicTabCharacters_Keys.text = L["Keys"]
+	AltoholicTabCharacters_Keys:Show()
 	
 	addon:SetItemButtonTexture("AltoholicTabCharacters_Quests", ICON_VIEW_QUESTS, size, size)
 	AltoholicTabCharacters_Quests.text = L["Quests"]

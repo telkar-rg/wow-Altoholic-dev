@@ -192,6 +192,13 @@
 					</Anchor>
 				</Anchors>
 			</Button>
+			<Button name="$parent_Keys" inherits="AltoViewIconTemplate" id="12">
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parent_Mails" relativePoint="BOTTOMRIGHT" >
+						<Offset x="5" y="0" />
+					</Anchor>
+				</Anchors>
+			</Button>
 			
 			<Button name="$parent_Pets" inherits="AltoViewIconTemplate" id="7">
 				<Anchors>
