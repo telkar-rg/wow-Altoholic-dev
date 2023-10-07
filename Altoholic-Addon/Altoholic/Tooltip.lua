@@ -184,6 +184,8 @@ local function GetCharacterItemCount(character, searchedID)
 	itemCounts[5] = DataStore:GetMailItemCount(character, searchedID)
 	itemCounts[6] = DataStore:GetCurrencyItemCount(character, searchedID)
 	
+	if searchedID==6948 then return 0 end
+	
 	local charCount = 0
 	for _, v in pairs(itemCounts) do
 		charCount = charCount + v
@@ -279,11 +281,13 @@ end
 local function GetRecipeOwners(professionName, link, recipeLevel)
 	local craftName
 	local spellID = addon:GetSpellIDFromRecipeLink(link)
-
+	
 	if not spellID then		-- spell id unknown ? let's parse the tooltip
+		if true then return end
 		craftName = GetCraftNameFromRecipeLink(link)
 		if not craftName then return end		-- still nothing usable ? then exit
 	end
+	
 	
 	local know = {}				-- list of alts who know this recipe
 	local couldLearn = {}		-- list of alts who could learn it
