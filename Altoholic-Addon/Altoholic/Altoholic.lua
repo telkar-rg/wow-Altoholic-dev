@@ -646,7 +646,26 @@ function Altoholic:ShowClassIcons()
 	local i = 1
 	
 	local realm, account = Altoholic:GetCurrentRealm()
-	for characterName, character in pairs(DS:GetCharacters(realm, account)) do
+	
+	
+	-- ####################
+	local CharNameList = DS:GetCharacters(realm, account)
+	local CharNameList_sort = {}
+	
+	for k,v in pairs(CharNameList) do
+	   table.insert(CharNameList_sort,{k,v, DS:GetAverageItemLevel(v), DS:GetCharacterLevel(v)})
+	end
+	
+	-- sort for level first, avg iLevel secondly
+	table.sort(CharNameList_sort, function(a,b) return b[3]+b[4]*10000 < a[3]+a[4]*10000 end)
+	-- DEBUG_CHARLIST = CharNameList
+	-- print("-- altoholic DEBUG READY")
+	-- ####################
+	
+	
+	-- for characterName, character in pairs(DS:GetCharacters(realm, account)) do
+	for _,charTbl in ipairs(CharNameList_sort) do
+		local characterName, character = charTbl[1], charTbl[2]
 		local itemName = entry .. i;
 		local itemButton = _G[itemName];
 		itemButton:SetScript("OnEnter", function(self) 
