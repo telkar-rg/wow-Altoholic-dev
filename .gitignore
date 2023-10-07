@@ -1,4 +1,4 @@
-.temp
+*.temp
 
 # Compiled Lua sources
 luac.out
