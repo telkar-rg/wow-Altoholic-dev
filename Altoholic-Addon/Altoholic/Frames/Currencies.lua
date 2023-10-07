@@ -46,8 +46,10 @@ local function GetUsedTokens(header)
 	local realm, account = addon:GetCurrentRealm()
 	local DS = DataStore
 	
-	local tokens = {}
+	-- local tokens = {}
 	local useData				-- use data for a specific header or not
+	
+	local tokensIDname = {}
 
 	for _, character in pairs(DS:GetCharacters(realm, account)) do	-- all alts on this realm
 		local num = DS:GetNumCurrencies(character) or 0
@@ -61,14 +63,28 @@ local function GetUsedTokens(header)
 				end
 			else
 				if useData then		-- mark it as used
-					tokens[name] = true
+					-- tokens[name] = true
 					tokenTextures[name] = GetItemIcon(itemID)
+					-- print("-- CURRENCIES:", name, itemID)
+					tokensIDname[itemID] = name
 				end
 			end
 		end
 	end
 	
-	return HashToSortedArray(tokens)
+	local tokensID = {} 	-- sort by ID
+	for k,_ in pairs(tokensIDname) do
+		table.insert(tokensID, k)
+	end
+	table.sort(tokensID)
+	
+	local returnTable = {} 	-- insert sorted names
+	for _,v in pairs(tokensID) do
+		table.insert(returnTable, tokensIDname[v])
+	end
+	return returnTable
+	
+	-- return HashToSortedArray(tokens)
 end
 
 local function DDM_Add(text, func, arg1, arg2)
