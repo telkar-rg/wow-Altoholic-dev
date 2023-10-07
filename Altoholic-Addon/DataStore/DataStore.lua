@@ -34,6 +34,9 @@ local MSG_LOGINREPLY					= 2	-- reply to MSG_ANNOUNCELOGIN
 
 local AddonDB_Defaults = {
 	global = {
+		Options = {
+			HideStartGuilds = 0,	-- Hide Rising-Gods Starter Guilds
+		},
 		Guilds = {
 			['*'] = {				-- ["Account.Realm.Name"] 
 				faction = nil,
@@ -225,6 +228,11 @@ local GuildCommCallbacks = {
 
 local function GuildCommHandler(prefix, message, distribution, sender)
 	-- This handler will be used by other modules as well
+	local guild = GetGuildInfo("player")
+	if guild and addon:GetOption("DataStore", "HideStartGuilds") == 1 and (guild == "Community Horde" or guild == "Community Allianz") then 
+		return 	-- block if ignore starter guilds
+	end
+	
 	local success, msgType, arg1, arg2, arg3 = addon:Deserialize(message)
 	
 	if success and msgType and GuildCommCallbacks[prefix] then
@@ -566,7 +574,11 @@ function addon:SetOption(module, option, value)
 	-- module can be either the module name (string) or the module table
 	-- ex: DS:SetOption("DataStore_Containers", ...) or DS:SetOption(DataStore_Containers, ...)
 	if type(module) == "string" then
-		module = RegisteredModules[module]
+		if module == "DataStore" then
+			module = addon
+		else
+			module = RegisteredModules[module]
+		end
 	end
 	
 	if type(module) == "table" then
@@ -580,7 +592,11 @@ function addon:GetOption(module, option)
 	-- module can be either the module name (string) or the module table
 	-- ex: DS:GetOption("DataStore_Containers", ...) or DS:GetOption(DataStore_Containers, ...)
 	if type(module) == "string" then
-		module = RegisteredModules[module]
+		if module == "DataStore" then
+			module = addon
+		else
+			module = RegisteredModules[module]
+		end
 	end
 	
 	if type(module) == "table" then

@@ -141,6 +141,10 @@ function addon:SetupOptions()
 	addon:SetupInfoPanel(help, DataStoreHelp_Text)
 	
 	DataStoreGeneralOptions_Title:SetText(TEAL..format("DataStore %s", DataStore.Version))
+	DataStoreGeneralOptions_HideStartGuildsText:SetText(L["HIDE_START_GUILD_TEXT"])
+	DataStore:SetCheckBoxTooltip(DataStoreGeneralOptions_HideStartGuilds, L["HIDE_START_GUILD_TITLE"], L["HIDE_START_GUILD_ENABLED"], L["HIDE_START_GUILD_DISABLED"])
+	
+	DataStoreGeneralOptions_HideStartGuilds:SetChecked(DataStore:GetOption("DataStore", "HideStartGuilds"))
 	
 	-- manually adjust the width of a few panes, as resolution/scale may have an impact on the layout
 	local width = InterfaceOptionsFramePanelContainer:GetWidth() - 45
