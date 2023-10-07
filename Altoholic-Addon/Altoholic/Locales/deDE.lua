@@ -1,4 +1,4 @@
-local L = LibStub("AceLocale-3.0"):NewLocale( "Altoholic", "deDE" )
+﻿local L = LibStub("AceLocale-3.0"):NewLocale( "Altoholic", "deDE" )
 
 if not L then return end
 
@@ -375,7 +375,7 @@ L["Lv %s Rewards"] = "Belohnungen (Stufe %s)"
 L["Mageroyal"] = "Maguskönigskraut"
 L["Mage Set"] = "Magier-Set"
 L["Magregan Deepshadow"] = "Magregan Grubenschatten"
-L["Mail"] = "Schwere Rüstung"
+L["Mail"] = "Post"
 L["Mail Expiry Warning"] = "Warnung bei Verfall der Post"
 L["Mail is about to expire on at least one character."] = "Bei mindestens einem Charakter wird in Kürze Post verfallen."
 L["Mails"] = "Post"
