@@ -11,501 +11,2035 @@
 -- Table is Public Domain now
 -- Look up table of Spell IDs to the recipe which trains them.
 -------------------------------------------------------------------------------
-local SPELL_ITEM = {
+Altoholic.RecipeDB = {
 	-------------------------------------------------------------------------------
 	-- First Aid
 	-------------------------------------------------------------------------------
-	[7929] = 16112, 	[7935] = 6454, 		[10840] = 16113, 	[23787] = 19442, 
-	[27032] = 21992, 	[27033] = 21993, 	[45546] = 39152, 
+	[6454] = 	7935, 	-- Handbuch: Starkes Gegengift
+	[16112] = 	7929, 	-- Handbuch: Schwerer Seidenverband
+	[16113] = 	10840, 	-- Handbuch: Magiestoffverband
+	[19442] = 	23787, 	-- Formel: Mächtiges Gegengift
+	[21992] = 	27032, 	-- Handbuch: Netherstoffverband
+	[21993] = 	27033, 	-- Handbuch: Schwerer Netherstoffverband
+	[39152] = 	45546, 	-- Handbuch: Schwerer Froststoffverband
 
 	-------------------------------------------------------------------------------
 	-- Alchemy
 	-------------------------------------------------------------------------------
-	[2333] = 3396, 		[2335] = 2555, 		[3172] = 3393, 		[3174] = 3394, 
-	[3175] = 3395, 		[3188] = 6211, 		[3230] = 2553, 		[3449] = 6068, 
-	[3450] = 3830, 		[3451] = 3831, 		[3453] = 3832, 		[3454] = 14634, 
-	[4508] = 4597, 		[4942] = 4624, 		[6617] = 5640, 		[6618] = 5643, 
-	[6624] = 5642, 		[7255] = 6053, 		[7256] = 6054, 		[7257] = 6055, 
-	[7258] = 6056, 		[7259] = 6057, 		[8240] = 6663, 		[11453] = 9293, 
-	[11456] = 10644, 	[11458] = 9294, 	[11459] = 9303, 	[11464] = 9295, 
-	[11466] = 9296, 	[11468] = 9297, 	[11472] = 9298, 	[11473] = 9302, 
-	[11476] = 9301, 	[11477] = 9300, 	[11479] = 9304, 	[11480] = 9305, 
-	[17187] = 12958, 	[17552] = 13476, 	[17553] = 13477, 	[17554] = 13478, 
-	[17555] = 13479, 	[17556] = 13480, 	[17557] = 13481, 	[17559] = 13482, 
-	[17560] = 13483, 	[17561] = 13484, 	[17562] = 13485, 	[17563] = 13486, 
-	[17564] = 13487, 	[17565] = 13488, 	[17566] = 13489, 	[17570] = 13490, 
-	[17571] = 13491, 	[17572] = 13492, 	[17573] = 13493, 	[17574] = 13494, 
-	[17575] = 13495, 	[17576] = 13496, 	[17577] = 13497, 	[17578] = 13499, 
-	[17580] = 13501, 	[17632] = 13517, 	[17634] = 13518, 	[17635] = 31354, 
-	[17636] = 31356, 	[17637] = 31355, 	[17638] = 31357, 	[21923] = 17709, 
-	[22732] = 18257, 	[24365] = 20011, 	[24366] = 20012, 	[24367] = 20013, 
-	[24368] = 20014, 	[25146] = 20761, 	[26277] = 21547, 	[28543] = 22900, 
-	[28546] = 22901, 	[28549] = 22902, 	[28550] = 22903, 	[28552] = 22904, 
-	[28553] = 24001, 	[28554] = 22906, 	[28555] = 22907, 	[28556] = 22908, 
-	[28557] = 22909, 	[28558] = 22910, 	[28562] = 22911, 	[28563] = 22912, 
-	[28564] = 35295, 	[28565] = 22914, 	[28566] = 22915, 	[28567] = 22916, 
-	[28568] = 30443, 	[28569] = 22918, 	[28570] = 22919, 	[28571] = 22920, 
-	[28572] = 22921, 	[28573] = 22922, 	[28575] = 22923, 	[28576] = 22924, 
-	[28577] = 22925, 	[28578] = 35294, 	[28579] = 22927, 	[29688] = 23574, 
-	[32765] = 25869, 	[32766] = 29232, 	[38960] = 31680, 	[38961] = 31682, 
-	[38962] = 31681, 	[39637] = 32070, 	[39639] = 32071, 	[42736] = 33209, 
-	[47046] = 35752, 	[47048] = 35753, 	[47049] = 35754, 	[47050] = 35755, 
-	[53936] = 44564, 	[53937] = 44566, 	[53938] = 44568, 	[53939] = 44565, 
-	[53942] = 44567, 
+	[3396] = 	2333, 	-- Rezept: Elixier der geringen Beweglichkeit
+	[2555] = 	2335, 	-- Rezept: Hurtigkeitstrank
+	[3393] = 	3172, 	-- Rezept: Schwacher Magiewiderstandstrank
+	[3394] = 	3174, 	-- Rezept: Trank der Genesung
+	[3395] = 	3175, 	-- Rezept: Begrenzter Unverwundbarkeitstrank
+	[6211] = 	3188, 	-- Rezept: Elixier der Ogerstärke
+	[2553] = 	3230, 	-- Rezept: Elixier der schwachen Beweglichkeit
+	[6068] = 	3449, 	-- Rezept: Schattenöl
+	[3830] = 	3450, 	-- Rezept: Elixier der Seelenstärke
+	[3831] = 	3451, 	-- Rezept: Erhebliches Trollblutelixier
+	[3832] = 	3453, 	-- Rezept: Elixier der Entdeckung geringer Unsichtbarkeit
+	[14634] = 	3454, 	-- Rezept: Frostöl
+	[4597] = 	4508, 	-- Rezept: Verfärbter Heiltrank
+	[4624] = 	4942, 	-- Rezept: Geringer Steinschildtrank
+	[5640] = 	6617, 	-- Rezept: Wuttrank
+	[5643] = 	6618, 	-- Rezept: Großer Wuttrank
+	[5642] = 	6624, 	-- Rezept: Trank der freien Aktion
+	[6053] = 	7255, 	-- Rezept: Heiligschutztrank
+	[6054] = 	7256, 	-- Rezept: Schattenschutztrank
+	[6055] = 	7257, 	-- Rezept: Feuerschutztrank
+	[6056] = 	7258, 	-- Rezept: Frostschutztrank
+	[6057] = 	7259, 	-- Rezept: Naturschutztrank
+	[6663] = 	8240, 	-- Rezept: Elixier des Riesenwuchses
+	[9293] = 	11453, 	-- Rezept: Magiewiderstandstrank
+	[10644] = 	11456, 	-- Rezept: Goblinraketentreibstoff
+	[9294] = 	11458, 	-- Rezept: Wildrankentrank
+	[9303] = 	11459, 	-- Rezept: Stein der Weisen
+	[9295] = 	11464, 	-- Rezept: Unsichtbarkeitstrank
+	[9296] = 	11466, 	-- Rezept: Arthas' Gabe
+	[9297] = 	11468, 	-- Rezept: Elixier der Traumvision
+	[9298] = 	11472, 	-- Rezept: Elixier der Riesen
+	[9302] = 	11473, 	-- Rezept: Geisterfarbstoff
+	[9301] = 	11476, 	-- Rezept: Elixier der Schattenmacht
+	[9300] = 	11477, 	-- Rezept: Elixier des Dämonentötens
+	[9304] = 	11479, 	-- Rezept: Eisen in Gold transmutieren
+	[9305] = 	11480, 	-- Rezept: Mithril in Echtsilber transmutieren
+	[12958] = 	17187, 	-- Rezept: Arkanit transmutieren
+	[13476] = 	17552, 	-- Rezept: Mächtiger Wuttrank
+	[13477] = 	17553, 	-- Rezept: Überragender Manatrank
+	[13478] = 	17554, 	-- Rezept: Elixier der überragenden Verteidigung
+	[13479] = 	17555, 	-- Rezept: Elixier der Weisen
+	[13480] = 	17556, 	-- Rezept: Erheblicher Heiltrank
+	[13481] = 	17557, 	-- Rezept: Elixier der rohen Gewalt
+	[13482] = 	17559, 	-- Rezept: Luft zu Feuer transmutieren
+	[13483] = 	17560, 	-- Rezept: Feuer zu Erde transmutieren
+	[13484] = 	17561, 	-- Rezept: Erde zu Wasser transmutieren
+	[13485] = 	17562, 	-- Rezept: Wasser zu Luft transmutieren
+	[13486] = 	17563, 	-- Rezept: Untod zu Wasser transmutieren
+	[13487] = 	17564, 	-- Rezept: Wasser zu Untod transmutieren
+	[13488] = 	17565, 	-- Rezept: Leben in Erde transmutieren
+	[13489] = 	17566, 	-- Rezept: Erde in Leben transmutieren
+	[13490] = 	17570, 	-- Rezept: Großer Steinschildtrank
+	[13491] = 	17571, 	-- Rezept: Elixier des Mungos
+	[13492] = 	17572, 	-- Rezept: Läuterungstrank
+	[13493] = 	17573, 	-- Rezept: Großes Arkanelixier
+	[13494] = 	17574, 	-- Rezept: Großer Feuerschutztrank
+	[13495] = 	17575, 	-- Rezept: Großer Frostschutztrank
+	[13496] = 	17576, 	-- Rezept: Großer Naturschutztrank
+	[13497] = 	17577, 	-- Rezept: Großer Arkanschutztrank
+	[13499] = 	17578, 	-- Rezept: Großer Schattenschutztrank
+	[13501] = 	17580, 	-- Rezept: Erheblicher Manatrank
+	[13517] = 	17632, 	-- Rezept: Alchemistenstein
+	[13518] = 	17634, 	-- Rezept: Trank der Versteinerung
+	[13519] = 	17635, 	-- Rezept: Fläschchen der Titanen (Drop: General Drakkisath)
+	[31354] = 	17635, 	-- Rezept: Fläschchen der Titanen (Vendor: Almaador)
+	[13520] = 	17636, 	-- Rezept: Fläschchen der destillierten Weisheit (Drop: Balnazzar)
+	[31356] = 	17636, 	-- Rezept: Fläschchen der destillierten Weisheit (Vendor: Fedryen Flinkspeer)
+	[13521] = 	17637, 	-- Rezept: Fläschchen der obersten Macht (Drop: Ras Frostraunen)
+	[31355] = 	17637, 	-- Rezept: Fläschchen der obersten Macht (Vendor: Alurmi)
+	[13522] = 	17638, 	-- Rezept: Fläschchen des chromatischen Widerstands (Drop: Gyth)
+	[31357] = 	17638, 	-- Rezept: Fläschchen des chromatischen Widerstands (Vendor: Nakodu)
+	[17709] = 	21923, 	-- Rezept: Elixier der Frostmacht
+	[18257] = 	22732, 	-- Rezept: Erheblicher Verjüngungstrank
+	[20011] = 	24365, 	-- Rezept: Magierblutelixier
+	[20012] = 	24366, 	-- Rezept: Großer Trank des traumlosen Schlafs
+	[20013] = 	24367, 	-- Rezept: Trank der lebhaften Aktion
+	[20014] = 	24368, 	-- Rezept: Mächtiges Trollblutelixier
+	[20761] = 	25146, 	-- Rezept: Elementarfeuer transmutieren
+	[21547] = 	26277, 	-- Rezept: Elixier der großen Feuermacht
+	[22900] = 	28543, 	-- Rezept: Elixier der Tarnung
+	[22901] = 	28546, 	-- Rezept: Schleichtrank
+	[22902] = 	28549, 	-- Rezept: Elixier der erheblichen Frostmacht
+	[22903] = 	28550, 	-- Rezept: Trank der Wahnsinnsstärke
+	[22904] = 	28552, 	-- Rezept: Elixier des suchenden Auges
+	[22905] = 	28553, 	-- Rezept: Elixier der erheblichen Beweglichkeit (Fraktion: Ehrenfeste)
+	[24001] = 	28553, 	-- Rezept: Elixier der erheblichen Beweglichkeit (Fraktion: Thrallmar)
+	[22906] = 	28554, 	-- Rezept: Verschleierungstrank
+	[22907] = 	28555, 	-- Rezept: Erstklassiger Manatrank
+	[22908] = 	28556, 	-- Rezept: Elixier der erheblichen Feuermacht
+	[22909] = 	28557, 	-- Rezept: Elixier der erheblichen Verteidigung
+	[22910] = 	28558, 	-- Rezept: Elixier der erheblichen Schattenmacht
+	[22911] = 	28562, 	-- Rezept: Erheblicher Trank des traumlosen Schlafs
+	[22912] = 	28563, 	-- Rezept: Heldentrank
+	[22913] = 	28564, 	-- Rezept: Hasttrank (World Drop)
+	[35295] = 	28564, 	-- Rezept: Hasttrank (Drop: Kael'thas Sonnenwanderer)
+	[22914] = 	28565, 	-- Rezept: Zerstörungstrank
+	[22915] = 	28566, 	-- Rezept: Urluft zu Urfeuer transmutieren
+	[22916] = 	28567, 	-- Rezept: Urerde zu Urwasser transmutieren
+	[22917] = 	28568, 	-- Rezept: Urfeuer zu Urerde transmutieren (Fraktion: Mag’har)
+	[30443] = 	28568, 	-- Rezept: Urfeuer zu Urerde transmutieren (Fraktion: Kurenai)
+	[22918] = 	28569, 	-- Rezept: Urwasser zu Urluft transmutieren
+	[22919] = 	28570, 	-- Rezept: Elixier des erheblichen Magierbluts
+	[22920] = 	28571, 	-- Rezept: Erheblicher Feuerschutztrank
+	[22921] = 	28572, 	-- Rezept: Erheblicher Frostschutztrank
+	[22922] = 	28573, 	-- Rezept: Erheblicher Naturschutztrank
+	[22923] = 	28575, 	-- Rezept: Erheblicher Arkanschutztrank
+	[22924] = 	28576, 	-- Rezept: Erheblicher Schattenschutztrank
+	[22925] = 	28577, 	-- Rezept: Erheblicher Heiligschutztrank
+	[22926] = 	28578, 	-- Rezept: Elixier der Schwächung (World Drop)
+	[35294] = 	28578, 	-- Rezept: Elixier der Schwächung (Drop: Kael'thas Sonnenwanderer)
+	[22927] = 	28579, 	-- Rezept: Eisenschildtrank
+	[23574] = 	29688, 	-- Rezept: Urmacht transmutieren
+	[25869] = 	32765, 	-- Rezept: Erdsturmdiamanten transmutieren
+	[25870] = 	32766, 	-- Rezept: Himmelsfeuerdiamanten transmutieren (Fraktion: Ehrenfeste)
+	[29232] = 	32766, 	-- Rezept: Himmelsfeuerdiamanten transmutieren (Fraktion: Thrallmar)
+	[31680] = 	38960, 	-- Rezept: Elixier der Teufelsstärke
+	[31682] = 	38961, 	-- Rezept: Teufelsmanatrank
+	[31681] = 	38962, 	-- Rezept: Teufelsregenerationstrank
+	[32070] = 	39637, 	-- Rezept: Erdelixier
+	[32071] = 	39639, 	-- Rezept: Elixier der Eisenhaut
+	[33209] = 	42736, 	-- Rezept: Fläschchen des chromatischen Wunders
+	[35752] = 	47046, 	-- Rezept: Alchemistenstein des Wächters
+	[35753] = 	47048, 	-- Rezept: Alchemistenstein des Zauberers
+	[35754] = 	47049, 	-- Rezept: Alchemistenstein des Erlösers
+	[35755] = 	47050, 	-- Rezept: Alchemistenstein des Assassinen
+	[44564] = 	53936, 	-- Rezept: Mächtiger Arkanschutztrank
+	[44566] = 	53937, 	-- Rezept: Mächtiger Frostschutztrank
+	[44568] = 	53938, 	-- Rezept: Mächtiger Schattenschutztrank
+	[44565] = 	53939, 	-- Rezept: Mächtiger Feuerschutztrank
+	[44567] = 	53942, 	-- Rezept: Mächtiger Naturschutztrank
 
 	-------------------------------------------------------------------------------
 	-- Blacksmithing
 	-------------------------------------------------------------------------------
-	[2667] = 2881, 		[2673] = 5578, 		[3295] = 2883, 		[3297] = 3608, 
-	[3321] = 3609, 		[3325] = 3610, 		[3330] = 2882, 		[3334] = 3611, 
-	[3336] = 3612, 		[3492] = 12162, 	[3493] = 3866, 		[3494] = 10858, 
-	[3495] = 3867, 		[3496] = 12163, 	[3497] = 3868, 		[3498] = 12164, 
-	[3500] = 3869, 		[3503] = 6047, 		[3504] = 3870, 		[3505] = 3871, 
-	[3507] = 3872, 		[3511] = 3873, 		[3513] = 3874, 		[3515] = 3875, 
-	[6518] = 5543, 		[7221] = 6044, 		[7222] = 6045, 		[7224] = 6046, 
-	[8367] = 6735, 		[9811] = 7978, 		[9813] = 7979, 		[9814] = 7980, 
-	[9818] = 7981, 		[9820] = 7982, 		[9933] = 7975, 		[9937] = 7995, 
-	[9939] = 7976, 		[9945] = 7983, 		[9950] = 7984, 		[9952] = 7985, 
-	[9964] = 7989, 		[9966] = 7991, 		[9970] = 7990, 		[9995] = 7992, 
-	[9997] = 8029, 		[10005] = 7993, 	[10009] = 8028,		[10013] = 8030, 
-	[11454] = 10713, 	[11643] = 9367, 	[12259] = 10424, 	[15292] = 11610, 
-	[15293] = 11614, 	[15294] = 11611, 	[15295] = 11615, 	[15296] = 11612, 
-	[15973] = 12261, 	[16642] = 12682, 	[16643] = 12683, 	[16644] = 12684, 
-	[16645] = 12685, 	[16646] = 12687, 	[16647] = 12688, 	[16648] = 12689, 
-	[16649] = 12690, 	[16650] = 12691, 	[16651] = 12692, 	[16652] = 12693, 
-	[16653] = 12694, 	[16654] = 12695, 	[16655] = 12699, 	[16656] = 12697, 
-	[16657] = 12700, 	[16658] = 12701, 	[16659] = 12702, 	[16660] = 12698, 
-	[16661] = 12703, 	[16662] = 12704, 	[16663] = 12705, 	[16664] = 12706, 
-	[16665] = 12707, 	[16667] = 12696, 	[16724] = 12711, 	[16725] = 12713, 
-	[16726] = 12714, 	[16728] = 12716, 	[16729] = 12717, 	[16730] = 12715, 
-	[16731] = 12718, 	[16732] = 12719, 	[16741] = 12720, 	[16742] = 12725, 
-	[16744] = 12726, 	[16745] = 12727, 	[16746] = 12728, 	[16969] = 12819, 
-	[16970] = 12821, 	[16971] = 12823, 	[16973] = 12824, 	[16978] = 12825, 
-	[16983] = 12827, 	[16984] = 12828, 	[16985] = 12830, 	[16988] = 12833, 
-	[16990] = 12834, 	[16991] = 12835, 	[16992] = 12836, 	[16993] = 12837, 
-	[16994] = 12838, 	[16995] = 12839, 	[20872] = 17049, 	[20873] = 17053, 
-	[20874] = 17051, 	[20876] = 17052, 	[20890] = 17059, 	[20897] = 17060, 
-	[21161] = 18592, 	[21913] = 17706, 	[22757] = 18264, 	[23628] = 19202, 
-	[23629] = 19204, 	[23632] = 19203, 	[23633] = 19205, 	[23636] = 19206, 
-	[23637] = 19207, 	[23638] = 19208, 	[23639] = 19209, 	[23650] = 19210, 
-	[23652] = 19211, 	[23653] = 19212, 	[24136] = 19776, 	[24137] = 19777, 
-	[24138] = 19778, 	[24139] = 19779, 	[24140] = 19780, 	[24141] = 19781, 
-	[24399] = 20040, 	[24912] = 20553, 	[24913] = 20555, 	[24914] = 20554, 
-	[27585] = 22209, 	[27586] = 22219, 	[27587] = 22222, 	[27588] = 22214, 
-	[27589] = 22220, 	[27590] = 22221, 	[27829] = 22388, 	[27830] = 22390, 
-	[27832] = 22389, 	[28461] = 22766, 	[28462] = 22767, 	[28463] = 22768, 
-	[29566] = 23590, 	[29568] = 23591, 	[29569] = 23592, 	[29571] = 23593, 
-	[29603] = 23594, 	[29605] = 23595, 	[29606] = 23596, 	[29608] = 23597, 
-	[29610] = 23599, 	[29611] = 23598, 	[29613] = 23600, 	[29614] = 23601, 
-	[29615] = 23602, 	[29616] = 23603, 	[29617] = 23604, 	[29619] = 23605, 
-	[29620] = 23606, 	[29621] = 23607, 	[29622] = 23621, 	[29628] = 23608, 
-	[29629] = 23609, 	[29630] = 23610, 	[29642] = 23611, 	[29643] = 23612, 
-	[29645] = 23613, 	[29648] = 23615, 	[29649] = 23617, 	[29656] = 23618, 
-	[29657] = 24002, 	[29658] = 23620, 	[29662] = 23622, 	[29663] = 23623, 
-	[29664] = 23624, 	[29668] = 23625, 	[29669] = 23626, 	[29671] = 23627, 
-	[29672] = 23628, 	[29692] = 23629, 	[29693] = 23630, 	[29694] = 23631, 
-	[29695] = 23632, 	[29696] = 23633, 	[29697] = 23634, 	[29698] = 23635, 
-	[29699] = 23636, 	[29700] = 23637, 	[29728] = 23638, 	[29729] = 23639, 
-	[32285] = 25526, 	[32656] = 25846, 	[32657] = 25847, 	[34608] = 28632, 
-	[36389] = 30321, 	[36390] = 30322, 	[36391] = 30323, 	[36392] = 30324, 
-	[38473] = 31390, 	[38475] = 31391, 	[38476] = 31392, 	[38477] = 31393, 
-	[38478] = 31394, 	[38479] = 31395, 	[40033] = 32441, 	[40034] = 32442, 
-	[40035] = 32443, 	[40036] = 32444, 	[41132] = 32736, 	[41133] = 32737, 
-	[41134] = 32738, 	[41135] = 32739, 	[42688] = 35296, 	[43549] = 33792, 
-	[43846] = 33954, 	[46140] = 35208, 	[46141] = 35209, 	[46142] = 35210, 
-	[46144] = 35211, 	[54978] = 41124, 	[54979] = 41123, 	[54980] = 41120, 
-	[54981] = 41122, 	[62202] = 44938, 	[63187] = 45088, 	[63188] = 45089, 
-	[63189] = 45090, 	[63190] = 45091, 	[63191] = 45092, 	[63192] = 45093, 
-	[67091] = 47622, 	[67130] = 47460, 	[67092] = 47623, 	[67131] = 47641, 
-	[67096] = 47627, 	[67135] = 47642, 	[67095] = 47626, 	[67134] = 47643, 
-	[67093] = 47624, 	[67132] = 47644, 	[67094] = 47625, 	[67133] = 47645, 
+	[2881] = 	2667, 	-- Pläne: Runenverzierte Kupferbrustplatte
+	[5578] = 	2673, 	-- Pläne: Bronzene Brustplatte mit Versilberung
+	[2883] = 	3295, 	-- Pläne: Tödlicher Bronzepoignard
+	[3608] = 	3297, 	-- Pläne: Mächtiger Eisenhammer
+	[3609] = 	3321, 	-- Pläne: Kupferne Kettenweste
+	[3610] = 	3325, 	-- Pläne: Edelsteinbesetzte Kupferstulpen
+	[2882] = 	3330, 	-- Pläne: Bronzene Schultern mit Versilberung
+	[3611] = 	3334, 	-- Pläne: Grüne Eisenstiefel
+	[3612] = 	3336, 	-- Pläne: Grüne Eisenstulpen
+	[12162] = 	3492, 	-- Pläne: Gehärtetes Eisenkurzschwert
+	[3866] = 	3493, 	-- Pläne: Jadeschlangenklinge
+	[10858] = 	3494, 	-- Pläne: Robuster Eisenschlägel
+	[3867] = 	3495, 	-- Pläne: Goldener Eisenzerstörer
+	[12163] = 	3496, 	-- Pläne: Mondstahlbreitschwert
+	[3868] = 	3497, 	-- Pläne: Frosttigerklinge
+	[12164] = 	3498, 	-- Pläne: Massive Eisenaxt
+	[3869] = 	3500, 	-- Pläne: Schattensichelaxt
+	[6047] = 	3503, 	-- Pläne: Goldene Schuppenhelmkappe
+	[3870] = 	3504, 	-- Pläne: Grüne Eisenschultern
+	[3871] = 	3505, 	-- Pläne: Goldene Schuppenschultern
+	[3872] = 	3507, 	-- Pläne: Goldene Schuppengamaschen
+	[3873] = 	3511, 	-- Pläne: Goldener Schuppenkürass
+	[3874] = 	3513, 	-- Pläne: Polierte Stahlstiefel
+	[3875] = 	3515, 	-- Pläne: Goldene Schuppenstiefel
+	[5543] = 	6518, 	-- Pläne: Schillernder Hammer
+	[6044] = 	7221, 	-- Pläne: Eisenschildstachel
+	[6045] = 	7222, 	-- Pläne: Eisengegengewicht
+	[6046] = 	7224, 	-- Pläne: Stahlwaffenkette
+	[6735] = 	8367, 	-- Pläne: Eisenschmiedebrustplatte
+	[7978] = 	9811, 	-- Pläne: Barbarische Eisenschultern
+	[7979] = 	9813, 	-- Pläne: Barbarische Eisenbrustplatte
+	[7980] = 	9814, 	-- Pläne: Barbarischer Eisenhelm
+	[7981] = 	9818, 	-- Pläne: Barbarische Eisenstiefel
+	[7982] = 	9820, 	-- Pläne: Barbarische Eisenhandschuhe
+	[7975] = 	9933, 	-- Pläne: Schwere Mithrilhose
+	[7995] = 	9937, 	-- Pläne: Mithrilschuppenarmschienen
+	[7976] = 	9939, 	-- Pläne: Mithrilschildstachel
+	[7983] = 	9945, 	-- Pläne: Verschnörkelte Mithrilhose
+	[7984] = 	9950, 	-- Pläne: Verschnörkelte Mithrilhandschuhe
+	[7985] = 	9952, 	-- Pläne: Verschnörkelte Mithrilschulter
+	[7989] = 	9964, 	-- Pläne: Mithrilsporen
+	[7991] = 	9966, 	-- Pläne: Mithrilschuppenschultern
+	[7990] = 	9970, 	-- Pläne: Schwerer Mithrilhelm
+	[7992] = 	9995, 	-- Pläne: Blaue glitzernde Axt
+	[8029] = 	9997, 	-- Pläne: Tückische Mithrilklinge
+	[7993] = 	10005, 	-- Pläne: Funkelndes Mithrilrapier
+	[8028] = 	10009, 	-- Pläne: Runenverzierter Mithrilhammer
+	[8030] = 	10013, 	-- Pläne: Ebenholzmesser
+	[10713] = 	11454, 	-- Pläne: Veredelter Mithrilzylinder
+	[9367] = 	11643, 	-- Pläne: Goldene Schuppenstulpen
+	[10424] = 	12259, 	-- Pläne: Bronzene Gamaschen mit Versilberung
+	[11610] = 	15292, 	-- Pläne: Dunkeleisenpulverisierer
+	[11614] = 	15293, 	-- Pläne: Dunkeleisenpanzer
+	[11611] = 	15294, 	-- Pläne: Dunkeleisenzerreißer
+	[11615] = 	15295, 	-- Pläne: Dunkeleisenschultern
+	[11612] = 	15296, 	-- Pläne: Dunkeleisenplatte
+	[12261] = 	15973, 	-- Pläne: Sengende Goldklinge
+	[12682] = 	16642, 	-- Pläne: Thoriumrüstung
+	[12683] = 	16643, 	-- Pläne: Thoriumgürtel
+	[12684] = 	16644, 	-- Pläne: Thoriumarmschienen
+	[12685] = 	16645, 	-- Pläne: Strahlender Gürtel
+	[12687] = 	16646, 	-- Pläne: Imperiale Plattenschultern
+	[12688] = 	16647, 	-- Pläne: Imperialer Plattengürtel
+	[12689] = 	16648, 	-- Pläne: Strahlende Brustplatte
+	[12690] = 	16649, 	-- Pläne: Imperiale Plattenarmschienen
+	[12691] = 	16650, 	-- Pläne: Wilddornpanzerung
+	[12692] = 	16651, 	-- Pläne: Thoriumschildstachel
+	[12693] = 	16652, 	-- Pläne: Thoriumstiefel
+	[12694] = 	16653, 	-- Pläne: Thoriumhelm
+	[12695] = 	16654, 	-- Pläne: Strahlende Handschuhe
+	[12699] = 	16655, 	-- Pläne: Feurige Plattenstulpen
+	[12697] = 	16656, 	-- Pläne: Strahlende Stiefel
+	[12700] = 	16657, 	-- Pläne: Imperiale Plattenstiefel
+	[12701] = 	16658, 	-- Pläne: Imperialer Plattenhelm
+	[12702] = 	16659, 	-- Pläne: Strahlender Reif
+	[12698] = 	16660, 	-- Pläne: Schultern der Morgenröte
+	[12703] = 	16661, 	-- Pläne: Sturmstulpen
+	[12704] = 	16662, 	-- Pläne: Thoriumgamaschen
+	[12705] = 	16663, 	-- Pläne: Imperiale Plattenrüstung
+	[12706] = 	16664, 	-- Pläne: Runenverzierte Plattenschultern
+	[12707] = 	16665, 	-- Pläne: Runenverzierte Plattenstiefel
+	[12696] = 	16667, 	-- Pläne: Dämonengeschmiedete Brustplatte
+	[12711] = 	16724, 	-- Pläne: Helm der weißen Seele
+	[12713] = 	16725, 	-- Pläne: Strahlende Gamaschen
+	[12714] = 	16726, 	-- Pläne: Runenverzierter Plattenhelm
+	[12716] = 	16728, 	-- Pläne: Helm des großen Häuptlings
+	[12717] = 	16729, 	-- Pläne: Löwenherzhelm
+	[12715] = 	16730, 	-- Pläne: Imperiale Plattengamaschen
+	[12718] = 	16731, 	-- Pläne: Runenverzierte Brustplatte
+	[12719] = 	16732, 	-- Pläne: Runenverzierte Plattengamaschen
+	[12720] = 	16741, 	-- Pläne: Festungsstulpen
+	[12725] = 	16742, 	-- Pläne: Verzauberter Thoriumhelm
+	[12726] = 	16744, 	-- Pläne: Verzauberte Thoriumgamaschen
+	[12727] = 	16745, 	-- Pläne: Verzauberte Thoriumbrustplatte
+	[12728] = 	16746, 	-- Pläne: Unverwundbarer Panzer
+	[12819] = 	16969, 	-- Pläne: Verschnörkelte Thoriumhandaxt
+	[12821] = 	16970, 	-- Pläne: Dämmerungsschneide
+	[12823] = 	16971, 	-- Pläne: Gewaltige Thoriumstreitaxt
+	[12824] = 	16973, 	-- Pläne: Verzauberter Kampfhammer
+	[12825] = 	16978, 	-- Pläne: Loderflammenrapier
+	[12827] = 	16983, 	-- Pläne: Beschaulichkeit
+	[12828] = 	16984, 	-- Pläne: Vulkanischer Hammer
+	[12830] = 	16985, 	-- Pläne: Verderbnis
+	[12833] = 	16988, 	-- Pläne: Hammer der Titanen
+	[12834] = 	16990, 	-- Pläne: Arkanitchampion
+	[12835] = 	16991, 	-- Pläne: Vernichter
+	[12836] = 	16992, 	-- Pläne: Frostwache
+	[12837] = 	16993, 	-- Pläne: Meisterlicher Sturmhammer
+	[12838] = 	16994, 	-- Pläne: Arkanitschnitter
+	[12839] = 	16995, 	-- Pläne: Herzsucher
+	[17049] = 	20872, 	-- Pläne: Feuriger Kettengurt
+	[17053] = 	20873, 	-- Pläne: Feurige Kettenschultern
+	[17051] = 	20874, 	-- Pläne: Dunkeleisenarmschienen
+	[17052] = 	20876, 	-- Pläne: Dunkeleisengamaschen
+	[17059] = 	20890, 	-- Pläne: Dunkeleisenhäscher
+	[17060] = 	20897, 	-- Pläne: Dunkeleisenzerstörer
+	[18592] = 	21161, 	-- Pläne: Sulfuronhammer
+	[17706] = 	21913, 	-- Pläne: Schneide des Winters
+	[18264] = 	22757, 	-- Pläne: Elementarwetzstein
+	[19202] = 	23628, 	-- Pläne: Schwerer Gürtel der Holzschlundfeste
+	[19204] = 	23629, 	-- Pläne: Schwere Stiefel der Holzschlundfeste
+	[19203] = 	23632, 	-- Pläne: Gurt der Dämmerung
+	[19205] = 	23633, 	-- Pläne: Handschuhe der Dämmerung
+	[19206] = 	23636, 	-- Pläne: Dunkeleisenhelm
+	[19207] = 	23637, 	-- Pläne: Dunkeleisenstulpen
+	[19208] = 	23638, 	-- Pläne: Schwarze Amnestie
+	[19209] = 	23639, 	-- Pläne: Schattenzorn
+	[19210] = 	23650, 	-- Pläne: Ebenholzhand
+	[19211] = 	23652, 	-- Pläne: Finsterer Streiter
+	[19212] = 	23653, 	-- Pläne: Nachtlauer
+	[19776] = 	24136, 	-- Pläne: Blutseelenbrustplatte
+	[19777] = 	24137, 	-- Pläne: Blutseelenschultern
+	[19778] = 	24138, 	-- Pläne: Blutseelenstulpen
+	[19779] = 	24139, 	-- Pläne: Dunkelseelenbrustplatte
+	[19780] = 	24140, 	-- Pläne: Dunkelseelengamaschen
+	[19781] = 	24141, 	-- Pläne: Dunkelseelenschultern
+	[20040] = 	24399, 	-- Pläne: Dunkeleisenstiefel
+	[20553] = 	24912, 	-- Pläne: Dunkelrunenstulpen
+	[20555] = 	24913, 	-- Pläne: Dunkelrunenhelm
+	[20554] = 	24914, 	-- Pläne: Dunkelrunenbrustplatte
+	[22209] = 	27585, 	-- Pläne: Schwerer Obsidiangürtel
+	[22219] = 	27586, 	-- Pläne: Gezackter Obsidianschild
+	[22222] = 	27587, 	-- Pläne: Dicke Obsidianbrustplatte
+	[22214] = 	27588, 	-- Pläne: Leichter Obsidiangürtel
+	[22220] = 	27589, 	-- Pläne: Dunkler Griff des Zerstörers
+	[22221] = 	27590, 	-- Pläne: Obsidianpanzertunika
+	[22388] = 	27829, 	-- Pläne: Gamaschen der Titanen
+	[22390] = 	27830, 	-- Pläne: Willensbrecher
+	[22389] = 	27832, 	-- Pläne: Weisenklinge
+	[22766] = 	28461, 	-- Pläne: Eisenrankenbrustplatte
+	[22767] = 	28462, 	-- Pläne: Eisenrankenhandschuhe
+	[22768] = 	28463, 	-- Pläne: Eisenrankengürtel
+	[23590] = 	29566, 	-- Pläne: Adamantitschlägel
+	[23591] = 	29568, 	-- Pläne: Adamantitbeil
+	[23592] = 	29569, 	-- Pläne: Adamantitdolch
+	[23593] = 	29571, 	-- Pläne: Adamantitrapier
+	[23594] = 	29603, 	-- Pläne: Adamantitarmschienen
+	[23595] = 	29605, 	-- Pläne: Adamantithandschuhe
+	[23596] = 	29606, 	-- Pläne: Adamantitbrustplatte
+	[23597] = 	29608, 	-- Pläne: Verzauberter Adamantitgürtel
+	[23599] = 	29610, 	-- Pläne: Verzauberte Adamantitbrustplatte
+	[23598] = 	29611, 	-- Pläne: Verzauberte Adamantitstiefel
+	[23600] = 	29613, 	-- Pläne: Verzauberte Adamantitgamaschen
+	[23601] = 	29614, 	-- Pläne: Flammenbannarmschienen
+	[23602] = 	29615, 	-- Pläne: Flammenbannhelm
+	[23603] = 	29616, 	-- Pläne: Flammenbannhandschuhe
+	[23604] = 	29617, 	-- Pläne: Flammenbannbrustplatte
+	[23605] = 	29619, 	-- Pläne: Teufelsstahlhandschuhe
+	[23606] = 	29620, 	-- Pläne: Teufelsstahlgamaschen
+	[23607] = 	29621, 	-- Pläne: Teufelsstahlhelm
+	[23621] = 	29622, 	-- Pläne: Stulpen des eisernen Turms
+	[23608] = 	29628, 	-- Pläne: Khoriumgürtel
+	[23609] = 	29629, 	-- Pläne: Khoriumhose
+	[23610] = 	29630, 	-- Pläne: Khoriumstiefel
+	[23611] = 	29642, 	-- Pläne: Zornstahlhandschuhe
+	[23612] = 	29643, 	-- Pläne: Zornstahlhelm
+	[23613] = 	29645, 	-- Pläne: Zornstahlbrustplatte
+	[23615] = 	29648, 	-- Pläne: Flinkstahlhandschuhe
+	[23617] = 	29649, 	-- Pläne: Brustplatte des Erdfriedens
+	[23618] = 	29656, 	-- Pläne: Adamantitwetzstein
+	[23619] = 	29657, 	-- Pläne: Teufelsstahlschildstachel (Fraktion: Ehrenfeste)
+	[24002] = 	29657, 	-- Pläne: Teufelsstahlschildstachel (Fraktion: Thrallmar)
+	[23620] = 	29658, 	-- Pläne: Teufelszornstulpen
+	[23622] = 	29662, 	-- Pläne: Stahlgriffstulpen
+	[23623] = 	29663, 	-- Pläne: Helm des Sturms
+	[23624] = 	29664, 	-- Pläne: Helm des tapferen Verteidigers
+	[23625] = 	29668, 	-- Pläne: Helm der Eidestreue
+	[23626] = 	29669, 	-- Pläne: Schwarze Teufelsstahlarmschienen
+	[23627] = 	29671, 	-- Pläne: Armschienen der grünen Festung
+	[23628] = 	29672, 	-- Pläne: Gesegnete Armschienen
+	[23629] = 	29692, 	-- Pläne: Teufelsstahllangschwert
+	[23630] = 	29693, 	-- Pläne: Khoriumchampion
+	[23631] = 	29694, 	-- Pläne: Teuflisch scharfe Kampfaxt
+	[23632] = 	29695, 	-- Pläne: Teufelsstahlschneide
+	[23633] = 	29696, 	-- Pläne: Runenverzierter Hammer
+	[23634] = 	29697, 	-- Pläne: Teufelsgehärteter Schlägel
+	[23635] = 	29698, 	-- Pläne: Runenverzierte Eterniumklinge
+	[23636] = 	29699, 	-- Pläne: Todeslied
+	[23637] = 	29700, 	-- Pläne: Hand der Ewigkeit
+	[23638] = 	29728, 	-- Pläne: Geringer Zauberschutz der Abschirmung
+	[23639] = 	29729, 	-- Pläne: Großer Zauberschutz der Abschirmung
+	[25526] = 	32285, 	-- Pläne: Große Rune des Schutzes
+	[25846] = 	32656, 	-- Pläne: Adamantitrute
+	[25847] = 	32657, 	-- Pläne: Eterniumrute
+	[28632] = 	34608, 	-- Pläne: Adamantitgewichtsstein
+	[30321] = 	36389, 	-- Pläne: Gürtel des Wächters
+	[30322] = 	36390, 	-- Pläne: Roter Gürtel der Schlacht
+	[30323] = 	36391, 	-- Pläne: Stiefel des Beschützers
+	[30324] = 	36392, 	-- Pläne: Rote Stiefel der Verwüstung
+	[31390] = 	38473, 	-- Pläne: Brustplatte der Wildwacht
+	[31391] = 	38475, 	-- Pläne: Gamaschen der Wildwacht
+	[31392] = 	38476, 	-- Pläne: Helm der Wildwacht
+	[31393] = 	38477, 	-- Pläne: Brustplatte der Eiswache
+	[31394] = 	38478, 	-- Pläne: Gamaschen der Eiswache
+	[31395] = 	38479, 	-- Pläne: Helm der Eiswache
+	[32441] = 	40033, 	-- Pläne: Dämmerstahlschuhe
+	[32442] = 	40034, 	-- Pläne: Dämmerstahlarmschienen
+	[32443] = 	40035, 	-- Pläne: Dämmerstahlbeinschützer
+	[32444] = 	40036, 	-- Pläne: Dämmerstahlgurt
+	[32736] = 	41132, 	-- Pläne: Flinkstahlarmschienen
+	[32737] = 	41133, 	-- Pläne: Flinkstahlschultern
+	[32738] = 	41134, 	-- Pläne: Morgenstahlarmschienen
+	[32739] = 	41135, 	-- Pläne: Morgenstahlschultern
+	[33174] = 	42662, 	-- Pläne: Zornstahlschultern
+	[33186] = 	42688, 	-- Pläne: Adamantitwaffenkette (World Drop)
+	[35296] = 	42688, 	-- Pläne: Adamantitwaffenkette (Drop: Kael'thas Sonnenwanderer)
+	[33792] = 	43549, 	-- Pläne: Schweres Kupferlangschwert
+	[33954] = 	43846, 	-- Pläne: Hammer der rechtschaffenen Macht
+	[35208] = 	46140, 	-- Pläne: Sonnengesegnete Stulpen
+	[35209] = 	46141, 	-- Pläne: Kampffäuste aus Hartkhorium
+	[35210] = 	46142, 	-- Pläne: Sonnengesegnete Brustplatte
+	[35555] = 	46142, 	-- Pläne: Sonnengesegnete Brustplatte (??)
+	[35211] = 	46144, 	-- Pläne: Kampfplatte aus Hartkhorium
+	[41124] = 	54978, 	-- Pläne: Verstärkte Kobaltschultern
+	[41123] = 	54979, 	-- Pläne: Verstärkter Kobalthelm
+	[41120] = 	54980, 	-- Pläne: Verstärkte Kobaltbeinplatten
+	[41122] = 	54981, 	-- Pläne: Verstärkter Kobaltbrustharnisch
+	[44937] = 	62202, 	-- Pläne: Titanbeschlag (Vorposten der Allianz)
+	[44938] = 	62202, 	-- Pläne: Titanbeschlag (Expedition der Horde)
+	-- ULDUAR
+	[45088] = 	63187, 	-- Gürtel der Titanen
+	[45089] = 	63188, 	-- Plattenstiefel des Schlachtenlords
+	[45090] = 	63189, 	-- Plattengurt der Rechtschaffenheit
+	[45091] = 	63190, 	-- Treter des Schicksals
+	[45092] = 	63191, 	-- Unzerstörbarer Plattengurt
+	[45093] = 	63192, 	-- Stachelbewehrte Todesbringer
+	-- TOURNAMENT
+	[47622] = 	67091, 	-- Brustplatte des Weißen Ritters A
+	[47640] = 	67130, 	-- Brustplatte des Weißen Ritters H
+	[47623] = 	67092, 	-- Saronitschwertbrecher A
+	[47641] = 	67131, 	-- Saronitschwertbrecher H
+	[47627] = 	67096, 	-- Sonnengeschmiedete Armschienen A
+	[47642] = 	67135, 	-- Sonnengeschmiedete Armschienen H
+	[47626] = 	67095, 	-- Sonnengeschmiedete Brustplatte A
+	[47643] = 	67134, 	-- Sonnengeschmiedete Brustplatte H
+	[47624] = 	67093, 	-- Titanklingenplatte A
+	[47644] = 	67132, 	-- Titanklingenplatte H
+	[47625] = 	67094, 	-- Titanstachelschützer A
+	[47645] = 	67133, 	-- Titanstachelschützer H
+	-- ICC
+	[49974] = 	70568, 	-- Stiefel des königlichen Aufruhrs
+	[49973] = 	70567, 	-- Säulen der Macht
+	[49972] = 	70566, 	-- Höllengefrostete Knochenmalmer
+	[49971] = 	70565, 	-- Beinplatten des schmerzhaften Todes
+	[49970] = 	70563, 	-- Beschützer des Lebens
+	[49969] = 	70562, 	-- Reinstahlbeinplatten
 
 	-------------------------------------------------------------------------------
 	-- Cooking
 	-------------------------------------------------------------------------------
-	[2542] = 2697, 		[2543] = 728, 		[2545] = 2698, 		[2547] = 2699, 
-	[2548] = 2700, 		[2549] = 2701, 		[2795] = 2889, 		[3370] = 3678, 
-	[3371] = 3679, 		[3372] = 3680, 		[3373] = 3681, 		[3376] = 3682, 
-	[3377] = 3683, 		[3397] = 3734, 		[3398] = 3735, 		[3399] = 3736, 
-	[3400] = 3737, 		[4094] = 4609, 		[6412] = 5482, 		[6413] = 5483, 
-	[6414] = 5484, 		[6415] = 5485, 		[6416] = 5486, 		[6417] = 44977, 
-	[6418] = 5488, 		[6419] = 5489, 		[6501] = 5528, 		[7213] = 6039, 
-	[7751] = 6325, 		[7752] = 6326, 		[7753] = 6328, 		[7754] = 6329, 
-	[7755] = 6330, 		[7827] = 6368, 		[7828] = 6369, 		[8238] = 6661, 
-	[8607] = 6892, 		[9513] = 18160, 	[15853] = 12227, 	[15855] = 12228, 
-	[15856] = 12229, 	[15861] = 12231, 	[15863] = 12232, 	[15865] = 12233, 
-	[15906] = 12239, 	[15910] = 12240, 	[15915] = 16111, 	[15933] = 16110, 
-	[15935] = 12226, 	[18238] = 13939, 	[18239] = 13940, 	[18240] = 13942, 
-	[18241] = 13941, 	[18242] = 13943, 	[18243] = 13945, 	[18244] = 13946, 
-	[18245] = 13947, 	[18246] = 13948, 	[18247] = 13949, 	[20626] = 16767, 
-	[20916] = 17062, 	[21143] = 17200, 	[21144] = 17201, 	[22480] = 18046, 
-	[22761] = 18267, 	[24418] = 20075, 	[25659] = 21025, 	[25704] = 21099, 
-	[25954] = 21219, 	[28267] = 22647, 	[33276] = 27685, 	[33277] = 27686, 
-	[33278] = 27687, 	[33279] = 27684, 	[33284] = 27688, 	[33285] = 27689, 
-	[33286] = 27690, 	[33287] = 27691, 	[33288] = 27692, 	[33289] = 27693, 
-	[33290] = 27694, 	[33291] = 27695, 	[33292] = 27696, 	[33293] = 27697, 
-	[33294] = 27698, 	[33295] = 27699, 	[33296] = 27700, 	[36210] = 30156, 
-	[38867] = 31675, 	[38868] = 31674, 	[43707] = 33870, 	[43758] = 33871, 
-	[43761] = 33869, 	[43765] = 33873, 	[43772] = 33875, 	[43779] = 33925, 
-	[45022] = 34413, 	[45555] = 43018, 	[45556] = 43019, 	[45557] = 43020, 
-	[45558] = 43021, 	[45559] = 43022, 	[45567] = 43023, 	[45568] = 43024, 
-	[45570] = 43026, 	[45571] = 43025, 	[45695] = 34834, 	[46684] = 35564, 
-	[46688] = 35566, 	[53056] = 39644, 	[57423] = 43017, 	[57433] = 43027, 
-	[57434] = 43028, 	[57435] = 43029, 	[57436] = 43030, 	[57437] = 43031, 
-	[57438] = 43032, 	[57439] = 43033, 	[57440] = 43034, 	[57441] = 43035, 
-	[57442] = 43036, 	[57443] = 43037, 	[58512] = 43507, 	[58521] = 43508, 
-	[58523] = 43509, 	[58525] = 43510, 	[58527] = 43505, 	[58528] = 43506, 
-	[62350] = 44954, 
+	[2697] = 	2542, 	-- Rezept: Pastete aus Geiferzahnleber
+	[728] = 	2543, 	-- Rezept: Westfalleintopf
+	[2698] = 	2545, 	-- Rezept: Gekochte Krebsschere
+	[2699] = 	2547, 	-- Rezept: Rotkammgulasch
+	[2700] = 	2548, 	-- Rezept: Saftige Schweinerippchen
+	[2701] = 	2549, 	-- Rezept: Gewürzter Wolfskebab
+	[2889] = 	2795, 	-- Rezept: Eberrippchen in Biersauce
+	[3678] = 	3370, 	-- Rezept: Krokiliskensteak
+	[3679] = 	3371, 	-- Rezept: Blutwurst
+	[3680] = 	3372, 	-- Rezept: Murlocflossensuppe
+	[3681] = 	3373, 	-- Rezept: Krokiliskengumbo
+	[3682] = 	3376, 	-- Rezept: Seltsam schmeckendes Omelett
+	[3683] = 	3377, 	-- Rezept: Klebriger Spinnenkuchen
+	[3734] = 	3397, 	-- Rezept: Großes Bärensteak
+	[3735] = 	3398, 	-- Rezept: Scharfe Löwenkoteletts
+	[3736] = 	3399, 	-- Rezept: Schmackhaftes Löwensteak
+	[3737] = 	3400, 	-- Rezept: Milde Schildkrötensuppe
+	[4609] = 	4094, 	-- Rezept: Gegrillter Bussardflügel
+	[5482] = 	6412, 	-- Rezept: Spinnenkebab der Kaldorei
+	[5483] = 	6413, 	-- Rezept: Skorpid Surprise
+	[5484] = 	6414, 	-- Rezept: Geröstetes Kodofleisch
+	[5485] = 	6415, 	-- Rezept: Frenzyfilet
+	[5486] = 	6416, 	-- Rezept: Schreitereintopf
+	[5487] = 	6417, 	-- Rezept: Grubenratteneintopf
+	[44977] = 	6417, 	-- Rezept: Grubenratteneintopf
+	[5488] = 	6418, 	-- Rezept: Knuspriger Donnerechsenschwanz
+	[5489] = 	6419, 	-- Rezept: Mageres Wildbret
+	[5528] = 	6501, 	-- Rezept: Muschelsuppe
+	[6039] = 	7213, 	-- Rezept: Riesenmuschelrisotto
+	[6325] = 	7751, 	-- Rezept: Glänzender Kleinfisch
+	[6326] = 	7752, 	-- Rezept: Glitschhautmakrele
+	[6328] = 	7753, 	-- Rezept: Langzahniger Matschschnapper
+	[6329] = 	7754, 	-- Rezept: Lochfrenzy Supreme
+	[6330] = 	7755, 	-- Rezept: Stoppelfühlerwels
+	[6368] = 	7827, 	-- Rezept: Regenbogenflossenthunfisch
+	[6369] = 	7828, 	-- Rezept: Steinschuppenkabeljau
+	[6661] = 	8238, 	-- Rezept: Pikantes Deviat Supreme
+	[6892] = 	8607, 	-- Rezept: Geräuchertes Bärenfleisch
+	[18160] = 	9513, 	-- Rezept: Disteltee
+	[12227] = 	15853, 	-- Rezept: Mageres Wolfsteak
+	[12228] = 	15855, 	-- Rezept: Gerösteter Raptor
+	[12229] = 	15856, 	-- Rezept: Scharfe Wolfrippchen
+	[12231] = 	15861, 	-- Rezept: Dschungeleintopf
+	[12232] = 	15863, 	-- Rezept: Aas Surprise
+	[12233] = 	15865, 	-- Rezept: Eigenartiger Eintopf
+	[12239] = 	15906, 	-- Rezept: Drachenodemchili
+	[12240] = 	15910, 	-- Rezept: Schwerer Kodoeintopf
+	[16111] = 	15915, 	-- Rezept: Gewürzter Chilikrebs
+	[16110] = 	15933, 	-- Rezept: Monsteromelett
+	[12226] = 	15935, 	-- Rezept: Knuspriger Fledermausflügel
+	[13939] = 	18238, 	-- Rezept: Tüpfelgelbschwanz
+	[13940] = 	18239, 	-- Rezept: Gekochter glänzender Machtfisch
+	[13942] = 	18240, 	-- Rezept: Gegrillter Kalmar
+	[13941] = 	18241, 	-- Rezept: Rotkiemenfilet
+	[13943] = 	18242, 	-- Rezept: Scharfer geräucherter Barsch
+	[13945] = 	18243, 	-- Rezept: Nachtflossensuppe
+	[13946] = 	18244, 	-- Rezept: Gedünsteter Sonnenschuppenlachs
+	[13947] = 	18245, 	-- Rezept: Hummereintopf
+	[13948] = 	18246, 	-- Rezept: Machtfischsteak
+	[13949] = 	18247, 	-- Rezept: Gebackener Lachs
+	[16767] = 	20626, 	-- Rezept: Muschelsuppe à la Undermine
+	[17062] = 	20916, 	-- Rezept: Mithrilkopfforelle
+	[17200] = 	21143, 	-- Rezept: Lebkuchen
+	[17201] = 	21144, 	-- Rezept: Eierflip
+	[18046] = 	22480, 	-- Rezept: Zartes Wolfsteak
+	[18267] = 	22761, 	-- Rezept: Runn Tum Knolle Surprise
+	[20075] = 	24418, 	-- Rezept: Schwerer Krokiliskeneintopf
+	[21025] = 	25659, 	-- Rezept: Dirges abgefahrene Chimaerokkoteletts
+	[21099] = 	25704, 	-- Rezept: Geräucherter Weisenfisch
+	[21219] = 	25954, 	-- Rezept: Weisenfisch Supreme
+	[22647] = 	28267, 	-- Rezept: Knusperspinne Surprise
+	[27685] = 	33276, 	-- Rezept: Luchssteak
+	[27686] = 	33277, 	-- Rezept: Geröstete Mondweidenlenden
+	[27687] = 	33278, 	-- Rezept: Fledermausbissen
+	[27684] = 	33279, 	-- Rezept: Bussardbissen
+	[27688] = 	33284, 	-- Rezept: Heißer Hetzer
+	[27689] = 	33285, 	-- Rezept: Sporlingschmaus
+	[27690] = 	33286, 	-- Rezept: Schwarzgebratener Basilisk
+	[27691] = 	33287, 	-- Rezept: Gerösteter Grollhuf
+	[27692] = 	33288, 	-- Rezept: Doppelwarper
+	[27693] = 	33289, 	-- Rezept: Talbuksteak
+	[27694] = 	33290, 	-- Rezept: Schwarzgebratene Forelle
+	[27695] = 	33291, 	-- Rezept: Teufelsfinne Supreme
+	[27696] = 	33292, 	-- Rezept: Schwarzgebratener Sporenfisch
+	[27697] = 	33293, 	-- Rezept: Gegrillter Matschflosser
+	[27698] = 	33294, 	-- Rezept: Gedünstete Blauflosse
+	[27699] = 	33295, 	-- Rezept: Goldfischstäbchen
+	[27700] = 	33296, 	-- Rezept: Würziger Flusskrebs
+	[30156] = 	36210, 	-- Rezept: Muschelriegel
+	[31675] = 	38867, 	-- Rezept: Rippchen der Mok'Nathal
+	[31674] = 	38868, 	-- Rezept: Knusperschlange
+	[33870] = 	43707, 	-- Rezept: Schädelfischsuppe
+	[33871] = 	43758, 	-- Rezept: Sturmkoteletts
+	[33869] = 	43761, 	-- Rezept: Gebratene Blutflosse
+	[33873] = 	43765, 	-- Rezept: Feuriger Würztalbuk
+	[33875] = 	43772, 	-- Rezept: Kiblers Häppchen
+	[33925] = 	43779, 	-- Rezept: Köstlicher Schokoladenkuchen
+	[34413] = 	45022, 	-- Rezept: Heißer Apfelwein
+	[43018] = 	45555, 	-- Rezept: Megamammutmahl
+	[43019] = 	45556, 	-- Rezept: Zartes Schaufelhauersteak
+	[43020] = 	45557, 	-- Rezept: Würziger Wurmburger
+	[43021] = 	45558, 	-- Rezept: Sehr verbrannter Worg
+	[43022] = 	45559, 	-- Rezept: Große Rhinowurst
+	[43023] = 	45567, 	-- Rezept: Pochierte nordische Groppe
+	[43024] = 	45568, 	-- Rezept: Feuerkracherlachs
+	[43026] = 	45570, 	-- Rezept: Steak vom imperialen Mantarochen
+	[43025] = 	45571, 	-- Rezept: Würziger blauer Nesselfisch
+	[34834] = 	45695, 	-- Rezept: Kapitän Rumseys Lagerbier
+	[35564] = 	46684, 	-- Rezept: Verkohlter Bärenkebab
+	[35566] = 	46688, 	-- Rezept: Saftiger Bärenburger
+	[39644] = 	53056, 	-- Recipe: Kungaloosh
+	[43017] = 	57423, 	-- Rezept: Fischmahl
+	[43027] = 	57433, 	-- Rezept: Würziger Brathering
+	[43028] = 	57434, 	-- Rezept: Rhinoziöses Wurmsteak
+	[43029] = 	57435, 	-- Rezept: Tierhappen
+	[43030] = 	57436, 	-- Rezept: Herzhaftes Rhinozeros
+	[43031] = 	57437, 	-- Rezept: Bombenschnapper
+	[43032] = 	57438, 	-- Rezept: Schwarzgebratenes Worgsteak
+	[43033] = 	57439, 	-- Rezept: Sepiasteak
+	[43034] = 	57440, 	-- Rezept: Gewürzte Mammutleckereien
+	[43035] = 	57441, 	-- Rezept: Geschwärzte Drachenflosse
+	[43036] = 	57442, 	-- Rezept: Drachenflossenfilet
+	[43037] = 	57443, 	-- Rezept: Fährtenlesersnacks
+	[43507] = 	58512, 	-- Rezept: Leckeres Törtchen
+	[43508] = 	58521, 	-- Rezept: Mammut von letzter Woche
+	[43509] = 	58523, 	-- Rezept: Schlechte Muscheln
+	[43510] = 	58525, 	-- Rezept: Geisterhering
+	[43505] = 	58527, 	-- Rezept: Gigantisches Festmahl
+	[43506] = 	58528, 	-- Rezept: Kleines Festmahl
+	[44862] = 	62044, 	-- Rezept: Kürbiskuchen
+	[44861] = 	62045, 	-- Rezept: Langsam gerösteter Truthahn
+	[44858] = 	62049, 	-- Rezept: Moosbeerenchutney
+	[44860] = 	62050, 	-- Rezept: Gewürzbrotfüllung
+	[44859] = 	62051, 	-- Rezept: Kandierte Süßkartoffel
+	[44954] = 	62350, 	-- Rezept: Worgtatar
+	[46710] = 	65454, 	-- Rezept: Totenspeise
+	[46806] = 	66034, 	-- Rezept: Kandierte Süßkartoffel
+	[46805] = 	66035, 	-- Rezept: Moosbeerenchutney
+	[46804] = 	66036, 	-- Rezept: Kürbiskuchen
+	[46807] = 	66037, 	-- Rezept: Langsam gerösteter Truthahn
+	[46803] = 	66038, 	-- Rezept: Gewürzbrotfüllung
 
 	-------------------------------------------------------------------------------
 	-- Enchanting
 	-------------------------------------------------------------------------------
-	[7443] = 6342, 		[7766] = 6344, 		[7776] = 6346, 		[7782] = 6347, 
-	[7786] = 6348, 		[7793] = 6349, 		[7859] = 6375, 		[7867] = 6377, 
-	[13380] = 11038, 	[13419] = 11039, 	[13464] = 11081, 	[13522] = 11098, 
-	[13536] = 11101, 	[13612] = 11150, 	[13617] = 11151, 	[13620] = 11152, 
-	[13646] = 11163, 	[13653] = 11164, 	[13655] = 11165, 	[13687] = 11167, 
-	[13689] = 11168, 	[13698] = 11166, 	[13817] = 11202, 	[13841] = 11203, 
-	[13846] = 11204, 	[13868] = 11205, 	[13882] = 11206, 	[13898] = 11207, 
-	[13915] = 11208, 	[13931] = 11223, 	[13933] = 11224, 	[13945] = 11225, 
-	[13947] = 11226, 	[15596] = 11813, 	[15596] = 45050, 
-	[20009] = 16218, 	[20010] = 16246, 	[20011] = 16251, 	[20012] = 16219, 
- 	[20014] = 16216, 	[20015] = 16224, 	[20016] = 16222, 
-	[20017] = 16217, 	[20020] = 16215, 	[20023] = 16245, 	[20024] = 16220, 
-	[20025] = 16253, 	[20026] = 16221, 	[20028] = 16242, 	[20029] = 16223, 
-	[20030] = 16247, 	[20031] = 16250, 	[20032] = 16254, 	[20033] = 16248, 
-	[20034] = 16252, 	[20035] = 16255, 	[20036] = 16249, 	[20051] = 16243, 
-	[21931] = 17725, 	[22749] = 18259, 	[22750] = 18260, 	[23799] = 19444, 
-	[23800] = 19445, 	[23801] = 19446, 	[23802] = 19447, 	[23803] = 19448, 
-	[23804] = 19449, 	[25072] = 33153, 	[25072] = 20726, 	[25073] = 20727, 
-	[25074] = 20728, 	[25078] = 20729, 	[25079] = 20730, 	[25080] = 33152, 
-	[25080] = 20731, 	[25081] = 20732, 	[25082] = 20733, 	[25083] = 33149, 
-	[25083] = 20734, 	[25084] = 20735, 	[25084] = 33150, 	[25084] = 33151, 
-	[25086] = 20736, 	[25086] = 33148, 	[25124] = 20758, 	[25125] = 20752, 
-	[25126] = 20753, 	[25127] = 20754, 	[25128] = 20755, 	[25129] = 20756, 
-	[25130] = 20757, 	[27837] = 22392, 	[27906] = 22530, 	[27911] = 22531, 
-	[27911] = 24000, 	[27913] = 22532, 	[27914] = 22533, 	[27917] = 22534, 
-	[27920] = 22535, 	[27924] = 22536, 	[27926] = 22537, 	[27927] = 22538, 
-	[27945] = 22539, 	[27946] = 22540, 	[27947] = 22541, 	[27948] = 35298, 
-	[27948] = 22542, 	[27950] = 22543, 	[27951] = 22544, 	[27954] = 22545, 
-	[27960] = 24003, 	[27960] = 22547, 	[27962] = 22548, 	[27967] = 22552, 
-	[27968] = 22551, 	[27971] = 22554, 	[27972] = 22553, 	[27975] = 22555, 
-	[27977] = 22556, 	[27981] = 22560, 	[27982] = 22561, 	[27984] = 22559, 
-	[28003] = 22558, 	[28004] = 22557, 	[28016] = 22562, 	[28019] = 22563, 
-	[28022] = 22565, 	[32665] = 25848, 	[32667] = 25849, 	[33992] = 28270, 
-	[33994] = 28271, 	[33997] = 28272, 	[33999] = 28273, 	[34003] = 28274, 
-	[34005] = 28276, 	[34006] = 28277, 	[34007] = 35299, 	[34007] = 28279, 
-	[34008] = 35297, 	[34008] = 28280, 	[34009] = 28282, 	[34010] = 28281, 
-	[42620] = 33165, 	[42974] = 33307, 	[44483] = 37332, 	[44494] = 37333, 
-	[44524] = 37344, 	[44556] = 37331, 	[44575] = 44484, 	[44576] = 44494, 
-	[44588] = 37340, 	[44590] = 37334, 	[44591] = 37347, 	[44595] = 44473, 
-	[44596] = 37330, 	[44621] = 37339, 	[44625] = 44485, 	[44631] = 37349, 
-	[45765] = 34872, 	[46578] = 35498, 	[46594] = 35500, 	[47051] = 35756, 
-	[47672] = 44471, 	[47898] = 44472, 	[47899] = 44488, 	[47901] = 44491, 
-	[59619] = 44496, 	[59621] = 44492, 	[59625] = 44495, 	[60691] = 44483, 
-	[60692] = 44489, 	[60707] = 44486, 	[60714] = 44487, 	[60763] = 44490, 
-	[60767] = 44498, 	[62256] = 44944, 	[62257] = 44945, 	[62948] = 45059, 
-	[64441] = 46027, 	[64579] = 46348, 
+	[6342] = 	7443, 	-- Formel: Brust - Schwaches Mana
+	[6344] = 	7766, 	-- Formel: Armschiene - Schwache Willenskraft
+	[6346] = 	7776, 	-- Formel: Brust - Geringes Mana
+	[6347] = 	7782, 	-- Formel: Armschiene - Schwache Stärke
+	[6348] = 	7786, 	-- Formel: Waffe - Schwacher Wildtiertöter
+	[6349] = 	7793, 	-- Formel: Zweihandwaffe - Geringe Intelligenz
+	[6375] = 	7859, 	-- Formel: Armschiene - Geringe Willenskraft
+	[6377] = 	7867, 	-- Formel: Stiefel - Schwache Beweglichkeit
+	[11038] = 	13380, 	-- Formel: Zweihandwaffe - Geringe Willenskraft
+	[11039] = 	13419, 	-- Formel: Umhang - Schwache Beweglichkeit
+	[11081] = 	13464, 	-- Formel: Schild - Geringer Schutz
+	[11098] = 	13522, 	-- Formel: Umhang - Geringer Schattenwiderstand
+	[11101] = 	13536, 	-- Formel: Armschiene - Geringe Stärke
+	[11150] = 	13612, 	-- Formel: Handschuhe - Bergbau
+	[11151] = 	13617, 	-- Formel: Handschuhe - Kräuterkunde
+	[11152] = 	13620, 	-- Formel: Handschuhe - Angeln
+	[11163] = 	13646, 	-- Formel: Armschiene - Geringe Abwehr
+	[11164] = 	13653, 	-- Formel: Waffe - Geringer Wildtiertöter
+	[11165] = 	13655, 	-- Formel: Waffe - Geringer Elementartöter
+	[11167] = 	13687, 	-- Formel: Stiefel - Geringe Willenskraft
+	[11168] = 	13689, 	-- Formel: Schild - Geringes Blocken
+	[11166] = 	13698, 	-- Formel: Handschuhe - Kürschnerei
+	[11202] = 	13817, 	-- Formel: Schild - Ausdauer
+	[11203] = 	13841, 	-- Formel: Handschuhe - Hochentwickelter Bergbau
+	[11204] = 	13846, 	-- Formel: Armschiene - Große Willenskraft
+	[11205] = 	13868, 	-- Formel: Handschuhe - Hochentwickelte Kräuterkunde
+	[11206] = 	13882, 	-- Formel: Umhang - Geringe Beweglichkeit
+	[11207] = 	13898, 	-- Formel: Waffe - Feurige Waffe
+	[11208] = 	13915, 	-- Formel: Waffe - Dämonentöten
+	[11223] = 	13931, 	-- Formel: Armschiene - Abwehr
+	[11224] = 	13933, 	-- Formel: Schild - Frostwiderstand
+	[11225] = 	13945, 	-- Formel: Armschiene - Große Ausdauer
+	[11226] = 	13947, 	-- Formel: Handschuhe - Reitfertigkeit
+	[11813] = 	15596, 	-- Formel: Rauchendes Herz des Berges (Drop: Lord Roccor)
+	[45050] = 	15596, 	-- Formel: Rauchendes Herz des Berges (??)
+	[16214] = 	20008, 	-- Formel: Armschiene - Große Intelligenz
+	[16218] = 	20009, 	-- Formel: Armschiene - Überragende Willenskraft
+	[16246] = 	20010, 	-- Formel: Armschiene - Überragende Stärke
+	[16251] = 	20011, 	-- Formel: Armschiene - Überragende Ausdauer
+	[16219] = 	20012, 	-- Formel: Handschuhe - Große Beweglichkeit
+	[16244] = 	20013, 	-- Formel: Handschuhe - Große Stärke
+	[16216] = 	20014, 	-- Formel: Umhang - Großer Widerstand
+	[16224] = 	20015, 	-- Formel: Umhang - Überragende Verteidigung
+	[16222] = 	20016, 	-- Formel: Schild - Erhebliche Willenskraft
+	[16217] = 	20017, 	-- Formel: Schild - Große Ausdauer
+	[16215] = 	20020, 	-- Formel: Stiefel - Große Ausdauer
+	[16245] = 	20023, 	-- Formel: Stiefel - Große Beweglichkeit
+	[16220] = 	20024, 	-- Formel: Stiefel - Willenskraft
+	[16253] = 	20025, 	-- Formel: Brust - Große Werte
+	[16221] = 	20026, 	-- Formel: Brust - Erhebliche Gesundheit
+	[16242] = 	20028, 	-- Formel: Brust - Erhebliches Mana
+	[16223] = 	20029, 	-- Formel: Waffe - Eisiger Hauch
+	[16247] = 	20030, 	-- Formel: Zweihandwaffe - Überragender Einschlag
+	[16250] = 	20031, 	-- Formel: Waffe - Überragendes Schlagen
+	[16254] = 	20032, 	-- Formel: Waffe - Lebensdiebstahl
+	[16248] = 	20033, 	-- Formel: Waffe - Unheilig
+	[16252] = 	20034, 	-- Formel: Waffe - Kreuzfahrer
+	[16255] = 	20035, 	-- Formel: Zweihandwaffe - Erhebliche Willenskraft
+	[16249] = 	20036, 	-- Formel: Zweihandwaffe - Erhebliche Intelligenz
+	[16243] = 	20051, 	-- Formel: Runenverzierte Arkanitrute
+	[17725] = 	21931, 	-- Formel: Waffe - Wintermacht
+	[18259] = 	22749, 	-- Formel: Waffe - Zaubermacht
+	[18260] = 	22750, 	-- Formel: Waffe - Heilkraft
+	[19444] = 	23799, 	-- Formel: Waffe - Stärke
+	[19445] = 	23800, 	-- Formel: Waffe - Beweglichkeit
+	[19446] = 	23801, 	-- Formel: Armschiene - Manaregeneration
+	[19447] = 	23802, 	-- Formel: Armschiene - Heilkraft
+	[19448] = 	23803, 	-- Formel: Waffe - Mächtige Willenskraft
+	[19449] = 	23804, 	-- Formel: Waffe - Mächtige Intelligenz
+	[20726] = 	25072, 	-- Formel: Handschuhe – Bedrohung (Drop: Imperator Vek'nilash)
+	[33153] = 	25072, 	-- Formel: Handschuhe – Bedrohung (Vendor: Almaador)
+	[20727] = 	25073, 	-- Formel: Handschuhe - Schattenmacht
+	[20728] = 	25074, 	-- Formel: Handschuhe - Frostmacht
+	[20729] = 	25078, 	-- Formel: Handschuhe - Feuermacht
+	[20730] = 	25079, 	-- Formel: Handschuhe - Heilkraft
+	[20731] = 	25080, 	-- Formel: Handschuhe - Überragende Beweglichkeit (Drop: Ossirian der Narbenlose)
+	[33152] = 	25080, 	-- Formel: Handschuhe - Überragende Beweglichkeit (Vendor: Alurmi)
+	[20732] = 	25081, 	-- Formel: Umhang - Großer Feuerwiderstand
+	[20733] = 	25082, 	-- Formel: Umhang - Großer Naturwiderstand
+	[20734] = 	25083, 	-- Formel: Umhang - Verstohlenheit (Drop: Ossirian der Narbenlose)
+	[33149] = 	25083, 	-- Formel: Umhang – Verstohlenheit (Vendor: Fedryen Flinkspeer)
+	[20735] = 	25084, 	-- Formel: Umhang - Feingefühl (Crop: Imperator Vek'lor)
+	[33150] = 	25084, 	-- Formel: Umhang – Feingefühl (Ehrenfeste)
+	[33151] = 	25084, 	-- Formel: Umhang – Feingefühl (Thrallmar)
+	[20736] = 	25086, 	-- Formel: Umhang - Ausweichen (Drop: Ossirian der Narbenlose)
+	[33148] = 	25086, 	-- Formel: Umhang – Ausweichen (Nakodu)
+	[20758] = 	25124, 	-- Formel: Schwaches Zauberöl
+	[20752] = 	25125, 	-- Formel: Schwaches Manaöl
+	[20753] = 	25126, 	-- Formel: Geringes Zauberöl
+	[20754] = 	25127, 	-- Formel: Geringes Manaöl
+	[20755] = 	25128, 	-- Formel: Zauberöl
+	[20756] = 	25129, 	-- Formel: Hervorragendes Zauberöl
+	[20757] = 	25130, 	-- Formel: Hervorragendes Manaöl
+	[22392] = 	27837, 	-- Formel: Zweihandwaffe - Beweglichkeit
+	[22530] = 	27906, 	-- Formel: Armschiene - Erhebliche Verteidigung
+	[22531] = 	27911, 	-- Formel: Armschiene - Überragende Heilung (ehrenfeste)
+	[24000] = 	27911, 	-- Formel: Armschiene - Überragende Heilung (thrallmar)
+	[22532] = 	27913, 	-- Formel: Armschiene - Mana wiederherstellen
+	[22533] = 	27914, 	-- Formel: Armschiene - Seelenstärke
+	[22534] = 	27917, 	-- Formel: Armschiene - Zaubermacht
+	[22535] = 	27920, 	-- Formel: Ring - Schlagen
+	[22536] = 	27924, 	-- Formel: Ring - Zaubermacht
+	[22537] = 	27926, 	-- Formel: Ring - Heilkraft
+	[22538] = 	27927, 	-- Formel: Ring - Werte
+	[22539] = 	27945, 	-- Formel: Schild - Intelligenz
+	[22540] = 	27946, 	-- Formel: Schild - Schildblock
+	[22541] = 	27947, 	-- Formel: Schild - Widerstand
+	[22542] = 	27948, 	-- Formel: Stiefel – Vitalität (Worlddrop)
+	[35298] = 	27948, 	-- Formel: Stiefel – Vitalität (keal)
+	[22543] = 	27950, 	-- Formel: Stiefel - Seelenstärke
+	[22544] = 	27951, 	-- Formel: Stiefel - Gewandtheit
+	[22545] = 	27954, 	-- Formel: Stiefel - Sicherer Stand
+	[22547] = 	27960, 	-- Formel: Brust - Außergewöhnliche Werte (ehrenfeste)
+	[24003] = 	27960, 	-- Formel: Brust - Außergewöhnliche Werte (thrallmar)
+	[22548] = 	27962, 	-- Formel: Umhang - Erheblicher Widerstand
+	[22552] = 	27967, 	-- Formel: Waffe - Erhebliches Schlagen
+	[22551] = 	27968, 	-- Formel: Waffe - Erhebliche Intelligenz
+	[22554] = 	27971, 	-- Formel: Zweihandwaffe - Unbändigkeit
+	[22553] = 	27972, 	-- Formel: Waffe - Potenz
+	[22555] = 	27975, 	-- Formel: Waffe - Erhebliche Zaubermacht
+	[22556] = 	27977, 	-- Formel: Zweihandwaffe - Erhebliche Beweglichkeit
+	[22560] = 	27981, 	-- Formel: Waffe - Sonnenfeuer
+	[22561] = 	27982, 	-- Formel: Waffe - Seelenfrost
+	[22559] = 	27984, 	-- Formel: Waffe - Mungo
+	[22558] = 	28003, 	-- Formel: Waffe - Zauberflut
+	[22557] = 	28004, 	-- Formel: Waffe - Meister des Kampfes
+	[22562] = 	28016, 	-- Formel: Überragendes Manaöl
+	[22563] = 	28019, 	-- Formel: Überragendes Zauberöl
+	[22565] = 	28022, 	-- Formel: Großer Prismasplitter
+	[25848] = 	32665, 	-- Formel: Runenverzierte Adamantitrute
+	[25849] = 	32667, 	-- Formel: Runenverzierte Eterniumrute
+	[28270] = 	33992, 	-- Formel: Brust - Erhebliche Abhärtung
+	[28271] = 	33994, 	-- Formel: Handschuhe - Präzise Stöße
+	[28272] = 	33997, 	-- Formel: Handschuhe - Erhebliche Zaubermacht
+	[28273] = 	33999, 	-- Formel: Handschuhe - Erhebliche Heilung
+	[28274] = 	34003, 	-- Formel: Umhang - Zauberdurchschlagskraft
+	[28276] = 	34005, 	-- Formel: Umhang - Großer Arkanwiderstand
+	[28277] = 	34006, 	-- Formel: Umhang - Großer Schattenwiderstand
+	[28279] = 	34007, 	-- Formel: Stiefel - Schnelligkeit der Katze (Worlddrop)
+	[35299] = 	34007, 	-- Formel: Stiefel - Schnelligkeit der Katze (kael)
+	[28280] = 	34008, 	-- Formel: Stiefel - Flinkheit des Ebers (Worlddrop)
+	[35297] = 	34008, 	-- Formel: Stiefel - Flinkheit des Ebers (Kael)
+	[28282] = 	34009, 	-- Formel: Schild - Erhebliche Ausdauer
+	[28281] = 	34010, 	-- Formel: Waffe - Erhebliche Heilung
+	[33165] = 	42620, 	-- Formel: Waffe - Große Beweglichkeit
+	[33307] = 	42974, 	-- Formel: Waffe - Scharfrichter
+	[37332] = 	44483, 	-- Formel: Umhang - Überragender Frostwiderstand
+	[37333] = 	44494, 	-- Formel: Umhang - Überragender Naturwiderstand
+	[37335] = 	44500, 	-- Formel: Umhang - Überragende Beweglichkeit
+	[37329] = 	44510, 	-- Formel: Waffe - Außergewöhnliche Willenskraft
+	[37345] = 	44513, 	-- Formel: Handschuhe - Großer Sturmangriff
+	[37344] = 	44524, 	-- Formel: Waffe - Eisbrecher
+	[37331] = 	44556, 	-- Formel: Umhang - Überragender Feuerwiderstand
+	[44484] = 	44575, 	-- Formel: Armschiene - Großer Sturmangriff
+	[44494] = 	44576, 	-- Formel: Waffe - Lebenswächter
+	[37340] = 	44588, 	-- Formel: Brust - Außergewöhnliche Abhärtung
+	[37334] = 	44590, 	-- Formel: Umhang - Überragender Schattenwiderstand
+	[37347] = 	44591, 	-- Formel: Umhang - Titangewebe
+	[37326] = 	44593, 	-- Formel: Armschiene - Erhebliche Willenskraft
+	[44473] = 	44595, 	-- Formel: Waffe - Geißelbann
+	[37330] = 	44596, 	-- Formel: Umhang - Überragender Arkanwiderstand
+	[37346] = 	44598, 	-- Formel: Armschiene - Waffenkunde
+	[37337] = 	44616, 	-- Formel: Armschiene - Große Werte
+	[37339] = 	44621, 	-- Formel: Waffe - Riesentöter
+	[44485] = 	44625, 	-- Formel: Handschuhe - Waffenmeister
+	[37338] = 	44630, 	-- Formel: Waffe - Große Unbändigkeit
+	[37349] = 	44631, 	-- Formel: Umhang - Schattenrüstung
+	[37343] = 	44633, 	-- Formel: Waffe - Außergewöhnliche Beweglichkeit
+	[34872] = 	45765, 	-- Formel: Brechung der Leere
+	[35498] = 	46578, 	-- Formel: Waffe - Todeskälte
+	[35500] = 	46594, 	-- Formel: Brust - Verteidigung
+	[35756] = 	47051, 	-- Formel: Umhang - Stahlgewebe
+	[44471] = 	47672, 	-- Formel: Umhang - Mächtige Rüstung
+	[37336] = 	47766, 	-- Formel: Brust - Großes Ausweichen
+	[37348] = 	47898, 	-- Formel: Umhang - Tempo
+	[44472] = 	47898, 	-- Formel: Umhang - Großes Tempo
+	[44488] = 	47899, 	-- Formel: Umhang - Weisheit
+	[44491] = 	47901, 	-- Formel: Stiefel - Vitalität der Tuskarr
+	[44496] = 	59619, 	-- Formel: Waffe - Präzision
+	[44492] = 	59621, 	-- Formel: Waffe - Berserker
+	[44495] = 	59625, 	-- Formel: Waffe - Schwarzmagie
+	[44483] = 	60691, 	-- Formel: Zweihandwaffe - Massaker
+	[44489] = 	60692, 	-- Formel: Brust - Gewaltige Werte
+	[44486] = 	60707, 	-- Formel: Waffe - Überragende Potenz
+	[44487] = 	60714, 	-- Formel: Waffe - Mächtige Zaubermacht
+	[44490] = 	60763, 	-- Formel: Stiefel - Großer Sturmangriff
+	[44498] = 	60767, 	-- Formel: Armschiene - Überragende Zaubermacht
+	[44944] = 	62256, 	-- Formel: Armschiene - Erhebliche Ausdauer
+	[44945] = 	62257, 	-- Formula: Enchant Weapon - Titanguard
+	[45059] = 	62948, 	-- Formel: Stab - Große Zaubermacht
+	[46027] = 	64441, 	-- Formel: Waffe - Klingenbarrikade
+	[46348] = 	64579, 	-- Formel: Waffe - Blutsauger
+	[50406] = 	71692, 	-- Formel: Handschuhe - Angler
 
 	-------------------------------------------------------------------------------
 	--Engineering
 	-------------------------------------------------------------------------------
-	[3928] = 4408, 		[3933] = 4409, 		[3939] = 13309,		[3940] = 4410, 
-	[3944] = 4411, 		[3952] = 14639, 	[3954] = 4412, 		[3957] = 13308, 
-	[3959] = 4413, 		[3960] = 4414, 		[3966] = 4415, 		[3968] = 4416, 
-	[3969] = 13311, 	[3971] = 7742, 		[3972] = 4417, 		[3979] = 13310, 
-	[8243] = 6672, 		[8339] = 6716, 		[9269] = 7560, 		[9273] = 7561, 
-	[12587] = 10601, 	[12597] = 10602, 	[12607] = 10603, 	[12614] = 10604, 
-	[12615] = 10605, 	[12616] = 10606, 	[12617] = 10607, 	[12620] = 10608, 
-	[12624] = 10609, 	[15628] = 11828, 	[15633] = 11827, 	[19790] = 16041, 
-	[19791] = 16042, 	[19792] = 16043, 	[19793] = 16044, 	[19794] = 16045, 
-	[19795] = 16047, 	[19796] = 16048, 	[19799] = 16049, 	[19800] = 16051, 
-	[19814] = 16046, 	[19815] = 16050, 	[19819] = 16052, 	[19825] = 16053, 
-	[19830] = 16054, 	[19831] = 16055, 	[19833] = 16056, 	[21940] = 17720, 
-	[22793] = 18290, 	[22795] = 18292, 	[22797] = 18291, 	[23066] = 18647, 
-	[23067] = 18649, 	[23068] = 18648, 	[23069] = 18650, 	[23071] = 18651, 
-	[23077] = 18652, 	[23078] = 18653, 	[23079] = 18655, 	[23080] = 18656, 
-	[23081] = 18657, 	[23082] = 18658, 	[23096] = 18654, 	[23129] = 18661, 
-	[23507] = 19027, 	[24356] = 20000, 	[24357] = 20001, 	[26416] = 21724, 
-	[26417] = 21725, 	[26418] = 21726, 	[26420] = 21727, 	[26421] = 21728, 
-	[26422] = 21729, 	[26423] = 21730, 	[26424] = 21731, 	[26425] = 21732, 
-	[26426] = 21733, 	[26427] = 21734, 	[26428] = 21735, 	[26442] = 44919, 
-	[26443] = 44918, 	[28327] = 22729, 	[30313] = 23799, 	[30314] = 23800, 
-	[30315] = 23802, 	[30316] = 23803, 	[30317] = 23804, 	[30318] = 23805, 
-	[30325] = 23806, 	[30329] = 23807, 	[30332] = 23808, 	[30334] = 23809, 
-	[30337] = 23810, 	[30341] = 23811, 	[30344] = 23814, 	[30347] = 23815, 
-	[30348] = 23816, 	[30349] = 23817, 	[30547] = 23874, 	[30548] = 23888, 
-	[30551] = 35310, 	[30552] = 35311, 	[30556] = 23887, 	[32814] = 25887, 
-	[39895] = 32381, 	[43676] = 33804, 	[44391] = 34114, 	[46106] = 35191, 
-	[46107] = 35187, 	[46108] = 35189, 	[46109] = 35190, 	[46110] = 35192, 
-	[46111] = 35186, 	[46112] = 35193, 	[46113] = 35194, 	[46114] = 35195, 
-	[46115] = 35196, 	[46116] = 35197, 	[46697] = 35582,  [60866] = 44502, 	[60867] = 44503, 
+	[4408] = 	3928, 	-- Bauplan: Kasten mit mechanischem Eichhörnchen
+	[4409] = 	3933, 	-- Bauplan: Kleine Zephyriumladung
+	[13309] = 	3939, 	-- Bauplan: Liebevoll hergestelltes Schießeisen
+	[4410] = 	3940, 	-- Bauplan: Schattenschutzbrille
+	[4411] = 	3944, 	-- Bauplan: Flammendeflektor
+	[14639] = 	3952, 	-- Bauplan: Schwacher Rekombobulator
+	[4412] = 	3954, 	-- Bauplan: Mondsichtgewehr
+	[13308] = 	3957, 	-- Bauplan: Eisdeflektor
+	[4413] = 	3959, 	-- Bauplan: Diskombobulatorstrahl
+	[4414] = 	3960, 	-- Bauplan: Tragbarer bronzener Mörser
+	[4415] = 	3966, 	-- Bauplan: Handwerkermonokel
+	[4416] = 	3968, 	-- Bauplan: Goblinlandmine
+	[13311] = 	3969, 	-- Bauplan: Mechanischer Drachling
+	[7742] = 	3971, 	-- Bauplan: Gnomische Tarnvorrichtung
+	[4417] = 	3972, 	-- Bauplan: Große Zephyriumladung
+	[13310] = 	3979, 	-- Bauplan: Genaues Zielfernrohr
+	[6672] = 	8243, 	-- Bauplan: Blitzstrahlbombe
+	[6716] = 	8339, 	-- Bauplan: EZ-Thro-Dynamit
+	[7560] = 	9269, 	-- Bauplan: Gnomenuniversalfernbedienung
+	[7561] = 	9273, 	-- Bauplan: Goblinüberbrückungskabel
+	[10601] = 	12587, 	-- Bauplan: Hellaugenschutzbrille
+	[10602] = 	12597, 	-- Bauplan: Tödliches Zielfernrohr
+	[10603] = 	12607, 	-- Bauplan: Ultraschutzbrille der Katzensicht
+	[10604] = 	12614, 	-- Bauplan: Schwerkalibriges Mithrilgewehr
+	[10605] = 	12615, 	-- Bauplan: Zaubermachtschutzbrille Xtrem
+	[10606] = 	12616, 	-- Bauplan: Fallschirmumhang
+	[10607] = 	12617, 	-- Bauplan: Tiefseetaucherhelm
+	[10608] = 	12620, 	-- Bauplan: Heckenschützenzielfernrohr
+	[10609] = 	12624, 	-- Bauplan: Mechanischer Mithrildrachling
+	[11828] = 	15628, 	-- Bauplan: Winzige wandelnde Bombe
+	[11827] = 	15633, 	-- Bauplan: Lil' Smoky
+	[16041] = 	19790, 	-- Bauplan: Thoriumgranate
+	[16042] = 	19791, 	-- Bauplan: Thoriumapparat
+	[16043] = 	19792, 	-- Bauplan: Thoriumgewehr
+	[16044] = 	19793, 	-- Bauplan: Lebensechte mechanische Kröte
+	[16045] = 	19794, 	-- Bauplan: Zaubermachtschutzbrille Xtrem-Plus
+	[16047] = 	19795, 	-- Bauplan: Thoriumröhre
+	[16048] = 	19796, 	-- Bauplan: Dunkeleisengewehr
+	[16049] = 	19799, 	-- Bauplan: Dunkeleisenbombe
+	[16051] = 	19800, 	-- Bauplan: Thoriumpatronen
+	[16046] = 	19814, 	-- Bauplan: Meisterliche Zielattrappe
+	[16050] = 	19815, 	-- Bauplan: Empfindlicher Arkanitwandler
+	[16052] = 	19819, 	-- Bauplan: Modularer Stimmenverstärker
+	[16053] = 	19825, 	-- Bauplan: Schutzbrille des Meisteringenieurs
+	[16054] = 	19830, 	-- Bauplan: Arkanitdrachling
+	[16055] = 	19831, 	-- Bauplan: Arkane Bombe
+	[16056] = 	19833, 	-- Bauplan: Fehlerloses Arkanitgewehr
+	[17720] = 	21940, 	-- Bauplan: Schneemeister 9000
+	[18290] = 	22793, 	-- Bauplan: Biznicks 247x128 treffsicheres Zielfernrohr
+	[18292] = 	22795, 	-- Bauplan: Kernscharfschützengewehr
+	[18291] = 	22797, 	-- Bauplan: Machtreaktive Scheibe
+	[18647] = 	23066, 	-- Bauplan: Rotes Feuerwerk
+	[18649] = 	23067, 	-- Bauplan: Blaues Feuerwerk
+	[18648] = 	23068, 	-- Bauplan: Grünes Feuerwerk
+	[18650] = 	23069, 	-- Bauplan: EZ-Thro-Dynamit II
+	[18651] = 	23071, 	-- Bauplan: Echtsilberumwandler
+	[18652] = 	23077, 	-- Bauplan: Gyrofrosteisreflektor
+	[18653] = 	23078, 	-- Bauplan: Goblinüberbrückungskabel XL
+	[18655] = 	23079, 	-- Bauplan: Großer Rekombobulator
+	[18656] = 	23080, 	-- Bauplan: Mächtige Zephyriumladung
+	[18657] = 	23081, 	-- Bauplan: Hyperstrahlender Flammenreflektor
+	[18658] = 	23082, 	-- Bauplan: Ultrablendender Schattenreflektor
+	[18654] = 	23096, 	-- Bauplan: Gnomischer Alarm-o-Bot
+	[18661] = 	23129, 	-- Bauplan: Weltvergrößerer
+	[19027] = 	23507, 	-- Bauplan: Schlangenexplosionsfeuerwerk
+	[20000] = 	24356, 	-- Bauplan: Blutrebenschutzbrille
+	[20001] = 	24357, 	-- Bauplan: Blutrebenlinse
+	[21724] = 	26416, 	-- Bauplan: Kleine blaue Rakete
+	[21725] = 	26417, 	-- Bauplan: Kleine grüne Rakete
+	[21726] = 	26418, 	-- Bauplan: Kleine rote Rakete
+	[21727] = 	26420, 	-- Bauplan: Große blaue Rakete
+	[21728] = 	26421, 	-- Bauplan: Große grüne Rakete
+	[21729] = 	26422, 	-- Bauplan: Große rote Rakete
+	[21730] = 	26423, 	-- Bauplan: Blaues Raketenbündel
+	[21731] = 	26424, 	-- Bauplan: Grünes Raketenbündel
+	[21732] = 	26425, 	-- Bauplan: Rotes Raketenbündel
+	[21733] = 	26426, 	-- Bauplan: Großes blaues Raketenbündel
+	[21734] = 	26427, 	-- Bauplan: Großes grünes Raketenbündel
+	[21735] = 	26428, 	-- Bauplan: Großes rotes Raketenbündel
+	[21738] = 	26442, 	-- Bauplan: Zünder für Feuerwerk
+	[44919] = 	26442, 	-- Bauplan: Zünder für Feuerwerk
+	[21737] = 	26443, 	-- Bauplan: Zünder für Raketenbündel
+	[44918] = 	26443, 	-- Bauplan: Zünder für Raketenbündel
+	[22729] = 	28327, 	-- Bauplan: Dampfpanzersteuerung
+	[23799] = 	30313, 	-- Bauplan: Adamantitgewehr
+	[23800] = 	30314, 	-- Bauplan: Teufelsstahlschießeisen
+	[23802] = 	30315, 	-- Bauplan: Verschnörkeltes Khoriumgewehr
+	[23803] = 	30316, 	-- Bauplan: Zahnradbrille
+	[23804] = 	30317, 	-- Bauplan: Energieverstärkungsbrille
+	[23805] = 	30318, 	-- Bauplan: Ultraspektropische Enthüllungsbrille
+	[23806] = 	30325, 	-- Bauplan: Extremsichtbrille
+	[23807] = 	30329, 	-- Bauplan: Adamantitzielfernrohr
+	[23808] = 	30332, 	-- Bauplan: Khoriumzielfernrohr
+	[23809] = 	30334, 	-- Bauplan: Geeichtes Eterniumzielfernrohr
+	[23810] = 	30337, 	-- Bauplan: Krachbummroboter
+	[23811] = 	30341, 	-- Bauplan: Weißes Rauchsignal
+	[23814] = 	30344, 	-- Bauplan: Grünes Rauchsignal
+	[23815] = 	30347, 	-- Bauplan: Maschine für Adamantitpatronen
+	[23816] = 	30348, 	-- Bauplan: Werkzeugkasten aus Teufelseisen
+	[23817] = 	30349, 	-- Bauplan: Werkzeugkasten aus Titan
+	[23874] = 	30547, 	-- Bauplan: Elementare Zephyriumladung
+	[23888] = 	30548, 	-- Bauplan: Schockdrosselnder Partikelextraktor
+	[23882] = 	30549, 	-- Bauplan: Tiervergrößerer
+	[23883] = 	30551, 	-- Bauplan: Heiltrankeinspritzung (Worlddrop)
+	[35310] = 	30551, 	-- Bauplan: Heiltrankeinspritzung (kael)
+	[23884] = 	30552, 	-- Bauplan: Manatrankeinspritzung (Worlddrop)
+	[35311] = 	30552, 	-- Bauplan: Manatrankeinspritzung (kael)
+	[23885] = 	30555, 	-- Schematic: Remote Mail Terminal
+	[23887] = 	30556, 	-- Bauplan: Raketenstiefel Xtrem
+	[25887] = 	32814, 	-- Bauplan: Violettes Rauchsignal
+	[32381] = 	39895, 	-- Bauplan: Verschmorte Verkabelung
+	[33804] = 	43676, 	-- Bauplan: Automat für Adamantitpfeile
+	[34114] = 	44391, 	-- Bauplan: Feldreparaturbot 110G
+	[35191] = 	46106, 	-- Schema: Wunderheilbinokel XT68
+	[35187] = 	46107, 	-- Schema: Gerechtomatbrille 3000
+	[35189] = 	46108, 	-- Schema: Superheillinse 9000
+	[35190] = 	46109, 	-- Schema: Mondmikroskopbrille
+	[35192] = 	46110, 	-- Schema: Urgestimmte Brille
+	[35186] = 	46111, 	-- Schema: Holobrille des Vernichters
+	[35193] = 	46112, 	-- Schema: Blitzgeätzte Brille
+	[35194] = 	46113, 	-- Schema: Volltrefferbrille v3.0
+	[35195] = 	46114, 	-- Schema: Chaosprognosebrille
+	[35196] = 	46115, 	-- Schema: Brille aus Hartkhorium
+	[35197] = 	46116, 	-- Schema: Vieltotmacherbrille X44
+	[35582] = 	46697, 	-- Bauplan: Raketenstiefel Xtrem-Lite
+	[44502] = 	60866, 	-- Bauplan: Feuerstuhl
+	[44503] = 	60867, 	-- Bauplan: Chopper des Robogenieurs
+	[49050] = 	68067, 	-- Bauplan: Jeeves
+	[52022] = 	72952, 	-- Pläne: Splittermunition
+	[52023] = 	72953, 	-- Pläne: Eisklingenpfeil
 
 	-------------------------------------------------------------------------------
 	--Inscription
 	-------------------------------------------------------------------------------
+	[46108] = 	64051, 	-- Technik: Rituale des Neumonds
+	[50166] = 	71101, 	-- Technik: Glyphe 'Ewiges Wasser'
+	[50167] = 	71015, 	-- Technik: Glyphe 'Hastige Verjüngung'
+	[50168] = 	71102, 	-- Technik: Glyphe 'Schneller Verfall'
 
 	-------------------------------------------------------------------------------
 	--Jewelcrafting
 	-------------------------------------------------------------------------------
-	[25320] = 20856, 	[25323] = 20855, 	[25339] = 20854, 	[25610] = 20970, 
-	[25612] = 20971, 	[25617] = 20973, 	[25618] = 20974, 	[25619] = 20975, 
-	[25622] = 20976, 	[26873] = 21940, 	[26875] = 21941, 	[26878] = 21942, 
-	[26881] = 21943, 	[26882] = 21944, 	[26887] = 21945, 	[26896] = 21947, 
-	[26897] = 21948, 	[26900] = 21949, 	[26906] = 21952, 	[26909] = 21953, 
-	[26910] = 21954, 	[26912] = 21955, 	[26914] = 21956, 	[26915] = 21957, 
-	[28903] = 23130, 	[28905] = 23131, 	[28906] = 23133, 	[28907] = 23134, 
-	[28910] = 23135, 	[28912] = 23136, 	[28914] = 23137, 	[28915] = 23138, 
-	[28916] = 23140, 	[28917] = 23141, 	[28918] = 31359, 	[28924] = 23143, 
-	[28927] = 23145, 	[28933] = 23146, 	[28936] = 23147, 
-	[28938] = 23148, 	[28944] = 23149, 	[28947] = 23150, 	[28948] = 23151, 
-	[28950] = 23152, 	[28953] = 23153, 	[28955] = 23154, 	[28957] = 23155, 
-	[31053] = 24158, 	[31054] = 24159, 	[31055] = 24160, 	[31056] = 24161, 
-	[31057] = 24162, 	[31058] = 24163, 	[31060] = 24164, 	[31061] = 24165, 
-	[31062] = 24174, 	[31063] = 24175, 	[31064] = 24176, 	[31065] = 24177, 
-	[31066] = 24178, 	[31067] = 24166, 	[31068] = 24167, 	[31070] = 24168, 
-	[31071] = 24169, 	[31072] = 24170, 	[31076] = 24171, 	[31077] = 24172, 
-	[31078] = 24173, 	[31079] = 24179, 	[31080] = 31358, 	[31081] = 24181, 
-	[31082] = 24182, 	[31083] = 24183, 	[31084] = 24193, 	[31085] = 24194, 
-	[31087] = 24195, 	[31088] = 35305, 	[31089] = 35306, 	[31090] = 24197, 
-	[31091] = 24198, 	[31092] = 35304, 	[31094] = 24201, 	[31095] = 24202, 
-	[31096] = 24203, 	[31097] = 24204, 	[31098] = 35307, 	[31099] = 24206, 
-	[31100] = 24207, 	[31101] = 24208, 	[31102] = 24209, 	[31103] = 24210, 
-	[31104] = 24211, 	[31105] = 24212, 	[31106] = 24213, 	[31107] = 24214, 
-	[31108] = 24215, 	[31109] = 24216, 	[31110] = 24217, 	[31111] = 24218, 
-	[31112] = 24219, 	[31113] = 24220, 	[31149] = 24200, 	[32866] = 25902, 
-	[32867] = 25903, 	[32868] = 25905, 	[32869] = 25906, 	[32870] = 25904, 
-	[32871] = 25907, 	[32872] = 25909, 	[32873] = 25908, 	[32874] = 25910, 
-	[34069] = 28291, 	[34590] = 28596, 	[37855] = 30826, 	[38503] = 31401, 
-	[38504] = 31402, 	[39451] = 31870, 	[39452] = 31875, 	[39455] = 31871, 
-	[39458] = 31872, 	[39462] = 31877, 	[39463] = 31876, 	[39466] = 31873, 
-	[39467] = 31874, 	[39470] = 31878, 	[39471] = 31879, 	[39705] = 35244, 
-	[39706] = 35246, 	[39710] = 35250, 	[39711] = 35248, 	[39712] = 35245, 
-	[39713] = 35249, 	[39714] = 35247, 	[39715] = 35263, 	[39716] = 35264, 
-	[39717] = 35262, 	[39718] = 35265, 	[39719] = 35255, 	[39720] = 35260, 
-	[39721] = 35259, 	[39722] = 35256, 	[39723] = 35261, 	[39724] = 35258, 
-	[39725] = 35257, 	[39727] = 35243, 	[39728] = 35242, 	[39729] = 35238, 
-	[39730] = 35240, 	[39731] = 35239, 	[39732] = 35241, 	[39733] = 35267, 
-	[39734] = 35269, 	[39735] = 35268, 	[39736] = 35266, 	[39737] = 35270, 
-	[39738] = 35271, 	[39739] = 35252, 	[39740] = 35254, 	[39741] = 35251, 
-	[39742] = 35253, 	[39961] = 33622, 	[39963] = 32411, 	[42558] = 33305, 
-	[42588] = 33155, 	[42589] = 33156, 	[42590] = 33157, 	[42591] = 33158, 
-	[42592] = 33159, 	[42593] = 33160, 	[43493] = 33783, 	[44794] = 34689, 
-	[46122] = 35198, 	[46123] = 35538, 	[46124] = 35200, 	[46125] = 35201, 
-	[46126] = 35533, 	[46127] = 35203, 	[46403] = 35322, 	[46404] = 35323, 
-	[46405] = 35325, 	[46597] = 35502, 	[46601] = 35505, 	[46775] = 35695, 
-	[46776] = 35696, 	[46777] = 35697, 	[46778] = 35698, 	[46779] = 35699, 
-	[46803] = 35708, 	[47053] = 35769, 	[47054] = 35766, 	[47055] = 35767, 
-	[47056] = 35768, 	[48789] = 37504, 	[53830] = 41576, 	[53857] = 41559, 
-	[53865] = 41575, 	[53869] = 41574, 	[53875] = 41566, 	[53877] = 41562, 
-	[53879] = 41565, 	[53884] = 41563, 	[53885] = 41561, 	[53888] = 41564, 
-	[53917] = 41567, 	[53919] = 41572, 	[53921] = 41568, 	[53924] = 41571, 
-	[53929] = 41573, 	[53932] = 41570, 	[53933] = 41569, 	[53943] = 41560, 
-	[53945] = 41577, 	[53946] = 41718, 	[53948] = 41719, 	[53949] = 41578, 
-	[53950] = 41817, 	[53951] = 41790, 	[53952] = 42138, 	[53954] = 41581, 
-	[53955] = 41728, 	[53957] = 41720, 	[53958] = 41580, 	[53959] = 41791, 
-	[53960] = 41727, 	[53961] = 41579, 	[53962] = 41784, 	[53963] = 41747, 
-	[53964] = 41785, 	[53965] = 41725, 	[53966] = 41783, 	[53967] = 41701, 
-	[53968] = 41740, 	[53970] = 41796, 	[53971] = 41703, 	[53972] = 41820, 
-	[53973] = 41702, 	[53974] = 41726, 	[53975] = 41789, 	[53976] = 41777, 
-	[53977] = 41780, 	[53978] = 41734, 	[53979] = 41794, 	[53980] = 41582, 
-	[53981] = 41733, 	[53982] = 41792, 	[53983] = 41689, 	[53984] = 41686, 
-	[53985] = 41688, 	[53986] = 41730, 	[53987] = 41690, 	[53988] = 41721, 
-	[53990] = 41732, 	[53991] = 41687, 	[53992] = 41779, 	[53993] = 41722, 
-	[53994] = 41818, 	[53995] = 41795, 	[53996] = 41723, 	[53997] = 41698, 
-	[53998] = 41697, 	[54000] = 41738, 	[54001] = 41693, 	[54002] = 41699, 
-	[54003] = 41781, 	[54004] = 41782, 	[54005] = 41737, 	[54006] = 41694, 
-	[54008] = 41724, 	[54009] = 41696, 	[54010] = 41739, 	[54011] = 41692, 
-	[54012] = 41819, 	[54013] = 41736, 	[54014] = 41735, 	[54019] = 41793, 
-	[54023] = 41778, 	[55384] = 41705, 	[55387] = 41743, 	[55388] = 41744, 
-	[55389] = 41704, 	[55390] = 41786, 	[55392] = 41706, 	[55393] = 41742, 
-	[55395] = 41787, 	[55396] = 41708, 	[55397] = 41798, 	[55398] = 41799, 
-	[55400] = 41710, 	[55401] = 41797, 	[55403] = 41711, 	[55404] = 41709, 
-	[55405] = 41788, 	[55407] = 41707, 	[56049] = 42298, 	[56052] = 42301, 
-	[56053] = 42309, 	[56054] = 42299, 	[56055] = 42314, 	[56056] = 42302, 
-	[56074] = 42300, 	[56076] = 42303, 	[56077] = 42304, 	[56079] = 42305, 
-	[56081] = 42306, 	[56083] = 42307, 	[56084] = 42308, 	[56085] = 42310, 
-	[56086] = 42311, 	[56087] = 42312, 	[56088] = 42313, 	[56089] = 42315, 
-	[56496] = 42648, 	[56497] = 42649, 	[56498] = 42650, 	[56499] = 42651, 
-	[56500] = 42652, 	[56501] = 42653, 	[58147] = 43317, 	[58148] = 43318, 
-	[58149] = 43319, 	[58150] = 43320, 	[58492] = 43485, 	[58507] = 43497, 
-	[58954] = 43597,   [66556] = 46937, [66447] =  46917 , [66429] =  46899,
-	[66557] =  46938, [66430] =  46900, [66432] =  46902, [66433] =  46903,
- [66497] =  46924, [66561] =  46942, [66434] = 46904, [66498] =  46925, 
- [66499] =  46926, [66436] =  46906, [66500] =  46927, [66437] =  46907, 
- [66501] =  46928, [66565] =  46946, [66438] =  46908, [66502] = 46929,
- [66566] =  46947, [66439] =  46909, [66503] = 46930  , [66567] =  46948,
- [66440] = 46910, [66504] =  46931, [66441] =  46911, [66505] =  46932,
- [66569] =  46950, [66442] = 46912, [66506] = 46933, [66570] =  46951,
- [66443] =  46913, [66444] = 46914, [66572] = 46953, [66445] =  46915, 
- [66573] = 46956, [66446] =  46916, [66574] =  47007, [66575] = 47008,
- [66448] =  46918, [66576] =  47010, [66449] =  46919, [66577] =  47011, 
- [66450] = 46920, [66578] = 47012, [66451] =  46921, [66579] = 47015, 
- [66452] =  46922, [66580] =  47016, [66453] = 46923, [66581] =  47017,
- [66582] =  47018, [66583] = 47019, [66584] =  47020, [66586] =  47022, 
- [68253] =  49112, [66338] = 46897, [66571] =  46952, [66564] = 46945,
- [66562] =  46943, [66560] =  46941, [66558] =  46939, [66554] =  46935, 
- [66559] =  46940, [66585] =  47021, [66555] = 46936, [66587] =  47023, 
- [66431] =  46901, [66428] =  46898, [66435] = 46905, [66563] = 46944, 
- [66553] = 46934 , [66568] = 46949,
+	[20856] = 	25320, 	-- Vorlage: Schwere goldene Halskette des Kampfes
+	[20855] = 	25323, 	-- Vorlage: Tückischer Mondsteinring
+	[20854] = 	25339, 	-- Vorlage: Amulett des Mondes
+	[20970] = 	25610, 	-- Vorlage: Anhänger des Achatschilds
+	[20971] = 	25612, 	-- Vorlage: Schwerer Eisenschlagring
+	[20973] = 	25617, 	-- Vorlage: Citrinring der Loderflamme
+	[20974] = 	25618, 	-- Vorlage: Jadeanhänger der Zauberwucht
+	[20975] = 	25619, 	-- Vorlage: Das Jadeauge
+	[20976] = 	25622, 	-- Vorlage: Citrinanhänger der goldenen Heilung
+	[21940] = 	26873, 	-- Vorlage: Goldener Hase
+	[21941] = 	26875, 	-- Vorlage: Schwarzer Perlenpanther
+	[21942] = 	26878, 	-- Vorlage: Rubinkrone der Wiederherstellung
+	[21943] = 	26881, 	-- Vorlage: Echtsilberkrebs
+	[21944] = 	26882, 	-- Vorlage: Echtsilbereber
+	[21945] = 	26887, 	-- Vorlage: Der Aquamarinbeschützer
+	[21947] = 	26896, 	-- Vorlage: Edelsteinbesetztes Band
+	[21948] = 	26897, 	-- Vorlage: Opalhalskette des Einschlags
+	[21949] = 	26900, 	-- Vorlage: Rubinschlange
+	[21952] = 	26906, 	-- Vorlage: Smaragdkrone der Zerstörung
+	[21953] = 	26909, 	-- Vorlage: Smaragdeule
+	[21954] = 	26910, 	-- Vorlage: Ring der qualvollen Schatten
+	[21955] = 	26912, 	-- Vorlage: Schwarzer Diamantkrebs
+	[21956] = 	26914, 	-- Vorlage: Dunkeleisenskorpid
+	[21957] = 	26915, 	-- Vorlage: Halskette des Diamantturms
+	[23130] = 	28903, 	-- Vorlage: Tränenförmiger Blutgranat
+	[23131] = 	28905, 	-- Vorlage: Klobiger Blutgranat
+	[23133] = 	28906, 	-- Vorlage: Runenverzierter Blutgranat
+	[23134] = 	28907, 	-- Vorlage: Feingeschliffener Blutgranat
+	[23135] = 	28910, 	-- Vorlage: Gravierter Flammenspessarit
+	[23136] = 	28912, 	-- Vorlage: Glänzender Flammenspessarit
+	[23137] = 	28914, 	-- Vorlage: Glitzernder Flammenspessarit
+	[23138] = 	28915, 	-- Vorlage: Mächtiger Flammenspessarit
+	[23140] = 	28916, 	-- Vorlage: Strahlender Tiefenperidot
+	[23141] = 	28917, 	-- Vorlage: Gezackter Tiefenperidot
+	[23142] = 	28918, 	-- Vorlage: Robuster Tiefenperidot (Ehrenfeste)
+	[31359] = 	28918, 	-- Vorlage: Robuster Tiefenperidot (thrallmar)
+	[23143] = 	28924, 	-- Vorlage: Schillernder Tiefenperidot
+	[23144] = 	28925, 	-- Vorlage: Leuchtender Schattendraenit
+	[23145] = 	28927, 	-- Vorlage: Königlicher Schattendraenit
+	[23146] = 	28933, 	-- Vorlage: Unbeständiger Schattendraenit
+	[23147] = 	28936, 	-- Vorlage: Stattlicher Schattendraenit
+	[23148] = 	28938, 	-- Vorlage: Glänzender Golddraenit
+	[23149] = 	28944, 	-- Vorlage: Schimmernder Golddraenit
+	[23150] = 	28947, 	-- Vorlage: Kompakter Golddraenit
+	[23151] = 	28948, 	-- Vorlage: Massiver Golddraenit
+	[23152] = 	28950, 	-- Vorlage: Gediegener Azurmondstein
+	[23153] = 	28953, 	-- Vorlage: Funkelnder Azurmondstein
+	[23154] = 	28955, 	-- Vorlage: Stürmischer Azurmondstein
+	[23155] = 	28957, 	-- Vorlage: Irisierender Azurmondstein
+	[24158] = 	31053, 	-- Vorlage: Khoriumband der Schatten
+	[24159] = 	31054, 	-- Vorlage: Khoriumband des Frosts
+	[24160] = 	31055, 	-- Vorlage: Khoriuminfernoband
+	[24161] = 	31056, 	-- Vorlage: Khoriumband des Laubs
+	[24162] = 	31057, 	-- Vorlage: Arkanes Khoriumband
+	[24163] = 	31058, 	-- Vorlage: Schwerer Teufelsstahlring
+	[24164] = 	31060, 	-- Vorlage: Feiner Eterniumring
+	[24165] = 	31061, 	-- Vorlage: Eterniumband der Loderflamme
+	[24174] = 	31062, 	-- Vorlage: Anhänger der Eisflamme
+	[24175] = 	31063, 	-- Vorlage: Anhänger des Tauens
+	[24176] = 	31064, 	-- Vorlage: Anhänger des Erlöschens
+	[24177] = 	31065, 	-- Vorlage: Anhänger der Schattenneige
+	[24178] = 	31066, 	-- Vorlage: Anhänger der Nullrune
+	[24166] = 	31067, 	-- Vorlage: Dicke Teufelsstahlhalskette
+	[24167] = 	31068, 	-- Vorlage: Lebendiger Rubinanhänger
+	[24168] = 	31070, 	-- Vorlage: Geflochtene Eterniumkette
+	[24169] = 	31071, 	-- Vorlage: Auge der Nacht
+	[24170] = 	31072, 	-- Vorlage: Zärtliche Morgenröte
+	[24171] = 	31076, 	-- Vorlage: Kette der Nebeleule
+	[24172] = 	31077, 	-- Vorlage: Kronenreif der grünen Flamme
+	[24173] = 	31078, 	-- Vorlage: Reif der arkanen Macht
+	[24179] = 	31079, 	-- Vorlage: Teufelsstahleber
+	[24180] = 	31080, 	-- Vorlage: Dämmersteinkrebs (Ehrenfeste)
+	[31358] = 	31080, 	-- Vorlage: Dämmersteinkrebs (thrallmar)
+	[24181] = 	31081, 	-- Vorlage: Lebendige Rubinschlange
+	[24182] = 	31082, 	-- Vorlage: Talasiteule
+	[24183] = 	31083, 	-- Vorlage: Nachtaugenpanther
+	[24193] = 	31084, 	-- Vorlage: Klobiger lebendiger Rubin
+	[24194] = 	31085, 	-- Vorlage: Feingeschliffener lebendiger Rubin
+	[24195] = 	31087, 	-- Vorlage: Tränenförmiger lebendiger Rubin
+	[24196] = 	31088, 	-- Vorlage: Runenverzierter lebendiger Rubin (Worlddrop)
+	[35305] = 	31088, 	-- Vorlage: Runenverzierter lebendiger Rubin (kael)
+	[24192] = 	31089, 	-- Vorlage: Heller lebendiger Rubin (Worlddrop)
+	[35306] = 	31089, 	-- Vorlage: Heller lebendiger Rubin (kael)
+	[24197] = 	31090, 	-- Vorlage: Fragiler lebendiger Rubin
+	[24198] = 	31091, 	-- Vorlage: Scheinender lebendiger Rubin
+	[24199] = 	31092, 	-- Vorlage: Gediegener Stern der Elune (Worlddrop)
+	[35304] = 	31092, 	-- Vorlage: Gediegener Stern der Elune (kael)
+	[24201] = 	31094, 	-- Vorlage: Irisierender Stern der Elune
+	[24202] = 	31095, 	-- Vorlage: Stürmischer Stern der Elune
+	[24203] = 	31096, 	-- Vorlage: Glänzender Dämmerstein
+	[24204] = 	31097, 	-- Vorlage: Glatter Dämmerstein
+	[24205] = 	31098, 	-- Vorlage: Massiver Dämmerstein (Worlddrop)
+	[35307] = 	31098, 	-- Vorlage: Massiver Dämmerstein (Kael)
+	[24206] = 	31099, 	-- Vorlage: Schimmernder Dämmerstein
+	[24207] = 	31100, 	-- Vorlage: Kompakter Dämmerstein
+	[24208] = 	31101, 	-- Vorlage: Mystischer Dämmerstein
+	[24209] = 	31102, 	-- Vorlage: Stattliches Nachtauge
+	[24210] = 	31103, 	-- Vorlage: Unbeständiges Nachtauge
+	[24211] = 	31104, 	-- Vorlage: Leuchtendes Nachtauge
+	[24212] = 	31105, 	-- Vorlage: Königliches Nachtauge
+	[24213] = 	31106, 	-- Vorlage: Gravierter Edeltopas
+	[24214] = 	31107, 	-- Vorlage: Mächtiger Edeltopas
+	[24215] = 	31108, 	-- Vorlage: Glänzender Edeltopas
+	[24216] = 	31109, 	-- Vorlage: Glitzernder Edeltopas
+	[24217] = 	31110, 	-- Vorlage: Robuster Talasit
+	[24218] = 	31111, 	-- Vorlage: Strahlender Talasit
+	[24219] = 	31112, 	-- Vorlage: Schillernder Talasit
+	[24220] = 	31113, 	-- Vorlage: Gezackter Talasit
+	[24200] = 	31149, 	-- Vorlage: Funkelnder Stern der Elune
+	[25902] = 	32866, 	-- Vorlage: Mächtiger Erdsturmdiamant
+	[25903] = 	32867, 	-- Vorlage: Starker Erdsturmdiamant
+	[25905] = 	32868, 	-- Vorlage: Harter Erdsturmdiamant
+	[25906] = 	32869, 	-- Vorlage: Brutaler Erdsturmdiamant
+	[25904] = 	32870, 	-- Vorlage: Bemerkenswerter Erdsturmdiamant
+	[25907] = 	32871, 	-- Vorlage: Zerstörerischer Himmelsfeuerdiamant
+	[25909] = 	32872, 	-- Vorlage: Mystischer Himmelsfeuerdiamant
+	[25908] = 	32873, 	-- Vorlage: Flüchtiger Himmelsfeuerdiamant
+	[25910] = 	32874, 	-- Vorlage: Rätselhafter Himmelsfeuerdiamant
+	[28291] = 	34069, 	-- Vorlage: Glatter Golddraenit
+	[28596] = 	34590, 	-- Vorlage: Heller Blutgranat
+	[30826] = 	37855, 	-- Vorlage: Ring des Arkanschutzes
+	[31401] = 	38503, 	-- Vorlage: Das gefrorene Auge
+	[31402] = 	38504, 	-- Vorlage: Der Schutz der Natur
+	[31870] = 	39451, 	-- Vorlage: Großer Golddraenit
+	[31875] = 	39452, 	-- Vorlage: Großer Dämmerstein
+	[31871] = 	39455, 	-- Vorlage: Ausbalancierter Schattendraenit
+	[31872] = 	39458, 	-- Vorlage: Energieerfüllter Schattendraenit
+	[31877] = 	39462, 	-- Vorlage: Energieerfülltes Nachtauge
+	[31876] = 	39463, 	-- Vorlage: Ausbalanciertes Nachtauge
+	[31873] = 	39466, 	-- Vorlage: Verschleierter Flammenspessarit
+	[31874] = 	39467, 	-- Vorlage: Tückischer Flammenspessarit
+	[31878] = 	39470, 	-- Vorlage: Verschleierter Edeltopas
+	[31879] = 	39471, 	-- Vorlage: Tückischer Edeltopas
+	[32274] = 	39705, 	-- Vorlage: Klobiger Purpurspinell (Fraktion: Die Wächter der Sande)
+	[35244] = 	39705, 	-- Vorlage: Klobiger Purpurspinell (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32277] = 	39706, 	-- Vorlage: Feingeschliffener Purpurspinell (Fraktion: Die Wächter der Sande)
+	[35246] = 	39706, 	-- Vorlage: Feingeschliffener Purpurspinell (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32281] = 	39710, 	-- Vorlage: Tränenförmiger Purpurspinell (Fraktion: Die Wächter der Sande)
+	[35250] = 	39710, 	-- Vorlage: Tränenförmiger Purpurspinell (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32282] = 	39711, 	-- Vorlage: Runenverzierter Purpurspinell (Fraktion: Die Wächter der Sande)
+	[35248] = 	39711, 	-- Vorlage: Runenverzierter Purpurspinell (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32283] = 	39712, 	-- Vorlage: Heller Purpurspinell (Fraktion: Die Wächter der Sande)
+	[35245] = 	39712, 	-- Vorlage: Heller Purpurspinell (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32284] = 	39713, 	-- Vorlage: Fragiler Purpurspinell (Fraktion: Die Wächter der Sande)
+	[35249] = 	39713, 	-- Vorlage: Fragiler Purpurspinell (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32285] = 	39714, 	-- Vorlage: Scheinender Purpurspinell (Drop: Hyjalgipfel)
+	[35247] = 	39714, 	-- Vorlage: Scheinender Purpurspinell (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32286] = 	39715, 	-- Vorlage: Gediegener Engelssaphir (Fraktion: Die Wächter der Sande)
+	[35263] = 	39715, 	-- Vorlage: Gediegener Engelssaphir (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32287] = 	39716, 	-- Vorlage: Funkelnder Engelssaphir (Fraktion: Die Wächter der Sande)
+	[35264] = 	39716, 	-- Vorlage: Funkelnder Engelssaphir (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32288] = 	39717, 	-- Vorlage: Irisierender Engelssaphir (Fraktion: Die Wächter der Sande)
+	[35262] = 	39717, 	-- Vorlage: Irisierender Engelssaphir (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32289] = 	39718, 	-- Vorlage: Stürmischer Engelssaphir (Drop: Hyjalgipfel)
+	[35265] = 	39718, 	-- Vorlage: Stürmischer Engelssaphir (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32290] = 	39719, 	-- Vorlage: Glänzendes Löwenauge (Fraktion: Die Wächter der Sande)
+	[35255] = 	39719, 	-- Vorlage: Glänzendes Löwenauge (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32291] = 	39720, 	-- Vorlage: Glattes Löwenauge (Fraktion: Die Wächter der Sande)
+	[35260] = 	39720, 	-- Vorlage: Glattes Löwenauge (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32292] = 	39721, 	-- Vorlage: Massives Löwenauge (Fraktion: Die Wächter der Sande)
+	[35259] = 	39721, 	-- Vorlage: Massives Löwenauge (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32293] = 	39722, 	-- Vorlage: Schimmerndes Löwenauge (Fraktion: Die Wächter der Sande)
+	[35256] = 	39722, 	-- Vorlage: Schimmerndes Löwenauge (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32294] = 	39723, 	-- Vorlage: Kompaktes Löwenauge (Fraktion: Die Wächter der Sande)
+	[35261] = 	39723, 	-- Vorlage: Kompaktes Löwenauge (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32295] = 	39724, 	-- Vorlage: Mystisches Löwenauge (Drop: Hyjalgipfel)
+	[35258] = 	39724, 	-- Vorlage: Mystisches Löwenauge (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32296] = 	39725, 	-- Vorlage: Großes Löwenauge (Drop: Hyjalgipfel)
+	[35257] = 	39725, 	-- Vorlage: Großes Löwenauge (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32297] = 	39727, 	-- Vorlage: Stattlicher Schattensangamethyst (Drop: Hyjalgipfel)
+	[35243] = 	39727, 	-- Vorlage: Stattlicher Schattensangamethyst (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32298] = 	39728, 	-- Vorlage: Unbeständiger Schattensangamethyst (Drop: Hyjalgipfel)
+	[35242] = 	39728, 	-- Vorlage: Unbeständiger Schattensangamethyst (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32299] = 	39729, 	-- Vorlage: Ausbalancierter Schattensangamethyst (Fraktion: Die Wächter der Sande)
+	[35238] = 	39729, 	-- Vorlage: Ausbalancierter Schattensangamethyst (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32300] = 	39730, 	-- Vorlage: Energieerfüllter Schattensangamethyst (Fraktion: Die Wächter der Sande)
+	[35240] = 	39730, 	-- Vorlage: Energieerfüllter Schattensangamethyst (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32301] = 	39731, 	-- Vorlage: Leuchtender Schattensangamethyst (Fraktion: Die Wächter der Sande)
+	[35239] = 	39731, 	-- Vorlage: Leuchtender Schattensangamethyst (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32302] = 	39732, 	-- Vorlage: Königlicher Schattensangamethyst (Fraktion: Die Wächter der Sande)
+	[35241] = 	39732, 	-- Vorlage: Königlicher Schattensangamethyst (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32303] = 	39733, 	-- Vorlage: Gravierter Pyrostein (Drop: Hyjalgipfel)
+	[35267] = 	39733, 	-- Vorlage: Gravierter Pyrostein (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32304] = 	39734, 	-- Vorlage: Mächtiger Pyrostein (Fraktion: Die Wächter der Sande)
+	[35269] = 	39734, 	-- Vorlage: Mächtiger Pyrostein (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32305] = 	39735, 	-- Vorlage: Glänzender Pyrostein (Fraktion: Die Wächter der Sande)
+	[35268] = 	39735, 	-- Vorlage: Glänzender Pyrostein (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32306] = 	39736, 	-- Vorlage: Glitzernder Pyrostein (Fraktion: Die Wächter der Sande)
+	[35266] = 	39736, 	-- Vorlage: Glitzernder Pyrostein (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32307] = 	39737, 	-- Vorlage: Verschleierter Pyrostein (Drop: Hyjalgipfel)
+	[35270] = 	39737, 	-- Vorlage: Verschleierter Pyrostein (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32308] = 	39738, 	-- Vorlage: Tückischer Pyrostein (Fraktion: Die Wächter der Sande)
+	[35271] = 	39738, 	-- Vorlage: Tückischer Pyrostein (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32309] = 	39739, 	-- Vorlage: Robuster Gischtsmaragd (Fraktion: Die Wächter der Sande)
+	[35252] = 	39739, 	-- Vorlage: Robuster Gischtsmaragd (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32310] = 	39740, 	-- Vorlage: Strahlender Gischtsmaragd (Fraktion: Die Wächter der Sande)
+	[35254] = 	39740, 	-- Vorlage: Strahlender Gischtsmaragd (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32311] = 	39741, 	-- Vorlage: Schillernder Gischtsmaragd (Fraktion: Die Wächter der Sande)
+	[35251] = 	39741, 	-- Vorlage: Schillernder Gischtsmaragd (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32312] = 	39742, 	-- Vorlage: Gezackter Gischtsmaragd (Fraktion: Die Wächter der Sande)
+	[35253] = 	39742, 	-- Vorlage: Gezackter Gischtsmaragd (Fraktion: Offensive der Zerschmetterten Sonne)
+	[32412] = 	39961, 	-- Vorlage: Unerbittlicher Erdsturmdiamant (??)
+	[33622] = 	39961, 	-- Vorlage: Unerbittlicher Erdsturmdiamant
+	[32411] = 	39963, 	-- Vorlage: Donnernder Himmelsfeuerdiamant
+	[33305] = 	42558, 	-- Vorlage: Don Julios Herz
+	[33155] = 	42588, 	-- Vorlage: Kailees Rose
+	[33156] = 	42589, 	-- Vorlage: Blutrote Sonne
+	[33157] = 	42590, 	-- Vorlage: Sternschnuppe
+	[33158] = 	42591, 	-- Vorlage: Stein der Klingen
+	[33159] = 	42592, 	-- Vorlage: Bernsteinblut
+	[33160] = 	42593, 	-- Vorlage: Facette der Ewigkeit
+	[33783] = 	43493, 	-- Vorlage: Beständiger Talasit
+	[34221] = 	44794, 	-- Vorlage: Wechselhafter Himmelsfeuerdiamant (??)
+	[34689] = 	44794, 	-- Vorlage: Wechselhafter Himmelsfeuerdiamant
+	[35198] = 	46122, 	-- Vorlage: Ring der geschmiedeten Macht
+	[35199] = 	46123, 	-- Vorlage: Ring des fließenden Lebens
+	[35200] = 	46124, 	-- Vorlage: Band aus Hartkhorium
+	[35201] = 	46125, 	-- Vorlage: Anhänger aus Sonnenfeuer
+	[35202] = 	46126, 	-- Vorlage: Amulett des fließenden Lebens
+	[35203] = 	46127, 	-- Vorlage: Halsreif aus Hartkhorium
+	[35322] = 	46403, 	-- Vorlage: Spiegelnder Dämmerstein
+	[35323] = 	46404, 	-- Vorlage: Tollkühner Edeltopas
+	[35325] = 	46405, 	-- Vorlage: Kraftvoller Talasit
+	[35502] = 	46597, 	-- Vorlage: Ewiger Erdsturmdiamant
+	[35505] = 	46601, 	-- Vorlage: Glimmender Himmelsfeuerdiamant
+	[35695] = 	46775, 	-- Vorlage: Figur - Himmelsschildkröte
+	[35696] = 	46776, 	-- Vorlage: Figur - Khoriumeber
+	[35697] = 	46777, 	-- Vorlage: Figur - Scharlachrote Schlange
+	[35698] = 	46778, 	-- Vorlage: Figur - Schattensangpanther
+	[35699] = 	46779, 	-- Vorlage: Figur - Gischtalbatross
+	[35708] = 	46803, 	-- Vorlage: Majestätisches Nachtauge
+	[35765] = 	47053, 	-- Vorlage: Kraftvoller Gischtsmaragd (Fraktion: Die Wächter der Sande)
+	[35769] = 	47053, 	-- Vorlage: Kraftvoller Gischtsmaragd (Fraktion: Offensive der Zerschmetterten Sonne)
+	[35764] = 	47054, 	-- Vorlage: Beständiger Gischtsmaragd (Fraktion: Die Wächter der Sande)
+	[35766] = 	47054, 	-- Vorlage: Beständiger Gischtsmaragd (Fraktion: Offensive der Zerschmetterten Sonne)
+	[35762] = 	47055, 	-- Vorlage: Tollkühner Pyrostein (Fraktion: Die Wächter der Sande)
+	[35767] = 	47055, 	-- Vorlage: Tollkühner Pyrostein (Fraktion: Offensive der Zerschmetterten Sonne)
+	[35763] = 	47056, 	-- Vorlage: Spiegelndes Löwenauge (Fraktion: Die Wächter der Sande)
+	[35768] = 	47056, 	-- Vorlage: Spiegelndes Löwenauge (Fraktion: Offensive der Zerschmetterten Sonne)
+	[37504] = 	48789, 	-- Vorlage: Geläuterter Schattensangamethyst (Fraktion: Offensive der Zerschmetterten Sonne)
+	[41576] = 	53830, 	-- Vorlage: Klobiger Scharlachrubin
+	[41559] = 	53857, 	-- Vorlage: Mystischer Sonnenkristall
+	[41575] = 	53865, 	-- Vorlage: Geheimnisvoller Schattenkristall
+	[41574] = 	53869, 	-- Vorlage: Schattenkristall des Verteidigers
+	[41566] = 	53875, 	-- Vorlage: Prunkvoller Riesencitrin
+	[41562] = 	53877, 	-- Vorlage: Tödlicher Riesencitrin
+	[41565] = 	53879, 	-- Vorlage: Transparenter Riesencitrin
+	[41563] = 	53884, 	-- Vorlage: Solider Riesencitrin
+	[41561] = 	53885, 	-- Vorlage: Tollkühner Riesencitrin
+	[41564] = 	53888, 	-- Vorlage: Machterfüllter Riesencitrin
+	[41567] = 	53917, 	-- Vorlage: Klarer Nephrit
+	[41572] = 	53919, 	-- Vorlage: Beständiger Nephrit
+	[41568] = 	53921, 	-- Vorlage: Nephrit des Sehers
+	[41571] = 	53924, 	-- Vorlage: Trüber Nephrit
+	[41573] = 	53929, 	-- Vorlage: Opaker Nephrit
+	[41570] = 	53932, 	-- Vorlage: Spröder Nephrit
+	[41569] = 	53933, 	-- Vorlage: Zerschmetterter Nephrit
+	[41560] = 	53943, 	-- Vorlage: Stürmischer Chalzedon
+	[41577] = 	53945, 	-- Vorlage: Feingeschliffener Scharlachrubin
+	[41718] = 	53946, 	-- Vorlage: Runenbeschriebener Scharlachrubin
+	[41719] = 	53948, 	-- Vorlage: Fragiler Scharlachrubin
+	[41578] = 	53949, 	-- Vorlage: Scheinender Scharlachrubin
+	[41817] = 	53950, 	-- Vorlage: Frakturierter Scharlachrubin
+	[41790] = 	53951, 	-- Vorlage: Präziser Scharlachrubin
+	[42138] = 	53952, 	-- Vorlage: Gediegener Himmelssaphir
+	[41581] = 	53954, 	-- Vorlage: Irisierender Himmelssaphir
+	[41728] = 	53955, 	-- Vorlage: Stürmischer Himmelssaphir
+	[41720] = 	53957, 	-- Vorlage: Glatter Herbstglimmer
+	[41580] = 	53958, 	-- Vorlage: Massiver Herbstglimmer
+	[41791] = 	53959, 	-- Vorlage: Kompakter Herbstglimmer
+	[41727] = 	53960, 	-- Vorlage: Mystischer Herbstglimmer
+	[41579] = 	53961, 	-- Vorlage: Spiegelnder Herbstglimmer
+	[41784] = 	53962, 	-- Vorlage: Stattlicher Zwielichtopal
+	[41747] = 	53963, 	-- Vorlage: Unbeständiger Zwielichtopal
+	[41785] = 	53964, 	-- Vorlage: Zarter Zwielichtopal
+	[41725] = 	53965, 	-- Vorlage: Leuchtender Zwielichtopal
+	[41783] = 	53966, 	-- Vorlage: Geläuterter Zwielichtopal
+	[41701] = 	53967, 	-- Vorlage: Königlicher Zwielichtopal
+	[41740] = 	53968, 	-- Vorlage: Geheimnisvoller Zwielichtopal
+	[41796] = 	53970, 	-- Vorlage: Energieerfüllter Zwielichtopal
+	[41703] = 	53971, 	-- Vorlage: Majestätischer Zwielichtopal
+	[41820] = 	53972, 	-- Vorlage: Zwielichtopal des Verteidigers
+	[41702] = 	53973, 	-- Vorlage: Imposanter Zwielichtopal
+	[41726] = 	53974, 	-- Vorlage: Zwielichtopal des Wächters
+	[41789] = 	53975, 	-- Vorlage: Gravierter Monarchentopas
+	[41777] = 	53976, 	-- Vorlage: Geätzter Monarchentopas
+	[41780] = 	53977, 	-- Vorlage: Monarchentopas des Champions
+	[41734] = 	53978, 	-- Vorlage: Prunkvoller Monarchentopas
+	[41794] = 	53979, 	-- Vorlage: Tödlicher Monarchentopas
+	[41582] = 	53980, 	-- Vorlage: Glitzernder Monarchentopas
+	[41733] = 	53981, 	-- Vorlage: Transparenter Monarchentopas
+	[41792] = 	53982, 	-- Vorlage: Gewandter Monarchentopas
+	[41689] = 	53983, 	-- Vorlage: Glänzender Monarchentopas
+	[41686] = 	53984, 	-- Vorlage: Mächtiger Monarchentopas
+	[41688] = 	53985, 	-- Vorlage: Verschleierter Monarchentopas
+	[41730] = 	53986, 	-- Vorlage: Solider Monarchentopas
+	[41690] = 	53987, 	-- Vorlage: Tollkühner Monarchentopas
+	[41721] = 	53988, 	-- Vorlage: Tückischer Monarchentopas
+	[41732] = 	53990, 	-- Vorlage: Machterfüllter Monarchentopas
+	[41687] = 	53991, 	-- Vorlage: Reiner Monarchentopas
+	[41779] = 	53992, 	-- Vorlage: Bruchfester Monarchentopas
+	[41722] = 	53993, 	-- Vorlage: Gleißender Monarchentopas
+	[41818] = 	53994, 	-- Vorlage: Akkurater Monarchentopas
+	[41795] = 	53995, 	-- Vorlage: Zeitloser Waldsmaragd
+	[41723] = 	53996, 	-- Vorlage: Gezackter Waldsmaragd
+	[41698] = 	53997, 	-- Vorlage: Klarer Waldsmaragd
+	[41697] = 	53998, 	-- Vorlage: Robuster Waldsmaragd
+	[41738] = 	54000, 	-- Vorlage: Beständiger Waldsmaragd
+	[41693] = 	54001, 	-- Vorlage: Kraftvoller Waldsmaragd
+	[41699] = 	54002, 	-- Vorlage: Waldsmaragd des Sehers
+	[41781] = 	54003, 	-- Vorlage: Nebliger Waldsmaragd
+	[41782] = 	54004, 	-- Vorlage: Feuriger Waldsmaragd
+	[41737] = 	54005, 	-- Vorlage: Trüber Waldsmaragd
+	[41694] = 	54006, 	-- Vorlage: Aufwendiger Waldsmaragd
+	[41724] = 	54008, 	-- Vorlage: Gesplitterter Waldsmaragd
+	[41696] = 	54009, 	-- Vorlage: Flackernder Waldsmaragd
+	[41739] = 	54010, 	-- Vorlage: Opaker Waldsmaragd
+	[41692] = 	54011, 	-- Vorlage: Geladener Waldsmaragd
+	[41819] = 	54012, 	-- Vorlage: Strahlender Waldsmaragd
+	[41736] = 	54013, 	-- Vorlage: Spröder Waldsmaragd
+	[41735] = 	54014, 	-- Vorlage: Zerschmetterter Waldsmaragd
+	[41793] = 	54019, 	-- Vorlage: Wilder Monarchentopas
+	[41778] = 	54023, 	-- Vorlage: Resoluter Monarchentopas
+	[41414] = 	55384, 	-- Vorlage: Glühender Polarlichtdiamant (??)
+	[41705] = 	55384, 	-- Vorlage: Glühender Polarlichtdiamant
+	[41415] = 	55386, 	-- Vorlage: Nimmermüder Polarlichtdiamant (??)
+	[41416] = 	55387, 	-- Vorlage: Einsamer Polarlichtdiamant (??)
+	[41743] = 	55387, 	-- Vorlage: Einsamer Polarlichtdiamant
+	[41417] = 	55388, 	-- Vorlage: Apathischer Polarlichtdiamant (??)
+	[41744] = 	55388, 	-- Vorlage: Apathischer Polarlichtdiamant
+	[41418] = 	55389, 	-- Vorlage: Chaotischer Polarlichtdiamant (??)
+	[41704] = 	55389, 	-- Vorlage: Chaotischer Polarlichtdiamant
+	[41419] = 	55390, 	-- Vorlage: Zerstörerischer Polarlichtdiamant (??)
+	[41786] = 	55390, 	-- Vorlage: Zerstörerischer Polarlichtdiamant
+	[41420] = 	55392, 	-- Vorlage: Glimmender Polarlichtdiamant (??)
+	[41706] = 	55392, 	-- Vorlage: Glimmender Polarlichtdiamant
+	[41421] = 	55393, 	-- Vorlage: Rätselhafter Polarlichtdiamant (??)
+	[41742] = 	55393, 	-- Vorlage: Rätselhafter Polarlichtdiamant
+	[41422] = 	55394, 	-- Vorlage: Flüchtiger Polarlichtdiamant (??)
+	[41423] = 	55395, 	-- Vorlage: Donnernder Polarlichtdiamant (??)
+	[41787] = 	55395, 	-- Vorlage: Donnernder Polarlichtdiamant
+	[41403] = 	55396, 	-- Vorlage: Bemerkenswerter Erdringdiamant (??)
+	[41708] = 	55396, 	-- Vorlage: Bemerkenswerter Erdringdiamant
+	[41404] = 	55397, 	-- Vorlage: Stärkender Erdringdiamant (??)
+	[41798] = 	55397, 	-- Vorlage: Umschließender Erdringdiamant
+	[41405] = 	55398, 	-- Vorlage: Ewiger Erdringdiamant (??)
+	[41799] = 	55398, 	-- Vorlage: Ewiger Erdringdiamant
+	[41406] = 	55399, 	-- Vorlage: Mächtiger Erdringdiamant (??)
+	[41407] = 	55400, 	-- Vorlage: Unerbittlicher Erdringdiamant (??)
+	[41710] = 	55400, 	-- Vorlage: Unerbittlicher Erdringdiamant
+	[41408] = 	55401, 	-- Vorlage: Strenger Erdringdiamant (??)
+	[41797] = 	55401, 	-- Vorlage: Strenger Erdringdiamant
+	[41409] = 	55402, 	-- Vorlage: Hartnäckiger Erdringdiamant (??)
+	[41410] = 	55403, 	-- Vorlage: Energischer Erdringdiamant (??)
+	[41711] = 	55403, 	-- Vorlage: Energischer Erdringdiamant
+	[41411] = 	55404, 	-- Vorlage: Kräftigender Erdringdiamant (??)
+	[41709] = 	55404, 	-- Vorlage: Kräftigender Erdringdiamant
+	[41412] = 	55405, 	-- Vorlage: Flirrender Erdringdiamant (??)
+	[41788] = 	55405, 	-- Vorlage: Flirrender Erdringdiamant
+	[41413] = 	55407, 	-- Vorlage: Belebender Polarlichtdiamant (??)
+	[41707] = 	55407, 	-- Vorlage: Belebender Polarlichtdiamant
+	[42298] = 	56049, 	-- Vorlage: Klobiges Drachenauge
+	[42301] = 	56052, 	-- Vorlage: Feingeschliffenes Drachenauge
+	[42309] = 	56053, 	-- Vorlage: Runenbeschriebenes Drachenauge
+	[42299] = 	56054, 	-- Vorlage: Helles Drachenauge
+	[42314] = 	56055, 	-- Vorlage: Fragiles Drachenauge
+	[42302] = 	56056, 	-- Vorlage: Scheinendes Drachenauge
+	[42300] = 	56074, 	-- Vorlage: Glänzendes Drachenauge
+	[42303] = 	56076, 	-- Vorlage: Frakturiertes Drachenauge
+	[42304] = 	56077, 	-- Vorlage: Irisierendes Drachenauge
+	[42305] = 	56079, 	-- Vorlage: Mystisches Drachenauge
+	[42306] = 	56081, 	-- Vorlage: Präzises Drachenauge
+	[42307] = 	56083, 	-- Vorlage: Spiegelndes Drachenauge
+	[42308] = 	56084, 	-- Vorlage: Massives Drachenauge
+	[42310] = 	56085, 	-- Vorlage: Glattes Drachenauge
+	[42311] = 	56086, 	-- Vorlage: Gediegenes Drachenauge
+	[42312] = 	56087, 	-- Vorlage: Funkelndes Drachenauge
+	[42313] = 	56088, 	-- Vorlage: Stürmisches Drachenauge
+	[42315] = 	56089, 	-- Vorlage: Kompaktes Drachenauge
+	[42648] = 	56496, 	-- Vorlage: Titanband des Einschlags
+	[42649] = 	56497, 	-- Vorlage: Titanring des Erdenwächters
+	[42650] = 	56498, 	-- Vorlage: Titanring des Zauberschocks
+	[42651] = 	56499, 	-- Vorlage: Titanhalsreif des Einschlags
+	[42652] = 	56500, 	-- Vorlage: Titankette des Erdenwächters
+	[42653] = 	56501, 	-- Vorlage: Titanhalskette des Zauberschocks
+	[43317] = 	58147, 	-- Vorlage: Ring der irdenen Macht
+	[43318] = 	58148, 	-- Vorlage: Ring des scharlachroten Schattens
+	[43319] = 	58149, 	-- Vorlage: Windfeuerband
+	[43320] = 	58150, 	-- Vorlage: Ring der nordischen Tränen
+	[43485] = 	58492, 	-- Vorlage: Wilder Titanring
+	[43497] = 	58507, 	-- Vorlage: Wildes Titanband
+	[43597] = 	58954, 	-- Vorlage: Titanring der Frostwache
+	[46897] = 	66338, 	-- Vorlage: Robustes Auge von Zul
+	[46898] = 	66428, 	-- Vorlage: Beständiges Auge von Zul
+	[46899] = 	66429, 	-- Vorlage: Klares Auge von Zul
+	[46900] = 	66430, 	-- Vorlage: Schillerndes Auge von Zul
+	[46901] = 	66431, 	-- Vorlage: Gezacktes Auge von Zul
+	[46902] = 	66432, 	-- Vorlage: Zeitloses Auge von Zul
+	[46903] = 	66433, 	-- Vorlage: Seherauge von Zul
+	[46904] = 	66434, 	-- Vorlage: Kraftvolles Auge von Zul
+	[46905] = 	66435, 	-- Vorlage: Nebliges Auge von Zul
+	[46906] = 	66436, 	-- Vorlage: Gesplittertes Auge von Zul
+	[46907] = 	66437, 	-- Vorlage: Feuriges Auge von Zul
+	[46908] = 	66438, 	-- Vorlage: Sprödes Auge von Zul
+	[46909] = 	66439, 	-- Vorlage: Flackerndes Auge von Zul
+	[46910] = 	66440, 	-- Vorlage: Aufwendiges Auge von Zul
+	[46911] = 	66441, 	-- Vorlage: Strahlendes Auge von Zul
+	[46912] = 	66442, 	-- Vorlage: Geladenes Auge von Zul
+	[46913] = 	66443, 	-- Vorlage: Zerschmettertes Auge von Zul
+	[46914] = 	66444, 	-- Vorlage: Opakes Auge von Zul
+	[46915] = 	66445, 	-- Vorlage: Trübes Auge von Zul
+	[46916] = 	66446, 	-- Vorlage: Runenbeschriebener Kardinalsrubin
+	[46917] = 	66447, 	-- Vorlage: Klobiger Kardinalsrubin
+	[46918] = 	66448, 	-- Vorlage: Feingeschliffener Kardinalsrubin
+	[46919] = 	66449, 	-- Vorlage: Heller Kardinalsrubin
+	[46920] = 	66450, 	-- Vorlage: Präziser Kardinalsrubin
+	[46921] = 	66451, 	-- Vorlage: Frakturierter Kardinalsrubin
+	[46922] = 	66452, 	-- Vorlage: Fragiler Kardinalsrubin
+	[46923] = 	66453, 	-- Vorlage: Scheinender Kardinalsrubin
+	[46924] = 	66497, 	-- Vorlage: Gediegener Fürstenzirkon
+	[46925] = 	66498, 	-- Vorlage: Funkelnder Fürstenzirkon
+	[46926] = 	66499, 	-- Vorlage: Stürmischer Fürstenzirkon
+	[46927] = 	66500, 	-- Vorlage: Irisierender Fürstenzirkon
+	[46928] = 	66501, 	-- Vorlage: Massiver Königsbernstein
+	[46929] = 	66502, 	-- Vorlage: Glatter Königsbernstein
+	[46930] = 	66503, 	-- Vorlage: Glänzender Königsbernstein
+	[46931] = 	66504, 	-- Vorlage: Kompakter Königsbernstein
+	[46932] = 	66505, 	-- Vorlage: Mystischer Königsbernstein
+	[46933] = 	66506, 	-- Vorlage: Spiegelnder Königsbernstein
+	[46934] = 	66553, 	-- Vorlage: Ausbalancierter Schreckensstein
+	[46935] = 	66554, 	-- Vorlage: Stattlicher Schreckensstein
+	[46936] = 	66555, 	-- Vorlage: Leuchtender Schreckensstein
+	[46937] = 	66556, 	-- Vorlage: Geläuterter Schreckensstein
+	[46938] = 	66557, 	-- Vorlage: Unbeständiger Schreckensstein
+	[46939] = 	66558, 	-- Vorlage: Königlicher Schreckensstein
+	[46940] = 	66559, 	-- Vorlage: Majestätischer Schreckensstein
+	[46941] = 	66560, 	-- Vorlage: Schreckensstein des Verteidigers
+	[46942] = 	66561, 	-- Vorlage: Schreckensstein des Wächters
+	[46943] = 	66562, 	-- Vorlage: Geheimnisvoller Schreckensstein
+	[46944] = 	66563, 	-- Vorlage: Imposanter Schreckensstein
+	[46945] = 	66564, 	-- Vorlage: Energieerfüllter Schreckensstein
+	[46946] = 	66565, 	-- Vorlage: Zarter Schreckensstein
+	[46947] = 	66566, 	-- Vorlage: Glänzender Ametrin
+	[46948] = 	66567, 	-- Vorlage: Gravierter Ametrin
+	[46949] = 	66568, 	-- Vorlage: Tödlicher Ametrin
+	[46950] = 	66569, 	-- Vorlage: Mächtiger Ametrin
+	[46951] = 	66570, 	-- Vorlage: Verschleierter Ametrin
+	[46952] = 	66571, 	-- Vorlage: Solider Ametrin
+	[46953] = 	66572, 	-- Vorlage: Geätzter Ametrin
+	[46956] = 	66573, 	-- Vorlage: Makelloser Ametrin
+	[47007] = 	66574, 	-- Vorlage: Tollkühner Ametrin
+	[47008] = 	66575, 	-- Vorlage: Glitzernder Ametrin
+	[47010] = 	66576, 	-- Vorlage: Akkurater Ametrin
+	[47011] = 	66577, 	-- Vorlage: Tückischer Ametrin
+	[47012] = 	66578, 	-- Vorlage: Gleißender Ametrin
+	[47015] = 	66579, 	-- Vorlage: Ametrin des Champions
+	[47016] = 	66580, 	-- Vorlage: Machterfüllter Ametrin
+	[47017] = 	66581, 	-- Vorlage: Bruchfester Ametrin
+	[47018] = 	66582, 	-- Vorlage: Prunkvoller Ametrin
+	[47019] = 	66583, 	-- Vorlage: Wilder Ametrin
+	[47020] = 	66584, 	-- Vorlage: Gewandter Ametrin
+	[47021] = 	66585, 	-- Vorlage: Transparenter Ametrin
+	[47022] = 	66586, 	-- Vorlage: Resoluter Ametrin
+	[47023] = 	66587, 	-- Vorlage: Reiner Ametrin
+	[49112] = 	68253, 	-- Vorlage: Alptraumträne
 
 	-------------------------------------------------------------------------------
 	--Leatherworking
 	-------------------------------------------------------------------------------
-	[2158] = 2406, 		[2163] = 2407, 		[2164] = 2408, 		[2169] = 2409, 
-	[3762] = 4293, 		[3765] = 7360, 		[3767] = 4294, 		[3769] = 4296, 
-	[3771] = 4297, 		[3772] = 7613, 		[3773] = 4299, 		[3775] = 4298, 
-	[3777] = 4300, 		[3778] = 14635, 	[3779] = 4301, 		[4096] = 13287, 
-	[4097] = 13288, 	[5244] = 5083, 		[6702] = 5786, 		[6703] = 5787, 
-	[6704] = 5788, 		[6705] = 5789, 		[7133] = 5972, 		[7149] = 5973, 	
-	[7153] = 5974, 		[7953] = 6474, 		[7954] = 6475, 		[7955] = 6476, 	
-	[8322] = 6710, 		[9064] = 7288, 		[9070] = 7289, 		[9072] = 7290, 	
-	[9146] = 7361, 		[9147] = 7362, 		[9148] = 7363, 		[9149] = 7364, 
-	[9195] = 7449, 		[9197] = 7450, 		[9202] = 7451, 		[9207] = 7452, 	
-	[9208] = 7453, 		[10490] = 8384, 	[10509] = 8385, 	[10516] = 8409, 	
-	[10520] = 8386, 	[10525] = 8395, 	[10529] = 8403, 	[10531] = 8387, 	
-	[10533] = 8397, 	[10542] = 8398, 	[10544] = 8404, 	[10546] = 8405, 
-	[10554] = 8399, 	[10560] = 8389, 	[10562] = 8390, 	[10564] = 8400, 	
-	[10566] = 8406, 	[10568] = 8401, 	[10570] = 8402, 	[10572] = 8407, 	
-	[10574] = 8408, 	[19048] = 15724, 	[19049] = 15725, 	[19050] = 15726, 
-	[19051] = 15727, 	[19052] = 15728, 	[19053] = 15729, 	[19054] = 15730, 
-	[19055] = 15731, 	[19059] = 15732, 	[19060] = 15733, 	[19061] = 15734, 
-	[19062] = 15735, 	[19063] = 15737, 	[19064] = 15738, 	[19065] = 15739, 
-	[19066] = 15740, 	[19067] = 15741, 	[19068] = 20253, 	[19070] = 15743, 
-	[19071] = 15744, 	[19072] = 15745, 	[19073] = 15746, 	[19074] = 15747, 
-	[19075] = 15748, 	[19076] = 15749, 	[19077] = 15751, 	[19078] = 15752, 
-	[19079] = 15753, 	[19080] = 20254, 	[19081] = 15755, 	[19082] = 15756, 
-	[19083] = 15757, 	[19084] = 15758, 	[19085] = 15759, 	[19086] = 15760, 
-	[19087] = 15761, 	[19088] = 15762, 	[19089] = 15763, 	[19090] = 15764, 
-	[19091] = 15765, 	[19092] = 15768, 	[19093] = 15769, 	[19094] = 15770, 
-	[19095] = 15771, 	[19097] = 15772, 	[19098] = 15773, 	[19100] = 15774, 
-	[19101] = 15775, 	[19102] = 15776, 	[19103] = 15777, 	[19104] = 15779, 
-	[19107] = 15781, 	[20853] = 17022, 	[20854] = 17023, 	[20855] = 17025, 
-	[21943] = 17722, 	[22711] = 18239, 	[22727] = 18252, 	[22921] = 18514, 
-	[22922] = 18515, 	[22923] = 18516, 	[22926] = 18517, 	[22927] = 18518, 
-	[22928] = 18519, 	[23190] = 18731, 	[23399] = 18949, 	[23703] = 19326, 
-	[23704] = 19327, 	[23705] = 19328, 	[23706] = 19329, 	[23707] = 19330, 
-	[23708] = 19331, 	[23709] = 19332, 	[23710] = 19333, 	[24121] = 19769, 
-	[24122] = 19770, 	[24123] = 19771, 	[24124] = 19772, 	[24125] = 19773, 
-	[24703] = 20382, 	[24846] = 20506, 	[24847] = 20507, 	[24848] = 20508, 
-	[24849] = 20509, 	[24850] = 20510, 	[24851] = 20511, 	[24940] = 20576, 
-	[26279] = 21548, 	[28472] = 22771, 	[28473] = 22770, 	[28474] = 22769, 
-	[32455] = 25720, 	[32457] = 25721, 	[32458] = 25722, 	[32461] = 25725, 
-	[32482] = 25726, 	[32485] = 25728, 	[32487] = 25729, 	[32488] = 25731, 
-	[32489] = 25730, 	[32490] = 25732, 	[32493] = 25733, 	[32494] = 25734, 
-	[32495] = 25735, 	[32496] = 25736, 	[32497] = 25737, 	[32498] = 29213, 
-	[32499] = 29214, 	[32500] = 29215, 	[32501] = 29217, 	[32502] = 29219, 
-	[32503] = 29218, 	[35520] = 29669, 	[35521] = 29672, 	[35522] = 29673, 
-	[35523] = 29674, 	[35524] = 29675, 	[35525] = 29677, 	[35526] = 29682, 
-	[35527] = 29684, 	[35528] = 29691, 	[35529] = 29689, 	[35530] = 30444, 
-	[35531] = 29693, 	[35532] = 29698, 	[35533] = 29700, 	[35534] = 29701, 
-	[35535] = 29702, 	[35536] = 29703, 	[35537] = 29704, 	[35538] = 29713, 
-	[35539] = 34175, 	[35543] = 29717, 	[35544] = 34173, 	[35549] = 31361, 
-	[35554] = 31362, 	[35555] = 29720, 	[35557] = 29721, 	[35558] = 29723, 
-	[35559] = 35302, 	[35560] = 29725, 	[35561] = 29726, 	[35562] = 35303, 
-	[35563] = 29728, 	[35564] = 29729, 	[35567] = 29730, 	[35568] = 35300, 
-	[35572] = 29732, 	[35573] = 35301, 	[35574] = 29734, 	[36349] = 30301, 
-	[36351] = 30302, 	[36352] = 30303, 	[36353] = 30304, 	[36355] = 30305, 
-	[36357] = 30306, 	[36358] = 30307, 	[36359] = 30308, 	[39997] = 32429, 
-	[40001] = 32431, 	[40002] = 32432, 	[40003] = 32433, 	[40004] = 32434, 
-	[40005] = 32435, 	[40006] = 32436, 	[41156] = 32744, 	[41157] = 35523, 
-	[41158] = 35527, 	[41160] = 35528, 	[41161] = 35517, 	[41162] = 35524, 
-	[41163] = 35520, 	[41164] = 35521, 	[42546] = 33124, 	[42731] = 33205, 
-	[44359] = 34200, 	[44768] = 34218, 	[44953] = 34262, 	[45117] = 34491, 
-	[46132] = 35546, 	[46133] = 35541, 	[46134] = 35214, 	[46135] = 35215, 
-	[46136] = 35216, 	[46137] = 35217, 	[46138] = 35218, 	[46139] = 35549, 
-	[50970] = 44509, 	[50971] = 44510, 	[52733] = 32430, 	[57683] = 43097, 
-	[57692] = 44559, 	[57694] = 44560, 	[57696] = 44561, 	[57699] = 44562, 
-	[57701] = 44563, 	[60645] = 44511, 	[60647] = 44512, 	[60697] = 44513, 
-	[60702] = 44514, 	[60703] = 44515, 	[60704] = 44516, 	[60705] = 44517, 
-	[60706] = 44518, 	[60711] = 44519, 	[60712] = 44520, 	[60715] = 44521, 
-	[60716] = 44522, 	[60718] = 44523, 	[60720] = 44524, 	[60721] = 44525, 
-	[60723] = 44526, 	[60725] = 44527, 	[60727] = 44528, 	[60728] = 44530, 
-	[60729] = 44531, 	[60730] = 44532, 	[60731] = 44533, 	[60732] = 44534, 
-	[60734] = 44535, 	[60735] = 44536, 	[60737] = 44537, 	[60743] = 44538, 
-	[60746] = 44539, 	[60747] = 44540, 	[60748] = 44541, 	[60749] = 44542, 
-	[60750] = 44543, 	[60751] = 44544, 	[60752] = 44545, 	[60754] = 44546, 
-	[60755] = 44547, 	[60756] = 44548, 	[60757] = 44549, 	[60758] = 44550, 
-	[60759] = 44551, 	[60760] = 44552, 	[60761] = 44553, 	[60996] = 44584, 
-	[60997] = 44585, 	[60998] = 44586, 	[60999] = 44587, 	[61000] = 44588, 
-	[61002] = 44589, 	[62176] = 44932, 	[62177] = 44933, 	[63194] = 45094, 
-	[63195] = 45095, 	[63196] = 45096, 	[63197] = 45097, 	[63198] = 45098, 
-	[63199] = 45099, 	[63200] = 45100, 	[63201] = 45101, 
+	[2406] = 	2158, 	-- Muster: Feine Lederstiefel 
+	[2407] = 	2163, 	-- Muster: Weißes Lederwams 
+	[2408] = 	2164, 	-- Muster: Feine Lederhandschuhe 
+	[2409] = 	2169, 	-- Muster: Dunkle Ledertunika 
+	[4293] = 	3762, 	-- Muster: Lederweste des Hügelwächters 
+	[7360] = 	3765, 	-- Muster: Dunkle Lederhandschuhe 
+	[4294] = 	3767, 	-- Muster: Gürtel des Hügelwächters 
+	[4296] = 	3769, 	-- Muster: Dunkle Lederschultern 
+	[4297] = 	3771, 	-- Muster: Barbarische Handschuhe 
+	[7613] = 	3772, 	-- Muster: Grüne Lederrüstung 
+	[4299] = 	3773, 	-- Muster: Wächterrüstung 
+	[4298] = 	3775, 	-- Muster: Wächtergürtel 
+	[4300] = 	3777, 	-- Muster: Wächterlederarmschienen 
+	[14635] = 	3778, 	-- Muster: Edelsteinbesetzter Ledergürtel 
+	[4301] = 	3779, 	-- Muster: Barbarischer Gürtel 
+	[13287] = 	4096, 	-- Muster: Raptorbalgharnisch 
+	[13288] = 	4097, 	-- Muster: Raptorbalggürtel 
+	[5083] = 	5244, 	-- Muster: Kodobalgtasche 
+	[5786] = 	6702, 	-- Muster: Murlocschuppengürtel 
+	[5787] = 	6703, 	-- Muster: Murlocschuppenbrustplatte 
+	[5788] = 	6704, 	-- Muster: Dicke Murlocrüstung 
+	[5789] = 	6705, 	-- Muster: Murlocschuppenarmschienen 
+	[5972] = 	7133, 	-- Muster: Feine Lederhose 
+	[5973] = 	7149, 	-- Muster: Barbarische Gamaschen 
+	[5974] = 	7153, 	-- Muster: Wächterumhang 
+	[6474] = 	7953, 	-- Muster: Deviatschuppenumhang 
+	[6475] = 	7954, 	-- Muster: Deviatschuppenhandschuhe 
+	[6476] = 	7955, 	-- Muster: Deviatschuppengürtel 
+	[6710] = 	8322, 	-- Muster: Mondscheinweste 
+	[7288] = 	9064, 	-- Muster: Unverwüstliche Lederhose 
+	[7289] = 	9070, 	-- Muster: Schwarzwelpenumhang 
+	[7290] = 	9072, 	-- Muster: Rotwelpenhandschuhe 
+	[7361] = 	9146, 	-- Muster: Kräuterkundigenhandschuhe 
+	[7362] = 	9147, 	-- Muster: Irdene Lederschultern 
+	[7363] = 	9148, 	-- Muster: Langfingerhandschuhe 
+	[7364] = 	9149, 	-- Muster: Schwere irdene Handschuhe 
+	[7449] = 	9195, 	-- Muster: Schwärzliche Ledergamaschen 
+	[7450] = 	9197, 	-- Muster: Grünwelpenrüstung 
+	[7451] = 	9202, 	-- Muster: Grünwelpenarmschienen 
+	[7452] = 	9207, 	-- Muster: Schwärzliche Stiefel 
+	[7453] = 	9208, 	-- Muster: Hurtige Stiefel 
+	[8384] = 	10490, 	-- Muster: Bequemer Lederhut 
+	[8385] = 	10509, 	-- Muster: Schildkrötenschuppenhandschuhe 
+	[8409] = 	10516, 	-- Muster: Schultern des Nachtschleichers 
+	[8386] = 	10520, 	-- Muster: Große Voodoorobe 
+	[8395] = 	10525, 	-- Muster: Feste Skorpidbrustplatte 
+	[8403] = 	10529, 	-- Muster: Wildlederschultern 
+	[8387] = 	10531, 	-- Muster: Große Voodoomaske 
+	[8397] = 	10533, 	-- Muster: Feste Skorpidarmschienen 
+	[8398] = 	10542, 	-- Muster: Feste Skorpidhandschuhe 
+	[8404] = 	10544, 	-- Muster: Wildlederweste 
+	[8405] = 	10546, 	-- Muster: Wildlederhelm 
+	[8399] = 	10554, 	-- Muster: Feste Skorpidstiefel 
+	[8389] = 	10560, 	-- Muster: Große Voodoohose 
+	[8390] = 	10562, 	-- Muster: Großer Voodooumhang 
+	[8400] = 	10564, 	-- Muster: Feste Skorpidschulterstücke 
+	[8406] = 	10566, 	-- Muster: Wildlederstiefel 
+	[8401] = 	10568, 	-- Muster: Feste Skorpidgamaschen 
+	[8402] = 	10570, 	-- Muster: Fester Skorpidhelm 
+	[8407] = 	10572, 	-- Muster: Wildledergamaschen 
+	[8408] = 	10574, 	-- Muster: Wildlederumhang 
+	[15724] = 	19048, 	-- Muster: Schwere Skorpidarmschienen 
+	[15725] = 	19049, 	-- Muster: Tückische Lederstulpen 
+	[15726] = 	19050, 	-- Muster: Grüne Drachenschuppenbrustplatte 
+	[15727] = 	19051, 	-- Muster: Schwere Skorpidweste 
+	[15728] = 	19052, 	-- Muster: Tückische Lederarmschienen 
+	[15729] = 	19053, 	-- Muster: Schimärenhandschuhe 
+	[15730] = 	19054, 	-- Muster: Rote Drachenschuppenbrustplatte 
+	[15731] = 	19055, 	-- Muster: Runenverzierte Lederstulpen 
+	[15732] = 	19059, 	-- Muster: Vulkanische Gamaschen 
+	[15733] = 	19060, 	-- Muster: Grüne Drachenschuppengamaschen 
+	[15734] = 	19061, 	-- Muster: Lebendige Schultern 
+	[15735] = 	19062, 	-- Muster: Eisenfederschultern 
+	[15737] = 	19063, 	-- Muster: Schimärenstiefel 
+	[15738] = 	19064, 	-- Muster: Schwere Skorpidstulpen 
+	[15739] = 	19065, 	-- Muster: Runenverzierte Lederarmschienen 
+	[15740] = 	19066, 	-- Muster: Frostsäblerstiefel 
+	[15741] = 	19067, 	-- Muster: Sturmschleierhose 
+	[15742] = 	19068, 	-- Muster: Kriegsbärenharnisch (Fraktion: Holzschlundfeste)
+	[20253] = 	19068, 	-- Muster: Kriegsbärenharnisch 
+	[15743] = 	19070, 	-- Muster: Schwerer Skorpidgürtel 
+	[15744] = 	19071, 	-- Muster: Tückisches Lederstirnband 
+	[15745] = 	19072, 	-- Muster: Runenverzierter Ledergürtel 
+	[15746] = 	19073, 	-- Muster: Schimärengamaschen 
+	[15747] = 	19074, 	-- Muster: Frostsäblergamaschen 
+	[15748] = 	19075, 	-- Muster: Schwere Skorpidgamaschen 
+	[15749] = 	19076, 	-- Muster: Vulkanische Brustplatte 
+	[15751] = 	19077, 	-- Muster: Blaue Drachenschuppenbrustplatte 
+	[15752] = 	19078, 	-- Muster: Lebendige Gamaschen 
+	[15753] = 	19079, 	-- Muster: Sturmschleierrüstung 
+	[15754] = 	19080, 	-- Muster: Kriegsbärenwollwäsche (Fraktion: Holzschlundfeste)
+	[20254] = 	19080, 	-- Muster: Kriegsbärenwollwäsche 
+	[15755] = 	19081, 	-- Muster: Schimärenweste 
+	[15756] = 	19082, 	-- Muster: Runenverziertes Lederstirnband 
+	[15757] = 	19083, 	-- Muster: Tückische Lederhose 
+	[15758] = 	19084, 	-- Muster: Teufelssaurierstulpen 
+	[15759] = 	19085, 	-- Muster: Schwarze Drachenschuppenbrustplatte 
+	[15760] = 	19086, 	-- Muster: Eisenfederbrustplatte 
+	[15761] = 	19087, 	-- Muster: Frostsäblerhandschuhe 
+	[15762] = 	19088, 	-- Muster: Schwerer Skorpidhelm 
+	[15763] = 	19089, 	-- Muster: Blaue Drachenschuppenschultern 
+	[15764] = 	19090, 	-- Muster: Sturmschleierschultern 
+	[15765] = 	19091, 	-- Muster: Runenverzierte Lederhose 
+	[15768] = 	19092, 	-- Muster: Tückischer Ledergürtel 
+	[15769] = 	19093, 	-- Muster: Onyxiaschuppenumhang 
+	[15770] = 	19094, 	-- Muster: Schwarze Drachenschuppenschultern 
+	[15771] = 	19095, 	-- Muster: Lebendige Brustplatte 
+	[15772] = 	19097, 	-- Muster: Teufelssauriergamaschen 
+	[15773] = 	19098, 	-- Muster: Tückische Lederrüstung 
+	[15774] = 	19100, 	-- Muster: Schwere Skorpidschultern 
+	[15775] = 	19101, 	-- Muster: Vulkanische Schultern 
+	[15776] = 	19102, 	-- Muster: Runenverzierte Lederrüstung 
+	[15777] = 	19103, 	-- Muster: Runenverzierte Lederschultern 
+	[15779] = 	19104, 	-- Muster: Frostsäblertunika 
+	[15780] = 	19106, 	-- Muster: Onyxiaschuppenbrustplatte 
+	[15781] = 	19107, 	-- Muster: Schwarze Drachenschuppengamaschen 
+	[17022] = 	20853, 	-- Muster: Kernhundstiefel 
+	[17023] = 	20854, 	-- Muster: Schmelzhelm 
+	[17025] = 	20855, 	-- Muster: Schwarze Drachenschuppenstiefel 
+	[17722] = 	21943, 	-- Muster: Handschuhe des Altvaters 
+	[18239] = 	22711, 	-- Muster: Schattenhauthandschuhe 
+	[18252] = 	22727, 	-- Muster: Kernrüstungsset 
+	[18514] = 	22921, 	-- Muster: Gurt der Einsicht 
+	[18515] = 	22922, 	-- Muster: Mungostiefel 
+	[18516] = 	22923, 	-- Muster: Armschienen der schnellen Flucht 
+	[18517] = 	22926, 	-- Muster: Chromatischer Umhang 
+	[18518] = 	22927, 	-- Muster: Balg der Wildnis 
+	[18519] = 	22928, 	-- Muster: Unbeständiger Umhang 
+	[18731] = 	23190, 	-- Muster: Schwerer Lederball 
+	[18949] = 	23399, 	-- Muster: Barbarische Armschienen 
+	[19326] = 	23703, 	-- Muster: Macht der Holzschlundfeste 
+	[19327] = 	23704, 	-- Muster: Kampfhandschuhe der Holzschlundfeste 
+	[19328] = 	23705, 	-- Muster: Stiefel der Dämmerung 
+	[19329] = 	23706, 	-- Muster: Goldener Mantel der Dämmerung 
+	[19330] = 	23707, 	-- Muster: Lavagürtel 
+	[19331] = 	23708, 	-- Muster: Chromatische Stulpen 
+	[19332] = 	23709, 	-- Muster: Kernhundgürtel 
+	[19333] = 	23710, 	-- Muster: Geschmolzener Gürtel 
+	[19769] = 	24121, 	-- Muster: Urzeitliches Fledermaushautwams 
+	[19770] = 	24122, 	-- Muster: Urzeitliche Fledermaushauthandschuhe 
+	[19771] = 	24123, 	-- Muster: Urzeitliche Fledermaushautarmschienen 
+	[19772] = 	24124, 	-- Muster: Bluttigerbrustplatte 
+	[19773] = 	24125, 	-- Muster: Bluttigerschultern 
+	[20382] = 	24703, 	-- Muster: Traumschuppenbrustplatte 
+	[20506] = 	24846, 	-- Muster: Feuerspuckerarmschienen 
+	[20507] = 	24847, 	-- Muster: Feuerspuckerstulpen 
+	[20508] = 	24848, 	-- Muster: Feuerspuckerbrustplatte 
+	[20509] = 	24849, 	-- Muster: Sandpirscherarmschienen 
+	[20510] = 	24850, 	-- Muster: Sandpirscherstulpen 
+	[20511] = 	24851, 	-- Muster: Sandpirscherbrustplatte 
+	[20576] = 	24940, 	-- Muster: Schwarzwelpentunika 
+	[21548] = 	26279, 	-- Muster: Sturmschleierhandschuhe 
+	[22771] = 	28472, 	-- Muster: Dornenholzhelm 
+	[22770] = 	28473, 	-- Muster: Dornenholzstiefel 
+	[22769] = 	28474, 	-- Muster: Dornenholzgürtel 
+	[25720] = 	32455, 	-- Muster: Schweres Knotenhautleder 
+	[25721] = 	32457, 	-- Muster: Rüstungsset des Verteidigers 
+	[25722] = 	32458, 	-- Muster: Rüstungsset des Magisters 
+	[25725] = 	32461, 	-- Muster: Reitgerte 
+	[25726] = 	32482, 	-- Muster: Bequeme Einlegesohlen 
+	[25728] = 	32485, 	-- Muster: Schicker lilafarbener Hut 
+	[25729] = 	32487, 	-- Muster: Schicker Abenteurerhut 
+	[25731] = 	32488, 	-- Muster: Schicker purpurfarbener Hut 
+	[25730] = 	32489, 	-- Muster: Schicker Dschungelhut 
+	[25732] = 	32490, 	-- Muster: Teufelslederhandschuhe 
+	[25733] = 	32493, 	-- Muster: Teufelslederstiefel 
+	[25734] = 	32494, 	-- Muster: Teufelsledergamaschen 
+	[25735] = 	32495, 	-- Muster: Schwere Grollhufweste 
+	[25736] = 	32496, 	-- Muster: Schwere Grollhufgamaschen 
+	[25737] = 	32497, 	-- Muster: Schwere Grollhufstiefel 
+	[25738] = 	32498, 	-- Muster: Gürtel des Teufelspirschers (Fraktion: Thrallmar)
+	[29213] = 	32498, 	-- Muster: Gürtel des Teufelspirschers (Fraktion: Ehrenfeste)
+	[25739] = 	32499, 	-- Muster: Armschienen des Teufelspirschers (Fraktion: Thrallmar)
+	[29214] = 	32499, 	-- Muster: Armschienen des Teufelspirschers (Fraktion: Ehrenfeste)
+	[25740] = 	32500, 	-- Muster: Brustplatte des Teufelspirschers (Fraktion: Thrallmar)
+	[29215] = 	32500, 	-- Muster: Brustplatte des Teufelspirschers (Fraktion: Ehrenfeste)
+	[25741] = 	32501, 	-- Muster: Netherzorngürtel (Fraktion: Thrallmar)
+	[29217] = 	32501, 	-- Muster: Netherzorngürtel (Fraktion: Ehrenfeste)
+	[25742] = 	32502, 	-- Muster: Netherzorngamaschen (Fraktion: Thrallmar)
+	[29219] = 	32502, 	-- Muster: Netherzorngamaschen (Fraktion: Ehrenfeste)
+	[25743] = 	32503, 	-- Muster: Netherzornstiefel (Fraktion: Thrallmar)
+	[29218] = 	32503, 	-- Muster: Netherzornstiefel (Fraktion: Ehrenfeste)
+	[29669] = 	35520, 	-- Muster: Schattenrüstungsset 
+	[29672] = 	35521, 	-- Muster: Flammenrüstungsset 
+	[29673] = 	35522, 	-- Muster: Frostrüstungsset 
+	[29674] = 	35523, 	-- Muster: Naturrüstungsset 
+	[29675] = 	35524, 	-- Muster: Arkanrüstungsset 
+	[29677] = 	35525, 	-- Muster: Verzauberte Teufelsschuppengamaschen 
+	[29682] = 	35526, 	-- Muster: Verzauberte Teufelsschuppenhandschuhe 
+	[29684] = 	35527, 	-- Muster: Verzauberte Teufelsschuppenstiefel 
+	[29691] = 	35528, 	-- Muster: Flammenschuppenstiefel 
+	[29689] = 	35529, 	-- Muster: Flammenschuppengamaschen 
+	[29664] = 	35530, 	-- Muster: Verstärkte Bergbautasche (Fraktion: Mag'har)
+	[30444] = 	35530, 	-- Muster: Verstärkte Bergbautasche (Fraktion: Kurenai)
+	[29693] = 	35531, 	-- Muster: Flammenschuppengürtel 
+	[29698] = 	35532, 	-- Muster: Verzauberte Grollhufgamaschen 
+	[29700] = 	35533, 	-- Muster: Verzauberte Grollhufhandschuhe 
+	[29701] = 	35534, 	-- Muster: Verzauberte Grollschuppenstiefel 
+	[29702] = 	35535, 	-- Muster: Lohenschildhose 
+	[29703] = 	35536, 	-- Muster: Lohenschildstiefel 
+	[29704] = 	35537, 	-- Muster: Lohenschildgürtel 
+	[29713] = 	35538, 	-- Muster: Trommeln der Panik 
+	[29714] = 	35539, 	-- Muster: Trommeln der Wiederherstellung (Worlddrop)
+	[34174] = 	35539, 	-- Muster: Trommeln der Wiederherstellung (Fraktion: Mag'har)
+	[34175] = 	35539, 	-- Muster: Trommeln der Wiederherstellung (Fraktion: Kurenai)
+	[29717] = 	35543, 	-- Muster: Trommeln der Schlacht 
+	[29718] = 	35544, 	-- Muster: Trommeln des Tempos (Worlddrop)
+	[34172] = 	35544, 	-- Muster: Trommeln des Tempos (Fraktion: Mag'har)
+	[34173] = 	35544, 	-- Muster: Trommeln des Tempos (Fraktion: Kurenai)
+	[29719] = 	35549, 	-- Muster: Kobrahautbeinrüstung (Fraktion: Ehrenfeste)
+	[31361] = 	35549, 	-- Muster: Kobrahautbeinrüstung (Fraktion: Thrallmar)
+	[29722] = 	35554, 	-- Muster: Netherkobrabeinrüstung (Fraktion: Ehrenfeste)
+	[31362] = 	35554, 	-- Muster: Netherkobrabeinrüstung (Fraktion: Thrallmar)
+	[29720] = 	35555, 	-- Muster: Grollbalgbeinrüstung 
+	[29721] = 	35557, 	-- Muster: Netherkluftbeinrüstung 
+	[29723] = 	35558, 	-- Muster: Kobraschuppenkapuze 
+	[29724] = 	35559, 	-- Muster: Kobraschuppenhandschuhe (Worlddrop)
+	[35302] = 	35559, 	-- Muster: Kobraschuppenhandschuhe (Drop: Kael'thas Sonnenwanderer)
+	[29725] = 	35560, 	-- Muster: Windschuppenkapuze 
+	[29726] = 	35561, 	-- Muster: Kapuze des Urlebens 
+	[29727] = 	35562, 	-- Muster: Handschuhe der lebendigen Berührung (Worlddrop)
+	[35303] = 	35562, 	-- Muster: Handschuhe der lebendigen Berührung (Drop: Kael'thas Sonnenwanderer)
+	[29728] = 	35563, 	-- Muster: Windtöterwickel 
+	[29729] = 	35564, 	-- Muster: Lebendiger Drachenschuppenhelm 
+	[29730] = 	35567, 	-- Muster: Irdene Netherschuppenstiefel 
+	[29731] = 	35568, 	-- Muster: Windstoßhandschuhe (Worlddrop)
+	[35300] = 	35568, 	-- Muster: Windstoßhandschuhe (Drop: Kael'thas Sonnenwanderer)
+	[29732] = 	35572, 	-- Muster: Netherdrachenhelm 
+	[29733] = 	35573, 	-- Muster: Netherdrachenhandschuhe (Worlddrop)
+	[35301] = 	35573, 	-- Muster: Netherdrachenhandschuhe (Drop: Kael'thas Sonnenwanderer)
+	[29734] = 	35574, 	-- Muster: Dicke Netherschuppenbrustplatte 
+	[30301] = 	36349, 	-- Muster: Gürtel der naturgleichen Kraft 
+	[30302] = 	36351, 	-- Muster: Gürtel der tiefen Schatten 
+	[30303] = 	36352, 	-- Muster: Gürtel des schwarzen Adlers 
+	[30304] = 	36353, 	-- Muster: Gürtel des Monsuns 
+	[30305] = 	36355, 	-- Muster: Stiefel der naturgleichen Anmut 
+	[30306] = 	36357, 	-- Muster: Stiefel der totalen Finsternis 
+	[30307] = 	36358, 	-- Muster: Stiefel des Purpurfalken 
+	[30308] = 	36359, 	-- Muster: Stiefel des Wirbelsturms 
+	[32429] = 	39997, 	-- Muster: Stiefel der gefangenen Seelen 
+	[32431] = 	40001, 	-- Muster: Schienbeinschützer der gefangenen Seelen 
+	[32432] = 	40002, 	-- Muster: Taillenschutz der gefangenen Seelen 
+	[32433] = 	40003, 	-- Muster: Mokassins der erlösten Seele 
+	[32434] = 	40004, 	-- Muster: Handgelenksschützer der erlösten Seele 
+	[32435] = 	40005, 	-- Muster: Beinschützer der erlösten Seele 
+	[32436] = 	40006, 	-- Muster: Sattelgurt der erlösten Seele 
+	[32744] = 	41156, 	-- Muster: Armschienen des erneuerten Lebens 
+	[32745] = 	41157, 	-- Muster: Schulterpolster des erneuerten Lebens (Drop: Der Schwarze Tempel)
+	[32746] = 	41158, 	-- Muster: Flinkschlagarmschienen (Drop: Der Schwarze Tempel)
+	[32747] = 	41160, 	-- Muster: Flinkschlagschultern (Drop: Der Schwarze Tempel)
+	[32748] = 	41161, 	-- Muster: Bindungen der blitzartigen Reflexe (Drop: Der Schwarze Tempel)
+	[32749] = 	41162, 	-- Muster: Schultern der blitzartigen Reflexe (Drop: Der Schwarze Tempel)
+	[32750] = 	41163, 	-- Muster: Lebendige Erdbindungen (Drop: Der Schwarze Tempel)
+	[32751] = 	41164, 	-- Muster: Lebendige Erdschultern (Drop: Der Schwarze Tempel)
+	[33124] = 	42546, 	-- Muster: Umhang der Dunkelheit 
+	[33205] = 	42731, 	-- Muster: Brustschutz des Schattenschleichers 
+	[34200] = 	44359, 	-- Muster: Köcher der tausend Federn 
+	[34201] = 	44768, 	-- Muster: Munitionsbeutel aus Netherschuppen (Fraktion: Thrallmar)
+	[34218] = 	44768, 	-- Muster: Munitionsbeutel aus Netherschuppen (Fraktion: Ehrenfeste)
+	[34262] = 	44953, 	-- Muster: Winterstiefel 
+	[34491] = 	45117, 	-- Muster: Tasche für alle Felle 
+	[35212] = 	46132, 	-- Muster: Lederstulpen der Sonne (Drop: SWP)
+	[35213] = 	46133, 	-- Muster: Pfeilmacherhandschuhe des Phönix (Drop: SWP)
+	[35214] = 	46134, 	-- Muster: Handschuhe der unsterblichen Dämmerung (Drop: SWP)
+	[35215] = 	46135, 	-- Muster: Sonnengetränkte Schuppenhandschuhe (Drop: SWP)
+	[35216] = 	46136, 	-- Muster: Lederbrustschutz der Sonne (Drop: SWP)
+	[35217] = 	46137, 	-- Muster: Umarmung des Phönix (Drop: SWP)
+	[35218] = 	46138, 	-- Muster: Panzerung von Sonne und Schatten (Drop: SWP)
+	[35219] = 	46139, 	-- Muster: Sonnengetränkter Schuppenbrustschutz (Drop: SWP)
+	[44509] = 	50970, 	-- Muster: Reisetasche des Trappers 
+	[44510] = 	50971, 	-- Muster: Mammutbergbautasche 
+	[38597] = 	51568, 	-- Muster: Dunkle arktische Stiefel 
+	[32430] = 	52733, 	-- Muster: Armschienen der gefangenen Seelen 
+	[44559] = 	57692, 	-- Muster: Pelzbesatz - Feuerwiderstand 
+	[44560] = 	57694, 	-- Muster: Pelzbesatz - Frostwiderstand 
+	[44561] = 	57696, 	-- Muster: Pelzbesatz - Schattenwiderstand 
+	[44562] = 	57699, 	-- Muster: Pelzbesatz - Naturwiderstand 
+	[44563] = 	57701, 	-- Muster: Pelzbesatz - Arkanwiderstand 
+	[44511] = 	60645, 	-- Muster: Drachenschuppenmunitionsbeutel 
+	[44512] = 	60647, 	-- Muster: Verstärkter nerubischer Köcher 
+	[44513] = 	60697, 	-- Muster: Gesichtsmaske des Ausweiders 
+	[44514] = 	60702, 	-- Muster: Schulterpolster des Ausweiders 
+	[44515] = 	60703, 	-- Muster: Brustschutz des Ausweiders 
+	[44516] = 	60704, 	-- Muster: Bindungen des Ausweiders 
+	[44517] = 	60705, 	-- Muster: Stulpen des Ausweiders 
+	[44518] = 	60706, 	-- Muster: Taillenschutz des Ausweiders 
+	[44519] = 	60711, 	-- Muster: Beinschützer des Ausweiders 
+	[44520] = 	60712, 	-- Muster: Treter des Ausweiders 
+	[44521] = 	60715, 	-- Muster: Unwetterkopfschutz 
+	[44522] = 	60716, 	-- Muster: Unwetterschiftung 
+	[44523] = 	60718, 	-- Muster: Unwetterbrustschutz 
+	[44524] = 	60720, 	-- Muster: Unwetterarmschienen 
+	[44525] = 	60721, 	-- Muster: Unwetterhandlappen 
+	[44526] = 	60723, 	-- Muster: Unwettergürtel 
+	[44527] = 	60725, 	-- Muster: Unwettergamaschen 
+	[44528] = 	60727, 	-- Muster: Unwetterstiefel 
+	[44530] = 	60728, 	-- Muster: Flinkpfeilhelm 
+	[44531] = 	60729, 	-- Muster: Flinkpfeilschulterschutz 
+	[44532] = 	60730, 	-- Muster: Flinkpfeilhalsberge 
+	[44533] = 	60731, 	-- Muster: Flinkpfeilarmschienen 
+	[44534] = 	60732, 	-- Muster: Flinkpfeilstulpen 
+	[44535] = 	60734, 	-- Muster: Flinkpfeilgürtel 
+	[44536] = 	60735, 	-- Muster: Flinkpfeilgamaschen 
+	[44537] = 	60737, 	-- Muster: Flinkpfeilstiefel 
+	[44538] = 	60743, 	-- Muster: Sturmbalgkrone 
+	[44539] = 	60746, 	-- Muster: Sturmbalgschultern 
+	[44540] = 	60747, 	-- Muster: Sturmbalghalsberge 
+	[44541] = 	60748, 	-- Muster: Sturmbalghandgelenksschützer 
+	[44542] = 	60749, 	-- Muster: Sturmbalghandschutz 
+	[44543] = 	60750, 	-- Muster: Sturmbalggürtel 
+	[44544] = 	60751, 	-- Muster: Sturmbalgbeinschützer 
+	[44545] = 	60752, 	-- Muster: Sturmbalgstampfer 
+	[44546] = 	60754, 	-- Muster: Riesenmalmerbeinschützer 
+	[44547] = 	60755, 	-- Muster: Riesenmalmerarmschienen 
+	[44548] = 	60756, 	-- Muster: Brustplatte des Klagegeists 
+	[44549] = 	60757, 	-- Muster: Stiefel des Klagegeists 
+	[44550] = 	60758, 	-- Muster: Trollweberschiftung 
+	[44551] = 	60759, 	-- Muster: Trollwebergurt 
+	[44552] = 	60760, 	-- Muster: Erdspendende Beinschützer 
+	[44553] = 	60761, 	-- Muster: Erdspendende Stiefel 
+	[44584] = 	60996, 	-- Muster: Polarweste 
+	[44585] = 	60997, 	-- Muster: Polarkordel 
+	[44586] = 	60998, 	-- Muster: Polarstiefel 
+	[44587] = 	60999, 	-- Muster: Eisiger Schuppenbrustschutz 
+	[44588] = 	61000, 	-- Muster: Eisiger Schuppengürtel 
+	[44589] = 	61002, 	-- Muster: Eisige Schuppenstiefel 
+	[44932] = 	62176, 	-- Muster: Windreißerstiefel 
+	[44933] = 	62177, 	-- Muster: Windreißergamaschen 
+	
+	-- ULDUAR
+	[45094] = 	63194, 	-- Gürtel der Drachen
+	[45095] = 	63195, 	-- Stiefel aus lebendigen Schuppen
+	[45096] = 	63196, 	-- Blauer Gürtel des Chaos
+	[45097] = 	63197, 	-- Geerdete Stiefel
+	[45098] = 	63198, 	-- Todesgewärmter Gürtel
+	[45099] = 	63199, 	-- Schleicher der Stille
+	[45100] = 	63200, 	-- Gürtel des arktischen Lebens
+	[45101] = 	63201, 	-- Stiefel der winterlichen Ausdauer
+	-- TOURNAMENT
+	[47653] = 	67141, 	-- Armschützer des Mondschattens H
+	[47652] = 	67140, 	-- Roben der Mondfinsternis H
+	[47651] = 	67142, 	-- Knochener Rittersbannpanzer H
+	[47650] = 	67136, 	-- Verwunschene nerubische Brustplatte H
+	[47649] = 	67138, 	-- Drachenschuppenbrustplatte des Kreuzfahrers H
+	[47648] = 	67143, 	-- Drachenschuppenarmschienen des Kreuzfahrers H
+	[47647] = 	67139, 	-- Armschienen des schnellen Todes H
+	[47646] = 	67137, 	-- Schwarze Chitinarmschienen H
+	[47635] = 	67087, 	-- Armschienen des schnellen Todes A
+	[47634] = 	67086, 	-- Knochener Rittersbannpanzer A
+	[47633] = 	67085, 	-- Armschützer des Mondschattens A
+	[47632] = 	67084, 	-- Roben der Mondfinsternis A
+	[47631] = 	67083, 	-- Drachenschuppenarmschienen des Kreuzfahrers A
+	[47630] = 	67082, 	-- Drachenschuppenbrustplatte des Kreuzfahrers A
+	[47629] = 	67081, 	-- Schwarze Chitinarmschienen A
+	[47628] = 	67080, 	-- Verwunschene nerubische Brustplatte A
+	-- ICC
+	[49966] = 	70561, 	-- Felsenfeste Treter
+	[49965] = 	70560, 	-- Drakonische Knochensplitterbeinschützer
+	[49963] = 	70559, 	-- Stiefel der Erdseele
+	[49962] = 	70558, 	-- Blitzerfüllte Gamaschen
+	[49961] = 	70557, 	-- Fußpolster des bevorstehenden Todes
+	[49959] = 	70556, 	-- Klingenstarrende Gamaschen
+	[49958] = 	70555, 	-- Gesegnete Cenarionstiefel
+	[49957] = 	70554, 	-- Beinwickel der entfesselten Natur
 
 	-------------------------------------------------------------------------------
 	--Smelting
 	-------------------------------------------------------------------------------
-	[22967] = 44956, 	[46353] = 35273, 
+	[35273] = 	46353, 	-- Abhandlung über hochentwickelte Verhüttung
+	[44956] = 	22967, 	-- Elementium - Das Handbuch für den Goblin
 
 	-------------------------------------------------------------------------------
 	--Tailoring
 	-------------------------------------------------------------------------------
-	[2389] = 2598, 		[2403] = 2601, 		[3758] = 4292, 		[3844] = 4346, 	
-	[3847] = 4345, 		[3849] = 4347, 		[3851] = 4349, 		[3854] = 7114, 	
-	[3856] = 4350, 		[3857] = 14630, 	[3858] = 4351, 		[3860] = 4352, 	
-	[3862] = 4355, 		[3863] = 4353, 		[3864] = 4356, 		[3868] = 4348, 	
-	[3869] = 14627, 	[3870] = 6401, 		[3872] = 4354, 		[3873] = 10728, 	
-	[6686] = 5771, 		[6688] = 5772, 		[6692] = 5773, 		[6693] = 5774, 	
-	[6695] = 5775, 		[7629] = 6271, 		[7630] = 6270, 		[7633] = 6272, 	
-	[7639] = 6274, 		[7643] = 6275, 		[7892] = 6390, 		[7893] = 6391, 	
-	[8780] = 7092, 		[8782] = 7091, 		[8784] = 7090, 		[8786] = 7089, 	
-	[8789] = 7087, 		[8793] = 7084, 		[8795] = 7085, 		[8797] = 7086, 	
-	[8802] = 7088, 		[12047] = 10316, 	[12056] = 10300, 	[12059] = 10301, 
-	[12060] = 10302, 	[12064] = 10311, 	[12066] = 10312, 	[12075] = 10314, 
-	[12078] = 10315, 	[12080] = 10317, 	[12081] = 10318, 	[12084] = 10320, 
-	[12085] = 10321, 	[12086] = 10463, 	[12089] = 10323, 	[12091] = 10325, 
-	[12093] = 10326, 	[18403] = 14466, 	[18404] = 14467, 	[18405] = 14468, 
-	[18406] = 14469, 	[18407] = 14470, 	[18408] = 14471, 	[18409] = 14472, 
-	[18410] = 14473, 	[18411] = 14474, 	[18412] = 14476, 	[18413] = 14477, 
-	[18414] = 14478, 	[18415] = 14479, 	[18416] = 14480, 	[18417] = 14481, 
-	[18418] = 14482, 	[18419] = 14483, 	[18420] = 14484, 	[18421] = 14485, 
-	[18422] = 14486, 	[18423] = 14488, 	[18424] = 14489, 	[18434] = 14490, 
-	[18436] = 14493, 	[18437] = 14492, 	[18438] = 14491, 	[18439] = 14494, 
-	[18440] = 14497, 	[18441] = 14495, 	[18442] = 14496, 	[18444] = 14498, 
-	[18445] = 14499, 	[18446] = 14500, 	[18447] = 14501, 	[18448] = 14507, 
-	[18449] = 14504, 	[18450] = 14505, 	[18451] = 14506, 	[18452] = 14509, 
-	[18453] = 14508, 	[18454] = 14511, 	[18455] = 14510, 	[18456] = 14512, 
-	[18457] = 14513, 	[18458] = 14514, 	[18560] = 14526, 	[20848] = 17017, 
-	[20849] = 17018, 	[21945] = 17724, 	[22759] = 18265, 	[22866] = 18414, 
-	[22867] = 18415, 	[22868] = 18416, 	[22869] = 18417, 	[22870] = 18418, 
-	[22902] = 18487, 	[23662] = 19215, 	[23663] = 19218, 	[23664] = 19216, 
-	[23665] = 19217, 	[23666] = 19219, 	[23667] = 19220, 	[24091] = 19764, 
-	[24092] = 19765, 	[24093] = 19766, 	[24901] = 20546, 	[24902] = 20548, 
-	[24903] = 20547, 	[26085] = 21358, 	[26087] = 21371, 	[26403] = 44916, 
-	[26407] = 44917, 	[26747] = 21892, 	[26749] = 21893, 	[26750] = 21894, 
-	[26751] = 21895, 	[26752] = 21908, 	[26753] = 21909, 	[26754] = 21910, 
-	[26755] = 21911, 	[26756] = 21912, 	[26757] = 21914, 	[26758] = 21913, 
-	[26759] = 21915, 	[26760] = 21916, 	[26761] = 21918, 	[26762] = 21917, 
-	[26763] = 21919, 	[26773] = 21896, 	[26774] = 21897, 	[26775] = 21898, 
-	[26776] = 21899, 	[26777] = 21900, 	[26778] = 21901, 	[26779] = 21902, 
-	[26780] = 21903, 	[26781] = 21904, 	[26782] = 21905, 	[26783] = 21906, 
-	[26784] = 21907, 	[27658] = 22307, 	[27659] = 22308, 	[27660] = 22309, 
-	[27724] = 22310, 	[27725] = 22312, 	[28210] = 22683, 	[28480] = 22774, 
-	[28481] = 22773, 	[28482] = 22772, 	[31373] = 24316, 	[31430] = 24292, 
-	[31431] = 24293, 	[31432] = 24294, 	[31433] = 24295, 	[31434] = 35308, 
-	[31435] = 24297, 	[31437] = 24298, 	[31438] = 24299, 	[31440] = 24300, 
-	[31441] = 24301, 	[31442] = 35309, 	[31443] = 24303, 	[31444] = 24304, 
-	[31448] = 24305, 	[31449] = 24306, 	[31450] = 24307, 	[31451] = 24308, 
-	[31452] = 24309, 	[31453] = 24310, 	[31454] = 24311, 	[31455] = 24312, 
-	[31456] = 24313, 	[31459] = 24314, 	[36315] = 30280, 	[36316] = 30281, 
-	[36317] = 30282, 	[36318] = 30283, 	[36686] = 30483, 	[37873] = 30833, 
-	[37882] = 30842, 	[37883] = 30843, 	[37884] = 30844, 	[40020] = 32437, 
-	[40021] = 32438, 	[40023] = 32439, 	[40024] = 32440, 	[40060] = 32447, 
-	[41205] = 35518, 	[41206] = 32755, 	[41207] = 32752, 	[41208] = 32753, 
-	[44950] = 34261, 	[44958] = 34319, 	[46128] = 35204, 	[46129] = 35205, 
-	[46130] = 35206, 	[46131] = 35207, 	[49677] = 37915, 	[50194] = 38229, 
-	[50644] = 38327, 	[50647] = 38328, 	[55993] = 42172, 	[55994] = 42173, 
-	[55996] = 42175, 	[55997] = 42177, 	[55998] = 42176, 	[55999] = 42178, 
-	[56004] = 42183, 	[56005] = 42184, 	[56006] = 42185, 	[56009] = 42187, 
-	[56011] = 42188, 	[63924] = 45774, 
+	[2598] = 	2389, 	-- Muster: Rote Leinenrobe
+	[2601] = 	2403, 	-- Muster: Graue Wollrobe
+	[4292] = 	3758, 	-- Muster: Grüne Wolltasche
+	[4346] = 	3844, 	-- Muster: Schwerer Wollumhang
+	[4345] = 	3847, 	-- Muster: Rote Wollstiefel
+	[4347] = 	3849, 	-- Muster: Verstärkte Wollschultern
+	[4349] = 	3851, 	-- Muster: Phönixhose
+	[7114] = 	3854, 	-- Muster: Azurblaue Seidenhandschuhe
+	[4350] = 	3856, 	-- Muster: Spinnenseidenslipper
+	[14630] = 	3857, 	-- Muster: Verzauberergugel
+	[4351] = 	3858, 	-- Muster: Schattenkapuze
+	[4352] = 	3860, 	-- Muster: Stiefel des Verzauberers
+	[4355] = 	3862, 	-- Muster: Eisiger Umhang
+	[4353] = 	3863, 	-- Muster: Spinnengürtel
+	[4356] = 	3864, 	-- Muster: Sternengürtel
+	[4348] = 	3868, 	-- Muster: Phönixhandschuhe
+	[14627] = 	3869, 	-- Muster: Hellgelbes Hemd
+	[6401] = 	3870, 	-- Muster: Dunkles Seidenhemd
+	[4354] = 	3872, 	-- Muster: Dunkellila Seidenhemd
+	[10728] = 	3873, 	-- Muster: Schwarzes Schwadroneurshemd
+	[5771] = 	6686, 	-- Muster: Rote Leinentasche
+	[5772] = 	6688, 	-- Muster: Rote Wolltasche
+	[5773] = 	6692, 	-- Muster: Roben von Arcana
+	[5774] = 	6693, 	-- Muster: Grünes Seidenpack
+	[5775] = 	6695, 	-- Muster: Schwarzes Seidenpack
+	[6271] = 	7629, 	-- Muster: Rote Leinenweste
+	[6270] = 	7630, 	-- Muster: Blaue Leinenweste
+	[6272] = 	7633, 	-- Muster: Blaue Leinenrobe
+	[6274] = 	7639, 	-- Muster: Blauer Overall
+	[6275] = 	7643, 	-- Muster: Große Adeptenrobe
+	[6390] = 	7892, 	-- Muster: Modisches blaues Hemd
+	[6391] = 	7893, 	-- Muster: Modisches grünes Hemd
+	[7092] = 	8780, 	-- Muster: Hände der Dunkelheit
+	[7091] = 	8782, 	-- Muster: Handschuhe des wahren Glaubens
+	[7090] = 	8784, 	-- Muster: Grüne Seidenrüstung
+	[7089] = 	8786, 	-- Muster: Azurblauer Seidenumhang
+	[7087] = 	8789, 	-- Muster: Purpurroter Seidenumhang
+	[7084] = 	8793, 	-- Muster: Purpurrote Seidenschultern
+	[7085] = 	8795, 	-- Muster: Azurblaue Schultern
+	[7086] = 	8797, 	-- Muster: Irdener Seidengürtel
+	[7088] = 	8802, 	-- Muster: Purpurrote Seidenrobe
+	[10316] = 	12047, 	-- Muster: Bunter Kilt
+	[10300] = 	12056, 	-- Muster: Rote Magiestoffweste
+	[10301] = 	12059, 	-- Muster: Weiße Banditenmaske
+	[10302] = 	12060, 	-- Muster: Rote Magiestoffhose
+	[10311] = 	12064, 	-- Muster: Orangefarbenes Kampfhemd
+	[10312] = 	12066, 	-- Muster: Rote Magiestoffhandschuhe
+	[10314] = 	12075, 	-- Muster: Lavendelfarbenes Magiestoffhemd
+	[10315] = 	12078, 	-- Muster: Rote Magiestoffschultern
+	[10317] = 	12080, 	-- Muster: Rosa Magiestoffhemd
+	[10318] = 	12081, 	-- Muster: Admiralshut
+	[10320] = 	12084, 	-- Muster: Rotes Magiestoffstirnband
+	[10321] = 	12085, 	-- Muster: Smokinghemd
+	[10463] = 	12086, 	-- Muster: Schattenzwirnmaske
+	[10323] = 	12089, 	-- Muster: Smokinghose
+	[10325] = 	12091, 	-- Muster: Weißes Hochzeitskleid
+	[10326] = 	12093, 	-- Muster: Smokingjacke
+	[14466] = 	18403, 	-- Muster: Froststofftunika
+	[14467] = 	18404, 	-- Muster: Froststoffrobe
+	[14468] = 	18405, 	-- Muster: Runenstofftasche
+	[14469] = 	18406, 	-- Muster: Runenstoffrobe
+	[14470] = 	18407, 	-- Muster: Runenstofftunika
+	[14471] = 	18408, 	-- Muster: Aschenstoffweste
+	[14472] = 	18409, 	-- Muster: Runenstoffumhang
+	[14473] = 	18410, 	-- Muster: Geisterzwirngürtel
+	[14474] = 	18411, 	-- Muster: Froststoffhandschuhe
+	[14476] = 	18412, 	-- Muster: Aschenstoffhandschuhe
+	[14477] = 	18413, 	-- Muster: Geisterzwirnhandschuhe
+	[14478] = 	18414, 	-- Muster: Hellstoffrobe
+	[14479] = 	18415, 	-- Muster: Hellstoffhandschuhe
+	[14480] = 	18416, 	-- Muster: Geisterzwirnweste
+	[14481] = 	18417, 	-- Muster: Runenstoffhandschuhe
+	[14482] = 	18418, 	-- Muster: Aschenstoffumhang
+	[14483] = 	18419, 	-- Muster: Teufelsstoffhose
+	[14484] = 	18420, 	-- Muster: Hellstoffumhang
+	[14485] = 	18421, 	-- Muster: Hexerzwirngamaschen
+	[14486] = 	18422, 	-- Muster: Umhang des Feuers
+	[14488] = 	18423, 	-- Muster: Runenstoffstiefel
+	[14489] = 	18424, 	-- Muster: Froststoffhose
+	[14490] = 	18434, 	-- Muster: Aschenstoffhose
+	[14493] = 	18436, 	-- Muster: Robe der Winternacht
+	[14492] = 	18437, 	-- Muster: Teufelsstoffstiefel
+	[14491] = 	18438, 	-- Muster: Runenstoffhose
+	[14494] = 	18439, 	-- Muster: Hellstoffhose
+	[14497] = 	18440, 	-- Muster: Mondstoffgamaschen
+	[14495] = 	18441, 	-- Muster: Geisterzwirnhose
+	[14496] = 	18442, 	-- Muster: Teufelsstoffkapuze
+	[14498] = 	18444, 	-- Muster: Runenstoffstirnband
+	[14499] = 	18445, 	-- Muster: Mondstofftasche
+	[14500] = 	18446, 	-- Muster: Hexerzwirnrobe
+	[14501] = 	18447, 	-- Muster: Mondstoffweste
+	[14507] = 	18448, 	-- Muster: Mondstoffschultern
+	[14504] = 	18449, 	-- Muster: Runenstoffschultern
+	[14505] = 	18450, 	-- Muster: Hexerzwirnturban
+	[14506] = 	18451, 	-- Muster: Teufelsstoffrobe
+	[14509] = 	18452, 	-- Muster: Mondstoffreif
+	[14508] = 	18453, 	-- Muster: Teufelsstoffschultern
+	[14511] = 	18454, 	-- Muster: Handschuhe der Zauberbeherrschung
+	[14510] = 	18455, 	-- Muster: Bodenlose Tasche
+	[14512] = 	18456, 	-- Muster: Trachten des wahren Glaubens
+	[29120] = 	18456, 	-- Muster: Trachten des wahren Glaubens
+	[14513] = 	18457, 	-- Muster: Robe des Erzmagiers
+	[14514] = 	18458, 	-- Muster: Robe der Leere
+	[14526] = 	18560, 	-- Muster: Mondstoff
+	[17017] = 	20848, 	-- Muster: Flimmerkernmantel
+	[17018] = 	20849, 	-- Muster: Flimmerkernhandschuhe
+	[17724] = 	21945, 	-- Muster: Grünes Festtagshemd
+	[18265] = 	22759, 	-- Muster: Flimmerkernwickeltücher
+	[18414] = 	22866, 	-- Muster: Gürtel des Erzmagiers
+	[18415] = 	22867, 	-- Muster: Teufelsstoffhandschuhe
+	[18416] = 	22868, 	-- Muster: Infernohandschuhe
+	[18417] = 	22869, 	-- Muster: Mondstoffhandschuhe
+	[18418] = 	22870, 	-- Muster: Schutzumhang der Verteidigung
+	[18487] = 	22902, 	-- Muster: Mondstoffrobe
+	[19215] = 	23662, 	-- Muster: Weisheit der Holzschlundfeste
+	[19218] = 	23663, 	-- Muster: Mantel der Holzschlundfeste
+	[19216] = 	23664, 	-- Muster: Argentumstiefel
+	[19217] = 	23665, 	-- Muster: Argentumschultern
+	[19219] = 	23666, 	-- Muster: Flimmerkernrobe
+	[19220] = 	23667, 	-- Muster: Flimmerkerngamaschen
+	[19764] = 	24091, 	-- Muster: Blutrebenweste
+	[19765] = 	24092, 	-- Muster: Blutrebengamaschen
+	[19766] = 	24093, 	-- Muster: Blutrebenstiefel
+	[20546] = 	24901, 	-- Muster: Runenverzierte stygische Gamaschen
+	[20548] = 	24902, 	-- Muster: Runenverzierter stygischer Gürtel
+	[20547] = 	24903, 	-- Muster: Runenverzierte stygische Stiefel
+	[21358] = 	26085, 	-- Muster: Seelenbeutel
+	[21371] = 	26087, 	-- Muster: Kernteufelsstofftasche
+	[21722] = 	26403, 	-- Muster: Festtagskleid
+	[44916] = 	26403, 	-- Muster: Festtagskleid
+	[21723] = 	26407, 	-- Muster: Festtagsanzug
+	[44917] = 	26407, 	-- Muster: Festtagsanzug
+	[21892] = 	26747, 	-- Muster: Magieerfüllter Netherstoffballen
+	[21893] = 	26749, 	-- Muster: Magieerfüllte Netherstofftasche
+	[21894] = 	26750, 	-- Muster: Seelenstoffballen
+	[21895] = 	26751, 	-- Muster: Urmondstoff
+	[21908] = 	26752, 	-- Muster: Zauberfeuergürtel
+	[21909] = 	26753, 	-- Muster: Zauberfeuerhandschuhe
+	[21910] = 	26754, 	-- Muster: Zauberfeuerrobe
+	[21911] = 	26755, 	-- Muster: Zauberfeuertasche
+	[21912] = 	26756, 	-- Muster: Eisschattenzwirnschultern
+	[21914] = 	26757, 	-- Muster: Eisschattenzwirnstiefel
+	[21913] = 	26758, 	-- Muster: Eisschattenzwirnrobe
+	[21915] = 	26759, 	-- Muster: Schwarzschattentasche
+	[21916] = 	26760, 	-- Muster: Urmondstoffgürtel
+	[21918] = 	26761, 	-- Muster: Urmondstoffschultern
+	[21917] = 	26762, 	-- Muster: Urmondstoffrobe
+	[21919] = 	26763, 	-- Muster: Urmondstofftasche
+	[21896] = 	26773, 	-- Muster: Netherstoffrobe
+	[21897] = 	26774, 	-- Muster: Netherstofftunika
+	[21898] = 	26775, 	-- Muster: Magieerfüllte Netherstoffhose
+	[21899] = 	26776, 	-- Muster: Magieerfüllte Netherstoffstiefel
+	[21900] = 	26777, 	-- Muster: Magieerfüllte Netherstoffrobe
+	[21901] = 	26778, 	-- Muster: Magieerfüllte Netherstofftunika
+	[21902] = 	26779, 	-- Muster: Seelenstoffhandschuhe
+	[21903] = 	26780, 	-- Muster: Seelenstoffschultern
+	[21904] = 	26781, 	-- Muster: Seelenstoffweste
+	[21905] = 	26782, 	-- Muster: Arkanostoffarmschienen
+	[21906] = 	26783, 	-- Muster: Arkanostoffstiefel
+	[21907] = 	26784, 	-- Muster: Arkanostoffrobe
+	[22307] = 	27658, 	-- Muster: Verzauberter Magiestoffbeutel
+	[22308] = 	27659, 	-- Muster: Verzauberte Runenstofftasche
+	[22309] = 	27660, 	-- Muster: Große Verzauberertasche
+	[22310] = 	27724, 	-- Muster: Cenarische Kräutertasche
+	[22312] = 	27725, 	-- Muster: Cenarischer Ranzen
+	[22683] = 	28210, 	-- Muster: Gaeas Umarmung
+	[22774] = 	28480, 	-- Muster: Sylvanweste
+	[22773] = 	28481, 	-- Muster: Sylvankrone
+	[22772] = 	28482, 	-- Muster: Sylvanschultern
+	[24316] = 	31373, 	-- Muster: Zauberstoff
+	[24292] = 	31430, 	-- Muster: Mystischer Zauberfaden
+	[24293] = 	31431, 	-- Muster: Silberner Zauberfaden
+	[24294] = 	31432, 	-- Muster: Runenverzierter Zauberfaden
+	[24295] = 	31433, 	-- Muster: Goldener Zauberfaden
+	[24296] = 	31434, 	-- Muster: Armschienen des Unerschütterlichen
+	[35308] = 	31434, 	-- Muster: Armschienen des Unerschütterlichen
+	[24297] = 	31435, 	-- Muster: Armschienen der Verwüstung
+	[24298] = 	31437, 	-- Muster: Schwarzgestreifte Armschienen
+	[24299] = 	31438, 	-- Muster: Umhang der schwarzen Leere
+	[24300] = 	31440, 	-- Muster: Umhang der Ewigkeit
+	[24301] = 	31441, 	-- Muster: Weißer Arzneikittel
+	[24302] = 	31442, 	-- Muster: Gurt des Unerschütterlichen
+	[35309] = 	31442, 	-- Muster: Gurt des Unerschütterlichen
+	[24303] = 	31443, 	-- Muster: Gurt der Zerstörung
+	[24304] = 	31444, 	-- Muster: Schwarzer Gürtel des Wissens
+	[24305] = 	31448, 	-- Muster: Cape der Entschlossenheit
+	[24306] = 	31449, 	-- Muster: Wickeltuch der Vergeltung
+	[24307] = 	31450, 	-- Muster: Managewirkter Umhang
+	[24308] = 	31451, 	-- Muster: Hose des weißen Heilers
+	[24309] = 	31452, 	-- Muster: Hose des Zauberschlags
+	[24310] = 	31453, 	-- Muster: Hose des Schlachtenzaubers
+	[24311] = 	31454, 	-- Muster: Kapuze des weißen Heilers
+	[24312] = 	31455, 	-- Muster: Kapuze des Zauberschlags
+	[24313] = 	31456, 	-- Muster: Kapuze des Schlachtenzaubers
+	[24314] = 	31459, 	-- Muster: Juwelenbeutel
+	[30280] = 	36315, 	-- Muster: Gürtel der Zauberwucht
+	[30281] = 	36316, 	-- Muster: Gürtel des langen Weges
+	[30282] = 	36317, 	-- Muster: Stiefel der Zauberwucht
+	[30283] = 	36318, 	-- Muster: Stiefel des langen Weges
+	[30483] = 	36686, 	-- Muster: Schattenstoff
+	[30833] = 	37873, 	-- Muster: Umhang der Arkanflucht
+	[30842] = 	37882, 	-- Muster: Flammenherzarmschienen
+	[30843] = 	37883, 	-- Muster: Flammenherzhandschuhe
+	[30844] = 	37884, 	-- Muster: Flammenherzweste
+	[32437] = 	40020, 	-- Muster: Schuhe der Seelenwache
+	[32438] = 	40021, 	-- Muster: Armschienen der Seelenwache
+	[32439] = 	40023, 	-- Muster: Gamaschen der Seelenwache
+	[32440] = 	40024, 	-- Muster: Gurt der Seelenwache
+	[32447] = 	40060, 	-- Muster: Nachtend
+	[32754] = 	41205, 	-- Muster: Armschienen des flinken Gedankens
+	[32755] = 	41206, 	-- Muster: Mantelung des flinken Gedankens
+	[32752] = 	41207, 	-- Muster: Flinkheiltücher
+	[32753] = 	41208, 	-- Muster: Flinkheilmantelung
+	[34261] = 	44950, 	-- Muster: Grüne Winterkleidung
+	[34319] = 	44958, 	-- Muster: Rote Winterkleidung
+	[35204] = 	46128, 	-- Muster: Sonnenfeuerhandlappen
+	[35205] = 	46129, 	-- Muster: Hände des ewigen Lichtes
+	[35206] = 	46130, 	-- Muster: Sonnenfeuerrobe
+	[35207] = 	46131, 	-- Muster: Robe des ewigen Lichtes
+	[37915] = 	49677, 	-- Muster: Ausgehschuhe
+	[38229] = 	50194, 	-- Muster: Mycahs Botanikerbeutel
+	[38327] = 	50644, 	-- Muster: Haliskanjackett
+	[38328] = 	50647, 	-- Muster: Haliskanpantalons
+	[42172] = 	55993, 	-- Muster: Rotes Holzfällerhemd
+	[42173] = 	55994, 	-- Muster: Blaues Holzfällerhemd
+	[42174] = 	55995, 	-- Muster: Gelbes Holzfällerhemd
+	[42175] = 	55996, 	-- Muster: Grünes Holzfällerhemd
+	[42177] = 	55997, 	-- Muster: Rotes Arbeiterhemd
+	[42176] = 	55998, 	-- Muster: Blaues Arbeiterhemd
+	[42178] = 	55999, 	-- Muster: Rustikales Arbeiterhemd
+	[42179] = 	56000, 	-- Muster: Grünes Arbeiterhemd
+	[42181] = 	56001, 	-- Muster: Mondgespinst
+	[42180] = 	56002, 	-- Muster: Schwarztuch
+	[42182] = 	56003, 	-- Muster: Zaubertuch
+	[42183] = 	56004, 	-- Muster: Abgründige Tasche
+	[42184] = 	56005, 	-- Muster: Eisige Tasche
+	[42185] = 	56006, 	-- Muster: Mysteriöse Tasche
+	[42186] = 	56007, 	-- Muster: Froststofftasche
+	[42187] = 	56009, 	-- Muster: Glänzender Zauberfaden
+	[42188] = 	56011, 	-- Muster: Saphirfarbener Zauberfaden
+	[42189] = 	56016, 	-- Muster: Irrwischumhang
+	[42190] = 	56017, 	-- Muster: Todesfrostumhang
+	[42191] = 	56018, 	-- Muster: Hut der winterlichen Verdammnis
+	[42192] = 	56019, 	-- Muster: Seidige Eissplitterstiefel
+	[42193] = 	56020, 	-- Muster: Eiszeitliche Kordel
+	[42194] = 	56021, 	-- Muster: Frostmondhosen
+	[42195] = 	56022, 	-- Muster: Lichtgesegnete Fäustlinge
+	[42196] = 	56023, 	-- Muster: Auroraschuhe
+	[42197] = 	56024, 	-- Muster: Mondgespinstrobe
+	[42198] = 	56025, 	-- Muster: Mondgespinsthandschuhe
+	[42199] = 	56026, 	-- Muster: Schwarztuchrobe
+	[42200] = 	56027, 	-- Muster: Schwarztuchhandschuhe
+	[42201] = 	56028, 	-- Muster: Zaubertuchrobe
+	[42202] = 	56029, 	-- Muster: Zaubertuchhandschuhe
+	-- [43876] = 	59390, 	-- Eine Anleitung zum Plündern nordischer Stoffe
+	[45774] = 	63924, 	-- Muster: Smaragdtasche
+	-- ULDUAR
+	[45104] = 	63205, 	-- Kordel der weißen Dämmerung
+	[45102] = 	63203, 	-- Schärpe der uralten Kraft
+	[45105] = 	63206, 	-- Schuhe des Retters
+	[45103] = 	63204, 	-- Schuhe des Zauberwerfers
+	-- TOURNAMENT
+	[47657] = 	67064, 	-- Königliche Mondgespinstrobe A
+	[47656] = 	67065, 	-- Königliche Mondgespinstarmschienen A
+	[47655] = 	67066, 	-- Merlins Robe A
+	[47654] = 	67079, 	-- Juwelenbesetzte Armschienen des Zauberers A
+	[47639] = 	67145, 	-- Juwelenbesetzte Armschienen des Zauberers H
+	[47638] = 	67146, 	-- Merlins Robe H
+	[47637] = 	67147, 	-- Königliche Mondgespinstarmschienen H
+	[47636] = 	67144, 	-- Königliche Mondgespinstrobe H
+	-- ICC
+	[49956] = 	70553, 	-- Sandalen der Weihung
+	[49955] = 	70552, 	-- Lichtgewirkte Gamaschen
+	[49954] = 	70551, 	-- Todesfroststiefel
+	[49953] = 	70550, 	-- Gamaschen des gewobenen Todes
 }
 
--- create the reverse table, which is what we actually need
-Altoholic.RecipeDB = {}
-for k, v in pairs(SPELL_ITEM) do
-	Altoholic.RecipeDB[v] = k
-end
+-- -- -- create the reverse table, which is what we actually need
+-- -- Altoholic.RecipeDB = {}
+-- -- for k, v in pairs(SPELL_ITEM) do
+	-- -- Altoholic.RecipeDB[v] = k
+-- -- end
 
--- release memory
-wipe(SPELL_ITEM)
-SPELL_ITEM = nil
+-- -- -- release memory
+-- -- wipe(SPELL_ITEM)
+-- -- SPELL_ITEM = nil
