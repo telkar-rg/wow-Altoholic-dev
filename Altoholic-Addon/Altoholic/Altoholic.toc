@@ -68,3 +68,5 @@ Frames\Quests.xml
 Frames\Skills.xml
 Frames\Search.xml
 Frames\Talents.xml
+
+Frames\Keys.xml

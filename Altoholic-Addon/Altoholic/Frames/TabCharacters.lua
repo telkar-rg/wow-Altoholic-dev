@@ -22,17 +22,21 @@ local VIEW_MOUNTS = 8
 local VIEW_REP = 9
 local VIEW_EQUIP = 10
 local VIEW_TOKENS = 11
+local VIEW_KEYS = 12
 
 local ICON_VIEW_BAGS = "Interface\\Buttons\\Button-Backpack-Up"
-local ICON_VIEW_MAILS = "Interface\\Icons\\INV_Misc_Note_01"
-local ICON_VIEW_QUESTS = "Interface\\Icons\\INV_Misc_Book_07"
+-- local ICON_VIEW_MAILS = "Interface\\Icons\\INV_Misc_Note_01"
+local ICON_VIEW_MAILS = "Interface\\Icons\\inv_letter_15"
+-- local ICON_VIEW_QUESTS = "Interface\\Icons\\INV_Misc_Book_07"
+local ICON_VIEW_QUESTS = "Interface\\Icons\\achievement_quests_completed_06"
 local ICON_VIEW_AUCTIONS = "Interface\\Icons\\INV_Misc_Coin_01"
 local ICON_VIEW_BIDS = "Interface\\Icons\\INV_Misc_Coin_03"
 local ICON_VIEW_COMPANIONS = "Interface\\Icons\\INV_Box_Birdcage_01"
 local ICON_VIEW_MOUNTS = "Interface\\Icons\\Ability_Mount_RidingHorse"
 local ICON_VIEW_REP = "Interface\\Icons\\INV_BannerPVP_02"
 local ICON_VIEW_EQUIP = "Interface\\Icons\\INV_Chest_Plate04"
-local ICON_VIEW_KEY = "Interface\\Icons\\inv_misc_key_11"
+-- local ICON_VIEW_KEY = "Interface\\Icons\\inv_misc_key_11"
+local ICON_VIEW_KEY = "Interface\\Icons\\spell_nature_moonkey"
 local ICON_VIEW_TALENTS = "Interface\\Icons\\Spell_Nature_NatureGuardian"
 local ICON_VIEW_TOKENS = "Interface\\Icons\\Spell_Holy_SummonChampion"
 
@@ -77,6 +81,8 @@ local function HideAll()
 	AltoholicFrameReputations:Hide()
 	AltoholicFrameEquipment:Hide()
 	AltoholicFrameCurrencies:Hide()
+	AltoholicFrameKeys:Hide()
+	
 	AltoholicFrameClasses:Hide()
 end
 
@@ -88,7 +94,8 @@ function ns:OnShow()
 	if AltoholicFrameReputations:IsVisible() or 
 		AltoholicFrameEquipment:IsVisible() or 
 		AltoholicFrameCurrencies:IsVisible() or 
-		AltoholicFramePetsAllInOne:IsVisible() then
+		AltoholicFramePetsAllInOne:IsVisible()or 
+		AltoholicFrameKeys:IsVisible() then
 		AltoholicFrameClasses:Show()
 	end
 	
@@ -411,6 +418,11 @@ function ns:ShowCharInfo(infoType)
 		AltoholicFrameQuests:Show()
 		addon.Quests:InvalidateView()
 		addon.Quests:Update();
+	elseif infoType == VIEW_KEYS then
+		AltoholicFrameClasses:Show()
+		AltoholicFrameKeys:Show()
+		addon.Keys:InvalidateView()
+		addon.Keys:Update();
 	elseif infoType == VIEW_AUCTIONS then
 		addon.AuctionHouse:SetListType("Auctions")
 		AltoholicFrameAuctions:Show()
