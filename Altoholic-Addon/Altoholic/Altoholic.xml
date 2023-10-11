@@ -210,12 +210,12 @@
 			<Layer level="OVERLAY">
 				<FontString name="$parentName" inherits="GameFontNormal" justifyH="CENTER">
 					<Size>
-						<AbsDimension x="200" y="18"/>
+						<AbsDimension x="400" y="18"/>
 					</Size>
 					<Anchors>
 						<Anchor point="TOPLEFT">
 							<Offset>
-								<AbsDimension x="350" y="-16"/>
+								<AbsDimension x="250" y="-16"/>
 							</Offset>
 						</Anchor>
 					</Anchors>

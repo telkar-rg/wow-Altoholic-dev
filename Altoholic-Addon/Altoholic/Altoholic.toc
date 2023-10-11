@@ -1,5 +1,5 @@
 ﻿## Interface: 30300
-## Title: Altoholic
+## Title: Altoholic (Telkar-RG)
 ## Title-zhCN: |cffeedd99 [物品] |r: 全角色统计 Altoholic
 ## X-Curse-Packaged-Version: r90
 ## X-Curse-Project-Name: Altoholic
@@ -11,7 +11,7 @@
 ## Notes-zhTW: 讓你即時撿閱你所有角色的資料
 ## Notes-zhCN: 能让你全面掌握你的所有角色的信息。
 
-## Author: Thaoky (EU-Marécages de Zangar)
+## Author: Thaoky, Telkar-RG
 ## Version: 3.3.002b
 ## X-Category: Inventory, Tradeskill, Mail
 ## X-Localizations: enUS, frFR, zhCN, zhTW, deDE, koKR, esES, esMX, ruRU
