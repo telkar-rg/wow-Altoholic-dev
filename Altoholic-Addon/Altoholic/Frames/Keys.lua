@@ -2,7 +2,7 @@ local addonName = ...
 local addon = _G[addonName]
 
 local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
--- local BF = LibStub("LibBabble-Faction-3.0"):GetLookupTable()
+local BF = LibStub("LibBabble-Faction-3.0"):GetLookupTable()
 local BZ = LibStub("LibBabble-Zone-3.0"):GetLookupTable()
 local BB = LibStub("LibBabble-Boss-3.0"):GetLookupTable()
 
@@ -13,6 +13,13 @@ local collapsedHeaders
 
 local ICON_DISABLED = "\124TInterface\\RaidFrame\\ReadyCheck-NotReady:14\124t"
 local ICON_ENABLED  = "\124TInterface\\RaidFrame\\ReadyCheck-Ready:14\124t"
+local ICON_UNKNOWN  = "\124TInterface\\RaidFrame\\ReadyCheck-Waiting:14\124t"
+local ICON_LIST = {ICON_DISABLED, ICON_ENABLED, ICON_UNKNOWN}
+local ICON_ALLIANCE = "|TInterface\\TargetingFrame\\UI-PVP-ALLIANCE:16:16:0:0:64:64:0:36:0:36|t"
+local ICON_HORDE    = "|TInterface\\TargetingFrame\\UI-PVP-HORDE:16:16:0:0:64:64:0:36:0:36|t"
+-- local ICON_ALLIANCE = "|TInterface\\Icons\\achievement_pvp_a_a:16|t"
+-- local ICON_HORDE    = "|TInterface\\Icons\\achievement_pvp_h_h:16|t"
+local ICON_LIST_FACTION = {ICON_ALLIANCE, ICON_HORDE}
 
 -- colors
 local WHITE		= "|cFFFFFFFF"
@@ -50,85 +57,84 @@ local currentFactionGroup = (UnitFactionGroup("player") == "Alliance") and 1 or 
 addon.Keys = {}
 
 local QuestNames = {
-	[838] = "Scholomance",
-	[964] = "Skeletal Fragments",
-	[5092] = "Clear the Way",
-	[5096] = "Scarlet Diversions",
-	[5097] = "All Along the Watchtowers",
-	[5098] = "All Along the Watchtowers",
-	[5505] = "The Key to Scholomance",
-	[5511] = "The Key to Scholomance",
-	[5514] = "Mold Rhymes With...",
-	[5533] = "Scholomance",
-	[5537] = "Skeletal Fragments",
-	[5538] = "Mold Rhymes With...",
-	[5801] = "Fire Plume Forged",
-	[5802] = "Fire Plume Forged",
-	[5803] = "Araj's Scarab",
-	[5804] = "Araj's Scarab",
-	[7487] = "Attunement to the Core",
-	[7761] = "Blackhand's Command",
-	[7848] = "Attunement to the Core",
-	
-	[9824] = "Arcane Disturbances",
-	[9825] = "Restless Activity",
-	[9826] = "Contact from Dalaran",
-	[9829] = "Khadgar",
-	[9831] = "Entry Into Karazhan",
-	[9832] = "The Second and Third Fragments",
-	[9836] = "The Master's Touch",
-	[9837] = "Return to Khadgar",
-	
-	[10754] = "Entry Into the Citadel",
-	[10755] = "Entry Into the Citadel",
-	[10756] = "Grand Master Rohok",
-	[10757] = "Rohok's Request",
-	[10758] = "Hotter than Hell",
-	[10762] = "Grand Master Dumphry",
-	[10763] = "Dumphry's Request",
-	[10764] = "Hotter than Hell",
-	
-	[10263] = "Assisting the Consortium (Aldor)",
-	[10264] = "Assisting the Consortium (Scryers)",
-	[10265] = "Consortium Crystal Collection",
-	[10262] = "A Heap of Ethereals",
-	[10205] = "Warp-Raider Nesaad",
-	[10266] = "Request for Assistance",
-	[10267] = "Rightful Repossession",
-	[10268] = "An Audience with the Prince",
-	[10269] = "Triangulation Point One",
-	[10275] = "Triangulation Point Two",
-	[10276] = "Full Triangle",
-	[10280] = "Special Delivery to Shattrath City",
-	[10704] = "How to Break Into the Arcatraz",
-	
-	[10279] = "To The Master's Lair",
-	[10277] = "The Caverns of Time",
-	[10282] = "Old Hillsbrad",
-	[10283] = "Taretha's Diversion",
-	[10284] = "Escape from Durnholde",
-	[10285] = "Return to Andormu",
-	
-	[11481] = "Crisis at the Sunwell",
-	[11488] = "Magisters' Terrace",
-	[11490] = "The Scryer's Scryer",
-	[11492] = "Hard to Kill",
-	
-	[13604] = "Archivum Data Disc (10)",
-	[13607] = "The Celestial Planetarium (10)",
-	[13606] = "Freya's Sigil (10)",
-	[13609] = "Hodir's Sigil (10)",
-	[13610] = "Thorim's Sigil (10)",
-	[13611] = "Mimiron's Sigil (10)",
-	[13614] = "Algalon (10)",
-	
-	[13817] = "Archivum Data Disc (25)",
-	[13816] = "The Celestial Planetarium (25)",
-	[13821] = "Freya's Sigil (25)",
-	[13822] = "Hodir's Sigil (25)",
-	[13823] = "Thorim's Sigil (25)",
-	[13824] = "Mimiron's Sigil (25)",
-	[13818] = "Algalon (25)",
+	[838] = L["QuestTitle-838"],
+	[964] = L["QuestTitle-964"],
+	[5092] = L["QuestTitle-5092"],
+	[5096] = L["QuestTitle-5096"],
+	[5097] = L["QuestTitle-5097"],
+	[5098] = L["QuestTitle-5098"],
+	[5505] = L["QuestTitle-5505"],
+	[5511] = L["QuestTitle-5511"],
+	[5514] = L["QuestTitle-5514"],
+	[5533] = L["QuestTitle-5533"],
+	[5537] = L["QuestTitle-5537"],
+	[5538] = L["QuestTitle-5538"],
+	[5801] = L["QuestTitle-5801"],
+	[5802] = L["QuestTitle-5802"],
+	[5803] = L["QuestTitle-5803"],
+	[5804] = L["QuestTitle-5804"],
+	[7487] = L["QuestTitle-7487"],
+	[7761] = L["QuestTitle-7761"],
+	[7848] = L["QuestTitle-7848"],
+
+	[9824] = L["QuestTitle-9824"],
+	[9825] = L["QuestTitle-9825"],
+	[9826] = L["QuestTitle-9826"],
+	[9829] = L["QuestTitle-9829"],
+	[9831] = L["QuestTitle-9831"],
+	[9832] = L["QuestTitle-9832"],
+	[9836] = L["QuestTitle-9836"],
+	[9837] = L["QuestTitle-9837"],
+
+	[10754] = L["QuestTitle-10754"],
+	[10755] = L["QuestTitle-10755"],
+	[10756] = L["QuestTitle-10756"],
+	[10757] = L["QuestTitle-10757"],
+	[10758] = L["QuestTitle-10758"],
+	[10762] = L["QuestTitle-10762"],
+	[10763] = L["QuestTitle-10763"],
+	[10764] = L["QuestTitle-10764"],
+
+	[10263] = L["QuestTitle-10263"],
+	[10264] = L["QuestTitle-10264"],
+	[10265] = L["QuestTitle-10265"],
+	[10262] = L["QuestTitle-10262"],
+	[10205] = L["QuestTitle-10205"],
+	[10266] = L["QuestTitle-10266"],
+	[10267] = L["QuestTitle-10267"],
+	[10268] = L["QuestTitle-10268"],
+	[10269] = L["QuestTitle-10269"],
+	[10275] = L["QuestTitle-10275"],
+	[10276] = L["QuestTitle-10276"],
+	[10280] = L["QuestTitle-10280"],
+	[10704] = L["QuestTitle-10704"],
+
+	[10279] = L["QuestTitle-10279"],
+	[10277] = L["QuestTitle-10277"],
+	[10282] = L["QuestTitle-10282"],
+	[10283] = L["QuestTitle-10283"],
+	[10284] = L["QuestTitle-10284"],
+	[10285] = L["QuestTitle-10285"],
+
+	[11488] = L["QuestTitle-11488"],
+	[11490] = L["QuestTitle-11490"],
+	[11492] = L["QuestTitle-11492"],
+
+	[13604] = L["QuestTitle-13604"],
+	[13607] = L["QuestTitle-13607"],
+	[13606] = L["QuestTitle-13606"],
+	[13609] = L["QuestTitle-13609"],
+	[13610] = L["QuestTitle-13610"],
+	[13611] = L["QuestTitle-13611"],
+	[13614] = L["QuestTitle-13614"],
+
+	[13817] = L["QuestTitle-13817"],
+	[13816] = L["QuestTitle-13816"],
+	[13821] = L["QuestTitle-13821"],
+	[13822] = L["QuestTitle-13822"],
+	[13823] = L["QuestTitle-13823"],
+	[13824] = L["QuestTitle-13824"],
+	[13818] = L["QuestTitle-13818"]
 }
 
 local ItemNames = {
@@ -246,20 +252,39 @@ local KeyList = {
 		isHeader = true,
 	},
 	
-	{ 
-		name = BZ["Karazhan"],
-		notes = L["KEY_NOTE_Karazhan"], 
+	{
+		name = BZ["Shadow Labyrinth"],
+		notes = L["KEY_NOTE_ShadowLabyrinth"], 
+		aquisition = { type="item", item=27991 },
+		icon = "inv_misc_key_02",
+		lockpick = 350
+	}, 	-- Shadow Labyrinth Key
+	{
+		name = BZ["Old Hillsbrad Foothills"],
+		notes = L["KEY_NOTE_OldHillsbradFoothills"], 
+		aquisition = { type="quest", quest={10279,10277} },
+		icon = "achievement_zone_hillsbradfoothills"
+	}, 	-- quest=10277 Die Höhlen der Zeit
+	{
+		name = BZ["The Black Morass"], 
+		notes = L["KEY_NOTE_TheBlackMorass"], 
+		aquisition = { type="quest", quest={10282,10283,10284,10285} },
+		icon = "achievement_zone_dustwallowmarsh"
+	}, 	-- quest=10285 Rückkehr zu Andormu
+	{
+		name = BZ["The Arcatraz"],
+		notes = L["KEY_NOTE_TheArcatraz"], 
 		aquisition = {
 			type="questitem",
-			quest={9824,9825,9826,9829,9831,9832,9836,9837},
-			item=24490
+			quest={10263,10264,10265,10262,10205,10266,10267,10268,10269,10275,10276,10280,10704},
+			item=31084
 		},
-		icon = "inv_misc_key_07",
+		icon = "inv_datacrystal03",
 		lockpick = 350
-	}, 	-- The Master's Key
+	}, 	-- Key to the Arcatraz
 	{
 		name = BZ["The Shattered Halls"],
-		notes = L["KEY_NOTE_TheShatteredHalls"], 
+		notes = L["KEY_NOTE_TheShatteredHalls"],
 		aquisition = {
 			type="questitem", 
 			faction=true, 
@@ -273,75 +298,75 @@ local KeyList = {
 		icon = "inv_misc_key_02",
 		lockpick = 350
 	}, 	-- Shattered Halls Key
-	{
-		name = BZ["Shadow Labyrinth"],
-		notes = L["KEY_NOTE_ShadowLabyrinth"], 
-		aquisition = { type="item", item=27991 },
-		icon = "inv_misc_key_02",
-		lockpick = 350
-	}, 	-- Shadow Labyrinth Key
-	{
-		name = BZ["The Arcatraz"],
-		notes = L["KEY_NOTE_TheArcatraz"], 
+	{ 
+		name = BZ["Karazhan"],
+		notes = L["KEY_NOTE_Karazhan"], 
 		aquisition = {
 			type="questitem",
-			quest={10263,10264,10265,10262,10205,10266,10267,10268,10269,10275,10276,10280,10704},
-			item=31084
+			quest={9824,9825,9826,9829,9831,9832,9836,9837},
+			item=24490
 		},
-		icon = "inv_datacrystal03",
+		icon = "inv_misc_key_07",
 		lockpick = 350
-	}, 	-- Key to the Arcatraz
+	}, 	-- The Master's Key
 	
-	{
-		name = BZ["Old Hillsbrad Foothills"],
-		notes = L["KEY_NOTE_OldHillsbradFoothills"], 
-		aquisition = { type="quest", quest={10279,10277} },
-		icon = "achievement_zone_hillsbradfoothills"
-	}, 	-- quest=10277 Die Höhlen der Zeit
-	{
-		name = BZ["The Black Morass"], 
-		notes = L["KEY_NOTE_TheBlackMorass"], 
-		aquisition = { type="quest", quest={10282,10283,10284,10285} },
-		icon = "achievement_zone_dustwallowmarsh"
-	}, 	-- quest=10285 Rückkehr zu Andormu
 	
 	{ 
-		name = "Heroic: "..BZ["Hellfire Citadel"],
+		name = L["Heroic"]..": "..BZ["Hellfire Citadel"],
+		faction=true,
+		notes = {L["KEY_NOTE_HellfireCitadel_A"], L["KEY_NOTE_HellfireCitadel_H"]},
 		-- notes = L["KEY_NOTE_HellfireCitadel"], 
 		aquisition = { 
-			type="item", 
+			type="repitem", 
 			faction=true, 
-			item={30622,30637}
+			item={30622,30637},
+			rep={ {9000,BF["Honor Hold"]},{9000,BF["Thrallmar"]} }
 		},
 		icon = "inv_misc_key_13"
 	}, 	-- Flamewrought Key
 	{ 
-		name = "Heroic: "..BZ["Coilfang Reservoir"],
-		-- notes = L["KEY_NOTE_CoilfangReservoir"], 
-		aquisition = { type="item", item=30623 },
+		name = L["Heroic"]..": "..BZ["Coilfang Reservoir"],
+		notes = L["KEY_NOTE_CoilfangReservoir"], 
+		aquisition = { 
+			type="repitem", 
+			item=30623,
+			rep={9000,BF["Cenarion Expedition"]}
+		},
 		icon = "inv_misc_key_13"
 	}, 	-- Reservoir Key
 	{
-		name = "Heroic: "..BZ["Auchindoun"],
-		-- notes = L["KEY_NOTE_Auchindoun"], 
-		aquisition = { type="item", item=30633 },
+		name = L["Heroic"]..": "..BZ["Auchindoun"],
+		notes = L["KEY_NOTE_Auchindoun"], 
+		aquisition = {
+			type="repitem", 
+			item=30633,
+			rep={9000,BF["Lower City"]}
+		},
 		icon = "inv_misc_key_11"
 	}, 	-- Auchenai Key
 	{
-		name = "Heroic: "..BZ["Tempest Keep"],
-		-- notes = L["KEY_NOTE_TempestKeep"], 
-		aquisition = { type="item", item=30634 },
+		name = L["Heroic"]..": "..BZ["Tempest Keep"],
+		notes = L["KEY_NOTE_TempestKeep"], 
+		aquisition = {
+			type="repitem", 
+			item=30634,
+			rep={9000,BF["The Sha'tar"]}
+		},
 		icon = "inv_misc_key_09"
 	}, 	-- Warpforged Key
 	{
-		name = "Heroic: "..BZ["Caverns of Time"],
-		-- notes = L["KEY_NOTE_CavernsofTime"], 
-		aquisition = { type="item", item=30635 },
+		name = L["Heroic"]..": "..BZ["Caverns of Time"],
+		notes = L["KEY_NOTE_CavernsofTime"], 
+		aquisition = {
+			type="repitem", 
+			item=30635,
+			rep={9000,BF["Keepers of Time"]}
+		},
 		icon = "inv_misc_key_04"
 	}, 	-- Key of Time
 	
 	{
-		name = "Heroic: "..BZ["Magisters' Terrace"],
+		name = L["Heroic"]..": "..BZ["Magisters' Terrace"],
 		notes = L["KEY_NOTE_MagistersTerrace"], 
 		aquisition = { type="quest", quest={11488,11490,11492} },
 		icon = "ability_warrior_innerrage"
@@ -394,9 +419,11 @@ end
 local ns = addon.Keys		-- ns = namespace
 
 function ns:Update()
-	print("Update")
+	-- print("Update")
 	-- local character = addon.Tabs.Characters:GetCurrent()
 
+	AltoTooltip:Hide();
+	GameTooltip:Hide();
 	
 	local VisibleLines = 8
 	local NumLines = VisibleLines
@@ -426,23 +453,24 @@ function ns:Update()
 	end
 
 	local i=1
-	print("offset",offset)
+	-- print("offset",offset)
 	
 	-- for line = 1, DS:GetQuestLogSize(character) do
 	for line, keyEntry in pairs(KeyList) do
 		-- local isHeader, quest, questTag, groupSize, money, isComplete = DS:GetQuestLogInfo(character, line)
 		local isHeader = not(keyEntry.aquisition)
-		-- local name = keyEntry.name or "<?>"
-		local name = tostring(line).." ".. (keyEntry.name or "<?>") 	-- DEBUG
+		local name = keyEntry.name or "<?>"
+		-- local name = tostring(line).." ".. (keyEntry.name or "<?>") 	-- DEBUG
 		local icon = keyEntry.icon or "inv_misc_questionmark"
 		local aquisition = keyEntry.aquisition
-		print("--",
-		"line",line,
-		"name",name,
-		"offset",offset,
-		"VisibleCount",VisibleCount,
-		"isHeader",isHeader)
+		-- print("--",
+		-- "line",line,
+		-- "name",name,
+		-- "offset",offset,
+		-- "VisibleCount",VisibleCount,
+		-- "isHeader",isHeader)
 		
+		-- _G[ entry..i ].isHeader = nil
 		if (offset > 0) or (DisplayedCount >= VisibleLines) then		-- if the line will not be visible
 			if isHeader then													-- then keep track of counters
 				
@@ -458,8 +486,10 @@ function ns:Update()
 				offset = offset - 1		-- no further control, nevermind if it goes negative
 			end
 		else		-- line will be displayed
+			_G[ entry..i ].isHeader = nil
 			if isHeader then
-			do -- DEBUG - remove later
+				_G[ entry..i ].isHeader = true
+				
 				if not collapsedHeaders[line] then
 					_G[ entry..i.."Collapse" ]:SetNormalTexture("Interface\\Buttons\\UI-MinusButton-Up"); 
 					DrawGroup = true
@@ -491,15 +521,19 @@ function ns:Update()
 				i = i + 1
 				VisibleCount = VisibleCount + 1
 				DisplayedCount = DisplayedCount + 1
-			end
 			elseif DrawGroup then
 				_G[entry..i.."Collapse"]:Hide()
+				_G[ entry..i ].keyEntry = keyEntry 	-- store info for Key in line frame
 				
 				-- local _, _, level = DS:GetQuestInfo(quest)
 				-- quick fix, level may be nil, I suspect that due to certain locales, the quest link may require different parsing.
 				-- level = level or 0
+				local linkName = name
+				if not keyEntry.notes then 
+					linkName = setStringColorPrefix(name, WHITE)
+				end
 				
-				_G[entry..i.."EntryLinkText"]:SetText( name )
+				_G[entry..i.."EntryLinkText"]:SetText( linkName )
 				-- _G[entry..i.."Name"]:SetPoint("TOPLEFT", 15, 0)
 				_G[entry..i.."EntryLink"]:SetID(line)
 				_G[entry..i.."EntryLink"]:SetPoint("TOPLEFT", 10, 0)
@@ -513,14 +547,14 @@ function ns:Update()
 					local itemTexture = _G[itemName .. "_Background"]
 					itemTexture:SetTexture("Interface\\Icons\\"..icon)
 
-					local status, charFaction, itemBags, itemBank, searchedID, questList, questHistory, progress
+					local status, charFaction, itemBags, itemBank, searchedID, questList, repList, progress
 					
 					if classButton.CharName then	-- if there's an alt in this column..
 						itemButton.CharName = classButton.CharName
+						-- itemButton.keyEntry = keyEntry
 						
 						-- if character then wipe(character) end
 						if questList then wipe(questList) end
-						if questHistory then wipe(questHistory) end
 						character = DS:GetCharacter(classButton.CharName, realm, account)
 						charFaction = (DS:GetCharacterFaction(character) == "Alliance") and 1 or 2
 						questHistory = DS:GetQuestHistory(character) or {}
@@ -541,12 +575,12 @@ function ns:Update()
 							else
 								questList = aquisition.quest
 							end
-							if questHistory[questList[#questList]] then 	-- if the last quest is done, then we are active
+							if DS:IsQuestCompletedBy(character, questList[#questList]) then 	-- if the last quest is done, then we are active
 								status = true
 							else 	-- else: we calculate the quest progress 
 								progress = 0
 								for _,questID in pairs(questList) do
-									if questHistory[questID] then progress=progress+1 end
+									if DS:IsQuestCompletedBy(character, questID) then progress=progress+1 end
 								end
 								progress = progress / #questList
 							end
@@ -563,31 +597,57 @@ function ns:Update()
 							status = (itemBags + itemBank) > 0
 							
 							if not(status) then
-								if questHistory[questList[#questList]] then 	-- if the last quest is done, then we are active
+								if DS:IsQuestCompletedBy(character, questList[#questList]) then 	-- if the last quest is done, then we are active
 									status = true
 								else 	-- else: we calculate the quest progress 
 									progress = 0
 									for _,questID in pairs(questList) do
-										if questHistory[questID] then progress=progress+1 end
+										if DS:IsQuestCompletedBy(character, questID) then progress=progress+1 end
 									end
 									progress = progress / #questList
 								end
 							end
+						elseif aquisition.type == "repitem" then
+							if aquisition.faction then
+								searchedID = aquisition.item[charFaction]
+								repList = aquisition.rep[charFaction]
+							else
+								searchedID = aquisition.item
+								repList = aquisition.rep
+							end
+							itemBags, itemBank = DataStore:GetContainerItemCount(character, searchedID)
+							status = (itemBags + itemBank) > 0
+							
+							if not(status) then
+								local _,_,repEarned = DS:GetRawReputationInfo(character, repList[2])
+								-- print(repEarned, type(repEarned))
+								if not repEarned then
+									progress=0
+								else
+									progress = repEarned/repList[1]
+									progress = math.min(1,progress)
+									progress = math.max(0,progress)
+								end
+							end
 						end
+						
+						itemButton.status = status
 						
 						local vc, text
 						if status then 
 							vc = VertexColors["WHITE"]
 							itemTexture:SetVertexColor(vc.r, vc.g, vc.b);
 							
-							_G[itemName .. "Name"]:SetPoint("BOTTOMRIGHT", 5, 0)
+							_G[itemName .. "Name"]:SetPoint("BOTTOMRIGHT", 10, 0)
 							
 							_G[itemName .. "Name"]:SetText( ICON_ENABLED )
 						elseif progress > 0 then
-							vc = VertexColors["ORANGE"]
-							itemTexture:SetVertexColor(vc.r, vc.g, vc.b);
+							local cr,cg,cb = 0.6, 0.2+0.6*progress, 0
+							if progress >= 0.999 then cr,cg,cb = 0, 0.6, 0.6 end
 							
-							_G[itemName .. "Name"]:SetPoint("BOTTOMRIGHT", -5, 0)
+							itemTexture:SetVertexColor(cr,cg,cb);
+							
+							_G[itemName .. "Name"]:SetPoint("BOTTOMRIGHT", 0, 0)
 							
 							text = format("%2d", floor(progress*100+0.5)) .. "%"
 							_G[itemName .. "Name"]:SetText( text )
@@ -596,7 +656,7 @@ function ns:Update()
 							vc = VertexColors["GRAY"]
 							itemTexture:SetVertexColor(vc.r, vc.g, vc.b);
 							
-							_G[itemName .. "Name"]:SetPoint("BOTTOMRIGHT", 5, 0)
+							_G[itemName .. "Name"]:SetPoint("BOTTOMRIGHT", 10, 0)
 							
 							_G[itemName .. "Name"]:SetText( ICON_DISABLED )
 							-- itemButton.CharName = nil
@@ -626,14 +686,14 @@ function ns:Update()
 end
 
 function ns:InvalidateView()
-	print("InvalidateView")
+	-- print("InvalidateView")
 	isViewValid = nil
 end
 
 
 function ns:Collapse_OnClick(frame, button)
-	print("Collapse_OnClick(frame, button)")
-	if true then return end
+	-- print("Collapse_OnClick(frame, button)")
+	-- if true then return end
 	
 	local id = frame:GetParent():GetID()
 	if id ~= 0 then
@@ -643,59 +703,301 @@ function ns:Collapse_OnClick(frame, button)
 end
 
 function ns:Item_OnEnter(frame)
-	print("Item_OnEnter(frame)")
-	if true then return end
+	-- print("-- Item_OnEnter(frame)")
+	local charName = frame.CharName
+	if not charName then return end
+	local parentframe = frame:GetParent()
+	local keyEntry = parentframe.keyEntry
+	if not keyEntry then return end
+	local status = frame.status
+	local aquisition = keyEntry.aquisition
+	local nameKey = keyEntry.name or "<?>"
+	
+	local DS = DataStore
+	local realm, account = addon:GetCurrentRealm()
+	local character = DS:GetCharacter(charName, realm, account)
+	
+	local charFaction = (DS:GetCharacterFaction(character) == "Alliance") and 1 or 2
+	local itemID, questList, repList
+	
+	if aquisition.type == "item" then
+		if aquisition.faction then
+			itemID = aquisition.item[charFaction]
+		else
+			itemID = aquisition.item
+		end
+		if not itemID then return end
+
+		GameTooltip:SetOwner(frame, "ANCHOR_LEFT");
+		local link
+		if type(itemID) == "number" then
+			link = select(2, GetItemInfo(itemID))
+		end
+		
+		if not link then
+			-- GameTooltip:AddLine(L["Unknown link, please relog this character"],1,1,1);
+			-- GameTooltip:Show();
+			return
+		end
+		
+		GameTooltip:SetHyperlink(link)
+		GameTooltip:Show()
+		return
+	
+	elseif aquisition.type == "quest" then
+		if aquisition.faction then
+			questList = aquisition.quest[charFaction]
+		else
+			questList = aquisition.quest
+		end
+		
+		AltoTooltip:SetOwner(frame, "ANCHOR_LEFT")
+		AltoTooltip:ClearLines()
+		AltoTooltip:AddLine( format("%s|r: %s", DS:GetColoredCharacterName(character), nameKey) )
+		AltoTooltip:AddLine(" ")
+		
+		local questDone, cr,cg,cb
+		for _,questID in pairs(questList) do
+			questDone = 1
+			cr,cg,cb = 1,0.15,0.15
+			if DS:IsQuestCompletedBy(character, questID) then
+				questDone = 2
+				cr,cg,cb = 0.1,1,0.1
+			else
+				local isActiveQuest = nil
+				local questLogSize = DS:GetQuestLogSize(character) or 0
+				for i = 1, questLogSize do
+					local isHeader, link = DS:GetQuestLogInfo(character, i)
+					if not isHeader then
+						local altQuestName, altQuestID = DS:GetQuestInfo(link)
+						if altQuestID == questID then		-- same quest found
+							isActiveQuest = true
+							break
+						end
+					end
+				end
+				
+				if isActiveQuest then
+					questDone = 3
+					cr,cg,cb = 1,0.8,0
+				end
+			end
+			AltoTooltip:AddLine( format("%s %s", ICON_LIST[questDone], tostring(QuestNames[questID]) ), cr,cg,cb )
+		end
+		
+		AltoTooltip:Show()
+		return
+		
+	elseif aquisition.type == "questitem" then
+		if aquisition.faction then
+			itemID = aquisition.item[charFaction]
+			questList = aquisition.quest[charFaction]
+		else
+			itemID = aquisition.item
+			questList = aquisition.quest
+		end
+		-- status
+		if status then
+			GameTooltip:SetOwner(frame, "ANCHOR_LEFT");
+			local link
+			if type(itemID) == "number" then
+				link = select(2, GetItemInfo(itemID))
+			end
+			if not link then return end
+			
+			GameTooltip:SetHyperlink(link)
+			GameTooltip:Show()
+			return
+			
+		else
+			AltoTooltip:SetOwner(frame, "ANCHOR_LEFT")
+			AltoTooltip:ClearLines()
+			AltoTooltip:AddLine( format("%s|r: %s", DS:GetColoredCharacterName(character), nameKey) )
+			AltoTooltip:AddLine(" ")
+			
+			local questDone, cr,cg,cb
+			for _,questID in pairs(questList) do
+				questDone = 1
+				cr,cg,cb = 1,0.15,0.15
+				if DS:IsQuestCompletedBy(character, questID) then
+					questDone = 2
+					cr,cg,cb = 0.1,1,0.1
+				else
+					local isActiveQuest = nil
+					local questLogSize = DS:GetQuestLogSize(character) or 0
+					for i = 1, questLogSize do
+						local isHeader, link = DS:GetQuestLogInfo(character, i)
+						if not isHeader then
+							local altQuestName, altQuestID = DS:GetQuestInfo(link)
+							if altQuestID == questID then		-- same quest found
+								isActiveQuest = true
+								break
+							end
+						end
+					end
+					
+					if isActiveQuest then
+						questDone = 3
+						cr,cg,cb = 1,0.8,0
+					end
+				end
+				AltoTooltip:AddLine( format("%s %s", ICON_LIST[questDone], tostring(QuestNames[questID]) ), cr,cg,cb )
+			end
+			
+			AltoTooltip:Show()
+			return
+		end
+		
+		
+	-- elseif true then
+		-- return
+		
+	elseif aquisition.type == "repitem" then
+		if aquisition.faction then
+			itemID = aquisition.item[charFaction]
+			repList = aquisition.rep[charFaction]
+		else
+			itemID = aquisition.item
+			repList = aquisition.rep
+		end
+		
+		if status then
+			GameTooltip:SetOwner(frame, "ANCHOR_LEFT");
+			local link
+			if type(itemID) == "number" then
+				link = select(2, GetItemInfo(itemID))
+			end
+			if not link then return end
+			
+			GameTooltip:SetHyperlink(link)
+			GameTooltip:Show()
+			return
+			
+		else
+			AltoTooltip:SetOwner(frame, "ANCHOR_LEFT")
+			AltoTooltip:ClearLines()
+			AltoTooltip:AddLine( format("%s|r: %s", DS:GetColoredCharacterName(character), nameKey) )
+			AltoTooltip:AddLine(" ")
+			AltoTooltip:AddLine(L["Required reputation"] .. ":",1,1,1)
+			
+			
+			
+			local _,_,repEarned = DS:GetRawReputationInfo(character, repList[2])
+			local progress
+			if not repEarned then
+				repEarned = 0
+				progress=0
+			else
+				progress = repEarned/repList[1]
+				progress = math.min(1,progress)
+				progress = math.max(0,progress)
+			end
+			
+			local repDone = progress >= 0.999 and 2 or 1
+			local cr,cg,cb = 0.8, 0.1+0.8*progress, 0
+			if repDone > 1 then cr,cg,cb = 0, 0.8, 0.8 end
+			AltoTooltip:AddLine( format("%s %s (%d/%d)", ICON_LIST[repDone], tostring(repList[2]), repEarned, repList[1] ), cr,cg,cb )
+			
+			AltoTooltip:Show()
+			return
+		end
+	end
+	
 end
 
 function ns:Link_OnEnter(frame)
-	print("Link_OnEnter(frame)")
-	if true then return end
+	-- print("Link_OnEnter(frame)")
 	
-	local id = frame:GetID()
-	if id == 0 then return end
-
-	local DS = DataStore
-	local character = addon.Tabs.Characters:GetCurrent()
-	local _, link = DS:GetQuestLogInfo(character, id)
-	if not link then return end
-
-	local questName, questID, level = DS:GetQuestInfo(link)
-	if IsAddOnLoaded("Odyssey") and IsAddOnLoaded("OdysseyQuests") then
-		Odyssey:ShowQuestTooltip(frame, questID)
-		return
+	local parentFrame = frame:GetParent()
+	if parentFrame.isHeader then return end
+	local keyEntry = parentFrame.keyEntry
+	if not keyEntry then return end
+	
+	local aquisition = keyEntry.aquisition
+	local nameKey = keyEntry.name or "<?>"
+	
+	local notes 	-- currentFactionGroup
+	if keyEntry.faction then
+		notes = keyEntry.notes[currentFactionGroup]
+	else
+		notes = keyEntry.notes
+	end
+	if not notes then return end
+	local notesLines = { strsplit("\n", notes) }
+	
+	AltoTooltip:SetOwner(frame, "ANCHOR_RIGHT")
+	AltoTooltip:ClearLines()
+	if keyEntry.faction then
+		AltoTooltip:AddLine( ICON_LIST_FACTION[currentFactionGroup] .." ".. nameKey )
+	else
+		AltoTooltip:AddLine( nameKey )
+	end
+	AltoTooltip:AddLine(" ")
+	
+	for k,v in pairs(notesLines) do
+		AltoTooltip:AddLine( "  "..v, 1,1,1, true )
+	end
+	if keyEntry.lockpick then
+		AltoTooltip:AddLine(" ")
+		AltoTooltip:AddLine( format(L["KEY_NOTE_Lockpick"], keyEntry.lockpick), 1,1,1 )
 	end
 	
-	GameTooltip:ClearLines();
-	GameTooltip:SetOwner(frame, "ANCHOR_RIGHT");
-	GameTooltip:SetHyperlink(link);
-	GameTooltip:AddLine(" ",1,1,1);
-	
-	GameTooltip:AddDoubleLine(LEVEL .. ": |cFF00FF9A" .. level, L["QuestID"] .. ": |cFF00FF9A" .. questID);
-	
-	local player = addon:GetCurrentCharacter()
-	addon.Quests:ListCharsOnQuest(questName, player, GameTooltip)
-	GameTooltip:Show();
+	AltoTooltip:Show();
 end
 
 function ns:Item_OnClick(frame, button)
-	print("Item_OnClick(frame, button)")
-	if true then return end
-end
-function ns:Link_OnClick(frame, button)
-	print("Link_OnClick(frame, button)")
-	if true then return end
+	-- print("Item_OnClick(frame, button)")
+	-- if true then return end
+	local charName = frame.CharName
+	if not charName then return end
+	local parentFrame = frame:GetParent()
+	if parentFrame.isHeader then return end
+	local keyEntry = parentFrame.keyEntry
+	if not keyEntry then return end
+	local aquisition = keyEntry.aquisition
+	if not aquisition then return end
 	
-	if button == "LeftButton" and IsShiftKeyDown() then
-		local chat = ChatEdit_GetLastActiveWindow()
-		if chat:IsShown() then
-			local id = frame:GetID()
-			if id == 0 then return end
-			
-			local character = addon.Tabs.Characters:GetCurrent()
-			local _, link = DataStore:GetQuestLogInfo(character, id)
-			if link then
-				chat:Insert(link)
-			end
+	local DS = DataStore
+	local realm, account = addon:GetCurrentRealm()
+	local character = DS:GetCharacter(charName, realm, account)
+	
+	local charFaction = (DS:GetCharacterFaction(character) == "Alliance") and 1 or 2
+	local itemID, itemLink
+	
+	if aquisition.type=="item" or aquisition.type=="questitem" or aquisition.type=="repitem" then
+		if aquisition.faction then
+			itemID = aquisition.item[charFaction]
+		else
+			itemID = aquisition.item
 		end
 	end
+	if not itemID then return end
+	if type(itemID) == "number" then
+		itemLink = select(2, GetItemInfo(itemID))
+	end
+	if not itemLink then return end
+	
+	if ( button == "LeftButton" ) and ( IsShiftKeyDown() ) then
+		local chat = ChatEdit_GetLastActiveWindow()
+		if chat:IsShown() then
+			ChatEdit_ActivateChat(chat)
+			chat:Insert(" "..itemLink)
+		end
+	end	
+end
+
+function ns:Link_OnClick(frame, button)
+	-- print("Link_OnClick(frame, button)")
+	
+	local parentFrame = frame:GetParent()
+	if not parentFrame.isHeader then return end
+	
+	local id = parentFrame:GetID()
+	
+	if id ~= 0 then
+		-- print("Toggle Collapsing")
+		collapsedHeaders[id] = not collapsedHeaders[id]
+		ns:Update()
+	end
+	
 end
