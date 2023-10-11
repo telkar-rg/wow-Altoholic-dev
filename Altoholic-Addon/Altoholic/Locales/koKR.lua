@@ -693,3 +693,6 @@ L[ [=[Your confirmation will still be required any time someone requests your in
 ]=] ] = "당신의 정보 요구하는 모든 요청에 대해 승인 절차를 거치게 될 것입니다."
 L["Zelemar the Wrathful"] = true
 L["Zone"] = "지역"
+
+L["Keys"] = "열쇠"
+L["Heroic"] = "영웅"

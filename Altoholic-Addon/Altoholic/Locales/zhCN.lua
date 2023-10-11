@@ -732,3 +732,5 @@ L[ [=[Your confirmation will still be required any time someone requests your in
 L["Zelemar the Wrathful"] = "愤怒者塞雷玛尔"
 L["Zone"] = "地区"
 
+L["Keys"] = "钥匙"
+L["Heroic"] = "英雄模式"
