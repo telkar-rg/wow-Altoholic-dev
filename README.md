@@ -14,4 +14,4 @@ Added "Keys" Tab for better overview of owned keys and some attunement quests.
   - The "Hearthstone" will no longer be counted per character (as everyone has it)
   - Removed deDE mistranslation of "Mail"
   - Characters in the horizontzal tab are now sorted by average item level
-- Original WotLK retail version
+- [Original 3.3.5 version](https://github.com/telkar-rg/wow-Altoholic-dev/releases/tag/r90)
