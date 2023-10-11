@@ -328,7 +328,7 @@ function addon:OnEnable()
 	addon:RegisterEvent("AUCTION_HOUSE_SHOW", addon.AuctionHouse.OnShow)
 	addon:RegisterEvent("PLAYER_TALENT_UPDATE", addon.Talents.OnUpdate);
 	
-	AltoholicFrameName:SetText("Altoholic |cFFFFFFFF".. addon.Version .. "|r by |cFF69CCF0Thaoky|r" .. " (Edited by |cFF69CCF0Telkar-RG|r)")
+	AltoholicFrameName:SetText("Altoholic |cFFFFFFFF".. addon.Version .. "|r by |cFF69CCF0Thaoky|r" .. " (Edited by |cFF69CCF0Telkar-RG|r ".."|cFFFFFFFF".."1.0|r)")
 
 	local realm = GetRealmName()
 	local player = UnitName("player")
