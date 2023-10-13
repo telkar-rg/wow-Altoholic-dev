@@ -253,13 +253,6 @@ local KeyList = {
 	},
 	
 	{
-		name = BZ["Shadow Labyrinth"],
-		notes = L["KEY_NOTE_ShadowLabyrinth"], 
-		aquisition = { type="item", item=27991 },
-		icon = "inv_misc_key_02",
-		lockpick = 350
-	}, 	-- Shadow Labyrinth Key
-	{
 		name = BZ["Old Hillsbrad Foothills"],
 		notes = L["KEY_NOTE_OldHillsbradFoothills"], 
 		aquisition = { type="quest", quest={10279,10277} },
@@ -272,6 +265,13 @@ local KeyList = {
 		icon = "achievement_zone_dustwallowmarsh"
 	}, 	-- quest=10285 Rückkehr zu Andormu
 	{
+		name = BZ["Shadow Labyrinth"],
+		notes = L["KEY_NOTE_ShadowLabyrinth"], 
+		aquisition = { type="item", item=27991 },
+		icon = "inv_misc_key_02",
+		lockpick = 350
+	}, 	-- Shadow Labyrinth Key
+	{
 		name = BZ["The Arcatraz"],
 		notes = L["KEY_NOTE_TheArcatraz"], 
 		aquisition = {
@@ -282,6 +282,17 @@ local KeyList = {
 		icon = "inv_datacrystal03",
 		lockpick = 350
 	}, 	-- Key to the Arcatraz
+	{ 
+		name = BZ["Karazhan"],
+		notes = L["KEY_NOTE_Karazhan"], 
+		aquisition = {
+			type="questitem",
+			quest={9824,9825,9826,9829,9831,9832,9836,9837},
+			item=24490
+		},
+		icon = "inv_misc_key_07",
+		lockpick = 350
+	}, 	-- The Master's Key
 	{
 		name = BZ["The Shattered Halls"],
 		notes = L["KEY_NOTE_TheShatteredHalls"],
@@ -298,17 +309,6 @@ local KeyList = {
 		icon = "inv_misc_key_02",
 		lockpick = 350
 	}, 	-- Shattered Halls Key
-	{ 
-		name = BZ["Karazhan"],
-		notes = L["KEY_NOTE_Karazhan"], 
-		aquisition = {
-			type="questitem",
-			quest={9824,9825,9826,9829,9831,9832,9836,9837},
-			item=24490
-		},
-		icon = "inv_misc_key_07",
-		lockpick = 350
-	}, 	-- The Master's Key
 	
 	
 	{ 
