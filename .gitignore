@@ -1,5 +1,6 @@
 *.temp
 _Releases/*
+Git wow-Altoholic-dev.lnk
 
 # Compiled Lua sources
 luac.out
