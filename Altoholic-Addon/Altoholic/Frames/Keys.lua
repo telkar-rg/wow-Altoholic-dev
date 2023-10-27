@@ -15,8 +15,10 @@ local ICON_DISABLED = "\124TInterface\\RaidFrame\\ReadyCheck-NotReady:14\124t"
 local ICON_ENABLED  = "\124TInterface\\RaidFrame\\ReadyCheck-Ready:14\124t"
 local ICON_UNKNOWN  = "\124TInterface\\RaidFrame\\ReadyCheck-Waiting:14\124t"
 local ICON_LIST = {ICON_DISABLED, ICON_ENABLED, ICON_UNKNOWN}
-local ICON_ALLIANCE = "|TInterface\\TargetingFrame\\UI-PVP-ALLIANCE:16:16:0:0:64:64:0:36:0:36|t"
-local ICON_HORDE    = "|TInterface\\TargetingFrame\\UI-PVP-HORDE:16:16:0:0:64:64:0:36:0:36|t"
+-- local ICON_ALLIANCE = "|TInterface\\TargetingFrame\\UI-PVP-ALLIANCE:16:16:0:0:64:64:0:36:0:36|t"
+-- local ICON_HORDE    = "|TInterface\\TargetingFrame\\UI-PVP-HORDE:16:16:0:0:64:64:0:36:0:36|t"
+local ICON_ALLIANCE = "|TInterface\\TargetingFrame\\UI-PVP-ALLIANCE:16:16:0:0:40:40:2:26:0:24|t"
+local ICON_HORDE    = "|TInterface\\TargetingFrame\\UI-PVP-HORDE:16:16:0:0:40:40:2:26:0:24|t"
 -- local ICON_ALLIANCE = "|TInterface\\Icons\\achievement_pvp_a_a:16|t"
 -- local ICON_HORDE    = "|TInterface\\Icons\\achievement_pvp_h_h:16|t"
 local ICON_LIST_FACTION = {ICON_ALLIANCE, ICON_HORDE}
@@ -309,6 +311,34 @@ local KeyList = {
 		icon = "inv_misc_key_02",
 		lockpick = 350
 	}, 	-- Shattered Halls Key
+	-- {
+		-- name = BZ["Black Temple"],
+		-- notes = L["KEY_NOTE_BlackTemple"], 
+		-- aquisition = {
+			-- type="questitem",
+			-- quest = {
+				-- 10568, 	-- Schrifttafeln von Baa'ri (Aldor)
+				-- 10683, 	-- Schrifttafeln von Baa'ri (Seher)
+				-- 10571, 	-- Oronu der Älteste (Aldor)
+				-- 10684, 	-- Oronu der Älteste (Seher)
+				-- 10574, 	-- Die Verderber der Aschenzungen (Aldor)
+				-- 10685, 	-- Die Verderber der Aschenzungen (Seher)
+				-- 10575, 	-- Der Kerker des Wächters (Aldor)
+				-- 10686, 	-- Der Kerker des Wächters (Seher)
+				-- 10622, 	-- Ein Beweis der Treue
+				-- 10628, 	-- Akama
+				-- 10705, 	-- Seher Udalo
+				-- 10706, 	-- Ein mysteriöses Omen
+				-- 10707, 	-- Die Terrasse von Ata'mal
+				-- 10708, 	-- Akamas Versprechen
+				-- 10944, 	-- Das gefährdete Geheimnis
+				-- 10946, 	-- Die List der Aschenzungen
+			-- },
+			-- item=31084
+		-- },
+		-- icon = "inv_datacrystal03",
+		-- lockpick = 350
+	-- }, 	-- 	Medaillon von Karabor
 	
 	
 	{ 
@@ -557,7 +587,7 @@ function ns:Update()
 						if questList then wipe(questList) end
 						character = DS:GetCharacter(classButton.CharName, realm, account)
 						charFaction = (DS:GetCharacterFaction(character) == "Alliance") and 1 or 2
-						questHistory = DS:GetQuestHistory(character) or {}
+						-- questHistory = DS:GetQuestHistory(character) or {}
 						progress = 0
 						status = false
 						
