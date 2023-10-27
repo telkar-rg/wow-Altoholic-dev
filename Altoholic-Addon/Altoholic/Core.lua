@@ -110,6 +110,7 @@ local AddonDB_Defaults = {
 			ShowMinimap = 1,
 			
 			-- ** Tooltip options **
+			TooltipQuestStartItem = 1,
 			TooltipSource = 1,
 			TooltipCount = 1,
 			TooltipTotal = 1,

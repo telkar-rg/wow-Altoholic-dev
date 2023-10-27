@@ -10,6 +10,7 @@ local YELLOW	= "|cFFFFFF00"
 local ORANGE	= "|cFFFF7F00"
 local TEAL		= "|cFF00FF9A"
 local GOLD		= "|cFFFFD700"
+local IMPOSSIBLE_DIFFICULTY_COLOR = "|cffff2020"
 
 local THIS_ACCOUNT = "Default"
 
@@ -117,6 +118,109 @@ local GatheringNodes = {			-- Add herb/ore possession info to Plants/Mines, than
 	["Firethorn"]					= 39970,
 }
 
+local QuestStartItemList = {
+	[51315] = 24914,  -- Sealed Chest
+	[50380] = 24554,  -- Battered Hilt
+	[50379] = 14443,  -- Battered Hilt
+	[49644] = 24428,  -- Head of Onyxia
+	[49643] = 24429,  -- Head of Onyxia
+	[47246] = 14160,  -- Writ of Merit
+	[46053] = 13819,  -- Reply-Code Alpha
+	[46052] = 13631,  -- Reply-Code Alpha
+	[45857] = 13817,  -- Archivum Data Disc
+	[45506] = 13604,  -- Archivum Data Disc
+	[44577] = 13375,  -- Heroic Key to the Focusing Iris
+	[44569] = 13372,  -- Key to the Focusing Iris
+	[33102] = 11178,  -- Blood of Zul'jin
+	[32405] = 11007,  -- Verdant Sphere
+	[32386] = 11003,  -- Magtheridon's Head
+	[32385] = 11002,  -- Magtheridon's Head
+	[21751] = 8536,  -- Tactical Task Briefing III
+	[21750] = 8771,  -- Combat Task Briefing II
+	[21749] = 8770,  -- Combat Task Briefing I
+	[21514] = 8829,  -- Logistics Task Briefing XI
+	[21385] = 8810,  -- Logistics Task Briefing X
+	[21384] = 8808,  -- Logistics Task Briefing VIII
+	[21382] = 8807,  -- Logistics Task Briefing V
+	[21381] = 8809,  -- Logistics Task Briefing IX
+	[21380] = 8806,  -- Logistics Task Briefing III
+	[21379] = 8805,  -- Logistics Task Briefing II
+	[21378] = 8804,  -- Logistics Task Briefing I
+	[21265] = 8783,  -- Logistics Task Briefing IX
+	[21264] = 8787,  -- Logistics Task Briefing VII
+	[21263] = 8780,  -- Logistics Task Briefing VII
+	[21262] = 8782,  -- Logistics Task Briefing VIII
+	[21261] = 8786,  -- Logistics Task Briefing VI
+	[21260] = 8781,  -- Logistics Task Briefing VI
+	[21259] = 8779,  -- Logistics Task Briefing V
+	[21258] = 8785,  -- Logistics Task Briefing IV
+	[21257] = 8778,  -- Logistics Task Briefing IV
+	[21256] = 8777,  -- Combat Task Briefing XI
+	[21255] = 8776,  -- Combat Task Briefing X
+	[21253] = 8775,  -- Combat Task Briefing IX
+	[21252] = 8774,  -- Combat Task Briefing VIII
+	[21251] = 8687,  -- Combat Task Briefing VII
+	[21250] = 8772,  -- Combat Task Briefing VI
+	[21249] = 8539,  -- Combat Task Briefing V
+	[21248] = 8773,  -- Combat Task Briefing IV
+	[21245] = 8737,  -- Tactical Task Briefing I
+	[21221] = 8801,  -- Eye of C'Thun
+	[21220] = 8791,  -- Head of Ossirian the Unscarred
+	[21167] = 8739,  -- Tactical Task Briefing VIII
+	[21166] = 8738,  -- Tactical Task Briefing VII
+	[21165] = 8534,  -- Tactical Task Briefing VI
+	[20948] = 8538,  -- Tactical Task Briefing V
+	[20947] = 8535,  -- Tactical Task Briefing IV
+	[20945] = 8537,  -- Tactical Task Briefing II
+	[20944] = 8740,  -- Tactical Task Briefing IX
+	[20943] = 8498,  -- Tactical Task Briefing X
+	[20942] = 8502,  -- Combat Task Briefing III
+	[20941] = 8501,  -- Combat Task Briefing XII
+	[20940] = 8541,  -- Logistics Task Briefing III
+	[20939] = 8540,  -- Logistics Task Briefing II
+	[20807] = 8497,  -- Logistics Task Briefing I
+	[20806] = 8496,  -- Logistics Task Briefing X
+	[20644] = 8446,  -- Nightmare Engulfed Object
+	[19802] = 8183,  -- Heart of Hakkar
+	[19018] = 7787,  -- Dormant Wind Kissed Blade
+	[19016] = 7785,  -- Vessel of Rebirth
+	[19003] = 7781,  -- Head of Nefarian
+	[19002] = 7783,  -- Head of Nefarian
+	[18771] = 7651,  -- Enchanted Thorium Platemail
+	[18770] = 7650,  -- Enchanted Thorium Platemail
+	[18769] = 7649,  -- Enchanted Thorium Platemail
+	[18706] = 7810,  -- Arena Master
+	[18703] = 7632,  -- Ancient Petrified Leaf
+	[18628] = 7604,  -- Thorium Brotherhood Contract
+	[18423] = 7495,  -- Head of Onyxia
+	[18422] = 7490,  -- Head of Onyxia
+	[18364] = 7506,  -- The Emerald Dream
+	[18363] = 7505,  -- Frost Shock and You
+	[18362] = 7504,  -- Holy Bologna: What the Light Won't Tell You
+	[18361] = 7503,  -- The Greatest Race of Hunters
+	[18360] = 7502,  -- Harnessing Shadows
+	[18359] = 7501,  -- The Light and How to Swing It
+	[18358] = 7500,  -- The Arcanist's Cookbook
+	[18357] = 7499,  -- Codex of Defense
+	[18356] = 7498,  -- Garona: A Study on Stealth and Treachery
+	[16782] = 6922,  -- Strange Water Globe
+	[16408] = 1918,  -- Befouled Water Globe
+	[16305] = 2,  -- Sharptalon's Claw
+	[16304] = 24,  -- Shadumbra's Head
+	[16303] = 23,  -- Ursangous's Paw
+	[11463] = 4281,  -- Undelivered Parcel
+	[11116] = 3884,  -- A Mangled Journal
+	[10454] = 3373,  -- Essence of Eranikus
+	[8705] = 2766,  -- OOX-22/FE Distress Beacon
+	[8704] = 485,  -- OOX-09/HL Distress Beacon
+	[8623] = 351,  -- OOX-17/TN Distress Beacon
+	[8524] = 654,  -- Model 4711-FTZ Power Source
+	[7666] = 2198,  -- Shattered Necklace
+	[4614] = 635,  -- Pendant of Myzrael
+	[3985] = 8552,  -- Monogrammed Sash
+	[6196] = 1392,  -- Noboru's Cudgel
+}
+
 -- *** Utility functions ***
 local function IsGatheringNode(name)
 	if name then
@@ -149,7 +253,7 @@ local function GetCraftNameFromRecipeLink(link)
 end
 
 local isTooltipDone, isNodeDone			-- for informant
-local cachedItemID, cachedCount, cachedTotal, cachedSource
+local cachedItemID, cachedCount, cachedTotal, cachedSource, cachedQuestStartItem
 local cachedRecipeOwners
 
 local itemCounts = {}
@@ -396,6 +500,8 @@ local function ProcessTooltip(tooltip, name, link)
 	end
 	
 	local itemID = addon:GetIDFromLink(link)
+	local DS = DataStore
+	local realm, account = addon:GetCurrentRealm()
 	
 	-- if there's no cached item id OR if it's different from the previous one ..
 	if (not cachedItemID) or 
@@ -414,6 +520,17 @@ local function ProcessTooltip(tooltip, name, link)
 			end
 		end
 		
+		cachedQuestStartItem = nil
+		if addon.Options:Get("TooltipQuestStartItem") == 1 and QuestStartItemList[itemID] then
+			-- UnitName("player")
+			local character = DS:GetCharacter(UnitName("player"), realm, account)
+			if DS:IsQuestCompletedBy(character, QuestStartItemList[itemID] ) then
+				-- cachedQuestStartItem = RED.."Quest already completed."
+				cachedQuestStartItem = format("<%s%s|r>", IMPOSSIBLE_DIFFICULTY_COLOR, QUEST_COMPLETE)
+			end
+			cachedItemID = itemID			-- we have searched this ID ..
+		end
+		
 		-- .. then check player bags to see how many times he owns this item, and where
 		if addon.Options:Get("TooltipCount") == 1 or addon.Options:Get("TooltipTotal") == 1 then
 			cachedCount = GetItemCount(itemID) -- if one of the 2 options is active, do the count
@@ -425,6 +542,11 @@ local function ProcessTooltip(tooltip, name, link)
 	local owner = tooltip:GetOwner()
 	if owner and owner.startTime then
 		tooltip:AddLine(format(ITEM_COOLDOWN_TIME, SecondsToTime(owner.duration - (GetTime() - owner.startTime))),1,1,1);
+	end
+	
+	if cachedQuestStartItem then		-- add cachedQuestStartItem
+		-- tooltip:AddLine(" ",1,1,1);
+		tooltip:AddLine(cachedQuestStartItem,1,1,1);
 	end
 
 	WriteCounterLines(tooltip)
