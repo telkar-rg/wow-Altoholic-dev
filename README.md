@@ -3,7 +3,9 @@ Altoholic: modified development for WotLK
 
 Added "Keys" Tab for better overview of owned keys and some attunement quests.
 ## Changes
-![The new "Keys" tab](https://github.com/telkar-rg/wow-Altoholic-dev/blob/main/_img/1.png?raw=true)
+- [Edited Version 1.01](https://github.com/telkar-rg/wow-Altoholic-dev/releases/tag/t1.01)
+  - Items that start Quests now show if the player has already completed them (only affects items of quality above common)
+![The new "Keys" tab](https://github.com/telkar-rg/wow-Altoholic-dev/blob/main/_img/10.png?raw=true)
 
 - [Edited Version 1.0](https://github.com/telkar-rg/wow-Altoholic-dev/releases/tag/t1.0)
   - Added "Keys" tab: will show various relevant keys or attunement quests per character in order to enter instances or allow for quicker entry.
@@ -14,6 +16,8 @@ Added "Keys" Tab for better overview of owned keys and some attunement quests.
   - The "Hearthstone" will no longer be counted per character (as everyone has it)
   - Removed deDE mistranslation of "Mail"
   - Characters in the horizontzal tab are now sorted by average item level
+![The new "Keys" tab](https://github.com/telkar-rg/wow-Altoholic-dev/blob/main/_img/1.png?raw=true)
+
 - [Original 3.3.5 version](https://github.com/telkar-rg/wow-Altoholic-dev/releases/tag/r90)
 
 ## Pretty Pictures
