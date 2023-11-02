@@ -17,6 +17,7 @@ local TEAL		= "|cFF00FF9A"
 local GOLD		= "|cFFFFD700"
 
 local THIS_ACCOUNT = "Default"
+local VERSION_STRING = "1.02"
 
 Altoholic.ClassInfo = {
 	["MAGE"] = "|cFF69CCF0",
@@ -328,7 +329,7 @@ function addon:OnEnable()
 	addon:RegisterEvent("AUCTION_HOUSE_SHOW", addon.AuctionHouse.OnShow)
 	addon:RegisterEvent("PLAYER_TALENT_UPDATE", addon.Talents.OnUpdate);
 	
-	AltoholicFrameName:SetText("Altoholic |cFFFFFFFF".. addon.Version .. "|r by |cFF69CCF0Thaoky|r" .. " (Edited by |cFF69CCF0Telkar-RG|r ".."|cFFFFFFFF".."1.01|r)")
+	AltoholicFrameName:SetText("Altoholic |cFFFFFFFF".. addon.Version .. "|r by |cFF69CCF0Thaoky|r" .. " (Edited by |cFF69CCF0Telkar-RG|r ".."|cFFFFFFFF".. VERSION_STRING .."|r)")
 
 	local realm = GetRealmName()
 	local player = UnitName("player")
