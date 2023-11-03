@@ -942,14 +942,6 @@ function ns:GetSource(searchedID)
 		DataStore_Crafts,
 		DataStore_Inventory,
 	}
-
-	local domain, subDomain
-	for _, provider in pairs(DataProviders) do
-		domain, subDomain = provider:GetSource(searchedID)
-		if domain and subDomain then
-			return domain, subDomain
-		end
-	end
 	
 	-- extremely fast: takes from 0.3 to 3 ms max, depends on the location of the item in the table (obviously longer if the item is at the end)
 	for Instance, BossList in pairs(lootTable) do
@@ -961,6 +953,15 @@ function ns:GetSource(searchedID)
 			end
 		end
 	end
+
+	local domain, subDomain
+	for _, provider in pairs(DataProviders) do
+		domain, subDomain = provider:GetSource(searchedID)
+		if domain and subDomain then
+			return domain, subDomain
+		end
+	end
+	
 	return nil
 end
 
