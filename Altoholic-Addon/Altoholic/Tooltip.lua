@@ -554,7 +554,7 @@ local function ProcessTooltip(tooltip, name, link)
 	
 	if cachedSource then		-- add item source
 		tooltip:AddLine(" ",1,1,1);
-		tooltip:AddLine(cachedSource,1,1,1);
+		tooltip:AddLine(cachedSource,1,1,1,1);
 	end
 	
 	-- addon:CheckMaterialUtility(itemID)
