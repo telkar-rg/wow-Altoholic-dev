@@ -342,7 +342,8 @@ local KeyList = {
 	
 	
 	{ 
-		name = L["Heroic"]..": "..BZ["Hellfire Citadel"],
+		-- name = L["Heroic"]..": "..BZ["Hellfire Citadel"],
+		name = format(HEROIC_PREFIX, BZ["Hellfire Citadel"]),
 		faction=true,
 		notes = {L["KEY_NOTE_HellfireCitadel_A"], L["KEY_NOTE_HellfireCitadel_H"]},
 		-- notes = L["KEY_NOTE_HellfireCitadel"], 
@@ -355,7 +356,8 @@ local KeyList = {
 		icon = "inv_misc_key_13"
 	}, 	-- Flamewrought Key
 	{ 
-		name = L["Heroic"]..": "..BZ["Coilfang Reservoir"],
+		-- name = L["Heroic"]..": "..BZ["Coilfang Reservoir"],
+		name = format(HEROIC_PREFIX, BZ["Coilfang Reservoir"]),
 		notes = L["KEY_NOTE_CoilfangReservoir"], 
 		aquisition = { 
 			type="repitem", 
@@ -365,7 +367,8 @@ local KeyList = {
 		icon = "inv_misc_key_13"
 	}, 	-- Reservoir Key
 	{
-		name = L["Heroic"]..": "..BZ["Auchindoun"],
+		-- name = L["Heroic"]..": "..BZ["Auchindoun"],
+		name = format(HEROIC_PREFIX, BZ["Auchindoun"]),
 		notes = L["KEY_NOTE_Auchindoun"], 
 		aquisition = {
 			type="repitem", 
@@ -375,7 +378,8 @@ local KeyList = {
 		icon = "inv_misc_key_11"
 	}, 	-- Auchenai Key
 	{
-		name = L["Heroic"]..": "..BZ["Tempest Keep"],
+		-- name = L["Heroic"]..": "..BZ["Tempest Keep"],
+		name = format(HEROIC_PREFIX, BZ["Tempest Keep"]),
 		notes = L["KEY_NOTE_TempestKeep"], 
 		aquisition = {
 			type="repitem", 
@@ -385,7 +389,8 @@ local KeyList = {
 		icon = "inv_misc_key_09"
 	}, 	-- Warpforged Key
 	{
-		name = L["Heroic"]..": "..BZ["Caverns of Time"],
+		-- name = L["Heroic"]..": "..BZ["Caverns of Time"],
+		name = format(HEROIC_PREFIX, BZ["Caverns of Time"]),
 		notes = L["KEY_NOTE_CavernsofTime"], 
 		aquisition = {
 			type="repitem", 
@@ -396,7 +401,8 @@ local KeyList = {
 	}, 	-- Key of Time
 	
 	{
-		name = L["Heroic"]..": "..BZ["Magisters' Terrace"],
+		-- name = L["Heroic"]..": "..BZ["Magisters' Terrace"],
+		name = format(HEROIC_PREFIX, BZ["Magisters' Terrace"]),
 		notes = L["KEY_NOTE_MagistersTerrace"], 
 		aquisition = { type="quest", quest={11488,11490,11492} },
 		icon = "ability_warrior_innerrage"

@@ -731,8 +731,9 @@ L[ [=[Your confirmation will still be required any time someone requests your in
 L["Zelemar the Wrathful"] = "Zelemar der Hasserfüllte"
 L["Zone"] = true
 
+-- Character-Frame: Keys
 L["Keys"] = "Schlüssel"
-L["Heroic"] = "Heroisch"
+
 L["Required reputation"] = "Benötigter Ruf"
 L["KEY_NOTE_Lockpick"] = "Alternative: |cffff8040Schlossknacken %d+|r"
 

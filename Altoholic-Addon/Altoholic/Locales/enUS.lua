@@ -703,8 +703,9 @@ L[ [=[Your confirmation will still be required any time someone requests your in
 L["Zelemar the Wrathful"] = true
 L["Zone"] = true
 
+-- Character-Frame: Keys
 L["Keys"] = true
-L["Heroic"] = true
+
 L["Required reputation"] = true
 L["KEY_NOTE_Lockpick"] = "Alternative: |cffff8040Lockpicking %d+|r"
 

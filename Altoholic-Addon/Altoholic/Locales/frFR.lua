@@ -742,5 +742,5 @@ L[ [=[Your confirmation will still be required any time someone requests your in
 L["Zelemar the Wrathful"] = "Zelemar le Courroucé"
 L["Zone"] = true
 
+-- Character-Frame: Keys
 L["Keys"] = "Clés"
-L["Heroic"] = "Héroïque"
