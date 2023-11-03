@@ -140,12 +140,32 @@ local lootTable = {
 		[L["Miscellaneous"]] = { 33927, 33047, 33968, 33864, 33967, 33969, 33862, 33863, 33868, 33966, 
 									33978, 33977, 33976, 32912, 34140, 32233, 33455, 34063, 34064, 33023, 
 									33024, 33025, 33026, 33043, 33929 },
+									
 		[L["Barleybrew Brewery"]] = { 33030, 33028, 33029 },
 		[L["Thunderbrew Brewery"]] = { 33031, 33032, 33033	},
 		[L["Gordok Brewery"]] = { 33034, 33036, 33035 },
-		["Coren Direbrew"] = { 37127, 38289, 38290, 38288, 38287, 37597 },
 		[L["Drohn's Distillery"]] = { 34017, 34018, 34019 },
-		[L["T'chali's Voodoo Brewery"]] = { 34020, 34021, 34022 }
+		[L["T'chali's Voodoo Brewery"]] = { 34020, 34021, 34022 },
+		
+		[BB["Coren Direbrew"] .. " (Lv70)"] = { 37127, 38289, 38290, 38288, 38287, 37597 },
+		[BB["Coren Direbrew"]] = { 
+			38280,  -- Direbrew's Dire Brew (Quest Item)
+			38281,  -- Direbrew's Dire Brew (Quest Item)
+			
+			49078,  -- Ancient Pickled Egg
+			49118,  -- Bubbling Balebrew Charm
+			49116,  -- Bitter Brightbrew Charm
+			49080,  -- Brawler's Souvenir
+			49074,  -- Coren's Chromium Coaster
+			49076,  -- Mithril Pocketwatch
+		},
+		[ LOOKING_FOR_DUNGEON .. " " .. LFD_REWARDS ] = {	-- global string for "Dungeon Finder" and "Rewards"
+			49120,  -- Direbrew's Shanker 2.0
+			48663,  -- Tankard O' Terror
+			37828,  -- Great Brewfest Kodo
+			-- 33977,  -- Swift Brewfest Ram (can also be bought)
+			37863,  -- Direbrew's Remote
+		},
 	},
 	
 	-- ** Sets & PVP ***
