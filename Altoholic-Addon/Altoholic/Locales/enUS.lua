@@ -266,6 +266,7 @@ L["Guilds received !"] = true
 L["Guild %s successfully deleted"] = true
 L["Gul'bor"] = true
 L["Gurubashi Arena"] = true
+L["Gunship"] = true 	-- ICC Gunship
 L["Hakkari Thorium Vein"] = true
 L["Halaa (Nagrand)"] = true
 L["Hallow's End"] = true

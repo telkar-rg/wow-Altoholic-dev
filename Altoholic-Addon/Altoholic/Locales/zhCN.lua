@@ -282,6 +282,7 @@ L["Guilds received !"] = "收到公会资料!"
 L["Guild %s successfully deleted"] = "公会仓库 %s 删除成功"
 L["Gul'bor"] = "古尔博"
 L["Gurubashi Arena"] = "古拉巴什竞技场"
+L["Gunship"] = "炮艇" 	-- ICC Gunship
 L["Hakkari Thorium Vein"] = "哈卡莱瑟银矿脉"
 L["Halaa (Nagrand)"] = "哈兰(纳格兰)"
 L["Hallow's End"] = "万圣节"

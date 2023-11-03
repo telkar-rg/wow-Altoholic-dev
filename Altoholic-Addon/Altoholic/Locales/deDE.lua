@@ -278,6 +278,7 @@ L["Guilds received !"] = "Gilden empfangen!"
 L["Guild %s successfully deleted"] = "Gilde %s erfolgreich gelöscht"
 L["Gul'bor"] = true
 L["Gurubashi Arena"] = "Arena der Gurubashi"
+L["Gunship"] = "Luftschiff" 	-- ICC Gunship
 L["Hakkari Thorium Vein"] = "Thoriumvorkommen der Hakkari"
 L["Halaa (Nagrand)"] = true
 L["Hallow's End"] = "Schlotternächte"

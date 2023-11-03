@@ -287,6 +287,7 @@ L["Guilds received !"] = "Получена гильдия!"
 L["Guild %s successfully deleted"] = "Гильдия %s удалена"
 L["Gul'bor"] = "Гул'бор"
 L["Gurubashi Arena"] = "Арена Гурубаши"
+L["Gunship"] = "Дирижабль" 	-- ICC Gunship
 L["Hakkari Thorium Vein"] = "Ториевая жила Хаккари"
 L["Halaa (Nagrand)"] = "Халаа (Награнд)"
 L["Hallow's End"] = "Тыквовин"
