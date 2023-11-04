@@ -130,12 +130,65 @@ local lootTable = {
 									21732, 21733, 21734, 21735 },
 		[BI["Tailoring"]] = { 21722, 21723 }
 	},
-	[L["Midsummer Fire Festival"]] = {	
-		[L["Miscellaneous"]] = { 34686, 23379, 23083, 23247, 23246, 23435, 23327, 23326, 
-									23211, 34684, 23323, 23324, 34685, 34683 },
-		[L["Lord Ahune"]] = { 35494, 35495, 35496, 35497, 35498, 35514, 35723, 34955, 35279, 35280 },
-		[L["Lord Ahune"] .. L[" (Heroic)"]] = { 35507, 35509, 35508, 35511, 35498, 34955, 35723, 35279, 35280, 35497, 
-									35496, 35494, 35495, 35514 }
+	[L["Midsummer Fire Festival"]] = {
+		[ CURRENCY ] = {
+			23247, 	-- Burning Blossom
+		},
+		[L["Burning Blossom"] .. format(" x%d", 350) ] = { 	
+			23083, 	-- Captured Flame
+			34686, 	-- Brazier of Dancing Flames
+		},
+		[L["Burning Blossom"] .. format(" x%d", 100) ] = { 	
+			23324, 	-- Mantle of the Fire Festival
+			34685, 	-- Vestment of Summer
+		},
+		[L["Burning Blossom"] .. format(" x%d", 200) ] = { 	34683, }, 	-- Sandals of Summer
+		[L["Burning Blossom"] .. format(" x%d", 2) ] = {
+			23246, 	-- Fiery Festival Brew
+			34684, 	-- Handful of Summer Petals
+		},
+		[L["Burning Blossom"] .. format(" x%d", 5) ] = {
+			23211, 	-- Toasted Smorc
+			23215, 	-- Bag of Smorc Ingredients
+			23326, 	-- Midsummer Sausage
+			23327, 	-- Fire-toasted Bun
+			23435, 	-- Elderberry Pie
+			34599, 	-- Juggling Torch
+		},
+		[L["Miscellaneous"]] = {
+			23323, 	-- Crown of the Fire Festival
+			23379, 	-- Cinder Bracers (removed Lv60 Quest)
+		},
+		[L["Lord Ahune"] .. " (Lv70)"] = {
+			34955, 	-- Scorched Stone
+			
+			35494, 	-- Shroud of Winter's Chill
+			35495, 	-- The Frost Lord's War Cloak
+			35496, 	-- Icebound Cloak
+			35497, 	-- Cloak of the Frigid Winds
+			35507, 	-- Amulet of Bitter Hatred
+			35508, 	-- Choker of the Arctic Flow
+			35509, 	-- Amulet of Glacial Tranquility
+			35511, 	-- Hailstone Pendant
+			35514, 	-- Frostscythe of Lord Ahune
+		},
+		[L["Lord Ahune"]] = {
+			35279, 	-- Tabard of Summer Skies
+			35280, 	-- Tabard of Summer Flames
+			35498, 	-- Formula: Enchant Weapon - Deathfrost
+			35720, 	-- Lord of Frost's Private Label
+			35723, 	-- Shards of Ahune
+			
+			54801, 	-- Icebound Cloak
+			54802, 	-- The Frost Lord's War Cloak
+			54803, 	-- The Frost Lord's Battle Shroud
+			54804, 	-- Shroud of Winter's Chill
+			54805, 	-- Cloak of the Frigid Winds
+		},
+		[ LOOKING_FOR_DUNGEON .. " " .. LFD_REWARDS ] = {	-- global string for "Dungeon Finder" and "Rewards"
+			53641,  -- Ice Chip
+			54806,  -- Frostscythe of Lord Ahune
+		},
 	},
 	[L["Shartuul"]] = {	
 		[L["Blade Edge Mountains"]] = { 32941, 32676, 32675, 32677, 32678, 32672, 32673, 32674, 32670, 32671, 
