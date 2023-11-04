@@ -940,68 +940,698 @@ local lootTable = {
 		[L["Trash Mobs"]] = { 50318, 50315, 50319, 50380, 50379 },
 	},
 	
-	[BZ["Icecrown Citadel"] .. " (10)"] = {
-		[BB["Lord Marrowgar"]] = {	50764, 50773, 50774, 50762, 50775, 50772, 50763, 50339, 50771, 50761, 50759, 50760, },
-		[BB["Lady Deathwhisper"]] = {	50785, 50782, 50780, 50778, 50783, 50777, 50784, 50779, 50786, 50342, 50781, 50776 },
-		[BB["Icecrown Gunship Battle"]] = {	50791, 50795, 50797, 50792, 50789, 50796, 50788, 50790, 50340, 50793, 50787, 50794 },
-		[BB["Deathbringer Saurfang"]] = { 50807, 50804, 50799, 50806, 50800, 50801, 50802, 50808, 50809, 50803, 50798, 50805 },
-		[BB["Festergut"]] = { 50859, 50988, 50990, 50985, 50858, 50812, 50967, 50811, 50852, 50986, 50810, 50966 },
-		[BB["Rotface"]] = { 51007, 51005, 51009, 51002, 51006, 51000, 51008, 51001, 51003, 51004, 50998, 50999 },
-		[BB["Professor Putricide"]] = { 51020, 51017, 51013, 51015, 51019, 51014, 51018, 51012, 51016, 50341, 51011, 51010 },
-		[BB["Blood Princes"]] = { 51382, 51379, 51380, 51023, 51325, 51383, 51025, 51381, 51024, 51021, 51022, 51326 },
-		[BB["Blood-Queen Lana'thel"]] = { 51554, 51552, 51550, 51551, 51386, 51556, 51555, 51548, 51387, 51384, 51385, 51553 },
-		[BB["Valithria Dreamwalker"]] = { 51584, 51777, 51585, 51565, 51583, 51566, 51586, 51563, 51564, 51562, 51582, 51561,},
-		[BB["Sindragosa"]] = { 51790, 51783, 51789, 51792, 51785, 51782, 51786, 51787, 51026, 51779,
-				51784, 51788, 51791 },
-		[BB["The Lich King"]] = {	},
+	[ BZ["Icecrown Citadel"] ] = {
+		[ L["Trash Mobs"] ] = {
+			50449, 	-- Stiffened Corpse Shoulderpads
+			50450, 	-- Leggings of Dubious Charms
+			50451, 	-- Belt of the Lonely Noble
+			50452, 	-- Wodin's Lucky Necklace
+			50447, 	-- Harbinger's Bone Band
+			50453, 	-- Ring of Rotting Sinew
+			50444, 	-- Rowan's Rifle of Silver Bullets
+		},
 	},
-	[BZ["Icecrown Citadel"] .. " (25)"] = {
-		[BB["Lord Marrowgar"]] = {	49978, 49979, 49950, 49952, 49980, 49951, 49960, 49964, 49975, 49949, 49977, 49967, 49968, 50415, 49976, 50274, 49908 },
-		[BB["Lady Deathwhisper"]] = {	49991, 49994, 49987, 49996, 49988, 49993, 49986, 49995, 49983, 49989, 49985, 49990, 49982, 49992, 50034, 50274, 49908 },
-		[BB["Icecrown Gunship Battle"]] = {	49998, 50006, 50011, 50001, 50009, 50000, 50003, 50002, 50010, 50274,
-				49908, 50005, 50008, 49999, 50359, 50352, 50411 },
-		[BB["Deathbringer Saurfang"]] = { 50014, 50333, 50015, 50362, 50412, 50274, 49908, 52027, 52026, 52025, },
-		[BB["Festergut"]] = { 50063, 50056, 50062, 50042, 50041, 50059, 50038, 50064, 50413, 50060,
-				50037, 50036, 50061, 50414, 50035, 50040, 50226, 50274, 49908, },
-		[BB["Rotface"]] = { 50019, 50032, 50026, 50021, 50022, 50030, 50020, 50024, 50027, 50023,
-				50025, 50353, 50028, 50016, 50033, 50231, 50274, 49908 },
-		[BB["Professor Putricide"]] = { 50067, 50069, 50351, 50179, 50068, 50274, 49908, 52027, 52026, 52025},
-		[BB["Blood Princes"]] = { 50074, 50172, 50176, 50073, 50171, 50177, 50071, 50072, 50075, 50175,
-				50174, 50170, 50173, 50184, 49919, 50274, 49908 },
-		[BB["Blood-Queen Lana'thel"]] = { 50182, 50180, 50354, 50178, 50181, 50065, 50274, 49908, 52027, 52026, 52025 },
-		[BB["Valithria Dreamwalker"]] = { 50205, 50418, 50417, 50202, 50188, 50187, 50199, 50192, 50416, 50190,
-				50195, 50185, 50186, 50183, 50472, 50274, 49908 },
-		[BB["Sindragosa"]] = { 50421, 50424, 50360, 50361, 50423, 50274, 49908, 51026, 52027, 52026, 52025,	},
-		[BB["The Lich King"]] = {	},
-		[L["Trash Mobs"]] = { 50449, 50450, 50451, 50452, 50447, 50453, 50444 },
+	[ BZ["Icecrown Citadel"] .. " (10)" ] = {
+		[ BB["Lord Marrowgar"] ] = {
+			50764, 	-- Shawl of Nerubian Silk
+			50773, 	-- Cord of the Patronizing Practitioner
+			50774, 	-- Coldwraith Bracers
+			50762, 	-- Linked Scourge Vertebrae
+			50775, 	-- Corrupted Silverplate Leggings
+			50772, 	-- Ancient Skeletal Boots
+			50763, 	-- Marrowgar's Scratching Choker
+			50339, 	-- Sliver of Pure Ice
+			50771, 	-- Frost Needle
+			50761, 	-- Citadel Enforcer's Claymore
+			50759, 	-- Bone Warden's Splitter
+			50760, 	-- Bonebreaker Scepter
+		},
+		[ BB["Lord Marrowgar"] .. L[" (Heroic)"] ] = {
+			51933, 	-- Shawl of Nerubian Silk
+			51930, 	-- Cord of the Patronizing Practitioner
+			51929, 	-- Coldwraith Bracers
+			51935, 	-- Linked Scourge Vertebrae
+			51928, 	-- Corrupted Silverplate Leggings
+			51931, 	-- Ancient Skeletal Boots
+			51934, 	-- Marrowgar's Scratching Choker
+			50346, 	-- Sliver of Pure Ice
+			51932, 	-- Frost Needle
+			51936, 	-- Citadel Enforcer's Claymore
+			51938, 	-- Bone Warden's Splitter
+			51937, 	-- Bonebreaker Scepter
+		},
+		
+		[ BB["Lady Deathwhisper"] ] = {
+			50785, 	-- Bracers of Dark Blessings
+			50782, 	-- Sister's Handshrouds
+			50780, 	-- Chestguard of the Frigid Noose
+			50778, 	-- Soulthief's Braided Belt
+			50783, 	-- Boots of the Frozen Seed
+			50777, 	-- Handgrips of Frost and Sleet
+			50784, 	-- Deathspeaker Disciple's Belt
+			50779, 	-- Deathspeaker Zealot's Helm
+			50786, 	-- Ghoul Commander's Cuirass
+			50342, 	-- Whispering Fanged Skull
+			50781, 	-- Scourgelord's Baton
+			50776, 	-- Njordnar Bone Bow
+		},
+		[ BB["Lady Deathwhisper"] .. L[" (Heroic)"] ] = {
+			51918, 	-- Bracers of Dark Blessings
+			51921, 	-- Sister's Handshrouds
+			51923, 	-- Chestguard of the Frigid Noose
+			51925, 	-- Soulthief's Braided Belt
+			51920, 	-- Boots of the Frozen Seed
+			51926, 	-- Handgrips of Frost and Sleet
+			51919, 	-- Deathspeaker Disciple's Belt
+			51924, 	-- Deathspeaker Zealot's Helm
+			51917, 	-- Ghoul Commander's Cuirass
+			50343, 	-- Whispering Fanged Skull
+			51922, 	-- Scourgelord's Baton
+			51927, 	-- Njordnar Bone Bow
+		},
+		
+		[ L["Gunship"] ] = {
+			50791, 	-- Saronite Gargoyle Cloak
+			50795, 	-- Cord of Dark Suffering
+			50797, 	-- Ice-Reinforced Vrykul Helm
+			50792, 	-- Pauldrons of Lost Hope
+			50789, 	-- Icecrown Rampart Bracers
+			50796, 	-- Bracers of Pale Illumination
+			50788, 	-- Bone Drake's Enameled Boots
+			50790, 	-- Abomination's Bloody Ring
+			50340, 	-- Muradin's Spyglass
+			50793, 	-- Midnight Sun
+			50787, 	-- Frost Giant's Cleaver
+			50794, 	-- Neverending Winter
+		},
+		[ L["Gunship"] .. L[" (Heroic)"] ] = {
+			51912, 	-- Saronite Gargoyle Cloak
+			51908, 	-- Cord of Dark Suffering
+			51906, 	-- Ice-Reinforced Vrykul Helm
+			51911, 	-- Pauldrons of Lost Hope
+			51914, 	-- Icecrown Rampart Bracers
+			51907, 	-- Bracers of Pale Illumination
+			51915, 	-- Bone Drake's Enameled Boots
+			51913, 	-- Abomination's Bloody Ring
+			50345, 	-- Muradin's Spyglass
+			51910, 	-- Midnight Sun
+			51916, 	-- Frost Giant's Cleaver
+			51909, 	-- Neverending Winter
+		},
+		
+		[ BB["Deathbringer Saurfang"] ] = {
+			50807, 	-- Thaumaturge's Crackling Cowl
+			50804, 	-- Icecrown Spire Sandals
+			50799, 	-- Scourge Stranglers
+			50806, 	-- Leggings of Unrelenting Blood
+			50800, 	-- Hauberk of a Thousand Cuts
+			50801, 	-- Blade-Scored Carapace
+			50802, 	-- Gargoyle Spit Bracers
+			50808, 	-- Deathforged Legplates
+			50809, 	-- Soulcleave Pendant
+			50803, 	-- Saurfang's Cold-Forged Band
+			50798, 	-- Ramaladni's Blade of Culling
+			50805, 	-- Mag'hari Chieftain's Staff
+		},
+		[ BB["Deathbringer Saurfang"] .. L[" (Heroic)"] ] = {
+			51896, 	-- Thaumaturge's Crackling Cowl
+			51899, 	-- Icecrown Spire Sandals
+			51904, 	-- Scourge Stranglers
+			51897, 	-- Leggings of Unrelenting Blood
+			51903, 	-- Hauberk of a Thousand Cuts
+			51902, 	-- Blade-Scored Carapace
+			51901, 	-- Gargoyle Spit Bracers
+			51895, 	-- Deathforged Legplates
+			51894, 	-- Soulcleave Pendant
+			51900, 	-- Saurfang's Cold-Forged Band
+			51905, 	-- Ramaladni's Blade of Culling
+			51898, 	-- Mag'hari Chieftain's Staff
+		},
+		
+		[ BB["Festergut"] ] = {
+			50859, 	-- Cloak of Many Skins
+			50988, 	-- Bloodstained Surgeon's Shoulderguards
+			50990, 	-- Kilt of Untreated Wounds
+			50985, 	-- Wrists of Septic Shock
+			50858, 	-- Plague-Soaked Leather Leggings
+			50812, 	-- Taldron's Long Neglected Boots
+			50967, 	-- Festergut's Gaseous Gloves
+			50811, 	-- Festering Fingerguards
+			50852, 	-- Precious's Putrid Collar
+			50986, 	-- Signet of Putrefaction
+			50810, 	-- Gutbuster
+			50966, 	-- Abracadaver
+		},
+		[ BB["Festergut"] .. L[" (Heroic)"] ] = {
+			51888, 	-- Cloak of Many Skins
+			51883, 	-- Bloodstained Surgeon's Shoulderguards
+			51882, 	-- Kilt of Untreated Wounds
+			51885, 	-- Wrists of Septic Shock
+			51889, 	-- Plague-Soaked Leather Leggings
+			51891, 	-- Taldron's Long Neglected Boots
+			51886, 	-- Festergut's Gaseous Gloves
+			51892, 	-- Festering Fingerguards
+			51890, 	-- Precious's Putrid Collar
+			51884, 	-- Signet of Putrefaction
+			51893, 	-- Gutbuster
+			51887, 	-- Abracadaver
+		},
+		
+		[ BB["Rotface"] ] = {
+			51007, 	-- Ether-Soaked Bracers
+			51005, 	-- Gloves of Broken Fingers
+			51009, 	-- Chestguard of the Failed Experiment
+			51002, 	-- Taldron's Short-Sighted Helm
+			51006, 	-- Shuffling Shoes
+			51000, 	-- Flesh-Shaper's Gurney Strap
+			51008, 	-- Choker of Filthy Diamonds
+			51001, 	-- Rotface's Rupturing Ring
+			51003, 	-- Abomination Knuckles
+			51004, 	-- Lockjaw
+			50998, 	-- Shaft of Glacial Ice
+			50999, 	-- Gluth's Fetching Knife
+		},
+		[ BB["Rotface"] .. L[" (Heroic)"] ] = {
+			51872, 	-- Ether-Soaked Bracers
+			51874, 	-- Gloves of Broken Fingers
+			51870, 	-- Chestguard of the Failed Experiment
+			51877, 	-- Taldron's Short-Sighted Helm
+			51873, 	-- Shuffling Shoes
+			51879, 	-- Flesh-Shaper's Gurney Strap
+			51871, 	-- Choker of Filthy Diamonds
+			51878, 	-- Rotface's Rupturing Ring
+			51876, 	-- Abomination Knuckles
+			51875, 	-- Lockjaw
+			51881, 	-- Shaft of Glacial Ice
+			51880, 	-- Gluth's Fetching Knife
+		},
+		
+		[ BB["Professor Putricide"] ] = {
+			51020, 	-- Shoulders of Ruinous Senility
+			51017, 	-- Cauterized Cord
+			51013, 	-- Discarded Bag of Entrails
+			51015, 	-- Shoulderpads of the Morbid Ritual
+			51019, 	-- Rippling Flesh Kilt
+			51014, 	-- Scalpel-Sharpening Shoulderguards
+			51018, 	-- Chestplate of Septic Stitches
+			51012, 	-- Infected Choker
+			51016, 	-- Pendant of Split Veins
+			50341, 	-- Unidentifiable Organ
+			51011, 	-- Flesh-Carving Scalpel
+			51010, 	-- The Facelifter
+		},
+		[ BB["Professor Putricide"] .. L[" (Heroic)"] ] = {
+			51859, 	-- Shoulders of Ruinous Senility
+			51862, 	-- Cauterized Cord
+			51866, 	-- Discarded Bag of Entrails
+			51864, 	-- Shoulderpads of the Morbid Ritual
+			51860, 	-- Rippling Flesh Kilt
+			51865, 	-- Scalpel-Sharpening Shoulderguards
+			51861, 	-- Chestplate of Septic Stitches
+			51867, 	-- Infected Choker
+			51863, 	-- Pendant of Split Veins
+			50344, 	-- Unidentifiable Organ
+			51868, 	-- Flesh-Carving Scalpel
+			51869, 	-- The Facelifter
+		},
+		
+		[ BB["Blood Prince Council"] ] = {
+			51382, 	-- Heartsick Mender's Cape
+			51379, 	-- Bloodsoul Raiment
+			51380, 	-- Pale Corpse Boots
+			51023, 	-- Taldaram's Soft Slippers
+			51325, 	-- Blood-Drinker's Girdle
+			51383, 	-- Spaulders of the Blood Princes
+			51025, 	-- Battle-Maiden's Legguards
+			51381, 	-- Cerise Coiled Ring
+			51024, 	-- Thrice Fanged Signet
+			51021, 	-- Soulbreaker
+			51022, 	-- Hersir's Greatspear
+			51326, 	-- Wand of Ruby Claret
+		},
+		[ BB["Blood Prince Council"] .. L[" (Heroic)"] ] = {
+			51848, 	-- Heartsick Mender's Cape
+			51851, 	-- Bloodsoul Raiment
+			51850, 	-- Pale Corpse Boots
+			51856, 	-- Taldaram's Soft Slippers
+			51853, 	-- Blood-Drinker's Girdle
+			51847, 	-- Spaulders of the Blood Princes
+			51854, 	-- Battle-Maiden's Legguards
+			51849, 	-- Cerise Coiled Ring
+			51855, 	-- Thrice Fanged Signet
+			51858, 	-- Soulbreaker
+			51857, 	-- Hersir's Greatspear
+			51852, 	-- Wand of Ruby Claret
+		},
+		
+		[ BB["Blood-Queen Lana'thel"] ] = {
+			51554, 	-- Cowl of Malefic Repose
+			51552, 	-- Shoulderpads of the Searing Kiss
+			51550, 	-- Ivory-Inlaid Leggings
+			51551, 	-- Chestguard of Siphoned Elements
+			51386, 	-- Throatrender Handguards
+			51556, 	-- Veincrusher Gauntlets
+			51555, 	-- Tightening Waistband
+			51548, 	-- Collar of Haughty Disdain
+			51387, 	-- Seal of the Twilight Queen
+			51384, 	-- Bloodsipper
+			51385, 	-- Stakethrower
+			51553, 	-- Lana'thel's Bloody Nail
+		},
+		[ BB["Blood-Queen Lana'thel"] .. L[" (Heroic)"] ] = {
+			51837, 	-- Cowl of Malefic Repose
+			51839, 	-- Shoulderpads of the Searing Kiss
+			51841, 	-- Ivory-Inlaid Leggings
+			51840, 	-- Chestguard of Siphoned Elements
+			51844, 	-- Throatrender Handguards
+			51835, 	-- Veincrusher Gauntlets
+			51836, 	-- Tightening Waistband
+			51842, 	-- Collar of Haughty Disdain
+			51843, 	-- Seal of the Twilight Queen
+			51846, 	-- Bloodsipper
+			51845, 	-- Stakethrower
+			51838, 	-- Lana'thel's Bloody Nail
+		},
+		
+		[ BB["Valithria Dreamwalker"] ] = {
+			51584, 	-- Lich Wrappings
+			51777, 	-- Leggings of the Refracted Mind
+			51585, 	-- Sister Svalna's Spangenhelm
+			51565, 	-- Skinned Whelp Shoulders
+			51583, 	-- Stormbringer Gloves
+			51566, 	-- Legguards of the Twisted Dream
+			51586, 	-- Emerald Saint's Spaulders
+			51563, 	-- Taiga Bindings
+			51564, 	-- Ironrope Belt of Ymirjar
+			51562, 	-- Oxheart
+			51582, 	-- Sister Svalna's Aether Staff
+			51561, 	-- Dreamhunter's Carbine
+		},
+		[ BB["Valithria Dreamwalker"] .. L[" (Heroic)"] ] = {
+			51826, 	-- Lich Wrappings
+			51823, 	-- Leggings of the Refracted Mind
+			51825, 	-- Sister Svalna's Spangenhelm
+			51830, 	-- Skinned Whelp Shoulders
+			51827, 	-- Stormbringer Gloves
+			51829, 	-- Legguards of the Twisted Dream
+			51824, 	-- Emerald Saint's Spaulders
+			51832, 	-- Taiga Bindings
+			51831, 	-- Ironrope Belt of Ymirjar
+			51833, 	-- Oxheart
+			51828, 	-- Sister Svalna's Aether Staff
+			51834, 	-- Dreamhunter's Carbine
+		},
+		
+		[ BB["Sindragosa"] ] = {
+			51790, 	-- Robes of Azure Downfall
+			51783, 	-- Vambraces of the Frost Wyrm Queen
+			51789, 	-- Icicle Shapers
+			51792, 	-- Shoulderguards of Crystalline Bone
+			51785, 	-- Wyrmwing Treads
+			51782, 	-- Etched Dragonbone Girdle
+			51786, 	-- Legplates of Aetheric Strife
+			51787, 	-- Scourge Fanged Stompers
+			51779, 	-- Rimetooth Pendant
+			51784, 	-- Splintershard
+			51788, 	-- Bleak Coldarra Carver
+			51791, 	-- Lost Pavise of the Blue Flight
+		},
+		[ BB["Sindragosa"] .. L[" (Heroic)"] ] = {
+			51813, 	-- Robes of Azure Downfall
+			51820, 	-- Vambraces of the Frost Wyrm Queen
+			51814, 	-- Icicle Shapers
+			51811, 	-- Shoulderguards of Crystalline Bone
+			51818, 	-- Wyrmwing Treads
+			51821, 	-- Etched Dragonbone Girdle
+			51817, 	-- Legplates of Aetheric Strife
+			51816, 	-- Scourge Fanged Stompers
+			51822, 	-- Rimetooth Pendant
+			51819, 	-- Splintershard
+			51815, 	-- Bleak Coldarra Carver
+			51812, 	-- Lost Pavise of the Blue Flight
+		},
+		
+		[ BB["The Lich King"] ] = {
+			51801, 	-- Pugius, Fist of Defiance
+			51803, 	-- Tel'thas, Dagger of the Blood King
+			51800, 	-- Stormfury, Black Blade of the Betrayer
+			51795, 	-- Troggbane, Axe of the Frostborne King
+			51798, 	-- Valius, Gavel of the Lightbringer
+			51796, 	-- Warmace of Menethil
+			51799, 	-- Halion, Staff of Forgotten Love
+			51797, 	-- Tainted Twig of Nordrassil
+			51802, 	-- Windrunner's Heartseeker
+		},
+		[ BB["The Lich King"] .. L[" (Heroic)"] ] = {
+			51941, 	-- Pugius, Fist of Defiance
+			51939, 	-- Tel'thas, Dagger of the Blood King
+			51942, 	-- Stormfury, Black Blade of the Betrayer
+			51947, 	-- Troggbane, Axe of the Frostborne King
+			51944, 	-- Valius, Gavel of the Lightbringer
+			51946, 	-- Warmace of Menethil
+			51943, 	-- Halion, Staff of Forgotten Love
+			51945, 	-- Tainted Twig of Nordrassil
+			51940, 	-- Windrunner's Heartseeker
+		},
 	},
-	[BZ["Icecrown Citadel"] .. " (10)" .. L[" (Heroic)"]] = {
-		[BB["Lord Marrowgar"]] = {	},
-		[BB["Lady Deathwhisper"]] = {	},
-		[BB["Icecrown Gunship Battle"]] = {	},
-		[BB["Deathbringer Saurfang"]] = {	},
-		[BB["Festergut"]] = {	},
-		[BB["Rotface"]] = {	},
-		[BB["Professor Putricide"]] = {	},
-		[BB["Blood Princes"]] = {	},
-		[BB["Blood-Queen Lana'thel"]] = {	},
-		[BB["Valithria Dreamwalker"]] = {	},
-		[BB["Sindragosa"]] = {	},
-		[BB["The Lich King"]] = {	},
-	},
-	[BZ["Icecrown Citadel"] .. " (25)" .. L[" (Heroic)"]] = {
-		[BB["Lord Marrowgar"]] = {	},
-		[BB["Lady Deathwhisper"]] = {	},
-		[BB["Icecrown Gunship Battle"]] = {	},
-		[BB["Deathbringer Saurfang"]] = {	},
-		[BB["Festergut"]] = {	},
-		[BB["Rotface"]] = {	},
-		[BB["Professor Putricide"]] = {	},
-		[BB["Blood Princes"]] = {	},
-		[BB["Blood-Queen Lana'thel"]] = {	},
-		[BB["Valithria Dreamwalker"]] = {	},
-		[BB["Sindragosa"]] = {	},
-		[BB["The Lich King"]] = {	},
+	[ BZ["Icecrown Citadel"] .. " (25)" ] = {
+		[ BOSS ] = {
+			50274, 	-- Shadowfrost Shard
+		},
+		[ BB["Lord Marrowgar"] ] = {
+			49978, 	-- Crushing Coldwraith Belt
+			49979, 	-- Handguards of Winter's Respite
+			49950, 	-- Frostbitten Fur Boots
+			49952, 	-- Snowserpent Mail Helm
+			49980, 	-- Rusted Bonespike Pauldrons
+			49951, 	-- Gendarme's Cuirass
+			49960, 	-- Bracers of Dark Reckoning
+			49964, 	-- Legguards of Lost Hope
+			49975, 	-- Bone Sentinel's Amulet
+			49949, 	-- Band of the Bone Colossus
+			49977, 	-- Loop of the Endless Labyrinth
+			49967, 	-- Marrowgar's Frigid Eye
+			49968, 	-- Frozen Bonespike
+			50415, 	-- Bryntroll, the Bone Arbiter
+			49976, 	-- Bulwark of Smouldering Steel
+		},
+		[ BB["Lord Marrowgar"] .. L[" (Heroic)"] ] = {
+			50613, 	-- Crushing Coldwraith Belt
+			50615, 	-- Handguards of Winter's Respite
+			50607, 	-- Frostbitten Fur Boots
+			50605, 	-- Snowserpent Mail Helm
+			50617, 	-- Rusted Bonespike Pauldrons
+			50606, 	-- Gendarme's Cuirass
+			50611, 	-- Bracers of Dark Reckoning
+			50612, 	-- Legguards of Lost Hope
+			50609, 	-- Bone Sentinel's Amulet
+			50604, 	-- Band of the Bone Colossus
+			50614, 	-- Loop of the Endless Labyrinth
+			50610, 	-- Marrowgar's Frigid Eye
+			50608, 	-- Frozen Bonespike
+			50709, 	-- Bryntroll, the Bone Arbiter
+			50616, 	-- Bulwark of Smouldering Steel
+		},
+		
+		[ BB["Lady Deathwhisper"] ] = {
+			49991, 	-- Shoulders of Mercy Killing
+			49994, 	-- The Lady's Brittle Bracers
+			49987, 	-- Cultist's Bloodsoaked Spaulders
+			49996, 	-- Deathwhisper Chestpiece
+			49988, 	-- Leggings of Northern Lights
+			49993, 	-- Necrophotic Greaves
+			49986, 	-- Broken Ram Skull Helm
+			49995, 	-- Fallen Lord's Handguards
+			49983, 	-- Blood-Soaked Saronite Stompers
+			49989, 	-- Ahn'kahar Onyx Neckguard
+			49985, 	-- Juggernaut Band
+			49990, 	-- Ring of Maddening Whispers
+			49982, 	-- Heartpierce
+			49992, 	-- Nibelung
+			50034, 	-- Zod's Repeating Longbow
+		},
+		[ BB["Lady Deathwhisper"] .. L[" (Heroic)"] ] = {
+			50643, 	-- Shoulders of Mercy Killing
+			50651, 	-- The Lady's Brittle Bracers
+			50646, 	-- Cultist's Bloodsoaked Spaulders
+			50649, 	-- Deathwhisper Chestpiece
+			50645, 	-- Leggings of Northern Lights
+			50652, 	-- Necrophotic Greaves
+			50640, 	-- Broken Ram Skull Helm
+			50650, 	-- Fallen Lord's Handguards
+			50639, 	-- Blood-Soaked Saronite Stompers
+			50647, 	-- Ahn'kahar Onyx Neckguard
+			50642, 	-- Juggernaut Band
+			50644, 	-- Ring of Maddening Whispers
+			50641, 	-- Heartpierce
+			50648, 	-- Nibelung
+			50638, 	-- Zod's Repeating Longbow
+		},
+		
+		[ L["Gunship"] ] = {
+			49998, 	-- Shadowvault Slayer's Cloak
+			50006, 	-- Corp'rethar Ceremonial Crown
+			50011, 	-- Gunship Captain's Mittens
+			50001, 	-- Ikfirus's Sack of Wonder
+			50009, 	-- Boots of Unnatural Growth
+			50000, 	-- Scourge Hunter's Vambraces
+			50003, 	-- Boneguard Commander's Pauldrons
+			50002, 	-- Polar Bear Claw Bracers
+			50010, 	-- Waistband of Righteous Fury
+			50005, 	-- Amulet of the Silent Eulogy
+			50008, 	-- Ring of Rapid Ascent
+			49999, 	-- Skeleton Lord's Circle
+			50359, 	-- Althor's Abacus
+			50352, 	-- Corpse Tongue Coin
+			50411, 	-- Scourgeborne Waraxe
+		},
+		[ L["Gunship"] .. L[" (Heroic)"] ] = {
+			50653, 	-- Shadowvault Slayer's Cloak
+			50661, 	-- Corp'rethar Ceremonial Crown
+			50663, 	-- Gunship Captain's Mittens
+			50656, 	-- Ikfirus's Sack of Wonder
+			50665, 	-- Boots of Unnatural Growth
+			50655, 	-- Scourge Hunter's Vambraces
+			50660, 	-- Boneguard Commander's Pauldrons
+			50659, 	-- Polar Bear Claw Bracers
+			50667, 	-- Waistband of Righteous Fury
+			50658, 	-- Amulet of the Silent Eulogy
+			50664, 	-- Ring of Rapid Ascent
+			50657, 	-- Skeleton Lord's Circle
+			50366, 	-- Althor's Abacus
+			50349, 	-- Corpse Tongue Coin
+			50654, 	-- Scourgeborne Waraxe
+		},
+		
+		[ BB["Deathbringer Saurfang"] ] = {
+			50014, 	-- Greatcloak of the Turned Champion
+			50333, 	-- Toskk's Maximized Wristguards
+			50015, 	-- Belt of the Blood Nova
+			50362, 	-- Deathbringer's Will
+			50412, 	-- Bloodvenom Blade
+		},
+		[ BB["Deathbringer Saurfang"] .. L[" (Heroic)"] ] = {
+			50668, 	-- Greatcloak of the Turned Champion
+			50670, 	-- Toskk's Maximized Wristguards
+			50671, 	-- Belt of the Blood Nova
+			50363, 	-- Deathbringer's Will
+			50672, 	-- Bloodvenom Blade
+		},
+		
+		[ BB["Festergut"] ] = {
+			50063, 	-- Lingering Illness
+			50056, 	-- Plaguebringer's Stained Pants
+			50062, 	-- Plague Scientist's Boots
+			50042, 	-- Gangrenous Leggings
+			50041, 	-- Leather of Stitched Scourge Parts
+			50059, 	-- Horrific Flesh Epaulets
+			50038, 	-- Carapace of Forgotten Kings
+			50064, 	-- Unclean Surgical Gloves
+			50413, 	-- Nerub'ar Stalker's Cord
+			50060, 	-- Faceplate of the Forgotten
+			50037, 	-- Fleshrending Gauntlets
+			50036, 	-- Belt of Broken Bones
+			50061, 	-- Holiday's Grace
+			50414, 	-- Might of Blight
+			50035, 	-- Black Bruise
+			50040, 	-- Distant Land
+			50226, 	-- Festergut's Acidic Blood
+		},
+		[ BB["Festergut"] .. L[" (Heroic)"] ] = {
+			50702, 	-- Lingering Illness
+			50694, 	-- Plaguebringer's Stained Pants
+			50699, 	-- Plague Scientist's Boots
+			50697, 	-- Gangrenous Leggings
+			50696, 	-- Leather of Stitched Scourge Parts
+			50698, 	-- Horrific Flesh Epaulets
+			50689, 	-- Carapace of Forgotten Kings
+			50703, 	-- Unclean Surgical Gloves
+			50688, 	-- Nerub'ar Stalker's Cord
+			50701, 	-- Faceplate of the Forgotten
+			50690, 	-- Fleshrending Gauntlets
+			50691, 	-- Belt of Broken Bones
+			50700, 	-- Holiday's Grace
+			50693, 	-- Might of Blight
+			50692, 	-- Black Bruise
+			50695, 	-- Distant Land
+		},
+		
+		[ BB["Rotface"] ] = {
+			50019, 	-- Winding Sheet
+			50032, 	-- Death Surgeon's Sleeves
+			50026, 	-- Helm of the Elder Moon
+			50021, 	-- Aldriana's Gloves of Secrecy
+			50022, 	-- Dual-Bladed Pauldrons
+			50030, 	-- Bloodsunder's Bracers
+			50020, 	-- Raging Behemoth's Shoulderplates
+			50024, 	-- Blightborne Warplate
+			50027, 	-- Rot-Resistant Breastplate
+			50023, 	-- Bile-Encrusted Medallion
+			50025, 	-- Seal of Many Mouths
+			50353, 	-- Dislodged Foreign Object
+			50028, 	-- Trauma
+			50016, 	-- Rib Spreader
+			50033, 	-- Corpse-Impaling Spike
+			50231, 	-- Rotface's Acidic Blood
+		},
+		[ BB["Rotface"] .. L[" (Heroic)"] ] = {
+			50677, 	-- Winding Sheet
+			50686, 	-- Death Surgeon's Sleeves
+			50679, 	-- Helm of the Elder Moon
+			50675, 	-- Aldriana's Gloves of Secrecy
+			50673, 	-- Dual-Bladed Pauldrons
+			50687, 	-- Bloodsunder's Bracers
+			50674, 	-- Raging Behemoth's Shoulderplates
+			50681, 	-- Blightborne Warplate
+			50680, 	-- Rot-Resistant Breastplate
+			50682, 	-- Bile-Encrusted Medallion
+			50678, 	-- Seal of Many Mouths
+			50348, 	-- Dislodged Foreign Object
+			50685, 	-- Trauma
+			50676, 	-- Rib Spreader
+			50684, 	-- Corpse-Impaling Spike
+		},
+		
+		[ BB["Professor Putricide"] ] = {
+			50067, 	-- Astrylian's Sutured Cinch
+			50069, 	-- Professor's Bloodied Smock
+			50351, 	-- Tiny Abomination in a Jar
+			50179, 	-- Last Word
+			50068, 	-- Rigormortis
+		},
+		[ BB["Professor Putricide"] .. L[" (Heroic)"] ] = {
+			50707, 	-- Astrylian's Sutured Cinch
+			50705, 	-- Professor's Bloodied Smock
+			50706, 	-- Tiny Abomination in a Jar
+			50708, 	-- Last Word
+			50704, 	-- Rigormortis
+		},
+		
+		[ BB["Blood Prince Council"] ] = {
+			50074, 	-- Royal Crimson Cloak
+			50172, 	-- Sanguine Silk Robes
+			50176, 	-- San'layn Ritualist Gloves
+			50073, 	-- Geistlord's Punishment Sack
+			50171, 	-- Shoulders of Frost-Tipped Thorns
+			50177, 	-- Mail of Crimson Coins
+			50071, 	-- Treads of the Wasteland
+			50072, 	-- Landsoul's Horned Greathelm
+			50175, 	-- Crypt Keeper's Bracers
+			50075, 	-- Taldaram's Plated Fists
+			50174, 	-- Incarnadine Band of Mending
+			50170, 	-- Valanar's Other Signet Ring
+			50173, 	-- Shadow Silk Spindle
+			50184, 	-- Keleseth's Seducer
+			49919, 	-- Cryptmaker
+		},
+		[ BB["Blood Prince Council"] .. L[" (Heroic)"] ] = {
+			50718, 	-- Royal Crimson Cloak
+			50717, 	-- Sanguine Silk Robes
+			50722, 	-- San'layn Ritualist Gloves
+			50713, 	-- Geistlord's Punishment Sack
+			50715, 	-- Shoulders of Frost-Tipped Thorns
+			50723, 	-- Mail of Crimson Coins
+			50711, 	-- Treads of the Wasteland
+			50712, 	-- Landsoul's Horned Greathelm
+			50716, 	-- Taldaram's Plated Fists
+			50721, 	-- Crypt Keeper's Bracers
+			50720, 	-- Incarnadine Band of Mending
+			50714, 	-- Valanar's Other Signet Ring
+			50719, 	-- Shadow Silk Spindle
+			50710, 	-- Keleseth's Seducer
+			50603, 	-- Cryptmaker
+		},
+		
+		[ BB["Blood-Queen Lana'thel"] ] = {
+			50182, 	-- Blood Queen's Crimson Choker
+			50180, 	-- Lana'thel's Chain of Flagellation
+			50354, 	-- Bauble of True Blood
+			50178, 	-- Bloodfall
+			50181, 	-- Dying Light
+			50065, 	-- Icecrown Glacial Wall
+		},
+		[ BB["Blood-Queen Lana'thel"] .. L[" (Heroic)"] ] = {
+			50724, 	-- Blood Queen's Crimson Choker
+			50728, 	-- Lana'thel's Chain of Flagellation
+			50726, 	-- Bauble of True Blood
+			50727, 	-- Bloodfall
+			50725, 	-- Dying Light
+			50729, 	-- Icecrown Glacial Wall
+		},
+		
+		[ BB["Valithria Dreamwalker"] ] = {
+			50205, 	-- Frostbinder's Shredded Cape
+			50418, 	-- Robe of the Waking Nightmare
+			50417, 	-- Bracers of Eternal Dreaming
+			50202, 	-- Snowstorm Helm
+			50188, 	-- Anub'ar Stalker's Gloves
+			50187, 	-- Coldwraith Links
+			50199, 	-- Leggings of Dying Candles
+			50192, 	-- Scourge Reaver's Legplates
+			50416, 	-- Boots of the Funeral March
+			50190, 	-- Grinning Skull Greatboots
+			50195, 	-- Noose of Malachite
+			50185, 	-- Devium's Eternally Cold Ring
+			50186, 	-- Frostbrood Sapphire Ring
+			50183, 	-- Lungbreaker
+			50472, 	-- Nightmare Ender
+		},
+		[ BB["Valithria Dreamwalker"] .. L[" (Heroic)"] ] = {
+			50628, 	-- Frostbinder's Shredded Cape
+			50629, 	-- Robe of the Waking Nightmare
+			50630, 	-- Bracers of Eternal Dreaming
+			50626, 	-- Snowstorm Helm
+			50619, 	-- Anub'ar Stalker's Gloves
+			50620, 	-- Coldwraith Links
+			50623, 	-- Leggings of Dying Candles
+			50624, 	-- Scourge Reaver's Legplates
+			50632, 	-- Boots of the Funeral March
+			50625, 	-- Grinning Skull Greatboots
+			50627, 	-- Noose of Malachite
+			50622, 	-- Devium's Eternally Cold Ring
+			50618, 	-- Frostbrood Sapphire Ring
+			50621, 	-- Lungbreaker
+			50631, 	-- Nightmare Ender
+		},
+		
+		[ BB["Sindragosa"] ] = {
+			50421, 	-- Sindragosa's Cruel Claw
+			50424, 	-- Memory of Malygos
+			50360, 	-- Phylactery of the Nameless Lich
+			50361, 	-- Sindragosa's Flawless Fang
+			50423, 	-- Sundial of Eternal Dusk
+		},
+		[ BB["Sindragosa"] .. L[" (Heroic)"] ] = {
+			50633, 	-- Sindragosa's Cruel Claw
+			50636, 	-- Memory of Malygos
+			50365, 	-- Phylactery of the Nameless Lich
+			50364, 	-- Sindragosa's Flawless Fang
+			50635, 	-- Sundial of Eternal Dusk
+		},
+		
+		[ BB["The Lich King"] ] = {
+			50426, 	-- Heaven's Fall, Kryss of a Thousand Lies
+			50427, 	-- Bloodsurge, Kel'Thuzad's Blade of Agony
+			50070, 	-- Glorenzelg, High-Blade of the Silver Hand
+			50012, 	-- Havoc's Call, Blade of Lordaeron Kings
+			50428, 	-- Royal Scepter of Terenas II
+			49997, 	-- Mithrios, Bronzebeard's Legacy
+			50425, 	-- Oathbinder, Charge of the Ranger-General
+			50429, 	-- Archus, Greatstaff of Antonidas
+			49981, 	-- Fal'inrush, Defender of Quel'thalas
+		},
+		[ BB["The Lich King"] .. L[" (Heroic)"] ] = {
+			50736, 	-- Heaven's Fall, Kryss of a Thousand Lies
+			50732, 	-- Bloodsurge, Kel'Thuzad's Blade of Agony
+			50730, 	-- Glorenzelg, High-Blade of the Silver Hand
+			50737, 	-- Havoc's Call, Blade of Lordaeron Kings
+			50734, 	-- Royal Scepter of Terenas II
+			50738, 	-- Mithrios, Bronzebeard's Legacy
+			50735, 	-- Oathbinder, Charge of the Ranger-General
+			50731, 	-- Archus, Greatstaff of Antonidas
+			50733, 	-- Fal'inrush, Defender of Quel'thalas
+			50818, 	-- Invincible's Reins
+		},
 	},
 	
 	-- [] = {
