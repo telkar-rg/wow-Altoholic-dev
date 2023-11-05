@@ -1547,7 +1547,16 @@ do
 	lootTableRev = {}
 	
 	local lastZone = {}
-	for zName, zTable in pairs(lootTable) do
+	
+	local lootTable_names = {}
+	for zName, _ in pairs(lootTable) do
+		tinsert( lootTable_names, zName )
+	end
+	sort(lootTable_names)
+	local zTable
+	
+	for _, zName in pairs(lootTable_names) do
+		zTable = lootTable[zName]
 		for encounterName, encounterTable in pairs(zTable) do 
 			for _, item_id in pairs(encounterTable) do 
 				if not lootTableRev[item_id] then
@@ -1566,6 +1575,9 @@ do
 	end
 	
 	DEBUG_HELP_TEST_1 = lootTableRev
+	DEBUG_HELP_TEST_2 = lootTable
+	wipe(lastZone)
+	wipe(lootTable_names)
 end
 
 local DataProviders
