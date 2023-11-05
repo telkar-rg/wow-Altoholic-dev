@@ -38,6 +38,7 @@ L["Arcanoweave Vestments"] = true
 L["Are also on this quest:"] = true
 L["Arena points: "] = true
 L["Arena Season %d"] = true
+L["Arena Season"] = true
 L["Armbreaker Huffaz"] = true
 L["Armorsmith"] = true
 L["Arthas' Tears"] = true
