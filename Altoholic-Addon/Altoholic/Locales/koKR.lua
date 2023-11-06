@@ -396,6 +396,7 @@ L["Move to change the angle of the minimap icon"] = "미니맵 아이콘의 각�
 L["Move to change the radius of the minimap icon"] = "미니맵 아이콘의 거리를 바꿈"
 L["Muddy Churning Waters"] = true
 L["N/A"] = "해당 없음"
+L["Nascent Val'kyr"] = "발키르 지원자"
 L["Netherbloom"] = true
 L["Nethercite Deposit"] = true
 L["Netherdust Bush"] = true

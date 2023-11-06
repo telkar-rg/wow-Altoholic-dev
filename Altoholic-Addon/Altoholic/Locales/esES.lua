@@ -416,6 +416,7 @@ L["Move to change the angle of the minimap icon"] = "Mover para cambiar el ángu
 L["Move to change the radius of the minimap icon"] = "Mover para cambiar el angulo del icono en el minimapa"
 L["Muddy Churning Waters"] = "Cebo de Fangoapestoso"
 L["N/A"] = "N/D"
+L["Nascent Val'kyr"] = "Val'kyr naciente"
 L["Netherbloom"] = "Flor Abisal"
 L["Nethercite Deposit"] = "Depósito de abisalita"
 L["Netherdust Bush"] = "Arbusto de Polvo Abisal"

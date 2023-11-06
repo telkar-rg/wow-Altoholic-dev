@@ -422,6 +422,7 @@ L["Move to change the angle of the minimap icon"] = "Изменяет местп
 L["Move to change the radius of the minimap icon"] = "Изменяет отступ иконки от мини-карты"
 L["Muddy Churning Waters"] = "Грязный водоворот"
 L["N/A"] = true
+L["Nascent Val'kyr"] = "Рождающаяся валь'кира"
 L["Netherbloom"] = "Пустоцвет"
 L["Nethercite Deposit"] = "Месторождение хаотита"
 L["Netherdust Bush"] = "Пыльник хаотический"

@@ -402,6 +402,7 @@ L["Move to change the angle of the minimap icon"] = true
 L["Move to change the radius of the minimap icon"] = true
 L["Muddy Churning Waters"] = true
 L["N/A"] = true
+L["Nascent Val'kyr"] = true
 L["Netherbloom"] = true
 L["Nethercite Deposit"] = true
 L["Netherdust Bush"] = true

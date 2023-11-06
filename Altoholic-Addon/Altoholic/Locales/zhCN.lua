@@ -417,6 +417,7 @@ L["Move to change the angle of the minimap icon"] = "移动迷你地图图标的
 L["Move to change the radius of the minimap icon"] = "移动迷你地图图标的半径"
 L["Muddy Churning Waters"] = "混浊的水"
 L["N/A"] = "暂不提供"
+L["Nascent Val'kyr"] = "初生的瓦格里"
 L["Netherbloom"] = "虚空花"
 L["Nethercite Deposit"] = "虚空矿脉"
 L["Netherdust Bush"] = "灵尘灌木丛"
