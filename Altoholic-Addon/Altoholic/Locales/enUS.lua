@@ -461,6 +461,7 @@ L["PVP Leather Sets"] = true
 L["PVP Mail Sets"] = true
 L["PVP Plate Sets"] = true
 L["Pyron"] = true
+L["Quarter_Wing"] = "Quarter" 	-- Quarter-bosses
 L["QuestID"] = true
 L["Quest Items"] = true
 L["Quest rewards"] = true

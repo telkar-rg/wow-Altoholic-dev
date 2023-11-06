@@ -475,6 +475,7 @@ L["PVP Leather Sets"] = "Conjunto de Cuero JcJ"
 L["PVP Mail Sets"] = "Conjunto de Mallas JcJ"
 L["PVP Plate Sets"] = "Conjunto de Placas JcJ"
 L["Pyron"] = true
+L["Quarter_Wing"] = "Aleta" 	-- Quarter-bosses
 L["QuestID"] = "ID de misión"
 L["Quest Items"] = "Objetos de misión"
 L["Quest rewards"] = "Recompensas de misión"

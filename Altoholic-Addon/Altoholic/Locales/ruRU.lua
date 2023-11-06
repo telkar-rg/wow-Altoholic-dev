@@ -481,6 +481,7 @@ L["PVP Leather Sets"] = "Кожаный ПвП комплект"
 L["PVP Mail Sets"] = "Кольчужный ПвП комплект"
 L["PVP Plate Sets"] = "Латный ПвП комплект"
 L["Pyron"] = "Подчинитель Пирон"
+L["Quarter_Wing"] = "Квартал" 	-- Quarter-bosses
 L["QuestID"] = "ID задания"
 L["Quest Items"] = "Предмет задания"
 L["Quest rewards"] = "Награда за выполнения задания"

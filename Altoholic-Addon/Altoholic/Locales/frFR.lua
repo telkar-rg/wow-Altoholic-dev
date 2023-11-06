@@ -479,6 +479,7 @@ L["PVP Leather Sets"] = "Set Cuir JcJ"
 L["PVP Mail Sets"] = "Set Maille JcJ"
 L["PVP Plate Sets"] = "Set Plaque JcJ"
 L["Pyron"] = true
+L["Quarter_Wing"] = "Quartier" 	-- Quarter-bosses
 L["QuestID"] = "ID Quête"
 L["Quest Items"] = "Objets de quête"
 L["Quest rewards"] = "Récompenses de quête"

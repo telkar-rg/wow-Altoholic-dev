@@ -472,6 +472,7 @@ L["PVP Leather Sets"] = "PVP-Leder-Sets"
 L["PVP Mail Sets"] = "PVP-Schwere-Rüstungs-Sets"
 L["PVP Plate Sets"] = "PVP-Platten-Sets"
 L["Pyron"] = "Übermeister Pyron"
+L["Quarter_Wing"] = "Viertel" 	-- Quarter-bosses
 L["QuestID"] = "Quest-ID"
 L["Quest Items"] = "Quest-Gegenstände"
 L["Quest rewards"] = "Quest-Belohnungen"

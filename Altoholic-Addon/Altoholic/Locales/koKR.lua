@@ -455,6 +455,7 @@ L["PVP Leather Sets"] = "PvP 가죽 세트"
 L["PVP Mail Sets"] = "PvP 사슬 세트"
 L["PVP Plate Sets"] = "PvP 판금 세트"
 L["Pyron"] = true
+L["Quarter_Wing"] = "지구" 	-- Quarter-bosses
 L["QuestID"] = "퀘스트ID"
 L["Quest Items"] = "퀘스트 아이템"
 L["Quest rewards"] = "퀘스트 보상"

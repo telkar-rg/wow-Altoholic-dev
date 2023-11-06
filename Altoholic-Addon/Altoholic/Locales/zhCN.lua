@@ -476,6 +476,7 @@ L["PVP Leather Sets"] = "PVP皮甲套装"
 L["PVP Mail Sets"] = "PVP链甲套装"
 L["PVP Plate Sets"] = "PVP板甲套装"
 L["Pyron"] = "征服者派隆"
+L["Quarter_Wing"] = "区" 	-- Quarter-bosses
 L["QuestID"] = "任务编号"
 L["Quest Items"] = "任务物品"
 L["Quest rewards"] = "任务奖励"
