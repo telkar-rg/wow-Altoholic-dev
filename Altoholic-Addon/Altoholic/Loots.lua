@@ -1115,7 +1115,7 @@ do
 			},
 		},
 		[ BZ["Icecrown Citadel"] .. " (10 HC)" ] = {
-			["hc ".. BB["Lord Marrowgar"].." (hc)"] = {
+			[BB["Lord Marrowgar"]] = {
 				51933, 	-- Shawl of Nerubian Silk
 				51930, 	-- Cord of the Patronizing Practitioner
 				51929, 	-- Coldwraith Bracers
@@ -1129,7 +1129,7 @@ do
 				51938, 	-- Bone Warden's Splitter
 				51937, 	-- Bonebreaker Scepter
 			},
-			["hc ".. BB["Lady Deathwhisper"].." (hc)"] = {
+			[BB["Lady Deathwhisper"]] = {
 				51918, 	-- Bracers of Dark Blessings
 				51921, 	-- Sister's Handshrouds
 				51923, 	-- Chestguard of the Frigid Noose
@@ -1143,7 +1143,7 @@ do
 				51922, 	-- Scourgelord's Baton
 				51927, 	-- Njordnar Bone Bow
 			},
-			["hc ".. L["Gunship"].." (hc)"] = {
+			[L["Gunship"]] = {
 				51912, 	-- Saronite Gargoyle Cloak
 				51908, 	-- Cord of Dark Suffering
 				51906, 	-- Ice-Reinforced Vrykul Helm
@@ -1157,7 +1157,7 @@ do
 				51916, 	-- Frost Giant's Cleaver
 				51909, 	-- Neverending Winter
 			},
-			["hc ".. BB["Deathbringer Saurfang"].." (hc)"] = {
+			[BB["Deathbringer Saurfang"]] = {
 				51896, 	-- Thaumaturge's Crackling Cowl
 				51899, 	-- Icecrown Spire Sandals
 				51904, 	-- Scourge Stranglers
@@ -1171,7 +1171,7 @@ do
 				51905, 	-- Ramaladni's Blade of Culling
 				51898, 	-- Mag'hari Chieftain's Staff
 			},
-			["hc ".. BB["Festergut"].." (hc)"] = {
+			[BB["Festergut"]] = {
 				51888, 	-- Cloak of Many Skins
 				51883, 	-- Bloodstained Surgeon's Shoulderguards
 				51882, 	-- Kilt of Untreated Wounds
@@ -1185,7 +1185,7 @@ do
 				51893, 	-- Gutbuster
 				51887, 	-- Abracadaver
 			},
-			["hc ".. BB["Rotface"].." (hc)"] = {
+			[BB["Rotface"]] = {
 				51872, 	-- Ether-Soaked Bracers
 				51874, 	-- Gloves of Broken Fingers
 				51870, 	-- Chestguard of the Failed Experiment
@@ -1199,7 +1199,7 @@ do
 				51881, 	-- Shaft of Glacial Ice
 				51880, 	-- Gluth's Fetching Knife
 			},
-			["hc ".. BB["Professor Putricide"].." (hc)"] = {
+			[BB["Professor Putricide"]] = {
 				51859, 	-- Shoulders of Ruinous Senility
 				51862, 	-- Cauterized Cord
 				51866, 	-- Discarded Bag of Entrails
@@ -1213,7 +1213,7 @@ do
 				51868, 	-- Flesh-Carving Scalpel
 				51869, 	-- The Facelifter
 			},
-			["hc ".. BB["Blood Prince Council"].." (hc)"] = {
+			[BB["Blood Prince Council"]] = {
 				51848, 	-- Heartsick Mender's Cape
 				51851, 	-- Bloodsoul Raiment
 				51850, 	-- Pale Corpse Boots
@@ -1227,7 +1227,7 @@ do
 				51857, 	-- Hersir's Greatspear
 				51852, 	-- Wand of Ruby Claret
 			},
-			["hc ".. BB["Blood-Queen Lana'thel"].." (hc)"] = {
+			[BB["Blood-Queen Lana'thel"]] = {
 				51837, 	-- Cowl of Malefic Repose
 				51839, 	-- Shoulderpads of the Searing Kiss
 				51841, 	-- Ivory-Inlaid Leggings
@@ -1241,7 +1241,7 @@ do
 				51845, 	-- Stakethrower
 				51838, 	-- Lana'thel's Bloody Nail
 			},
-			["hc ".. BB["Valithria Dreamwalker"].." (hc)"] = {
+			[BB["Valithria Dreamwalker"]] = {
 				51826, 	-- Lich Wrappings
 				51823, 	-- Leggings of the Refracted Mind
 				51825, 	-- Sister Svalna's Spangenhelm
@@ -1255,7 +1255,7 @@ do
 				51828, 	-- Sister Svalna's Aether Staff
 				51834, 	-- Dreamhunter's Carbine
 			},
-			["hc ".. BB["Sindragosa"].." (hc)"] = {
+			[BB["Sindragosa"]] = {
 				51813, 	-- Robes of Azure Downfall
 				51820, 	-- Vambraces of the Frost Wyrm Queen
 				51814, 	-- Icicle Shapers
@@ -1269,7 +1269,7 @@ do
 				51815, 	-- Bleak Coldarra Carver
 				51812, 	-- Lost Pavise of the Blue Flight
 			},
-			["hc ".. BB["The Lich King"].." (hc)"] = {
+			[BB["The Lich King"]] = {
 				51941, 	-- Pugius, Fist of Defiance
 				51939, 	-- Tel'thas, Dagger of the Blood King
 				51942, 	-- Stormfury, Black Blade of the Betrayer
@@ -1452,7 +1452,7 @@ do
 			},
 		},
 		[ BZ["Icecrown Citadel"] .. " (25 HC)" ] = {
-			["hc ".. BB["Lord Marrowgar"].." (hc)"] = {
+			[BB["Lord Marrowgar"]] = {
 				50613, 	-- Crushing Coldwraith Belt
 				50615, 	-- Handguards of Winter's Respite
 				50607, 	-- Frostbitten Fur Boots
@@ -1469,7 +1469,7 @@ do
 				50709, 	-- Bryntroll, the Bone Arbiter
 				50616, 	-- Bulwark of Smouldering Steel
 			},
-			["hc ".. BB["Lady Deathwhisper"].." (hc)"] = {
+			[BB["Lady Deathwhisper"]] = {
 				50643, 	-- Shoulders of Mercy Killing
 				50651, 	-- The Lady's Brittle Bracers
 				50646, 	-- Cultist's Bloodsoaked Spaulders
@@ -1486,7 +1486,7 @@ do
 				50648, 	-- Nibelung
 				50638, 	-- Zod's Repeating Longbow
 			},
-			["hc ".. L["Gunship"].." (hc)"] = {
+			[L["Gunship"]] = {
 				50653, 	-- Shadowvault Slayer's Cloak
 				50661, 	-- Corp'rethar Ceremonial Crown
 				50663, 	-- Gunship Captain's Mittens
@@ -1503,14 +1503,14 @@ do
 				50349, 	-- Corpse Tongue Coin
 				50654, 	-- Scourgeborne Waraxe
 			},
-			["hc ".. BB["Deathbringer Saurfang"].." (hc)"] = {
+			[BB["Deathbringer Saurfang"]] = {
 				50668, 	-- Greatcloak of the Turned Champion
 				50670, 	-- Toskk's Maximized Wristguards
 				50671, 	-- Belt of the Blood Nova
 				50363, 	-- Deathbringer's Will
 				50672, 	-- Bloodvenom Blade
 			},
-			["hc ".. BB["Festergut"].." (hc)"] = {
+			[BB["Festergut"]] = {
 				50702, 	-- Lingering Illness
 				50694, 	-- Plaguebringer's Stained Pants
 				50699, 	-- Plague Scientist's Boots
@@ -1528,7 +1528,7 @@ do
 				50692, 	-- Black Bruise
 				50695, 	-- Distant Land
 			},
-			["hc ".. BB["Rotface"].." (hc)"] = {
+			[BB["Rotface"]] = {
 				50677, 	-- Winding Sheet
 				50686, 	-- Death Surgeon's Sleeves
 				50679, 	-- Helm of the Elder Moon
@@ -1545,14 +1545,14 @@ do
 				50676, 	-- Rib Spreader
 				50684, 	-- Corpse-Impaling Spike
 			},
-			["hc ".. BB["Professor Putricide"].." (hc)"] = {
+			[BB["Professor Putricide"]] = {
 				50707, 	-- Astrylian's Sutured Cinch
 				50705, 	-- Professor's Bloodied Smock
 				50706, 	-- Tiny Abomination in a Jar
 				50708, 	-- Last Word
 				50704, 	-- Rigormortis
 			},
-			["hc ".. BB["Blood Prince Council"].." (hc)"] = {
+			[BB["Blood Prince Council"]] = {
 				50718, 	-- Royal Crimson Cloak
 				50717, 	-- Sanguine Silk Robes
 				50722, 	-- San'layn Ritualist Gloves
@@ -1569,7 +1569,7 @@ do
 				50710, 	-- Keleseth's Seducer
 				50603, 	-- Cryptmaker
 			},
-			["hc ".. BB["Blood-Queen Lana'thel"].." (hc)"] = {
+			[BB["Blood-Queen Lana'thel"]] = {
 				50724, 	-- Blood Queen's Crimson Choker
 				50728, 	-- Lana'thel's Chain of Flagellation
 				50726, 	-- Bauble of True Blood
@@ -1577,7 +1577,7 @@ do
 				50725, 	-- Dying Light
 				50729, 	-- Icecrown Glacial Wall
 			},
-			["hc ".. BB["Valithria Dreamwalker"].." (hc)"] = {
+			[BB["Valithria Dreamwalker"]] = {
 				50628, 	-- Frostbinder's Shredded Cape
 				50629, 	-- Robe of the Waking Nightmare
 				50630, 	-- Bracers of Eternal Dreaming
@@ -1594,14 +1594,14 @@ do
 				50621, 	-- Lungbreaker
 				50631, 	-- Nightmare Ender
 			},
-			["hc ".. BB["Sindragosa"].." (hc)"] = {
+			[BB["Sindragosa"]] = {
 				50633, 	-- Sindragosa's Cruel Claw
 				50636, 	-- Memory of Malygos
 				50365, 	-- Phylactery of the Nameless Lich
 				50364, 	-- Sindragosa's Flawless Fang
 				50635, 	-- Sundial of Eternal Dusk
 			},
-			["hc ".. BB["The Lich King"].." (hc)"] = {
+			[BB["The Lich King"]] = {
 				50736, 	-- Heaven's Fall, Kryss of a Thousand Lies
 				50732, 	-- Bloodsurge, Kel'Thuzad's Blade of Agony
 				50730, 	-- Glorenzelg, High-Blade of the Silver Hand
