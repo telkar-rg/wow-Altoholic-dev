@@ -351,6 +351,7 @@ L["Level 30-39"] = true
 L["Level 40-49"] = true
 L["Level 50-60"] = true
 L["Level 70"] = true
+L["Level 80"] = true
 L["Level 70 Reputation PVP"] = true
 L["Level %d Honor PVP"] = true
 L["Levels"] = true
