@@ -1285,8 +1285,10 @@ do
 			[ BOSS ] = {
 				50274, 	-- Shadowfrost Shard
 			},
-			[ BOSS ] = {
-				50274, 	-- Shadowfrost Shard
+			[ format("%s-%s", L["Quarter_Wing"], BOSS) ] = {
+				52025, 	-- Druide, Magier, Schurke, Todesritter
+				52026, 	-- Jäger, Krieger, Schamane
+				52027, 	-- Hexenmeister, Paladin, Priester
 			},
 			[ BB["Lord Marrowgar"] ] = {
 				49978, 	-- Crushing Coldwraith Belt
@@ -1452,6 +1454,11 @@ do
 			},
 		},
 		[ BZ["Icecrown Citadel"] .. " (25 HC)" ] = {
+			[ format("%s-%s", L["Quarter_Wing"], BOSS) ] = {
+				52028, 	-- hc, Druide, Magier, Schurke, Todesritter
+				52029, 	-- hc, Jäger, Krieger, Schamane
+				52030, 	-- hc, Hexenmeister, Paladin, Priester
+			},
 			[BB["Lord Marrowgar"]] = {
 				50613, 	-- Crushing Coldwraith Belt
 				50615, 	-- Handguards of Winter's Respite
