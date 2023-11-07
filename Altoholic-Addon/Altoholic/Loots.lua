@@ -781,7 +781,7 @@ do
 			},
 		},
 		
-		["Pickpocketing"] = {
+		[L["Pick Pocket"]] = {
 			[BZ["Northrend"]] = {
 				43611,  -- Krol Cleaver
 				43612,  -- Spineslicer
