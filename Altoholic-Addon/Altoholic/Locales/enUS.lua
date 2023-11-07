@@ -62,6 +62,7 @@ L["Bank"] = true
 L["Bank bag"] = true
 L["Bank not visited yet"] = true
 L["Barleybrew Brewery"] = true
+L["Battered Hilt"] = true 	-- Battered Hilt Questitem name
 L["(based on iLvl)"] = true
 L["Bash'ir Landing"] = true
 L["Battlecast Garb"] = true

@@ -58,6 +58,7 @@ L["Bank"] = "은행"
 L["Bank bag"] = "은행 가방"
 L["Bank not visited yet"] = "아직 은행을 방문하지 않았음"
 L["Barleybrew Brewery"] = true
+L["Battered Hilt"] = "마모된 칼자루" 	-- Battered Hilt Questitem name
 L["(based on iLvl)"] = "(아이템 레벨(iLvl) 기준으로)"
 L["Bash'ir Landing"] = true
 L["Battlecast Garb"] = true

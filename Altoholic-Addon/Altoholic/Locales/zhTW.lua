@@ -58,6 +58,7 @@ L["Bank"] = "銀行"
 L["Bank bag"] = "銀行包"
 L["Bank not visited yet"] = "銀行沒有訪問過"
 L["Barleybrew Brewery"] = "麥酒釀造廠"
+L["Battered Hilt"] = "殘破的劍柄" 	-- Battered Hilt Questitem name
 L["(based on iLvl)"] = "(根據物品等級)"
 L["Bash'ir Landing"] = "貝許爾平臺"
 L["Battlecast Garb"] = "戰放裝束"

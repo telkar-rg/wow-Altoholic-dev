@@ -59,6 +59,7 @@ L["Bank"] = "Banque"
 L["Bank bag"] = "Sac en banque"
 L["Bank not visited yet"] = "Banque non visitée"
 L["Barleybrew Brewery"] = "Apprenti Brasselorge"
+L["Battered Hilt"] = "Poignée endommagée" 	-- Battered Hilt Questitem name
 L["(based on iLvl)"] = "(sur base de l'item level)"
 L["Bash'ir Landing"] = "Point d'ancrage de Bash'ir"
 L["Battlecast Garb"] = "Atours d'escarmouche"
