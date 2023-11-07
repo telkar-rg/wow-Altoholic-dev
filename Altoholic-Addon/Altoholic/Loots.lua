@@ -1748,8 +1748,78 @@ do
 			},
 		},
 		
-		-- [] = {
-		-- },
+		[ BZ["The Ruby Sanctum"] .. " (10)" ] = {
+			[BB["Halion"]] = {
+				53103,  -- Baltharus' Gift
+				53110,  -- Zarithrian's Offering
+				53111,  -- Scion's Treads
+				53112,  -- Bracers of the Heir
+				53113,  -- Twilight Scale Shoulders
+				53114,  -- Gloaming Sark
+				53115,  -- Abduction's Cover
+				53116,  -- Saviana's Tribute
+				53117,  -- Changeling Gloves
+				53118,  -- Misbegotten Belt
+				53119,  -- Boots of Divided Being
+				53121,  -- Surrogate Belt
+			},
+		},
+		[ BZ["The Ruby Sanctum"] .. " (10 HC)" ] = {
+			[BB["Halion"]] = {
+				54556,  -- Abduction's Cover (hc)
+				54557,  -- Baltharus' Gift (hc)
+				54558,  -- Boots of Divided Being (hc)
+				54559,  -- Bracers of the Heir (hc)
+				54560,  -- Changeling Gloves (hc)
+				54561,  -- Gloaming Sark (hc)
+				54562,  -- Misbegotten Belt (hc)
+				54563,  -- Saviana's Tribute (hc)
+				54564,  -- Scion's Treads (hc)
+				54565,  -- Surrogate Belt (hc)
+				54566,  -- Twilight Scale Shoulders (hc)
+				54567,  -- Zarithrian's Offering (hc)
+			},
+		},
+		[ BZ["The Ruby Sanctum"] .. " (25)" ] = {
+			[BB["Halion"]] = {
+				53125,  -- Apocalypse's Advance
+				53126,  -- Umbrage Armbands
+				53127,  -- Returning Footfalls
+				53129,  -- Treads of Impending Resurrection
+				53132,  -- Penumbra Pendant
+				53133,  -- Signet of Twilight
+				53134,  -- Phaseshifter's Bracers
+				53486,  -- Bracers of Fiery Night
+				53487,  -- Foreshadow Steps
+				53488,  -- Split Shape Belt
+				53489,  -- Cloak of Burning Dusk
+				53490,  -- Ring of Phased Regeneration
+				54569,  -- Sharpened Twilight Scale
+				54571,  -- Petrified Twilight Scale
+				54572,  -- Charred Twilight Scale
+				54573,  -- Glowing Twilight Scale
+			},
+		},
+		[ BZ["The Ruby Sanctum"] .. " (25 HC)" ] = {
+			[BB["Halion"]] = {
+				54576,  -- Signet of Twilight (hc)
+				54577,  -- Returning Footfalls (hc)
+				54578,  -- Apocalypse's Advance (hc)
+				54579,  -- Treads of Impending Resurrection (hc)
+				54580,  -- Umbrage Armbands (hc)
+				54581,  -- Penumbra Pendant (hc)
+				54582,  -- Bracers of Fiery Night (hc)
+				54583,  -- Cloak of Burning Dusk (hc)
+				54584,  -- Phaseshifter's Bracers (hc)
+				54585,  -- Ring of Phased Regeneration (hc)
+				54586,  -- Foreshadow Steps (hc)
+				54587,  -- Split Shape Belt (hc)
+				54588,  -- Charred Twilight Scale (hc)
+				54589,  -- Glowing Twilight Scale (hc)
+				54590,  -- Sharpened Twilight Scale (hc)
+				54591,  -- Petrified Twilight Scale (hc)
+			},
+		},
 		
 	}
 
