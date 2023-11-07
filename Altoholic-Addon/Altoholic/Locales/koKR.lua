@@ -438,6 +438,7 @@ L["Outdoor Bosses"] = true
 L["Paladin Set"] = "성기사 세트"
 L["Patterns"] = true
 L["Peacebloom"] = "평온초"
+L["Pick Pocket"] = "훔치기" 	-- class ability "Pick Pocket"
 L["Plaguebloom"] = "역병초"
 L["Plans"] = true
 L["Plate Set"] = "판금 세트"

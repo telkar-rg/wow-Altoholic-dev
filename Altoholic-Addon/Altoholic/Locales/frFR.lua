@@ -462,6 +462,7 @@ L["Outdoor Bosses"] = "Boss Extérieurs"
 L["Paladin Set"] = "Set Paladin"
 L["Patterns"] = "Patrons"
 L["Peacebloom"] = "Pacifique"
+L["Pick Pocket"] = "Vol à la tire" 	-- class ability "Pick Pocket"
 L["Plaguebloom"] = "Fleur de peste"
 L["Plans"] = true
 L["Plate Set"] = "Set Plaque"

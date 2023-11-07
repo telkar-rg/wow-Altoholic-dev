@@ -444,6 +444,7 @@ L["Outdoor Bosses"] = true
 L["Paladin Set"] = true
 L["Patterns"] = true
 L["Peacebloom"] = true
+L["Pick Pocket"] = true 	-- class ability "Pick Pocket"
 L["Plaguebloom"] = true
 L["Plans"] = true
 L["Plate Set"] = true
