@@ -794,7 +794,8 @@ do
 		
 		[BZ["Vault of Archavon"] ] = {
 			[BOSS] 	= { 43959, 44083, },
-			[BB["Archavon the Stone Watcher"].." (10)"] 	= {
+			
+			[L["SHORT_Archavon"].." (10)"] 	= {
 				39492, 	-- Heroes' Frostfire Robe
 				39493, 	-- Heroes' Frostfire Leggings
 				39495, 	-- Heroes' Frostfire Gloves
@@ -901,7 +902,7 @@ do
 				42003, 	-- Hateful Gladiator's Felweave Trousers
 				42015, 	-- Hateful Gladiator's Felweave Handguards
 			},
-			[BB["Emalon the Storm Watcher"].." (10)"] 	= {
+			[L["SHORT_Emalon"].." (10)"] 	= {
 				40804, 	-- Deadly Gladiator's Plate Gauntlets
 				40805, 	-- Deadly Gladiator's Scaled Gauntlets
 				40806, 	-- Deadly Gladiator's Dreadplate Gauntlets
@@ -1019,7 +1020,7 @@ do
 				45432, 	-- Valorous Siegebreaker Legplates
 				46131, 	-- Valorous Kirin'dor Gauntlets
 			},
-			[BB["Koralon the Flame Watcher"].." (10)"] 	= {
+			[L["SHORT_Koralon"].." (10)"] 	= {
 				40807, 	-- Furious Gladiator's Plate Gauntlets
 				40808, 	-- Furious Gladiator's Scaled Gauntlets
 				40809, 	-- Furious Gladiator's Dreadplate Gauntlets
@@ -1176,7 +1177,7 @@ do
 				48653, 	-- Liadrin's Handguards of Conquest
 				48655, 	-- Liadrin's Legguards of Conquest
 			},
-			[BB["Toravon the Ice Watcher"].." (10)"] 	= {
+			[L["SHORT_Toravon"].." (10)"] 	= {
 				40810, 	-- Relentless Gladiator's Plate Gauntlets
 				40811, 	-- Relentless Gladiator's Dreadplate Gauntlets
 				40812, 	-- Relentless Gladiator's Scaled Gauntlets
@@ -1298,7 +1299,8 @@ do
 				50866, 	-- Lightsworn Greaves
 				50868, 	-- Lightsworn Gloves
 			},
-			[BB["Archavon the Stone Watcher"].." (25)"] 	= {
+			
+			[L["SHORT_Archavon"].." (25)"] 	= {
 				40415, 	-- Valorous Frostfire Gloves
 				40417, 	-- Valorous Frostfire Leggings
 				40418, 	-- Valorous Frostfire Robe
@@ -1405,7 +1407,7 @@ do
 				42004, 	-- Deadly Gladiator's Felweave Trousers
 				42016, 	-- Deadly Gladiator's Felweave Handguards
 			},
-			[BB["Emalon the Storm Watcher"].." (25)"] 	= {
+			[L["SHORT_Emalon"].." (25)"] 	= {
 				40807, 	-- Furious Gladiator's Plate Gauntlets
 				40808, 	-- Furious Gladiator's Scaled Gauntlets
 				40809, 	-- Furious Gladiator's Dreadplate Gauntlets
@@ -1524,7 +1526,7 @@ do
 				46210, 	-- Conqueror's Worldbreaker Kilt
 				46373, 	-- Furious Gladiator's Pendant of Sundering
 			},
-			[BB["Koralon the Flame Watcher"].." (25)"] 	= {
+			[L["SHORT_Koralon"].." (25)"] 	= {
 				40810, 	-- Relentless Gladiator's Plate Gauntlets
 				40811, 	-- Relentless Gladiator's Dreadplate Gauntlets
 				40812, 	-- Relentless Gladiator's Scaled Gauntlets
@@ -1684,7 +1686,7 @@ do
 				49181, 	-- Relentless Gladiator's Cuffs of Alacrity
 				49183, 	-- Relentless Gladiator's Treads of Alacrity
 			},
-			[BB["Toravon the Ice Watcher"].." (25)"] 	= {
+			[L["SHORT_Toravon"].." (25)"] 	= {
 				51126, 	-- Sanctified Scourgelord Legplates
 				51128, 	-- Sanctified Scourgelord Gauntlets
 				51131, 	-- Sanctified Scourgelord Legguards
