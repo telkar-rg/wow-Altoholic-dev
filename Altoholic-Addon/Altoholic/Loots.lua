@@ -1389,6 +1389,21 @@ do
 			},
 		},
 		[ BZ["Icecrown Citadel"] .. " (25)" ] = {
+			[ L["Quest rewards"] ] = {
+				49888, 	-- Shadow's Edge
+				49623, 	-- Shadowmourne
+				51316, 	-- Unsealed Chest (Shadowmourne Quest)
+				51317, 	-- Alexandros' Soul Shard (Unsealed Chest)
+				51318, 	-- Jaina's Locket (Unsealed Chest)
+				51319, 	-- Arthas' Training Sword (Unsealed Chest)
+				51320, 	-- Badge of the Silver Hand (Unsealed Chest)
+				51321, 	-- Blood of Sylvanas (Unsealed Chest)
+				52200, 	-- Reins of the Crimson Deathcharger (Unsealed Chest Quest)
+				52201, 	-- Muradin's Favor (Unsealed Chest Quest)
+				52251, 	-- Jaina's Locket (Unsealed Chest Quest)
+				52252, 	-- Tabard of the Lightbringer (Unsealed Chest Quest)
+				52253, 	-- Sylvanas's Music Box (Unsealed Chest Quest)
+			},
 			[ BOSS ] = {
 				50274, 	-- Shadowfrost Shard
 			},
@@ -1558,6 +1573,7 @@ do
 				50425, 	-- Oathbinder, Charge of the Ranger-General
 				50429, 	-- Archus, Greatstaff of Antonidas
 				49981, 	-- Fal'inrush, Defender of Quel'thalas
+				51315, 	-- Sealed Chest (Shadowmourne Quest)
 			},
 		},
 		[ BZ["Icecrown Citadel"] .. " (25 HC)" ] = {
