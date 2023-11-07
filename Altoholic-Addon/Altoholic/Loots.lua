@@ -1042,6 +1042,9 @@ do
 		[format("ICC %s (%s)", BUG_CATEGORY3, PLAYER_DIFFICULTY2)] = {
 			[L["Trash Mobs"]] = { 50318, 50315, 50319, 50380, 50379, },
 		},
+		[L["Battered Hilt"]] = {
+			[L["Quest rewards"]] = { 50046, 50047, 50048, 50049, 50050, 50051, 50052, },
+		},
 		
 		[ BZ["Icecrown Citadel"] ] = {
 			[ L["Trash Mobs"] ] = {
