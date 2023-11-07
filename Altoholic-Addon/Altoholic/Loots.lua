@@ -709,33 +709,44 @@ do
 				50094, 50096, 50097, 50854, 50855, 50857,  -- Todesritter
 			},
 		},
-		["T10.5-Set"] = {
-			[ L["MarkOfSanctification_Vanquisher"] ] = { 	-- Rogue, Death Knight, Mage, Druid
+		[format(L["Tier %s Tokens"], "10.5")] = {
+			[format("%s-%s (%s %s)", L["Quarter_Wing"], BOSS, BZ["Icecrown Citadel"], "25")] = {
+				-- Vanquisher
 				51185, 51186, 51187, 51188, 51189,  -- Rogue
 				51125, 51126, 51127, 51128, 51129, 51130, 51131, 51132, 51133, 51134,  -- Death Knight
 				51155, 51156, 51157, 51158, 51159,  -- Mage
 				51135, 51136, 51137, 51138, 51139, 51140, 51141, 51142, 51143, 51144, 51145, 51146, 51147, 51148, 51149,  -- Druid
-			},
-			[ L["MarkOfSanctification_Protector"] ] = { 	-- Warrior, Hunter, Shaman
+				-- Protector
 				51210, 51211, 51212, 51213, 51214, 51215, 51216, 51217, 51218, 51219,  -- Warrior
 				51150, 51151, 51152, 51153, 51154,  -- Hunter
 				51190, 51191, 51192, 51193, 51194, 51195, 51196, 51197, 51198, 51199, 51200, 51201, 51202, 51203, 51204,  -- Shaman
-			},
-			[ L["MarkOfSanctification_Conqueror"] ] = { 	-- Paladin, Priest, Warlock
+				-- Conqueror
 				51160, 51161, 51162, 51163, 51164, 51165, 51166, 51167, 51168, 51169, 51170, 51171, 51172, 51173, 51174,  -- Paladin
 				51175, 51176, 51177, 51178, 51179, 51180, 51181, 51182, 51183, 51184,  -- Priest
 				51205, 51206, 51207, 51208, 51209,  -- Warlock
 			},
 		},
-		["T10.75-Set"] = {
-			[format("%s (%s)", L["MarkOfSanctification_Vanquisher"], PLAYER_DIFFICULTY2)] = { 	-- Rogue, Death Knight, Mage, Druid
-				
-			},
-			[format("%s (%s)", L["MarkOfSanctification_Protector"], PLAYER_DIFFICULTY2)] = { 	-- Warrior, Hunter, Shaman
-				
-			},
-			[format("%s (%s)", L["MarkOfSanctification_Conqueror"], PLAYER_DIFFICULTY2)] = { 	-- Paladin, Priest, Warlock
-				
+		[format(L["Tier %s Tokens"], "10.75") .. L[" (Heroic)"]] = {
+			[format("%s-%s (%s %s)", L["Quarter_Wing"], BOSS, BZ["Icecrown Citadel"], "25 HC")] = {
+				51221, 51224, 51223, 51222, 51220, 	-- warrior
+				51227, 51229, 51228, 51226, 51225, 	-- warrior
+				51266, 51269, 51268, 51267, 51265, 	-- paladin
+				51272, 51273, 51271, 51270, 51274, 	-- paladin
+				51277, 51279, 51278, 51276, 51275, 	-- paladin
+				51286, 51288, 51287, 51285, 51289, 	-- hunter
+				51252, 51254, 51253, 51251, 51250, 	-- rogue
+				51255, 51257, 51258, 51256, 51259, 	-- priest
+				51261, 51264, 51262, 51260, 51263, 	-- priest
+				51306, 51309, 51308, 51307, 51305, 	-- deathknight
+				51312, 51314, 51313, 51311, 51310, 	-- deathknight
+				51237, 51235, 51236, 51238, 51239, 	-- shaman
+				51242, 51240, 51241, 51243, 51244, 	-- shaman
+				51247, 51245, 51246, 51248, 51249, 	-- shaman
+				51281, 51284, 51282, 51280, 51283, 	-- mage
+				51231, 51234, 51232, 51230, 51233, 	-- warlock
+				51290, 51292, 51293, 51291, 51294, 	-- druid
+				51296, 51299, 51297, 51295, 51298, 	-- druid
+				51302, 51304, 51303, 51301, 51300, 	-- druid
 			},
 		},
 		
