@@ -647,6 +647,7 @@ L["Thunderbrew Brewery"] = "Aprendiz Cebatruenos"
 L["Ticking Present"] = "Obsequio que hace Tic-Tac"
 L["Tier 0.5 Quests"] = "T0.5 Misiones"
 L["Tier %d Tokens"] = "T%d Insignias"
+L["Tier %s Tokens"] = "T%s Insignias"
 L["Timed Chest"] = "Cofres contrareloj"
 -- L["Time-Lost Scroll"] = true 	-- Terrokar Quest Item
 L["Tin Vein"] = "Filón de Estaño"

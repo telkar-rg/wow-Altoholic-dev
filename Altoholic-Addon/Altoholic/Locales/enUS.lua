@@ -647,6 +647,7 @@ L["Thunderbrew Brewery"] = true
 L["Ticking Present"] = true
 L["Tier 0.5 Quests"] = "T0.5 Quests"
 L["Tier %d Tokens"] = "T%d Tokens"
+L["Tier %s Tokens"] = "T%s Tokens"
 L["Timed Chest"] = true
 L["Time-Lost Scroll"] = true 	-- Terrokar Quest Item
 L["Tin Vein"] = true
