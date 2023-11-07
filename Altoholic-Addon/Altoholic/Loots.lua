@@ -783,9 +783,10 @@ do
 		
 		[L["Pick Pocket"]] = {
 			[BZ["Northrend"]] = {
-				43611,  -- Krol Cleaver
-				43612,  -- Spineslicer
-				43613,  -- The Dusk Blade
+				43575,  -- Reinforced Junkbox
+				43611,  -- Krol Cleaver (Reinforced Junkbox)
+				43612,  -- Spineslicer (Reinforced Junkbox)
+				43613,  -- The Dusk Blade (Reinforced Junkbox)
 			},
 		},
 		
