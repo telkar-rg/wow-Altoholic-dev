@@ -405,6 +405,44 @@ do
 			[L["Warlock Set"]] = { 41994, 42012, 41999, 42018, 42006 },
 			[L["Warrior Set"]] = { 40829, 40870, 40790, 40810, 40850 },
 		},
+		[format(L["Arena Season %d"], 8)] = {
+			[L["Death Knight Set"]] = {
+				51415, 51418, 51416, 51414, 51413, 	-- deathknight	(Entweihung des Gladiators)
+			},
+			[L["Druid Set"]] = {
+				51421, 51424, 51422, 51420, 51419, 	-- druid	(Zuflucht des Gladiators)
+				51427, 51430, 51428, 51426, 51425, 	-- druid	(Schutzgewandung des Gladiators)
+				51435, 51438, 51436, 51434, 51433, 	-- druid	(Wildfell des Gladiators)
+			},
+			[L["Hunter Set"]] = {
+				51460, 51462, 51461, 51459, 51458, 	-- hunter	(Jagdtracht des Gladiators)
+			},
+			[L["Mage Set"]] = {
+				51465, 51467, 51466, 51464, 51463, 	-- mage	(Ornat des Gladiators)
+			},
+			[L["Paladin Set"]] = {
+				51470, 51473, 51471, 51469, 51468, 	-- paladin	(Erlösung des Gladiators)
+				51476, 51479, 51477, 51475, 51474, 	-- paladin	(Rechtschaffenheit des Gladiators)
+			},
+			[L["Priest Set"]] = {
+				51484, 51486, 51485, 51483, 51482, 	-- priest	(Vereidigung des Gladiators)
+				51489, 51491, 51490, 51488, 51487, 	-- priest	(Gewandung des Gladiators)
+			},
+			[L["Rogue Set"]] = {
+				51494, 51496, 51495, 51493, 51492, 	-- rogue	(Gewänder des Gladiators)
+			},
+			[L["Shaman Set"]] = {
+				51499, 51502, 51500, 51498, 51497, 	-- shaman	(Kriegsrausch des Gladiators)
+				51505, 51508, 51506, 51504, 51503, 	-- shaman	(Erderschütterer des Gladiators)
+				51511, 51514, 51512, 51510, 51509, 	-- shaman	(Donnerfaust des Gladiators)
+			},
+			[L["Warlock Set"]] = {
+				51538, 51540, 51539, 51537, 51536, 	-- warlock	(Teufelsschleier des Gladiators)
+			},
+			[L["Warrior Set"]] = {
+				51543, 51545, 51544, 51542, 51541, 	-- warrior	(Schlachtrüstung des Gladiators)
+			},
+		},
 		
 		[format(L["Level %d Honor PVP"], 60)] = {	
 			[BI["Druid"]] = { 16451, 16449, 16452, 16448, 16450, 16459, 23308, 23309, 23294, 23280, 23295, 23281, 16550, 16551, 16549, 16555, 16552, 16554, 23253, 23254, 22877, 22863, 22878, 22852 },
