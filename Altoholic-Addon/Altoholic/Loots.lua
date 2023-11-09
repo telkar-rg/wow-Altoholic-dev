@@ -694,7 +694,7 @@ do
 			[L["Warlock Set"]] = { 41994, 42012, 41999, 42018, 42006 },
 			[L["Warrior Set"]] = { 40829, 40870, 40790, 40810, 40850 },
 		},
-		[format(L["Arena Season %d"], 8)] = {
+		[format(L["Arena Season %d"], 8)] = { 	-- Season 8 	Wrathful Gladiator
 			[L["Death Knight Set"]] = {
 				51415, 51418, 51416, 51414, 51413, 	-- deathknight	(Entweihung des Gladiators)
 			},
@@ -730,6 +730,123 @@ do
 			},
 			[L["Warrior Set"]] = {
 				51543, 51545, 51544, 51542, 51541, 	-- warrior	(Schlachtrüstung des Gladiators)
+			},
+			[L["Non Set Cloth"]] = {
+				51327, 51328, 51329, 51337, 51338, 51339, 51365, 51366, 51367, 
+			},
+			[L["Non Set Leather"]] = {
+				51340, 51341, 51342, 51343, 51344, 51345, 51368, 51369, 51370, 
+			},
+			[L["Non Set Mail"]] = {
+				51350, 51351, 51352, 51371, 51372, 51373, 51374, 51375, 51376, 
+			},
+			[L["Non Set Plate"]] = {
+				51359, 51360, 51361, 51362, 51363, 51364, 
+			},
+			[L["Non Set Accessories"]] = {
+				51330, 	-- Wrathful Gladiator's Cloak of Dominance	(Cloak)
+				51331, 	-- Wrathful Gladiator's Pendant of Dominance	(Amulet)
+				51332, 	-- Wrathful Gladiator's Cloak of Subjugation	(Cloak)
+				51333, 	-- Wrathful Gladiator's Pendant of Subjugation	(Amulet)
+				51334, 	-- Wrathful Gladiator's Cloak of Ascendancy	(Cloak)
+				51335, 	-- Wrathful Gladiator's Pendant of Ascendancy	(Amulet)
+				51336, 	-- Wrathful Gladiator's Band of Dominance	(Ring)
+				51346, 	-- Wrathful Gladiator's Cloak of Salvation	(Cloak)
+				51347, 	-- Wrathful Gladiator's Pendant of Salvation	(Amulet)
+				51348, 	-- Wrathful Gladiator's Cloak of Deliverance	(Cloak)
+				51349, 	-- Wrathful Gladiator's Pendant of Deliverance	(Amulet)
+				51353, 	-- Wrathful Gladiator's Pendant of Sundering	(Amulet)
+				51354, 	-- Wrathful Gladiator's Cloak of Triumph	(Cloak)
+				51355, 	-- Wrathful Gladiator's Pendant of Triumph	(Amulet)
+				51356, 	-- Wrathful Gladiator's Cloak of Victory	(Cloak)
+				51357, 	-- Wrathful Gladiator's Pendant of Victory	(Amulet)
+				51358, 	-- Wrathful Gladiator's Band of Triumph	(Ring)
+				51534, 	-- Wrathful Gladiator's Tabard	(Tabard)
+				51377, 	-- Medallion of the Alliance
+				51378, 	-- Medallion of the Horde
+			},
+			[ format("%s (270)", L["Weapons"]) ] = {
+				51396, 	-- Wrathful Gladiator's Endgame	(Off-hand Frill)
+				51407, 	-- Wrathful Gladiator's Compendium	(Off-hand Frill)
+				51408, 	-- Wrathful Gladiator's Grimoire	(Off-hand Frill)
+				51409, 	-- Wrathful Gladiator's Reprieve	(Off-hand Frill)
+				51417, 	-- Wrathful Gladiator's Sigil of Strife	(Sigil)
+				51423, 	-- Wrathful Gladiator's Idol of Tenacity	(Idol)
+				51429, 	-- Wrathful Gladiator's Idol of Resolve	(Idol)
+				51437, 	-- Wrathful Gladiator's Idol of Steadfastness	(Idol)
+				51452, 	-- Wrathful Gladiator's Barrier	(Shield)
+				51455, 	-- Wrathful Gladiator's Redoubt	(Shield)
+				51472, 	-- Wrathful Gladiator's Libram of Justice	(Libram)
+				51478, 	-- Wrathful Gladiator's Libram of Fortitude	(Libram)
+				51501, 	-- Wrathful Gladiator's Totem of the Third Wind	(Totem)
+				51507, 	-- Wrathful Gladiator's Totem of Indomitability	(Totem)
+				51513, 	-- Wrathful Gladiator's Totem of Survival	(Totem)
+				51533, 	-- Wrathful Gladiator's Shield Wall	(Shield)
+			},
+			[ format("%s (264)", L["Weapons"]) ] = {
+				51388, 	-- Wrathful Gladiator's Decapitator	(Two-Handed Axe)
+				51390, 	-- Wrathful Gladiator's Bonegrinder	(Two-Handed Mace)
+				51392, 	-- Wrathful Gladiator's Greatsword	(Two-Handed Sword)
+				51394, 	-- Wrathful Gladiator's Longbow	(Bow)
+				51397, 	-- Wrathful Gladiator's Spellblade	(Dagger)
+				51400, 	-- Wrathful Gladiator's War Staff	(Staff)
+				51402, 	-- Wrathful Gladiator's Focus Staff	(Staff)
+				51404, 	-- Wrathful Gladiator's Battle Staff	(Staff)
+				51406, 	-- Wrathful Gladiator's Blade of Alacrity	(Dagger)
+				51410, 	-- Wrathful Gladiator's Touch of Defeat	(Wand)
+				51411, 	-- Wrathful Gladiator's Heavy Crossbow	(Crossbow)
+				51431, 	-- Wrathful Gladiator's Staff (Druid)	(Staff)
+				51439, 	-- Wrathful Gladiator's Hacker	(One-Handed Axe)
+				51441, 	-- Wrathful Gladiator's Shiv	(Dagger)
+				51443, 	-- Wrathful Gladiator's Left Ripper	(Fist Weapon)
+				51445, 	-- Wrathful Gladiator's Bonecracker	(One-Handed Mace)
+				51447, 	-- Wrathful Gladiator's Quickblade	(One-Handed Sword)
+				51449, 	-- Wrathful Gladiator's Rifle	(Gun)
+				51451, 	-- Wrathful Gladiator's Wand of Alacrity	(Wand)
+				51453, 	-- Wrathful Gladiator's Gavel	(One-Handed Mace)
+				51456, 	-- Wrathful Gladiator's Energy Staff	(Staff)
+				51480, 	-- Wrathful Gladiator's Pike	(Polearm)
+				51515, 	-- Wrathful Gladiator's Cleaver	(One-Handed Axe)
+				51517, 	-- Wrathful Gladiator's Shanker	(Dagger)
+				51519, 	-- Wrathful Gladiator's Pummeler	(One-Handed Mace)
+				51521, 	-- Wrathful Gladiator's Slicer	(One-Handed Sword)
+				51523, 	-- Wrathful Gladiator's Right Ripper	(Fist Weapon)
+				51525, 	-- Wrathful Gladiator's Chopper	(One-Handed Axe)
+				51527, 	-- Wrathful Gladiator's Mutilator	(Dagger)
+				51530, 	-- Wrathful Gladiator's Left Render	(Fist Weapon)
+				51531, 	-- Wrathful Gladiator's Piercing Touch	(Wand)
+				51532, 	-- Wrathful Gladiator's Baton of Light	(Wand)
+				51535, 	-- Wrathful Gladiator's War Edge	(Thrown)
+			},
+			[ format("%s (277)", L["Weapons"]) ] = {
+				51389, 	-- Wrathful Gladiator's Sunderer (Two-Handed Axe)
+				51391, 	-- Wrathful Gladiator's Crusher (Two-Handed Mace)
+				51393, 	-- Wrathful Gladiator's Claymore (Two-Handed Sword)
+				51395, 	-- Wrathful Gladiator's Recurve (Bow)
+				51398, 	-- Wrathful Gladiator's Blade of Celerity (Dagger)
+				51399, 	-- Wrathful Gladiator's Mageblade (Dagger)
+				51401, 	-- Wrathful Gladiator's Combat Staff (Staff)
+				51403, 	-- Wrathful Gladiator's Acute Staff (Staff)
+				51405, 	-- Wrathful Gladiator's Skirmish Staff (Staff)
+				51412, 	-- Wrathful Gladiator's Repeater (Crossbow)
+				51432, 	-- Wrathful Gladiator's Greatstaff (Druid) (Staff)
+				51440, 	-- Wrathful Gladiator's Dicer (One-Handed Axe)
+				51442, 	-- Wrathful Gladiator's Dirk (Dagger)
+				51444, 	-- Wrathful Gladiator's Left Razor (Fist Weapon)
+				51446, 	-- Wrathful Gladiator's Punisher (One-Handed Mace)
+				51448, 	-- Wrathful Gladiator's Swiftblade (One-Handed Sword)
+				51450, 	-- Wrathful Gladiator's Shotgun (Gun)
+				51454, 	-- Wrathful Gladiator's Salvation (One-Handed Mace)
+				51457, 	-- Wrathful Gladiator's Light Staff (Staff)
+				51481, 	-- Wrathful Gladiator's Halberd (Polearm)
+				51516, 	-- Wrathful Gladiator's Handaxe (One-Handed Axe)
+				51518, 	-- Wrathful Gladiator's Spike (Dagger)
+				51520, 	-- Wrathful Gladiator's Truncheon (One-Handed Mace)
+				51522, 	-- Wrathful Gladiator's Longblade (One-Handed Sword)
+				51524, 	-- Wrathful Gladiator's Grasp (Fist Weapon)
+				51526, 	-- Wrathful Gladiator's Splitter (One-Handed Axe)
+				51528, 	-- Wrathful Gladiator's Eviscerator (Dagger)
+				51529, 	-- Wrathful Gladiator's Left Claw (Fist Weapon)
 			},
 		},
 		
