@@ -170,6 +170,7 @@ L[" days"] = true
 L[" days ago"] = true
 L["Deadly Gladiator's Weapons"] = true
 L["Death Knight"] = true
+L["Death Knight Set"] = true
 L["Default"] = true
 L["Delete Guild Bank?"] = true
 L["Delete this Alt"] = true

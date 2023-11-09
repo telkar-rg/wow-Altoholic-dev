@@ -165,6 +165,7 @@ L[" days"] = " 일"
 L[" days ago"] = " 일 전"
 L["Deadly Gladiator's Weapons"] = true
 L["Death Knight"] = "죽음의 기사"
+L["Death Knight Set"] = "죽음의 기사 세트"
 L["Default"] = "기본값"
 L["Delete Guild Bank?"] = "길드 은행 삭제?"
 L["Delete this Alt"] = "이 캐릭터 삭제"
