@@ -342,44 +342,333 @@ do
 			[L["Warrior Set"]] = { 35068, 35070, 35066, 35067, 35069 },
 			[L["Weapons"]] = { 35076, 35038, 35037, 35102, 37739, 35093, 35058, 35095, 35101, 35072, 35015, 34996, 34995, 35017, 34997, 35110, 35014, 35082, 37740, 35071, 34988, 34989, 35064, 34987, 35103, 35109, 34986, 35073, 35094, 35108, 35047, 35018, 35075, 34985, 35065, 35107, 35008, 35016, 35074, 35019, 35020, 35021, 35039, 35040, 35041, 35104, 35105, 35106 }
 		},
-		[format(L["Arena Season %d"], 5)] = {
-			[L["Death Knight Set"]] = { 
-				40817, 40857, 40779, 40799, 40837, 40820, 40860, 40781, 40803, 40841, 40824, 40863, 40784, 40806, 40845, 	-- Death Knight
+		[format(L["Arena Season %d"], 5) ..format(" (%s)", ITEM_QUALITY3_DESC) ] = { 	-- Season 5 	Savage Gladiator
+			[L["Death Knight Set"]] = {
+				40817, 40857, 40837, 40799, 40779, 	-- deathknight	(Gladiator's Desecration)
 			},
-			[L["Druid Set"]] = { 
-				41324, 41278, 41313, 41290, 41301, 41325, 41279, 41314, 41291, 41302, 41326, 41280, 41315, 41292, 41303, 	-- Druid balance
-				41675, 41712, 41658, 41770, 41664, 41676, 41713, 41659, 41771, 41665, 41677, 41714, 41660, 41772, 41666, 	-- Druid feral
-				41269, 41271, 41272, 41268, 41270, 41319, 41273, 41308, 41284, 41296, 41320, 41274, 41309, 41286, 41297, 	-- Druid resto
+			[L["Druid Set"]] = {
+				41324, 41278, 41301, 41290, 41313, 	-- druid	(Gladiator's Wildhide)
+				41269, 41271, 41270, 41268, 41272, 	-- druid	(Gladiator's Refuge)
+				41675, 41712, 41664, 41770, 41658, 	-- druid	(Gladiator's Sanctuary)
 			},
-			[L["Hunter Set"]] = { 
-				41154, 41214, 41084, 41140, 41202, 41155, 41215, 41085, 41141, 41203, 41156, 41216, 41086, 41142, 41204, 	-- Hunter
+			[L["Hunter Set"]] = {
+				41154, 41214, 41202, 41140, 41084, 	-- hunter	(Gladiator's Pursuit)
 			},
-			[L["Mage Set"]] = { 
-				41943, 41962, 41949, 41968, 41956, 41944, 41963, 41950, 41969, 41957, 41945, 41964, 41951, 41970, 41958, 	-- Mage
+			[L["Mage Set"]] = {
+				41943, 41962, 41956, 41968, 41949, 	-- mage	(Gladiator's Regalia)
 			},
-			[L["Paladin Set"]] = { 
-				40818, 40858, 40780, 40798, 40838, 40821, 40861, 40782, 40802, 40842, 40825, 40864, 40785, 40805, 40846, 	-- Paladin retrib
-				40930, 40960, 40898, 40918, 40936, 40931, 40961, 40904, 40925, 40937, 40932, 40962, 40905, 40926, 40938, 	-- Paladin holy
+			[L["Paladin Set"]] = {
+				40930, 40960, 40936, 40918, 40898, 	-- paladin	(Gladiator's Redemption)
+				40818, 40858, 40838, 40798, 40780, 	-- paladin	(Gladiator's Vindication)
 			},
-			[L["Priest Set"]] = { 
-				41912, 41930, 41918, 41937, 41924, 41913, 41931, 41919, 41938, 41925, 41914, 41933, 41920, 41939, 41926, 	-- Priest shadow
-				41848, 41850, 41851, 41847, 41849, 41852, 41867, 41857, 41872, 41862, 41853, 41868, 41858, 41873, 41863, 	-- Priest holy
+			[L["Priest Set"]] = {
+				41848, 41850, 41849, 41847, 41851, 	-- priest	(Gladiator's Investiture)
+				41912, 41930, 41924, 41937, 41918, 	-- priest	(Gladiator's Raiment)
 			},
-			[L["Rogue Set"]] = {	
-				41644, 41646, 41647, 41643, 41645, 41670, 41681, 41648, 41765, 41653, 41671, 41682, 41649, 41766, 41654, 	-- Rogue
+			[L["Rogue Set"]] = {
+				41644, 41646, 41645, 41643, 41647, 	-- rogue	(Gladiator's Vestments)
 			},
-			[L["Shaman Set"]] = { 
-				41016, 41041, 40987, 41004, 41030, 41017, 41042, 40989, 41005, 41031, 41018, 41043, 40991, 41006, 41032, 	-- Shaman elem
-				41148, 41208, 41078, 41134, 41160, 41149, 41209, 41079, 41135, 41162, 41150, 41210, 41080, 41136, 41198, 	-- Shaman enh
-				41010, 41024, 40986, 40998, 41023, 41011, 41036, 40988, 40999, 41025, 41012, 41037, 40990, 41000, 41026, 	-- Shaman resto
+			[L["Shaman Set"]] = {
+				41148, 41208, 41160, 41134, 41078, 	-- shaman	(Gladiator's Earthshaker)
+				41016, 41041, 41030, 41004, 40987, 	-- shaman	(Gladiator's Thunderfist)
+				41010, 41024, 41023, 40998, 40986, 	-- shaman	(Gladiator's Wartide)
 			},
-			[L["Warlock Set"]] = { 
-				41990, 42008, 41996, 42014, 42002, 41991, 42009, 42001, 42015, 42003, 41992, 42010, 41997, 42016, 42004, 	-- Warlock
+			[L["Warlock Set"]] = {
+				41990, 42008, 42002, 42014, 41996, 	-- warlock	(Gladiator's Felshroud)
 			},
-			[L["Warrior Set"]] = { 
-				40816, 40856, 40778, 40797, 40836, 40819, 40859, 40783, 40801, 40840, 40823, 40862, 40786, 40804, 40844, 	-- Warrior
+			[L["Warrior Set"]] = {
+				40816, 40856, 40836, 40797, 40778, 	-- warrior	(Gladiator's Battlegear)
 			},
-
+			[L["Weapons"]] = {
+				42206, 	-- Savage Gladiator's Cleaver	(One-Handed Axe)
+				42212, 	-- Savage Gladiator's Chopper	(One-Handed Axe)
+				42213, 	-- Savage Gladiator's Hacker	(One-Handed Axe)
+				42214, 	-- Savage Gladiator's Waraxe (Hunter)	(One-Handed Axe)
+				42215, 	-- Savage Gladiator's Mutilator	(Dagger)
+				42216, 	-- Savage Gladiator's Shanker	(Dagger)
+				42217, 	-- Savage Gladiator's Shiv	(Dagger)
+				42218, 	-- Savage Gladiator's Right Ripper	(Fist Weapon)
+				42219, 	-- Savage Gladiator's Left Render	(Fist Weapon)
+				42220, 	-- Savage Gladiator's Left Ripper	(Fist Weapon)
+				42221, 	-- Savage Gladiator's Bonecracker	(One-Handed Mace)
+				42222, 	-- Savage Gladiator's Pummeler	(One-Handed Mace)
+				42223, 	-- Savage Gladiator's Quickblade	(One-Handed Sword)
+				42224, 	-- Savage Gladiator's Slicer	(One-Handed Sword)
+				42294, 	-- Savage Gladiator's Decapitator	(Two-Handed Axe)
+				42295, 	-- Savage Gladiator's Bonegrinder	(Two-Handed Mace)
+				42296, 	-- Savage Gladiator's Pike	(Polearm)
+				42297, 	-- Savage Gladiator's Greatsword	(Two-Handed Sword)
+				42343, 	-- Savage Gladiator's Spellblade	(Dagger)
+				42344, 	-- Savage Gladiator's Gavel	(One-Handed Mace)
+				42356, 	-- Savage Gladiator's Battle Staff	(Staff)
+				42382, 	-- Savage Gladiator's Energy Staff	(Staff)
+				42388, 	-- Savage Gladiator's Staff (Druid)	(Staff)
+				42444, 	-- Savage Gladiator's War Edge	(Thrown)
+				42445, 	-- Savage Gladiator's Longbow	(Bow)
+				42446, 	-- Savage Gladiator's Heavy Crossbow	(Crossbow)
+				42447, 	-- Savage Gladiator's Rifle	(Gun)
+				42448, 	-- Savage Gladiator's Touch of Defeat	(Wand)
+				42511, 	-- Savage Gladiator's Baton of Light	(Wand)
+				42517, 	-- Savage Gladiator's Piercing Touch	(Wand)
+				42523, 	-- Savage Gladiator's Endgame	(Off-hand Frill)
+				42529, 	-- Savage Gladiator's Reprieve	(Off-hand Frill)
+				42535, 	-- Savage Gladiator's Grimoire	(Off-hand Frill)
+				42556, 	-- Savage Gladiator's Shield Wall	(Shield)
+				42557, 	-- Savage Gladiator's Barrier	(Shield)
+				42568, 	-- Savage Gladiator's Redoubt	(Shield)
+				42574, 	-- Savage Gladiator's Idol of Resolve	(Idol)
+				42575, 	-- Savage Gladiator's Idol of Steadfastness	(Idol)
+				42576, 	-- Savage Gladiator's Idol of Tenacity	(Idol)
+				42593, 	-- Savage Gladiator's Totem of Indomitability	(Totem)
+				42594, 	-- Savage Gladiator's Totem of Survival	(Totem)
+				42595, 	-- Savage Gladiator's Totem of the Third Wind	(Totem)
+				42611, 	-- Savage Gladiator's Libram of Fortitude	(Libram)
+				42612, 	-- Savage Gladiator's Libram of Justice	(Libram)
+				42618, 	-- Savage Gladiator's Sigil of Strife	(Sigil)
+				44415, 	-- Savage Gladiator's War Staff	(Staff)
+				44416, 	-- Savage Gladiator's Focus Staff	(Staff)
+			},
+		},
+		[format(L["Arena Season %d"], 5) .." (200)" ] = { 	-- Season 5 	Hateful Gladiator
+			[L["Death Knight Set"]] = {
+				40820, 40860, 40841, 40803, 40781, 	-- deathknight (Gladiator's Desecration)
+			},
+			[L["Druid Set"]] = {
+				41319, 41273, 41296, 41284, 41308, 	-- druid (Gladiator's Refuge)
+				41676, 41713, 41665, 41771, 41659, 	-- druid (Gladiator's Sanctuary)
+				41325, 41279, 41302, 41291, 41314, 	-- druid (Gladiator's Wildhide)
+			},
+			[L["Hunter Set"]] = {
+				41155, 41215, 41203, 41141, 41085, 	-- hunter (Gladiator's Pursuit)
+			},
+			[L["Mage Set"]] = {
+				41944, 41963, 41957, 41969, 41950, 	-- mage (Gladiator's Regalia)
+			},
+			[L["Paladin Set"]] = {
+				40931, 40961, 40937, 40925, 40904, 	-- paladin (Gladiator's Redemption)
+				40821, 40861, 40842, 40802, 40782, 	-- paladin (Gladiator's Vindication)
+			},
+			[L["Priest Set"]] = {
+				41852, 41867, 41862, 41872, 41857, 	-- priest (Gladiator's Investiture)
+				41913, 41931, 41925, 41938, 41919, 	-- priest (Gladiator's Raiment)
+			},
+			[L["Rogue Set"]] = {
+				41670, 41681, 41653, 41765, 41648, 	-- rogue (Gladiator's Vestments)
+			},
+			[L["Shaman Set"]] = {
+				41149, 41209, 41162, 41135, 41079, 	-- shaman (Gladiator's Earthshaker)
+				41017, 41042, 41031, 41005, 40989, 	-- shaman (Gladiator's Thunderfist)
+				41011, 41036, 41025, 40999, 40988, 	-- shaman (Gladiator's Wartide)
+			},
+			[L["Warlock Set"]] = {
+				41991, 42009, 42003, 42015, 42001, 	-- warlock (Gladiator's Felshroud)
+			},
+			[L["Warrior Set"]] = {
+				40819, 40859, 40840, 40801, 40783, 	-- warrior (Gladiator's Battlegear)
+			},
+			[L["Non Set Cloth"]] = {
+				41877, 41878, 41879, 41896, 41901, 41907, 
+			},
+			[L["Non Set Leather"]] = {
+				41330, 41331, 41332, 41628, 41633, 41638, 41827, 41828, 41830, 
+			},
+			[L["Non Set Mail"]] = { 
+				41047, 41049, 41050, 41063, 41068, 41073, 41223, 41228, 41233, 
+			},
+			[L["Non Set Plate"]] = {
+				40877, 40878, 40887, 40966, 40972, 40973, 
+			},
+			[L["Non Set Accessories"]] = {
+				42020, 	-- Hateful Gladiator's Pendant of Triumph	(Amulet)
+				42021, 	-- Hateful Gladiator's Pendant of Victory	(Amulet)
+				42022, 	-- Hateful Gladiator's Pendant of Dominance	(Amulet)
+				42023, 	-- Hateful Gladiator's Pendant of Subjugation	(Amulet)
+				42024, 	-- Hateful Gladiator's Pendant of Ascendancy	(Amulet)
+				42025, 	-- Hateful Gladiator's Pendant of Deliverance	(Amulet)
+				42026, 	-- Hateful Gladiator's Pendant of Salvation	(Amulet)
+				42055, 	-- Hateful Gladiator's Cloak of Dominance	(Cloak)
+				42056, 	-- Hateful Gladiator's Cloak of Subjugation	(Cloak)
+				42057, 	-- Hateful Gladiator's Cloak of Ascendancy	(Cloak)
+				42058, 	-- Hateful Gladiator's Cloak of Salvation	(Cloak)
+				42059, 	-- Hateful Gladiator's Cloak of Deliverance	(Cloak)
+				42060, 	-- Hateful Gladiator's Cloak of Triumph	(Cloak)
+				42061, 	-- Hateful Gladiator's Cloak of Victory	(Cloak)
+				42110, 	-- Hateful Gladiator's Band of Dominance	(Ring)
+				42112, 	-- Hateful Gladiator's Band of Triumph	(Ring)
+			},
+			[L["Weapons"]] = {
+				42207, 	-- Hateful Gladiator's Cleaver	(One-Handed Axe)
+				42226, 	-- Hateful Gladiator's Hacker	(One-Handed Axe)
+				42231, 	-- Hateful Gladiator's Chopper	(One-Handed Axe)
+				42236, 	-- Hateful Gladiator's Waraxe (Hunter)	(One-Handed Axe)
+				42241, 	-- Hateful Gladiator's Shanker	(Dagger)
+				42247, 	-- Hateful Gladiator's Shiv	(Dagger)
+				42254, 	-- Hateful Gladiator's Mutilator	(Dagger)
+				42259, 	-- Hateful Gladiator's Right Ripper	(Fist Weapon)
+				42264, 	-- Hateful Gladiator's Left Render	(Fist Weapon)
+				42269, 	-- Hateful Gladiator's Left Ripper	(Fist Weapon)
+				42274, 	-- Hateful Gladiator's Pummeler	(One-Handed Mace)
+				42279, 	-- Hateful Gladiator's Bonecracker	(One-Handed Mace)
+				42284, 	-- Hateful Gladiator's Slicer	(One-Handed Sword)
+				42289, 	-- Hateful Gladiator's Quickblade	(One-Handed Sword)
+				42316, 	-- Hateful Gladiator's Decapitator	(Two-Handed Axe)
+				42321, 	-- Hateful Gladiator's Bonegrinder	(Two-Handed Mace)
+				42326, 	-- Hateful Gladiator's Pike	(Polearm)
+				42331, 	-- Hateful Gladiator's Greatsword	(Two-Handed Sword)
+				42345, 	-- Hateful Gladiator's Spellblade	(Dagger)
+				42351, 	-- Hateful Gladiator's Gavel	(One-Handed Mace)
+				42359, 	-- Hateful Gladiator's Battle Staff	(Staff)
+				42383, 	-- Hateful Gladiator's Energy Staff	(Staff)
+				42389, 	-- Hateful Gladiator's Staff (Druid)	(Staff)
+				42449, 	-- Hateful Gladiator's War Edge	(Thrown)
+				42484, 	-- Hateful Gladiator's Rifle	(Gun)
+				42489, 	-- Hateful Gladiator's Longbow	(Bow)
+				42494, 	-- Hateful Gladiator's Heavy Crossbow	(Crossbow)
+				42501, 	-- Hateful Gladiator's Touch of Defeat	(Wand)
+				42512, 	-- Hateful Gladiator's Baton of Light	(Wand)
+				42518, 	-- Hateful Gladiator's Piercing Touch	(Wand)
+				42524, 	-- Hateful Gladiator's Endgame	(Off-hand Frill)
+				42530, 	-- Hateful Gladiator's Reprieve	(Off-hand Frill)
+				42536, 	-- Hateful Gladiator's Grimoire	(Off-hand Frill)
+				42558, 	-- Hateful Gladiator's Shield Wall	(Shield)
+				42563, 	-- Hateful Gladiator's Barrier	(Shield)
+				42569, 	-- Hateful Gladiator's Redoubt	(Shield)
+				42577, 	-- Hateful Gladiator's Idol of Tenacity	(Idol)
+				42582, 	-- Hateful Gladiator's Idol of Steadfastness	(Idol)
+				42587, 	-- Hateful Gladiator's Idol of Resolve	(Idol)
+				42596, 	-- Hateful Gladiator's Totem of the Third Wind	(Totem)
+				42601, 	-- Hateful Gladiator's Totem of Survival	(Totem)
+				42606, 	-- Hateful Gladiator's Totem of Indomitability	(Totem)
+				42613, 	-- Hateful Gladiator's Libram of Justice	(Libram)
+				42619, 	-- Hateful Gladiator's Sigil of Strife	(Sigil)
+				42851, 	-- Hateful Gladiator's Libram of Fortitude	(Libram)
+				44417, 	-- Hateful Gladiator's War Staff	(Staff)
+				44418, 	-- Hateful Gladiator's Focus Staff	(Staff)
+			},
+		},
+		[format(L["Arena Season %d"], 5)] = { 	-- Season 5 	Deadly Gladiator
+			[L["Death Knight Set"]] = {
+				40824, 40863, 40845, 40806, 40784, 	-- deathknight	(Gladiator's Desecration)
+			},
+			[L["Druid Set"]] = {
+				41320, 41274, 41297, 41286, 41309, 	-- druid	(Gladiator's Refuge)
+				41677, 41714, 41666, 41772, 41660, 	-- druid	(Gladiator's Sanctuary)
+				41326, 41280, 41303, 41292, 41315, 	-- druid	(Gladiator's Wildhide)
+			},
+			[L["Hunter Set"]] = {
+				41156, 41216, 41204, 41142, 41086, 	-- hunter	(Gladiator's Pursuit)
+			},
+			[L["Mage Set"]] = {
+				41945, 41964, 41958, 41970, 41951, 	-- mage	(Gladiator's Regalia)
+			},
+			[L["Paladin Set"]] = {
+				40932, 40962, 40938, 40926, 40905, 	-- paladin	(Gladiator's Redemption)
+				40825, 40864, 40846, 40805, 40785, 	-- paladin	(Gladiator's Vindication)
+			},
+			[L["Priest Set"]] = {
+				41853, 41868, 41863, 41873, 41858, 	-- priest	(Gladiator's Investiture)
+				41914, 41933, 41926, 41939, 41920, 	-- priest	(Gladiator's Raiment)
+			},
+			[L["Rogue Set"]] = {
+				41671, 41682, 41654, 41766, 41649, 	-- rogue	(Gladiator's Vestments)
+			},
+			[L["Shaman Set"]] = {
+				41150, 41210, 41198, 41136, 41080, 	-- shaman	(Gladiator's Earthshaker)
+				41018, 41043, 41032, 41006, 40991, 	-- shaman	(Gladiator's Thunderfist)
+				41012, 41037, 41026, 41000, 40990, 	-- shaman	(Gladiator's Wartide)
+			},
+			[L["Warlock Set"]] = {
+				41992, 42010, 42004, 42016, 41997, 	-- warlock	(Gladiator's Felshroud)
+			},
+			[L["Warrior Set"]] = {
+				40823, 40862, 40844, 40804, 40786, 	-- warrior	(Gladiator's Battlegear)
+			},
+			[L["Non Set Cloth"]] = {
+				41880, 41884, 41892, 41897, 41902, 41908, 
+			},
+			[L["Non Set Leather"]] = {
+				41616, 41620, 41624, 41629, 41634, 41639, 41831, 41835, 41839, 
+			},
+			[L["Non Set Mail"]] = {
+				41048, 41054, 41059, 41064, 41069, 41074, 41224, 41229, 41234, 
+			},
+			[L["Non Set Plate"]] = {
+				40879, 40880, 40888, 40974, 40975, 40982, 
+			},
+			[L["Non Set Accessories"]] = {
+				42027, 	-- Deadly Gladiator's Pendant of Triumph (Amulet)
+				42028, 	-- Deadly Gladiator's Pendant of Victory (Amulet)
+				42029, 	-- Deadly Gladiator's Pendant of Dominance (Amulet)
+				42030, 	-- Deadly Gladiator's Pendant of Ascendancy (Amulet)
+				42031, 	-- Deadly Gladiator's Pendant of Subjugation (Amulet)
+				42032, 	-- Deadly Gladiator's Pendant of Deliverance (Amulet)
+				42033, 	-- Deadly Gladiator's Pendant of Salvation (Amulet)
+				42062, 	-- Deadly Gladiator's Cloak of Dominance (Cloak)
+				42063, 	-- Deadly Gladiator's Cloak of Subjugation (Cloak)
+				42064, 	-- Deadly Gladiator's Cloak of Ascendancy (Cloak)
+				42065, 	-- Deadly Gladiator's Cloak of Salvation (Cloak)
+				42066, 	-- Deadly Gladiator's Cloak of Deliverance (Cloak)
+				42067, 	-- Deadly Gladiator's Cloak of Triumph (Cloak)
+				42068, 	-- Deadly Gladiator's Cloak of Victory (Cloak)
+				42114, 	-- Deadly Gladiator's Band of Ascendancy (Ring)
+				42115, 	-- Deadly Gladiator's Band of Victory (Ring)
+				42122, 	-- Medallion of the Horde (Trinket)
+				42123, 	-- Medallion of the Alliance (Trinket)
+				42128, 	-- Battlemaster's Hostility (Trinket)
+				42129, 	-- Battlemaster's Accuracy (Trinket)
+				42130, 	-- Battlemaster's Avidity (Trinket)
+				42131, 	-- Battlemaster's Conviction (Trinket)
+				42132, 	-- Battlemaster's Bravery (Trinket)
+			},
+			[L["Weapons"]] = {
+				42208, 	-- Deadly Gladiator's Cleaver (One-Handed Axe)
+				42227, 	-- Deadly Gladiator's Hacker (One-Handed Axe)
+				42232, 	-- Deadly Gladiator's Chopper (One-Handed Axe)
+				42237, 	-- Deadly Gladiator's Waraxe (Hunter) (One-Handed Axe)
+				42242, 	-- Deadly Gladiator's Shanker (Dagger)
+				42248, 	-- Deadly Gladiator's Shiv (Dagger)
+				42255, 	-- Deadly Gladiator's Mutilator (Dagger)
+				42260, 	-- Deadly Gladiator's Right Ripper (Fist Weapon)
+				42265, 	-- Deadly Gladiator's Left Render (Fist Weapon)
+				42270, 	-- Deadly Gladiator's Left Ripper (Fist Weapon)
+				42275, 	-- Deadly Gladiator's Pummeler (One-Handed Mace)
+				42280, 	-- Deadly Gladiator's Bonecracker (One-Handed Mace)
+				42285, 	-- Deadly Gladiator's Slicer (One-Handed Sword)
+				42290, 	-- Deadly Gladiator's Quickblade (One-Handed Sword)
+				42317, 	-- Deadly Gladiator's Decapitator (Two-Handed Axe)
+				42322, 	-- Deadly Gladiator's Bonegrinder (Two-Handed Mace)
+				42327, 	-- Deadly Gladiator's Pike (Polearm)
+				42332, 	-- Deadly Gladiator's Greatsword (Two-Handed Sword)
+				42346, 	-- Deadly Gladiator's Spellblade (Dagger)
+				42352, 	-- Deadly Gladiator's Gavel (One-Handed Mace)
+				42362, 	-- Deadly Gladiator's Battle Staff (Staff)
+				42384, 	-- Deadly Gladiator's Energy Staff (Staff)
+				42390, 	-- Deadly Gladiator's Staff (Druid) (Staff)
+				42450, 	-- Deadly Gladiator's War Edge (Thrown)
+				42485, 	-- Deadly Gladiator's Rifle (Gun)
+				42490, 	-- Deadly Gladiator's Longbow (Bow)
+				42495, 	-- Deadly Gladiator's Heavy Crossbow (Crossbow)
+				42502, 	-- Deadly Gladiator's Touch of Defeat (Wand)
+				42513, 	-- Deadly Gladiator's Baton of Light (Wand)
+				42519, 	-- Deadly Gladiator's Piercing Touch (Wand)
+				42525, 	-- Deadly Gladiator's Endgame (Off-hand Frill)
+				42531, 	-- Deadly Gladiator's Reprieve (Off-hand Frill)
+				42537, 	-- Deadly Gladiator's Grimoire (Off-hand Frill)
+				42559, 	-- Deadly Gladiator's Shield Wall (Shield)
+				42564, 	-- Deadly Gladiator's Barrier (Shield)
+				42570, 	-- Deadly Gladiator's Redoubt (Shield)
+				42578, 	-- Deadly Gladiator's Idol of Tenacity (Idol)
+				42583, 	-- Deadly Gladiator's Idol of Steadfastness (Idol)
+				42588, 	-- Deadly Gladiator's Idol of Resolve (Idol)
+				42597, 	-- Deadly Gladiator's Totem of the Third Wind (Totem)
+				42602, 	-- Deadly Gladiator's Totem of Survival (Totem)
+				42607, 	-- Deadly Gladiator's Totem of Indomitability (Totem)
+				42614, 	-- Deadly Gladiator's Libram of Justice (Libram)
+				42620, 	-- Deadly Gladiator's Sigil of Strife (Sigil)
+				42852, 	-- Deadly Gladiator's Libram of Fortitude (Libram)
+				44419, 	-- Deadly Gladiator's War Staff (Staff)
+				44420, 	-- Deadly Gladiator's Focus Staff (Staff)
+			},
 		},
 		[format(L["Arena Season %d"], 6)] = {
 			[L["Death Knight Set"]] = { 40827, 40868, 40787, 40809, 40848 },
