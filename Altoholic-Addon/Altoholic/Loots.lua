@@ -682,7 +682,7 @@ do
 			[L["Warlock Set"]] = { 41993, 42011, 41998, 42017, 42005 },
 			[L["Warrior Set"]] = { 40826, 40866, 40789, 40807, 40847 },
 		},
-		[format(L["Arena Season %d"], 7)] = {
+		[format(L["Arena Season %d"], 7)] = { 	-- Season 7 	Relentless Gladiator 
 			[L["Death Knight Set"]] = { 40830, 40871, 40791, 40811, 40851 },
 			[L["Druid Set"]] = { 41328, 41282, 41317, 41294, 41305, 41679, 41716, 41662, 41774, 41668, 41322, 41276, 41311, 41288, 41299 },
 			[L["Hunter Set"]] = { 41158, 41218, 41088, 41144, 41206 },
@@ -693,6 +693,121 @@ do
 			[L["Shaman Set"]] = { 41020, 41045, 40995, 41008, 41034, 41152, 41212, 41082, 41138, 41200, 41014, 41039, 40994, 41002, 41028 },
 			[L["Warlock Set"]] = { 41994, 42012, 41999, 42018, 42006 },
 			[L["Warrior Set"]] = { 40829, 40870, 40790, 40810, 40850 },
+			[L["Non Set Cloth"]] = {
+				41882, 41886, 41894, 41899, 41904, 41910, 49179, 49181, 49183, 
+			},
+			[L["Non Set Leather"]] = {
+				41618, 41622, 41626, 41631, 41636, 41641, 41833, 41837, 41841, 
+			},
+			[L["Non Set Mail"]] = {
+				41052, 41056, 41061, 41066, 41071, 41076, 41226, 41231, 41236, 
+			},
+			[L["Non Set Plate"]] = {
+				40883, 40884, 40890, 40978, 40979, 40984, 
+			},
+			[L["Non Set Accessories"]] = {
+				42041, 	-- Relentless Gladiator's Pendant of Triumph	(Amulet)
+				42042, 	-- Relentless Gladiator's Pendant of Victory	(Amulet)
+				42043, 	-- Relentless Gladiator's Pendant of Dominance	(Amulet)
+				42044, 	-- Relentless Gladiator's Pendant of Ascendancy	(Amulet)
+				42045, 	-- Relentless Gladiator's Pendant of Subjugation	(Amulet)
+				42046, 	-- Relentless Gladiator's Pendant of Deliverance	(Amulet)
+				42047, 	-- Relentless Gladiator's Pendant of Salvation	(Amulet)
+				42076, 	-- Relentless Gladiator's Cloak of Dominance	(Cloak)
+				42077, 	-- Relentless Gladiator's Cloak of Subjugation	(Cloak)
+				42078, 	-- Relentless Gladiator's Cloak of Ascendancy	(Cloak)
+				42079, 	-- Relentless Gladiator's Cloak of Salvation	(Cloak)
+				42080, 	-- Relentless Gladiator's Cloak of Deliverance	(Cloak)
+				42081, 	-- Relentless Gladiator's Cloak of Triumph	(Cloak)
+				42082, 	-- Relentless Gladiator's Cloak of Victory	(Cloak)
+				42118, 	-- Relentless Gladiator's Band of Ascendancy	(Ring)
+				42119, 	-- Relentless Gladiator's Band of Victory	(Ring)
+				46374, 	-- Relentless Gladiator's Pendant of Sundering	(Amulet)
+				49086, 	-- Relentless Gladiator's Tabard	(Tabard)
+			},
+			[ format("%s (245)", L["Weapons"]) ] = {
+				42210, 	-- Relentless Gladiator's Cleaver	(One-Handed Axe)
+				42229, 	-- Relentless Gladiator's Hacker	(One-Handed Axe)
+				42234, 	-- Relentless Gladiator's Chopper	(One-Handed Axe)
+				42244, 	-- Relentless Gladiator's Shanker	(Dagger)
+				42250, 	-- Relentless Gladiator's Shiv	(Dagger)
+				42257, 	-- Relentless Gladiator's Mutilator	(Dagger)
+				42262, 	-- Relentless Gladiator's Right Ripper	(Fist Weapon)
+				42267, 	-- Relentless Gladiator's Left Render	(Fist Weapon)
+				42272, 	-- Relentless Gladiator's Left Ripper	(Fist Weapon)
+				42277, 	-- Relentless Gladiator's Pummeler	(One-Handed Mace)
+				42282, 	-- Relentless Gladiator's Bonecracker	(One-Handed Mace)
+				42287, 	-- Relentless Gladiator's Slicer	(One-Handed Sword)
+				42292, 	-- Relentless Gladiator's Quickblade	(One-Handed Sword)
+				42319, 	-- Relentless Gladiator's Decapitator	(Two-Handed Axe)
+				42324, 	-- Relentless Gladiator's Bonegrinder	(Two-Handed Mace)
+				42329, 	-- Relentless Gladiator's Pike	(Polearm)
+				42334, 	-- Relentless Gladiator's Greatsword	(Two-Handed Sword)
+				42348, 	-- Relentless Gladiator's Spellblade	(Dagger)
+				42354, 	-- Relentless Gladiator's Gavel	(One-Handed Mace)
+				42366, 	-- Relentless Gladiator's Battle Staff	(Staff)
+				42386, 	-- Relentless Gladiator's Energy Staff	(Staff)
+				42392, 	-- Relentless Gladiator's Staff (Druid)	(Staff)
+				42483, 	-- Relentless Gladiator's War Edge	(Thrown)
+				42487, 	-- Relentless Gladiator's Rifle	(Gun)
+				42492, 	-- Relentless Gladiator's Longbow	(Bow)
+				42498, 	-- Relentless Gladiator's Heavy Crossbow	(Crossbow)
+				42504, 	-- Relentless Gladiator's Touch of Defeat	(Wand)
+				42515, 	-- Relentless Gladiator's Baton of Light	(Wand)
+				42521, 	-- Relentless Gladiator's Piercing Touch	(Wand)
+				44423, 	-- Relentless Gladiator's War Staff	(Staff)
+				44424, 	-- Relentless Gladiator's Focus Staff	(Staff)
+				49185, 	-- Relentless Gladiator's Wand of Alacrity	(Wand)
+				49189, 	-- Relentless Gladiator's Blade of Alacrity	(Dagger)
+			},
+			[ format("%s (251)", L["Weapons"]) ] = {
+				42527, 	-- Relentless Gladiator's Endgame	(Off-hand Frill)
+				42533, 	-- Relentless Gladiator's Reprieve	(Off-hand Frill)
+				42539, 	-- Relentless Gladiator's Grimoire	(Off-hand Frill)
+				42561, 	-- Relentless Gladiator's Shield Wall	(Shield)
+				42566, 	-- Relentless Gladiator's Barrier	(Shield)
+				42572, 	-- Relentless Gladiator's Redoubt	(Shield)
+				42580, 	-- Relentless Gladiator's Idol of Tenacity	(Idol)
+				42585, 	-- Relentless Gladiator's Idol of Steadfastness	(Idol)
+				42591, 	-- Relentless Gladiator's Idol of Resolve	(Idol)
+				42599, 	-- Relentless Gladiator's Totem of the Third Wind	(Totem)
+				42604, 	-- Relentless Gladiator's Totem of Survival	(Totem)
+				42609, 	-- Relentless Gladiator's Totem of Indomitability	(Totem)
+				42616, 	-- Relentless Gladiator's Libram of Justice	(Libram)
+				42622, 	-- Relentless Gladiator's Sigil of Strife	(Sigil)
+				42854, 	-- Relentless Gladiator's Libram of Fortitude	(Libram)
+				49187, 	-- Relentless Gladiator's Compendium	(Off-hand Frill)
+			},
+			[ format("%s (277)", L["Weapons"]) ] = {
+				48402, 	-- Relentless Gladiator's Sunderer	(Two-Handed Axe)
+				48404, 	-- Relentless Gladiator's Crusher	(Two-Handed Mace)
+				48406, 	-- Relentless Gladiator's Claymore	(Two-Handed Sword)
+				48408, 	-- Relentless Gladiator's Mageblade	(Dagger)
+				48410, 	-- Relentless Gladiator's Skirmish Staff	(Staff)
+				48412, 	-- Relentless Gladiator's Acute Staff	(Staff)
+				48414, 	-- Relentless Gladiator's Combat Staff	(Staff)
+				48420, 	-- Relentless Gladiator's Recurve	(Bow)
+				48422, 	-- Relentless Gladiator's Repeater	(Crossbow)
+				48424, 	-- Relentless Gladiator's Shotgun	(Gun)
+				48426, 	-- Relentless Gladiator's Dicer	(One-Handed Axe)
+				48428, 	-- Relentless Gladiator's Dirk	(Dagger)
+				48432, 	-- Relentless Gladiator's Left Razor	(Fist Weapon)
+				48435, 	-- Relentless Gladiator's Punisher	(One-Handed Mace)
+				48438, 	-- Relentless Gladiator's Swiftblade	(One-Handed Sword)
+				48440, 	-- Relentless Gladiator's Splitter	(One-Handed Axe)
+				48442, 	-- Relentless Gladiator's Eviscerator	(Dagger)
+				48444, 	-- Relentless Gladiator's Left Claw	(Fist Weapon)
+				48507, 	-- Relentless Gladiator's Handaxe	(One-Handed Axe)
+				48509, 	-- Relentless Gladiator's Spike	(Dagger)
+				48511, 	-- Relentless Gladiator's Truncheon	(One-Handed Mace)
+				48513, 	-- Relentless Gladiator's Longblade	(One-Handed Sword)
+				48515, 	-- Relentless Gladiator's Grasp	(Fist Weapon)
+				48517, 	-- Relentless Gladiator's Halberd	(Polearm)
+				48519, 	-- Relentless Gladiator's Salvation	(One-Handed Mace)
+				48521, 	-- Relentless Gladiator's Light Staff	(Staff)
+				48523, 	-- Relentless Gladiator's Greatstaff (Druid)	(Staff)
+				49191, 	-- Relentless Gladiator's Blade of Celerity	(Dagger)
+			},
 		},
 		[format(L["Arena Season %d"], 8)] = { 	-- Season 8 	Wrathful Gladiator
 			[L["Death Knight Set"]] = {
