@@ -134,7 +134,9 @@ local AddonDB_Defaults = {
 			WarningType3 = "30|15|10|5|4|3|2|1",		-- for calendar events
 			WarningType4 = "30|15|10|5|4|3|2|1",		-- for item timers (like mysterious egg)
 		},
-}}
+		LootSourceTooltip = { version = 0, single={}, multi={}, },
+	},
+}
 
 -- ** LDB Launcher **
 LibStub:GetLibrary("LibDataBroker-1.1"):NewDataObject(addonName, {
@@ -217,6 +219,8 @@ function addon:OnInitialize()
 	addon:RegisterMessage("DATASTORE_GUILD_MEMBER_OFFLINE")
 	addon:RegisterMessage("DATASTORE_GUILD_MAIL_RECEIVED")
 	addon:RegisterMessage("DATASTORE_GLOBAL_MAIL_EXPIRY")
+	
+	addon.Loots:setupLootTable()
 end
 
 function addon:GetGuildMemberVersion(member)
