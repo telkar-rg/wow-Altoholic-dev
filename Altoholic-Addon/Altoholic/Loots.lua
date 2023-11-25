@@ -68,12 +68,12 @@ function ns:setupLootTable()
 						end
 						
 						if not lootTableRev_Multi[item_id] then
-							lootTableRev_Multi[item_id] = format("%s, %s", zName, encounterName)
+							lootTableRev_Multi[item_id] = format("%s\1%s", zName, encounterName)
 						else
 							if lastZone[item_id] and lastZone[item_id] == zName then
-								lootTableRev_Multi[item_id] = format("%s/ %s", lootTableRev_Multi[item_id], encounterName)
+								lootTableRev_Multi[item_id] = format("%s\1\1%s", lootTableRev_Multi[item_id], encounterName)
 							else
-								lootTableRev_Multi[item_id] = format("%s; %s, %s", lootTableRev_Multi[item_id], zName, encounterName)
+								lootTableRev_Multi[item_id] = format("%s\1\1\1%s\1%s", lootTableRev_Multi[item_id], zName, encounterName)
 							end
 						end
 						lastZone[item_id] = zName
@@ -92,12 +92,12 @@ function ns:setupLootTable()
 						end
 						
 						if not lootTableRev_Multi[item_id] then
-							lootTableRev_Multi[item_id] = format("%s, %s", zName, encounterName)
+							lootTableRev_Multi[item_id] = format("%s\1%s", zName, encounterName)
 						else
 							if lastZone[item_id] and lastZone[item_id] == zName then
-								lootTableRev_Multi[item_id] = format("%s/ %s", lootTableRev_Multi[item_id], encounterName)
+								lootTableRev_Multi[item_id] = format("%s\1\1%s", lootTableRev_Multi[item_id], encounterName)
 							else
-								lootTableRev_Multi[item_id] = format("%s; %s, %s", lootTableRev_Multi[item_id], zName, encounterName)
+								lootTableRev_Multi[item_id] = format("%s\1\1\1%s\1%s", lootTableRev_Multi[item_id], zName, encounterName)
 							end
 						end
 						lastZone[item_id] = zName
@@ -151,7 +151,13 @@ end
 
 function ns:GetSource_multi(searchedID)
 	-- LootSourceTooltipDB.multi
-	return LootSourceTooltipDB.multi[searchedID]
+	if LootSourceTooltipDB.multi[searchedID] then
+		local txt = LootSourceTooltipDB.multi[searchedID]
+		txt = gsub(txt, "\1\1\1","; ") 
+		txt = gsub(txt, "\1\1","/ ") 
+		txt = gsub(txt, "\1",", ") 
+		return txt
+	end
 end
 
 function ns:GetSource_OLD(searchedID) 	-- old version
