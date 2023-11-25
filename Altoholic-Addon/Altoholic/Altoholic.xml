@@ -5,6 +5,7 @@
 	<Script file="Comm.lua"></Script>
 	<Script file="Tooltip.lua"></Script>
 	<Script file="ItemFilters.lua"></Script>
+	<Script file="LootTableSetup.lua"></Script>
 	<Script file="Loots.lua"></Script>
 	<Script file="RecipeDB.lua"></Script>
 	<Script file="Suggestions.lua"></Script>
