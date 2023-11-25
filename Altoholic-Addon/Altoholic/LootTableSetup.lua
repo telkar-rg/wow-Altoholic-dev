@@ -1071,6 +1071,177 @@ db.lootTable = {
 		},
 	},
 	
+	-- misc boe stuff
+	[ BZ["Azeroth"] ] = {
+		[ L["Merchant"] ] = {
+			6270, -- Pattern: Blue Linen Vest
+			6272, -- Pattern: Blue Linen Robe
+			6274, -- Pattern: Blue Overalls
+			6275, -- Pattern: Greater Adept's Robe
+			5771, -- Pattern: Red Linen Bag
+			5772, -- Pattern: Red Woolen Bag
+		},
+	},
+	[ BZ["Azshara"] ] = {
+		[ L["Lingering Highborne"] ] = {
+			14473, -- Pattern: Ghostweave Belt
+			14477, -- Pattern: Ghostweave Gloves
+		},
+	},
+	[ BZ["Burning Steppes"]] = {
+		[ L["Thaurissan Firewalker"] ] = {
+			14482, -- Pattern: Cindercloth Cloak
+			14490, -- Pattern: Cindercloth Pants
+		},
+	},
+	[ BZ["Dire Maul"] ] = {
+		[ L["Knot Thimblejack"] ] = {
+			18414, -- Pattern: Belt of the Archmage
+		},
+		[ L["Shen'dralar Provisioner"] ] = {
+			18487, -- Pattern: Mooncloth Robe
+		},
+	},
+	[ BZ["Eastern Plaguelands"] ] = {
+		[ L["Dark Summoner"] ] = {
+			14485, -- Pattern: Wizardweave Leggings
+		},
+		[ L["Dark Caster"] ] = {
+			14500, -- Pattern: Wizardweave Robe
+			14505, -- Pattern: Wizardweave Turban
+		},
+		[ L["Unseen Servant"]  ] = {
+			14480, -- Pattern: Ghostweave Vest
+		},
+	},
+	[ BZ["Moonglade"] ] = {
+		[ L["Merchant"] ] = {
+			14469, -- Pattern: Runecloth Robe
+			14483, -- Pattern: Felcloth Pants
+			14526, -- Pattern: Mooncloth
+		},
+	},
+	[ BZ["Searing Gorge"] ] = {
+		[ L["Quest rewards"] ] = {
+			10463, -- Pattern: Shadoweave Mask
+		},
+		[ L["Twilight Fire Guard"] ] = {
+			14471, -- Pattern: Cindercloth Vest
+			14476, -- Pattern: Cindercloth Gloves
+		},
+	},
+	[ BZ["Silithus"] ] = {
+		[ L["Quest rewards"] ] = {
+			20546, -- Pattern: Runed Stygian Leggings
+			20547, -- Pattern: Runed Stygian Boots
+			20548, -- Pattern: Runed Stygian Belt
+		},
+		[ L["Merchant"] ] = {
+			22308, -- Pattern: Enchanted Runecloth Bag
+		},
+	},
+	[ BZ["Stranglethorn Vale"] ] = {
+		[ L["Merchant"] ] = {
+			7087, -- Pattern: Crimson Silk Cloak
+			14630, -- Pattern: Enchanter's Cowl
+			10728, -- Pattern: Black Swashbuckler's Shirt
+			10318, -- Pattern: Admiral's Hat
+		},
+	},
+	[ BZ["Tanaris"] ] = {
+		[ L["Merchant"] ] = {
+			7088, -- Pattern: Crimson Silk Robe
+			21358, -- Pattern: Soul Pouch
+			37915, -- Pattern: Dress Shoes
+			38327, -- Pattern: Haliscan Jacket
+			38328, -- Pattern: Haliscan Pantaloons
+		},
+	},
+	[ BZ["Winterspring"] ] = {
+		[ L["Merchant"] ] = {
+			14468, -- Pattern: Runecloth Bag
+		},
+	},
+	
+	
+	[ BZ["Outland"] ] = {
+		[ L["Merchant"] ] = {
+			21894, -- Pattern: Bolt of Soulcloth
+		},
+	},
+	[ BZ["Nagrand"] ] = {
+		[ L["Merchant"] ] = {
+			21902, -- Pattern: Soulcloth Gloves
+		},
+	},
+	[ BZ["Shadowmoon Valley"] ] = {
+		[ L["Merchant"] ] = {
+			21900, -- Pattern: Imbued Netherweave Robe
+			21901, -- Pattern: Imbued Netherweave Tunic
+		},
+	},
+	[ BZ["Shattrath City"] ] = {
+		[ L["Merchant"] ] = {
+			21892, -- Pattern: Bolt of Imbued Netherweave
+			21893, -- Pattern: Imbued Netherweave Bag
+			21895, -- Pattern: Primal Mooncloth
+			21896, -- Pattern: Netherweave Robe
+			21897, -- Pattern: Netherweave Tunic
+			22307, -- Pattern: Enchanted Mageweave Pouch
+			24316, -- Pattern: Spellcloth
+			30483, -- Pattern: Shadowcloth
+		},
+	},
+	[ BZ["Zangarmarsh"] ] = {
+		[ L["Merchant"] ] = {
+			21898, -- Pattern: Imbued Netherweave Pants
+			21899, -- Pattern: Imbued Netherweave Boots
+		},
+	},
+	
+	
+	-- misc dungeon boe
+	[ BZ["Molten Core"] ] = {
+		[ L["Random Boss"] ] = {
+			18265, -- Pattern: Flarecore Wraps
+			21371, -- Pattern: Core Felcloth Bag
+		},
+	},
+	[ format("%s/ %s", BZ["Tempest Keep"], BZ["Serpentshrine Cavern"]) ] = {
+		[ L["Trash Mobs"] ] = {
+			30282, -- Pattern: Boots of Blasting
+			30283, -- Pattern: Boots of the Long Road
+		},
+	},
+	[ BZ["Black Temple"] ] = {
+		[ L["Trash Mobs"] ] = {
+			32753, -- Pattern: Swiftheal Mantle
+			32755, -- Pattern: Mantle of Nimble Thought
+		},
+	},
+	[ BZ["Sunwell Plateau"] ] = {
+		[ L["Trash Mobs"] ] = {
+			35206, -- Pattern: Sunfire Robe
+			35207, -- Pattern: Robe of Eternal Light
+		},
+	},
+	
+	[ BZ["Blackrock Spire"] ] = {
+		[ L["Firebrand Pyromancer"] ] = {
+			14513, -- Pattern: Robe of the Archmage
+		},
+	},
+	[ BZ["Stratholme"] ] = {
+		[ BB["Balnazzar"] ] = {
+			29120, -- Pattern: Truefaith Vestments (a weird duplicate)
+		},
+		[ L["Spectral Citizen"] ] = {
+			14495, -- Pattern: Ghostweave Pants
+		},
+	},
+	
+	
+	
 	-- Tier 0 (dungeon 1) is already in the level 60 instances (strat, scholo ..)
 	[L["Tier 0.5 Quests"]] = { 
 		[BI["Druid"]] = { 22109, 22112, 22113, 22108, 22110, 22106, 22111, 22107 },
@@ -1541,21 +1712,186 @@ db.lootTable = {
 	
 	
 	[L["World Drops"]] = {
-		[L["Level 30-39"]] = {
-			867, 1981, 1980, 869, 1982, 870, 868, 873, 1204, 2825, 
+		[ format(L["Level %d-%d"], 10, 20) ] = {
+			2598,	 -- Pattern: Red Linen Robe
+			6271,	 -- Pattern: Red Linen Vest
 		},
-		[L["Level 40-49"]] = {
-			3075, 940, 14551, 17007, 14549, 1315, 942, 1447, 2164,  2163, 
-			809, 871, 2291, 810, 2915, 812, 943, 1169, 1979, 2824, 2100, 
+		[ format(L["Level %d-%d"], 15, 25) ] = {
+			2601,	 -- Pattern: Gray Woolen Robe
+			4292,	 -- Pattern: Green Woolen Bag
+			4345,	 -- Pattern: Red Woolen Boots
+			4346,	 -- Pattern: Heavy Woolen Cloak
+			6390,	 -- Pattern: Stylish Blue Shirt
+			6391,	 -- Pattern: Stylish Green Shirt
 		},
-		[L["Level 50-60"]] = {
-			3475, 14553, 2245, 14552, 14554, 1443, 14558, 2246, 833, 14557, 
-			1728, 14555, 2244, 2801, 647, 811, 1263, 2243, 944, 1168, 2099, 
+		[ format(L["Level %d-%d"], 20, 30) ] = {
+			4347,	 -- Pattern: Reinforced Woolen Shoulders
+			4348,	 -- Pattern: Phoenix Gloves
+			4349,	 -- Pattern: Phoenix Pants
+			10316,	 -- Pattern: Colorful Kilt
 		},
-		[L["Level 70"]] = {
-			34703, 28189, 31329, 31340, 31343, 31333, 31330, 31328, 31335, 31320, 
-			31338, 31321, 31319, 31339, 31326, 31331, 31336, 31332, 31318, 31342, 
-			31322, 31334, 34622, 31323, 
+		[ format(L["Level %d-%d"], 25, 35) ] = {
+			4350,	 -- Pattern: Spider Silk Slippers
+			5773,	 -- Pattern: Robes of Arcana
+			5774,	 -- Pattern: Green Silk Pack
+			7090,	 -- Pattern: Green Silk Armor
+			7091,	 -- Pattern: Truefaith Gloves
+			7092,	 -- Pattern: Hands of Darkness
+		},
+		[ format(L["Level %d-%d"], 30, 40) ] = {
+			867, 	 -- Gloves of Holy Might
+			868, 	 -- Ardent Custodian
+			869, 	 -- Dazzling Longsword
+			870, 	 -- Fiery War Axe
+			873, 	 -- Staff of Jordan
+			1204, 	 -- The Green Tower
+			1980, 	 -- Underworld Band
+			1981, 	 -- Icemail Jerkin
+			1982, 	 -- Nightblade
+			2825, 	 -- Bow of Searing Arrows
+			
+			4351,	 -- Pattern: Shadow Hood
+			4352,	 -- Pattern: Boots of the Enchanter
+			4353,	 -- Pattern: Spider Belt
+			7086,	 -- Pattern: Earthen Silk Belt
+		},
+		[ format(L["Level %d-%d"], 35, 45) ] = {
+			4354,	 -- Pattern: Rich Purple Silk Shirt
+			4356,	 -- Pattern: Star Belt
+			5775,	 -- Pattern: Black Silk Pack
+			7084,	 -- Pattern: Crimson Silk Shoulders
+			7085,	 -- Pattern: Azure Shoulders
+			10300,	 -- Pattern: Red Mageweave Vest
+		},
+		[ format(L["Level %d-%d"], 40, 50) ] = {
+			809, 	 -- Bloodrazor
+			810, 	 -- Hammer of the Northern Wind
+			812, 	 -- Glowing Brightwood Staff
+			871, 	 -- Flurry Axe
+			940, 	 -- Robes of Insight
+			942, 	 -- Freezing Band
+			943, 	 -- Warden Staff
+			1169, 	 -- Blackskull Shield
+			1315, 	 -- Lei of Lilies
+			1447, 	 -- Ring of Saviors
+			1979, 	 -- Wall of the Dead
+			2100, 	 -- Precisely Calibrated Boomstick
+			2163, 	 -- Shadowblade
+			2164, 	 -- Gut Ripper
+			2291, 	 -- Kang the Decapitator
+			2824, 	 -- Hurricane
+			2915, 	 -- Taran Icebreaker
+			3075, 	 -- Eye of Flame
+			14551, 	 -- Edgemaster's Handguards
+			14549, 	 -- Boots of Avoidance
+			17007, 	 -- Stonerender Gauntlets
+			
+			10301,	 -- Pattern: White Bandit Mask
+			10302,	 -- Pattern: Red Mageweave Pants
+			10312,	 -- Pattern: Red Mageweave Gloves
+		},
+		[ format(L["Level %d-%d"], 45, 55) ] = {
+			10315,	 -- Pattern: Red Mageweave Shoulders
+			10320,	 -- Pattern: Red Mageweave Headband
+			14466,	 -- Pattern: Frostweave Tunic
+			14467,	 -- Pattern: Frostweave Robe
+			14470,	 -- Pattern: Runecloth Tunic
+		},
+		[ format(L["Level %d-%d"], 50, 60) ] = {
+			647, 	 -- Destiny
+			811, 	 -- Axe of the Deep Woods
+			833, 	 -- Lifestone
+			944, 	 -- Elemental Mage Staff
+			1168, 	 -- Skullflame Shield
+			1263, 	 -- Brain Hacker
+			1443, 	 -- Jeweled Amulet of Cainwyn
+			1728, 	 -- Teebu's Blazing Longsword
+			2099, 	 -- Dwarven Hand Cannon
+			2243, 	 -- Hand of Edward the Odd
+			2244, 	 -- Krol Blade
+			2245, 	 -- Helm of Narv
+			2246, 	 -- Myrmidon's Signet
+			2801, 	 -- Blade of Hanna
+			3475, 	 -- Cloak of Flames
+			14552, 	 -- Stockade Pauldrons
+			14553, 	 -- Sash of Mercy
+			14554, 	 -- Cloudkeeper Legplates
+			14555, 	 -- Alcor's Sunrazor
+			14557, 	 -- The Lion Horn of Stormwind
+			14558, 	 -- Lady Maye's Pendant
+			
+			14474,	 -- Pattern: Frostweave Gloves
+			14478,	 -- Pattern: Brightcloth Robe
+			14479,	 -- Pattern: Brightcloth Gloves
+			14484,	 -- Pattern: Brightcloth Cloak
+			14489,	 -- Pattern: Frostweave Pants
+			14491,	 -- Pattern: Runecloth Pants
+			14492,	 -- Pattern: Felcloth Boots
+			14494,	 -- Pattern: Brightcloth Pants
+			14496,	 -- Pattern: Felcloth Hood
+			14498,	 -- Pattern: Runecloth Headband
+			14499,	 -- Pattern: Mooncloth Bag
+		},
+		[ format(L["Level %d-%d"], 55, 60) ] = {
+			14497,	 -- Pattern: Mooncloth Leggings
+			14501,	 -- Pattern: Mooncloth Vest
+			14504,	 -- Pattern: Runecloth Shoulders
+			14506,	 -- Pattern: Felcloth Robe
+			14507,	 -- Pattern: Mooncloth Shoulders
+			14508,	 -- Pattern: Felcloth Shoulders
+		},
+		[ format(L["Level %d"], 60) ] = {
+			14509,	 -- Pattern: Mooncloth Circlet
+			14510,	 -- Pattern: Bottomless Bag
+			14511,	 -- Pattern: Gloves of Spell Mastery
+		},
+		
+		[ format(L["Level %d-%d"], 68, 72) ] = {
+			24296,	 -- Pattern: Unyielding Bracers
+			24297,	 -- Pattern: Bracers of Havok
+			24298,	 -- Pattern: Bracers of Havok
+			24299,	 -- Pattern: Bracers of Havok
+			24300,	 -- Pattern: Cloak of Eternity
+			24301,	 -- Pattern: White Remedy Cape
+			24302,	 -- Pattern: Unyielding Girdle
+			24303,	 -- Pattern: Girdle of Ruination
+			24304,	 -- Pattern: Black Belt of Knowledge
+			24305,	 -- Pattern: Resolute Cape
+			24306,	 -- Pattern: Vengeance Wrap
+			24307,	 -- Pattern: Manaweave Cloak
+		},
+		[ format(L["Level %d"], 70) ] = {
+			28189,	 -- Latro's Shifting Sword
+			31318,	 -- Singing Crystal Axe
+			31319,	 -- Band of Impenetrable Defenses
+			31320,	 -- Chestguard of Exile
+			31321,	 -- Choker of Repentance
+			31322,	 -- The Hammer of Destiny
+			31323,	 -- Don Santos' Famous Hunting Rifle
+			31326,	 -- Truestrike Ring
+			31328,	 -- Leggings of Beast Mastery
+			31329,	 -- Lifegiving Cloak
+			31330,	 -- Lightning Crown
+			31332,	 -- Blinkstrike
+			31333,	 -- The Night Watchman
+			31334,	 -- Staff of Natural Fury
+			31335,	 -- Pants of Living Growth
+			31336,	 -- Blade of Wizardry
+			31338,	 -- Charlotte's Ivy
+			31339,	 -- Lola's Eve
+			31340,	 -- Will of Edward the Odd
+			31342,	 -- The Ancient Scepter of Sue-Min
+			31343,	 -- Kamaei's Cerulean Skirt
+			34703,	 -- Latro's Dancing Blade
+		},
+		[ format(L["Level %d-%d"], 75, 80) ] = {
+			42172,	 -- Pattern: Red Lumberjack Shirt
+			42173,	 -- Pattern: Blue Lumberjack Shirt
+			42175,	 -- Pattern: Green Lumberjack Shirt
+			42176,	 -- Pattern: Blue Workman's Shirt
+			42177,	 -- Pattern: Red Workman's Shirt
+			42178,	 -- Pattern: Rustic Workman's Shirt
+			42179,	 -- Pattern: Green Workman's Shirt
 		},
 		[L["Level 80"]] = {
 			37254,  -- Super Simian Sphere
@@ -1567,6 +1903,7 @@ db.lootTable = {
 			44312,  -- Wapach's Spaulders of Solidarity
 			44313,  -- Zom's Crackling Bulwark
 		},
+		
 		[format("%s (%s)", L["Nascent Val'kyr"], BZ["The Storm Peaks"])] = {
 			43573,  -- Tears of Bitter Anguish
 		},
@@ -1574,10 +1911,15 @@ db.lootTable = {
 	
 	[L["Pick Pocket"]] = {
 		[BZ["Northrend"]] = {
-			43575,  -- Reinforced Junkbox
-			43611,  -- Krol Cleaver (Reinforced Junkbox)
-			43612,  -- Spineslicer (Reinforced Junkbox)
-			43613,  -- The Dusk Blade (Reinforced Junkbox)
+			43575,	 -- Reinforced Junkbox
+			43611,	 -- Krol Cleaver (Reinforced Junkbox)
+			43612,	 -- Spineslicer (Reinforced Junkbox)
+			43613,	 -- The Dusk Blade (Reinforced Junkbox)
+		},
+		[BZ["Outland"]] = {
+			29569,	 -- Strong Junkbox
+			31331,	 -- The Night Blade (Strong Junkbox)
+			34622,	 -- Spinesever (Strong Junkbox)
 		},
 	},
 	
@@ -3843,3 +4185,35 @@ db.lootTable = {
 	},
 	
 }
+
+local factionDuplciates	= {
+	Alliance	= {
+		[4355]	= {BZ["Hillsbrad Foothills"],	 L["Merchant"] }, 	-- Allianz
+		[6401]	= {BZ["Duskwood"],	 L["Merchant"] }, 	-- Allianz
+		[7089]	= {BZ["Feralas"],	 L["Merchant"] }, 	-- Allianz
+		[7114]	= {BZ["Wetlands"],	 L["Merchant"] }, 	-- Allianz
+		[10311]	= {BZ["Darnassus"],	 L["Merchant"] }, 	-- Allianz
+		[10314]	= {BZ["Ironforge"],	 L["Merchant"] }, 	-- Allianz
+		[10317]	= {BZ["Ironforge"],	 L["Merchant"] }, 	-- Allianz
+		[10321]	= {BZ["Ironforge"],	 L["Merchant"] }, 	-- Allianz
+		[10323]	= {BZ["Ironforge"],	 L["Merchant"] }, 	-- Allianz
+		[10325]	= {BZ["Stormwind City"],	 L["Merchant"] }, 	-- Allianz
+		[10326]	= {BZ["Ironforge"],	 L["Merchant"] }, 	-- Allianz
+		[14627]	= {BZ["Duskwood"],	 L["Merchant"] }, 	-- Allianz
+	},
+	Horde	= {
+		[4355]	= {BZ["Dustwallow Marsh"],	 L["Merchant"] }, 	-- Horde
+		[6401]	= {BZ["Hillsbrad Foothills"],	 L["Merchant"] }, 	-- Horde
+		[7089]	= {BZ["Arathi Highlands"],	 L["Merchant"] }, 	-- Horde
+		[7114]	= {BZ["Desolace"],	 L["Merchant"] }, 	-- Horde
+		[10311]	= {BZ["Thunder Bluff"],	 L["Merchant"] }, 	-- Horde
+		[10314]	= {BZ["Orgrimmar"],	 L["Merchant"] }, 	-- Horde
+		[10317]	= {BZ["Orgrimmar"],	 L["Merchant"] }, 	-- Horde
+		[10321]	= {BZ["Undercity"],	 L["Merchant"] }, 	-- Horde
+		[10323]	= {BZ["Undercity"],	 L["Merchant"] }, 	-- Horde
+		[10325]	= {BZ["Thunder Bluff"],	 L["Merchant"] }, 	-- Horde
+		[10326]	= {BZ["Undercity"],	 L["Merchant"] }, 	-- Horde
+		[14627]	= {BZ["Duskwood"],	"Merchant (Alliance)"}, 	-- Horde
+	},
+}
+-- print("--",addonName,"--",UnitFactionGroup("player"))
