@@ -1177,12 +1177,10 @@ db.lootTable = {
 		-- [ L["Merchant"] ] = {
 		-- },
 	-- },
-	[ BZ["Nagrand"] ] = {
-		[ L["Merchant"] ] = {
-			21894,	-- Tailoring-Pattern: Bolt of Soulcloth
-			21902,	-- Tailoring-Pattern: Soulcloth Gloves
-		},
-	},
+	-- [ BZ["Nagrand"] ] = {
+		-- [ L["Merchant"] ] = {
+		-- },
+	-- },
 	[ BZ["Shadowmoon Valley"] ] = {
 		[ format("%s: %s (%s)", L["Merchant"], "Arrond", BF["The Scryers"]) ] = {
 			21900,	-- Tailoring-Pattern: Imbued Netherweave Robe
@@ -1209,12 +1207,10 @@ db.lootTable = {
 			22307,	-- Tailoring-Pattern: Enchanted Mageweave Pouch
 		},
 	},
-	[ BZ["Zangarmarsh"] ] = {
-		[ L["Merchant"] ] = {
-			21898,	-- Tailoring-Pattern: Imbued Netherweave Pants
-			21899,	-- Tailoring-Pattern: Imbued Netherweave Boots
-		},
-	},
+	-- [ BZ["Zangarmarsh"] ] = {
+		-- [ L["Merchant"] ] = {
+		-- },
+	-- },
 	
 	
 	-- misc dungeon boe
@@ -4217,6 +4213,10 @@ local factionDuplicates	= {
 		[10325]	= {BZ["Stormwind City"], 	format("%s: %s", L["Merchant"], "Alexandra Bolero") },	-- Tailoring-Pattern: White Wedding Dress
 		[10326]	= {BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Tuxedo Jacket
 		[14627]	= {BZ["Duskwood"], 			format("%s: %s", L["Merchant"], "Danielle Zipstitch") },	-- Tailoring-Pattern: Bright Yellow Shirt (Alliance only)
+		[21894]	= {BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Borto") },				-- Tailoring-Pattern: Bolt of Soulcloth
+		[21902]	= {BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Borto") },				-- Tailoring-Pattern: Soulcloth Gloves
+		[21898]	= {BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Muheru the Weaver") },	-- Tailoring-Pattern: Imbued Netherweave Pants
+		[21899]	= {BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Muheru the Weaver") },	-- Tailoring-Pattern: Imbued Netherweave Boots
 	},
 	Horde	= {
 		[4355]	= {BZ["Dustwallow Marsh"], 	format("%s: %s", L["Merchant"], "Ghok'kah") },			-- Tailoring-Pattern: Icy Cloak
@@ -4231,6 +4231,10 @@ local factionDuplicates	= {
 		[10325]	= {BZ["Thunder Bluff"],		format("%s: %s", L["Merchant"], "Mahu") },				-- Tailoring-Pattern: White Wedding Dress
 		[10326]	= {BZ["Undercity"], 		format("%s: %s", L["Merchant"], "Millie Gregorian") },	-- Tailoring-Pattern: Tuxedo Jacket
 		[14627]	= {BZ["Duskwood"], 			format("%s: %s (%s)", L["Merchant"], "Danielle Zipstitch", FACTION_ALLIANCE) },	-- Tailoring-Pattern: Bright Yellow Shirt (Alliance only)
+		[21894]	= {BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Mathar G'ochar") },	-- Tailoring-Pattern: Bolt of Soulcloth
+		[21902]	= {BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Mathar G'ochar") },	-- Tailoring-Pattern: Soulcloth Gloves
+		[21898]	= {BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Zurai") },				-- Tailoring-Pattern: Imbued Netherweave Pants
+		[21899]	= {BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Zurai") },				-- Tailoring-Pattern: Imbued Netherweave Boots
 	},
 }
 
