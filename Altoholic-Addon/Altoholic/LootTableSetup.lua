@@ -5,6 +5,7 @@ local L = LibStub("AceLocale-3.0"):GetLocale(addonName)
 local BB = LibStub("LibBabble-Boss-3.0"):GetLookupTable()
 local BZ = LibStub("LibBabble-Zone-3.0"):GetLookupTable()
 local BI = LibStub("LibBabble-Inventory-3.0"):GetLookupTable()
+local BF = LibStub("LibBabble-Faction-3.0"):GetLookupTable()
 
 addonTable.LootTableSetup = {}
 local db = addonTable.LootTableSetup
@@ -1074,128 +1075,144 @@ db.lootTable = {
 	-- misc boe stuff
 	[ BZ["Azeroth"] ] = {
 		[ L["Merchant"] ] = {
-			6270, -- Pattern: Blue Linen Vest
-			6272, -- Pattern: Blue Linen Robe
-			6274, -- Pattern: Blue Overalls
-			6275, -- Pattern: Greater Adept's Robe
-			5771, -- Pattern: Red Linen Bag
-			5772, -- Pattern: Red Woolen Bag
+			6270,	-- Tailoring-Pattern: Blue Linen Vest
+			6272,	-- Tailoring-Pattern: Blue Linen Robe
+			6274,	-- Tailoring-Pattern: Blue Overalls
+			6275,	-- Tailoring-Pattern: Greater Adept's Robe
+			5771,	-- Tailoring-Pattern: Red Linen Bag
+			5772,	-- Tailoring-Pattern: Red Woolen Bag
 		},
 	},
 	[ BZ["Azshara"] ] = {
 		[ L["Lingering Highborne"] ] = {
-			14473, -- Pattern: Ghostweave Belt
-			14477, -- Pattern: Ghostweave Gloves
+			14473,	-- Tailoring-Pattern: Ghostweave Belt
+			14477,	-- Tailoring-Pattern: Ghostweave Gloves
 		},
 	},
 	[ BZ["Burning Steppes"]] = {
 		[ L["Thaurissan Firewalker"] ] = {
-			14482, -- Pattern: Cindercloth Cloak
-			14490, -- Pattern: Cindercloth Pants
+			14482,	-- Tailoring-Pattern: Cindercloth Cloak
+			14490,	-- Tailoring-Pattern: Cindercloth Pants
 		},
 	},
 	[ BZ["Dire Maul"] ] = {
 		[ L["Knot Thimblejack"] ] = {
-			18414, -- Pattern: Belt of the Archmage
+			18414,	-- Tailoring-Pattern: Belt of the Archmage
 		},
 		[ L["Shen'dralar Provisioner"] ] = {
-			18487, -- Pattern: Mooncloth Robe
+			18487,	-- Tailoring-Pattern: Mooncloth Robe
 		},
 	},
 	[ BZ["Eastern Plaguelands"] ] = {
 		[ L["Dark Summoner"] ] = {
-			14485, -- Pattern: Wizardweave Leggings
+			14485,	-- Tailoring-Pattern: Wizardweave Leggings
 		},
 		[ L["Dark Caster"] ] = {
-			14500, -- Pattern: Wizardweave Robe
-			14505, -- Pattern: Wizardweave Turban
+			14500,	-- Tailoring-Pattern: Wizardweave Robe
+			14505,	-- Tailoring-Pattern: Wizardweave Turban
 		},
 		[ L["Unseen Servant"]  ] = {
-			14480, -- Pattern: Ghostweave Vest
+			14480,	-- Tailoring-Pattern: Ghostweave Vest
 		},
 	},
 	[ BZ["Moonglade"] ] = {
-		[ L["Merchant"] ] = {
-			14469, -- Pattern: Runecloth Robe
-			14483, -- Pattern: Felcloth Pants
-			14526, -- Pattern: Mooncloth
+		[ format("%s: %s", L["Merchant"], "Darnall") ] = {
+			14469,	-- Tailoring-Pattern: Runecloth Robe
+		},
+		[ format("%s: %s", L["Merchant"], "Lorelae Wintersong") ] = {
+			14483,	-- Tailoring-Pattern: Felcloth Pants
 		},
 	},
 	[ BZ["Searing Gorge"] ] = {
 		[ L["Quest rewards"] ] = {
-			10463, -- Pattern: Shadoweave Mask
+			10463,	-- Tailoring-Pattern: Shadoweave Mask
 		},
 		[ L["Twilight Fire Guard"] ] = {
-			14471, -- Pattern: Cindercloth Vest
-			14476, -- Pattern: Cindercloth Gloves
+			14471,	-- Tailoring-Pattern: Cindercloth Vest
+			14476,	-- Tailoring-Pattern: Cindercloth Gloves
 		},
 	},
 	[ BZ["Silithus"] ] = {
 		[ L["Quest rewards"] ] = {
-			20546, -- Pattern: Runed Stygian Leggings
-			20547, -- Pattern: Runed Stygian Boots
-			20548, -- Pattern: Runed Stygian Belt
+			20546,	-- Tailoring-Pattern: Runed Stygian Leggings
+			20547,	-- Tailoring-Pattern: Runed Stygian Boots
+			20548,	-- Tailoring-Pattern: Runed Stygian Belt
 		},
-		[ L["Merchant"] ] = {
-			22308, -- Pattern: Enchanted Runecloth Bag
+		[ format("%s: %s", L["Merchant"], "Kania") ] = {
+			22308,	-- Tailoring-Pattern: Enchanted Runecloth Bag
 		},
 	},
 	[ BZ["Stranglethorn Vale"] ] = {
-		[ L["Merchant"] ] = {
-			7087, -- Pattern: Crimson Silk Cloak
-			14630, -- Pattern: Enchanter's Cowl
-			10728, -- Pattern: Black Swashbuckler's Shirt
-			10318, -- Pattern: Admiral's Hat
+		[ format("%s: %s", L["Merchant"], "Xizk Goodstitch") ] = {
+			7087,	-- Tailoring-Pattern: Crimson Silk Cloak
+			14630,	-- Tailoring-Pattern: Enchanter's Cowl
+		},
+		[ format("%s: %s", L["Merchant"], "Narkk") ] = {
+			10728,	-- Tailoring-Pattern: Black Swashbuckler's Shirt
+		},
+		[ format("%s: %s", L["Merchant"], "Cowardly Crosby") ] = {
+			10318,	-- Tailoring-Pattern: Admiral's Hat
 		},
 	},
 	[ BZ["Tanaris"] ] = {
-		[ L["Merchant"] ] = {
-			7088, -- Pattern: Crimson Silk Robe
-			21358, -- Pattern: Soul Pouch
-			37915, -- Pattern: Dress Shoes
-			38327, -- Pattern: Haliscan Jacket
-			38328, -- Pattern: Haliscan Pantaloons
+		[ format("%s: %s", L["Merchant"], "Vizzklick") ] = {
+			7088,	-- Tailoring-Pattern: Crimson Silk Robe
+			21358,	-- Tailoring-Pattern: Soul Pouch
+		},
+		[ format("%s: %s", L["Merchant"], "Haughty Modiste") ] = {
+			37915,	-- Tailoring-Pattern: Dress Shoes
+			38327,	-- Tailoring-Pattern: Haliscan Jacket
+			38328,	-- Tailoring-Pattern: Haliscan Pantaloons
 		},
 	},
 	[ BZ["Winterspring"] ] = {
-		[ L["Merchant"] ] = {
-			14468, -- Pattern: Runecloth Bag
+		[ format("%s: %s", L["Merchant"], "Qia ") ] = {
+			14468,	-- Tailoring-Pattern: Runecloth Bag
+			14526,	-- Tailoring-Pattern: Mooncloth
 		},
 	},
 	
 	
-	[ BZ["Outland"] ] = {
-		[ L["Merchant"] ] = {
-			21894, -- Pattern: Bolt of Soulcloth
-		},
-	},
+	-- [ BZ["Outland"] ] = {
+		-- [ L["Merchant"] ] = {
+		-- },
+	-- },
 	[ BZ["Nagrand"] ] = {
 		[ L["Merchant"] ] = {
-			21902, -- Pattern: Soulcloth Gloves
+			21894,	-- Tailoring-Pattern: Bolt of Soulcloth
+			21902,	-- Tailoring-Pattern: Soulcloth Gloves
 		},
 	},
 	[ BZ["Shadowmoon Valley"] ] = {
-		[ L["Merchant"] ] = {
-			21900, -- Pattern: Imbued Netherweave Robe
-			21901, -- Pattern: Imbued Netherweave Tunic
+		[ format("%s: %s (%s)", L["Merchant"], "Arrond", BF["The Scryers"]) ] = {
+			21900,	-- Tailoring-Pattern: Imbued Netherweave Robe
+			21901,	-- Tailoring-Pattern: Imbued Netherweave Tunic
 		},
 	},
 	[ BZ["Shattrath City"] ] = {
-		[ L["Merchant"] ] = {
-			21892, -- Pattern: Bolt of Imbued Netherweave
-			21893, -- Pattern: Imbued Netherweave Bag
-			21895, -- Pattern: Primal Mooncloth
-			21896, -- Pattern: Netherweave Robe
-			21897, -- Pattern: Netherweave Tunic
-			22307, -- Pattern: Enchanted Mageweave Pouch
-			24316, -- Pattern: Spellcloth
-			30483, -- Pattern: Shadowcloth
+		[ format("%s: %s", L["Merchant"], "Eiin") ] = {
+			21892,	-- Tailoring-Pattern: Bolt of Imbued Netherweave
+			21893,	-- Tailoring-Pattern: Imbued Netherweave Bag
+			21896,	-- Tailoring-Pattern: Netherweave Robe
+			21897,	-- Tailoring-Pattern: Netherweave Tunic
+		},
+		[ format("%s: %s", L["Merchant"], "Nasmara Moonsong") ] = {
+			21895,	-- Tailoring-Pattern: Primal Mooncloth
+		},
+		[ format("%s: %s", L["Merchant"], "Gidge Spellweaver") ] = {
+			24316,	-- Tailoring-Pattern: Spellcloth
+		},
+		[ format("%s: %s", L["Merchant"], "Andrion Darkspinner") ] = {
+			30483,	-- Tailoring-Pattern: Shadowcloth
+		},
+		[ format("%s: %s", L["Merchant"], "Madame Ruby") ] = {
+			22307,	-- Tailoring-Pattern: Enchanted Mageweave Pouch
 		},
 	},
 	[ BZ["Zangarmarsh"] ] = {
 		[ L["Merchant"] ] = {
-			21898, -- Pattern: Imbued Netherweave Pants
-			21899, -- Pattern: Imbued Netherweave Boots
+			21898,	-- Tailoring-Pattern: Imbued Netherweave Pants
+			21899,	-- Tailoring-Pattern: Imbued Netherweave Boots
 		},
 	},
 	
@@ -1203,40 +1220,40 @@ db.lootTable = {
 	-- misc dungeon boe
 	[ BZ["Molten Core"] ] = {
 		[ L["Random Boss"] ] = {
-			18265, -- Pattern: Flarecore Wraps
-			21371, -- Pattern: Core Felcloth Bag
+			18265,	-- Tailoring-Pattern: Flarecore Wraps
+			21371,	-- Tailoring-Pattern: Core Felcloth Bag
 		},
 	},
 	[ format("%s/ %s", BZ["Tempest Keep"], BZ["Serpentshrine Cavern"]) ] = {
 		[ L["Trash Mobs"] ] = {
-			30282, -- Pattern: Boots of Blasting
-			30283, -- Pattern: Boots of the Long Road
+			30282,	-- Tailoring-Pattern: Boots of Blasting
+			30283,	-- Tailoring-Pattern: Boots of the Long Road
 		},
 	},
 	[ BZ["Black Temple"] ] = {
 		[ L["Trash Mobs"] ] = {
-			32753, -- Pattern: Swiftheal Mantle
-			32755, -- Pattern: Mantle of Nimble Thought
+			32753,	-- Tailoring-Pattern: Swiftheal Mantle
+			32755,	-- Tailoring-Pattern: Mantle of Nimble Thought
 		},
 	},
 	[ BZ["Sunwell Plateau"] ] = {
 		[ L["Trash Mobs"] ] = {
-			35206, -- Pattern: Sunfire Robe
-			35207, -- Pattern: Robe of Eternal Light
+			35206,	-- Tailoring-Pattern: Sunfire Robe
+			35207,	-- Tailoring-Pattern: Robe of Eternal Light
 		},
 	},
 	
 	[ BZ["Blackrock Spire"] ] = {
 		[ L["Firebrand Pyromancer"] ] = {
-			14513, -- Pattern: Robe of the Archmage
+			14513,	-- Tailoring-Pattern: Robe of the Archmage
 		},
 	},
 	[ BZ["Stratholme"] ] = {
 		[ BB["Balnazzar"] ] = {
-			29120, -- Pattern: Truefaith Vestments (a weird duplicate)
+			29120,	-- Tailoring-Pattern: Truefaith Vestments (a weird duplicate)
 		},
 		[ L["Spectral Citizen"] ] = {
-			14495, -- Pattern: Ghostweave Pants
+			14495,	-- Tailoring-Pattern: Ghostweave Pants
 		},
 	},
 	
@@ -1440,12 +1457,12 @@ db.lootTable = {
 		["x23"] = { 49908,  },
 		["x50"] = { 50466, 50467, 50468, 50469, 50470,  },
 		["x60"] = {
-			40810, 40811, 40812, 40870, 40871, 40872, 40928, 40964, 41002, 41008, 41039, 41045, 41138, 41144, 41212, 41218, 41276, 41282, 41288, 41294, 41684, 41716, 41768, 41774, 41870, 41875, 41935, 41941, 41966, 41972, 42012, 42018, -- pvp gear
-			50355, 50356, 50357, 50358, 50976, 50977, 50978, 50979, 50980, 50981, 50982, 50983, 50984, 50987, 50989, 50991, 50992, 50993, 50994, 50995, 50996, 50997, -- pve gear
+			40810, 40811, 40812, 40870, 40871, 40872, 40928, 40964, 41002, 41008, 41039, 41045, 41138, 41144, 41212, 41218, 41276, 41282, 41288, 41294, 41684, 41716, 41768, 41774, 41870, 41875, 41935, 41941, 41966, 41972, 42012, 42018,	-- pvp gear
+			50355, 50356, 50357, 50358, 50976, 50977, 50978, 50979, 50980, 50981, 50982, 50983, 50984, 50987, 50989, 50991, 50992, 50993, 50994, 50995, 50996, 50997,	-- pve gear
 		},
 		["x95"] = {
-			40790, 40791, 40792, 40829, 40830, 40831, 40850, 40851, 40852, 40910, 40934, 40940, 40994, 40995, 41014, 41020, 41028, 41034, 41082, 41088, 41152, 41158, 41200, 41206, 41299, 41305, 41311, 41317, 41322, 41328, 41651, 41656, 41662, 41668, 41673, 41679, 41855, 41860, 41865, 41916, 41922, 41928, 41947, 41954, 41960, 41994, 41999, 42006, -- pvp gear
-			50965, 50968, 50969, 50970, 50971, 50972, 50973, 50974, 50975, -- pve gear
+			40790, 40791, 40792, 40829, 40830, 40831, 40850, 40851, 40852, 40910, 40934, 40940, 40994, 40995, 41014, 41020, 41028, 41034, 41082, 41088, 41152, 41158, 41200, 41206, 41299, 41305, 41311, 41317, 41322, 41328, 41651, 41656, 41662, 41668, 41673, 41679, 41855, 41860, 41865, 41916, 41922, 41928, 41947, 41954, 41960, 41994, 41999, 42006,	-- pvp gear
+			50965, 50968, 50969, 50970, 50971, 50972, 50973, 50974, 50975,	-- pve gear
 		},
 	},
 	
@@ -1713,30 +1730,30 @@ db.lootTable = {
 	
 	[L["World Drops"]] = {
 		[ format(L["Level %d-%d"], 10, 20) ] = {
-			2598,	 -- Pattern: Red Linen Robe
-			6271,	 -- Pattern: Red Linen Vest
+			2598,	 -- Tailoring-Pattern: Red Linen Robe
+			6271,	 -- Tailoring-Pattern: Red Linen Vest
 		},
 		[ format(L["Level %d-%d"], 15, 25) ] = {
-			2601,	 -- Pattern: Gray Woolen Robe
-			4292,	 -- Pattern: Green Woolen Bag
-			4345,	 -- Pattern: Red Woolen Boots
-			4346,	 -- Pattern: Heavy Woolen Cloak
-			6390,	 -- Pattern: Stylish Blue Shirt
-			6391,	 -- Pattern: Stylish Green Shirt
+			2601,	 -- Tailoring-Pattern: Gray Woolen Robe
+			4292,	 -- Tailoring-Pattern: Green Woolen Bag
+			4345,	 -- Tailoring-Pattern: Red Woolen Boots
+			4346,	 -- Tailoring-Pattern: Heavy Woolen Cloak
+			6390,	 -- Tailoring-Pattern: Stylish Blue Shirt
+			6391,	 -- Tailoring-Pattern: Stylish Green Shirt
 		},
 		[ format(L["Level %d-%d"], 20, 30) ] = {
-			4347,	 -- Pattern: Reinforced Woolen Shoulders
-			4348,	 -- Pattern: Phoenix Gloves
-			4349,	 -- Pattern: Phoenix Pants
-			10316,	 -- Pattern: Colorful Kilt
+			4347,	 -- Tailoring-Pattern: Reinforced Woolen Shoulders
+			4348,	 -- Tailoring-Pattern: Phoenix Gloves
+			4349,	 -- Tailoring-Pattern: Phoenix Pants
+			10316,	 -- Tailoring-Pattern: Colorful Kilt
 		},
 		[ format(L["Level %d-%d"], 25, 35) ] = {
-			4350,	 -- Pattern: Spider Silk Slippers
-			5773,	 -- Pattern: Robes of Arcana
-			5774,	 -- Pattern: Green Silk Pack
-			7090,	 -- Pattern: Green Silk Armor
-			7091,	 -- Pattern: Truefaith Gloves
-			7092,	 -- Pattern: Hands of Darkness
+			4350,	 -- Tailoring-Pattern: Spider Silk Slippers
+			5773,	 -- Tailoring-Pattern: Robes of Arcana
+			5774,	 -- Tailoring-Pattern: Green Silk Pack
+			7090,	 -- Tailoring-Pattern: Green Silk Armor
+			7091,	 -- Tailoring-Pattern: Truefaith Gloves
+			7092,	 -- Tailoring-Pattern: Hands of Darkness
 		},
 		[ format(L["Level %d-%d"], 30, 40) ] = {
 			867, 	 -- Gloves of Holy Might
@@ -1750,18 +1767,18 @@ db.lootTable = {
 			1982, 	 -- Nightblade
 			2825, 	 -- Bow of Searing Arrows
 			
-			4351,	 -- Pattern: Shadow Hood
-			4352,	 -- Pattern: Boots of the Enchanter
-			4353,	 -- Pattern: Spider Belt
-			7086,	 -- Pattern: Earthen Silk Belt
+			4351,	 -- Tailoring-Pattern: Shadow Hood
+			4352,	 -- Tailoring-Pattern: Boots of the Enchanter
+			4353,	 -- Tailoring-Pattern: Spider Belt
+			7086,	 -- Tailoring-Pattern: Earthen Silk Belt
 		},
 		[ format(L["Level %d-%d"], 35, 45) ] = {
-			4354,	 -- Pattern: Rich Purple Silk Shirt
-			4356,	 -- Pattern: Star Belt
-			5775,	 -- Pattern: Black Silk Pack
-			7084,	 -- Pattern: Crimson Silk Shoulders
-			7085,	 -- Pattern: Azure Shoulders
-			10300,	 -- Pattern: Red Mageweave Vest
+			4354,	 -- Tailoring-Pattern: Rich Purple Silk Shirt
+			4356,	 -- Tailoring-Pattern: Star Belt
+			5775,	 -- Tailoring-Pattern: Black Silk Pack
+			7084,	 -- Tailoring-Pattern: Crimson Silk Shoulders
+			7085,	 -- Tailoring-Pattern: Azure Shoulders
+			10300,	 -- Tailoring-Pattern: Red Mageweave Vest
 		},
 		[ format(L["Level %d-%d"], 40, 50) ] = {
 			809, 	 -- Bloodrazor
@@ -1786,16 +1803,16 @@ db.lootTable = {
 			14549, 	 -- Boots of Avoidance
 			17007, 	 -- Stonerender Gauntlets
 			
-			10301,	 -- Pattern: White Bandit Mask
-			10302,	 -- Pattern: Red Mageweave Pants
-			10312,	 -- Pattern: Red Mageweave Gloves
+			10301,	 -- Tailoring-Pattern: White Bandit Mask
+			10302,	 -- Tailoring-Pattern: Red Mageweave Pants
+			10312,	 -- Tailoring-Pattern: Red Mageweave Gloves
 		},
 		[ format(L["Level %d-%d"], 45, 55) ] = {
-			10315,	 -- Pattern: Red Mageweave Shoulders
-			10320,	 -- Pattern: Red Mageweave Headband
-			14466,	 -- Pattern: Frostweave Tunic
-			14467,	 -- Pattern: Frostweave Robe
-			14470,	 -- Pattern: Runecloth Tunic
+			10315,	 -- Tailoring-Pattern: Red Mageweave Shoulders
+			10320,	 -- Tailoring-Pattern: Red Mageweave Headband
+			14466,	 -- Tailoring-Pattern: Frostweave Tunic
+			14467,	 -- Tailoring-Pattern: Frostweave Robe
+			14470,	 -- Tailoring-Pattern: Runecloth Tunic
 		},
 		[ format(L["Level %d-%d"], 50, 60) ] = {
 			647, 	 -- Destiny
@@ -1820,45 +1837,45 @@ db.lootTable = {
 			14557, 	 -- The Lion Horn of Stormwind
 			14558, 	 -- Lady Maye's Pendant
 			
-			14474,	 -- Pattern: Frostweave Gloves
-			14478,	 -- Pattern: Brightcloth Robe
-			14479,	 -- Pattern: Brightcloth Gloves
-			14484,	 -- Pattern: Brightcloth Cloak
-			14489,	 -- Pattern: Frostweave Pants
-			14491,	 -- Pattern: Runecloth Pants
-			14492,	 -- Pattern: Felcloth Boots
-			14494,	 -- Pattern: Brightcloth Pants
-			14496,	 -- Pattern: Felcloth Hood
-			14498,	 -- Pattern: Runecloth Headband
-			14499,	 -- Pattern: Mooncloth Bag
+			14474,	 -- Tailoring-Pattern: Frostweave Gloves
+			14478,	 -- Tailoring-Pattern: Brightcloth Robe
+			14479,	 -- Tailoring-Pattern: Brightcloth Gloves
+			14484,	 -- Tailoring-Pattern: Brightcloth Cloak
+			14489,	 -- Tailoring-Pattern: Frostweave Pants
+			14491,	 -- Tailoring-Pattern: Runecloth Pants
+			14492,	 -- Tailoring-Pattern: Felcloth Boots
+			14494,	 -- Tailoring-Pattern: Brightcloth Pants
+			14496,	 -- Tailoring-Pattern: Felcloth Hood
+			14498,	 -- Tailoring-Pattern: Runecloth Headband
+			14499,	 -- Tailoring-Pattern: Mooncloth Bag
 		},
 		[ format(L["Level %d-%d"], 55, 60) ] = {
-			14497,	 -- Pattern: Mooncloth Leggings
-			14501,	 -- Pattern: Mooncloth Vest
-			14504,	 -- Pattern: Runecloth Shoulders
-			14506,	 -- Pattern: Felcloth Robe
-			14507,	 -- Pattern: Mooncloth Shoulders
-			14508,	 -- Pattern: Felcloth Shoulders
+			14497,	 -- Tailoring-Pattern: Mooncloth Leggings
+			14501,	 -- Tailoring-Pattern: Mooncloth Vest
+			14504,	 -- Tailoring-Pattern: Runecloth Shoulders
+			14506,	 -- Tailoring-Pattern: Felcloth Robe
+			14507,	 -- Tailoring-Pattern: Mooncloth Shoulders
+			14508,	 -- Tailoring-Pattern: Felcloth Shoulders
 		},
 		[ format(L["Level %d"], 60) ] = {
-			14509,	 -- Pattern: Mooncloth Circlet
-			14510,	 -- Pattern: Bottomless Bag
-			14511,	 -- Pattern: Gloves of Spell Mastery
+			14509,	 -- Tailoring-Pattern: Mooncloth Circlet
+			14510,	 -- Tailoring-Pattern: Bottomless Bag
+			14511,	 -- Tailoring-Pattern: Gloves of Spell Mastery
 		},
 		
 		[ format(L["Level %d-%d"], 68, 72) ] = {
-			24296,	 -- Pattern: Unyielding Bracers
-			24297,	 -- Pattern: Bracers of Havok
-			24298,	 -- Pattern: Bracers of Havok
-			24299,	 -- Pattern: Bracers of Havok
-			24300,	 -- Pattern: Cloak of Eternity
-			24301,	 -- Pattern: White Remedy Cape
-			24302,	 -- Pattern: Unyielding Girdle
-			24303,	 -- Pattern: Girdle of Ruination
-			24304,	 -- Pattern: Black Belt of Knowledge
-			24305,	 -- Pattern: Resolute Cape
-			24306,	 -- Pattern: Vengeance Wrap
-			24307,	 -- Pattern: Manaweave Cloak
+			24296,	 -- Tailoring-Pattern: Unyielding Bracers
+			24297,	 -- Tailoring-Pattern: Bracers of Havok
+			24298,	 -- Tailoring-Pattern: Bracers of Havok
+			24299,	 -- Tailoring-Pattern: Bracers of Havok
+			24300,	 -- Tailoring-Pattern: Cloak of Eternity
+			24301,	 -- Tailoring-Pattern: White Remedy Cape
+			24302,	 -- Tailoring-Pattern: Unyielding Girdle
+			24303,	 -- Tailoring-Pattern: Girdle of Ruination
+			24304,	 -- Tailoring-Pattern: Black Belt of Knowledge
+			24305,	 -- Tailoring-Pattern: Resolute Cape
+			24306,	 -- Tailoring-Pattern: Vengeance Wrap
+			24307,	 -- Tailoring-Pattern: Manaweave Cloak
 		},
 		[ format(L["Level %d"], 70) ] = {
 			28189,	 -- Latro's Shifting Sword
@@ -1885,13 +1902,13 @@ db.lootTable = {
 			34703,	 -- Latro's Dancing Blade
 		},
 		[ format(L["Level %d-%d"], 75, 80) ] = {
-			42172,	 -- Pattern: Red Lumberjack Shirt
-			42173,	 -- Pattern: Blue Lumberjack Shirt
-			42175,	 -- Pattern: Green Lumberjack Shirt
-			42176,	 -- Pattern: Blue Workman's Shirt
-			42177,	 -- Pattern: Red Workman's Shirt
-			42178,	 -- Pattern: Rustic Workman's Shirt
-			42179,	 -- Pattern: Green Workman's Shirt
+			42172,	 -- Tailoring-Pattern: Red Lumberjack Shirt
+			42173,	 -- Tailoring-Pattern: Blue Lumberjack Shirt
+			42175,	 -- Tailoring-Pattern: Green Lumberjack Shirt
+			42176,	 -- Tailoring-Pattern: Blue Workman's Shirt
+			42177,	 -- Tailoring-Pattern: Red Workman's Shirt
+			42178,	 -- Tailoring-Pattern: Rustic Workman's Shirt
+			42179,	 -- Tailoring-Pattern: Green Workman's Shirt
 		},
 		[L["Level 80"]] = {
 			37254,  -- Super Simian Sphere
@@ -3299,7 +3316,7 @@ db.lootTable = {
 			47480, 47492, 47484, 47473, 47476, 47489, 47477, 47475, 47483, 47491, 
 		},
 		[L["Tribute Run"]] = { 
-			47557, 47558, 47559, -- regalias
+			47557, 47558, 47559,	-- regalias
 		},
 		[L["Tribute Run"] .. " (25)"] = { 
 			47506,  -- Silverwing Defender
@@ -4186,34 +4203,49 @@ db.lootTable = {
 	
 }
 
-local factionDuplciates	= {
+local factionDuplicates	= {
 	Alliance	= {
-		[4355]	= {BZ["Hillsbrad Foothills"],	 L["Merchant"] }, 	-- Allianz
-		[6401]	= {BZ["Duskwood"],	 L["Merchant"] }, 	-- Allianz
-		[7089]	= {BZ["Feralas"],	 L["Merchant"] }, 	-- Allianz
-		[7114]	= {BZ["Wetlands"],	 L["Merchant"] }, 	-- Allianz
-		[10311]	= {BZ["Darnassus"],	 L["Merchant"] }, 	-- Allianz
-		[10314]	= {BZ["Ironforge"],	 L["Merchant"] }, 	-- Allianz
-		[10317]	= {BZ["Ironforge"],	 L["Merchant"] }, 	-- Allianz
-		[10321]	= {BZ["Ironforge"],	 L["Merchant"] }, 	-- Allianz
-		[10323]	= {BZ["Ironforge"],	 L["Merchant"] }, 	-- Allianz
-		[10325]	= {BZ["Stormwind City"],	 L["Merchant"] }, 	-- Allianz
-		[10326]	= {BZ["Ironforge"],	 L["Merchant"] }, 	-- Allianz
-		[14627]	= {BZ["Duskwood"],	 L["Merchant"] }, 	-- Allianz
+		[4355]	= {BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Merchant"], "Micha Yance") },	-- Tailoring-Pattern: Icy Cloak
+		[6401]	= {BZ["Duskwood"], 			format("%s: %s", L["Merchant"], "Sheri Zipstitch") },	-- Tailoring-Pattern: Dark Silk Shirt
+		[7089]	= {BZ["Feralas"], 			format("%s: %s", L["Merchant"], "Brienna Starglow") },	-- Tailoring-Pattern: Azure Silk Cloak
+		[7114]	= {BZ["Wetlands"], 			format("%s: %s", L["Merchant"], "Wenna Silkbeard") },	-- Tailoring-Pattern: Azure Silk Gloves
+		[10311]	= {BZ["Darnassus"], 		format("%s: %s", L["Merchant"], "Elynna") },			-- Tailoring-Pattern: Orange Martial Shirt
+		[10314]	= {BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Lavender Mageweave Shirt
+		[10317]	= {BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Pink Mageweave Shirt
+		[10321]	= {BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Tuxedo Shirt
+		[10323]	= {BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Tuxedo Pants
+		[10325]	= {BZ["Stormwind City"], 	format("%s: %s", L["Merchant"], "Alexandra Bolero") },	-- Tailoring-Pattern: White Wedding Dress
+		[10326]	= {BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Tuxedo Jacket
+		[14627]	= {BZ["Duskwood"], 			format("%s: %s", L["Merchant"], "Danielle Zipstitch") },	-- Tailoring-Pattern: Bright Yellow Shirt (Alliance only)
 	},
 	Horde	= {
-		[4355]	= {BZ["Dustwallow Marsh"],	 L["Merchant"] }, 	-- Horde
-		[6401]	= {BZ["Hillsbrad Foothills"],	 L["Merchant"] }, 	-- Horde
-		[7089]	= {BZ["Arathi Highlands"],	 L["Merchant"] }, 	-- Horde
-		[7114]	= {BZ["Desolace"],	 L["Merchant"] }, 	-- Horde
-		[10311]	= {BZ["Thunder Bluff"],	 L["Merchant"] }, 	-- Horde
-		[10314]	= {BZ["Orgrimmar"],	 L["Merchant"] }, 	-- Horde
-		[10317]	= {BZ["Orgrimmar"],	 L["Merchant"] }, 	-- Horde
-		[10321]	= {BZ["Undercity"],	 L["Merchant"] }, 	-- Horde
-		[10323]	= {BZ["Undercity"],	 L["Merchant"] }, 	-- Horde
-		[10325]	= {BZ["Thunder Bluff"],	 L["Merchant"] }, 	-- Horde
-		[10326]	= {BZ["Undercity"],	 L["Merchant"] }, 	-- Horde
-		[14627]	= {BZ["Duskwood"],	"Merchant (Alliance)"}, 	-- Horde
+		[4355]	= {BZ["Dustwallow Marsh"], 	format("%s: %s", L["Merchant"], "Ghok'kah") },			-- Tailoring-Pattern: Icy Cloak
+		[6401]	= {BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Merchant"], "Mallen Swain") },	-- Tailoring-Pattern: Dark Silk Shirt
+		[7089]	= {BZ["Arathi Highlands"], 	format("%s: %s", L["Merchant"], "Jun'ha") },			-- Tailoring-Pattern: Azure Silk Cloak
+		[7114]	= {BZ["Desolace"], 			format("%s: %s", L["Merchant"], "Kireena") },			-- Tailoring-Pattern: Azure Silk Gloves
+		[10311]	= {BZ["Thunder Bluff"], 	format("%s: %s", L["Merchant"], "Mahu") },				-- Tailoring-Pattern: Orange Martial Shirt
+		[10314]	= {BZ["Orgrimmar"], 		format("%s: %s", L["Merchant"], "Borya") },				-- Tailoring-Pattern: Lavender Mageweave Shirt
+		[10317]	= {BZ["Orgrimmar"], 		format("%s: %s", L["Merchant"], "Borya") },				-- Tailoring-Pattern: Pink Mageweave Shirt
+		[10321]	= {BZ["Undercity"], 		format("%s: %s", L["Merchant"], "Millie Gregorian") },	-- Tailoring-Pattern: Tuxedo Shirt
+		[10323]	= {BZ["Undercity"], 		format("%s: %s", L["Merchant"], "Millie Gregorian") },	-- Tailoring-Pattern: Tuxedo Pants
+		[10325]	= {BZ["Thunder Bluff"],		format("%s: %s", L["Merchant"], "Mahu") },				-- Tailoring-Pattern: White Wedding Dress
+		[10326]	= {BZ["Undercity"], 		format("%s: %s", L["Merchant"], "Millie Gregorian") },	-- Tailoring-Pattern: Tuxedo Jacket
+		[14627]	= {BZ["Duskwood"], 			format("%s: %s (%s)", L["Merchant"], "Danielle Zipstitch", FACTION_ALLIANCE) },	-- Tailoring-Pattern: Bright Yellow Shirt (Alliance only)
 	},
 }
+
 -- print("--",addonName,"--",UnitFactionGroup("player"))
+local playerFaction = UnitFactionGroup("player")
+
+local zone,boss
+if factionDuplicates[playerFaction] then
+	for k, v in pairs(factionDuplicates[playerFaction]) do
+		zone = v[1]
+		boss = v[2]
+		if zone and boss then
+			db.lootTable[zone] = db.lootTable[zone] or {}
+			db.lootTable[zone][boss] = db.lootTable[zone][boss] or {}
+			tinsert(db.lootTable[zone][boss], k)
+		end
+	end
+end
