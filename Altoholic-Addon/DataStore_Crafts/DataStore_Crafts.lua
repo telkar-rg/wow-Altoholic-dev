@@ -416,6 +416,12 @@ local function ScanProfessionLinks()
 	local char = addon.ThisCharacter
 	
 	if not char then return end
+	
+	local old_professions = {}
+	-- start listing previously known professions
+	for skillName, v in pairs(char.Professions) do
+		old_professions[skillName] = 1
+	end
 
 	for i = GetNumSkillLines(), 1, -1 do		-- 1st pass, expand all categories
 		local _, isHeader = GetSkillLineInfo(i)
@@ -444,6 +450,10 @@ local function ScanProfessionLinks()
 				
 				if field then
 					char.Professions[skillName][field] = true
+					
+					-- remove a confimed Profession from the "old" list
+					old_professions[skillName] = nil 
+					
 					-- should be nil anyway for fishing, mining, etc..
 					local newLink = select(2, GetSpellLink(skillName))
 					if newLink then		-- sometimes a nil value may be returned, so keep the old one if nil
@@ -452,6 +462,12 @@ local function ScanProfessionLinks()
 				end
 			end
 		end
+	end
+	
+	-- clear old professions which are no longer known
+	for oldProfession,_ in pairs(old_professions) do
+		wipe( char.Professions[oldProfession] )	-- clean the table first
+		char.Professions[oldProfession] = nil 	-- remove the entry
 	end
 end
 
