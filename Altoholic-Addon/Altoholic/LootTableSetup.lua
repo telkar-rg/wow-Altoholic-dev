@@ -4199,7 +4199,7 @@ db.lootTable = {
 	
 }
 
-local factionDuplicates	= {
+local recipeFactionDuplicates	= {
 	Alliance	= {
 		[4355]	= {BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Merchant"], "Micha Yance") },	-- Tailoring-Pattern: Icy Cloak
 		[6401]	= {BZ["Duskwood"], 			format("%s: %s", L["Merchant"], "Sheri Zipstitch") },	-- Tailoring-Pattern: Dark Silk Shirt
@@ -4242,8 +4242,8 @@ local factionDuplicates	= {
 local playerFaction = UnitFactionGroup("player")
 
 local zone,boss
-if factionDuplicates[playerFaction] then
-	for k, v in pairs(factionDuplicates[playerFaction]) do
+if recipeFactionDuplicates[playerFaction] then
+	for k, v in pairs(recipeFactionDuplicates[playerFaction]) do
 		zone = v[1]
 		boss = v[2]
 		if zone and boss then

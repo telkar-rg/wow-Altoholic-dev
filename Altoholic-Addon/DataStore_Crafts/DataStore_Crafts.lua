@@ -485,12 +485,13 @@ local function ScanRecipes()
 
 	local char = addon.ThisCharacter
 	local profession = char.Professions[tradeskillName]
-	local crafts = profession.Crafts
-	wipe(crafts)
+	-- local crafts = profession.Crafts
+	-- wipe(crafts)
+	local crafts = {}
 
-	profession.FullLink = select(2, GetSpellLink(tradeskillName))
 
 	local NumCrafts = 0
+	local NumHeaders = 0
 	local color, craftInfo, link
 
 	for i = 1, GetNumTradeSkills() do
@@ -499,6 +500,7 @@ local function ScanRecipes()
 		
 		if skillType == "header" then
 			craftInfo = skillName or ""
+			NumHeaders = NumHeaders + 1
 		else
 			link = GetTradeSkillRecipeLink(i)
 			craftInfo = tonumber(link:match("enchant:(%d+)"))		-- this actually extracts the spellID
@@ -507,7 +509,15 @@ local function ScanRecipes()
 		crafts[i] = color .. "|" .. craftInfo
 	end
 	
-	profession.NumCrafts = NumCrafts
+	if NumHeaders > 0 then	-- only overwrite stored info if he have seen some headers (indicator that the whole profession is in game cache and the interface is shown in its entirety)
+		profession.FullLink = select(2, GetSpellLink(tradeskillName))
+		profession.NumCrafts = NumCrafts
+		wipe(profession.Crafts) 	-- wipe old table (for memory saving)
+		profession.Crafts = crafts	-- assign the valid new table
+	else
+		wipe(crafts) 	-- wipe unused table
+		print(format("|cffFFFF20%s|r:",addonName), "Profession not yet fully loaded.")
+	end
 end
 
 local function ScanTradeSkills()
