@@ -4440,3 +4440,6 @@ if recipeFactionDuplicates[playerFaction] then
 	end
 	
 end
+
+wipe(recipeTable)
+wipe(recipeFactionDuplicates)
