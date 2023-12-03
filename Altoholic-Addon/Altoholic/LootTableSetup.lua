@@ -146,10 +146,10 @@ db.lootTable = {
 		[L["Winter Veil Gift"]] = { 34425 },
 		[L["Gently Shaken Gift"]] = { 21235, 21241 },
 		[L["Ticking Present"]] = {
-			21325, 21213, 17706, 17725, 17720, 17722, 17709, 17724, 
+			21325, 21213, 17706, 17725, 17720, 17722, 17724, 
 		},
 		[L["Carefully Wrapped Present"]] = { 21254 },
-		[L["Smokywood Pastures Extra-Special Gift"]] = { 21215 },
+		[L["Smokywood Pastures Extra-Special Gift"]] = { 17709, 21215, },
 	},
 	[L["Noblegarden"]] = {	
 		[L["Brightly Colored Egg"]] = { 19028, 6833, 6835, 7807, 7808, 7806, }
@@ -4199,57 +4199,244 @@ db.lootTable = {
 	
 }
 
+local trainersName 	= TUTORIAL_TITLE14
+local rep_Hated 	= FACTION_STANDING_LABEL1
+local rep_Hostile 	= FACTION_STANDING_LABEL2
+local rep_Unfriendly = FACTION_STANDING_LABEL3
+local rep_Neutral 	= FACTION_STANDING_LABEL4
+local rep_Friendly 	= FACTION_STANDING_LABEL5
+local rep_Honored 	= FACTION_STANDING_LABEL6
+local rep_Revered 	= FACTION_STANDING_LABEL7
+local rep_Exalted 	= FACTION_STANDING_LABEL8
+
+local recipeTable = {
+	{ 3830, 	trainersName, 				BI["Alchemy"] },	-- Alchemy-Recipe: Elixir of Fortitude
+	{ 4597, 	BZ["Silverpine Forest"], 	format("%s (%s)", L["Quest rewards"], FACTION_HORDE) },	-- Alchemy-Recipe: Discolored Healing Potion (Horde only)
+	{ 4624, 	BZ["Badlands"], 			L["Quest rewards"] },	-- Alchemy-Recipe: Lesser Stoneshield Potion
+	
+	{ 5640, 	BZ["Westfall"], 			format("%s: %s", L["Merchant"], "Defias Profiteer") },	-- Alchemy-Recipe: Rage Potion
+	{ 5640, 	BZ["The Barrens"], 			format("%s: %s", L["Merchant"], "Ranik") },	-- Alchemy-Recipe: Rage Potion
+	
+	{ 6053, 	BZ["Duskwood"], 			format("%s: %s", L["Merchant"], "Kzixx") },	-- Alchemy-Recipe: Holy Protection Potion
+	{ 6056, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Merchant"], "Glyx Brewright") },	-- Alchemy-Recipe: Frost Protection Potion
+	
+	{ 6057, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Merchant"], "Glyx Brewright") },	-- Alchemy-Recipe: Nature Protection Potion
+	{ 6057, 	BZ["Tanaris"], 				format("%s: %s", L["Merchant"], "Alchemist Pestlezugg") },	-- Alchemy-Recipe: Nature Protection Potion
+	
+	{ 6068, 	BZ["Duskwood"], 			format("%s: %s", L["Merchant"], "Bliztik") },	-- Alchemy-Recipe: Shadow Oil
+	
+	{ 9296, 	BZ["Western Plaguelands"], 	"Skeletal Flayer" },	-- Alchemy-Recipe: Gift of Arthas
+	{ 9296, 	BZ["Western Plaguelands"], 	"Slavering Ghoul" },	-- Alchemy-Recipe: Gift of Arthas
+	
+	{ 9303, 	BZ["Tanaris"], 				format("%s: %s", L["Merchant"], "Alchemist Pestlezugg") },	-- Alchemy-Recipe: Philosopher's Stone
+	{ 10644, 	BI["Engineering"], 			"205" },	-- Alchemy-Recipe: Goblin Rocket Fuel
+	{ 13476, 	trainersName, 				BI["Alchemy"] },	-- Alchemy-Recipe: Mighty Rage Potion
+	{ 13477, 	trainersName, 				BI["Alchemy"] },	-- Alchemy-Recipe: Superior Mana Potion
+	{ 13479, 	trainersName, 				BI["Alchemy"] },	-- Alchemy-Recipe: Elixir of the Sages
+	{ 13480, 	trainersName, 				BI["Alchemy"] },	-- Alchemy-Recipe: Major Healing Potion
+	{ 13481, 	trainersName, 				BI["Alchemy"] },	-- Alchemy-Recipe: Elixir of Brute Force
+	
+	{ 13491, 	BZ["Felwood"], 				"Jadefire Rogue" },	-- Alchemy-Recipe: Elixir of the Mongoose
+	{ 13491, 	BZ["Azshara"], 				"Legashi Rogue" },	-- Alchemy-Recipe: Elixir of the Mongoose
+	
+	{ 13492, 	trainersName, 				BI["Alchemy"] },	-- Alchemy-Recipe: Purification Potion
+	{ 13493, 	trainersName, 				BI["Alchemy"] },	-- Alchemy-Recipe: Greater Arcane Elixir
+	
+	{ 13494, 	BZ["Blackrock Spire"], 		"Firebrand Invoker" },	-- Alchemy-Recipe: Greater Fire Protection Potion
+	{ 13494, 	BZ["Blackrock Spire"], 		"Firebrand Pyromancer" },	-- Alchemy-Recipe: Greater Fire Protection Potion
+	
+	{ 13495, 	BZ["Winterspring"], 		"Frostmaul Giant" },	-- Alchemy-Recipe: Greater Frost Protection Potion
+	{ 13496, 	BZ["Western Plaguelands"], 	"Rotting Behemoth" },	-- Alchemy-Recipe: Greater Nature Protection Potion
+	{ 13497, 	BZ["Winterspring"], 		"Cobalt Mageweaver" },	-- Alchemy-Recipe: Greater Arcane Protection Potion
+	
+	{ 13499, 	BZ["Eastern Plaguelands"], 	"Dark Adept" },	-- Alchemy-Recipe: Greater Shadow Protection Potion
+	{ 13499, 	BZ["Eastern Plaguelands"], 	"Shadowmage" },	-- Alchemy-Recipe: Greater Shadow Protection Potion
+	
+	{ 13501, 	BZ["Western Plaguelands"], 	format("%s: %s", L["Merchant"], "Magnus Frostwake") },	-- Alchemy-Recipe: Major Mana Potion
+	{ 13501, 	BZ["Western Plaguelands"], 	BB["Darkmaster Gandling"] },	-- Alchemy-Recipe: Major Mana Potion
+	
+	-- { 13517, 	BF["The Sha'tar"], 			rep_Revered },	-- Alchemy-Recipe: Alchemist's Stone
+	
+	{ 13520, 	BZ["Stratholme"], 			BB["Balnazzar"] },	-- Alchemy-Recipe: Flask of Distilled Wisdom
+	{ 31356, 	BF["Cenarion Expedition"], 	rep_Exalted },	-- Alchemy-Recipe: Flask of Distilled Wisdom
+	
+	{ 13521, 	BZ["Scholomance"], 			BB["Ras Frostwhisper"] },	-- Alchemy-Recipe: Flask of Supreme Power
+	{ 31355, 	BF["Keepers of Time"], 		rep_Exalted },	-- Alchemy-Recipe: Flask of Supreme Power
+	
+	{ 13522, 	BZ["Upper Blackrock Spire"], BB["Gyth"] },	-- Alchemy-Recipe: Flask of Chromatic Resistance
+	{ 31357, 	BF["Lower City"], 			rep_Exalted },	-- Alchemy-Recipe: Flask of Chromatic Resistance
+	
+	{ 14634, 	BZ["Alterac Mountains"], 	format("%s: %s", L["Merchant"], "Bro'kin") },	-- Alchemy-Recipe: Frost Oil
+	
+	{ 18257, 	BZ["Molten Core"], 			L["Random Boss"] },	-- Alchemy-Recipe: Major Rejuvenation Potion
+	
+	-- { 20011, 	BF["Zandalar Tribe"], 		rep_Revered },	-- Alchemy-Recipe: Mageblood Elixir
+	-- { 20012, 	BF["Zandalar Tribe"], 		rep_Friendly },	-- Alchemy-Recipe: Greater Dreamless Sleep Potion
+	-- { 20013, 	BF["Zandalar Tribe"], 		rep_Exalted },	-- Alchemy-Recipe: Living Action Potion
+	-- { 20014, 	BF["Zandalar Tribe"], 		rep_Honored },	-- Alchemy-Recipe: Mighty Troll's Blood Elixir
+	
+	{ 21547, 	BZ["Searing Gorge"], 		"Dark Iron Slaver" },	-- Alchemy-Recipe: Elixir of Greater Firepower
+	{ 21547, 	BZ["Searing Gorge"], 		"Dark Iron Taskmaster" },	-- Alchemy-Recipe: Elixir of Greater Firepower
+	{ 21547, 	BZ["Searing Gorge"], 		"Dark Iron Watchman" },	-- Alchemy-Recipe: Elixir of Greater Firepower
+	
+	-- { 22905, 	BF["Honor Hold"], 			rep_Honored },	-- Alchemy-Recipe: Elixir of Major Agility
+	-- { 24001, 	BF["Thrallmar"], 			rep_Honored },	-- Alchemy-Recipe: Elixir of Major Agility
+	-- { 22906, 	BF["Sporeggar"], 			rep_Honored },	-- Alchemy-Recipe: Shrouding Potion
+	-- { 22908, 	BF["The Scryers"], 			rep_Revered },	-- Alchemy-Recipe: Elixir of Major Firepower
+	-- { 22910, 	BF["Lower City"], 			rep_Revered },	-- Alchemy-Recipe: Elixir of Major Shadow Power
+	
+	{ 22913, 	L["World Drops"], 			BZ["Outland"] },	-- Alchemy-Recipe: Haste Potion
+	{ 35295, 	BZ["Magisters' Terrace"], 	BB["Kael'thas Sunstrider"] },	-- Alchemy-Recipe: Haste Potion
+	
+	{ 22920, 	BZ["The Mechanar"], 		BB["Nethermancer Sepethrea"] },	-- Alchemy-Recipe: Major Fire Protection Potion
+	{ 22921, 	BZ["Mana-Tombs"], 			BB["Nexus-Prince Shaffar"] },	-- Alchemy-Recipe: Major Frost Protection Potion
+	-- { 22922, 	BF["Cenarion Expedition"], 	rep_Exalted },	-- Alchemy-Recipe: Major Nature Protection Potion
+	{ 22923, 	BZ["Nagrand"], 				"Vir'aani Arcanist" },	-- Alchemy-Recipe: Major Frost Protection Potion
+	{ 22924, 	BZ["Shadowmoon Valley"], 	"Shadow Council Warlock" },	-- Alchemy-Recipe: Major Shadow Protection Potion
+	{ 22925, 	BZ["Blade's Edge Mountains"], "Abyssal Flamebringer" },	-- Alchemy-Recipe: Major Holy Protection Potion
+	{ 22927, 	BZ["Old Hillsbrad Foothills"], BB["Captain Skarloc"] },	-- Alchemy-Recipe: Ironshield Potion
+	
+	{ 31680, 	BZ["Shadowmoon Valley"], 	"Mo'arg Weaponsmith" },	-- Alchemy-Recipe: Fel Strength Elixir
+	{ 31680, 	BZ["Shadowmoon Valley"], 	"Shadow Council Warlock" },	-- Alchemy-Recipe: Fel Strength Elixir
+	{ 31680, 	BZ["Shadowmoon Valley"], 	"Terrormaster" },	-- Alchemy-Recipe: Fel Strength Elixir
+	{ 31680, 	BZ["Shadowmoon Valley"], 	"Wrathwalker" },	-- Alchemy-Recipe: Fel Strength Elixir
+	
+	{ 31681, 	BZ["Shadowmoon Valley"], 	"Deathforge NPCs" },	-- Alchemy-Recipe: Fel Regeneration Potion
+	{ 31682, 	BZ["Shadowmoon Valley"], 	"Eclipsion NPCs" },	-- Alchemy-Recipe: Fel Mana Potion
+	-- { 32070, 	BF["Cenarion Expedition"], 	rep_Honored },	-- Alchemy-Recipe: Earthen Elixir
+	-- { 33209, 	BF["The Violet Eye"], 		rep_Honored },	-- Alchemy-Recipe: Flask of Chromatic Wonder
+	
+	-- { 35752, 	BF["Shattered Sun Offensive"], rep_Exalted },	-- Alchemy-Recipe: Guardian's Alchemist Stone
+	-- { 35753, 	BF["Shattered Sun Offensive"], rep_Exalted },	-- Alchemy-Recipe: Sorcerer's Alchemist Stone
+	-- { 35754, 	BF["Shattered Sun Offensive"], rep_Exalted },	-- Alchemy-Recipe: Redeemer's Alchemist Stone
+	-- { 35755, 	BF["Shattered Sun Offensive"], rep_Exalted },	-- Alchemy-Recipe: Assassin's Alchemist Stone
+	
+	{ 44564, 	BZ["Icecrown"], 			"Cult Researcher" },	-- Alchemy-Recipe: Mighty Arcane Protection Potion
+	{ 44565, 	BZ["Icecrown"], 			"Skeletal Runesmith" },	-- Alchemy-Recipe: Mighty Shadow Protection Potion
+	{ 44566, 	BZ["Icecrown"], 			"Damned Apothecary" },	-- Alchemy-Recipe: Mighty Frost Protection Potion
+	{ 44567, 	BZ["Icecrown"], 			"Cult Alchemist" },	-- Alchemy-Recipe: Mighty Nature Protection Potion
+	{ 44568, 	BZ["Icecrown"], 			"Cultist Shard Watcher" },	-- Alchemy-Recipe: Mighty Shadow Protection Potion
+	{ 47507, 	trainersName, 				BI["Alchemy"] },	-- Alchemy-Recipe: Flask of the North
+}
+
 local recipeFactionDuplicates	= {
 	Alliance	= {
-		[4355]	= {BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Merchant"], "Micha Yance") },	-- Tailoring-Pattern: Icy Cloak
-		[6401]	= {BZ["Duskwood"], 			format("%s: %s", L["Merchant"], "Sheri Zipstitch") },	-- Tailoring-Pattern: Dark Silk Shirt
-		[7089]	= {BZ["Feralas"], 			format("%s: %s", L["Merchant"], "Brienna Starglow") },	-- Tailoring-Pattern: Azure Silk Cloak
-		[7114]	= {BZ["Wetlands"], 			format("%s: %s", L["Merchant"], "Wenna Silkbeard") },	-- Tailoring-Pattern: Azure Silk Gloves
-		[10311]	= {BZ["Darnassus"], 		format("%s: %s", L["Merchant"], "Elynna") },			-- Tailoring-Pattern: Orange Martial Shirt
-		[10314]	= {BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Lavender Mageweave Shirt
-		[10317]	= {BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Pink Mageweave Shirt
-		[10321]	= {BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Tuxedo Shirt
-		[10323]	= {BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Tuxedo Pants
-		[10325]	= {BZ["Stormwind City"], 	format("%s: %s", L["Merchant"], "Alexandra Bolero") },	-- Tailoring-Pattern: White Wedding Dress
-		[10326]	= {BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Tuxedo Jacket
-		[14627]	= {BZ["Duskwood"], 			format("%s: %s", L["Merchant"], "Danielle Zipstitch") },	-- Tailoring-Pattern: Bright Yellow Shirt (Alliance only)
-		[21894]	= {BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Borto") },				-- Tailoring-Pattern: Bolt of Soulcloth
-		[21902]	= {BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Borto") },				-- Tailoring-Pattern: Soulcloth Gloves
-		[21898]	= {BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Muheru the Weaver") },	-- Tailoring-Pattern: Imbued Netherweave Pants
-		[21899]	= {BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Muheru the Weaver") },	-- Tailoring-Pattern: Imbued Netherweave Boots
+		{ 4355, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Merchant"], "Micha Yance") },	-- Tailoring-Pattern: Icy Cloak
+		{ 6401, 	BZ["Duskwood"], 			format("%s: %s", L["Merchant"], "Sheri Zipstitch") },	-- Tailoring-Pattern: Dark Silk Shirt
+		{ 7089, 	BZ["Feralas"], 			format("%s: %s", L["Merchant"], "Brienna Starglow") },	-- Tailoring-Pattern: Azure Silk Cloak
+		{ 7114, 	BZ["Wetlands"], 			format("%s: %s", L["Merchant"], "Wenna Silkbeard") },	-- Tailoring-Pattern: Azure Silk Gloves
+		{ 10311, 	BZ["Darnassus"], 		format("%s: %s", L["Merchant"], "Elynna") },			-- Tailoring-Pattern: Orange Martial Shirt
+		{ 10314, 	BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Lavender Mageweave Shirt
+		{ 10317, 	BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Pink Mageweave Shirt
+		{ 10321, 	BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Tuxedo Shirt
+		{ 10323, 	BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Tuxedo Pants
+		{ 10325, 	BZ["Stormwind City"], 	format("%s: %s", L["Merchant"], "Alexandra Bolero") },	-- Tailoring-Pattern: White Wedding Dress
+		{ 10326, 	BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Outfitter Eric") },	-- Tailoring-Pattern: Tuxedo Jacket
+		{ 14627, 	BZ["Duskwood"], 			format("%s: %s", L["Merchant"], "Danielle Zipstitch") },	-- Tailoring-Pattern: Bright Yellow Shirt (Alliance only)
+		{ 21894, 	BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Borto") },				-- Tailoring-Pattern: Bolt of Soulcloth
+		{ 21902, 	BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Borto") },				-- Tailoring-Pattern: Soulcloth Gloves
+		{ 21898, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Muheru the Weaver") },	-- Tailoring-Pattern: Imbued Netherweave Pants
+		{ 21899, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Muheru the Weaver") },	-- Tailoring-Pattern: Imbued Netherweave Boots
+		
+		{ 6056, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Merchant"], "Drovnar Strongbrew") },	-- Alchemy-Recipe: Frost Protection Potion
+		{ 6057, 	BZ["Feralas"], 			format("%s: %s", L["Merchant"], "Logannas") },	-- Alchemy-Recipe: Nature Protection Potion
+	
+		{ 5640, 	BZ["Loch Modan"], 		format("%s: %s", L["Merchant"], "Xandar Goodbeard") },	-- Alchemy-Recipe: Rage Potion
+		
+		{ 5643, 	BZ["Darnassus"], 		format("%s: %s", L["Merchant"], "Ulthir") },	-- Alchemy-Recipe: Great Rage Potion
+		
+		{ 5642, 	BZ["Darnassus"], 		format("%s: %s", L["Merchant"], "Ulthir") },	-- Alchemy-Recipe: Free Action Potion
+		{ 5642, 	BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Soolie Berryfizz") },	-- Alchemy-Recipe: Free Action Potion
+		
+		{ 6053, 	BZ["Loch Modan"], 		format("%s: %s", L["Merchant"], "Xandar Goodbeard") },	-- Alchemy-Recipe: Holy Protection Potion
+		{ 6054, 	BZ["Ashenvale"], 		format("%s: %s", L["Merchant"], "Harklan Moongrove") },	-- Alchemy-Recipe: Shadow Protection Potion
+		{ 6055, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Merchant"], "Nandar Branson") },	-- Alchemy-Recipe: Fire Protection Potion
+		{ 9302, 	BZ["Feralas"], 			format("%s: %s", L["Merchant"], "Logannas") },	-- Alchemy-Recipe: Ghost Dye
+		{ 9301, 	BZ["Stormwind City"], 	format("%s: %s", L["Merchant"], "Maria Lumere") },	-- Alchemy-Recipe: Elixir of Shadow Power
+		{ 9300, 	BZ["Blasted Lands"], 	format("%s: %s", L["Merchant"], "Nina Lightbrew") },	-- Alchemy-Recipe: Elixir of Demonslaying
+		{ 13478, 	BZ["Ironforge"], 		format("%s: %s", L["Merchant"], "Soolie Berryfizz") },	-- Alchemy-Recipe: Elixir of Superior Defense
+		
+		{ 22900, 	BZ["The Exodar"], 		format("%s: %s", L["Merchant"], "Altaa") },	-- Alchemy-Recipe: Elixir of Camouflage
+		{ 22900, 	BZ["Hellfire Peninsula"], format("%s: %s", L["Merchant"], "Alchemist Gribble") },	-- Alchemy-Recipe: Elixir of Camouflage
+		
+		{ 22901, 	BZ["Terokkar Forest"], 	format("%s: %s", L["Merchant"], "Leeli Longhaggle") },	-- Alchemy-Recipe: Sneaking Potion
+		{ 22902, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Haalrun") },	-- Alchemy-Recipe: Elixir of Major Frost Power
+		{ 22907, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Haalrun") },	-- Alchemy-Recipe: Super Mana Potion
+		{ 22909, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Haalrun") },	-- Alchemy-Recipe: Elixir of Major Defense
+		{ 22911, 	BZ["Terokkar Forest"], 	format("%s: %s", L["Merchant"], "Leeli Longhaggle") },	-- Alchemy-Recipe: Major Dreamless Sleep Potion
+		
+		-- { 32071, 	BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Quartermaster Davian Vaclav") },	-- Alchemy-Recipe: Elixir of Ironskin
 	},
 	Horde	= {
-		[4355]	= {BZ["Dustwallow Marsh"], 	format("%s: %s", L["Merchant"], "Ghok'kah") },			-- Tailoring-Pattern: Icy Cloak
-		[6401]	= {BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Merchant"], "Mallen Swain") },	-- Tailoring-Pattern: Dark Silk Shirt
-		[7089]	= {BZ["Arathi Highlands"], 	format("%s: %s", L["Merchant"], "Jun'ha") },			-- Tailoring-Pattern: Azure Silk Cloak
-		[7114]	= {BZ["Desolace"], 			format("%s: %s", L["Merchant"], "Kireena") },			-- Tailoring-Pattern: Azure Silk Gloves
-		[10311]	= {BZ["Thunder Bluff"], 	format("%s: %s", L["Merchant"], "Mahu") },				-- Tailoring-Pattern: Orange Martial Shirt
-		[10314]	= {BZ["Orgrimmar"], 		format("%s: %s", L["Merchant"], "Borya") },				-- Tailoring-Pattern: Lavender Mageweave Shirt
-		[10317]	= {BZ["Orgrimmar"], 		format("%s: %s", L["Merchant"], "Borya") },				-- Tailoring-Pattern: Pink Mageweave Shirt
-		[10321]	= {BZ["Undercity"], 		format("%s: %s", L["Merchant"], "Millie Gregorian") },	-- Tailoring-Pattern: Tuxedo Shirt
-		[10323]	= {BZ["Undercity"], 		format("%s: %s", L["Merchant"], "Millie Gregorian") },	-- Tailoring-Pattern: Tuxedo Pants
-		[10325]	= {BZ["Thunder Bluff"],		format("%s: %s", L["Merchant"], "Mahu") },				-- Tailoring-Pattern: White Wedding Dress
-		[10326]	= {BZ["Undercity"], 		format("%s: %s", L["Merchant"], "Millie Gregorian") },	-- Tailoring-Pattern: Tuxedo Jacket
-		[14627]	= {BZ["Duskwood"], 			format("%s: %s (%s)", L["Merchant"], "Danielle Zipstitch", FACTION_ALLIANCE) },	-- Tailoring-Pattern: Bright Yellow Shirt (Alliance only)
-		[21894]	= {BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Mathar G'ochar") },	-- Tailoring-Pattern: Bolt of Soulcloth
-		[21902]	= {BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Mathar G'ochar") },	-- Tailoring-Pattern: Soulcloth Gloves
-		[21898]	= {BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Zurai") },				-- Tailoring-Pattern: Imbued Netherweave Pants
-		[21899]	= {BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Zurai") },				-- Tailoring-Pattern: Imbued Netherweave Boots
+		{ 4355, 	BZ["Dustwallow Marsh"], format("%s: %s", L["Merchant"], "Ghok'kah") },			-- Tailoring-Pattern: Icy Cloak
+		{ 6401, 	BZ["Hillsbrad Foothills"], format("%s: %s", L["Merchant"], "Mallen Swain") },	-- Tailoring-Pattern: Dark Silk Shirt
+		{ 7089, 	BZ["Arathi Highlands"], format("%s: %s", L["Merchant"], "Jun'ha") },			-- Tailoring-Pattern: Azure Silk Cloak
+		{ 7114, 	BZ["Desolace"], 		format("%s: %s", L["Merchant"], "Kireena") },			-- Tailoring-Pattern: Azure Silk Gloves
+		{ 10311, 	BZ["Thunder Bluff"], 	format("%s: %s", L["Merchant"], "Mahu") },				-- Tailoring-Pattern: Orange Martial Shirt
+		{ 10314, 	BZ["Orgrimmar"], 		format("%s: %s", L["Merchant"], "Borya") },				-- Tailoring-Pattern: Lavender Mageweave Shirt
+		{ 10317, 	BZ["Orgrimmar"], 		format("%s: %s", L["Merchant"], "Borya") },				-- Tailoring-Pattern: Pink Mageweave Shirt
+		{ 10321, 	BZ["Undercity"], 		format("%s: %s", L["Merchant"], "Millie Gregorian") },	-- Tailoring-Pattern: Tuxedo Shirt
+		{ 10323, 	BZ["Undercity"], 		format("%s: %s", L["Merchant"], "Millie Gregorian") },	-- Tailoring-Pattern: Tuxedo Pants
+		{ 10325, 	BZ["Thunder Bluff"],	format("%s: %s", L["Merchant"], "Mahu") },				-- Tailoring-Pattern: White Wedding Dress
+		{ 10326, 	BZ["Undercity"], 		format("%s: %s", L["Merchant"], "Millie Gregorian") },	-- Tailoring-Pattern: Tuxedo Jacket
+		{ 14627, 	BZ["Duskwood"], 		format("%s: %s (%s)", L["Merchant"], "Danielle Zipstitch", FACTION_ALLIANCE) },	-- Tailoring-Pattern: Bright Yellow Shirt (Alliance only)
+		{ 21894, 	BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Mathar G'ochar") },	-- Tailoring-Pattern: Bolt of Soulcloth
+		{ 21902, 	BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Mathar G'ochar") },	-- Tailoring-Pattern: Soulcloth Gloves
+		{ 21898, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Zurai") },				-- Tailoring-Pattern: Imbued Netherweave Pants
+		{ 21899, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Zurai") },				-- Tailoring-Pattern: Imbued Netherweave Boots
+		
+		{ 6057, 	BZ["Feralas"], 			format("%s: %s", L["Merchant"], "Bronk") },	-- Alchemy-Recipe: Nature Protection Potion
+		{ 6068, 	BZ["Thousand Needles"], format("%s: %s", L["Merchant"], "Montarr") },	-- Alchemy-Recipe: Shadow Oil
+		
+		{ 5640, 	BZ["Orgrimmar"], 		format("%s: %s", L["Merchant"], "Hagrus") },	-- Alchemy-Recipe: Rage Potion
+		{ 5643, 	BZ["Orgrimmar"], 		format("%s: %s", L["Merchant"], "Hagrus") },	-- Alchemy-Recipe: Great Rage Potion
+		{ 5642, 	BZ["Orgrimmar"], 		format("%s: %s", L["Merchant"], "Kor'geld") },	-- Alchemy-Recipe: Free Action Potion
+		{ 6053, 	BZ["The Barrens"], 		format("%s: %s", L["Merchant"], "Hula'mahi") },	-- Alchemy-Recipe: Holy Protection Potion
+		{ 6054, 	BZ["Hillsbrad Foothills"], format("%s: %s", L["Merchant"], "Christoph Jeffcoat") },	-- Alchemy-Recipe: Shadow Protection Potion
+		{ 6055, 	BZ["Stonetalon Mountains"], format("%s: %s", L["Merchant"], "Jeeda") },	-- Alchemy-Recipe: Fire Protection Potion
+		{ 9302, 	BZ["Feralas"], 			format("%s: %s", L["Merchant"], "Bronk") },	-- Alchemy-Recipe: Ghost Dye
+		{ 9301, 	BZ["Undercity"], 		format("%s: %s", L["Merchant"], "Algernon") },	-- Alchemy-Recipe: Elixir of Shadow Power
+		{ 9300, 	BZ["Swamp of Sorrows"], format("%s: %s", L["Merchant"], "Rartar") },	-- Alchemy-Recipe: Elixir of Demonslaying
+		{ 13478, 	BZ["Orgrimmar"], 		format("%s: %s", L["Merchant"], "Kor'geld") },	-- Alchemy-Recipe: Elixir of Superior Defense
+		
+		{ 22900, 	BZ["Silvermoon City"], 	format("%s: %s", L["Merchant"], "Melaris") },	-- Alchemy-Recipe: Elixir of Camouflage
+		{ 22900, 	BZ["Hellfire Peninsula"], format("%s: %s", L["Merchant"], "Apothecary Antonivich") },	-- Alchemy-Recipe: Elixir of Camouflage
+		
+		{ 22901, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Seer Janidi") },	-- Alchemy-Recipe: Sneaking Potion
+		{ 22902, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Merchant"], "Seer Janidi") },	-- Alchemy-Recipe: Elixir of Major Frost Power
+		{ 22907, 	BZ["Blade's Edge Mountains"], format("%s: %s", L["Merchant"], "Daga Ramba") },	-- Alchemy-Recipe: Super Mana Potion
+		{ 22909, 	BZ["Blade's Edge Mountains"], format("%s: %s", L["Merchant"], "Daga Ramba") },	-- Alchemy-Recipe: Elixir of Major Defense
+		{ 22911, 	BZ["Blade's Edge Mountains"], format("%s: %s", L["Merchant"], "Daga Ramba") },	-- Alchemy-Recipe: Major Dreamless Sleep Potion
+		
+		-- { 32071, 	BZ["Nagrand"], 			format("%s: %s", L["Merchant"], "Quartermaster Jaffrey Noreliqe") },	-- Alchemy-Recipe: Elixir of Ironskin
 	},
 }
+
+for idx, entry in pairs(recipeTable) do
+	local recipeId, zone, boss = unpack(entry)
+	
+	if recipeId and zone and boss then
+		db.lootTable[zone] = db.lootTable[zone] or {}
+		db.lootTable[zone][boss] = db.lootTable[zone][boss] or {}
+		tinsert(db.lootTable[zone][boss], recipeId)
+	end
+end
 
 -- print("--",addonName,"--",UnitFactionGroup("player"))
 local playerFaction = UnitFactionGroup("player")
 
 local zone,boss
 if recipeFactionDuplicates[playerFaction] then
-	for k, v in pairs(recipeFactionDuplicates[playerFaction]) do
-		zone = v[1]
-		boss = v[2]
-		if zone and boss then
+	local recipeDuplicates = recipeFactionDuplicates[playerFaction]
+	
+	for idx, entry in pairs(recipeDuplicates) do
+		local recipeId, zone, boss = unpack(entry)
+		
+		if recipeId and zone and boss then
 			db.lootTable[zone] = db.lootTable[zone] or {}
 			db.lootTable[zone][boss] = db.lootTable[zone][boss] or {}
-			tinsert(db.lootTable[zone][boss], k)
+			tinsert(db.lootTable[zone][boss], recipeId)
 		end
 	end
+	
 end
