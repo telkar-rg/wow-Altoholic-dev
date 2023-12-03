@@ -11,10 +11,11 @@ local GREEN		= "|cFF00FF00"
 
 local lootTable, lootTableRev_Single, lootTableRev_Multi
 local LootSourceTooltipDB = {}
-local LootSourceTooltip_VERSION = 6
+local LootSourceTooltip_VERSION = 7
 
 
 local DataProviders
+local listSearchedID = {}
 
 addon.Loots = {}
 
@@ -32,7 +33,7 @@ function ns:setupLootTable()
 	if not LootSourceTooltipDB.version or LootSourceTooltipDB.version ~= LootSourceTooltip_VERSION then
 		
 		
-		local lootSecundary = { 	-- these items are only considered second after all other sources
+		local lootSecondary = { 	-- these items are only considered second after all other sources
 			L["Emblem of Frost"],
 			L["Emblem of Triumph"],
 			L["Emblem of Conquest"],
@@ -41,8 +42,8 @@ function ns:setupLootTable()
 			L["Badge of Justice"],
 			BZ["Vault of Archavon"],
 		}
-		local lootSecundaryCheck = {}
-		for k,v in pairs(lootSecundary) do lootSecundaryCheck[v]= true; end
+		local lootSecondaryCheck = {}
+		for k,v in pairs(lootSecondary) do lootSecondaryCheck[v]= true; end
 		
 		
 		
@@ -55,17 +56,17 @@ function ns:setupLootTable()
 		sort(lootTable_names)
 		local zTable
 		
-		lootTableRev_Single = {}
+		-- lootTableRev_Single = {}
 		lootTableRev_Multi = {}
 		-- PRIMARY
 		for _, zName in pairs(lootTable_names) do
-			if not lootSecundaryCheck[zName] then	-- check primary sources first
+			if not lootSecondaryCheck[zName] then	-- check primary sources first
 				zTable = lootTable[zName]
 				for encounterName, encounterTable in pairs(zTable) do 
 					for _, item_id in pairs(encounterTable) do
-						if not lootTableRev_Single[item_id] then 	-- insert only once
-							lootTableRev_Single[item_id] = format("%s\1%s", zName, encounterName)
-						end
+						-- if not lootTableRev_Single[item_id] then 	-- insert only once
+							-- lootTableRev_Single[item_id] = format("%s\1%s", zName, encounterName)
+						-- end
 						
 						if not lootTableRev_Multi[item_id] then
 							lootTableRev_Multi[item_id] = format("%s\1%s", zName, encounterName)
@@ -81,15 +82,15 @@ function ns:setupLootTable()
 				end
 			end
 		end
-		-- SECUNDARY
+		-- SECONDARY
 		for _, zName in pairs(lootTable_names) do
-			if lootSecundaryCheck[zName] then	-- check secundary sources next
+			if lootSecondaryCheck[zName] then	-- check secondary sources next
 				zTable = lootTable[zName]
 				for encounterName, encounterTable in pairs(zTable) do 
 					for _, item_id in pairs(encounterTable) do 
-						if not lootTableRev_Single[item_id] then 	-- insert only once
-							lootTableRev_Single[item_id] = format("%s\1%s", zName, encounterName)
-						end
+						-- if not lootTableRev_Single[item_id] then 	-- insert only once
+							-- lootTableRev_Single[item_id] = format("%s\1%s", zName, encounterName)
+						-- end
 						
 						if not lootTableRev_Multi[item_id] then
 							lootTableRev_Multi[item_id] = format("%s\1%s", zName, encounterName)
@@ -110,7 +111,7 @@ function ns:setupLootTable()
 		wipe(LootSourceTooltipDB.multi)
 		wipe(LootSourceTooltipDB.single)
 		LootSourceTooltipDB.multi  = lootTableRev_Multi
-		LootSourceTooltipDB.single = lootTableRev_Single
+		-- LootSourceTooltipDB.single = lootTableRev_Single
 		
 		LootSourceTooltipDB.version = LootSourceTooltip_VERSION
 		
@@ -120,7 +121,8 @@ function ns:setupLootTable()
 		
 	end
 	
-	lootTable[ BZ["Vault of Archavon"] ] = nil 	-- we ignore this one, cuz its confusing
+	-- lootTable[ BZ["Vault of Archavon"] ] = nil 	-- we ignore this one, cuz its confusing
+	wipe(lootTable)
 end
 
 function ns:GetSource(searchedID)
@@ -129,16 +131,30 @@ function ns:GetSource(searchedID)
 		DataStore_Crafts,
 		DataStore_Inventory,
 	}
+	local txt, domain, subDomain
 	
-	-- LootSourceTooltipDB.single
-	if LootSourceTooltipDB.single[searchedID] then
-		local txt,domain, subDomain
-		txt = LootSourceTooltipDB.single[searchedID]
-		domain, subDomain = strmatch(txt, "(.+)\1(.+)")
-		return domain, subDomain
+	-- LootSourceTooltipDB.multi
+	if LootSourceTooltipDB.multi[searchedID] then
+		txt = LootSourceTooltipDB.multi[searchedID]
+		
+		local p = strfind(txt, "\1\1\1") 	-- check if multiple zones and take first
+		if p then
+			txt = strsub(txt, 1, p-1)
+		end
+		
+		p = strfind(txt, "\1\1") 	-- check if multiple bosses and take first
+		if p then
+			txt = strsub(txt, 1, p-1)
+		end
+		domain, subDomain = strsplit("\1", txt) 	-- split zone from boss
+		
+		if domain and subDomain and domain~="" and subDomain~="" then
+			return domain, subDomain
+		end
 	end
+	
 
-	local domain, subDomain
+	-- local domain, subDomain
 	for _, provider in pairs(DataProviders) do
 		domain, subDomain = provider:GetSource(searchedID)
 		if domain and subDomain then
@@ -194,6 +210,44 @@ local filters = addon.ItemFilters
 local function ParseAltoholicLoots(OnMatch, OnNoMatch)
 	assert(type(OnMatch) == "function")
 	local count = 0
+	-- print("-- DEBUG: CALLED ParseAltoholicLoots(OnMatch, OnNoMatch)")
+	
+	for itemID, txt in pairs(LootSourceTooltipDB.multi) do
+		if not listSearchedID[itemID] then	-- search only once
+			listSearchedID[itemID] = 1
+			
+			count = count + 1
+			filters:SetSearchedItem(itemID)
+			
+			if filters:ItemPassesFilters() then
+				local p = strfind(txt, "\1\1\1") 	-- check if multiple zones and take first
+				if p then
+					txt = strsub(txt, 1, p-1)
+				end
+				
+				p = strfind(txt, "\1\1") 	-- check if multiple bosses and take first
+				if p then
+					txt = strsub(txt, 1, p-1)
+				end
+				local Instance, Boss = strsplit("\1", txt) 	-- split zone from boss
+				
+				OnMatch(Instance, Boss)
+			else
+				if OnNoMatch then
+					OnNoMatch()
+				end
+			end
+			
+		end
+	end
+	
+	filters:ClearSearchedItem()
+	return count
+end
+
+local function ParseAltoholicLoots_OLD(OnMatch, OnNoMatch)
+	assert(type(OnMatch) == "function")
+	local count = 0
 	
 	for Instance, BossList in pairs(lootTable) do
 		for Boss, LootList in pairs(BossList) do
@@ -233,14 +287,18 @@ local function ParseLPTSet(set, OnMatch, OnNoMatch)
 		if not doneSets[list.set] then			-- if this set hasn't been parsed yet, proceed..
 			for itemID, value in pairs(list) do
 				if tostring(itemID) ~= "set" then
-					count = count + 1
-					filters:SetSearchedItem(itemID)
-					
-					if filters:ItemPassesFilters() then
-						OnMatch(domain, subdomain or value)		-- pass the value in case "subdomain" is nil
-					else
-						if OnNoMatch then
-							OnNoMatch()
+					if not listSearchedID[itemID] then	-- search only once
+						listSearchedID[itemID] = 1
+						
+						count = count + 1
+						filters:SetSearchedItem(itemID)
+						
+						if filters:ItemPassesFilters() then
+							OnMatch(domain, subdomain or value)		-- pass the value in case "subdomain" is nil
+						else
+							if OnNoMatch then
+								OnNoMatch()
+							end
 						end
 					end
 				end
@@ -297,6 +355,8 @@ end
 function ns:Find()
 	unknownCount = 0
 	allowedQueries = 5
+	wipe(listSearchedID)
+	
 	local count = ParseAltoholicLoots(OnMatch, OnNoMatch)
 	count = count + ParseLPTSet("InstanceLoot", OnMatch, OnNoMatch)
 	count = count + ParseLPTSet("InstanceLootHeroic", OnMatch, OnNoMatch)
@@ -436,6 +496,57 @@ end
 
 -- modify this one after 3.2, to use GetItemStats
 function ns:FindUpgradeByStats(currentID, class)
+	classExcludedStats = addon.Equipment.ExcludeStats[class]
+	classBaseStats = addon.Equipment.BaseStats[class]
+	-- print("-- DEBUG: CALLED ns:FindUpgradeByStats(currentID, class)")
+	
+	rawItemStats = {}
+	currentItemStats = {}
+	tooltipLines = {}
+	
+	AddCurrentlyEquippedItem(currentID, class)
+	
+	for itemID, txt in pairs(LootSourceTooltipDB.multi) do
+		
+		local matches, itemLevel = MatchUpgradeByStats(itemID)
+		
+		if matches then
+			local p = strfind(txt, "\1\1\1") 	-- check if multiple zones and take first
+			if p then
+				txt = strsub(txt, 1, p-1)
+			end
+			
+			p = strfind(txt, "\1\1") 	-- check if multiple bosses and take first
+			if p then
+				txt = strsub(txt, 1, p-1)
+			end
+			local Instance, Boss = strsplit("\1", txt) 	-- split zone from boss
+			
+			if Instance and Boss then
+				addon.Search:AddResult( {
+					id = itemID,
+					iLvl = itemLevel,
+					dropLocation = Instance .. ", " .. GREEN .. Boss,
+					stat1 = rawItemStats[1],
+					stat2 = rawItemStats[2],
+					stat3 = rawItemStats[3],
+					stat4 = rawItemStats[4],
+					stat5 = rawItemStats[5],
+					stat6 = rawItemStats[6]
+				} )
+			end
+		end
+		
+	end
+	
+	classExcludedStats = nil
+	classBaseStats = nil
+	currentItemStats = nil
+	tooltipLines = nil
+	rawItemStats = nil
+end
+
+function ns:FindUpgradeByStats_OLD(currentID, class)
 	classExcludedStats = addon.Equipment.ExcludeStats[class]
 	classBaseStats = addon.Equipment.BaseStats[class]
 	
