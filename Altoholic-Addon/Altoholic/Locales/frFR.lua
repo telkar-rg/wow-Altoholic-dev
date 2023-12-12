@@ -66,12 +66,7 @@ L["Battlecast Garb"] = "Atours d'escarmouche"
 L["BC Collector Edition (Europe)"] = "BC Edition Collector (Europe)"
 L["Beasts Deck"] = "Suite de fauves"
 L["Beast Training"] = "Dressage des bêtes"
-L[ [=[Be informed when a guildmate sends a mail to one of my alts.
-
-Mail content is directly visible without having to reconnect the character]=] ] = [=[Etre informé quand un membre de la guilde envoie du
-courrier à un de mes personnages.
-
-Le contenu du courrier est directement visible sans avoir à  reconnecter le personnage]=]
+L["Be informed when a guildmate sends a mail to one of my alts.\n\nMail content is directly visible without having to reconnect the character"] = "Etre informé quand un membre de la guilde envoie du\ncourrier à un de mes personnages.\n\nLe contenu du courrier est directement visible sans avoir à  reconnecter le personnage"
 L["Bids %s(%d)"] = "Offres %s(%d)"
 L["Black Dragon Mail"] = "Mailles de dragon noir"
 L["Black Lotus"] = "Lotus noir"
@@ -94,9 +89,7 @@ L["Blue Dragon Mail"] = "Mailles de dragon bleu"
 L["Books"] = "Livres"
 L["Booty Run"] = "Le coffre pirate"
 L["Both factions"] = "Les 2 factions"
-L[ [=[Both parties must enable account sharing
-before using this feature (see options)]=] ] = [=[Les deux côtés doivent avoir activé le partage de compte
-avant de pouvoir utiliser cette fonctionalité (voir options)]=]
+L["Both parties must enable account sharing\nbefore using this feature (see options)"] = "Les deux côtés doivent avoir activé le partage de compte\navant de pouvoir utiliser cette fonctionalité (voir options)"
 L["Box of Chocolates"] = "Boîte de chocolats"
 L["Brewfest"] = "La fête des Brasseurs"
 L["Briarthorn"] = "Eglantine"
@@ -112,34 +105,10 @@ L["Cannot link another account's tradeskill"] = "Lien vers une profession d'un a
 L["Cannot link another realm's tradeskill"] = "Lien vers une profession d'un autre royaume impossible"
 L["Carefully Wrapped Present"] = "Biscuit du Voile d'hiver"
 L["|cFF00FF00Disable|r to avoid this risk"] = "|cFF00FF00Désactiver|r pour éviter ce risque"
-L[ [=[|cFFFFFFFFIf an item not in the local item cache
-is encountered while searching loot tables,
-Altoholic will attempt to query the server for 5 new items.
-
-]=] ] = [=[|cFFFFFFFFSi un objet n'existant pas dans le cache local
-est rencontré lors d'une recherche dans la table des loots,
-Altoholic va tenter d'envoyer des requêtes au serveur pour valider 5 nouveaux objets.
-
-]=]
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users
-to send you account sharing requests.
-]=] ] = [=[|cFFFFFFFFQuand elle est |cFF00FF00activée|cFFFFFFFF, cette option autorise les autres utilisateurs d'Altoholic
-à  vous envoyer des demandes de partage de compte.
-]=]
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users
-to update their guild bank information with yours automatically.
-
-]=] ] = [=[|cFFFFFFFFQuand elle est |cFF00FF00activée|cFFFFFFFF, cette option autorise les autres utilisateurs d'Altoholic
-à  mettre à  jour automatiquement leur données de banque de guilde avec les vôtres.
-
-]=]
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow your guildmates
-to see your alts and their professions.
-
-]=] ] = [=[|cFFFFFFFFQuand elle est |cFF00FF00activée|cFFFFFFFF, cette option autorise votre guilde
-à  voir vos autres personnages et leurs métiers.
-
-]=]
+L["|cFFFFFFFFIf an item not in the local item cache\nis encountered while searching loot tables,\nAltoholic will attempt to query the server for 5 new items.\n\n"] = "|cFFFFFFFFSi un objet n'existant pas dans le cache local\nest rencontré lors d'une recherche dans la table des loots,\nAltoholic va tenter d'envoyer des requêtes au serveur pour valider 5 nouveaux objets.\n\n"
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users\nto send you account sharing requests.\n"] = "|cFFFFFFFFQuand elle est |cFF00FF00activée|cFFFFFFFF, cette option autorise les autres utilisateurs d'Altoholic\nà  vous envoyer des demandes de partage de compte.\n"
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users\nto update their guild bank information with yours automatically.\n\n"] = "|cFFFFFFFFQuand elle est |cFF00FF00activée|cFFFFFFFF, cette option autorise les autres utilisateurs d'Altoholic\nà  mettre à  jour automatiquement leur données de banque de guilde avec les vôtres.\n\n"
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow your guildmates\nto see your alts and their professions.\n\n"] = "|cFFFFFFFFQuand elle est |cFF00FF00activée|cFFFFFFFF, cette option autorise votre guilde\nà  voir vos autres personnages et leurs métiers.\n\n"
 L["Character"] = "Personnage"
 L["Characters"] = "Personnages"
 L["Character %s received !"] = "Personnage %s reçu !"
@@ -162,16 +131,8 @@ L["Clear all entries"] = "Effacer toutes les entrées"
 L["Clear goblin AH entries"] = "Effacer les entrées de l'HV gobelin"
 L["Clear your faction's entries"] = "Effacer les entrées de votre faction"
 L["Click a character's AiL to see its equipment"] = "Cliquez sur l'AiL d'un personnage pour voir son équipment"
-L[ [=[Clicking this button will update
-your local %s%s|r bank tab
-based on %s%s's|r data]=] ] = [=[Cliquer sur ce bouton mettra à jour
-les données locales de l'onglet %s%s|r
-avec celles de %s%s's|r data]=]
-L[ [=[Click this button to ask a player
-to share his entire Altoholic Database
-and add it to your own]=] ] = [=[Cliquez sur ce bouton pour demander
-à un joueur de partager sa base de donnée Altoholic
-et l'ajouter à  la vôtre]=]
+L["Clicking this button will update\nyour local %s%s|r bank tab\nbased on %s%s's|r data"] = "Cliquer sur ce bouton mettra à jour\nles données locales de l'onglet %s%s|r\navec celles de %s%s's|r data"
+L["Click this button to ask a player\nto share his entire Altoholic Database\nand add it to your own"] = "Cliquez sur ce bouton pour demander\nà un joueur de partager sa base de donnée Altoholic\net l'ajouter à  la vôtre"
 L["Cloaks"] = "Capes"
 L["Cloth Set"] = "Set Tissu"
 L["Conspicuous Urn"] = "Urne ostentatoire"
@@ -224,9 +185,7 @@ L["Enchanted Adamantite Armor"] = "Armure d'adamantite enchantée"
 L["Enchants"] = "Enchantements"
 L["Engineering (Lv 60)"] = "Ingéniérie (Niv 60)"
 L["Engineering (Lv 70)"] = "Ingéniérie (Niv 70)"
-L[ [=[Enter an account name that will be
-used for |cFF00FF00display|r purposes only.]=] ] = [=[Entrez un nom de compte qui sera utilisé
-à  des fins |cFF00FF00d'afffichage|r uniquement.]=]
+L["Enter an account name that will be\nused for |cFF00FF00display|r purposes only."] = "Entrez un nom de compte qui sera utilisé\nà  des fins |cFF00FF00d'afffichage|r uniquement."
 L["Epic Rewards"] = "Récompenses Epiques"
 L["Equipment"] = "Equipement"
 L["Equipment Slot"] = "Equipement"
@@ -549,14 +508,8 @@ L["search"] = true
 L["Search Containers"] = "Recherche Conteneurs"
 L["Search in bags"] = "Recherche dans les sacs"
 L["Secondary Skills"] = "Compétences secondaires"
-L[ [=[Security hint: disable this if you have officer rights
-on guild bank tabs that may not be viewed by everyone,
-and authorize requests manually]=] ] = [=[Conseil Sécurité: désactivez cette option si vous avez des droits d'officier
-sur des onglets de banque de guilde qui ne peuvent pas être vus de tous,
-et autorisez les requêtes manuellement]=]
-L[ [=[Security hint: Only enable this when you actually need to transfer data,
-disable otherwise]=] ] = [=[Conseil Sécurité: N'activez cette option que quand vous devez transférer des données,
-désactivez le reste du temps]=]
+L["Security hint: disable this if you have officer rights\non guild bank tabs that may not be viewed by everyone,\nand authorize requests manually"] = "Conseil Sécurité: désactivez cette option si vous avez des droits d'officier\nsur des onglets de banque de guilde qui ne peuvent pas être vus de tous,\net autorisez les requêtes manuellement"
+L["Security hint: Only enable this when you actually need to transfer data,\ndisable otherwise"] = "Conseil Sécurité: N'activez cette option que quand vous devez transférer des données,\ndésactivez le reste du temps"
 L["Send account sharing request to:"] = "Envoyer la demande de partage à :"
 L["Sending account sharing request to %s"] = "Envoi de la demande de partage à %s"
 L["Sending character %s (%d of %d)"] = "Envoi du personnage %s (%d de %d)"
@@ -625,9 +578,7 @@ L["Spellfire"] = "Feu Sorcier"
 L["Spellstrike Infusion"] = "Infusion frappe-sort"
 L["Spirit Towers (Terrokar)"] = "Tour des esprits (Terrokar)"
 L["%s|r has received a mail from %s"] = "%s|r a reçu du courrier de %s"
-L[ [=[%s%s|r has requested the bank tab %s%s|r
-Send this information ?]=] ] = [=[%s%s|r désire l'onglet de banque %s%s|r
-Envoyer ces informations ?]=]
+L["%s%s|r has requested the bank tab %s%s|r\nSend this information ?"] = "%s%s|r désire l'onglet de banque %s%s|r\nEnvoyer ces informations ?"
 L["%s starts in %d minutes (%s on %s)"] = "%s débute dans %d minutes (%s sur %s)"
 L["Started"] = "Commencé"
 L["Stasis Chambers"] = "Chambre de stase"
@@ -642,8 +593,7 @@ L["Summary"] = "Résumé"
 L["Summoner's Tomb"] = "Tombe de l'invocateur"
 L["Sungrass"] = "Soleillette"
 L["Superior Rewards"] = "Récompenses Supérieures"
-L[ [=[%sWarning:|r if you accept, %sALL|r information known
-by Altoholic will be sent to %s%s|r (bags, money, etc..)]=] ] = "%sAvertissement:|r si vous acceptez, %sTOUTES|r les informations connues d'Altoholic seront envoyées à %s%s|r (sacs, argent, etc..)"
+L["%sWarning:|r if you accept, %sALL|r information known\nby Altoholic will be sent to %s%s|r (bags, money, etc..)"] = "%sAvertissement:|r si vous acceptez, %sTOUTES|r les informations connues d'Altoholic seront envoyées à %s%s|r (sacs, argent, etc..)"
 L["%sWarning:|r make sure this user may view this information before accepting"] = "%sAvertissement:|r Vérifiez que ce joueur a le droit de voir ces informations avant d'accepter"
 L["Swiftthistle"] = "Chardonnier"
 L["%s will be ready in %d minutes (%s on %s)"] = "%s sera prêt dans %d minutes (%s sur %s)"
@@ -663,13 +613,7 @@ L["The Duke of Fathoms (Water)"] = "Le duc des Profondeurs (Eau)"
 L["The Duke of Shards (Earth)"] = "Le duc des Eclats (Terre)"
 L["The Duke of Zephyrs (Wind)"] = "Le duc des Zéphyrs (Vent)"
 L["Theldren"] = true
-L[ [=[There is a risk of disconnection if the queried item
-is a loot from a high level dungeon.
-
-]=] ] = [=[Il existe un risque de déconnexion si l'objet
-est un loot d'une instance haut niveau.
-
-]=]
+L["There is a risk of disconnection if the queried item\nis a loot from a high level dungeon.\n\n"] = "Il existe un risque de déconnexion si l'objet\nest un loot d'une instance haut niveau.\n\n"
 L["The Unyielding"] = "L'Inflexible"
 L["The Vault"] = "La Chambre forte"
 L["Thick Draenic Armor"] = "Armure draenique épaisse"
@@ -677,17 +621,9 @@ L["This account"] = "Ce compte"
 L["This character"] = "Ce personnage"
 L["This faction"] = "Cette faction"
 L["This field |cFF00FF00cannot|r be left empty."] = "Ce champ |cFF00FF00ne peut pas|r être laissé vide."
-L[ [=[This name can be anything you like,
-it does |cFF00FF00NOT|r have to be the real account name.]=] ] = [=[Ce nom peut être ce que vous voulez,
-il ne doit |cFF00FF00PAS|r forcément être le nom réel du compte.]=]
+L["This name can be anything you like,\nit does |cFF00FF00NOT|r have to be the real account name."] = "Ce nom peut être ce que vous voulez,\nil ne doit |cFF00FF00PAS|r forcément être le nom réel du compte."
 L["This realm"] = "Ce royaume"
-L[ [=[This will gradually improve the consistency of the searches,
-as more items are available in the item cache.
-
-]=] ] = [=[Ceci va graduellement améliorer la consistance des recherches,
-puisque plus d'objets seront disponibles dans le cache local.
-
-]=]
+L["This will gradually improve the consistency of the searches,\nas more items are available in the item cache.\n\n"] = "Ceci va graduellement améliorer la consistance des recherches,\npuisque plus d'objets seront disponibles dans le cache local.\n\n"
 L["Thomas Yance"] = true
 L["Thunderbrew Brewery"] = "Apprenti Tonnebière"
 L["Ticking Present"] = "Cadeau tic-taquant"
@@ -741,19 +677,9 @@ L["Warrior Set"] = "Set Guerrier"
 L["Weapons"] = "Armes"
 L["Weaponsmith"] = "Fabricant d'armes"
 L["Week starts on Monday"] = "Commencer la semaine le lundi"
-L[ [=[When |cFFFF0000disabled|cFFFFFFFF, all requests will be automatically rejected.
-
-]=] ] = [=[Quand elle est |cFFFF0000désactivée|cFFFFFFFF, toutes ces requêtes seront automatiquement rejetées.
-
-]=]
+L["When |cFFFF0000disabled|cFFFFFFFF, all requests will be automatically rejected.\n\n"] = "Quand elle est |cFFFF0000désactivée|cFFFFFFFF, toutes ces requêtes seront automatiquement rejetées.\n\n"
 L["When |cFFFF0000disabled|cFFFFFFFF, there will be no communication with the guild."] = "Quand elle est |cFFFF0000désactivée|cFFFFFFFF, il n'y aura aucune communication avec la guilde."
-L[ [=[When |cFFFF0000disabled|cFFFFFFFF, your confirmation will be
-required before sending any information.
-
-]=] ] = [=[Quand elle est |cFFFF0000désactivée|cFFFFFFFF, votre confirmation sera
-requise avant tout envoi d'information.
-
-]=]
+L["When |cFFFF0000disabled|cFFFFFFFF, your confirmation will be\nrequired before sending any information.\n\n"] = "Quand elle est |cFFFF0000désactivée|cFFFFFFFF, votre confirmation sera\nrequise avant tout envoi d'information.\n\n"
 L["Whitemend Wisdom"] = "Sagesse de la blanche guérison"
 L["Wild Draenish Armor"] = "Armure draenique sauvage"
 L["Wild Steelbloom"] = "Aciérite sauvage"
@@ -771,14 +697,8 @@ L["WoW Collector Edition"] = "WoW Edition Collector"
 L["Wrathbringer Laz-tarash"] = "Porte-courroux Laz-tarash"
 L["Wrath of Spellfire"] = "Habit du feu-sorcier"
 L["Yor (Heroic Summon)"] = "Yor (Invocation Héroïque)"
-L[ [=[You have received an account sharing request
-from %s%s|r, accept it?]=] ] = [=[%s%s|r vous a envoyé une demande de partage de compte
-Accepter?]=]
-L[ [=[Your confirmation will still be required any time someone requests your information.
-
-]=] ] = [=[Votre confirmation sera toujours requise à  chaque fois que vous recevrez une demande de partage.
-
-]=]
+L["You have received an account sharing request\nfrom %s%s|r, accept it?"] = "%s%s|r vous a envoyé une demande de partage de compte\nAccepter?"
+L["Your confirmation will still be required any time someone requests your information.\n\n"] = "Votre confirmation sera toujours requise à  chaque fois que vous recevrez une demande de partage.\n\n"
 L["Zelemar the Wrathful"] = "Zelemar le Courroucé"
 L["Zone"] = true
 

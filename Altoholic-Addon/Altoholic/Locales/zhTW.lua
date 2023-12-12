@@ -65,11 +65,7 @@ L["Battlecast Garb"] = "戰放裝束"
 L["BC Collector Edition (Europe)"] = "燃燒的遠征收藏版(歐洲版)"
 L["Beasts Deck"] = "野獸套卡"
 L["Beast Training"] = "野獸訓練"
-L[ [=[Be informed when a guildmate sends a mail to one of my alts.
-
-Mail content is directly visible without having to reconnect the character]=] ] = [=[當公會成員發送了一封郵件給我的一個角色會發出通知.
-
-郵件內容是直接可見而不必重新登錄該角色]=]
+L["Be informed when a guildmate sends a mail to one of my alts.\n\nMail content is directly visible without having to reconnect the character"] = "當公會成員發送了一封郵件給我的一個角色會發出通知.\n\n郵件內容是直接可見而不必重新登錄該角色"
 L["Bids %s(%d)"] = "競標 %s(%d)"
 L["Black Dragon Mail"] = "黑龍鎖甲"
 L["Black Lotus"] = "黑蓮花"
@@ -92,9 +88,7 @@ L["Blue Dragon Mail"] = "藍龍鎖甲"
 L["Books"] = "書籍"
 L["Booty Run"] = "藏寶競技"
 L["Both factions"] = "這兩個陣營聲望"
-L[ [=[Both parties must enable account sharing
-before using this feature (see options)]=] ] = [=[雙方都必須啟用帳戶共享
-來使用此功能 (請參考選項)]=]
+L["Both parties must enable account sharing\nbefore using this feature (see options)"] = "雙方都必須啟用帳戶共享\n來使用此功能 (請參考選項)"
 L["Box of Chocolates"] = "巧克力盒"
 L["Brewfest"] = "啤酒節"
 L["Briarthorn"] = "石南草"
@@ -110,33 +104,10 @@ L["Cannot link another account's tradeskill"] = "不能使用其它帳戶的技�
 L["Cannot link another realm's tradeskill"] = "不能使用其它伺服器的技能連結"
 L["Carefully Wrapped Present"] = "仔細包裝的禮物"
 L["|cFF00FF00Disable|r to avoid this risk"] = "|cFF00FF00關閉|r 這選項可避免這種情況發生"
-L[ [=[|cFFFFFFFFIf an item not in the local item cache
-is encountered while searching loot tables,
-Altoholic will attempt to query the server for 5 new items.
-
-]=] ] = [=[|cFFFFFFFF當物品不在本機的內存時
-當在搜索表裡找到,
-Altoholic 將試圖查詢服務器下5個新項目.
-
-]=]
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users
-to send you account sharing requests.
-]=] ] = [=[|cFFFFFFFF當 |cFF00FF00啟用|cFFFFFFFF時, 這選項會讓共它Altoholic用家
-]=]
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users
-to update their guild bank information with yours automatically.
-
-]=] ] = [=[|cFFFFFFFF當 |cFF00FF00啟用|cFFFFFFFF時, 此選項將允許其他Altoholic用戶
-與你的公會金庫資料作自動更新.
-
-]=]
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow your guildmates
-to see your alts and their professions.
-
-]=] ] = [=[|cFFFFFFFF當 |cFF00FF00啟用|cFFFFFFFF時, 這選項會讓你公會的會友
-看見你的分身和其專業技能.
-
-]=]
+L["|cFFFFFFFFIf an item not in the local item cache\nis encountered while searching loot tables,\nAltoholic will attempt to query the server for 5 new items.\n\n"] = "|cFFFFFFFF當物品不在本機的內存時\n當在搜索表裡找到,\nAltoholic 將試圖查詢服務器下5個新項目.\n\n"
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users\nto send you account sharing requests.\n"] = "|cFFFFFFFF當 |cFF00FF00啟用|cFFFFFFFF時, 這選項會讓共它Altoholic用家\n"
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users\nto update their guild bank information with yours automatically.\n\n"] = "|cFFFFFFFF當 |cFF00FF00啟用|cFFFFFFFF時, 此選項將允許其他Altoholic用戶\n與你的公會金庫資料作自動更新.\n\n"
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow your guildmates\nto see your alts and their professions.\n\n"] = "|cFFFFFFFF當 |cFF00FF00啟用|cFFFFFFFF時, 這選項會讓你公會的會友\n看見你的分身和其專業技能.\n\n"
 L["Character"] = "角色"
 L["Characters"] = "角色"
 L["Character %s received !"] = "角色%s已接收!"
@@ -159,16 +130,8 @@ L["Clear all entries"] = "清除所有的項目"
 L["Clear goblin AH entries"] = "清除中立拍賣場的項目"
 L["Clear your faction's entries"] = "清除現有陣營的項目"
 L["Click a character's AiL to see its equipment"] = "點擊角色的 AiL 來查看他的裝備"
-L[ [=[Clicking this button will update
-your local %s%s|r bank tab
-based on %s%s's|r data]=] ] = [=[點擊此按鈕將更新
-你本服的%s%s|r 公會金庫分頁
-基於 %s%s's|r 的資料]=]
-L[ [=[Click this button to ask a player
-to share his entire Altoholic Database
-and add it to your own]=] ] = [=[按一下這個按鈕來詢問玩家
-要求分享Altoholic的數據庫
-並將其添加到您自己數據庫內]=]
+L["Clicking this button will update\nyour local %s%s|r bank tab\nbased on %s%s's|r data"] = "點擊此按鈕將更新\n你本服的%s%s|r 公會金庫分頁\n基於 %s%s's|r 的資料"
+L["Click this button to ask a player\nto share his entire Altoholic Database\nand add it to your own"] = "按一下這個按鈕來詢問玩家\n要求分享Altoholic的數據庫\n並將其添加到您自己數據庫內"
 L["Cloaks"] = "披風"
 L["Cloth Set"] = "布甲套裝"
 L["Conspicuous Urn"] = "顯眼的石罐"
@@ -221,9 +184,7 @@ L["Enchanted Adamantite Armor"] = "附魔堅鋼護甲"
 L["Enchants"] = "公式"
 L["Engineering (Lv 60)"] = "工程學 (Lv 60)"
 L["Engineering (Lv 70)"] = "工程學 (Lv 70)"
-L[ [=[Enter an account name that will be
-used for |cFF00FF00display|r purposes only.]=] ] = [=[輸入帳戶名稱
-用作|cFF00FF00識別而已|r .]=]
+L["Enter an account name that will be\nused for |cFF00FF00display|r purposes only."] = "輸入帳戶名稱\n用作|cFF00FF00識別而已|r ."
 L["Epic Rewards"] = "史詩獎勵"
 L["Equipment"] = "裝備"
 L["Equipment Slot"] = "設備格"
@@ -546,14 +507,8 @@ L["search"] = "搜索"
 L["Search Containers"] = "搜索容器"
 L["Search in bags"] = "在背包中搜索"
 L["Secondary Skills"] = "次要技能"
-L[ [=[Security hint: disable this if you have officer rights
-on guild bank tabs that may not be viewed by everyone,
-and authorize requests manually]=] ] = [=[安全提示：如果您有公會理事的權利請關閉
-有查看限制的公會金庫分頁來防止被任何人觀看,
-如需要同步時請用手動受權.]=]
-L[ [=[Security hint: Only enable this when you actually need to transfer data,
-disable otherwise]=] ] = [=[安全性提示: 只有當您需要實際的數據傳輸時才啟用,
-反之請關閉它]=]
+L["Security hint: disable this if you have officer rights\non guild bank tabs that may not be viewed by everyone,\nand authorize requests manually"] = "安全提示：如果您有公會理事的權利請關閉\n有查看限制的公會金庫分頁來防止被任何人觀看,\n如需要同步時請用手動受權."
+L["Security hint: Only enable this when you actually need to transfer data,\ndisable otherwise"] = "安全性提示: 只有當您需要實際的數據傳輸時才啟用,\n反之請關閉它"
 L["Send account sharing request to:"] = "發送帳戶共享資料的要求:"
 L["Sending account sharing request to %s"] = "向%s發送帳戶共享資料的要求"
 L["Sending character %s (%d of %d)"] = "發送角色資料 %s (%d 之 %d)"
@@ -622,9 +577,7 @@ L["Spellfire"] = "魔法布專精"
 L["Spellstrike Infusion"] = "法擊套裝"
 L["Spirit Towers (Terrokar)"] = "靈魂哨塔(泰羅卡森林,白骨荒野)"
 L["%s|r has received a mail from %s"] = "%s|r 已收到的郵件, 寄件者: %s"
-L[ [=[%s%s|r has requested the bank tab %s%s|r
-Send this information ?]=] ] = [=[%s%s|r 要求公會金庫分頁 %s%s|r
-要傳送這項資料嗎 ?]=]
+L["%s%s|r has requested the bank tab %s%s|r\nSend this information ?"] = "%s%s|r 要求公會金庫分頁 %s%s|r\n要傳送這項資料嗎 ?"
 L["%s starts in %d minutes (%s on %s)"] = "%s 在 %d 分鐘后開始 (%s 之 %s)"
 L["Started"] = "已啟動"
 L["Stasis Chambers"] = "貝許爾的靜止密室"
@@ -639,9 +592,7 @@ L["Summary"] = "摘要"
 L["Summoner's Tomb"] = "召喚者之墓"
 L["Sungrass"] = "太陽草"
 L["Superior Rewards"] = "精良獎勵"
-L[ [=[%sWarning:|r if you accept, %sALL|r information known
-by Altoholic will be sent to %s%s|r (bags, money, etc..)]=] ] = [=[%s警告:|r 如接受, %s所有|r 已知的資料
-會被 Altoholic 傳送給 %s%s|r (背包, 金錢, 等等..)]=]
+L["%sWarning:|r if you accept, %sALL|r information known\nby Altoholic will be sent to %s%s|r (bags, money, etc..)"] = "%s警告:|r 如接受, %s所有|r 已知的資料\n會被 Altoholic 傳送給 %s%s|r (背包, 金錢, 等等..)"
 L["%sWarning:|r make sure this user may view this information before accepting"] = "%s警告:|r 請確定此用戶可以查看分頁的資料才接受"
 L["Swiftthistle"] = "雨燕草"
 L["%s will be ready in %d minutes (%s on %s)"] = "%s 在 %d 分鐘后準備好 (%s 之 %s)"
@@ -661,13 +612,7 @@ L["The Duke of Fathoms (Water)"] = "深淵公爵 (水)"
 L["The Duke of Shards (Earth)"] = "碎石公爵 (土)"
 L["The Duke of Zephyrs (Wind)"] = "微風公爵 (風)"
 L["Theldren"] = "瑟爾倫"
-L[ [=[There is a risk of disconnection if the queried item
-is a loot from a high level dungeon.
-
-]=] ] = [=[如查詢的物品是一件非常高級的副本掉落
-極有可能導至斷線.
-
-]=]
+L["There is a risk of disconnection if the queried item\nis a loot from a high level dungeon.\n\n"] = "如查詢的物品是一件非常高級的副本掉落\n極有可能導至斷線.\n\n"
 L["The Unyielding"] = "不屈套裝"
 L["The Vault"] = "黑色寶庫"
 L["Thick Draenic Armor"] = "厚德萊尼護甲"
@@ -675,17 +620,9 @@ L["This account"] = "這個帳號"
 L["This character"] = "這角色"
 L["This faction"] = "這陣營聲望"
 L["This field |cFF00FF00cannot|r be left empty."] = "這欄 |cFF00FF00不能|r 留空."
-L[ [=[This name can be anything you like,
-it does |cFF00FF00NOT|r have to be the real account name.]=] ] = [=[這個名稱可以隨你歡喜,
-並 |cFF00FF00不需要|r 是真實的帳戶名稱.]=]
+L["This name can be anything you like,\nit does |cFF00FF00NOT|r have to be the real account name."] = "這個名稱可以隨你歡喜,\n並 |cFF00FF00不需要|r 是真實的帳戶名稱."
 L["This realm"] = "只搜索這伺服器"
-L[ [=[This will gradually improve the consistency of the searches,
-as more items are available in the item cache.
-
-]=] ] = [=[隨著越來越多的項目緩存在本機,
-這將逐步改善搜查的效率.
-
-]=]
+L["This will gradually improve the consistency of the searches,\nas more items are available in the item cache.\n\n"] = "隨著越來越多的項目緩存在本機,\n這將逐步改善搜查的效率.\n\n"
 L["Thomas Yance"] = "湯瑪斯·陽斯"
 L["Thunderbrew Brewery"] = "雷霆啤酒釀造廠"
 L["Ticking Present"] = "滴答作響的禮物"
@@ -738,19 +675,9 @@ L["Warrior Set"] = "戰士套裝"
 L["Weapons"] = "武器"
 L["Weaponsmith"] = "武器大師"
 L["Week starts on Monday"] = "每周從周一開始"
-L[ [=[When |cFFFF0000disabled|cFFFFFFFF, all requests will be automatically rejected.
-
-]=] ] = [=[當 |cFFFF0000關閉|cFFFFFFFF時, 所有帳戶資料要求會被拒.
-
-]=]
+L["When |cFFFF0000disabled|cFFFFFFFF, all requests will be automatically rejected.\n\n"] = "當 |cFFFF0000關閉|cFFFFFFFF時, 所有帳戶資料要求會被拒.\n\n"
 L["When |cFFFF0000disabled|cFFFFFFFF, there will be no communication with the guild."] = "當 |cFFFF0000關閉|cFFFFFFFF時, 將不會有任何公會聯系."
-L[ [=[When |cFFFF0000disabled|cFFFFFFFF, your confirmation will be
-required before sending any information.
-
-]=] ] = [=[當 |cFFFF0000關閉|cFFFFFFFF時, 發送任何信息
-之前將需要您的確認.
-
-]=]
+L["When |cFFFF0000disabled|cFFFFFFFF, your confirmation will be\nrequired before sending any information.\n\n"] = "當 |cFFFF0000關閉|cFFFFFFFF時, 發送任何信息\n之前將需要您的確認.\n\n"
 L["Whitemend Wisdom"] = "白癒智慧"
 L["Wild Draenish Armor"] = "狂野德萊尼護甲"
 L["Wild Steelbloom"] = "野鋼花"
@@ -768,14 +695,8 @@ L["WoW Collector Edition"] = "魔獸世界收藏版"
 L["Wrathbringer Laz-tarash"] = "憤怒使者拉茲泰拉西"
 L["Wrath of Spellfire"] = "魔焰之怒"
 L["Yor (Heroic Summon)"] = "約兒 (英雄模式召喚)"
-L[ [=[You have received an account sharing request
-from %s%s|r, accept it?]=] ] = [=[你收到帳戶共享資料的要求
-要求者 %s%s|r, 接受嗎?]=]
-L[ [=[Your confirmation will still be required any time someone requests your information.
-
-]=] ] = [=[可向你發送帳戶資料要求.
-
-]=]
+L["You have received an account sharing request\nfrom %s%s|r, accept it?"] = "你收到帳戶共享資料的要求\n要求者 %s%s|r, 接受嗎?"
+L["Your confirmation will still be required any time someone requests your information.\n\n"] = "可向你發送帳戶資料要求.\n\n"
 L["Zelemar the Wrathful"] = "憤怒者塞雷瑪爾"
 L["Zone"] = "地區"
 

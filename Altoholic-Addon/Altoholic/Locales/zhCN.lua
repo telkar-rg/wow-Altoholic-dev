@@ -65,11 +65,7 @@ L["Battlecast Garb"] = "战斗施法套装"
 L["BC Collector Edition (Europe)"] = "燃烧的远征收藏版(欧洲版)"
 L["Beasts Deck"] = "野兽套牌"
 L["Beast Training"] = "野兽训练"
-L[ [=[Be informed when a guildmate sends a mail to one of my alts.
-
-Mail content is directly visible without having to reconnect the character]=] ] = [=[通知我如果有工会成员发送邮件给小号.
-
-邮件内容直接可视而不必联系该角色]=]
+L["Be informed when a guildmate sends a mail to one of my alts.\n\nMail content is directly visible without having to reconnect the character"] = "通知我如果有工会成员发送邮件给小号.\n\n邮件内容直接可视而不必联系该角色"
 L["Bids %s(%d)"] = "一口价 %s(%d)"
 L["Black Dragon Mail"] = "黑龙锁甲"
 L["Black Lotus"] = "黑莲花"
@@ -92,9 +88,7 @@ L["Blue Dragon Mail"] = "蓝龙锁甲"
 L["Books"] = "书籍"
 L["Booty Run"] = "宝箱争夺战"
 L["Both factions"] = "双方阵营"
-L[ [=[Both parties must enable account sharing
-before using this feature (see options)]=] ] = [=[双方都必须启用账户共享
-来使用此功能 (参考选项)]=]
+L["Both parties must enable account sharing\nbefore using this feature (see options)"] = "双方都必须启用账户共享\n来使用此功能 (参考选项)"
 L["Box of Chocolates"] = "一盒巧克力"
 L["Brewfest"] = "美酒节"
 L["Briarthorn"] = "石南草"
@@ -110,35 +104,10 @@ L["Cannot link another account's tradeskill"] = "不能使用其它帐户的专�
 L["Cannot link another realm's tradeskill"] = "不能使用其它服务器的专业技能连结"
 L["Carefully Wrapped Present"] = "精心包裹的礼物"
 L["|cFF00FF00Disable|r to avoid this risk"] = "|cFF00FF00禁用|r以防止发生这类现象。"
-L[ [=[|cFFFFFFFFIf an item not in the local item cache
-is encountered while searching loot tables,
-Altoholic will attempt to query the server for 5 new items.
-
-]=] ] = [=[|cFFFFFFFF如果一个不在本地缓存中物品
-被在搜索物品时被搜索到，
-Altoholic将会尝试以5个每次的频率向服务器查询。
-
-]=]
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users
-to send you account sharing requests.
-]=] ] = [=[|cFFFFFFFF当 |cFF00FF00启用|cFFFFFFFF时, 这选项允许其他Altoholic用户
-向你发送帐户共享请求.
-
-]=]
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users
-to update their guild bank information with yours automatically.
-
-]=] ] = [=[|cFFFFFFFF当 |cFF00FF00启用|cFFFFFFFF时, 此选项将允许其他Altoholic用户
-与你的公会仓库资料作自动更新.
-
-]=]
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow your guildmates
-to see your alts and their professions.
-
-]=] ] = [=[|cFFFFFFFF当 |cFF00FF00启用|cFFFFFFFF时, 这选项会让你公会的公会成员
-看见你的小号和其专业技能.
-
-]=]
+L["|cFFFFFFFFIf an item not in the local item cache\nis encountered while searching loot tables,\nAltoholic will attempt to query the server for 5 new items.\n\n"] = "|cFFFFFFFF如果一个不在本地缓存中物品\n被在搜索物品时被搜索到，\nAltoholic将会尝试以5个每次的频率向服务器查询。\n\n"
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users\nto send you account sharing requests.\n"] = "|cFFFFFFFF当 |cFF00FF00启用|cFFFFFFFF时, 这选项允许其他Altoholic用户\n向你发送帐户共享请求.\n\n"
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users\nto update their guild bank information with yours automatically.\n\n"] = "|cFFFFFFFF当 |cFF00FF00启用|cFFFFFFFF时, 此选项将允许其他Altoholic用户\n与你的公会仓库资料作自动更新.\n\n"
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow your guildmates\nto see your alts and their professions.\n\n"] = "|cFFFFFFFF当 |cFF00FF00启用|cFFFFFFFF时, 这选项会让你公会的公会成员\n看见你的小号和其专业技能.\n\n"
 L["Character"] = "人物"
 L["Characters"] = "人物"
 L["Character %s received !"] = "角色%s已接收!"
@@ -160,16 +129,8 @@ L["Clear all entries"] = "清理所有拍卖行的相关信息"
 L["Clear goblin AH entries"] = "清理地精拍卖行的相关信息"
 L["Clear your faction's entries"] = "清理你阵营的拍卖行的相关信息"
 L["Click a character's AiL to see its equipment"] = "点击角色的 AiL 来查看他的装备"
-L[ [=[Clicking this button will update
-your local %s%s|r bank tab
-based on %s%s's|r data]=] ] = [=[点击此按钮将更新
-你本服的%s%s|r 公会仓库分页
-基于 %s%s's|r 的资料]=]
-L[ [=[Click this button to ask a player
-to share his entire Altoholic Database
-and add it to your own]=] ] = [=[点击此按钮来询问玩家
-是否共享整个Altoholic数据库
-并将其添加到自己的数据库]=]
+L["Clicking this button will update\nyour local %s%s|r bank tab\nbased on %s%s's|r data"] = "点击此按钮将更新\n你本服的%s%s|r 公会仓库分页\n基于 %s%s's|r 的资料"
+L["Click this button to ask a player\nto share his entire Altoholic Database\nand add it to your own"] = "点击此按钮来询问玩家\n是否共享整个Altoholic数据库\n并将其添加到自己的数据库"
 L["Cloaks"] = "披风"
 L["Cloth Set"] = "布甲套装"
 L["Conspicuous Urn"] = "明显的墓碑"
@@ -221,9 +182,7 @@ L["Enchanted Adamantite Armor"] = "魔化精金套装"
 L["Enchants"] = "附魔"
 L["Engineering (Lv 60)"] = "工程学(60级)"
 L["Engineering (Lv 70)"] = "工程学(70级)"
-L[ [=[Enter an account name that will be
-used for |cFF00FF00display|r purposes only.]=] ] = [=[输入一个账户名称
-仅用作 |cFF00FF00显示|r .]=]
+L["Enter an account name that will be\nused for |cFF00FF00display|r purposes only."] = "输入一个账户名称\n仅用作 |cFF00FF00显示|r ."
 L["Epic Rewards"] = "史诗奖励"
 L["Equipment"] = "装备"
 L["Equipment Slot"] = "装备位置"
@@ -546,14 +505,8 @@ L["search"] = "搜索"
 L["Search Containers"] = "搜索容器"
 L["Search in bags"] = "在背包中搜索"
 L["Secondary Skills"] = "辅助技能"
-L[ [=[Security hint: disable this if you have officer rights
-on guild bank tabs that may not be viewed by everyone,
-and authorize requests manually]=] ] = [=[安全提示：如果您有公会管理的权利请关闭
-有查看限制的公会金库分页来防止被任何人观看,
-如需要同步时请用手动授权.]=]
-L[ [=[Security hint: Only enable this when you actually need to transfer data,
-disable otherwise]=] ] = [=[安全性提示: 只有当您需要实际的数据传输时才启用,
-反之请关闭它]=]
+L["Security hint: disable this if you have officer rights\non guild bank tabs that may not be viewed by everyone,\nand authorize requests manually"] = "安全提示：如果您有公会管理的权利请关闭\n有查看限制的公会金库分页来防止被任何人观看,\n如需要同步时请用手动授权."
+L["Security hint: Only enable this when you actually need to transfer data,\ndisable otherwise"] = "安全性提示: 只有当您需要实际的数据传输时才启用,\n反之请关闭它"
 L["Send account sharing request to:"] = "发送账户共享请求到:"
 L["Sending account sharing request to %s"] = "向%s发送帐户共享的请求"
 L["Sending character %s (%d of %d)"] = "发送角色资料 %s (%d 之 %d)"
@@ -619,9 +572,7 @@ L["Spellfire"] = "魔焰"
 L["Spellstrike Infusion"] = "法术打击"
 L["Spirit Towers (Terrokar)"] = "灵魂之塔(泰罗卡森林,白骨荒野)"
 L["%s|r has received a mail from %s"] = "%s|r 已收到%s的邮件"
-L[ [=[%s%s|r has requested the bank tab %s%s|r
-Send this information ?]=] ] = [=[%s%s|r 要求公会仓库分页 %s%s|r
-要传送这项资料吗 ?]=]
+L["%s%s|r has requested the bank tab %s%s|r\nSend this information ?"] = "%s%s|r 要求公会仓库分页 %s%s|r\n要传送这项资料吗 ?"
 L["%s starts in %d minutes (%s on %s)"] = "%s 在 %d 分钟后开始 (%s 之 %s)"
 L["Started"] = "已启动"
 L["Stasis Chambers"] = "阿尔法静止间"
@@ -636,9 +587,7 @@ L["Summary"] = "概要"
 L["Summoner's Tomb"] = "召唤者之墓"
 L["Sungrass"] = "太阳草"
 L["Superior Rewards"] = "精良奖励"
-L[ [=[%sWarning:|r if you accept, %sALL|r information known
-by Altoholic will be sent to %s%s|r (bags, money, etc..)]=] ] = [=[%s警告:|r 如接受, %s所有|r 已知的资料
-会被 Altoholic 传送给 %s%s|r (背包, 金钱, 等等..)]=]
+L["%sWarning:|r if you accept, %sALL|r information known\nby Altoholic will be sent to %s%s|r (bags, money, etc..)"] = "%s警告:|r 如接受, %s所有|r 已知的资料\n会被 Altoholic 传送给 %s%s|r (背包, 金钱, 等等..)"
 L["%sWarning:|r make sure this user may view this information before accepting"] = "%s警告:|r 请确定此用户可以查看分页的资料才接受"
 L["Swiftthistle"] = "雨燕草"
 L["%s will be ready in %d minutes (%s on %s)"] = "%s 在 %d 分钟后准备好 (%s on %s)"
@@ -657,30 +606,16 @@ L["The Duke of Fathoms (Water)"] = "深渊公爵(水)"
 L["The Duke of Shards (Earth)"] = "碎石公爵(地)"
 L["The Duke of Zephyrs (Wind)"] = "微风公爵(风)"
 L["Theldren"] = "塞尔德林"
-L[ [=[There is a risk of disconnection if the queried item
-is a loot from a high level dungeon.
-
-]=] ] = [=[当然，向服务器查询物品时有掉线的风险，
-特别是那些没有被完全推倒的首领！
-
-]=]
+L["There is a risk of disconnection if the queried item\nis a loot from a high level dungeon.\n\n"] = "当然，向服务器查询物品时有掉线的风险，\n特别是那些没有被完全推倒的首领！\n\n"
 L["The Unyielding"] = "不屈的力量"
 L["The Vault"] = "宝窟"
 L["Thick Draenic Armor"] = "厚重德莱尼套装"
 L["This character"] = "此角色"
 L["This faction"] = "此阵营"
 L["This field |cFF00FF00cannot|r be left empty."] = "这栏 |cFF00FF00不能|r be 留空."
-L[ [=[This name can be anything you like,
-it does |cFF00FF00NOT|r have to be the real account name.]=] ] = [=[可任意名称,
-并 |cFF00FF00不需要|r 是真实的账户名称.]=]
+L["This name can be anything you like,\nit does |cFF00FF00NOT|r have to be the real account name."] = "可任意名称,\n并 |cFF00FF00不需要|r 是真实的账户名称."
 L["This realm"] = "仅搜索该服务器"
-L[ [=[This will gradually improve the consistency of the searches,
-as more items are available in the item cache.
-
-]=] ] = [=[这将会逐渐的改进搜索的效率，
-因为越来越多的物品将被保存到物品缓存中。
-
-]=]
+L["This will gradually improve the consistency of the searches,\nas more items are available in the item cache.\n\n"] = "这将会逐渐的改进搜索的效率，\n因为越来越多的物品将被保存到物品缓存中。\n\n"
 L["Thomas Yance"] = "托马斯·杨斯"
 L["Thunderbrew Brewery"] = "雷酒节日酒桶"
 L["Ticking Present"] = "条纹礼物盒"
@@ -733,19 +668,9 @@ L["Warrior Set"] = "战士套装"
 L["Weapons"] = "武器"
 L["Weaponsmith"] = "武器锻造"
 L["Week starts on Monday"] = "每周从周一开始"
-L[ [=[When |cFFFF0000disabled|cFFFFFFFF, all requests will be automatically rejected.
-
-]=] ] = [=[当 |cFFFF0000关闭|cFFFFFFFF时, 所有帐户共享请求会被拒.
-
-]=]
+L["When |cFFFF0000disabled|cFFFFFFFF, all requests will be automatically rejected.\n\n"] = "当 |cFFFF0000关闭|cFFFFFFFF时, 所有帐户共享请求会被拒.\n\n"
 L["When |cFFFF0000disabled|cFFFFFFFF, there will be no communication with the guild."] = "当 |cFFFF0000关闭|cFFFFFFFF时, 将不会有任何公会联系."
-L[ [=[When |cFFFF0000disabled|cFFFFFFFF, your confirmation will be
-required before sending any information.
-
-]=] ] = [=[当 |cFFFF0000关闭|cFFFFFFFF时, 发送任何信息
-之前将需要您的确认.
-
-]=]
+L["When |cFFFF0000disabled|cFFFFFFFF, your confirmation will be\nrequired before sending any information.\n\n"] = "当 |cFFFF0000关闭|cFFFFFFFF时, 发送任何信息\n之前将需要您的确认.\n\n"
 L["Whitemend Wisdom"] = "白色治愈"
 L["Wild Draenish Armor"] = "野性德莱尼套装"
 L["Wild Steelbloom"] = "野钢花"
@@ -761,14 +686,8 @@ L["WoW Collector Edition"] = "魔兽世界收藏版"
 L["Wrathbringer Laz-tarash"] = "天罚使者拉塔莱什"
 L["Wrath of Spellfire"] = "魔焰之怒"
 L["Yor (Heroic Summon)"] = "尤尔(英雄模式召唤)"
-L[ [=[You have received an account sharing request
-from %s%s|r, accept it?]=] ] = [=[你收到帐户共享请求
-请求者 %s%s|r, 接受吗?]=]
-L[ [=[Your confirmation will still be required any time someone requests your information.
-
-]=] ] = [=[任何时候玩家请求你信息都必须得到你的确认.
-
-]=]
+L["You have received an account sharing request\nfrom %s%s|r, accept it?"] = "你收到帐户共享请求\n请求者 %s%s|r, 接受吗?"
+L["Your confirmation will still be required any time someone requests your information.\n\n"] = "任何时候玩家请求你信息都必须得到你的确认.\n\n"
 L["Zelemar the Wrathful"] = "愤怒者塞雷玛尔"
 L["Zone"] = "地区"
 

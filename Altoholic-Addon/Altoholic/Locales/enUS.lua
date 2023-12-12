@@ -69,9 +69,7 @@ L["Battlecast Garb"] = true
 L["BC Collector Edition (Europe)"] = true
 L["Beasts Deck"] = true
 L["Beast Training"] = true
-L[ [=[Be informed when a guildmate sends a mail to one of my alts.
-
-Mail content is directly visible without having to reconnect the character]=] ] = true
+L["Be informed when a guildmate sends a mail to one of my alts.\n\nMail content is directly visible without having to reconnect the character"] = true
 L["Bids %s(%d)"] = true
 L["Black Dragon Mail"] = true
 L["Black Lotus"] = true
@@ -94,8 +92,7 @@ L["Blue Dragon Mail"] = true
 L["Books"] = true
 L["Booty Run"] = true
 L["Both factions"] = true
-L[ [=[Both parties must enable account sharing
-before using this feature (see options)]=] ] = true
+L["Both parties must enable account sharing\nbefore using this feature (see options)"] = true
 L["Box of Chocolates"] = true
 L["Brewfest"] = true
 L["Briarthorn"] = true
@@ -111,22 +108,10 @@ L["Cannot link another account's tradeskill"] = true
 L["Cannot link another realm's tradeskill"] = true
 L["Carefully Wrapped Present"] = true
 L["|cFF00FF00Disable|r to avoid this risk"] = true
-L[ [=[|cFFFFFFFFIf an item not in the local item cache
-is encountered while searching loot tables,
-Altoholic will attempt to query the server for 5 new items.
-
-]=] ] = true
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users
-to send you account sharing requests.
-]=] ] = true
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users
-to update their guild bank information with yours automatically.
-
-]=] ] = true
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow your guildmates
-to see your alts and their professions.
-
-]=] ] = true
+L["|cFFFFFFFFIf an item not in the local item cache\nis encountered while searching loot tables,\nAltoholic will attempt to query the server for 5 new items.\n\n"] = true
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users\nto send you account sharing requests.\n"] = true
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users\nto update their guild bank information with yours automatically.\n\n"] = true
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow your guildmates\nto see your alts and their professions.\n\n"] = true
 L["Character"] = true
 L["Characters"] = true
 L["Character %s received !"] = true
@@ -149,12 +134,8 @@ L["Clear all entries"] = true
 L["Clear goblin AH entries"] = true
 L["Clear your faction's entries"] = true
 L["Click a character's AiL to see its equipment"] = true
-L[ [=[Clicking this button will update
-your local %s%s|r bank tab
-based on %s%s's|r data]=] ] = true
-L[ [=[Click this button to ask a player
-to share his entire Altoholic Database
-and add it to your own]=] ] = true
+L["Clicking this button will update\nyour local %s%s|r bank tab\nbased on %s%s's|r data"] = true
+L["Click this button to ask a player\nto share his entire Altoholic Database\nand add it to your own"] = true
 L["Cloaks"] = true
 L["Cloth Set"] = true
 L["Conspicuous Urn"] = true
@@ -207,8 +188,7 @@ L["Enchanted Adamantite Armor"] = true
 L["Enchants"] = true
 L["Engineering (Lv 60)"] = true
 L["Engineering (Lv 70)"] = true
-L[ [=[Enter an account name that will be
-used for |cFF00FF00display|r purposes only.]=] ] = true
+L["Enter an account name that will be\nused for |cFF00FF00display|r purposes only."] = true
 L["Epic Rewards"] = true
 L["Equipment"] = true
 L["Equipment Slot"] = true
@@ -531,11 +511,8 @@ L["search"] = true
 L["Search Containers"] = true
 L["Search in bags"] = true
 L["Secondary Skills"] = true
-L[ [=[Security hint: disable this if you have officer rights
-on guild bank tabs that may not be viewed by everyone,
-and authorize requests manually]=] ] = true
-L[ [=[Security hint: Only enable this when you actually need to transfer data,
-disable otherwise]=] ] = true
+L["Security hint: disable this if you have officer rights\non guild bank tabs that may not be viewed by everyone,\nand authorize requests manually"] = true
+L["Security hint: Only enable this when you actually need to transfer data,\ndisable otherwise"] = true
 L["Send account sharing request to:"] = true
 L["Sending account sharing request to %s"] = true
 L["Sending character %s (%d of %d)"] = true
@@ -604,8 +581,7 @@ L["Spellfire"] = true
 L["Spellstrike Infusion"] = true
 L["Spirit Towers (Terrokar)"] = true
 L["%s|r has received a mail from %s"] = true
-L[ [=[%s%s|r has requested the bank tab %s%s|r
-Send this information ?]=] ] = true
+L["%s%s|r has requested the bank tab %s%s|r\nSend this information ?"] = true
 L["%s starts in %d minutes (%s on %s)"] = true
 L["Started"] = true
 L["Stasis Chambers"] = true
@@ -620,8 +596,7 @@ L["Summary"] = true
 L["Summoner's Tomb"] = true
 L["Sungrass"] = true
 L["Superior Rewards"] = true
-L[ [=[%sWarning:|r if you accept, %sALL|r information known
-by Altoholic will be sent to %s%s|r (bags, money, etc..)]=] ] = true
+L["%sWarning:|r if you accept, %sALL|r information known\nby Altoholic will be sent to %s%s|r (bags, money, etc..)"] = true
 L["%sWarning:|r make sure this user may view this information before accepting"] = true
 L["Swiftthistle"] = true
 L["%s will be ready in %d minutes (%s on %s)"] = true
@@ -641,10 +616,7 @@ L["The Duke of Fathoms (Water)"] = true
 L["The Duke of Shards (Earth)"] = true
 L["The Duke of Zephyrs (Wind)"] = true
 L["Theldren"] = true
-L[ [=[There is a risk of disconnection if the queried item
-is a loot from a high level dungeon.
-
-]=] ] = true
+L["There is a risk of disconnection if the queried item\nis a loot from a high level dungeon.\n\n"] = true
 L["The Unyielding"] = true
 L["The Vault"] = true
 L["Thick Draenic Armor"] = true
@@ -652,13 +624,9 @@ L["This account"] = true
 L["This character"] = true
 L["This faction"] = true
 L["This field |cFF00FF00cannot|r be left empty."] = true
-L[ [=[This name can be anything you like,
-it does |cFF00FF00NOT|r have to be the real account name.]=] ] = true
+L["This name can be anything you like,\nit does |cFF00FF00NOT|r have to be the real account name."] = true
 L["This realm"] = true
-L[ [=[This will gradually improve the consistency of the searches,
-as more items are available in the item cache.
-
-]=] ] = true
+L["This will gradually improve the consistency of the searches,\nas more items are available in the item cache.\n\n"] = true
 L["Thomas Yance"] = true
 L["Thunderbrew Brewery"] = true
 L["Ticking Present"] = true
@@ -711,14 +679,9 @@ L["Warrior Set"] = true
 L["Weapons"] = true
 L["Weaponsmith"] = true
 L["Week starts on Monday"] = true
-L[ [=[When |cFFFF0000disabled|cFFFFFFFF, all requests will be automatically rejected.
-
-]=] ] = true
+L["When |cFFFF0000disabled|cFFFFFFFF, all requests will be automatically rejected.\n\n"] = true
 L["When |cFFFF0000disabled|cFFFFFFFF, there will be no communication with the guild."] = true
-L[ [=[When |cFFFF0000disabled|cFFFFFFFF, your confirmation will be
-required before sending any information.
-
-]=] ] = true
+L["When |cFFFF0000disabled|cFFFFFFFF, your confirmation will be\nrequired before sending any information.\n\n"] = true
 L["Whitemend Wisdom"] = true
 L["Wild Draenish Armor"] = true
 L["Wild Steelbloom"] = true
@@ -736,11 +699,8 @@ L["WoW Collector Edition"] = true
 L["Wrathbringer Laz-tarash"] = true
 L["Wrath of Spellfire"] = true
 L["Yor (Heroic Summon)"] = true
-L[ [=[You have received an account sharing request
-from %s%s|r, accept it?]=] ] = true
-L[ [=[Your confirmation will still be required any time someone requests your information.
-
-]=] ] = true
+L["You have received an account sharing request\nfrom %s%s|r, accept it?"] = true
+L["Your confirmation will still be required any time someone requests your information.\n\n"] = true
 L["Zelemar the Wrathful"] = true
 L["Zone"] = true
 
