@@ -157,8 +157,8 @@ L["Clear your faction's entries"] = "Einträge der eigenen Fraktion löschen"
 L["Click a character's AiL to see its equipment"] = "Das AiL eines Charakters anklicken, um seine Ausrüstung anzusehen"
 L[ [=[Clicking this button will update
 your local %s%s|r bank tab
-based on %s%s's|r data]=] ] = [=[Durch das Anklicken dieser Schaltfläche,
-wird dein örtliches %s%s|r Bank-Tab,
+based on %s%s's|r data]=] ] = [=[Durch Klicken dieser Schaltfläche,
+wird dein aufgezeichnetes %s%s|r Bank-Fach,
 basierend auf %s%s's|r Daten, aktualisiert.]=]
 L[ [=[Click this button to ask a player
 to share his entire Altoholic Database
@@ -280,8 +280,8 @@ L["Grey"] = "Grau"
 L["Gromsblood"] = "Gromsblut"
 L["Guild Bank not visited yet (or not guilded)"] = "Gildenbank bisher nicht besucht (oder gildenlos)"
 L["Guild Bank Remote Update"] = "Indirekte Aktualisierung der Gildenbank"
-L["Guild Bank Tabs"] = "Gildenbank-Tabs"
-L["Guild bank tab %s successfully updated !"] = "Gildenbank-Tab %s erfolgreich aktualisiert!"
+L["Guild Bank Tabs"] = "Gildenbank-Fachs"
+L["Guild bank tab %s successfully updated !"] = "Gildenbank-Fach %s erfolgreich aktualisiert!"
 L["Guild Communication Enabled"] = "Gildenkommunikation ist aktiviert"
 L["Guild Members"] = "Gildenmitglieder"
 L["Guild Skills"] = "Fertigkeiten der Gilde"
@@ -620,7 +620,7 @@ L["Spellstrike Infusion"] = "Insignien des Zauberschlags"
 L["Spirit Towers (Terrokar)"] = "Geistertürme (Terrokar)"
 L["%s|r has received a mail from %s"] = "%s|r hat Post von %s erhalten"
 L[ [=[%s%s|r has requested the bank tab %s%s|r
-Send this information ?]=] ] = [=[%s%s|r hat das Bank-Tab %s%s|r angefordert.
+Send this information ?]=] ] = [=[%s%s|r hat das Bank-Fach %s%s|r angefordert.
 Diese Informationen senden?]=]
 L["%s starts in %d minutes (%s on %s)"] = "%s beginnt in %d Minuten (%s auf %s)"
 L["Started"] = "Begonnen"
