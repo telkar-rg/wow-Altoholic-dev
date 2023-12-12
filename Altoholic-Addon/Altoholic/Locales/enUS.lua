@@ -27,7 +27,7 @@ L["All cooldowns are up"] = true
 L["Alliance Forces"] = true
 L["All-in-one"] = true
 L["All realms"] = true
-L["Already known by "] = true
+L["Already known by "] = "Known"
 L["Altoholic:|r Usage = /altoholic search <item name>"] = true
 L["Ancient Lichen"] = true
 L["and above"] = true
@@ -160,7 +160,7 @@ L["Cloth Set"] = true
 L["Conspicuous Urn"] = true
 L["Containers"] = true
 L["Copper Vein"] = true
-L["Could be learned by "] = true
+L["Could be learned by "] = "Learnable"
 L["Crafted Weapons"] = true
 L["Crimson Templar (Fire)"] = true
 L["Currencies received !"] = true
@@ -723,7 +723,7 @@ L["Whitemend Wisdom"] = true
 L["Wild Draenish Armor"] = true
 L["Wild Steelbloom"] = true
 L["Wildvine"] = true
-L["Will be learnable by "] = true
+L["Will be learnable by "] = "Soon learnable"
 L["Will be %sdeleted|r in"] = true
 L["Will be %sreturned|r in"] = true
 L["Windhawk Armor"] = true
@@ -1450,3 +1450,22 @@ L["Zorbin Fandazzle"]           = true
 L["Zurai"]                      = true
 
 
+
+-- L["Cobalt Deposit"]							= 36909, -- Cobalt Ore
+-- L["Rich Cobalt Deposit"]						= 36909, -- Cobalt Ore
+-- L["Saronite Deposit"]							= 36912, -- Saronite Ore
+-- L["Rich Saronite Deposit"]					= 36912, -- Saronite Ore
+-- L["Titanium Vein"]								= 36910, -- Titanium Ore
+
+
+-- L["Fel Lotus"]					= 22794,
+-- L["Goldclover"]					= 36901,
+-- L["Adder's Tongue"]			= 36903,
+-- L["Tiger Lily"]					= 36904,
+-- L["Lichbloom"]					= 36905,
+-- L["Icethorn"]					= 36906,
+-- L["Talandra's Rose"]			= 36907,
+-- L["Frost Lotus"]				= 36908,
+-- L["Firethorn"]					= 39970,
+
+-- L["Knot Thimblejack's Cache"] = true 	-- Knot Thimblejack
