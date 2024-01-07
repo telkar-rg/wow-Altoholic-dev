@@ -65,15 +65,14 @@ L["Battlecast Garb"] = true
 L["BC Collector Edition (Europe)"] = "BC 컬렉터 에디션 (유럽)"
 L["Beasts Deck"] = true
 L["Beast Training"] = "야수 조련"
-L[ [=[Be informed when a guildmate sends a mail to one of my alts.
-
-Mail content is directly visible without having to reconnect the character]=] ] = true
+L["Be informed when a guildmate sends a mail to one of my alts.\n\nMail content is directly visible without having to reconnect the character"] = true
 L["Bids %s(%d)"] = "입찰 %s(%d)"
 L["Black Dragon Mail"] = true
 L["Black Lotus"] = true
 L["Blacksmithing (Lv 60)"] = "대장기술 (60 레벨)"
 L["Blacksmithing (Lv 70)"] = "대장기술 (70 레벨)"
 L["Blacksmithing Mail Sets"] = "대장기술 사슬 세트"
+L["Blacksmithing Plans"] = "대장기술 도면"
 L["Blacksmithing Plate Sets"] = "대장기술 판금 세트"
 L["Blade Edge Mountains"] = "칼날 산맥"
 L["Blessings Deck"] = true
@@ -90,8 +89,7 @@ L["Blue Dragon Mail"] = true
 L["Books"] = "책"
 L["Booty Run"] = true
 L["Both factions"] = "양쪽 평판"
-L[ [=[Both parties must enable account sharing
-before using this feature (see options)]=] ] = true
+L["Both parties must enable account sharing\nbefore using this feature (see options)"] = true
 L["Box of Chocolates"] = true
 L["Brewfest"] = true
 L["Briarthorn"] = "찔레가시"
@@ -107,22 +105,10 @@ L["Cannot link another account's tradeskill"] = "다른 계정의 전문/보조�
 L["Cannot link another realm's tradeskill"] = "다른 서버의 전문/보조기술을 링크할 수 없음"
 L["Carefully Wrapped Present"] = true
 L["|cFF00FF00Disable|r to avoid this risk"] = true
-L[ [=[|cFFFFFFFFIf an item not in the local item cache
-is encountered while searching loot tables,
-Altoholic will attempt to query the server for 5 new items.
-
-]=] ] = true
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users
-to send you account sharing requests.
-]=] ] = true
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users
-to update their guild bank information with yours automatically.
-
-]=] ] = true
-L[ [=[|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow your guildmates
-to see your alts and their professions.
-
-]=] ] = true
+L["|cFFFFFFFFIf an item not in the local item cache\nis encountered while searching loot tables,\nAltoholic will attempt to query the server for 5 new items.\n\n"] = true
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users\nto send you account sharing requests.\n"] = true
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow other Altoholic users\nto update their guild bank information with yours automatically.\n\n"] = true
+L["|cFFFFFFFFWhen |cFF00FF00enabled|cFFFFFFFF, this option will allow your guildmates\nto see your alts and their professions.\n\n"] = true
 L["Character"] = "캐릭터"
 L["Characters"] = "캐릭터"
 L["Character %s received !"] = "%s 캐릭터를 받았습니다 !"
@@ -144,14 +130,11 @@ L["Clear all entries"] = "모든 항목 삭제"
 L["Clear goblin AH entries"] = "고블린 경매장 품목 삭제"
 L["Clear your faction's entries"] = "평판 항목 삭제"
 L["Click a character's AiL to see its equipment"] = "장비를 보려면 캐릭터의 AiL을 클릭"
-L[ [=[Clicking this button will update
-your local %s%s|r bank tab
-based on %s%s's|r data]=] ] = true
-L[ [=[Click this button to ask a player
-to share his entire Altoholic Database
-and add it to your own]=] ] = true
+L["Clicking this button will update\nyour local %s%s|r bank tab\nbased on %s%s's|r data"] = true
+L["Click this button to ask a player\nto share his entire Altoholic Database\nand add it to your own"] = true
 L["Cloaks"] = "망토"
 L["Cloth Set"] = "천 세트"
+L["Coin of Ancestry"] = "선조의 주화" 	-- Lunar Festival
 L["Conspicuous Urn"] = true
 L["Containers"] = "보관함"
 L["Copper Vein"] = "동 광맥"
@@ -201,8 +184,7 @@ L["Enchanted Adamantite Armor"] = true
 L["Enchants"] = "마법부여"
 L["Engineering (Lv 60)"] = "기계공학 (60 레벨)"
 L["Engineering (Lv 70)"] = "기계공학 (70 레벨)"
-L[ [=[Enter an account name that will be
-used for |cFF00FF00display|r purposes only.]=] ] = true
+L["Enter an account name that will be\nused for |cFF00FF00display|r purposes only."] = true
 L["Epic Rewards"] = "에픽 보상"
 L["Equipment"] = "장비"
 L["Equipment Slot"] = "장비 칸"
@@ -228,7 +210,6 @@ L["Felweed"] = "지옥풀"
 L["Festive Gift"] = true
 L["Find Upgrade"] = true
 L["Firebloom"] = true
-L["Firebrand Pyromancer"] = "횃불부대 화염술사"
 L["Fire Resistance Gear"] = true
 L["Fireworks Pack"] = true
 L["First Prize"] = true
@@ -240,6 +221,7 @@ L["Flame Guard"] = true
 L["Food"] = "음식"
 L["Forgosh"] = true
 L["free"] = "여유"
+L["Frozen Orb"] = "얼어붙은 보주"
 L["Furies Deck"] = true
 L["Fury of the Nether"] = true
 L["Gaily Wrapped Present"] = true
@@ -329,6 +311,7 @@ L["Khorium Vein"] = "코륨 광맥"
 L["Khorium Ward"] = true
 L["Kingsblood"] = "왕꽃잎풀"
 L["Knot Thimblejack"] = "노트 팀블잭" 	-- Knot Thimblejack
+L["Knot Thimblejack's Cache"] = "노트 팀블잭의 은닉품"
 L["Krom Stoutarm Chest"] = true
 L["Lady Falther'ess"] = true
 L["Lake Wintergrasp"] = "겨울손아귀 호수"
@@ -367,6 +350,7 @@ L["Loots"] = "전리품"
 L["Loot tables"] = "전리품 표"
 L["Lord Ahune"] = true
 L["Lord Blackwood"] = true
+L["Loremaster of Northrend"] = "노스렌드의 현자"
 L["Love is in the air"] = true
 L["Lucky Red Envelope"] = true
 L["Lunacy Deck"] = true
@@ -407,7 +391,6 @@ L["Move to change the angle of the minimap icon"] = "미니맵 아이콘의 각�
 L["Move to change the radius of the minimap icon"] = "미니맵 아이콘의 거리를 바꿈"
 L["Muddy Churning Waters"] = true
 L["N/A"] = "해당 없음"
-L["Nascent Val'kyr"] = "발키르 지원자"
 L["Netherbloom"] = true
 L["Nethercite Deposit"] = true
 L["Netherdust Bush"] = true
@@ -430,6 +413,7 @@ L["No quest found for "] = "퀘스트를 찾을 수 없음"
 L["No reputations found"] = "평판을 찾을 수 없음"
 L["No rest XP"] = "휴식 경험치 없음"
 L[" not found!"] = "찾지 못 함!"
+L["Northrend Dungeonmaster"] = "노스렌드 던전 전문가"
 L["Not started"] = "시작 안 함"
 L["Number of players: %s"] = "사용자 수: %s"
 L["Offline Members"] = "오프라인 멤버"
@@ -525,11 +509,8 @@ L["search"] = "검색"
 L["Search Containers"] = "보관함 검색"
 L["Search in bags"] = "가방에서 검색"
 L["Secondary Skills"] = "보조기술"
-L[ [=[Security hint: disable this if you have officer rights
-on guild bank tabs that may not be viewed by everyone,
-and authorize requests manually]=] ] = true
-L[ [=[Security hint: Only enable this when you actually need to transfer data,
-disable otherwise]=] ] = true
+L["Security hint: disable this if you have officer rights\non guild bank tabs that may not be viewed by everyone,\nand authorize requests manually"] = true
+L["Security hint: Only enable this when you actually need to transfer data,\ndisable otherwise"] = true
 L["Send account sharing request to:"] = "계정 공유 요청을 보냄:"
 L["Sending account sharing request to %s"] = "%s에게 계정 공유 요청을 보내는 중"
 L["Sending character %s (%d of %d)"] = "%s 캐릭터를 보내는 중 (%d/%d)"
@@ -554,7 +535,6 @@ L["%s has disabled guild communication"] = "%s, 길드 대화 해제"
 L["%s has no auctions"] = "%s 경매물 없음"
 L["%s has no bids"] = "%s 입찰건 없음"
 L["%s has no mail"] = "%s 우편물 없음"
-L["Shen'dralar Provisioner"] = true
 L["Shift-Click to link this info"] = "이 정보를 링크하려면 쉬프트 클릭"
 L["Shift+Left click to link"] = "링크하려면 쉬프트 왼쪽 클릭"
 L["show"] = "보이기"
@@ -583,7 +563,8 @@ L["Skyguard Raid"] = true
 L["slots"] = "칸"
 L["Small Obsidian Chunk"] = true
 L["Small Thorium Vein"] = "작은 토륨 광맥"
-L["Smokywood Pastures Extra-Special Gift"] = true
+L["Smokywood Pastures Extra-Special Gift"] = "굴뚝나무 목장조합 특별 선물"
+L["Smokywood Pastures Special Gift"] = "굴뚝나무 목장조합 특별선물"
 L["Smokywood Pastures Vendor"] = true
 L["Socket"] = "소켓"
 L["Sort loots in descending order"] = true
@@ -596,8 +577,7 @@ L["Spellfire"] = true
 L["Spellstrike Infusion"] = true
 L["Spirit Towers (Terrokar)"] = true
 L["%s|r has received a mail from %s"] = "%s|r %s의 우편물을 받았음"
-L[ [=[%s%s|r has requested the bank tab %s%s|r
-Send this information ?]=] ] = true
+L["%s%s|r has requested the bank tab %s%s|r\nSend this information ?"] = true
 L["%s starts in %d minutes (%s on %s)"] = true
 L["Started"] = "시작됨"
 L["Stasis Chambers"] = true
@@ -612,8 +592,7 @@ L["Summary"] = "요약"
 L["Summoner's Tomb"] = true
 L["Sungrass"] = "태양풀"
 L["Superior Rewards"] = true
-L[ [=[%sWarning:|r if you accept, %sALL|r information known
-by Altoholic will be sent to %s%s|r (bags, money, etc..)]=] ] = true
+L["%sWarning:|r if you accept, %sALL|r information known\nby Altoholic will be sent to %s%s|r (bags, money, etc..)"] = true
 L["%sWarning:|r make sure this user may view this information before accepting"] = true
 L["Swiftthistle"] = true
 L["%s will be ready in %d minutes (%s on %s)"] = true
@@ -625,30 +604,22 @@ L["Tank"] = "탱커"
 L["T'chali's Voodoo Brewery"] = true
 L["Terocone"] = true
 L["Terokk"] = true
-L["Thaurissan Firewalker"] = "타우릿산 조사단원"
 L["The Darksoul"] = true
 L["The Duke of Cinders (Fire)"] = true
 L["The Duke of Fathoms (Water)"] = true
 L["The Duke of Shards (Earth)"] = true
 L["The Duke of Zephyrs (Wind)"] = true
 L["Theldren"] = true
-L[ [=[There is a risk of disconnection if the queried item
-is a loot from a high level dungeon.
-
-]=] ] = true
+L["There is a risk of disconnection if the queried item\nis a loot from a high level dungeon.\n\n"] = true
 L["The Unyielding"] = true
 L["The Vault"] = "금고"
 L["Thick Draenic Armor"] = true
 L["This character"] = "이 캐릭터"
 L["This faction"] = "이 평판"
 L["This field |cFF00FF00cannot|r be left empty."] = true
-L[ [=[This name can be anything you like,
-it does |cFF00FF00NOT|r have to be the real account name.]=] ] = true
+L["This name can be anything you like,\nit does |cFF00FF00NOT|r have to be the real account name."] = true
 L["This realm"] = "이 서버"
-L[ [=[This will gradually improve the consistency of the searches,
-as more items are available in the item cache.
-
-]=] ] = true
+L["This will gradually improve the consistency of the searches,\nas more items are available in the item cache.\n\n"] = true
 L["Thomas Yance"] = true
 L["Thunderbrew Brewery"] = true
 L["Ticking Present"] = true
@@ -675,7 +646,6 @@ L["Trinkets"] = "장신구"
 L["Troll Mini bosses"] = true
 L["Trophy of the Crusade"] = "십자군 기념물" 	-- currency
 L["Truesilver Deposit"] = "진은 광맥"
-L["Twilight Fire Guard"] = "황혼의망치단 화염경비병" 	-- Twilight Fire Guard
 L["Twin Spire Ruins"] = true
 L["Unknown"] = "알 수 없음"
 L["Unknown link, please relog this character"] = "알 수 없는 링크, 이 캐릭터를 다시 로긴해보세요."
@@ -701,16 +671,9 @@ L["Warrior Set"] = "전사 세트"
 L["Weapons"] = "무기"
 L["Weaponsmith"] = "무기제작"
 L["Week starts on Monday"] = "한 주 시작을 월요일부터"
-L[ [=[When |cFFFF0000disabled|cFFFFFFFF, all requests will be automatically rejected.
-
-]=] ] = [=[|cFFFF0000해제|cFFFFFFFF 시,
-자동으로 모든 요청을 거절합니다." ]=]
+L["When |cFFFF0000disabled|cFFFFFFFF, all requests will be automatically rejected.\n\n"] = "|cFFFF0000해제|cFFFFFFFF 시,\n자동으로 모든 요청을 거절합니다."
 L["When |cFFFF0000disabled|cFFFFFFFF, there will be no communication with the guild."] = "|cFFFF0000해제|cFFFFFFFF 시,  길드 대화하지 않습니다."
-L[ [=[When |cFFFF0000disabled|cFFFFFFFF, your confirmation will be
-required before sending any information.
-
-]=] ] = [=[|cFFFF0000해제|cFFFFFFFF 시,
- 정보를 보내기 전에 확인을 받습니다.]=]
+L["When |cFFFF0000disabled|cFFFFFFFF, your confirmation will be\nrequired before sending any information.\n\n"] = "|cFFFF0000해제|cFFFFFFFF 시,\n 정보를 보내기 전에 확인을 받습니다."
 L["Whitemend Wisdom"] = true
 L["Wild Draenish Armor"] = true
 L["Wild Steelbloom"] = "야생 철쭉"
@@ -718,6 +681,7 @@ L["Wildvine"] = true
 L["Will be learnable by "] = "추후 학습 가능"
 L["Windhawk Armor"] = true
 L["Wintersbite"] = true
+L["Winter Reveler"] = "겨울맞이 축제 구경꾼" -- Winter Veil
 L["Winter Veil Gift"] = true
 L[" with "] = true
 L["World Drops"] = "월드 드랍"
@@ -726,11 +690,8 @@ L["WoW Collector Edition"] = "WoW 컬렉터 에디션"
 L["Wrathbringer Laz-tarash"] = true
 L["Wrath of Spellfire"] = true
 L["Yor (Heroic Summon)"] = true
-L[ [=[You have received an account sharing request
-from %s%s|r, accept it?]=] ] = "%s%s|r의 계정 공유 요청을 승인하겠습니까?"
-L[ [=[Your confirmation will still be required any time someone requests your information.
-
-]=] ] = "당신의 정보 요구하는 모든 요청에 대해 승인 절차를 거치게 될 것입니다."
+L["You have received an account sharing request\nfrom %s%s|r, accept it?"] = "%s%s|r의 계정 공유 요청을 승인하겠습니까?"
+L["Your confirmation will still be required any time someone requests your information.\n\n"] = "당신의 정보 요구하는 모든 요청에 대해 승인 절차를 거치게 될 것입니다."
 L["Zelemar the Wrathful"] = true
 L["Zone"] = "지역"
 
@@ -901,6 +862,7 @@ L["Eiin"]                       = "아이인"
 L["Eldara Dawnrunner"]          = "엘다라 돈러너"
 L["Elynna"]                     = "엘리나"
 L["Emrul Riknussun"]            = "엠룰 리크너선"
+L["Enraged (Elemental) Spirit"] = "분노한 (요소의) 정령"
 L["Enraged Air Spirit"]         = "분노한 바람의 정령"
 L["Enraged Earth Spirit"]       = "분노한 대지의 정령"
 L["Enraged Fire Spirit"]        = "분노한 불의 정령"
@@ -1217,6 +1179,7 @@ L["Strashaz Myrmidon"]          = "스트라샤즈 미르미돈"
 L["Strashaz Serpent Guard"]     = "스트라샤즈 수호병"
 L["Strashaz Warrior"]           = "스트라샤즈 전사"
 L["Stuart Fleming"]             = "스튜어트 플레밍"
+L["Sumi"]                       = "수미"
 L["Sunfury Arcanist"]           = "성난태양 신비술사"
 L["Sunfury Arch Mage"]          = "성난태양 대마법사"
 L["Sunfury Archer"]             = "성난태양 궁수"
