@@ -148,6 +148,7 @@ L["Dark Iron Deposit"] = "Gisement de sombrefer"
 L["Dark Caster"] = "Magicien noir" 	-- Dark Caster
 L["Dark Summoner"] = "Invocateur des ténèbres" 	-- Dark Caster
 L["Darkscreecher Akkarai"] = "Akkarai le Hurle-sombre"
+L["Day of the Dead"] = "Jour des morts"
 L[" days"] = " jours"
 L[" days ago"] = " jours"
 L["Deadly Gladiator's Weapons"] = "Armes Gladiateur fatal"
@@ -436,6 +437,7 @@ L["Paladin Set"] = "Set Paladin"
 L["Patterns"] = "Patrons"
 L["Peacebloom"] = "Pacifique"
 L["Pick Pocket"] = "Vol à la tire" 	-- class ability "Pick Pocket"
+L["Pilgrim's Bounty"] = "Les Bienfaits du pèlerin"
 L["Plaguebloom"] = "Fleur de peste"
 L["Plans"] = true
 L["Plate Set"] = "Set Plaque"
@@ -715,6 +717,12 @@ L["Keys"] = "Clés"
 -- NPC Names
 -- ----------
 L["Vendor"]                     = "Vendeur"
+L["Cooking Daily"]              = "Cuisine quotidienne"
+L["Fishing Daily"]              = "Pêche quotidienne"
+L["Jewelcrafting Daily"]        = "Joaillerie quotidienne"
+L["Barrel of Fish"]             = "Tonneau de poissons"
+L["Crate of Meat"]              = "Caisse de viande"
+L["Dalaran Cooking Award"]      = "Prix de cuisine de Dalaran"
 
 L["Aaron Hollman"]              = true
 L["Abigail Shiel"]              = true

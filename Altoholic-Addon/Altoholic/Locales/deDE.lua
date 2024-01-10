@@ -148,6 +148,7 @@ L["Dark Iron Deposit"] = "Dunkeleisenablagerung"
 L["Dark Caster"] = "Dunkler Zauberer" 	-- Dark Caster
 L["Dark Summoner"] = "Dunkler Beschwörer" 	-- Dark Caster
 L["Darkscreecher Akkarai"] = "Dunkelkreischer Akkarai"
+L["Day of the Dead"] = "Tag der Toten"
 L[" days"] = " Tage"
 L[" days ago"] = " Tage zuvor"
 L["Deadly Gladiator's Weapons"] = "Waffen des tödlichen Gladiators"
@@ -436,6 +437,7 @@ L["Paladin Set"] = "Paladin-Set"
 L["Patterns"] = "Muster"
 L["Peacebloom"] = "Friedensblume"
 L["Pick Pocket"] = "Taschendiebstahl" 	-- class ability "Pick Pocket"
+L["Pilgrim's Bounty"] = "Pilgerfreudenfest"
 L["Plaguebloom"] = "Pestblüte"
 L["Plans"] = "Pläne"
 L["Plate Set"] = "Platten-Set"
@@ -824,6 +826,12 @@ L["QuestTitle-13818"] = "[80] Algalon (25)"
 -- NPC Names
 -- ----------
 L["Vendor"]                     = "Händler"
+L["Cooking Daily"]              = "Tägliche Kochquest"
+L["Fishing Daily"]              = "Tägliche Angelquest"
+L["Jewelcrafting Daily"]        = "Tägliche Juwelierquest"
+L["Barrel of Fish"]             = "Fass mit Fischen"
+L["Crate of Meat"]              = "Kiste mit Fleisch"
+L["Dalaran Cooking Award"]      = "Kochpreis von Dalaran"
 
 L["Aaron Hollman"]              = "Aaron Hollmann"
 L["Abigail Shiel"]              = true

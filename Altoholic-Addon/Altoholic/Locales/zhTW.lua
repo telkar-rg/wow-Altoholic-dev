@@ -148,6 +148,7 @@ L["Dark Iron Deposit"] = "黑鐵礦床"
 L["Dark Caster"] = "黑暗法师" 	-- Dark Caster
 L["Dark Summoner"] = "黑暗召唤师" 	-- Dark Caster
 L["Darkscreecher Akkarai"] = "黑暗尖叫者阿卡萊"
+L["Day of the Dead"] = "亡者節"
 L[" days"] = " 日."
 L[" days ago"] = " 日前."
 L["Deadly Gladiator's Weapons"] = "致命鬥士武器"
@@ -436,6 +437,7 @@ L["Paladin Set"] = "聖騎士套裝"
 L["Patterns"] = "卷軸"
 L["Peacebloom"] = "寧神花"
 L["Pick Pocket"] = "搜尋" 	-- class ability "Pick Pocket"
+L["Pilgrim's Bounty"] = "感恩節"
 L["Plaguebloom"] = "瘟疫花"
 L["Plans"] = "黑暗神廟卷軸"
 L["Plate Set"] = "鎧甲套裝"
@@ -714,6 +716,12 @@ L["Keys"] = "钥匙"
 -- NPC Names
 -- ----------
 L["Vendor"]                     = "商人"
+L["Cooking Daily"]              = "烹飪每日任務"
+L["Fishing Daily"]              = "釣魚每日任務"
+L["Jewelcrafting Daily"]        = "珠寶加工每日任務"
+L["Barrel of Fish"]             = "魚桶"
+L["Crate of Meat"]              = "肉品木箱"
+L["Dalaran Cooking Award"]      = "達拉然烹飪獎勵"
 
 L["Aaron Hollman"]              = "艾朗·赫曼"
 L["Abigail Shiel"]              = "阿比蓋爾·沙伊爾"

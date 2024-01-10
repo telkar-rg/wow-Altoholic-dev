@@ -152,6 +152,7 @@ L["Dark Iron Deposit"] = true
 L["Dark Caster"] = true 	-- Dark Caster
 L["Dark Summoner"] = true 	-- Dark Caster
 L["Darkscreecher Akkarai"] = true
+L["Day of the Dead"] = true
 L[" days"] = true
 L[" days ago"] = true
 L["Deadly Gladiator's Weapons"] = true
@@ -440,6 +441,7 @@ L["Paladin Set"] = true
 L["Patterns"] = true
 L["Peacebloom"] = true
 L["Pick Pocket"] = true 	-- class ability "Pick Pocket"
+L["Pilgrim's Bounty"] = true
 L["Plaguebloom"] = true
 L["Plans"] = true
 L["Plate Set"] = true
@@ -827,6 +829,12 @@ L["QuestTitle-13818"] = "[80] Algalon (25)"
 -- NPC Names
 -- ----------
 L["Vendor"]                     = true
+L["Cooking Daily"]              = true
+L["Fishing Daily"]              = true
+L["Jewelcrafting Daily"]        = true
+L["Barrel of Fish"]             = true
+L["Crate of Meat"]              = true
+L["Dalaran Cooking Award"]      = true
 
 L["Aaron Hollman"]              = true
 L["Abigail Shiel"]              = true

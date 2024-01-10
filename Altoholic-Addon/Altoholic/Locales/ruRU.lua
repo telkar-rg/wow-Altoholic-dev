@@ -153,6 +153,7 @@ L["Dark Iron Deposit"] = "Залежи Темной Стали"
 L["Dark Caster"] = "Темный заклинатель" 	-- Dark Caster
 L["Dark Summoner"] = "Призыватель Тьмы" 	-- Dark Caster
 L["Darkscreecher Akkarai"] = "Темный Крикун Аккарай"
+L["Day of the Dead"] = "День мертвых"
 L[" days"] = " дней назад"
 L[" days ago"] = " дней"
 L["Deadly Gladiator's Weapons"] = "Оружие смертоносного гладиатора"
@@ -441,6 +442,7 @@ L["Paladin Set"] = "Комплект паладина"
 L["Patterns"] = "Рецепты"
 L["Peacebloom"] = "Мироцвет"
 L["Pick Pocket"] = "Обшаривание карманов" 	-- class ability "Pick Pocket"
+L["Pilgrim's Bounty"] = "Пиршество странников"
 L["Plaguebloom"] = "Чумоцвет"
 L["Plans"] = "Планы"
 L["Plate Set"] = "Латы"
@@ -719,6 +721,12 @@ L["Keys"] = "Ключи"
 -- NPC Names
 -- ----------
 L["Vendor"]                     = "Торговец"
+L["Cooking Daily"]              = "Ежедневная кулинария"
+L["Fishing Daily"]              = "Ежедневная рыбалка"
+L["Jewelcrafting Daily"]        = "Ежедневное ювелирное дело"
+L["Barrel of Fish"]             = "Бочка с рыбой"
+L["Crate of Meat"]              = "Ящик мяса"
+L["Dalaran Cooking Award"]      = "Даларанская кулинарная награда"
 
 L["Aaron Hollman"]              = "Аарон Холлман"
 L["Abigail Shiel"]              = "Эбигейл Шиль"

@@ -147,6 +147,7 @@ L["Dark Iron Deposit"] = true
 L["Dark Caster"] = "암흑의 마술사" 	-- Dark Caster
 L["Dark Summoner"] = "암흑의 소환사" 	-- Dark Caster
 L["Darkscreecher Akkarai"] = true
+L["Day of the Dead"] = "망자의 날"
 L[" days"] = " 일"
 L[" days ago"] = " 일 전"
 L["Deadly Gladiator's Weapons"] = true
@@ -434,6 +435,7 @@ L["Paladin Set"] = "성기사 세트"
 L["Patterns"] = true
 L["Peacebloom"] = "평온초"
 L["Pick Pocket"] = "훔치기" 	-- class ability "Pick Pocket"
+L["Pilgrim's Bounty"] = "순례자의 감사절"
 L["Plaguebloom"] = "역병초"
 L["Plans"] = true
 L["Plate Set"] = "판금 세트"
@@ -706,6 +708,12 @@ L["Keys"] = "열쇠"
 -- NPC Names
 -- ----------
 L["Vendor"]                     = "상인"
+L["Cooking Daily"]              = "매일 요리"
+L["Fishing Daily"]              = "매일 낚시"
+L["Jewelcrafting Daily"]        = "매일 보석세공"
+L["Barrel of Fish"]             = "물고기 통"
+L["Crate of Meat"]              = "고기 상자"
+L["Dalaran Cooking Award"]      = "달라란 요리상"
 
 L["Aaron Hollman"]              = "아론 홀맨"
 L["Abigail Shiel"]              = "애비게일 시엘"
