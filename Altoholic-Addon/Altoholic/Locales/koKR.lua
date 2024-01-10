@@ -1164,6 +1164,7 @@ L["Simon Unit"]                 = true
 L["Skeletal Flayer"]            = "해골 타작꾼"
 L["Skeletal Runesmith"]         = "해골 룬대장장이"
 L["Skreah"]                     = "스크레아"
+L["Slagg"]                      = "슬래그"
 L["Slavering Ghoul"]            = "걸신들린 구울"
 L["Smudge Thunderwood"]         = "스머지 썬더우드"
 L["Son of Arkkoroc"]            = "아크코로크의 후예"

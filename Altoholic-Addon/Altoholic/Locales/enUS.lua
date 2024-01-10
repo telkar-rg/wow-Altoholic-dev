@@ -1285,6 +1285,7 @@ L["Simon Unit"]                 = true
 L["Skeletal Flayer"]            = true
 L["Skeletal Runesmith"]         = true
 L["Skreah"]                     = true
+L["Slagg"]                      = true
 L["Slavering Ghoul"]            = true
 L["Smudge Thunderwood"]         = true
 L["Son of Arkkoroc"]            = true

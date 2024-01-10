@@ -1172,6 +1172,7 @@ L["Simon Unit"]                 = true
 L["Skeletal Flayer"]            = "骷髏撕掠者"
 L["Skeletal Runesmith"]         = "骷髏符文鐵匠"
 L["Skreah"]                     = "史卡瑞"
+L["Slagg"]                      = "斯拉格"
 L["Slavering Ghoul"]            = "被奴役的食屍鬼"
 L["Smudge Thunderwood"]         = "斯穆德·雷木"
 L["Son of Arkkoroc"]            = "亞考羅克之子"

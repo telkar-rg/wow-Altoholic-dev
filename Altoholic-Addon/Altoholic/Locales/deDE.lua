@@ -1282,6 +1282,7 @@ L["Simon Unit"]                 = "Analysator der Gan'arg"
 L["Skeletal Flayer"]            = "Skelettschinder"
 L["Skeletal Runesmith"]         = "Skelettrunenschmied"
 L["Skreah"]                     = true
+L["Slagg"]                      = "Brenn"
 L["Slavering Ghoul"]            = "Sabbernder Ghul"
 L["Smudge Thunderwood"]         = "Smudge Donnerholz"
 L["Son of Arkkoroc"]            = "Arkkorocs Sohn"

@@ -1173,6 +1173,7 @@ L["Simon Unit"]                 = "Unité Simon"
 L["Skeletal Flayer"]            = "Ecorcheur Squelette"
 L["Skeletal Runesmith"]         = "Forgerune squelette"
 L["Skreah"]                     = true
+L["Slagg"]                      = true
 L["Slavering Ghoul"]            = "Goule écumante"
 L["Smudge Thunderwood"]         = "Smudge Tonnebois"
 L["Son of Arkkoroc"]            = "Fils d’Arkkoroc"
