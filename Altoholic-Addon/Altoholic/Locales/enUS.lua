@@ -32,6 +32,7 @@ L["Altoholic:|r Usage = /altoholic search <item name>"] = true
 L["Ancient Lichen"] = true
 L["and above"] = true
 L["Any"] = true
+L["Any Alchemist's Stone can be used for Alchemical Transmutation!"] = true	-- Alchemist's Stone
 L["Anzu the Raven God (Heroic Summon)"] = true
 L["Apprentice"] = true
 L["Arcanoweave Vestments"] = true
@@ -484,6 +485,7 @@ L["Regalia of the Grand Vanquisher"] = true 	-- TogC token
 L["Relics"] = true
 L["Reputations"] = true
 L["Reputations received !"] = true
+L["Required for Alchemical Transmutation."] = true
 L["Requesting item %d of %d"] = true
 L["Requesting %s information from %s"] = true
 L["Request rejected by %s"] = true

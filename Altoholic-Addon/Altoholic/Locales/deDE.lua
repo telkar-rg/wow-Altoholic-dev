@@ -29,6 +29,7 @@ L["Altoholic:|r Usage = /altoholic search <item name>"] = "Altoholic:|r-Verwendu
 L["Ancient Lichen"] = "Urflechte"
 L["and above"] = "und höher"
 L["Any"] = "Beliebige"
+L["Any Alchemist's Stone can be used for Alchemical Transmutation!"] = "Jeder Alchemistenstein kann für alchemistische Transmutation verwendet werden!"	-- Alchemist's Stone
 L["Anzu the Raven God (Heroic Summon)"] = "Anzu der Rabengott (Heroisch)"
 L["Apprentice"] = "Lehrling"
 L["Arcanoweave Vestments"] = "Arkanostoffgewänder"
@@ -480,6 +481,7 @@ L["Regalia of the Grand Vanquisher"] = "Ornat des großen Bezwingers" 	-- TogC t
 L["Relics"] = "Reliquien"
 L["Reputations"] = "Ruf"
 L["Reputations received !"] = "Ruf-Informationen empfangen!"
+L["Required for Alchemical Transmutation."] = "Erforderlich für alchemistische Transmutation."	-- Philosopher's Stone Flavour Text
 L["Requesting item %d of %d"] = "Erbitte Gegenstand %d von %d"
 L["Requesting %s information from %s"] = "Erbitte %s-Information von %s"
 L["Request rejected by %s"] = "Anfrage von %s abgewiesen"

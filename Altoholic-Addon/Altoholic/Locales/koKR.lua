@@ -29,6 +29,7 @@ L["Altoholic:|r Usage = /altoholic search <item name>"] = "Altoholic:|r 사용�
 L["Ancient Lichen"] = true
 L["and above"] = "이상"
 L["Any"] = "모두"
+L["Any Alchemist's Stone can be used for Alchemical Transmutation!"] = "연금술사 돌은 연금술 변환에 사용할 수 있습니다!"	-- Alchemist's Stone
 L["Anzu the Raven God (Heroic Summon)"] = true
 L["Apprentice"] = "수습"
 L["Arcanoweave Vestments"] = true
@@ -478,6 +479,7 @@ L["Regalia of the Grand Vanquisher"] = "위대한 제압자의 의복" 	-- TogC 
 L["Relics"] = true
 L["Reputations"] = "평판"
 L["Reputations received !"] = "평판들을 받았습니다 !"
+L["Required for Alchemical Transmutation."] = "연금술 변환에 필요합니다."	-- Philosopher's Stone Flavour Text
 L["Requesting item %d of %d"] = "아이템 요청 중 %d / %d"
 L["Requesting %s information from %s"] = "%s 정보를 %s에게서 요청 중"
 L["Request rejected by %s"] = "%s, 요청을 거절함"

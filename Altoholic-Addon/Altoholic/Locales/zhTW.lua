@@ -29,6 +29,7 @@ L["Altoholic:|r Usage = /altoholic search <item name>"] = "Altoholic:|r 使用�
 L["Ancient Lichen"] = "古老青苔"
 L["and above"] = "及以上"
 L["Any"] = "任何"
+L["Any Alchemist's Stone can be used for Alchemical Transmutation!"] = "任何煉金石都可以用來煉金轉化！"	-- Alchemist's Stone
 L["Anzu the Raven God (Heroic Summon)"] = "安祖·烏鴉神(英雄模式召喚)"
 L["Apprentice"] = "初級"
 L["Arcanoweave Vestments"] = "奧紋套裝"
@@ -480,6 +481,7 @@ L["Regalia of the Grand Vanquisher"] = "無上勝利者的聖裝" 	-- TogC token
 L["Relics"] = "聖物"
 L["Reputations"] = "聲望"
 L["Reputations received !"] = "收到聲望資料!"
+L["Required for Alchemical Transmutation."] = "使用於鍊金轉化。"	-- Philosopher's Stone Flavour Text
 L["Requesting item %d of %d"] = "物品要求 %d 之 %d"
 L["Requesting %s information from %s"] = "要求%s資料,目標%s"
 L["Request rejected by %s"] = "要求被%s駁回"

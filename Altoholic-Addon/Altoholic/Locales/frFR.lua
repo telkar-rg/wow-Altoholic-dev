@@ -20,8 +20,7 @@ L["Aged Dalaran Wizard"] = "Sorcier de Dalaran âgé"
 L["Aggem Thorncurse"] = "Aggem Malépine"
 L["AH"] = "HV"
 L["All accounts"] = "Tous les comptes"
-L["All cooldowns are up"] = [=[Tous les cooldowns
-sont disponibles]=]
+L["All cooldowns are up"] = "Tous les cooldowns sont disponibles"
 L["Alliance Forces"] = "Forces de l'Alliance"
 L["All-in-one"] = "Tout-en-un"
 L["All realms"] = "Tous les royaumes"
@@ -30,6 +29,7 @@ L["Altoholic:|r Usage = /altoholic search <item name>"] = "Altoholic:|r Usage = 
 L["Ancient Lichen"] = "Lichen ancien"
 L["and above"] = "et au-delà"
 L["Any"] = "Tout"
+L["Any Alchemist's Stone can be used for Alchemical Transmutation!"] = "N’importe quelle Pierre d'alchimiste peut être utilisée pour la transmutation alchimique!"	-- Alchemist's Stone
 L["Anzu the Raven God (Heroic Summon)"] = "Anzu le Dieu Corbeau (Invocation Héroïque)"
 L["Apprentice"] = "Apprenti"
 L["Arcanoweave Vestments"] = "Habit de tisse-arcane"
@@ -481,6 +481,7 @@ L["Regalia of the Grand Vanquisher"] = "Tenue de parade du grand vainqueur" 	-- 
 L["Relics"] = "Reliques"
 L["Reputations"] = "Réputations"
 L["Reputations received !"] = "Réputations reçues !"
+L["Required for Alchemical Transmutation."] = "Indispensable pour une transmutation alchimique."	-- Philosopher's Stone Flavour Text
 L["Requesting item %d of %d"] = "Demande de l'objet %d de %d"
 L["Requesting %s information from %s"] = "Demande de l'onglet %s envoyée à %s"
 L["Request rejected by %s"] = "Demande rejetée par %s"

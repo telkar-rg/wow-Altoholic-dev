@@ -34,6 +34,7 @@ L["Altoholic:|r Usage = /altoholic search <item name>"] = "Altoholic:|r Испо
 L["Ancient Lichen"] = "Древний лишайник"
 L["and above"] = "и выше"
 L["Any"] = "Любое"
+L["Any Alchemist's Stone can be used for Alchemical Transmutation!"] = "Любой алхимический камень можно использовать для алхимических трансмутаций!"	-- Alchemist's Stone
 L["Anzu the Raven God (Heroic Summon)"] = "Анзу (Вызов на героическом уровне сложности)"
 L["Apprentice"] = "Ученик"
 L["Arcanoweave Vestments"] = "Одеяния из тайной ткани"
@@ -485,6 +486,7 @@ L["Regalia of the Grand Vanquisher"] = "Регалии великого поко
 L["Relics"] = "Реликвии"
 L["Reputations"] = "Репутация"
 L["Reputations received !"] = "Получена репутация!"
+L["Required for Alchemical Transmutation."] = "Требуется для алхимических трансмутаций."	-- Philosopher's Stone Flavour Text
 L["Requesting item %d of %d"] = "Запрос предмета %d - %d"
 L["Requesting %s information from %s"] = "Запрос информации %s от |3-1(%s)"
 L["Request rejected by %s"] = "Запрос отклонен |3-4(%s)"
