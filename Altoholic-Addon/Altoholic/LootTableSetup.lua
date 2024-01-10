@@ -164,8 +164,8 @@ db.lootTable = {
 			17344, 17406, 17407, 17408, 34410, 17404, 17405, 34412, 17196, 17403, 17402, 17194, 17303, 17304, 17307, 
 			34262, 	-- Leatherworking-Pattern: Winter Boots
 			34413, 	-- Cooking-Recipe: Hot Apple Cider
-			17201, 	-- Cooking-Recipe: Egg Nog
 			17200, 	-- Cooking-Recipe: Gingerbread Cookie
+			17201, 	-- Cooking-Recipe: Egg Nog
 		},
 		[ format("%s (%s)", L["Smokywood Pastures Vendor"], BZ["Orgrimmar"])] = {
 			34261, 	-- Tailoring-Pattern: Green Winter Clothes (Orgrimmar)
@@ -359,6 +359,29 @@ db.lootTable = {
 			37828,  -- Great Brewfest Kodo
 			-- 33977,  -- Swift Brewfest Ram (can also be bought)
 			37863,  -- Direbrew's Remote
+		},
+	},
+	[L["Day of the Dead"]] = {	
+		[L["Vendor"]] = {
+			46710, 	-- Bread of the Dead
+		},
+	},
+	[L["Pilgrim's Bounty"]] = {	
+		[L["Vendor"]] = {
+			46809, 	-- Bountiful Cookbook (Alliance)
+			46810, 	-- Bountiful Cookbook (Horde)
+			
+			44858, 	-- Cooking-Recipe: Cranberry Chutney (Alliance)
+			44859, 	-- Cooking-Recipe: Candied Sweet Potato (Alliance)
+			44860, 	-- Cooking-Recipe: Spice Bread Stuffing (Alliance)
+			44861, 	-- Cooking-Recipe: Slow-Roasted Turkey (Alliance)
+			44862, 	-- Cooking-Recipe: Pumpkin Pie (Alliance)
+			
+			46803, 	-- Cooking-Recipe: Spice Bread Stuffing (Horde)
+			46804, 	-- Cooking-Recipe: Pumpkin Pie (Horde)
+			46805, 	-- Cooking-Recipe: Cranberry Chutney (Horde)
+			46806, 	-- Cooking-Recipe: Candied Sweet Potato (Horde)
+			46807, 	-- Cooking-Recipe: Slow-Roasted Turkey (Horde)
 		},
 	},
 	
@@ -1933,6 +1956,10 @@ db.lootTable = {
 			22390,	 -- Blacksmithing-Plans: Persuader
 		},
 		
+		[ BZ["The Barrens"] ] = {
+			6661,	 -- Cooking-Recipe: Savory Deviate Delight
+		},
+		
 		[ BZ["Outland"] ] = {
 			28189,	 -- Latro's Shifting Sword
 			31318,	 -- Singing Crystal Axe
@@ -2012,13 +2039,18 @@ db.lootTable = {
 			44312,  -- Wapach's Spaulders of Solidarity
 			44313,  -- Zom's Crackling Bulwark
 			
-			42172,	 -- Tailoring-Pattern: Red Lumberjack Shirt
-			42173,	 -- Tailoring-Pattern: Blue Lumberjack Shirt
-			42175,	 -- Tailoring-Pattern: Green Lumberjack Shirt
-			42176,	 -- Tailoring-Pattern: Blue Workman's Shirt
-			42177,	 -- Tailoring-Pattern: Red Workman's Shirt
-			42178,	 -- Tailoring-Pattern: Rustic Workman's Shirt
-			42179,	 -- Tailoring-Pattern: Green Workman's Shirt
+			43507,  -- Cooking-Recipe: Tasty Cupcake
+			43508,  -- Cooking-Recipe: Last Week's Mammoth
+			43509,  -- Cooking-Recipe: Bad Clams
+			43510,  -- Cooking-Recipe: Haunted Herring
+			
+			42172, 	-- Tailoring-Pattern: Red Lumberjack Shirt
+			42173, 	-- Tailoring-Pattern: Blue Lumberjack Shirt
+			42175, 	-- Tailoring-Pattern: Green Lumberjack Shirt
+			42176, 	-- Tailoring-Pattern: Blue Workman's Shirt
+			42177, 	-- Tailoring-Pattern: Red Workman's Shirt
+			42178, 	-- Tailoring-Pattern: Rustic Workman's Shirt
+			42179, 	-- Tailoring-Pattern: Green Workman's Shirt
 		},
 		
 		[format("%s (%s)", L["Nascent Val'kyr"], BZ["The Storm Peaks"])] = {
@@ -2037,6 +2069,43 @@ db.lootTable = {
 			29569,	 -- Strong Junkbox
 			31331,	 -- The Night Blade (Strong Junkbox)
 			34622,	 -- Spinesever (Strong Junkbox)
+		},
+	},
+	
+	[L["Dalaran Cooking Award"]] = {
+		["x1"] = {
+			43007,	 -- Northern Spices
+		},
+		["x3"] = {
+			43018, 	-- Cooking-Recipe: Mega Mammoth Meal
+			43019, 	-- Cooking-Recipe: Tender Shoveltusk Steak
+			43020, 	-- Cooking-Recipe: Spiced Worm Burger
+			43021, 	-- Cooking-Recipe: Very Burnt Worg
+			43022, 	-- Cooking-Recipe: Mighty Rhino Dogs
+			43023, 	-- Cooking-Recipe: Poached Northern Sculpin
+			43024, 	-- Cooking-Recipe: Firecracker Salmon
+			43025, 	-- Cooking-Recipe: Spicy Blue Nettlefish
+			43026, 	-- Cooking-Recipe: Imperial Manta Steak
+			43027, 	-- Cooking-Recipe: Spicy Fried Herring
+			43028, 	-- Cooking-Recipe: Rhinolicious Wormsteak
+			43029, 	-- Cooking-Recipe: Critter Bites
+			43030, 	-- Cooking-Recipe: Hearty Rhino
+			43031, 	-- Cooking-Recipe: Snapper Extreme
+			43032, 	-- Cooking-Recipe: Blackened Worg Steak
+			43033, 	-- Cooking-Recipe: Cuttlesteak
+			43034, 	-- Cooking-Recipe: Spiced Mammoth Treats
+			43035, 	-- Cooking-Recipe: Blackened Dragonfin
+			43036, 	-- Cooking-Recipe: Dragonfin Filet
+			43037, 	-- Cooking-Recipe: Tracker Snacks
+			43505, 	-- Cooking-Recipe: Gigantic Feast
+			43506, 	-- Cooking-Recipe: Small Feast
+			44954, 	-- Cooking-Recipe: Worg Tartare
+		},
+		["x5"] = {
+			43017, 	-- Cooking-Recipe: Fish Feast
+		},
+		["x100"] = {
+			46349, 	-- Chef's Hat
 		},
 	},
 	
@@ -4477,6 +4546,101 @@ local recipeTable = {
 	{ 47507, 	trainersName, 				BI["Alchemy"] },	-- Alchemy-Recipe: Flask of the North
 	
 	-- -- -- -- --
+	-- Cooking
+	-- -- -- -- --
+	{ 728, 		BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Kendor Kabonka"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Westfall Stew (Alliance only)
+	{ 2697, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Kendor Kabonka"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Goretusk Liver Pie (Alliance only)
+	{ 2698, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Kendor Kabonka"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Cooked Crab Claw (Alliance only)
+	{ 2699, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Kendor Kabonka"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Redridge Goulash (Alliance only)
+	{ 2700, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Kendor Kabonka"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Succulent Pork Ribs (Alliance only)
+	{ 2701, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Kendor Kabonka"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Seasoned Wolf Kabob (Alliance only)
+	{ 2889, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Kendor Kabonka"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Beer Basted Boar Ribs (Alliance only)
+	{ 3678, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Kendor Kabonka"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Crocolisk Steak (Alliance only)
+	{ 3679, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Kendor Kabonka"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Blood Sausage (Alliance only)
+	{ 3680, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Kendor Kabonka"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Murloc Fin Soup (Alliance only)
+	{ 3681, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Kendor Kabonka"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Crocolisk Gumbo (Alliance only)
+	{ 3683, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Kendor Kabonka"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Gooey Spider Cake (Alliance only)
+	{ 3683, 	BZ["Darkshore"], 			format("%s: %s (%s)", L["Vendor"], L["Laird"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Fillet of Frenzy (Alliance only)
+	{ 6329, 	BZ["Loch Modan"], 			format("%s: %s (%s)", L["Vendor"], L["Khara Deepwater"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Loch Frenzy Delight (Alliance only)
+	
+	{ 5482, 	BZ["Teldrassil"], 			format("%s (%s)", L["Quest rewards"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Kaldorei Spider Kabob (Alliance only)
+	{ 27686, 	BZ["Azuremyst Isle"], 		format("%s (%s)", L["Quest rewards"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Roasted Moongraze Tenderloin (Alliance only)
+	
+	{ 5528, 	format("%s/ %s", BZ["Darkshore"], BZ["Westfall"]), format("%s (%s)", L["Quest rewards"], FACTION_ALLIANCE) },	-- Cooking-Recipe: Clam Chowder (Alliance only)
+	
+	{ 3736, 	BZ["Hillsbrad Foothills"], 	format("%s (%s)", L["Quest rewards"], FACTION_HORDE) },	-- Cooking-Recipe: Tasty Lion Steak (Horde only)
+	{ 5483, 	BZ["Durotar"], 				format("%s: %s (%s)", L["Vendor"], L["Grimtak"], FACTION_HORDE) },	-- Cooking-Recipe: Scorpid Surprise (Horde only)
+	{ 5483, 	BZ["Mulgore"], 				format("%s: %s (%s)", L["Vendor"], L["Wunna Darkmane"], FACTION_HORDE) },	-- Cooking-Recipe: Roasted Kodo Meat (Horde only)
+	{ 5483, 	BZ["The Barrens"], 			format("%s: %s (%s)", L["Vendor"], L["Tari'qa"], FACTION_HORDE) },	-- Cooking-Recipe: Crispy Lizard Tail (Horde only)
+	{ 12226, 	BZ["Tirisfal Glades"], 		format("%s: %s (%s)", L["Vendor"], L["Abigail Shiel"], FACTION_HORDE) },	-- Cooking-Recipe: Crispy Bat Wing (Horde only)
+	{ 20075, 	BZ["Dustwallow Marsh"], 	format("%s: %s (%s)", L["Vendor"], L["Ogg'marr"], FACTION_HORDE) },	-- Cooking-Recipe: Dragonbreath Chili
+	{ 27685, 	BZ["Eversong Woods"], 		format("%s: %s (%s)", L["Vendor"], L["Landraelanis"], FACTION_HORDE) },	-- Cooking-Recipe: Lynx Steak
+	{ 27687, 	BZ["Ghostlands"], 			format("%s: %s (%s)", L["Vendor"], L["Master Chef Mouldier"], FACTION_HORDE) },	-- Cooking-Recipe: Lynx Steak
+	
+	{ 3734, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Super-Seller 680"]) },	-- Cooking-Recipe: Big Bear Steak
+	{ 4609, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Super-Seller 680"]) },	-- Cooking-Recipe: Barbecued Buzzard Wing
+	{ 12227, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Super-Seller 680"]) },	-- Cooking-Recipe: Lean Wolf Steak
+	{ 12229, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Super-Seller 680"]) },	-- Cooking-Recipe: Hot Wolf Ribs
+	{ 12233, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Super-Seller 680"]) },	-- Cooking-Recipe: Mystery Stew
+	{ 12239, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Super-Seller 680"]) },	-- Cooking-Recipe: Dragonbreath Chili
+	
+	{ 3735, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Vendor-Tron 1000"]) },	-- Cooking-Recipe: Hot Lion Chops
+	{ 5489, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Vendor-Tron 1000"]) },	-- Cooking-Recipe: Lean Venison
+	{ 12228, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Vendor-Tron 1000"]) },	-- Cooking-Recipe: Roast Raptor
+	{ 12231, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Vendor-Tron 1000"]) },	-- Cooking-Recipe: Jungle Stew
+	{ 12232, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Vendor-Tron 1000"]) },	-- Cooking-Recipe: Carrion Surprise
+	{ 12240, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Vendor-Tron 1000"]) },	-- Cooking-Recipe: Heavy Kodo Stew
+	
+	{ 6325,		BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Brilliant Smallfish
+	{ 6328,		BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Longjaw Mud Snapper
+	{ 6330,		BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Bristle Whisker Catfish
+	{ 6368,		BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Rainbow Fin Albacore
+	{ 6369,		BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Rockscale Cod
+	{ 17062,	BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Mithril Head Trout
+	{ 21099,	BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Smoked Sagefish
+	{ 21219,	BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Sagefish Delight
+	
+	{ 7678, 	BZ["Alterac Mountains"], 	format("%s: %s", L["Vendor"], L["Smudge Thunderwood"]) },	-- Cooking-Recipe: Thistle Tea
+	{ 18160, 	BZ["Alterac Mountains"], 	format("%s: %s", L["Vendor"], L["Smudge Thunderwood"]) },	-- Cooking-Recipe: Thistle Tea
+	
+	{ 6039, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Kelsey Yance"]) },	-- Cooking-Recipe: Giant Clam Scorcho
+	{ 13940, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Kelsey Yance"]) },	-- Cooking-Recipe: Cooked Glossy Mightfish
+	{ 13941, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Kelsey Yance"]) },	-- Cooking-Recipe: Filet of Redgill
+	{ 13943, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Kelsey Yance"]) },	-- Cooking-Recipe: Hot Smoked Bass
+	
+	{ 13939, 	BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Gikkix"]) },	-- Cooking-Recipe: Spotted Yellowtail
+	{ 13942, 	BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Gikkix"]) },	-- Cooking-Recipe: Grilled Squid
+	{ 13945, 	BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Gikkix"]) },	-- Cooking-Recipe: Nightfin Soup
+	{ 13946, 	BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Gikkix"]) },	-- Cooking-Recipe: Poached Sunscale Salmon
+	
+	{ 3737, 	BZ["Hillsbrad Foothills"], 	L["Quest rewards"] },	-- Cooking-Recipe: Soothing Turtle Bisque
+	{ 16110, 	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Himmik"]) },	-- Cooking-Recipe: Monster Omelet
+	{ 16767, 	BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Jabbey"]) },	-- Cooking-Recipe: Undermine Clam Chowder
+	
+	{ 18046, 	BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Dirge Quikcleave"]) },	-- Cooking-Recipe: Tender Wolf Steak
+	{ 18046, 	BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Innkeeper Fizzgrimble"]) },	-- Cooking-Recipe: Tender Wolf Steak
+	
+	{ 21025, 	BZ["Tanaris"], 				L["Quest rewards"] },	-- Cooking-Recipe: Dirge's Kickin' Chimaerok Chops
+	
+	{ 27689, 	BF["Sporeggar"], 			format("%s x%d", L["Glowcap"], 2) },	-- Cooking-Recipe: Sporeling Snack
+	{ 30156, 	BF["Sporeggar"], 			format("%s x%d", L["Glowcap"], 1) },	-- Cooking-Recipe: Clam Bar
+	
+	{ 31674, 	BZ["Blade's Edge Mountains"], format("%s: %s", L["Vendor"], L["Xerintha Ravenoak"]) }, 	-- Cooking-Recipe: Crunchy Serpent
+	{ 31675, 	BZ["Blade's Edge Mountains"], format("%s: %s", L["Vendor"], L["Xerintha Ravenoak"]) }, 	-- Cooking-Recipe: Mok'Nathal Shortribs
+	
+	{ 27684, 	BZ["Hellfire Peninsula"], 	L["Quest rewards"] },	-- Cooking-Recipe: Buzzard Bites
+	{ 27688, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Juno Dufrain"]) }, 	-- Cooking-Recipe: Blackened Sporefish
+	
+	{ 33869, 	BZ["Shattrath City"], 		format("%s: (%s)", L["Cooking Daily"], L["Barrel of Fish"]) }, 	-- Cooking-Recipe: Broiled Bloodfin
+	{ 33870, 	BZ["Shattrath City"], 		format("%s: (%s)", L["Cooking Daily"], L["Barrel of Fish"]) }, 	-- Cooking-Recipe: Skullfish Soup
+	{ 33873, 	BZ["Shattrath City"], 		format("%s: (%s)", L["Cooking Daily"], L["Crate of Meat"]) }, 	-- Cooking-Recipe: Spicy Hot Talbuk
+	
+	{ 33875, 	BZ["Shattrath City"], 		L["Cooking Daily"] }, 	-- Cooking-Recipe: Kibler's Bits
+	{ 33871, 	format("%s/ %s", BZ["Shattrath City"], BZ["Dalaran"]), L["Cooking Daily"] }, 	-- Cooking-Recipe: Stormchops
+	{ 33925, 	format("%s/ %s", BZ["Shattrath City"], BZ["Dalaran"]), L["Cooking Daily"] }, 	-- Cooking-Recipe: Delicious Chocolate Cake
+	{ 34834, 	format("%s/ %s", BZ["Shattrath City"], BZ["Dalaran"]), format("%s/ %s", L["Cooking Daily"], L["Fishing Daily"]) }, 	-- Cooking-Recipe: Captain Rumsey's Lager
+	
+	-- -- -- -- --
 	-- Tailoring
 	-- -- -- -- --
 	{ 5775, 	BZ["Alterac Mountains"], 	L["Syndicate Spy"] },	-- Tailoring-Pattern: Black Silk Pack
@@ -4733,118 +4897,154 @@ local recipeTable = {
 local recipeFactionDuplicates	= {
 	Alliance	= {
 		-- -- -- -- --
-		-- Tailoring
-		-- -- -- -- --
-		{ 4355, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Micha Yance"]) },	-- Tailoring-Pattern: Icy Cloak
-		{ 6401, 	BZ["Duskwood"], 		format("%s: %s", L["Vendor"], L["Sheri Zipstitch"]) },	-- Tailoring-Pattern: Dark Silk Shirt
-		{ 7089, 	BZ["Feralas"], 			format("%s: %s", L["Vendor"], L["Brienna Starglow"]) },	-- Tailoring-Pattern: Azure Silk Cloak
-		{ 7114, 	BZ["Wetlands"], 		format("%s: %s", L["Vendor"], L["Wenna Silkbeard"]) },	-- Tailoring-Pattern: Azure Silk Gloves
-		{ 10311, 	BZ["Darnassus"], 		format("%s: %s", L["Vendor"], L["Elynna"]) },			-- Tailoring-Pattern: Orange Martial Shirt
-		{ 10314, 	BZ["Ironforge"], 		format("%s: %s", L["Vendor"], L["Outfitter Eric"]) },	-- Tailoring-Pattern: Lavender Mageweave Shirt
-		{ 10317, 	BZ["Ironforge"], 		format("%s: %s", L["Vendor"], L["Outfitter Eric"]) },	-- Tailoring-Pattern: Pink Mageweave Shirt
-		{ 10321, 	BZ["Ironforge"], 		format("%s: %s", L["Vendor"], L["Outfitter Eric"]) },	-- Tailoring-Pattern: Tuxedo Shirt
-		{ 10323, 	BZ["Ironforge"], 		format("%s: %s", L["Vendor"], L["Outfitter Eric"]) },	-- Tailoring-Pattern: Tuxedo Pants
-		{ 10326, 	BZ["Ironforge"], 		format("%s: %s", L["Vendor"], L["Outfitter Eric"]) },	-- Tailoring-Pattern: Tuxedo Jacket
-		{ 10325, 	BZ["Stormwind City"], 	format("%s: %s", L["Vendor"], L["Alexandra Bolero"]) },	-- Tailoring-Pattern: White Wedding Dress
-		{ 21894, 	BZ["Nagrand"], 			format("%s: %s", L["Vendor"], L["Borto"]) },				-- Tailoring-Pattern: Bolt of Soulcloth
-		{ 21902, 	BZ["Nagrand"], 			format("%s: %s", L["Vendor"], L["Borto"]) },				-- Tailoring-Pattern: Soulcloth Gloves
-		{ 21898, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Muheru the Weaver"]) },	-- Tailoring-Pattern: Imbued Netherweave Pants
-		{ 21899, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Muheru the Weaver"]) },	-- Tailoring-Pattern: Imbued Netherweave Boots
-		
-		{ 21892,	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Bolt of Imbued Netherweave
-		{ 21894,	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Bolt of Soulcloth
-		{ 21896,	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Netherweave Robe
-		{ 21897,	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Netherweave Tunic
-		
-		-- -- -- -- --
 		-- Alchemy
 		-- -- -- -- --
-		{ 5640, 	BZ["Loch Modan"], 		format("%s: %s", L["Vendor"], L["Xandar Goodbeard"]) },	-- Alchemy-Recipe: Rage Potion
-		{ 5642, 	BZ["Darnassus"], 		format("%s: %s", L["Vendor"], L["Ulthir"]) },	-- Alchemy-Recipe: Free Action Potion
-		{ 5642, 	BZ["Ironforge"], 		format("%s: %s", L["Vendor"], L["Soolie Berryfizz"]) },	-- Alchemy-Recipe: Free Action Potion
-		{ 5643, 	BZ["Darnassus"], 		format("%s: %s", L["Vendor"], L["Ulthir"]) },	-- Alchemy-Recipe: Great Rage Potion
-		{ 6053, 	BZ["Loch Modan"], 		format("%s: %s", L["Vendor"], L["Xandar Goodbeard"]) },	-- Alchemy-Recipe: Holy Protection Potion
-		{ 6054, 	BZ["Ashenvale"], 		format("%s: %s", L["Vendor"], L["Harklan Moongrove"]) },	-- Alchemy-Recipe: Shadow Protection Potion
+		{ 5640, 	BZ["Loch Modan"], 			format("%s: %s", L["Vendor"], L["Xandar Goodbeard"]) },	-- Alchemy-Recipe: Rage Potion
+		{ 5642, 	BZ["Darnassus"], 			format("%s: %s", L["Vendor"], L["Ulthir"]) },	-- Alchemy-Recipe: Free Action Potion
+		{ 5642, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Soolie Berryfizz"]) },	-- Alchemy-Recipe: Free Action Potion
+		{ 5643, 	BZ["Darnassus"], 			format("%s: %s", L["Vendor"], L["Ulthir"]) },	-- Alchemy-Recipe: Great Rage Potion
+		{ 6053, 	BZ["Loch Modan"], 			format("%s: %s", L["Vendor"], L["Xandar Goodbeard"]) },	-- Alchemy-Recipe: Holy Protection Potion
+		{ 6054, 	BZ["Ashenvale"], 			format("%s: %s", L["Vendor"], L["Harklan Moongrove"]) },	-- Alchemy-Recipe: Shadow Protection Potion
 		{ 6055, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], "Nandar Branson") },	-- Alchemy-Recipe: Fire Protection Potion
-		{ 6056, 	BZ["Arathi Highlands"], format("%s: %s", L["Vendor"], L["Drovnar Strongbrew"]) },	-- Alchemy-Recipe: Frost Protection Potion
-		{ 6057, 	BZ["Feralas"], 			format("%s: %s", L["Vendor"], L["Logannas"]) },	-- Alchemy-Recipe: Nature Protection Potion
-		{ 9302, 	BZ["Feralas"], 			format("%s: %s", L["Vendor"], L["Logannas"]) },	-- Alchemy-Recipe: Ghost Dye
-		{ 9301, 	BZ["Stormwind City"], 	format("%s: %s", L["Vendor"], L["Maria Lumere"]) },	-- Alchemy-Recipe: Elixir of Shadow Power
-		{ 9300, 	BZ["Blasted Lands"], 	format("%s: %s", L["Vendor"], L["Nina Lightbrew"]) },	-- Alchemy-Recipe: Elixir of Demonslaying
-		{ 13478, 	BZ["Ironforge"], 		format("%s: %s", L["Vendor"], L["Soolie Berryfizz"]) },	-- Alchemy-Recipe: Elixir of Superior Defense
+		{ 6056, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Vendor"], L["Drovnar Strongbrew"]) },	-- Alchemy-Recipe: Frost Protection Potion
+		{ 6057, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Logannas"]) },	-- Alchemy-Recipe: Nature Protection Potion
+		{ 9302, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Logannas"]) },	-- Alchemy-Recipe: Ghost Dye
+		{ 9301, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Maria Lumere"]) },	-- Alchemy-Recipe: Elixir of Shadow Power
+		{ 9300, 	BZ["Blasted Lands"], 		format("%s: %s", L["Vendor"], L["Nina Lightbrew"]) },	-- Alchemy-Recipe: Elixir of Demonslaying
+		{ 13478, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Soolie Berryfizz"]) },	-- Alchemy-Recipe: Elixir of Superior Defense
 		
 		{ 22900, 	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Altaa"]) },	-- Alchemy-Recipe: Elixir of Camouflage
 		{ 22900, 	BZ["Hellfire Peninsula"], format("%s: %s", L["Vendor"], L["Alchemist Gribble"]) },	-- Alchemy-Recipe: Elixir of Camouflage
 		
-		{ 22901, 	BZ["Terokkar Forest"], 	format("%s: %s", L["Vendor"], L["Leeli Longhaggle"]) },	-- Alchemy-Recipe: Sneaking Potion
-		{ 22902, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Haalrun"]) },	-- Alchemy-Recipe: Elixir of Major Frost Power
-		{ 22907, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Haalrun"]) },	-- Alchemy-Recipe: Super Mana Potion
-		{ 22909, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Haalrun"]) },	-- Alchemy-Recipe: Elixir of Major Defense
-		{ 22911, 	BZ["Terokkar Forest"], 	format("%s: %s", L["Vendor"], L["Leeli Longhaggle"]) },	-- Alchemy-Recipe: Major Dreamless Sleep Potion
-		{ 23574, 	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Altaa"]) },	-- Alchemy-Recipe: Transmute Primal Might
+		{ 22901, 	BZ["Terokkar Forest"], 		format("%s: %s", L["Vendor"], L["Leeli Longhaggle"]) },	-- Alchemy-Recipe: Sneaking Potion
+		{ 22902, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Haalrun"]) },	-- Alchemy-Recipe: Elixir of Major Frost Power
+		{ 22907, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Haalrun"]) },	-- Alchemy-Recipe: Super Mana Potion
+		{ 22909, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Haalrun"]) },	-- Alchemy-Recipe: Elixir of Major Defense
+		{ 22911, 	BZ["Terokkar Forest"], 		format("%s: %s", L["Vendor"], L["Leeli Longhaggle"]) },	-- Alchemy-Recipe: Major Dreamless Sleep Potion
+		{ 23574, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Altaa"]) },	-- Alchemy-Recipe: Transmute Primal Might
 		
 		-- -- -- -- --
 		-- Blacksmithing
 		-- -- -- -- --
-		{ 7995, 	BZ["The Hinterlands"], 	format("%s: %s", L["Vendor"], L["Harggan"]) },	-- Blacksmithing-Plans: Mithril Scale Bracers
-		{ 10858, 	BZ["Arathi Highlands"], format("%s: %s", L["Vendor"], L["Jannos Ironwill"]) },	-- Blacksmithing-Plans: Solid Iron Maul
-		{ 12162, 	BZ["Stormwind City"], 	format("%s: %s", L["Vendor"], L["Kaita Deepforge"]) },	-- Blacksmithing-Plans: Hardened Iron Shortsword
+		{ 7995, 	BZ["The Hinterlands"], 		format("%s: %s", L["Vendor"], L["Harggan"]) }, 	-- Blacksmithing-Plans: Mithril Scale Bracers
+		{ 10858, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Vendor"], L["Jannos Ironwill"]) }, 	-- Blacksmithing-Plans: Solid Iron Maul
+		{ 12162, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Kaita Deepforge"]) }, 	-- Blacksmithing-Plans: Hardened Iron Shortsword
 		
-		{ 23590, 	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Arras"]) },	-- Blacksmithing-Plans: Adamantite Maul
-		{ 23591, 	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Arras"]) },	-- Blacksmithing-Plans: Adamantite Cleaver
-		{ 23592, 	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Arras"]) },	-- Blacksmithing-Plans: Adamantite Dagger
-		{ 23593, 	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Arras"]) },	-- Blacksmithing-Plans: Adamantite Rapier
-		{ 23594, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Loolruna"]) },	-- Blacksmithing-Plans: Adamantite Plate Bracers
-		{ 23595, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Loolruna"]) },	-- Blacksmithing-Plans: Adamantite Plate Gloves
-		{ 23596, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Loolruna"]) },	-- Blacksmithing-Plans: Adamantite Breastplate
+		{ 23590, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Arras"]) }, 	-- Blacksmithing-Plans: Adamantite Maul
+		{ 23591, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Arras"]) }, 	-- Blacksmithing-Plans: Adamantite Cleaver
+		{ 23592, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Arras"]) }, 	-- Blacksmithing-Plans: Adamantite Dagger
+		{ 23593, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Arras"]) }, 	-- Blacksmithing-Plans: Adamantite Rapier
+		{ 23594, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Loolruna"]) },	-- Blacksmithing-Plans: Adamantite Plate Bracers
+		{ 23595, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Loolruna"]) },	-- Blacksmithing-Plans: Adamantite Plate Gloves
+		{ 23596, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Loolruna"]) },	-- Blacksmithing-Plans: Adamantite Breastplate
 		
-		{ 23638, 	BZ["Shadowmoon Valley"], format("%s: %s", L["Vendor"], L["Mari Stonehand"]) },	-- Blacksmithing-Plans: Lesser Ward of Shielding
-		{ 25847, 	BZ["Shadowmoon Valley"], format("%s: %s", L["Vendor"], L["Mari Stonehand"]) },	-- Blacksmithing-Plans: Eternium Rod
-	},
-	Horde	= {
+		{ 23638, 	BZ["Shadowmoon Valley"], 	format("%s: %s", L["Vendor"], L["Mari Stonehand"]) }, 	-- Blacksmithing-Plans: Lesser Ward of Shielding
+		{ 25847, 	BZ["Shadowmoon Valley"], 	format("%s: %s", L["Vendor"], L["Mari Stonehand"]) }, 	-- Blacksmithing-Plans: Eternium Rod
+		
+		-- -- -- -- --
+		-- Cooking
+		-- -- -- -- --
+		{ 3682, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Kendor Kabonka"]) },	-- Cooking-Recipe: Curiously Tasty Omelet
+		
+		{ 3734, 	BZ["Ashenvale"], 			format("%s: %s", L["Vendor"], L["Ulthaan"]) },	-- Cooking-Recipe: Big Bear Steak
+		{ 5489, 	BZ["Ashenvale"], 			format("%s: %s", L["Vendor"], L["Ulthaan"]) },	-- Cooking-Recipe: Lean Venison
+		
+		{ 4609, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Vendor"], L["Narj Deepslice"]) },	-- Cooking-Recipe: Barbecued Buzzard Wing
+		{ 5486, 	BZ["Darkshore"], 			L["Quest rewards"] },	-- Cooking-Recipe: Strider Stew
+		
+		{ 5487, 	BZ["The Barrens"], 			format("%s: %s", L["Vendor"], L["Prospector Khazgorm"]) },	-- Cooking-Recipe: Dig Rat Stew
+		{ 44977, 	BZ["The Barrens"], 			format("%s: %s", L["Vendor"], L["Prospector Khazgorm"]) },	-- Cooking-Recipe: Dig Rat Stew
+		
+		{ 6326, 	BZ["Westfall"], 			format("%s: %s", L["Vendor"], L["Kriggon Talsone"]) },	-- Cooking-Recipe: Slitherskin Mackerel
+		{ 16111, 	BZ["Westfall"], 			format("%s: %s", L["Vendor"], L["Kriggon Talsone"]) },	-- Cooking-Recipe: Spiced Chili Crab
+		
+		{ 6326, 	BZ["Teldrassil"], 			format("%s: %s", L["Vendor"], L["Nessa Shadowsong"]) },	-- Cooking-Recipe: Slitherskin Mackerel
+		{ 6326, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Tansy Puddlefizz"]) },	-- Cooking-Recipe: Slitherskin Mackerel
+		
+		{ 6892, 	BZ["Loch Modan"], 			format("%s: %s", L["Vendor"], L["Drac Roughcut"]) },	-- Cooking-Recipe: Smoked Bear Meat
+		{ 12228, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Vendor"], L["Hammon Karwn"]) },	-- Cooking-Recipe: Roast Raptor
+		
+		{ 12228, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Corporal Bluth"]) },	-- Cooking-Recipe: Roast Raptor
+		{ 12231, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Corporal Bluth"]) },	-- Cooking-Recipe: Jungle Stew
+		
+		{ 12229, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Vivianna"]) },	-- Cooking-Recipe: Hot Wolf Ribs
+		{ 13947, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Vivianna"]) },	-- Cooking-Recipe: Lobster Stew
+		{ 13948, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Vivianna"]) },	-- Cooking-Recipe: Mightfish Steak
+		{ 13949, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Vivianna"]) },	-- Cooking-Recipe: Baked Salmon
+		
+		{ 12228, 	BZ["Dustwallow Marsh"], 	format("%s: %s", L["Vendor"], L["Helenia Olden"]) },	-- Cooking-Recipe: Roast Raptor
+		{ 12233, 	BZ["Dustwallow Marsh"], 	format("%s: %s", L["Vendor"], L["Helenia Olden"]) },	-- Cooking-Recipe: Mystery Stew
+		{ 12239, 	BZ["Dustwallow Marsh"], 	format("%s: %s", L["Vendor"], L["Helenia Olden"]) },	-- Cooking-Recipe: Dragonbreath Chili
+		
+		{ 12233, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Janet Hommers"]) },	-- Cooking-Recipe: Mystery Stew
+		{ 12240, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Janet Hommers"]) },	-- Cooking-Recipe: Heavy Kodo Stew
+		
+		{ 16110, 	BZ["Felwood"], 				format("%s: %s", L["Vendor"], L["Malygen"]) },	-- Cooking-Recipe: Monster Omelet
+		{ 35564, 	BZ["Felwood"], 				format("%s: %s", L["Vendor"], L["Malygen"]) },	-- Cooking-Recipe: Charred Bear Kabobs
+		{ 35566, 	BZ["Felwood"], 				format("%s: %s", L["Vendor"], L["Malygen"]) },	-- Cooking-Recipe: Juicy Bear Burger
+		
+		{ 18046, 	BZ["The Hinterlands"], 		format("%s: %s", L["Vendor"], L["Truk Wildbeard"]) },	-- Cooking-Recipe: Tender Wolf Steak
+		
+		{ 27690, 	BZ["Terokkar Forest"], 		format("%s: %s", L["Vendor"], L["Supply Officer Mills"]) },	-- Cooking-Recipe: Blackened Basilisk
+		{ 27692, 	BZ["Terokkar Forest"], 		format("%s: %s", L["Vendor"], L["Supply Officer Mills"]) },	-- Cooking-Recipe: Warp Burger
+		
+		{ 27691, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Uriku"]) },	-- Cooking-Recipe: Roasted Clefthoof
+		{ 27693, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Uriku"]) },	-- Cooking-Recipe: Talbuk Steak
+		{ 27697, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Uriku"]) },	-- Cooking-Recipe: Grilled Mudfish
+		{ 27698, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Uriku"]) },	-- Cooking-Recipe: Poached Bluefish
+		
+		{ 27694, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Doba"]) },	-- Cooking-Recipe: Blackened Trout
+		{ 27695, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Doba"]) },	-- Cooking-Recipe: Feltail Delight
+		
+		{ 27699, 	BZ["Terokkar Forest"], 		format("%s: %s", L["Vendor"], L["Innkeeper Biribi"]) },	-- Cooking-Recipe: Golden Fish Sticks
+		{ 27700, 	BZ["Terokkar Forest"], 		format("%s: %s", L["Vendor"], L["Innkeeper Biribi"]) },	-- Cooking-Recipe: Spicy Crawdad
+		
+		{ 31674, 	BZ["Blade's Edge Mountains"], format("%s: %s", L["Vendor"], L["Sassa Weldwell"]) }, 	-- Cooking-Recipe: Crunchy Serpent
+		{ 31675, 	BZ["Blade's Edge Mountains"], format("%s: %s", L["Vendor"], L["Sassa Weldwell"]) }, 	-- Cooking-Recipe: Mok'Nathal Shortribs
+		
+		{ 22647, 	BZ["Bloodmyst Isle"], 		format("%s: %s", L["Vendor"], L["Fazu"]) },	-- Cooking-Recipe: Crunchy Spider Surprise
+		{ 27688, 	BZ["Hellfire Peninsula"], 	format("%s: %s", L["Vendor"], L["Sid Limbardi"]) },	-- Cooking-Recipe: Ravager Dog
+
 		-- -- -- -- --
 		-- Tailoring
 		-- -- -- -- --
-		{ 5775, 	BZ["Dustwallow Marsh"], L["Theramore Infiltrator"] },	-- Tailoring-Pattern: Black Silk Pack
-		{ 4355, 	BZ["Dustwallow Marsh"], format("%s: %s", L["Vendor"], L["Ghok'kah"]) },			-- Tailoring-Pattern: Icy Cloak
-		{ 6401, 	BZ["Hillsbrad Foothills"], format("%s: %s", L["Vendor"], L["Mallen Swain"]) },	-- Tailoring-Pattern: Dark Silk Shirt
-		{ 7089, 	BZ["Arathi Highlands"], format("%s: %s", L["Vendor"], L["Jun'ha"]) },			-- Tailoring-Pattern: Azure Silk Cloak
-		{ 7114, 	BZ["Desolace"], 		format("%s: %s", L["Vendor"], L["Kireena"]) },			-- Tailoring-Pattern: Azure Silk Gloves
-		{ 10325, 	BZ["Thunder Bluff"],	format("%s: %s", L["Vendor"], L["Mahu"]) },				-- Tailoring-Pattern: White Wedding Dress
-		{ 10311, 	BZ["Thunder Bluff"], 	format("%s: %s", L["Vendor"], L["Mahu"]) },				-- Tailoring-Pattern: Orange Martial Shirt
-		{ 10314, 	BZ["Orgrimmar"], 		format("%s: %s", L["Vendor"], L["Borya"]) },				-- Tailoring-Pattern: Lavender Mageweave Shirt
-		{ 10317, 	BZ["Orgrimmar"], 		format("%s: %s", L["Vendor"], L["Borya"]) },				-- Tailoring-Pattern: Pink Mageweave Shirt
-		{ 10321, 	BZ["Undercity"], 		format("%s: %s", L["Vendor"], L["Millie Gregorian"]) },	-- Tailoring-Pattern: Tuxedo Shirt
-		{ 10323, 	BZ["Undercity"], 		format("%s: %s", L["Vendor"], L["Millie Gregorian"]) },	-- Tailoring-Pattern: Tuxedo Pants
-		{ 10326, 	BZ["Undercity"], 		format("%s: %s", L["Vendor"], L["Millie Gregorian"]) },	-- Tailoring-Pattern: Tuxedo Jacket
+		{ 4355, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Micha Yance"]) }, 	-- Tailoring-Pattern: Icy Cloak
+		{ 6401, 	BZ["Duskwood"], 			format("%s: %s", L["Vendor"], L["Sheri Zipstitch"]) }, 	-- Tailoring-Pattern: Dark Silk Shirt
+		{ 7089, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Brienna Starglow"]) }, -- Tailoring-Pattern: Azure Silk Cloak
+		{ 7114, 	BZ["Wetlands"], 			format("%s: %s", L["Vendor"], L["Wenna Silkbeard"]) }, 	-- Tailoring-Pattern: Azure Silk Gloves
+		{ 10311, 	BZ["Darnassus"], 			format("%s: %s", L["Vendor"], L["Elynna"]) }, 	-- Tailoring-Pattern: Orange Martial Shirt
+		{ 10314, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Outfitter Eric"]) }, 	-- Tailoring-Pattern: Lavender Mageweave Shirt
+		{ 10317, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Outfitter Eric"]) }, 	-- Tailoring-Pattern: Pink Mageweave Shirt
+		{ 10321, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Outfitter Eric"]) }, 	-- Tailoring-Pattern: Tuxedo Shirt
+		{ 10323, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Outfitter Eric"]) }, 	-- Tailoring-Pattern: Tuxedo Pants
+		{ 10326, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Outfitter Eric"]) }, 	-- Tailoring-Pattern: Tuxedo Jacket
+		{ 10325, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Alexandra Bolero"]) },	-- Tailoring-Pattern: White Wedding Dress
+		{ 21894, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Borto"]) }, 	-- Tailoring-Pattern: Bolt of Soulcloth
+		{ 21902, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Borto"]) }, 	-- Tailoring-Pattern: Soulcloth Gloves
+		{ 21898, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Muheru the Weaver"]) }, 	-- Tailoring-Pattern: Imbued Netherweave Pants
+		{ 21899, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Muheru the Weaver"]) }, 	-- Tailoring-Pattern: Imbued Netherweave Boots
 		
-		{ 21893, 	BZ["Nagrand"], 			format("%s: %s", L["Vendor"], L["Mathar G'ochar"]) },	-- Tailoring-Pattern: Imbued Netherweave Bag
-		{ 21894, 	BZ["Nagrand"], 			format("%s: %s", L["Vendor"], L["Mathar G'ochar"]) },	-- Tailoring-Pattern: Bolt of Soulcloth
-		{ 21902, 	BZ["Nagrand"], 			format("%s: %s", L["Vendor"], L["Mathar G'ochar"]) },	-- Tailoring-Pattern: Soulcloth Gloves
-		
-		{ 21898, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Zurai"]) },				-- Tailoring-Pattern: Imbued Netherweave Pants
-		{ 21899, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Zurai"]) },				-- Tailoring-Pattern: Imbued Netherweave Boots
-		
-		{ 21892,	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Deynna"]) },	-- Tailoring-Pattern: Bolt of Imbued Netherweave
-		{ 21894,	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Deynna"]) },	-- Tailoring-Pattern: Bolt of Soulcloth
-		{ 21896,	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Deynna"]) },	-- Tailoring-Pattern: Netherweave Robe
-		{ 21897,	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Deynna"]) },	-- Tailoring-Pattern: Netherweave Tunic
-		
+		{ 21892,	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Bolt of Imbued Netherweave
+		{ 21894,	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Bolt of Soulcloth
+		{ 21896,	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Netherweave Robe
+		{ 21897,	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Netherweave Tunic
+	},
+	Horde	= {
 		-- -- -- -- --
 		-- Alchemy
 		-- -- -- -- --
-		{ 5640, 	BZ["Orgrimmar"], 		format("%s: %s", L["Vendor"], L["Hagrus"]) },	-- Alchemy-Recipe: Rage Potion
-		{ 5643, 	BZ["Orgrimmar"], 		format("%s: %s", L["Vendor"], L["Hagrus"]) },	-- Alchemy-Recipe: Great Rage Potion
-		{ 5642, 	BZ["Orgrimmar"], 		format("%s: %s", L["Vendor"], L["Kor'geld"]) },	-- Alchemy-Recipe: Free Action Potion
-		{ 6053, 	BZ["The Barrens"], 		format("%s: %s", L["Vendor"], L["Hula'mahi"]) },	-- Alchemy-Recipe: Holy Protection Potion
-		{ 6054, 	BZ["Hillsbrad Foothills"], format("%s: %s", L["Vendor"], L["Christoph Jeffcoat"]) },	-- Alchemy-Recipe: Shadow Protection Potion
+		{ 5640, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Hagrus"]) },	-- Alchemy-Recipe: Rage Potion
+		{ 5643, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Hagrus"]) },	-- Alchemy-Recipe: Great Rage Potion
+		{ 5642, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Kor'geld"]) },	-- Alchemy-Recipe: Free Action Potion
+		{ 6053, 	BZ["The Barrens"], 			format("%s: %s", L["Vendor"], L["Hula'mahi"]) },	-- Alchemy-Recipe: Holy Protection Potion
+		{ 6054, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Christoph Jeffcoat"]) },	-- Alchemy-Recipe: Shadow Protection Potion
 		{ 6055, 	BZ["Stonetalon Mountains"], format("%s: %s", L["Vendor"], L["Jeeda"]) },	-- Alchemy-Recipe: Fire Protection Potion
-		{ 6057, 	BZ["Feralas"], 			format("%s: %s", L["Vendor"], L["Bronk"]) },	-- Alchemy-Recipe: Nature Protection Potion
-		{ 6068, 	BZ["Thousand Needles"], format("%s: %s", L["Vendor"], L["Montarr"]) },	-- Alchemy-Recipe: Shadow Oil
-		{ 9302, 	BZ["Feralas"], 			format("%s: %s", L["Vendor"], L["Bronk"]) },	-- Alchemy-Recipe: Ghost Dye
-		{ 9301, 	BZ["Undercity"], 		format("%s: %s", L["Vendor"], L["Algernon"]) },	-- Alchemy-Recipe: Elixir of Shadow Power
-		{ 9300, 	BZ["Swamp of Sorrows"], format("%s: %s", L["Vendor"], L["Rartar"]) },	-- Alchemy-Recipe: Elixir of Demonslaying
-		{ 13478, 	BZ["Orgrimmar"], 		format("%s: %s", L["Vendor"], L["Kor'geld"]) },	-- Alchemy-Recipe: Elixir of Superior Defense
+		{ 6057, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Bronk"]) },	-- Alchemy-Recipe: Nature Protection Potion
+		{ 6068, 	BZ["Thousand Needles"], 	format("%s: %s", L["Vendor"], L["Montarr"]) },	-- Alchemy-Recipe: Shadow Oil
+		{ 9302, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Bronk"]) },	-- Alchemy-Recipe: Ghost Dye
+		{ 9301, 	BZ["Undercity"], 			format("%s: %s", L["Vendor"], L["Algernon"]) },	-- Alchemy-Recipe: Elixir of Shadow Power
+		{ 9300, 	BZ["Swamp of Sorrows"], 	format("%s: %s", L["Vendor"], L["Rartar"]) },	-- Alchemy-Recipe: Elixir of Demonslaying
+		{ 13478, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Kor'geld"]) },	-- Alchemy-Recipe: Elixir of Superior Defense
 		
 		{ 22900, 	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Melaris"]) },	-- Alchemy-Recipe: Elixir of Camouflage
 		{ 22900, 	BZ["Hellfire Peninsula"], format("%s: %s", L["Vendor"], L["Apothecary Antonivich"]) },	-- Alchemy-Recipe: Elixir of Camouflage
@@ -4859,21 +5059,108 @@ local recipeFactionDuplicates	= {
 		-- -- -- -- --
 		-- Blacksmithing
 		-- -- -- -- --
-		{ 7995, 	BZ["Swamp of Sorrows"], format("%s: %s", L["Vendor"], L["Gharash"]) },	-- Blacksmithing-Plans: Mithril Scale Bracers
-		{ 10858, 	BZ["Desolace"], 		format("%s: %s", L["Vendor"], L["Muuran"]) },	-- Blacksmithing-Plans: Solid Iron Maul
-		{ 12162, 	BZ["Orgrimmar"], 		format("%s: %s", L["Vendor"], L["Sumi"]) },	-- Blacksmithing-Plans: Hardened Iron Shortsword
-		{ 12164, 	BZ["Stranglethorn Vale"], format("%s: %s", L["Vendor"], L["Vharr"]) },	-- Blacksmithing-Plans: Massive Iron Axe
+		{ 7995, 	BZ["Swamp of Sorrows"], 	format("%s: %s", L["Vendor"], L["Gharash"]) },	-- Blacksmithing-Plans: Mithril Scale Bracers
+		{ 10858, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Muuran"]) },	-- Blacksmithing-Plans: Solid Iron Maul
+		{ 12162, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Sumi"]) },	-- Blacksmithing-Plans: Hardened Iron Shortsword
+		{ 12164, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Vharr"]) },	-- Blacksmithing-Plans: Massive Iron Axe
 		
-		{ 23590, 	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Eriden"]) },	-- Blacksmithing-Plans: Adamantite Maul
-		{ 23591, 	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Eriden"]) },	-- Blacksmithing-Plans: Adamantite Cleaver
-		{ 23592, 	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Eriden"]) },	-- Blacksmithing-Plans: Adamantite Dagger
-		{ 23593, 	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Eriden"]) },	-- Blacksmithing-Plans: Adamantite Rapier
-		{ 23594, 	BZ["Shadowmoon Valley"], format("%s: %s", L["Vendor"],L["Krek Cragcrush"]) },	-- Blacksmithing-Plans: Adamantite Plate Bracers
-		{ 23595, 	BZ["Shadowmoon Valley"], format("%s: %s", L["Vendor"],L["Krek Cragcrush"]) },	-- Blacksmithing-Plans: Adamantite Plate Gloves
-		{ 23596, 	BZ["Shadowmoon Valley"], format("%s: %s", L["Vendor"],L["Krek Cragcrush"]) },	-- Blacksmithing-Plans: Adamantite Breastplate
+		{ 23590, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Eriden"]) },	-- Blacksmithing-Plans: Adamantite Maul
+		{ 23591, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Eriden"]) },	-- Blacksmithing-Plans: Adamantite Cleaver
+		{ 23592, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Eriden"]) },	-- Blacksmithing-Plans: Adamantite Dagger
+		{ 23593, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Eriden"]) },	-- Blacksmithing-Plans: Adamantite Rapier
+		{ 23594, 	BZ["Shadowmoon Valley"], 	format("%s: %s", L["Vendor"],L["Krek Cragcrush"]) },	-- Blacksmithing-Plans: Adamantite Plate Bracers
+		{ 23595, 	BZ["Shadowmoon Valley"], 	format("%s: %s", L["Vendor"],L["Krek Cragcrush"]) },	-- Blacksmithing-Plans: Adamantite Plate Gloves
+		{ 23596, 	BZ["Shadowmoon Valley"], 	format("%s: %s", L["Vendor"],L["Krek Cragcrush"]) },	-- Blacksmithing-Plans: Adamantite Breastplate
 		
-		{ 23638, 	BZ["Hellfire Peninsula"], format("%s: %s", L["Vendor"], L["Rohok"]) },	-- Blacksmithing-Plans: Lesser Ward of Shielding
-		{ 25847, 	BZ["Hellfire Peninsula"], format("%s: %s", L["Vendor"], L["Rohok"]) },	-- Blacksmithing-Plans: Eternium Rod
+		{ 23638, 	BZ["Hellfire Peninsula"], 	format("%s: %s", L["Vendor"], L["Rohok"]) },	-- Blacksmithing-Plans: Lesser Ward of Shielding
+		{ 25847, 	BZ["Hellfire Peninsula"], 	format("%s: %s", L["Vendor"], L["Rohok"]) },	-- Blacksmithing-Plans: Eternium Rod
+		
+		-- -- -- -- --
+		-- Cooking
+		-- -- -- -- --
+		{ 3682, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Vendor"], L["Keena"]) },	-- Cooking-Recipe: Curiously Tasty Omelet
+		{ 12228, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Vendor"], L["Keena"]) },	-- Cooking-Recipe: Roast Raptor
+		
+		{ 3682, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Nerrist"]) },	-- Cooking-Recipe: Curiously Tasty Omelet
+		{ 12228, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Nerrist"]) },	-- Cooking-Recipe: Roast Raptor
+		{ 12231, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Nerrist"]) },	-- Cooking-Recipe: Jungle Stew
+		
+		{ 3735, 	BZ["The Barrens"], 			format("%s: %s", L["Vendor"], L["Zargh"]) },	-- Cooking-Recipe: Hot Lion Chops
+		
+		{ 4609, 	BZ["Arathi Highlands"], 	format("%s: %s", trainersName, L["Slagg"]) },	-- Cooking-Recipe: Barbecued Buzzard Wing
+		{ 5486, 	BZ["The Barrens"], 			format("%s: %s", L["Vendor"], L["Tari'qa"]) },	-- Cooking-Recipe: Strider Stew
+		
+		{ 5487, 	BZ["The Barrens"], 			L["Quest rewards"] },	-- Cooking-Recipe: Dig Rat Stew
+		{ 44977, 	BZ["The Barrens"], 			L["Quest rewards"] },	-- Cooking-Recipe: Dig Rat Stew
+		
+		{ 6326, 	BZ["Durotar"], 				format("%s: %s", L["Vendor"], L["Zansoa"]) },	-- Cooking-Recipe: Slitherskin Mackerel
+		{ 6326, 	BZ["Tirisfal Glades"], 		format("%s: %s", L["Vendor"], L["Martine Tramblay"]) },	-- Cooking-Recipe: Slitherskin Mackerel
+		
+		{ 12228, 	BZ["Dustwallow Marsh"], 	format("%s: %s", L["Vendor"], L["Ogg'marr"]) },	-- Cooking-Recipe: Roast Raptor
+		{ 12232, 	BZ["Dustwallow Marsh"], 	format("%s: %s", L["Vendor"], L["Ogg'marr"]) },	-- Cooking-Recipe: Carrion Surprise
+		{ 12239, 	BZ["Dustwallow Marsh"], 	format("%s: %s", L["Vendor"], L["Ogg'marr"]) },	-- Cooking-Recipe: Dragonbreath Chili
+		
+		{ 12229, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Sheendra Tallgrass"]) },	-- Cooking-Recipe: Hot Wolf Ribs
+		{ 13947, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Sheendra Tallgrass"]) },	-- Cooking-Recipe: Lobster Stew
+		{ 13948, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Sheendra Tallgrass"]) },	-- Cooking-Recipe: Mightfish Steak
+		{ 13949, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Sheendra Tallgrass"]) },	-- Cooking-Recipe: Baked Salmon
+		
+		{ 12232, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Kireena"]) },	-- Cooking-Recipe: Carrion Surprise
+		{ 12240, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Kireena"]) },	-- Cooking-Recipe: Heavy Kodo Stew
+		
+		{ 12232, 	BZ["Swamp of Sorrows"], 	format("%s: %s", L["Vendor"], L["Banalash"]) },	-- Cooking-Recipe: Carrion Surprise
+		{ 16111, 	BZ["Swamp of Sorrows"], 	format("%s: %s", L["Vendor"], L["Banalash"]) },	-- Cooking-Recipe: Spiced Chili Crab
+		
+		{ 6892, 	BZ["Silverpine Forest"], 	format("%s: %s", L["Vendor"], L["Andrew Hilbert"]) },	-- Cooking-Recipe: Smoked Bear Meat
+		{ 16111, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Uthok"]) },	-- Cooking-Recipe: Spiced Chili Crab
+		
+		{ 16110, 	BZ["Felwood"], 				format("%s: %s", L["Vendor"], L["Bale"]) },	-- Cooking-Recipe: Monster Omeletrel
+		{ 35564, 	BZ["Felwood"], 				format("%s: %s", L["Vendor"], L["Bale"]) },	-- Cooking-Recipe: Charred Bear Kabobs
+		{ 35566, 	BZ["Felwood"], 				format("%s: %s", L["Vendor"], L["Bale"]) },	-- Cooking-Recipe: Juicy Bear Burger
+		
+		{ 27690, 	BZ["Terokkar Forest"], 		format("%s: %s", L["Vendor"], L["Innkeeper Grilka"]) },	-- Cooking-Recipe: Blackened Basilisk
+		{ 27692, 	BZ["Terokkar Forest"], 		format("%s: %s", L["Vendor"], L["Innkeeper Grilka"]) },	-- Cooking-Recipe: Warp Burger
+		
+		{ 27691, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Nula the Butcher"]) },	-- Cooking-Recipe: Roasted Clefthoof
+		{ 27693, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Nula the Butcher"]) },	-- Cooking-Recipe: Talbuk Steak
+		{ 27697, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Nula the Butcher"]) },	-- Cooking-Recipe: Grilled Mudfish
+		{ 27698, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Nula the Butcher"]) },	-- Cooking-Recipe: Poached Bluefish
+		
+		{ 27699, 	BZ["Terokkar Forest"], 		format("%s: %s", L["Vendor"], L["Rungor"]) },	-- Cooking-Recipe: Golden Fish Sticks
+		{ 27700, 	BZ["Terokkar Forest"], 		format("%s: %s", L["Vendor"], L["Rungor"]) },	-- Cooking-Recipe: Spicy Crawdad
+		
+		{ 22647, 	BZ["Ghostlands"], 			format("%s: %s", L["Vendor"], L["Master Chef Mouldier"]) },	-- Cooking-Recipe: Crunchy Spider Surprise
+		{ 27688, 	BZ["Hellfire Peninsula"], 	format("%s: %s", L["Vendor"], L["Cookie One-Eye"]) },	-- Cooking-Recipe: Ravager Dog
+		{ 27694, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Gambarinka"]) },	-- Cooking-Recipe: Blackened Trout
+		{ 27694, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Zurai"]) },	-- Cooking-Recipe: Feltail Delight
+		
+		-- -- -- -- --
+		-- Tailoring
+		-- -- -- -- --
+		{ 5775, 	BZ["Dustwallow Marsh"], 	L["Theramore Infiltrator"] }, 	-- Tailoring-Pattern: Black Silk Pack
+		{ 4355, 	BZ["Dustwallow Marsh"], 	format("%s: %s", L["Vendor"], L["Ghok'kah"]) }, 	-- Tailoring-Pattern: Icy Cloak
+		{ 6401, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Mallen Swain"]) }, 	-- Tailoring-Pattern: Dark Silk Shirt
+		{ 7089, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Vendor"], L["Jun'ha"]) }, 	-- Tailoring-Pattern: Azure Silk Cloak
+		{ 7114, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Kireena"]) }, 	-- Tailoring-Pattern: Azure Silk Gloves
+		{ 10325, 	BZ["Thunder Bluff"],		format("%s: %s", L["Vendor"], L["Mahu"]) }, 	-- Tailoring-Pattern: White Wedding Dress
+		{ 10311, 	BZ["Thunder Bluff"], 		format("%s: %s", L["Vendor"], L["Mahu"]) }, 	-- Tailoring-Pattern: Orange Martial Shirt
+		{ 10314, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Borya"]) }, 	-- Tailoring-Pattern: Lavender Mageweave Shirt
+		{ 10317, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Borya"]) }, 	-- Tailoring-Pattern: Pink Mageweave Shirt
+		{ 10321, 	BZ["Undercity"], 			format("%s: %s", L["Vendor"], L["Millie Gregorian"]) },	-- Tailoring-Pattern: Tuxedo Shirt
+		{ 10323, 	BZ["Undercity"], 			format("%s: %s", L["Vendor"], L["Millie Gregorian"]) },	-- Tailoring-Pattern: Tuxedo Pants
+		{ 10326, 	BZ["Undercity"], 			format("%s: %s", L["Vendor"], L["Millie Gregorian"]) },	-- Tailoring-Pattern: Tuxedo Jacket
+		
+		{ 21893, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Mathar G'ochar"]) },	-- Tailoring-Pattern: Imbued Netherweave Bag
+		{ 21894, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Mathar G'ochar"]) },	-- Tailoring-Pattern: Bolt of Soulcloth
+		{ 21902, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Mathar G'ochar"]) },	-- Tailoring-Pattern: Soulcloth Gloves
+		
+		{ 21898, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Zurai"]) }, 	-- Tailoring-Pattern: Imbued Netherweave Pants
+		{ 21899, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Zurai"]) }, 	-- Tailoring-Pattern: Imbued Netherweave Boots
+		
+		{ 21892,	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Deynna"]) },	-- Tailoring-Pattern: Bolt of Imbued Netherweave
+		{ 21894,	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Deynna"]) },	-- Tailoring-Pattern: Bolt of Soulcloth
+		{ 21896,	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Deynna"]) },	-- Tailoring-Pattern: Netherweave Robe
+		{ 21897,	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Deynna"]) },	-- Tailoring-Pattern: Netherweave Tunic
 	},
 }
 
