@@ -549,7 +549,7 @@ local function ProcessTooltip(tooltip, name, link)
 			
 			local cNote = ItemNoteText[itemID]
 			if cNote then
-			cachedNote = format('"%s"', cNote)
+			cachedNote = format('|cFFFFFFFF%s:|r "%s"', L["Note"], cNote)
 			end
 		end
 		

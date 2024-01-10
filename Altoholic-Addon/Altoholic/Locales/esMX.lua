@@ -403,6 +403,7 @@ L["No reputations found"] = "No se han encontrado reputaciones"
 L["No rest XP"] = "Sin reposo de XP"
 L[" not found!"] = " no encontrado!"
 L["Northrend Dungeonmaster"] = "Maestro de mazmorra de Rasganorte"
+L["Note"] = "Nota"
 L["Not started"] = "No iniciado"
 L["Offline Members"] = "Miembros desconectados"
 L["Olaf"] = true

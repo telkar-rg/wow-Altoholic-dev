@@ -421,6 +421,7 @@ L["No reputations found"] = true
 L["No rest XP"] = true
 L[" not found!"] = true
 L["Northrend Dungeonmaster"] = true
+L["Note"] = true
 L["Not started"] = true
 L["Number of players: %s"] = true
 L["Offline Members"] = true
