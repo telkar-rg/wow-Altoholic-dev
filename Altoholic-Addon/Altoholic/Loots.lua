@@ -28,7 +28,8 @@ lootTable = addonTable.LootTableSetup.lootTable
 
 
 function ns:setupLootTable()
-	LootSourceTooltipDB = Altoholic.db.global.LootSourceTooltip
+	local playerFaction = UnitFactionGroup("player")
+	LootSourceTooltipDB = Altoholic.db.global.LootSourceTooltip[playerFaction]
 	
 	if not LootSourceTooltipDB.version or LootSourceTooltipDB.version ~= LootSourceTooltip_VERSION then
 		
@@ -108,9 +109,9 @@ function ns:setupLootTable()
 		end
 		
 		-- LootSourceTooltip = { version = 0, single={}, multi={}, },
-		wipe(LootSourceTooltipDB.multi)
-		wipe(LootSourceTooltipDB.single)
-		LootSourceTooltipDB.multi  = lootTableRev_Multi
+		wipe(LootSourceTooltipDB.db)
+		-- wipe(LootSourceTooltipDB.single)
+		LootSourceTooltipDB.db  = lootTableRev_Multi
 		-- LootSourceTooltipDB.single = lootTableRev_Single
 		
 		LootSourceTooltipDB.version = LootSourceTooltip_VERSION
@@ -133,9 +134,10 @@ function ns:GetSource(searchedID)
 	}
 	local txt, domain, subDomain
 	
-	-- LootSourceTooltipDB.multi
-	if LootSourceTooltipDB.multi[searchedID] then
-		txt = LootSourceTooltipDB.multi[searchedID]
+	-- if LootSourceTooltipDB.multi[searchedID] then
+	if LootSourceTooltipDB.db[searchedID] then
+		-- txt = LootSourceTooltipDB.multi[searchedID]
+		txt = LootSourceTooltipDB.db[searchedID]
 		
 		local p = strfind(txt, "\1\1\1") 	-- check if multiple zones and take first
 		if p then
@@ -166,9 +168,10 @@ function ns:GetSource(searchedID)
 end
 
 function ns:GetSource_multi(searchedID)
-	-- LootSourceTooltipDB.multi
-	if LootSourceTooltipDB.multi[searchedID] then
-		local txt = LootSourceTooltipDB.multi[searchedID]
+	-- if LootSourceTooltipDB.multi[searchedID] then
+	if LootSourceTooltipDB.db[searchedID] then
+		-- local txt = LootSourceTooltipDB.multi[searchedID]
+		local txt = LootSourceTooltipDB.db[searchedID]
 		txt = gsub(txt, "\1\1\1","; ") 
 		txt = gsub(txt, "\1\1","/ ") 
 		txt = gsub(txt, "\1",", ") 
@@ -212,7 +215,8 @@ local function ParseAltoholicLoots(OnMatch, OnNoMatch)
 	local count = 0
 	-- print("-- DEBUG: CALLED ParseAltoholicLoots(OnMatch, OnNoMatch)")
 	
-	for itemID, txt in pairs(LootSourceTooltipDB.multi) do
+	-- for itemID, txt in pairs(LootSourceTooltipDB.multi) do
+	for itemID, txt in pairs(LootSourceTooltipDB.db) do
 		if not listSearchedID[itemID] then	-- search only once
 			listSearchedID[itemID] = 1
 			
@@ -506,7 +510,8 @@ function ns:FindUpgradeByStats(currentID, class)
 	
 	AddCurrentlyEquippedItem(currentID, class)
 	
-	for itemID, txt in pairs(LootSourceTooltipDB.multi) do
+	-- for itemID, txt in pairs(LootSourceTooltipDB.multi) do
+	for itemID, txt in pairs(LootSourceTooltipDB.db) do
 		
 		local matches, itemLevel = MatchUpgradeByStats(itemID)
 		

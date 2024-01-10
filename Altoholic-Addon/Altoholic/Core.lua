@@ -134,7 +134,7 @@ local AddonDB_Defaults = {
 			WarningType3 = "30|15|10|5|4|3|2|1",		-- for calendar events
 			WarningType4 = "30|15|10|5|4|3|2|1",		-- for item timers (like mysterious egg)
 		},
-		LootSourceTooltip = { version = 0, single={}, multi={}, },
+		LootSourceTooltip = { Alliance={db={}, version = 0}, Horde={db={}, version = 0}, },
 	},
 }
 
