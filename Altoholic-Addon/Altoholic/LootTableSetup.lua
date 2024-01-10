@@ -1148,29 +1148,8 @@ db.lootTable = {
 		},
 	},
 	
-	-- misc boe stuff
-	[ BZ["Azeroth"] ] = {
-		[ L["Vendor"] ] = {
-			6270,	-- Tailoring-Pattern: Blue Linen Vest
-			6272,	-- Tailoring-Pattern: Blue Linen Robe
-			6274,	-- Tailoring-Pattern: Blue Overalls
-			6275,	-- Tailoring-Pattern: Greater Adept's Robe
-			5771,	-- Tailoring-Pattern: Red Linen Bag
-			5772,	-- Tailoring-Pattern: Red Woolen Bag
-		},
-	},
-	[ BZ["Azshara"] ] = {
-		[ L["Lingering Highborne"] ] = {
-			14473,	-- Tailoring-Pattern: Ghostweave Belt
-			14477,	-- Tailoring-Pattern: Ghostweave Gloves
-		},
-	},
-	[ BZ["Burning Steppes"]] = {
-		[ L["Thaurissan Firewalker"] ] = {
-			14482,	-- Tailoring-Pattern: Cindercloth Cloak
-			14490,	-- Tailoring-Pattern: Cindercloth Pants
-		},
-	},
+	
+	-- misc classic dungeon
 	[ BZ["Dire Maul"] ] = {
 		[ L["Knot Thimblejack's Cache"] ] = {
 			18414,	-- Tailoring-Pattern: Belt of the Archmage
@@ -1179,149 +1158,10 @@ db.lootTable = {
 			18417,	-- Tailoring-Pattern: Mooncloth Gloves
 			18418,	-- Tailoring-Pattern: Cloak of Warding
 		},
-		[ L["Shen'dralar Provisioner"] ] = {
-			18487,	-- Tailoring-Pattern: Mooncloth Robe
-		},
 	},
-	[ BZ["Eastern Plaguelands"] ] = {
-		[ L["Dark Summoner"] ] = {
-			14485,	-- Tailoring-Pattern: Wizardweave Leggings
-		},
-		[ L["Dark Caster"] ] = {
-			14500,	-- Tailoring-Pattern: Wizardweave Robe
-			14505,	-- Tailoring-Pattern: Wizardweave Turban
-		},
-		[ L["Unseen Servant"]  ] = {
-			14480,	-- Tailoring-Pattern: Ghostweave Vest
-		},
-	},
-	[ BZ["Moonglade"] ] = {
-		[ format("%s: %s", L["Vendor"], L["Darnall"]) ] = {
-			14469,	-- Tailoring-Pattern: Runecloth Robe
-			14472,	-- Tailoring-Pattern: Runecloth Cloak
-		},
-		[ format("%s: %s", L["Vendor"], L["Lorelae Wintersong"]) ] = {
-			14483,	-- Tailoring-Pattern: Felcloth Pants
-		},
-	},
-	[ BZ["Searing Gorge"] ] = {
-		[ L["Quest rewards"] ] = {
-			10463,	-- Tailoring-Pattern: Shadoweave Mask
-		},
-		[ L["Twilight Fire Guard"] ] = {
-			14471,	-- Tailoring-Pattern: Cindercloth Vest
-			14476,	-- Tailoring-Pattern: Cindercloth Gloves
-		},
-	},
-	[ BZ["Silithus"] ] = {
-		[ L["Quest rewards"] ] = {
-			20546,	-- Tailoring-Pattern: Runed Stygian Leggings
-			20547,	-- Tailoring-Pattern: Runed Stygian Boots
-			20548,	-- Tailoring-Pattern: Runed Stygian Belt
-			
-			20553,	-- Blacksmithing-Plans: Darkrune Gauntlets
-			20554,	-- Blacksmithing-Plans: Darkrune Breastplate
-			20555,	-- Blacksmithing-Plans: Darkrune Helm
-		},
-		[ format("%s: %s", L["Vendor"], L["Kania"]) ] = {
-			22308,	-- Tailoring-Pattern: Enchanted Runecloth Bag
-		},
-	},
-	[ BZ["Stranglethorn Vale"] ] = {
-		[ format("%s: %s", L["Vendor"], L["Xizk Goodstitch"]) ] = {
-			7087,	-- Tailoring-Pattern: Crimson Silk Cloak
-			14630,	-- Tailoring-Pattern: Enchanter's Cowl
-		},
-		[ format("%s: %s", L["Vendor"], L["Narkk"]) ] = {
-			10728,	-- Tailoring-Pattern: Black Swashbuckler's Shirt
-		},
-		[ format("%s: %s", L["Vendor"], L["Cowardly Crosby"]) ] = {
-			10318,	-- Tailoring-Pattern: Admiral's Hat
-		},
-	},
-	[ BZ["Tanaris"] ] = {
-		[ format("%s: %s", L["Vendor"], L["Vizzklick"]) ] = {
-			7088,	-- Tailoring-Pattern: Crimson Silk Robe
-			21358,	-- Tailoring-Pattern: Soul Pouch
-		},
-		[ format("%s: %s", L["Vendor"], L["Haughty Modiste"]) ] = {
-			37915,	-- Tailoring-Pattern: Dress Shoes
-			38327,	-- Tailoring-Pattern: Haliscan Jacket
-			38328,	-- Tailoring-Pattern: Haliscan Pantaloons
-		},
-	},
-	[ BZ["Winterspring"] ] = {
-		[ format("%s: %s", L["Vendor"], L["Qia"]) ] = {
-			14468,	-- Tailoring-Pattern: Runecloth Bag
-			14526,	-- Tailoring-Pattern: Mooncloth
-		},
-	},
-	
-	
-	-- [ BZ["Outland"] ] = {
-		-- [ L["Vendor"] ] = {
-		-- },
-	-- },
-	-- [ BZ["Nagrand"] ] = {
-		-- [ L["Vendor"] ] = {
-		-- },
-	-- },
-	[ BZ["Shadowmoon Valley"] ] = {
-		[ format("%s: %s (%s)", L["Vendor"], L["Arrond"], BF["The Scryers"]) ] = {
-			21900,	-- Tailoring-Pattern: Imbued Netherweave Robe
-			21901,	-- Tailoring-Pattern: Imbued Netherweave Tunic
-		},
-	},
-	[ BZ["Shattrath City"] ] = {
-		[ format("%s: %s", L["Vendor"], L["Eiin"]) ] = {
-			21892,	-- Tailoring-Pattern: Bolt of Imbued Netherweave
-			21893,	-- Tailoring-Pattern: Imbued Netherweave Bag
-			21896,	-- Tailoring-Pattern: Netherweave Robe
-			21897,	-- Tailoring-Pattern: Netherweave Tunic
-		},
-		[ format("%s: %s", L["Vendor"], L["Nasmara Moonsong"]) ] = {
-			21895,	-- Tailoring-Pattern: Primal Mooncloth
-			21916,	-- Tailoring-Pattern: Primal Mooncloth Belt
-			21917,	-- Tailoring-Pattern: Primal Mooncloth Robe
-			21918,	-- Tailoring-Pattern: Primal Mooncloth Shoulders
-			21919,	-- Tailoring-Pattern: Primal Mooncloth Bag
-		},
-		[ format("%s: %s", L["Vendor"], L["Gidge Spellweaver"]) ] = {
-			24316,	-- Tailoring-Pattern: Spellcloth
-			21908,	-- Tailoring-Pattern: Spellfire Belt
-			21909,	-- Tailoring-Pattern: Spellfire Gloves
-			21910,	-- Tailoring-Pattern: Spellfire Robe
-			21911,	-- Tailoring-Pattern: Spellfire Bag
-		},
-		[ format("%s: %s", L["Vendor"], L["Andrion Darkspinner"]) ] = {
-			30483,	-- Tailoring-Pattern: Shadowcloth
-			21912,	-- Tailoring-Pattern: Frozen Shadoweave Shoulders
-			21913,	-- Tailoring-Pattern: Frozen Shadoweave Robe
-			21914,	-- Tailoring-Pattern: Frozen Shadoweave Boots
-			21915,	-- Tailoring-Pattern: Ebon Shadowbag
-		},
-		[ format("%s: %s", L["Vendor"], L["Madame Ruby"]) ] = {
-			22307,	-- Tailoring-Pattern: Enchanted Mageweave Pouch
-		},
-	},
-	-- [ BZ["Zangarmarsh"] ] = {
-		-- [ L["Vendor"] ] = {
-		-- },
-	-- },
-	
-	
-	-- misc classic dungeon boe
 	[ BZ["Blackrock Spire"] ] = {
 		[ L["Firebrand Pyromancer"] ] = {
 			14513,	-- Tailoring-Pattern: Robe of the Archmage
-		},
-	},
-	[ BZ["Stratholme"] ] = {
-		[ BB["Balnazzar"] ] = {
-			29120,	-- Tailoring-Pattern: Truefaith Vestments (a weird duplicate)
-		},
-		[ L["Spectral Citizen"] ] = {
-			14495,	-- Tailoring-Pattern: Ghostweave Pants
 		},
 	},
 	
@@ -1330,7 +1170,7 @@ db.lootTable = {
 			18265,	-- Tailoring-Pattern: Flarecore Wraps
 			21371,	-- Tailoring-Pattern: Core Felcloth Bag
 			
-			18264,	-- Blacksmithing-Recipe: Elemental Sharpening Stone
+			18264,	-- Blacksmithing-Plans: Elemental Sharpening Stone
 		},
 	},
 	
@@ -1348,8 +1188,8 @@ db.lootTable = {
 			22913, 	-- Alchemy-Recipe: Haste Potion (World Drop)
 			35295,	-- Alchemy-Recipe: Haste Potion
 			
-			33186,	 -- Blacksmithing-Recipe: Adamantite Weapon Chain (World Drop)
-			35296,	 -- Blacksmithing-Recipe: Adamantite Weapon Chain
+			33186,	 -- Blacksmithing-Plans: Adamantite Weapon Chain (World Drop)
+			35296,	 -- Blacksmithing-Plans: Adamantite Weapon Chain
 		},
 	},
 	[ BZ["Karazhan"] ] = {
@@ -1362,6 +1202,8 @@ db.lootTable = {
 	},
 	[ format("%s/ %s", BZ["Tempest Keep"], BZ["Serpentshrine Cavern"]) ] = {
 		[ L["Trash Mobs"] ] = {
+			30280,	-- Tailoring-Pattern: Belt of Blasting
+			30281,	-- Tailoring-Pattern: Belt of the Long Road
 			30282,	-- Tailoring-Pattern: Boots of Blasting
 			30283,	-- Tailoring-Pattern: Boots of the Long Road
 			
@@ -1371,19 +1213,22 @@ db.lootTable = {
 			30324,	-- Blacksmithing-Plans: Red Havoc Boots
 		},
 	},
-	[ BZ["Black Temple"] ] = {
+	[ format("%s/ %s", BZ["Black Temple"], BZ["Hyjal Summit"]) ] = {
 		[ L["Trash Mobs"] ] = {
-			30280,	-- Tailoring-Pattern: Belt of Blasting
-			30281,	-- Tailoring-Pattern: Belt of the Long Road
 			32752,	-- Tailoring-Pattern: Swiftheal Wraps
-			32753,	-- Tailoring-Pattern: Swiftheal Mantle
-			32754,	-- Tailoring-Pattern: Bracers of Nimble Thought
 			32755,	-- Tailoring-Pattern: Mantle of Nimble Thought
 			
 			32736,	-- Blacksmithing-Plans: Swiftsteel Bracers
+			32739,	-- Blacksmithing-Plans: Dawnsteel Shoulders
+		},
+	},
+	[ BZ["Black Temple"] ] = {
+		[ L["Trash Mobs"] ] = {
+			32753,	-- Tailoring-Pattern: Swiftheal Mantle
+			32754,	-- Tailoring-Pattern: Bracers of Nimble Thought
+			
 			32737,	-- Blacksmithing-Plans: Swiftsteel Shoulders
 			32738,	-- Blacksmithing-Plans: Dawnsteel Bracers
-			32739,	-- Blacksmithing-Plans: Dawnsteel Shoulders
 		},
 	},
 	[ BZ["Sunwell Plateau"] ] = {
@@ -1397,7 +1242,6 @@ db.lootTable = {
 			35210,	-- Blacksmithing-Plans: Sunblessed Breastplate
 			35211,	-- Blacksmithing-Plans: Hard Khorium Battleplate
 			35208,	-- Blacksmithing-Plans: Sunblessed Gauntlets
-			
 			35555,	-- Blacksmithing-Plans: Sunblessed Breastplate
 		},
 	},
@@ -1875,51 +1719,52 @@ db.lootTable = {
 	
 	[L["World Drops"]] = {
 		[ format(L["Level %d-%d"], 5, 15) ] = {
-			3609,	 -- Blacksmithing-Recipe: Copper Chain Vest
+			2553,	 -- Alchemy-Recipe: Elixir of Minor Agility
+			
+			3609,	 -- Blacksmithing-Plans: Copper Chain Vest
 		},
 		[ format(L["Level %d-%d"], 10, 20) ] = {
+			2555,	 -- Alchemy-Recipe: Swiftness Potion
+			
 			2598,	 -- Tailoring-Pattern: Red Linen Robe
 			6271,	 -- Tailoring-Pattern: Red Linen Vest
-			
-			2553,	 -- Alchemy-Recipe: Elixir of Minor Agility
-			2555,	 -- Alchemy-Recipe: Swiftness Potion
-			6663,	 -- Alchemy-Recipe: Elixir of Giant Growth
 			
 			3610,	 -- Blacksmithing-Plans: Gemmed Copper Gauntlets
 		},
 		[ format(L["Level %d-%d"], 15, 25) ] = {
+			3393,	 -- Alchemy-Recipe: Minor Magic Resistance Potion
+			6663,	 -- Alchemy-Recipe: Elixir of Giant Growth
+			
 			2601,	 -- Tailoring-Pattern: Gray Woolen Robe
 			4292,	 -- Tailoring-Pattern: Green Woolen Bag
 			4345,	 -- Tailoring-Pattern: Red Woolen Boots
 			4346,	 -- Tailoring-Pattern: Heavy Woolen Cloak
-			6390,	 -- Tailoring-Pattern: Stylish Blue Shirt
-			6391,	 -- Tailoring-Pattern: Stylish Green Shirt
-			
-			3393,	 -- Alchemy-Recipe: Minor Magic Resistance Potion
-			3394,	 -- Alchemy-Recipe: Potion of Curing
 			
 			2881,	 -- Blacksmithing-Plans: Runed Copper Breastplate
-			2883,	 -- Blacksmithing-Plans: Deadly Bronze Poniard
 		},
 		[ format(L["Level %d-%d"], 20, 30) ] = {
+			3394,	 -- Alchemy-Recipe: Potion of Curing
+			
 			4347,	 -- Tailoring-Pattern: Reinforced Woolen Shoulders
 			4348,	 -- Tailoring-Pattern: Phoenix Gloves
 			4349,	 -- Tailoring-Pattern: Phoenix Pants
+			6390,	 -- Tailoring-Pattern: Stylish Blue Shirt
+			6391,	 -- Tailoring-Pattern: Stylish Green Shirt
 			10316,	 -- Tailoring-Pattern: Colorful Kilt
 			
 			2882,	 -- Blacksmithing-Plans: Silvered Bronze Shoulders
+			2883,	 -- Blacksmithing-Plans: Deadly Bronze Poniard
 			5578,	 -- Blacksmithing-Plans: Silvered Bronze Breastplate
 		},
 		[ format(L["Level %d-%d"], 25, 35) ] = {
+			3396,	 -- Alchemy-Recipe: Elixir of Lesser Agility
+			6211,	 -- Alchemy-Recipe: Elixir of Ogre's Strength
+			
 			4350,	 -- Tailoring-Pattern: Spider Silk Slippers
-			5773,	 -- Tailoring-Pattern: Robes of Arcana
 			5774,	 -- Tailoring-Pattern: Green Silk Pack
 			7090,	 -- Tailoring-Pattern: Green Silk Armor
 			7091,	 -- Tailoring-Pattern: Truefaith Gloves
 			7092,	 -- Tailoring-Pattern: Hands of Darkness
-			
-			3396,	 -- Alchemy-Recipe: Elixir of Lesser Agility
-			6211,	 -- Alchemy-Recipe: Elixir of Ogre's Strength
 			
 			3608,	 -- Blacksmithing-Plans: Mighty Iron Hammer
 			3611,	 -- Blacksmithing-Plans: Green Iron Boots
@@ -1941,6 +1786,8 @@ db.lootTable = {
 			1982, 	 -- Nightblade
 			2825, 	 -- Bow of Searing Arrows
 			
+			3831,	 -- Alchemy-Recipe: Major Troll's Blood Elixir
+			
 			4351,	 -- Tailoring-Pattern: Shadow Hood
 			4352,	 -- Tailoring-Pattern: Boots of the Enchanter
 			4353,	 -- Tailoring-Pattern: Spider Belt
@@ -1953,15 +1800,14 @@ db.lootTable = {
 			6045,	 -- Blacksmithing-Plans: Iron Counterweight
 		},
 		[ format(L["Level %d-%d"], 35, 45) ] = {
+			3832,	 -- Alchemy-Recipe: Elixir of Detect Lesser Invisibility
+			9293,	 -- Alchemy-Recipe: Magic Resistance Potion
+			
 			4354,	 -- Tailoring-Pattern: Rich Purple Silk Shirt
 			4356,	 -- Tailoring-Pattern: Star Belt
-			5775,	 -- Tailoring-Pattern: Black Silk Pack
 			7084,	 -- Tailoring-Pattern: Crimson Silk Shoulders
 			7085,	 -- Tailoring-Pattern: Azure Shoulders
 			10300,	 -- Tailoring-Pattern: Red Mageweave Vest
-			
-			3831,	 -- Alchemy-Recipe: Major Troll's Blood Elixir
-			3832,	 -- Alchemy-Recipe: Elixir of Detect Lesser Invisibility
 			
 			3868,	 -- Blacksmithing-Plans: Frost Tiger Blade
 			3869,	 -- Blacksmithing-Plans: Shadow Crescent Axe
@@ -1970,7 +1816,6 @@ db.lootTable = {
 			3875,	 -- Blacksmithing-Plans: Golden Scale Boots
 			6046,	 -- Blacksmithing-Plans: Steel Weapon Chain
 			7975,	 -- Blacksmithing-Plans: Heavy Mithril Pants
-			8029,	 -- Blacksmithing-Plans: Wicked Mithril Blade
 			12261,	 -- Blacksmithing-Plans: Searing Golden Blade
 		},
 		[ format(L["Level %d-%d"], 40, 50) ] = {
@@ -1996,31 +1841,31 @@ db.lootTable = {
 			14549, 	 -- Boots of Avoidance
 			17007, 	 -- Stonerender Gauntlets
 			
+			9294,	 -- Alchemy-Recipe: Wildvine Potion
+			9295,	 -- Alchemy-Recipe: Invisibility Potion
+			
 			10301,	 -- Tailoring-Pattern: White Bandit Mask
 			10302,	 -- Tailoring-Pattern: Red Mageweave Pants
 			10312,	 -- Tailoring-Pattern: Red Mageweave Gloves
 			
-			3395,	 -- Alchemy-Recipe: Limited Invulnerability Potion
-			9293,	 -- Alchemy-Recipe: Magic Resistance Potion
-			9294,	 -- Alchemy-Recipe: Wildvine Potion
-			
-			7992,	 -- Blacksmithing-Recipe: Blue Glittering Axe
-			7993,	 -- Blacksmithing-Recipe: Dazzling Mithril Rapier
+			7976,	 -- Blacksmithing-Plans: Mithril Shield Spike
+			7989,	 -- Blacksmithing-Plans: Mithril Spurs
+			7991,	 -- Blacksmithing-Plans: Mithril Scale Shoulders
+			7992,	 -- Blacksmithing-Plans: Blue Glittering Axe
+			8029,	 -- Blacksmithing-Plans: Wicked Mithril Blade
 		},
 		[ format(L["Level %d-%d"], 45, 55) ] = {
-			10315,	 -- Tailoring-Pattern: Red Mageweave Shoulders
-			10320,	 -- Tailoring-Pattern: Red Mageweave Headband
-			14466,	 -- Tailoring-Pattern: Frostweave Tunic
-			14467,	 -- Tailoring-Pattern: Frostweave Robe
-			14470,	 -- Tailoring-Pattern: Runecloth Tunic
-			
-			9295,	 -- Alchemy-Recipe: Invisibility Potion
+			3395,	 -- Alchemy-Recipe: Limited Invulnerability Potion
 			9297,	 -- Alchemy-Recipe: Elixir of Dream Vision
 			9298,	 -- Alchemy-Recipe: Elixir of Giants
 			
-			7990,	 -- Blacksmithing-Recipe: Heavy Mithril Helm
-			7989,	 -- Blacksmithing-Recipe: Mithril Spurs
-			8028,	 -- Blacksmithing-Recipe: Runed Mithril Hammer
+			10315,	 -- Tailoring-Pattern: Red Mageweave Shoulders
+			10320,	 -- Tailoring-Pattern: Red Mageweave Headband
+			14467,	 -- Tailoring-Pattern: Frostweave Robe
+			
+			7990,	 -- Blacksmithing-Plans: Heavy Mithril Helm
+			7993,	 -- Blacksmithing-Plans: Dazzling Mithril Rapier
+			8028,	 -- Blacksmithing-Plans: Runed Mithril Hammer
 		},
 		[ format(L["Level %d-%d"], 50, 60) ] = {
 			647, 	 -- Destiny
@@ -2045,23 +1890,15 @@ db.lootTable = {
 			14557, 	 -- The Lion Horn of Stormwind
 			14558, 	 -- Lady Maye's Pendant
 			
-			14474,	 -- Tailoring-Pattern: Frostweave Gloves
-			14478,	 -- Tailoring-Pattern: Brightcloth Robe
-			14479,	 -- Tailoring-Pattern: Brightcloth Gloves
-			14484,	 -- Tailoring-Pattern: Brightcloth Cloak
-			14489,	 -- Tailoring-Pattern: Frostweave Pants
-			14491,	 -- Tailoring-Pattern: Runecloth Pants
-			14492,	 -- Tailoring-Pattern: Felcloth Boots
-			14494,	 -- Tailoring-Pattern: Brightcloth Pants
-			14496,	 -- Tailoring-Pattern: Felcloth Hood
-			14498,	 -- Tailoring-Pattern: Runecloth Headband
-			14499,	 -- Tailoring-Pattern: Mooncloth Bag
-			
 			13486,	 -- Alchemy-Recipe: Transmute Undeath to Water
 			13487,	 -- Alchemy-Recipe: Transmute Water to Undeath
 			13488,	 -- Alchemy-Recipe: Transmute Life to Earth
 			13489,	 -- Alchemy-Recipe: Transmute Earth to Life
 			13490,	 -- Alchemy-Recipe: Greater Stoneshield Potion
+			
+			14492,	 -- Tailoring-Pattern: Felcloth Boots
+			14494,	 -- Tailoring-Pattern: Brightcloth Pants
+			14499,	 -- Tailoring-Pattern: Mooncloth Bag
 			
 			12685,	 -- Blacksmithing-Plans: Radiant Belt
 			12689,	 -- Blacksmithing-Plans: Radiant Breastplate
@@ -2069,36 +1906,25 @@ db.lootTable = {
 			12697,	 -- Blacksmithing-Plans: Radiant Boots
 			12702,	 -- Blacksmithing-Plans: Radiant Circlet
 			12713,	 -- Blacksmithing-Plans: Radiant Leggings
-			12682,	 -- Blacksmithing-Plans: Thorium Armor
-			12683,	 -- Blacksmithing-Plans: Thorium Belt
-			12693,	 -- Blacksmithing-Plans: Thorium Boots
-			12684,	 -- Blacksmithing-Plans: Thorium Bracers
-			12694,	 -- Blacksmithing-Plans: Thorium Helm
-			12704,	 -- Blacksmithing-Plans: Thorium Leggings
 			12691,	 -- Blacksmithing-Plans: Wildthorn Mail
 			12692,	 -- Blacksmithing-Plans: Thorium Shield Spike
 		},
 		[ format(L["Level %d-%d"], 55, 60) ] = {
-			14497,	 -- Tailoring-Pattern: Mooncloth Leggings
-			14501,	 -- Tailoring-Pattern: Mooncloth Vest
-			14504,	 -- Tailoring-Pattern: Runecloth Shoulders
-			14506,	 -- Tailoring-Pattern: Felcloth Robe
-			14507,	 -- Tailoring-Pattern: Mooncloth Shoulders
-			14508,	 -- Tailoring-Pattern: Felcloth Shoulders
-			
 			13518,	 -- Alchemy-Recipe: Potion of Petrification
 			
+			14497,	 -- Tailoring-Pattern: Mooncloth Leggings
+			14501,	 -- Tailoring-Pattern: Mooncloth Vest
+			14507,	 -- Tailoring-Pattern: Mooncloth Shoulders
+			
+			12698,	 -- Blacksmithing-Plans: Dawnbringer Shoulders
 			12711,	 -- Blacksmithing-Plans: Whitesoul Helm
+			12716,	 -- Blacksmithing-Plans: Helm of the Great Chief
 		},
 		[ format(L["Level %d"], 60) ] = {
 			14509,	 -- Tailoring-Pattern: Mooncloth Circlet
 			14510,	 -- Tailoring-Pattern: Bottomless Bag
 			14511,	 -- Tailoring-Pattern: Gloves of Spell Mastery
 			
-			7976,	 -- Blacksmithing-Plans: Mithril Shield Spike
-			7991,	 -- Blacksmithing-Plans: Mithril Scale Shoulders
-			12698,	 -- Blacksmithing-Plans: Dawnbringer Shoulders
-			12716,	 -- Blacksmithing-Plans: Helm of the Great Chief
 			12717,	 -- Blacksmithing-Plans: Lionheart Helm
 			12720,	 -- Blacksmithing-Plans: Stronghold Gauntlets
 			12728,	 -- Blacksmithing-Plans: Invulnerable Mail
@@ -2107,51 +1933,7 @@ db.lootTable = {
 			22390,	 -- Blacksmithing-Plans: Persuader
 		},
 		
-		[ format(L["Level %d-%d"], 65, 70) ] = {
-			24296,	 -- Tailoring-Pattern: Unyielding Bracers
-			24297,	 -- Tailoring-Pattern: Bracers of Havok
-			24298,	 -- Tailoring-Pattern: Bracers of Havok
-			24299,	 -- Tailoring-Pattern: Bracers of Havok
-			24300,	 -- Tailoring-Pattern: Cloak of Eternity
-			24301,	 -- Tailoring-Pattern: White Remedy Cape
-			24302,	 -- Tailoring-Pattern: Unyielding Girdle
-			24303,	 -- Tailoring-Pattern: Girdle of Ruination
-			24304,	 -- Tailoring-Pattern: Black Belt of Knowledge
-			24305,	 -- Tailoring-Pattern: Resolute Cape
-			24306,	 -- Tailoring-Pattern: Vengeance Wrap
-			24307,	 -- Tailoring-Pattern: Manaweave Cloak
-			
-			22903,	 -- Alchemy-Recipe: Insane Strength Potion
-			22904,	 -- Alchemy-Recipe: Elixir of the Searching Eye
-			22912,	 -- Alchemy-Recipe: Heroic Potion
-			22913,	 -- Alchemy-Recipe: Haste Potion
-			22914,	 -- Alchemy-Recipe: Destruction Potion
-			22919,	 -- Alchemy-Recipe: Elixir of Major Mageblood
-			22926,	 -- Alchemy-Recipe: Elixir of Empowerment
-			
-			23620,	 -- Blacksmithing-Recipe: Felfury Gauntlets
-			23621,	 -- Blacksmithing-Recipe: Gauntlets of the Iron Tower
-			23622,	 -- Blacksmithing-Recipe: Steelgrip Gauntlets
-			23623,	 -- Blacksmithing-Recipe: Storm Helm
-			23624,	 -- Blacksmithing-Recipe: Helm of the Stalwart Defender
-			23625,	 -- Blacksmithing-Recipe: Oathkeeper's Helm
-			23626,	 -- Blacksmithing-Recipe: Black Felsteel Bracers
-			23627,	 -- Blacksmithing-Recipe: Bracers of the Green Fortress
-			23628,	 -- Blacksmithing-Recipe: Blessed Bracers
-			23629,	 -- Blacksmithing-Recipe: Felsteel Longblade
-			23630,	 -- Blacksmithing-Recipe: Khorium Champion
-			23631,	 -- Blacksmithing-Recipe: Fel Edged Battleaxe
-			23632,	 -- Blacksmithing-Recipe: Felsteel Reaper
-			23633,	 -- Blacksmithing-Recipe: Runic Hammer
-			23634,	 -- Blacksmithing-Recipe: Fel Hardened Maul
-			23635,	 -- Blacksmithing-Recipe: Eternium Runed Blade
-			23636,	 -- Blacksmithing-Recipe: Dirge
-			23637,	 -- Blacksmithing-Recipe: Hand of Eternity
-			
-			33186,	 -- Blacksmithing-Recipe: Adamantite Weapon Chain
-			33954,	 -- Blacksmithing-Recipe: Hammer of Righteous Might
-		},
-		[ format(L["Level %d"], 70) ] = {
+		[ BZ["Outland"] ] = {
 			28189,	 -- Latro's Shifting Sword
 			31318,	 -- Singing Crystal Axe
 			31319,	 -- Band of Impenetrable Defenses
@@ -2174,17 +1956,53 @@ db.lootTable = {
 			31342,	 -- The Ancient Scepter of Sue-Min
 			31343,	 -- Kamaei's Cerulean Skirt
 			34703,	 -- Latro's Dancing Blade
+			
+			22903,	 -- Alchemy-Recipe: Insane Strength Potion
+			22904,	 -- Alchemy-Recipe: Elixir of the Searching Eye
+			22912,	 -- Alchemy-Recipe: Heroic Potion
+			22913,	 -- Alchemy-Recipe: Haste Potion
+			22914,	 -- Alchemy-Recipe: Destruction Potion
+			22919,	 -- Alchemy-Recipe: Elixir of Major Mageblood
+			22926,	 -- Alchemy-Recipe: Elixir of Empowerment
+			
+			24296,	 -- Tailoring-Pattern: Unyielding Bracers
+			24297,	 -- Tailoring-Pattern: Bracers of Havok
+			24298,	 -- Tailoring-Pattern: Bracers of Havok
+			24299,	 -- Tailoring-Pattern: Bracers of Havok
+			24300,	 -- Tailoring-Pattern: Cloak of Eternity
+			24301,	 -- Tailoring-Pattern: White Remedy Cape
+			
+			33186,	 -- Blacksmithing-Plans: Adamantite Weapon Chain
 		},
-		[ format(L["Level %d-%d"], 75, 80) ] = {
-			42172,	 -- Tailoring-Pattern: Red Lumberjack Shirt
-			42173,	 -- Tailoring-Pattern: Blue Lumberjack Shirt
-			42175,	 -- Tailoring-Pattern: Green Lumberjack Shirt
-			42176,	 -- Tailoring-Pattern: Blue Workman's Shirt
-			42177,	 -- Tailoring-Pattern: Red Workman's Shirt
-			42178,	 -- Tailoring-Pattern: Rustic Workman's Shirt
-			42179,	 -- Tailoring-Pattern: Green Workman's Shirt
+		[ format(L["Level %d-%d"], 68, 70) ] = {
+			24302,	 -- Tailoring-Pattern: Unyielding Girdle
+			24303,	 -- Tailoring-Pattern: Girdle of Ruination
+			24304,	 -- Tailoring-Pattern: Black Belt of Knowledge
+			24305,	 -- Tailoring-Pattern: Resolute Cape
+			24306,	 -- Tailoring-Pattern: Vengeance Wrap
+			24307,	 -- Tailoring-Pattern: Manaweave Cloak
+			
+			23620,	 -- Blacksmithing-Plans: Felfury Gauntlets
+			23621,	 -- Blacksmithing-Plans: Gauntlets of the Iron Tower
+			23622,	 -- Blacksmithing-Plans: Steelgrip Gauntlets
+			23623,	 -- Blacksmithing-Plans: Storm Helm
+			23624,	 -- Blacksmithing-Plans: Helm of the Stalwart Defender
+			23625,	 -- Blacksmithing-Plans: Oathkeeper's Helm
+			23626,	 -- Blacksmithing-Plans: Black Felsteel Bracers
+			23627,	 -- Blacksmithing-Plans: Bracers of the Green Fortress
+			23628,	 -- Blacksmithing-Plans: Blessed Bracers
+			23629,	 -- Blacksmithing-Plans: Felsteel Longblade
+			23630,	 -- Blacksmithing-Plans: Khorium Champion
+			23631,	 -- Blacksmithing-Plans: Fel Edged Battleaxe
+			23632,	 -- Blacksmithing-Plans: Felsteel Reaper
+			23633,	 -- Blacksmithing-Plans: Runic Hammer
+			23634,	 -- Blacksmithing-Plans: Fel Hardened Maul
+			23635,	 -- Blacksmithing-Plans: Eternium Runed Blade
+			23636,	 -- Blacksmithing-Plans: Dirge
+			23637,	 -- Blacksmithing-Plans: Hand of Eternity
+			33954,	 -- Blacksmithing-Plans: Hammer of Righteous Might
 		},
-		[L["Level 80"]] = {
+		[ BZ["Northrend"] ] = {
 			37254,  -- Super Simian Sphere
 			37835,  -- Je'Tze's Bell
 			44308,  -- Signet of Edward the Odd
@@ -2193,6 +2011,14 @@ db.lootTable = {
 			44311,  -- Avool's Sword of Jin
 			44312,  -- Wapach's Spaulders of Solidarity
 			44313,  -- Zom's Crackling Bulwark
+			
+			42172,	 -- Tailoring-Pattern: Red Lumberjack Shirt
+			42173,	 -- Tailoring-Pattern: Blue Lumberjack Shirt
+			42175,	 -- Tailoring-Pattern: Green Lumberjack Shirt
+			42176,	 -- Tailoring-Pattern: Blue Workman's Shirt
+			42177,	 -- Tailoring-Pattern: Red Workman's Shirt
+			42178,	 -- Tailoring-Pattern: Rustic Workman's Shirt
+			42179,	 -- Tailoring-Pattern: Green Workman's Shirt
 		},
 		
 		[format("%s (%s)", L["Nascent Val'kyr"], BZ["The Storm Peaks"])] = {
@@ -4605,13 +4431,15 @@ local recipeTable = {
 	{ 21547, 	BZ["Searing Gorge"], 		L["Dark Iron Taskmaster"] },	-- Alchemy-Recipe: Elixir of Greater Firepower
 	{ 21547, 	BZ["Searing Gorge"], 		L["Dark Iron Watchman"] },	-- Alchemy-Recipe: Elixir of Greater Firepower
 	
+	{ 22906, 	BF["Sporeggar"], 			format("%s x%d", L["Glowcap"], 30) },	-- Alchemy-Recipe: Shrouding Potion
+	{ 22916, 	BF["Sporeggar"], 			format("%s x%d", L["Glowcap"], 25) },	-- Alchemy-Recipe: Transmute Primal Earth to Water
 	-- { 22905, 	BF["Honor Hold"], 			rep_Honored },	-- Alchemy-Recipe: Elixir of Major Agility
 	-- { 24001, 	BF["Thrallmar"], 			rep_Honored },	-- Alchemy-Recipe: Elixir of Major Agility
-	-- { 22906, 	BF["Sporeggar"], 			rep_Honored },	-- Alchemy-Recipe: Shrouding Potion
 	-- { 22908, 	BF["The Scryers"], 			rep_Revered },	-- Alchemy-Recipe: Elixir of Major Firepower
 	-- { 22910, 	BF["Lower City"], 			rep_Revered },	-- Alchemy-Recipe: Elixir of Major Shadow Power
 	
 	{ 22920, 	BZ["The Mechanar"], 		BB["Nethermancer Sepethrea"] },	-- Alchemy-Recipe: Major Fire Protection Potion
+	{ 22920, 	BZ["The Mechanar"], 		L["Sunseeker Astromage"] },	-- Alchemy-Recipe: Major Fire Protection Potion
 	{ 22921, 	BZ["Mana-Tombs"], 			BB["Nexus-Prince Shaffar"] },	-- Alchemy-Recipe: Major Frost Protection Potion
 	-- { 22922, 	BF["Cenarion Expedition"], 	rep_Exalted },	-- Alchemy-Recipe: Major Nature Protection Potion
 	{ 22923, 	BZ["Nagrand"], 				L["Vir'aani Arcanist"] },	-- Alchemy-Recipe: Major Frost Protection Potion
@@ -4651,11 +4479,114 @@ local recipeTable = {
 	-- -- -- -- --
 	-- Tailoring
 	-- -- -- -- --
-	{ 14486, 	BZ["Blackrock Mountain"], 	BB["Overmaster Pyron"] },	-- Tailoring-Pattern: Cloak of Fire
-	{ 14488, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Runecloth Boots
+	{ 5775, 	BZ["Alterac Mountains"], 	L["Syndicate Spy"] },	-- Tailoring-Pattern: Black Silk Pack
+	
+	{ 5773, 	BZ["Duskwood"], 			L["Defias Enchanter"] },	-- Tailoring-Pattern: Robes of Arcana
+	{ 5773, 	BZ["Darkshore"], 			L["Dark Strand Voidcaller"] },	-- Tailoring-Pattern: Robes of Arcana
+	{ 5773, 	BZ["Thousand Needles"], 	L["Grimtotem Geomancer"] },	-- Tailoring-Pattern: Robes of Arcana
+	
+	{ 6270,		BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Blue Linen Vest
+	{ 6272,		BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Blue Linen Robe
+	{ 6274,		BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Blue Overalls
+	{ 6275,		BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Greater Adept's Robe
+	{ 5771,		BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Red Linen Bag
+	{ 5772,		BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Red Woolen Bag
+	{ 22307,	BZ["Azeroth"], 				L["Vendor"] },	-- Tailoring-Pattern: Enchanted Mageweave Pouch
+	
+	{ 7088,		BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Vizzklick"]) },	-- Tailoring-Pattern: Crimson Silk Robe
+	{ 21358,	BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Vizzklick"]) },	-- Tailoring-Pattern: Soul Pouch
+	
+	{ 7087,		BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Xizk Goodstitch"]) },	-- Tailoring-Pattern: Crimson Silk Cloak
+	{ 14630,	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Xizk Goodstitch"]) },	-- Tailoring-Pattern: Enchanter's Cowl
+	{ 10318,	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Cowardly Crosby"]) },	-- Tailoring-Pattern: Admiral's Hat
+	{ 10728,	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Narkk"]) },	-- Tailoring-Pattern: Black Swashbuckler's Shirt
+	
+	{ 10463,	BZ["Searing Gorge"], 		L["Quest rewards"] },	-- Tailoring-Pattern: Shadoweave Mask
+	{ 14471,	BZ["Searing Gorge"], 		L["Twilight Fire Guard"] },	-- Tailoring-Pattern: Cindercloth Vest
+	{ 14476,	BZ["Searing Gorge"], 		L["Twilight Fire Guard"] },	-- Tailoring-Pattern: Cindercloth Gloves
+	{ 14482,	BZ["Burning Steppes"], 		L["Thaurissan Firewalker"] },	-- Tailoring-Pattern: Cindercloth Cloak
+	{ 14490,	BZ["Burning Steppes"], 		L["Thaurissan Firewalker"] },	-- Tailoring-Pattern: Cindercloth Pants
+	
+	{ 14468,	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Qia"]) },	-- Tailoring-Pattern: Runecloth Bag
+	{ 14526,	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Qia"]) },	-- Tailoring-Pattern: Mooncloth
+	
+	{ 14466,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Frostweave Tunic
+	{ 14469,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Runecloth Robe
+	{ 14470,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Runecloth Tunic
+	{ 14472,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Runecloth Cloak
+	{ 14473,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Ghostweave Belt
+	{ 14474,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Frostweave Gloves
+	{ 14477,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Ghostweave Gloves
+	{ 14478,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Brightcloth Robe
+	{ 14479,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Brightcloth Gloves
+	{ 14480,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Ghostweave Vest
 	{ 14481, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Runecloth Gloves
+	{ 14484,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Brightcloth Cloak
+	{ 14485,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Wizardweave Leggings
+	{ 14488, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Runecloth Boots
+	{ 14489,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Frostweave Pants
+	{ 14491,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Runecloth Pants
+	{ 14495,	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Ghostweave Pants
+	{ 14496, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Felcloth Hood
+	{ 14498, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Runecloth Headband
+	{ 14500, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Wizardweave Robe
+	{ 14504, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Runecloth Shoulders
+	{ 14505, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Wizardweave Turban
+	{ 14506, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Felcloth Robe
+	{ 14508, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Felcloth Shoulders
+	
+	{ 14486, 	BZ["Blackrock Mountain"], 	BB["Overmaster Pyron"] },	-- Tailoring-Pattern: Cloak of Fire
 	{ 14493, 	BZ["Winterspring"], 		L["Cobalt Mageweaver"] },	-- Tailoring-Pattern: Robe of Winter Night
 	{ 14627, 	BZ["Duskwood"], 			format("%s: %s (%s)", L["Vendor"], L["Danielle Zipstitch"], FACTION_ALLIANCE) },	-- Tailoring-Pattern: Bright Yellow Shirt (Alliance only)
+	{ 14483,	BZ["Moonglade"], 			format("%s: %s", L["Vendor"], L["Lorelae Wintersong"]) },	-- Tailoring-Pattern: Felcloth Pants
+	{ 18487,	BZ["Dire Maul"], 			format("%s: %s", L["Vendor"], L["Shen'dralar Provisioner"] ) },	-- Tailoring-Pattern: Mooncloth Robe
+	{ 29120, 	BZ["Stratholme"], 			BB["Balnazzar"] },	-- Tailoring-Pattern: Truefaith Vestments (a weird duplicate)
+	
+	{ 20546, 	BZ["Silithus"], 			L["Quest rewards"] },	-- Tailoring-Pattern: Runed Stygian Leggings
+	{ 20547, 	BZ["Silithus"], 			L["Quest rewards"] },	-- Tailoring-Pattern: Runed Stygian Boots
+	{ 20548, 	BZ["Silithus"], 			L["Quest rewards"] },	-- Tailoring-Pattern: Runed Stygian Belt
+	{ 22308, 	BZ["Silithus"], 			format("%s: %s", L["Vendor"], L["Kania"]) },	-- Tailoring-Pattern: Enchanted Runecloth Bag
+	
+	{ 21892,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Eiin"]) },	-- Tailoring-Pattern: Bolt of Imbued Netherweave
+	{ 21893,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Eiin"]) },	-- Tailoring-Pattern: Imbued Netherweave Bag
+	{ 21896,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Eiin"]) },	-- Tailoring-Pattern: Netherweave Robe
+	{ 21897,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Eiin"]) },	-- Tailoring-Pattern: Netherweave Tunic
+	
+	{ 30483,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Andrion Darkspinner"]) },	-- Tailoring-Pattern: Shadowcloth
+	{ 21912,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Andrion Darkspinner"]) },	-- Tailoring-Pattern: Frozen Shadoweave Shoulders
+	{ 21913,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Andrion Darkspinner"]) },	-- Tailoring-Pattern: Frozen Shadoweave Robe
+	{ 21914,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Andrion Darkspinner"]) },	-- Tailoring-Pattern: Frozen Shadoweave Boots
+	{ 21915,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Andrion Darkspinner"]) },	-- Tailoring-Pattern: Ebon Shadowbag
+	{ 30483,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Linna Bruder"]) },	-- Tailoring-Pattern: Shadowcloth
+	{ 21912,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Linna Bruder"]) },	-- Tailoring-Pattern: Frozen Shadoweave Shoulders
+	{ 21913,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Linna Bruder"]) },	-- Tailoring-Pattern: Frozen Shadoweave Robe
+	{ 21914,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Linna Bruder"]) },	-- Tailoring-Pattern: Frozen Shadoweave Boots
+	{ 21915,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Linna Bruder"]) },	-- Tailoring-Pattern: Ebon Shadowbag
+	
+	{ 21895,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Nasmara Moonsong"]) },	-- Tailoring-Pattern: Primal Mooncloth
+	{ 21916,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Nasmara Moonsong"]) },	-- Tailoring-Pattern: Primal Mooncloth Belt
+	{ 21917,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Nasmara Moonsong"]) },	-- Tailoring-Pattern: Primal Mooncloth Robe
+	{ 21918,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Nasmara Moonsong"]) },	-- Tailoring-Pattern: Primal Mooncloth Shoulders
+	{ 21919,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Nasmara Moonsong"]) },	-- Tailoring-Pattern: Primal Mooncloth Bag
+	{ 21895,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Ainderu Summerleaf"]) },	-- Tailoring-Pattern: Primal Mooncloth
+	{ 21916,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Ainderu Summerleaf"]) },	-- Tailoring-Pattern: Primal Mooncloth Belt
+	{ 21917,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Ainderu Summerleaf"]) },	-- Tailoring-Pattern: Primal Mooncloth Robe
+	{ 21918,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Ainderu Summerleaf"]) },	-- Tailoring-Pattern: Primal Mooncloth Shoulders
+	{ 21919,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Ainderu Summerleaf"]) },	-- Tailoring-Pattern: Primal Mooncloth Bag
+	
+	{ 24316,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Gidge Spellweaver"]) },	-- Tailoring-Pattern: Spellcloth
+	{ 21908,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Gidge Spellweaver"]) },	-- Tailoring-Pattern: Spellfire Belt
+	{ 21909,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Gidge Spellweaver"]) },	-- Tailoring-Pattern: Spellfire Gloves
+	{ 21910,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Gidge Spellweaver"]) },	-- Tailoring-Pattern: Spellfire Robe
+	{ 21911,	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Gidge Spellweaver"]) },	-- Tailoring-Pattern: Spellfire Bag
+	{ 24316,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Lalla Brightweave"]) },	-- Tailoring-Pattern: Spellcloth
+	{ 21908,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Lalla Brightweave"]) },	-- Tailoring-Pattern: Spellfire Belt
+	{ 21909,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Lalla Brightweave"]) },	-- Tailoring-Pattern: Spellfire Gloves
+	{ 21910,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Lalla Brightweave"]) },	-- Tailoring-Pattern: Spellfire Robe
+	{ 21911,	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Lalla Brightweave"]) },	-- Tailoring-Pattern: Spellfire Bag
+	
+	{ 21900,	BZ["Shadowmoon Valley"], 	format("%s: %s (%s)", L["Vendor"], L["Arrond"], BF["The Scryers"]) },	-- Tailoring-Pattern: Imbued Netherweave Robe
+	{ 21901,	BZ["Shadowmoon Valley"], 	format("%s: %s (%s)", L["Vendor"], L["Arrond"], BF["The Scryers"]) },	-- Tailoring-Pattern: Imbued Netherweave Tunic
 	
 	{ 21905, 	BZ["The Arcatraz"], 		L["Arcatraz Sentinel"] },	-- Tailoring-Pattern: Arcanoweave Bracers
 	{ 21906, 	BZ["The Mechanar"], 		L["Sunseeker Astromage"] },	-- Tailoring-Pattern: Arcanoweave Boots
@@ -4665,13 +4596,17 @@ local recipeTable = {
 	{ 24292, 	BF["The Scryers"], 			rep_Honored },	-- Tailoring-Pattern: Mystic Spellthread
 	{ 24293, 	BF["The Aldor"], 			rep_Honored },	-- Tailoring-Pattern: Silver Spellthread
 	
+	{ 37915,	BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Haughty Modiste"]) },	-- Tailoring-Pattern: Dress Shoes
+	{ 38327,	BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Haughty Modiste"]) },	-- Tailoring-Pattern: Haliscan Jacket
+	{ 38328,	BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Haughty Modiste"]) },	-- Tailoring-Pattern: Haliscan Pantaloons
+	
+	{ 42189, 	ACHIEVEMENTS, 				L["Northrend Dungeonmaster"] },	-- Tailoring-Pattern: Wispcloak
+	{ 42190, 	ACHIEVEMENTS, 				L["Loremaster of Northrend"] },	-- Tailoring-Pattern: Deathchill Cloak
 	{ 42174, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Yellow Lumberjack Shirt
 	{ 42180, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Ebonweave
 	{ 42181, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Moonshroud
 	{ 42182, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Spellweave
 	{ 42186, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Frostweave Bag
-	{ 42189, 	ACHIEVEMENTS, 				L["Northrend Dungeonmaster"] },	-- Tailoring-Pattern: Wispcloak
-	{ 42190, 	ACHIEVEMENTS, 				L["Loremaster of Northrend"] },	-- Tailoring-Pattern: Deathchill Cloak
 	{ 42191, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Hat of Wintry Doom
 	{ 42192, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Silky Iceshard Boots
 	{ 42194, 	trainersName, 				BI["Tailoring"] },	-- Tailoring-Pattern: Frostmoon Pants
@@ -4723,6 +4658,15 @@ local recipeTable = {
 	{ 12705, 	BZ["Tanaris"], 				L["Quest rewards"] },	-- Blacksmithing-Plans: Imperial Plate Chest
 	{ 12715, 	BZ["Tanaris"], 				L["Quest rewards"] },	-- Blacksmithing-Plans: Imperial Plate Leggings
 	
+	{ 12682, 	trainersName, 				BI["Blacksmithing"] },	-- Blacksmithing-Plans: Thorium Armor
+	{ 12683, 	trainersName, 				BI["Blacksmithing"] },	-- Blacksmithing-Plans: Thorium Belt
+	{ 12684, 	trainersName, 				BI["Blacksmithing"] },	-- Blacksmithing-Plans: Thorium Bracers
+	{ 12693, 	trainersName, 				BI["Blacksmithing"] },	-- Blacksmithing-Plans: Thorium Boots
+	{ 12694, 	trainersName, 				BI["Blacksmithing"] },	-- Blacksmithing-Plans: Thorium Helm
+	{ 12704, 	trainersName, 				BI["Blacksmithing"] },	-- Blacksmithing-Plans: Thorium Leggings
+	{ 12819, 	trainersName, 				BI["Blacksmithing"] },	-- Blacksmithing-Plans: Ornate Thorium Handaxe
+	{ 12823, 	trainersName, 				BI["Blacksmithing"] },	-- Blacksmithing-Plans: Huge Thorium Battleaxe
+	
 	{ 12696, 	BZ["Winterspring"], 		L["Quest rewards"] },	-- Blacksmithing-Plans: Demon Forged Breastplate
 	{ 12699, 	BZ["Winterspring"], 		L["Quest rewards"] },	-- Blacksmithing-Plans: Fiery Plate Gauntlets
 	
@@ -4737,9 +4681,7 @@ local recipeTable = {
 	{ 12726, 	BZ["Dire Maul"], 			L["Quest rewards"] },	-- Blacksmithing-Plans: Enchanted Thorium Leggings
 	{ 12727, 	BZ["Dire Maul"], 			L["Quest rewards"] },	-- Blacksmithing-Plans: Enchanted Thorium Breastplate
 	
-	{ 12819, 	BZ["Western Plaguelands"], 	format("%s: %s", L["Vendor"], L["Magnus Frostwake"]) },	-- Blacksmithing-Plans: Ornate Thorium Handaxe
 	{ 12821, 	BZ["Winterspring"], 		L["Quest rewards"] },	-- Blacksmithing-Plans: Dawn's Edge
-	{ 12823, 	BZ["Western Plaguelands"], 	format("%s: %s", L["Vendor"], L["Magnus Frostwake"]) },	-- Blacksmithing-Plans: Huge Thorium Battleaxe
 	{ 12824, 	BZ["Winterspring"], 		L["Quest rewards"] },	-- Blacksmithing-Plans: Enchanted Battlehammer
 	{ 12825, 	BZ["Winterspring"], 		L["Quest rewards"] },	-- Blacksmithing-Plans: Blazing Rapier
 	{ 12827, 	BZ["Stratholme"], 			L["Blacksmithing Plans"] },	-- Blacksmithing-Plans: Serenity
@@ -4747,7 +4689,11 @@ local recipeTable = {
 	{ 12830, 	BZ["Stratholme"], 			L["Blacksmithing Plans"] },	-- Blacksmithing-Plans: Corruption
 	{ 12836, 	BZ["Western Plaguelands"], 	L["Foreman Marcrid"] },	-- Blacksmithing-Plans: Frostguard
 	
-	{ 18592, 	BZ["Blackrock Depths"], 	format("%s: %s", L["Vendor"], L["Lokhtos Darkbargainer"]) },	-- Blacksmithing-Plans: Blackrock Depths
+	{ 18592, 	BZ["Blackrock Depths"], 	L["Quest rewards"] },	-- Blacksmithing-Plans: Sulfuronhammer
+	
+	{ 20553, 	BZ["Silithus"], 			L["Quest rewards"] },	-- Blacksmithing-Plans: Darkrune Gauntlets
+	{ 20554, 	BZ["Silithus"], 			L["Quest rewards"] },	-- Blacksmithing-Plans: Darkrune Breastplate
+	{ 20555, 	BZ["Silithus"], 			L["Quest rewards"] },	-- Blacksmithing-Plans: Darkrune Helm
 	
 	{ 22219, 	BZ["Ruins of Ahn'Qiraj"], 	format("%s: %s", L["Vendor"], BB["Lieutenant General Andorov"]) },	-- Blacksmithing-Plans: Jagged Obsidian Shield
 	{ 22221, 	BZ["Ruins of Ahn'Qiraj"], 	format("%s: %s", L["Vendor"], BB["Lieutenant General Andorov"]) },	-- Blacksmithing-Plans: Obsidian Mail Tunic
@@ -4766,6 +4712,7 @@ local recipeTable = {
 	{ 23611, 	BZ["Nagrand"], 				L["Boulderfist Warrior"] },	-- Blacksmithing-Plans: Ragesteel Gloves
 	{ 23612, 	BZ["Blade's Edge Mountains"], L["Anger Guard"] },	-- Blacksmithing-Plans: Ragesteel Helm
 	{ 23613, 	BZ["Shadowmoon Valley"], 	L["Ashtongue Warrior"] },	-- Blacksmithing-Plans: Ragesteel Breastplate
+	{ 23613, 	BZ["Shadowmoon Valley"], 	L["Crazed Murkblood Miner"] },	-- Blacksmithing-Plans: Ragesteel Breastplate
 	{ 23615, 	BZ["Mana-Tombs"], 			L["Nexus Stalker"] },	-- Blacksmithing-Plans: Swiftsteel Gloves
 	{ 23639, 	BZ["Netherstorm"], 			L["Sunfury Bloodwarder"] },	-- Blacksmithing-Plans: Greater Ward of Shielding
 	{ 33174, 	BZ["Shadowmoon Valley"], 	L["Enraged (Elemental) Spirit"] },	-- Blacksmithing-Plans: Ragesteel Shoulders
@@ -4797,12 +4744,17 @@ local recipeFactionDuplicates	= {
 		{ 10317, 	BZ["Ironforge"], 		format("%s: %s", L["Vendor"], L["Outfitter Eric"]) },	-- Tailoring-Pattern: Pink Mageweave Shirt
 		{ 10321, 	BZ["Ironforge"], 		format("%s: %s", L["Vendor"], L["Outfitter Eric"]) },	-- Tailoring-Pattern: Tuxedo Shirt
 		{ 10323, 	BZ["Ironforge"], 		format("%s: %s", L["Vendor"], L["Outfitter Eric"]) },	-- Tailoring-Pattern: Tuxedo Pants
-		{ 10325, 	BZ["Stormwind City"], 	format("%s: %s", L["Vendor"], L["Alexandra Bolero"]) },	-- Tailoring-Pattern: White Wedding Dress
 		{ 10326, 	BZ["Ironforge"], 		format("%s: %s", L["Vendor"], L["Outfitter Eric"]) },	-- Tailoring-Pattern: Tuxedo Jacket
+		{ 10325, 	BZ["Stormwind City"], 	format("%s: %s", L["Vendor"], L["Alexandra Bolero"]) },	-- Tailoring-Pattern: White Wedding Dress
 		{ 21894, 	BZ["Nagrand"], 			format("%s: %s", L["Vendor"], L["Borto"]) },				-- Tailoring-Pattern: Bolt of Soulcloth
 		{ 21902, 	BZ["Nagrand"], 			format("%s: %s", L["Vendor"], L["Borto"]) },				-- Tailoring-Pattern: Soulcloth Gloves
 		{ 21898, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Muheru the Weaver"]) },	-- Tailoring-Pattern: Imbued Netherweave Pants
 		{ 21899, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Muheru the Weaver"]) },	-- Tailoring-Pattern: Imbued Netherweave Boots
+		
+		{ 21892,	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Bolt of Imbued Netherweave
+		{ 21894,	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Bolt of Soulcloth
+		{ 21896,	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Netherweave Robe
+		{ 21897,	BZ["The Exodar"], 		format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Netherweave Tunic
 		
 		-- -- -- -- --
 		-- Alchemy
@@ -4853,21 +4805,30 @@ local recipeFactionDuplicates	= {
 		-- -- -- -- --
 		-- Tailoring
 		-- -- -- -- --
+		{ 5775, 	BZ["Dustwallow Marsh"], L["Theramore Infiltrator"] },	-- Tailoring-Pattern: Black Silk Pack
 		{ 4355, 	BZ["Dustwallow Marsh"], format("%s: %s", L["Vendor"], L["Ghok'kah"]) },			-- Tailoring-Pattern: Icy Cloak
 		{ 6401, 	BZ["Hillsbrad Foothills"], format("%s: %s", L["Vendor"], L["Mallen Swain"]) },	-- Tailoring-Pattern: Dark Silk Shirt
 		{ 7089, 	BZ["Arathi Highlands"], format("%s: %s", L["Vendor"], L["Jun'ha"]) },			-- Tailoring-Pattern: Azure Silk Cloak
 		{ 7114, 	BZ["Desolace"], 		format("%s: %s", L["Vendor"], L["Kireena"]) },			-- Tailoring-Pattern: Azure Silk Gloves
+		{ 10325, 	BZ["Thunder Bluff"],	format("%s: %s", L["Vendor"], L["Mahu"]) },				-- Tailoring-Pattern: White Wedding Dress
 		{ 10311, 	BZ["Thunder Bluff"], 	format("%s: %s", L["Vendor"], L["Mahu"]) },				-- Tailoring-Pattern: Orange Martial Shirt
 		{ 10314, 	BZ["Orgrimmar"], 		format("%s: %s", L["Vendor"], L["Borya"]) },				-- Tailoring-Pattern: Lavender Mageweave Shirt
 		{ 10317, 	BZ["Orgrimmar"], 		format("%s: %s", L["Vendor"], L["Borya"]) },				-- Tailoring-Pattern: Pink Mageweave Shirt
 		{ 10321, 	BZ["Undercity"], 		format("%s: %s", L["Vendor"], L["Millie Gregorian"]) },	-- Tailoring-Pattern: Tuxedo Shirt
 		{ 10323, 	BZ["Undercity"], 		format("%s: %s", L["Vendor"], L["Millie Gregorian"]) },	-- Tailoring-Pattern: Tuxedo Pants
-		{ 10325, 	BZ["Thunder Bluff"],	format("%s: %s", L["Vendor"], L["Mahu"]) },				-- Tailoring-Pattern: White Wedding Dress
 		{ 10326, 	BZ["Undercity"], 		format("%s: %s", L["Vendor"], L["Millie Gregorian"]) },	-- Tailoring-Pattern: Tuxedo Jacket
+		
+		{ 21893, 	BZ["Nagrand"], 			format("%s: %s", L["Vendor"], L["Mathar G'ochar"]) },	-- Tailoring-Pattern: Imbued Netherweave Bag
 		{ 21894, 	BZ["Nagrand"], 			format("%s: %s", L["Vendor"], L["Mathar G'ochar"]) },	-- Tailoring-Pattern: Bolt of Soulcloth
 		{ 21902, 	BZ["Nagrand"], 			format("%s: %s", L["Vendor"], L["Mathar G'ochar"]) },	-- Tailoring-Pattern: Soulcloth Gloves
+		
 		{ 21898, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Zurai"]) },				-- Tailoring-Pattern: Imbued Netherweave Pants
 		{ 21899, 	BZ["Zangarmarsh"], 		format("%s: %s", L["Vendor"], L["Zurai"]) },				-- Tailoring-Pattern: Imbued Netherweave Boots
+		
+		{ 21892,	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Deynna"]) },	-- Tailoring-Pattern: Bolt of Imbued Netherweave
+		{ 21894,	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Deynna"]) },	-- Tailoring-Pattern: Bolt of Soulcloth
+		{ 21896,	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Deynna"]) },	-- Tailoring-Pattern: Netherweave Robe
+		{ 21897,	BZ["Silvermoon City"], 	format("%s: %s", L["Vendor"], L["Deynna"]) },	-- Tailoring-Pattern: Netherweave Tunic
 		
 		-- -- -- -- --
 		-- Alchemy
