@@ -221,6 +221,27 @@ local QuestStartItemList = {
 	[6196] = 1392,  -- Noboru's Cudgel
 }
 
+local ItemNoteText = {
+	[9303] = L["Any Alchemist's Stone can be used for Alchemical Transmutation!"], 	-- Recipe: Philosopher's Stone
+	[9149] = L["Any Alchemist's Stone can be used for Alchemical Transmutation!"], 	-- Philosopher's Stone
+	
+	[13503] = L["Required for Alchemical Transmutation."], 	-- Alchemist's Stone
+	[13517] = L["Required for Alchemical Transmutation."],	-- Recipe: Alchemist's Stone
+	
+	[35748] = L["Required for Alchemical Transmutation."], 	-- Guardian's Alchemist Stone
+	[35749] = L["Required for Alchemical Transmutation."], 	-- Sorcerer's Alchemist Stone
+	[35750] = L["Required for Alchemical Transmutation."], 	-- Redeemer's Alchemist Stone
+	[35751] = L["Required for Alchemical Transmutation."], 	-- Assassin's Alchemist Stone
+	[35752] = L["Required for Alchemical Transmutation."],	-- Recipe: Guardian's Alchemist Stone
+	[35753] = L["Required for Alchemical Transmutation."],	-- Recipe: Sorcerer's Alchemist Stone
+	[35754] = L["Required for Alchemical Transmutation."],	-- Recipe: Redeemer's Alchemist Stone
+	[35755] = L["Required for Alchemical Transmutation."],	-- Recipe: Assassin's Alchemist Stone
+	
+	[44322] = L["Required for Alchemical Transmutation."], 	-- Mercurial Alchemist Stone
+	[44323] = L["Required for Alchemical Transmutation."], 	-- Indestructible Alchemist's Stone
+	[44324] = L["Required for Alchemical Transmutation."], 	-- Mighty Alchemist's Stone
+}
+
 -- *** Utility functions ***
 local function IsGatheringNode(name)
 	if name then
@@ -253,7 +274,7 @@ local function GetCraftNameFromRecipeLink(link)
 end
 
 local isTooltipDone, isNodeDone			-- for informant
-local cachedItemID, cachedCount, cachedTotal, cachedSource, cachedQuestStartItem
+local cachedItemID, cachedCount, cachedTotal, cachedSource, cachedNote, cachedQuestStartItem
 local cachedRecipeOwners
 
 local itemCounts = {}
@@ -504,13 +525,13 @@ local function ProcessTooltip(tooltip, name, link)
 	local realm, account = addon:GetCurrentRealm()
 	
 	-- if there's no cached item id OR if it's different from the previous one ..
-	if (not cachedItemID) or 
-		(cachedItemID and (itemID ~= cachedItemID)) then
+	if (not cachedItemID) or (cachedItemID and (itemID ~= cachedItemID)) then
 
 		cachedRecipeOwners = nil
 		
 		-- these are the cpu intensive parts of the update .. so do them only if necessary
 		cachedSource = nil
+		cachedNote = nil
 		if addon.Options:Get("TooltipSource") == 1 then
 			local Instance, Boss
 			local Instance_Boss = addon.Loots:GetSource_multi(itemID)
@@ -524,6 +545,11 @@ local function ProcessTooltip(tooltip, name, link)
 			cachedItemID = itemID			-- we have searched this ID ..
 			if Instance_Boss then
 				cachedSource = format("%s: %s", GOLD..L["Source"], TEAL..Instance_Boss)
+			end
+			
+			local cNote = ItemNoteText[itemID]
+			if cNote then
+			cachedNote = format('"%s"', cNote)
 			end
 		end
 		
@@ -559,8 +585,13 @@ local function ProcessTooltip(tooltip, name, link)
 	WriteCounterLines(tooltip)
 	WriteTotal(tooltip)
 	
+	
 	if cachedSource then		-- add item source
 		tooltip:AddLine(" ",1,1,1);
+		
+		if cachedNote then-- add item Notes to Sources
+			tooltip:AddLine(cachedNote,1,1,0,1); 	-- yellow
+		end
 		tooltip:AddLine(cachedSource,1,1,1,1);
 	end
 	
