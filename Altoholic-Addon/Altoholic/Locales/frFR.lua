@@ -976,6 +976,7 @@ L["Jandia"]                     = true
 L["Janet Hommers"]              = true
 L["Jangdor Swiftstrider"]       = "Jangdor Rôdeur-agile"
 L["Jannos Ironwill"]            = "Jannos Volonté-de-fer"
+L["Jepetto Joybuzz"]            = "Jepetto Mizanjoie"
 L["Jaquilina Dramet"]           = true
 L["Jase Farlane"]               = true
 L["Jazzrik"]                    = true
