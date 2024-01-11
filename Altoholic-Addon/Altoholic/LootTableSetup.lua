@@ -23,47 +23,10 @@ local rep_Exalted 	= FACTION_STANDING_LABEL8
 
 -- Simplified loot table containing item ID's only, based on AtlasLoot v5.09.00
 db.lootTable = {
-
+	-- -- -- -- -- -- -- --
 	-- ** Miscellaneous **
-	[L["Bash'ir Landing"]] = {
-		[L["Skyguard Raid"]] = {
-			32596, 32600, 32599, 32597, 32634, 32637, 32635, 32636, 32639, 32638, 
-			32641, 32640, 32759, 32630, 32631, 32627, 32625, 32629, 32628, 32626, 32624, 
-		},
-		[L["Stasis Chambers"]] = {
-			32522, 31577, 31569, 31553, 31561, 
-		},
-	},
-	[L["Skettis"]] = {
-		[L["Time-Lost Scroll"] .. ": " .. SUMMONS] = {
-			31558, 31555, 31566, 31563, 31574, 31571, 31582, 31579, 32514, 
-		},
-		[L["Time-Lost Scroll"] .. ": " .. L["Darkscreecher Akkarai"]] = {
-			32529, 32715, 
-		},
-		[L["Time-Lost Scroll"] .. ": " .. L["Karrog"]] = {
-			32533, 32717, 
-		},
-		[L["Time-Lost Scroll"] .. ": " .. L["Gezzarak the Huntress"]] = {
-			32531, 32716, 
-		},
-		[L["Time-Lost Scroll"] .. ": " .. L["Vakkiz the Windrager"]] = {
-			32532, 32718, 
-		},
-		[L["Terokk"]] = {
-			32540, 32541, 31556, 31564, 31572, 31580, 32535, 32534, 32782, 32536, 32537, 
-		},
-	},
-	[L["Ethereum Prison"]] = {
-		[L["Armbreaker Huffaz"]] = { 31943, },
-		[L["Fel Tinkerer Zortan"]] = { 31573, },
-		[L["Forgosh"]] = { 31565, },
-		[L["Gul'bor"]] = {31940, },
-		[L["Malevus the Mad"]] = { 31581, },
-		[L["Porfus the Gem Gorger"]] = { 31557, },
-		[L["Wrathbringer Laz-tarash"]] = { 32520, },
-		["Shared loot"] = { 31925, 31926, 31927, 31928, 31929, 31935, 31936, 31937, 31938, 31939, 31957 },
-	},
+	-- -- -- -- -- -- -- --
+	-- Events Classic
 	[L["Abyssal Council"] .. " (" .. BZ["Silithus"] .. ")"] = {
 		[L["Crimson Templar (Fire)"]] = {
 			20657, 20655, 20656, 
@@ -119,6 +82,69 @@ db.lootTable = {
 		[L["Rare Fish"]] = { 19805, 19803, 19806, 19808 },
 		[L["Rare Fish Rewards"]] = { 19972, 19969, 19971 }
 	},
+	[L["Scourge Invasion"]] = {	
+		[L["Miscellaneous"]] 	= { 23123, 23122, 22999, 23194, 23195, 23196, },
+		[L["Cloth Set"]] 	= { 23085, 23091, 23084, },
+		[L["Leather Set"]] 	= { 23089, 23093, 23081, },
+		[L["Mail Set"]] 	= { 23088, 23092, 23082, },
+		[L["Plate Set"]] 	= { 23087, 23090, 23078, },
+		[L["Balzaphon"]] 	= { 23126, 23125, 23124, },
+		[L["Lord Blackwood"]] 	= { 23156, 23132, 23139, },
+		[L["Revanchion"]] 	= { 23127, 23129, 23128,},
+		[L["Scorn"]] 	= { 23170, 23169, 23168, },
+		[L["Sever"]] 	= { 23173, 23171, },
+		[L["Lady Falther'ess"]] 	= { 23178, 23177, },
+	},
+	
+	-- Events TBC
+	[L["Bash'ir Landing"]] = {
+		[L["Skyguard Raid"]] = {
+			32596, 32600, 32599, 32597, 32634, 32637, 32635, 32636, 32639, 32638, 
+			32641, 32640, 32759, 32630, 32631, 32627, 32625, 32629, 32628, 32626, 32624, 
+		},
+		[L["Stasis Chambers"]] = {
+			32522, 31577, 31569, 31553, 31561, 
+		},
+	},
+	[L["Skettis"]] = {
+		[L["Time-Lost Scroll"] .. ": " .. SUMMONS] = {
+			31558, 31555, 31566, 31563, 31574, 31571, 31582, 31579, 32514, 
+		},
+		[L["Time-Lost Scroll"] .. ": " .. L["Darkscreecher Akkarai"]] = {
+			32529, 32715, 
+		},
+		[L["Time-Lost Scroll"] .. ": " .. L["Karrog"]] = {
+			32533, 32717, 
+		},
+		[L["Time-Lost Scroll"] .. ": " .. L["Gezzarak the Huntress"]] = {
+			32531, 32716, 
+		},
+		[L["Time-Lost Scroll"] .. ": " .. L["Vakkiz the Windrager"]] = {
+			32532, 32718, 
+		},
+		[L["Terokk"]] = {
+			32540, 32541, 31556, 31564, 31572, 31580, 32535, 32534, 32782, 32536, 32537, 
+		},
+	},
+	[L["Ethereum Prison"]] = {
+		[L["Armbreaker Huffaz"]] = { 31943, },
+		[L["Fel Tinkerer Zortan"]] = { 31573, },
+		[L["Forgosh"]] = { 31565, },
+		[L["Gul'bor"]] = {31940, },
+		[L["Malevus the Mad"]] = { 31581, },
+		[L["Porfus the Gem Gorger"]] = { 31557, },
+		[L["Wrathbringer Laz-tarash"]] = { 32520, },
+		["Shared loot"] = { 31925, 31926, 31927, 31928, 31929, 31935, 31936, 31937, 31938, 31939, 31957 },
+	},
+	[L["Shartuul"]] = {	
+		[L["Blade Edge Mountains"]] = {
+			32941, 32676, 32675, 32677, 32678, 32672, 32673, 32674, 32670, 32671, 
+			32679, 32942, 32655, 32656, 32665, 32664, 32658, 32659, 32660, 32663, 
+			32661, 32662, 
+		},
+	},
+	
+	-- World Events
 	[L["Children's Week"]] = {	
 		[BZ["Azeroth"]] = { 23007, 23015, 23002, 23022, },
 		[BZ["Outland"]] = { 32616, 32622, 32617, }
@@ -214,19 +240,6 @@ db.lootTable = {
 		[L["Quest rewards"]] = { 19697, 20009, 20010, },
 		[L["Food"]] = { 19994, 19995, 19996, 19997, },
 	},
-	[L["Scourge Invasion"]] = {	
-		[L["Miscellaneous"]] 	= { 23123, 23122, 22999, 23194, 23195, 23196, },
-		[L["Cloth Set"]] 	= { 23085, 23091, 23084, },
-		[L["Leather Set"]] 	= { 23089, 23093, 23081, },
-		[L["Mail Set"]] 	= { 23088, 23092, 23082, },
-		[L["Plate Set"]] 	= { 23087, 23090, 23078, },
-		[L["Balzaphon"]] 	= { 23126, 23125, 23124, },
-		[L["Lord Blackwood"]] 	= { 23156, 23132, 23139, },
-		[L["Revanchion"]] 	= { 23127, 23129, 23128,},
-		[L["Scorn"]] 	= { 23170, 23169, 23168, },
-		[L["Sever"]] 	= { 23173, 23171, },
-		[L["Lady Falther'ess"]] 	= { 23178, 23177, },
-	},
 	[L["Lunar Festival"]] = {	
 		[L["Miscellaneous"]] = {
 			21540, 21713, 21100,
@@ -321,13 +334,6 @@ db.lootTable = {
 			54806,  -- Frostscythe of Lord Ahune
 		},
 	},
-	[L["Shartuul"]] = {	
-		[L["Blade Edge Mountains"]] = {
-			32941, 32676, 32675, 32677, 32678, 32672, 32673, 32674, 32670, 32671, 
-			32679, 32942, 32655, 32656, 32665, 32664, 32658, 32659, 32660, 32663, 
-			32661, 32662, 
-		},
-	},
 	[L["Brewfest"]] = {	
 		[L["Miscellaneous"]] = {
 			33927, 33047, 33968, 33864, 33967, 33969, 33862, 33863, 33868, 33966, 
@@ -385,7 +391,9 @@ db.lootTable = {
 		},
 	},
 	
+	-- -- -- -- -- -- -- --
 	-- ** Sets & PVP ***
+	-- -- -- -- -- -- -- --
 	[BZ["Alterac Valley"]] = {	
 		[L["Miscellaneous"].." (" .. FACTION_ALLIANCE .. ")"] = { 19045, 19032 },
 		[L["Miscellaneous"].." (" .. FACTION_HORDE .. ")"] = {	19046, 19031 },
@@ -1172,7 +1180,9 @@ db.lootTable = {
 	},
 	
 	
-	-- misc classic dungeon
+	-- -- -- -- -- -- -- --
+	-- Classic Instances
+	-- -- -- -- -- -- -- --
 	[ BZ["Dire Maul"] ] = {
 		[ L["Knot Thimblejack's Cache"] ] = {
 			18414,	-- Tailoring-Pattern: Belt of the Archmage
@@ -1198,7 +1208,9 @@ db.lootTable = {
 	},
 	
 	
-	
+	-- -- -- -- -- -- -- --
+	-- TBC Instances
+	-- -- -- -- -- -- -- --
 	[ BZ["Magisters' Terrace"] ] = {
 		[ BB["Kael'thas Sunstrider"] ] = {
 			24296,	-- Tailoring-Pattern: Unyielding Bracers (World Drop)
@@ -2149,6 +2161,11 @@ db.lootTable = {
 			49955, 	-- Tailoring-Pattern: Lightweave Leggings
 		},
 	},
+	
+	
+	-- -- -- -- -- -- -- --
+	-- WotLK Instances
+	-- -- -- -- -- -- -- --
 	
 	[BZ["Vault of Archavon"] ] = {
 		[BOSS] 	= { 43959, 44083, },
@@ -3168,6 +3185,7 @@ db.lootTable = {
 		},
 	},
 	
+	-- 3.1
 	
 	[BZ["Ulduar"] ] = {
 		[TRADESKILL_SERVICE_LEARN] = {
@@ -3340,6 +3358,8 @@ db.lootTable = {
 			46138, 45605, 
 		},
 	},
+	
+	-- 3.2
 	
 	[BZ["Onyxia's Lair"]] = {
 		[BB["Onyxia"]] = { 49294, 49295, 49636, 49643, 49644, },
