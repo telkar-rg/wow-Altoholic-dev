@@ -67,33 +67,101 @@ db.lootTable = {
 		},
 		[L["Princes"]] = { 20515, },
 	},
-	[L["Elemental Invasion"]] = {	
+	[L["Elemental Invasion"]] = {
 		[BB["Baron Charr"] .. " (" .. BZ["Un'Goro Crater"] .. ")"] = {	18671, 18672 }, 	-- 19268, 
 		[BB["Princess Tempestria"] .. " (" .. BZ["Winterspring"] .. ")"] = { 18678, 18679 }, 	-- 19268, 
 		[BB["Avalanchion"] .. " (" .. BZ["Azshara"] .. ")"] = { 18673, 18674 }, 	-- 19268, 
 		[BB["The Windreaver"] .. " (" .. BZ["Silithus"] .. ")"] = { 18676, 18677 }, 	-- 19268, 
 		[format("%s/ %s", BZ["Silithus"], BZ["Winterspring"])] = { 21548 }, 	-- 19268, 
 	},
-	[L["Gurubashi Arena"]] = {	
+	[L["Gurubashi Arena"]] = {
 		[L["Booty Run"]] = { 18709, 18710, 18711, 18712, 18706, 19024 }
 	},
-	[L["Fishing Extravaganza"]] = {	
+	[L["Fishing Extravaganza"]] = {
 		[L["First Prize"]] = { 19970, 19979	},
 		[L["Rare Fish"]] = { 19805, 19803, 19806, 19808 },
 		[L["Rare Fish Rewards"]] = { 19972, 19969, 19971 }
 	},
-	[L["Scourge Invasion"]] = {	
-		[L["Miscellaneous"]] 	= { 23123, 23122, 22999, 23194, 23195, 23196, },
+	[ L["Scourge Invasion"] ] = {
+		[L["Miscellaneous"]] = {
+			23122, 	-- Consecrated Sharpening Stone
+			23123, 	-- Blessed Wizard Oil
+			22999, 	-- Tabard of the Argent Dawn
+			23194, 	-- Lesser Mark of the Dawn
+			23195, 	-- Mark of the Dawn
+			23196, 	-- Greater Mark of the Dawn
+		},
+		[ format("%s (%s)", L["Balzaphon"], BZ["Stratholme"]) ] = {
+			23124, 	-- Staff of Balzaphon
+			23125, 	-- Chains of the Lich
+			23126, 	-- Waistband of Balzaphon
+		},
+		[ format("%s (%s)", L["Lord Blackwood"], BZ["Scholomance"]) ] = {
+			23132, 	-- Lord Blackwood's Blade
+			23139, 	-- Lord Blackwood's Buckler
+			23156, 	-- Blackwood's Thigh
+		},
+		[ format("%s (%s)", L["Revanchion"], BZ["Dire Maul (West)"]) ] = {
+			23127, 	-- Cloak of Revanchion
+			23128,	-- The Shadow's Grasp
+			23129, 	-- Bracers of Mending
+		},
+		[ format("%s (%s: %s)", L["Scorn"], BZ["Scarlet Monastery"], BZ["Graveyard"]) ] = {
+			23168, 	-- Scorn's Focal Dagger
+			23169, 	-- Scorn's Icy Choker
+			23170, 	-- The Frozen Clutch
+		},
+		[ format("%s (%s)", L["Sever"], BZ["Shadowfang Keep"]) ] = {
+			23171, 	-- The Axe of Severing
+			23173, 	-- Abomination Skin Leggings
+		},
+		[ format("%s (%s)", L["Lady Falther'ess"], BZ["Razorfen Downs"]) ] = {
+			23177, 	-- Lady Falther'ess' Finger
+			23178, 	-- Mantle of Lady Falther'ess
+		},
+	},
+	[ format("%s 2006", L["Scourge Invasion"]) ] = {
 		[L["Cloth Set"]] 	= { 23085, 23091, 23084, },
 		[L["Leather Set"]] 	= { 23089, 23093, 23081, },
 		[L["Mail Set"]] 	= { 23088, 23092, 23082, },
 		[L["Plate Set"]] 	= { 23087, 23090, 23078, },
-		[L["Balzaphon"]] 	= { 23126, 23125, 23124, },
-		[L["Lord Blackwood"]] 	= { 23156, 23132, 23139, },
-		[L["Revanchion"]] 	= { 23127, 23129, 23128,},
-		[L["Scorn"]] 	= { 23170, 23169, 23168, },
-		[L["Sever"]] 	= { 23173, 23171, },
-		[L["Lady Falther'ess"]] 	= { 23178, 23177, },
+	},
+	[ format("%s 2008", L["Scourge Invasion"]) ] = {
+		[L["Miscellaneous"]] = {
+			40601, 	-- Argent Dawn Banner
+			40492, 	-- Argent War Horn
+			40593, 	-- Argent Tome
+			43530, 	-- Argent Mana Potion
+			43531, 	-- Argent Healing Potion
+		},
+		[L["Cloth Set"]] = {
+			43072, 	-- Blessed Robe of Undead Cleansing
+			43073, 	-- Blessed Gloves of Undead Cleansing
+			43074, 	-- Blessed Mantle of Undead Cleansing
+			43075, 	-- Blessed Trousers of Undead Cleansing
+		},
+		[L["Leather Set"]] = {
+			43076, 	-- Blessed Tunic of Undead Slaying
+			43077, 	-- Blessed Shoulderpads of Undead Slaying
+			43078, 	-- Blessed Grips of Undead Slaying
+			43079, 	-- Blessed Leggings of Undead Slaying
+		},
+		[L["Mail Set"]] = {
+			43080, 	-- Blessed Hauberk of Undead Slaying
+			43081, 	-- Blessed Pauldrons of Undead Slaying
+			43082, 	-- Blessed Handguards of Undead Slaying
+			43083, 	-- Blessed Greaves of Undead Slaying
+		},
+		[L["Plate Set"]] = {
+			43068, 	-- Blessed Spaulders of Undead Slaying
+			43069, 	-- Blessed Breastplate of Undead Slaying
+			43070, 	-- Blessed Gauntlets of Undead Slaying
+			43071, 	-- Blessed Legplates of Undead Slaying
+		},
+		[BB["Prince Tenris Mirkblood‎"]] = {
+			38658, 	-- Vampiric Batling
+			39769, 	-- Arcanite Ripper
+		},
 	},
 	
 	-- Events TBC
@@ -148,6 +216,7 @@ db.lootTable = {
 	[L["Children's Week"]] = {	
 		[BZ["Azeroth"]] = { 23007, 23015, 23002, 23022, },
 		[BZ["Outland"]] = { 32616, 32622, 32617, }
+		[BZ["Northrend"]] = { 46545, 46544, }
 	},
 	[L["Love is in the air"]] = {	
 		[L["Gift of Adoration"]] = { 34480, 22279, 22235, 22200, 22261, 22218, 21813, 34258, },
@@ -210,7 +279,7 @@ db.lootTable = {
 			21328, 	-- Wand of Holiday Cheer
 		},
 		[L["Winter Veil Gift"]] = {
-			34425, 	-- Clockwork Rocket Bot
+			-- 34425, 	-- Clockwork Rocket Bot (only 2007)
 			37710, 	-- Crashin' Thrashin' Racer Controller
 			46725, 	-- Red Rider Air Rifle
 		},
@@ -1442,20 +1511,153 @@ db.lootTable = {
 			34575, 34567, 34565, 34566, 34564, 34568, 34569, 
 		},
 	},
-
-	[L["Blizzard Collectables"]] = {	
-		[L["WoW Collector Edition"]] = { 13582, 13583, 13584 },
-		[L["BC Collector Edition (Europe)"]] = { 25535, 30360 },
-		[L["Blizzcon 2005"]] = { 20371 },
-		[L["Blizzcon 2007"]] = { 33079 },
-		["Worldwide Invitational Paris 2008"] = { 39656 },
-		[L["Christmas Gift 2006"]] = { 22114 }
+	
+	[ "Blizzard" ] = {
+		[ format("[%s]", QUEUE_TIME_UNAVAILABLE) ] = { 	-- UNAVAILABLE
+			11903, 	-- Cat Carrier (Corrupted Kitten)
+		},
+		[ "Online Store" ] = {
+			49693, 	-- Lil' Phylactery
+			49665, 	-- Pandaren Monk
+			54847, 	-- Lil' XT
+			54811, 	-- Celestial Steed
+		},
+		[ "WoW Collector Edition" ] = {
+			13582, 	-- Zergling Leash
+			13583, 	-- Panda Collar
+			13584, 	-- Diablo Stone
+		},
+		[ "Blizzcon 2005" ] = {
+			20371, 	-- Blue Murloc Egg
+		},
+		[ "Christmas Gift 2006" ] = {
+			22114, 	-- Pink Murloc Egg
+		},
+		[ "TBC Collector Edition" ] = {
+			25535, 	-- Netherwhelp's Collar
+			30360, 	-- Lurky's Egg
+		},
+		[ "Worldwide Invitational Seoul 2007" ] = {
+			32465, 	-- Fortune Coin
+		},
+		[ "Blizzcon 2007" ] = {
+			33079, 	-- Murloc Costume
+		},
+		[ "Christmas Gift 2007" ] = {
+			34425, 	-- Clockwork Rocket Bot
+		},
+		[ "Chinese New Year 2007" ] = {
+			34518, 	-- Golden Pig Coin
+			34519, 	-- Silver Pig Coin
+		},
+		[ "Recruit-A-Friend 2008" ] = {
+			37719, 	-- Swift Zhevra
+		},
+		[ "Spirit of Competition 2008" ] = {
+			36941, 	-- Competitor's Tabard
+			37297, 	-- Gold Medallion
+			37298, 	-- Competitor's Souvenir
+		},
+		[ "Worldwide Invitational Paris 2008" ] = {
+			39656, 	-- Tyrael's Hilt
+		},
+		[ "Switching to Battle.net Promotion" ] = {
+			41133, 	-- Unhatched Mr. Chilly
+		},
+		[ "Arena Tournament 2009" ] = {
+			45180, 	-- Murkimus' Little Spear
+		},
+		[ "Mountain Dew Game Fuel Promotion" ] = {
+			46767, 	-- Warbot Ignition Key
+		},
+		[ "Blizzcon 2009" ] = {
+			46802, 	-- Heavy Murloc Egg
+		},
+		[ "Korean Server-only collectable" ] = {
+			48527, 	-- Enchanted Onyx
+		},
+		[ "Patch 4.2.0" ] = {
+			54810, 	-- Celestial Dragon
+		},
+		[ "Starcraft II Collector's Edition" ] = {
+			56806, 	-- Mini Thor
+		},
 	},
-	[L["Upper Deck"]] = {
-		[L["Loot Card Items"]] = {
-			23705, 23713, 23720, 32588, 32566, 32542, 33225, 33224, 33223, 33219, 
-			34493, 34492, 34499, 35226, 35225, 35223, 35227, 38050, 38301, 38233, 
-			38312, 23709, 38313, 38309, 38310, 38314, 38311, 23716, 23714, 
+	[ "WoW Trading Card Game" ] = {
+		[ "UDE points redemption" ] = {
+			23709, 	-- Tabard of Frost
+			38309, 	-- Tabard of Nature
+			38310, 	-- Tabard of the Arcane
+			38311, 	-- Tabard of the Void
+			38312, 	-- Tabard of Brilliance
+			38313, 	-- Tabard of Fury
+			38314, 	-- Tabard of the Defender
+			49703, 	-- Perpetual Purple Firework
+		},
+		[ "'Heroes of Azeroth'" ] = {
+			23705, 	-- Tabard of Flame
+			23713, 	-- Hippogryph Hatchling
+			23720, 	-- Riding Turtle
+		},
+		[ "'Through the Dark Portal'" ] = {
+			32566, 	-- Picnic Basket
+			32588, 	-- Banana Charm
+			32542, 	-- Imp in a Ball
+		},
+		[ "'Fires of Outland'" ] = {
+			33219, 	-- Goblin Gumbo Kettle
+			33223, 	-- Fishing Chair
+			33224, 	-- Reins of the Spectral Tiger
+			33225, 	-- Reins of the Swift Spectral Tiger
+		},
+		[ "'March of the Legion'" ] = {
+			34492, 	-- Rocket Chicken
+			34493, 	-- Dragon Kite
+			34499, 	-- Paper Flying Machine Kit
+		},
+		[ "'Servants of the Betrayer'" ] = {
+			35223, 	-- Papa Hummel's Old-Fashioned Pet Biscuit
+			35227, 	-- Goblin Weather Machine - Prototype 01-B
+			35225, 	-- X-51 Nether-Rocket
+			35226, 	-- X-51 Nether-Rocket X-TREME
+		},
+		[ "'Hunt for Illidan'" ] = {
+			38233, 	-- Path of Illidan
+			38301, 	-- D.I.S.C.O.
+			38050, 	-- Soul-Trader Beacon
+		},
+		[ "'Drums of War'" ] = {
+			38577, 	-- Party G.R.E.N.A.D.E.
+			38578, 	-- The Flag of Ownership
+			38576, 	-- Big Battle Bear
+			49282, 	-- Big Battle Bear
+		},
+		[ "'Blood of Gladiators'" ] = {
+			45047, 	-- Sandbox Tiger
+			45037, 	-- Epic Purple Shirt
+			45063, 	-- Foam Sword Rack
+		},
+		[ "'Fields of Honor'" ] = {
+			46779, 	-- Path of Cenarius
+			46780, 	-- Ogre Pinata
+			49290, 	-- Magic Rooster Egg
+			46778, 	-- Magic Rooster Egg
+		},
+		[ "'Scourgewar'" ] = {
+			49343, 	-- Spectral Tiger Cub
+			49287, 	-- Tuskarr Kite
+			49289, 	-- Little White Stallion Bridle
+			49288, 	-- Little Ivory Raptor Whistle
+		},
+		[ "'Wrathgate'" ] = {
+			54069, 	-- Blazing Hippogryph
+			54218, 	-- Landro's Gift Box
+			54212, 	-- Instant Statue Pedestal
+		},
+		[ "'Icecrown'" ] = {
+			54068, 	-- Wooly White Rhino
+			54452, 	-- Ethereal Portal
+			54455, 	-- Paint Bomb
 		},
 	},
 	
@@ -4488,7 +4690,7 @@ local npcList = {
 	-- [66] = {L["Tharynn Bouden"], 	BZ["Elwynn Forest"]},
 }
 
-local recipeTable = {
+local additionalLootTable = {
 	-- -- -- -- --
 	-- Alchemy
 	-- -- -- -- --
@@ -4965,6 +5167,12 @@ local recipeTable = {
 	
 	{ 44937, 	BF["Alliance Vanguard"], 	rep_Exalted },	-- Blacksmithing-Plans: Titanium Plating
 	{ 44938, 	BF["Horde Expedition"], 	rep_Exalted },	-- Blacksmithing-Plans: Titanium Plating
+	
+	
+	-- -- -- -- --
+	-- Misc
+	-- -- -- -- --
+	{ 54436, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Jepetto Joybuzz"]) }, 	-- Blue Clockwork Rocket Bot
 }
 
 local recipeFactionDuplicates	= {
@@ -5237,7 +5445,7 @@ local recipeFactionDuplicates	= {
 	},
 }
 
-for idx, entry in pairs(recipeTable) do
+for idx, entry in pairs(additionalLootTable) do
 	local recipeId, zone, boss = unpack(entry)
 	
 	if recipeId and zone and boss then
@@ -5266,6 +5474,6 @@ if recipeFactionDuplicates[playerFaction] then
 	
 end
 
-wipe(recipeTable)
+wipe(additionalLootTable)
 wipe(recipeFactionDuplicates)
 wipe(npcList)
