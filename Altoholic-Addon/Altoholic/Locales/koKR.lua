@@ -628,7 +628,7 @@ L["This will gradually improve the consistency of the searches,\nas more items a
 L["Thomas Yance"] = true
 L["Thunderbrew Brewery"] = true
 L["Ticking Present"] = true
-L["Tier 0.5 Quests"] = "티어 0.5 퀘스트"
+L["Tier 0.5 Quests"] = "던전 2 퀘스트" 	-- Dungeon 2 Quests
 L["Tier %d Tokens"] = "T%d 쿠폰" 	-- retranslate as "coupon"
 L["Tier %s Tokens"] = "T%s 쿠폰"
 L["Timed Chest"] = true

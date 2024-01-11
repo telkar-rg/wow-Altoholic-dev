@@ -632,7 +632,7 @@ L["This will gradually improve the consistency of the searches,\nas more items a
 L["Thomas Yance"] = true
 L["Thunderbrew Brewery"] = "Aprendiz Cebatruenos"
 L["Ticking Present"] = "Obsequio que hace Tic-Tac"
-L["Tier 0.5 Quests"] = "T0.5 Misiones"
+L["Tier 0.5 Quests"] = "Mazmorra 2 Misiones" 	-- Dungeon 2 Quests
 L["Tier %d Tokens"] = "T%d Insignias"
 L["Tier %s Tokens"] = "T%s Insignias"
 L["Timed Chest"] = "Cofres contrareloj"

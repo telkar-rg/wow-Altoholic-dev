@@ -639,7 +639,7 @@ L["This will gradually improve the consistency of the searches,\nas more items a
 L["Thomas Yance"] = "Томас Янс"
 L["Thunderbrew Brewery"] = "Пивоваренный завод Громоварского"
 L["Ticking Present"] = "Тикающий подарочек"
-L["Tier 0.5 Quests"] = "Комплект ранга 0.5"
+L["Tier 0.5 Quests"] = "Квесты Подземелье 2" 	-- Dungeon 2 Quests
 L["Tier %d Tokens"] = "Купон T%d" 	-- retranslate as "coupon"
 L["Tier %s Tokens"] = "Купон T%s"
 L["Timed Chest"] = "Сундук за поход на время"

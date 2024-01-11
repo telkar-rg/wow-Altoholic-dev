@@ -627,7 +627,7 @@ L["This will gradually improve the consistency of the searches,\nas more items a
 L["Thomas Yance"] = "托马斯·杨斯"
 L["Thunderbrew Brewery"] = "雷酒节日酒桶"
 L["Ticking Present"] = "条纹礼物盒"
-L["Tier 0.5 Quests"] = "T0.5任务换取"
+L["Tier 0.5 Quests"] = "任务地下城2" 	-- Dungeon 2 Quests
 L["Tier %d Tokens"] = "T%d 优惠券" 	-- retranslate as "coupon"
 L["Tier %s Tokens"] = "T%s 优惠券"
 L["Timed Chest"] = "限时宝箱"
