@@ -1207,6 +1207,23 @@ db.lootTable = {
 		},
 	},
 	
+	-- Tier 0 (dungeon 1) is already in the level 60 instances (strat, scholo ..)
+	[L["Tier 0.5 Quests"]] = { 
+		[BI["Druid"]] = { 22109, 22112, 22113, 22108, 22110, 22106, 22111, 22107 },
+		[BI["Hunter"]] = { 22013, 22016, 22060, 22011, 22015, 22010, 22017, 22061 },
+		[BI["Mage"]] = { 22065, 22068, 22069, 22063, 22066, 22062, 22067, 22064 },
+		[BI["Paladin"]] = { 22091, 22093, 22089, 22088, 22090, 22086, 22092, 22087 },
+		[BI["Priest"]] = { 22080, 22082, 22083, 22079, 22081, 22078, 22085, 22084 },
+		[BI["Rogue"]] = { 22005, 22008, 22009, 22004, 22006, 22002, 22007, 22003 },
+		[BI["Shaman"]] = { 22097, 22101, 22102, 22095, 22099, 22098, 22100, 22096 },
+		[BI["Warlock"]] = { 22074, 22073, 22075, 22071, 22077, 22070, 22072, 22076 },
+		[BI["Warrior"]] = { 21999, 22001, 21997, 21996, 21998, 21994, 22000, 21995 }
+	},	
+	-- Dungeon 3 (level 70) is already in the BC 5-men
+	
+	-- Tier 1 is already in MC
+	-- Tier 2 is already in BWL, Ony
+	
 	
 	-- -- -- -- -- -- -- --
 	-- TBC Instances
@@ -1257,7 +1274,34 @@ db.lootTable = {
 			32739,	-- Blacksmithing-Plans: Dawnsteel Shoulders
 		},
 	},
+	[ BZ["Hyjal Summit"] ] = {
+		[ BB["Azgalor"] ] = {
+			31092,	-- Gloves of the Forgotten Conqueror
+			31093,	-- Gloves of the Forgotten Vanquisher
+			31094,	-- Gloves of the Forgotten Protector
+		},
+		[ BB["Archimonde"] ] = {
+			31095,	-- Helm of the Forgotten Protector
+			31096,	-- Helm of the Forgotten Vanquisher
+			31097,	-- Helm of the Forgotten Conqueror
+		},
+	},
 	[ BZ["Black Temple"] ] = {
+		[ BB["Illidan Stormrage"] ] = {
+			31089,	-- Chestguard of the Forgotten Conqueror
+			31090,	-- Chestguard of the Forgotten Vanquisher
+			31091,	-- Chestguard of the Forgotten Protector
+		},
+		[ BB["The Illidari Council"] ] = {
+			31098,	-- Leggings of the Forgotten Conqueror
+			31099,	-- Leggings of the Forgotten Vanquisher
+			31100,	-- Leggings of the Forgotten Protector
+		},
+		[ BB["Mother Shahraz"] ] = {
+			31101,	-- Pauldrons of the Forgotten Conqueror
+			31102,	-- Pauldrons of the Forgotten Vanquisher
+			31103,	-- Pauldrons of the Forgotten Protector
+		},
 		[ L["Trash Mobs"] ] = {
 			32753,	-- Tailoring-Pattern: Swiftheal Mantle
 			32754,	-- Tailoring-Pattern: Bracers of Nimble Thought
@@ -1267,6 +1311,32 @@ db.lootTable = {
 		},
 	},
 	[ BZ["Sunwell Plateau"] ] = {
+		[ BB["Kalecgos"] ] = {
+			34848,	-- Bracers of the Forgotten Conqueror
+			34851,	-- Bracers of the Forgotten Protector
+			34852,	-- Bracers of the Forgotten Vanquisher
+		},
+		[ BB["Brutallus"] ] = {
+			34853,	-- Belt of the Forgotten Conqueror
+			34854,	-- Belt of the Forgotten Protector
+			34855,	-- Belt of the Forgotten Vanquisher
+		},
+		[ BB["Felmyst"] ] = {
+			34856,	-- Boots of the Forgotten Conqueror
+			34857,	-- Boots of the Forgotten Protector
+			34858,	-- Boots of the Forgotten Vanquisher
+		},
+		[ BB["The Eredar Twins"] ] = {
+			34848,	-- Bracers of the Forgotten Conqueror
+			34851,	-- Bracers of the Forgotten Protector
+			34852,	-- Bracers of the Forgotten Vanquisher
+			34853,	-- Belt of the Forgotten Conqueror
+			34854,	-- Belt of the Forgotten Protector
+			34855,	-- Belt of the Forgotten Vanquisher
+			34856,	-- Boots of the Forgotten Conqueror
+			34857,	-- Boots of the Forgotten Protector
+			34858,	-- Boots of the Forgotten Vanquisher
+		},
 		[ L["Trash Mobs"] ] = {
 			35204,	-- Tailoring-Pattern: Sunfire Handwraps
 			35205,	-- Tailoring-Pattern: Hands of Eternal Light
@@ -1281,24 +1351,7 @@ db.lootTable = {
 		},
 	},
 	
-	
-	
-	-- Tier 0 (dungeon 1) is already in the level 60 instances (strat, scholo ..)
-	[L["Tier 0.5 Quests"]] = { 
-		[BI["Druid"]] = { 22109, 22112, 22113, 22108, 22110, 22106, 22111, 22107 },
-		[BI["Hunter"]] = { 22013, 22016, 22060, 22011, 22015, 22010, 22017, 22061 },
-		[BI["Mage"]] = { 22065, 22068, 22069, 22063, 22066, 22062, 22067, 22064 },
-		[BI["Paladin"]] = { 22091, 22093, 22089, 22088, 22090, 22086, 22092, 22087 },
-		[BI["Priest"]] = { 22080, 22082, 22083, 22079, 22081, 22078, 22085, 22084 },
-		[BI["Rogue"]] = { 22005, 22008, 22009, 22004, 22006, 22002, 22007, 22003 },
-		[BI["Shaman"]] = { 22097, 22101, 22102, 22095, 22099, 22098, 22100, 22096 },
-		[BI["Warlock"]] = { 22074, 22073, 22075, 22071, 22077, 22070, 22072, 22076 },
-		[BI["Warrior"]] = { 21999, 22001, 21997, 21996, 21998, 21994, 22000, 21995 }
-	},	
-	-- Dungeon 3 (level 70) is already in the BC 5-men
-	
-	-- Tier 1 is already in MC
-	-- Tier 2 is already in BWL, Ony
+	-- Other collections
 	
 	[format(L["Tier %d Tokens"], 3)] = {
 		[BI["Druid"]] = { 22490, 22491, 22488, 22495, 22493, 22494, 22489, 22492, 23064 },
@@ -1338,11 +1391,11 @@ db.lootTable = {
 			30228, 30219, 30233, 30141, 30206, 30125, 30131, 30136, 30152, 30161, 
 			30146, 30190, 30166, 30171, 30212, 30115, 30120,
 		},
-		[BB["Void Reaver"] .. " (" .. BZ["The Eye"] .. ")"] = {	-- T5 shoulders
+		[BB["Void Reaver"] .. " (" .. BZ["Tempest Keep"] .. ")"] = {	-- T5 shoulders
 			30230, 30221, 30235, 30143, 30210, 30127, 30133,  30138, 30154, 30163, 
 			30149, 30194, 30168, 30173, 30215, 30117, 30122, 
 		},
-		[BB["Kael'thas Sunstrider"] .. " (" .. BZ["The Eye"] .. ")"] = {	-- T5 chest
+		[BB["Kael'thas Sunstrider"] .. " (" .. BZ["Tempest Keep"] .. ")"] = {	-- T5 chest
 			30222, 30216, 30231, 30139, 30196, 30123, 30129, 30134, 30150, 30159, 
 			30144, 30185, 30164, 30169, 30214, 30113, 30118, 
 		},
@@ -1356,35 +1409,35 @@ db.lootTable = {
 		},
 	},
 	[format(L["Tier %d Tokens"], 6)] = {
-		[BB["Azgalor"] .. " (" .. BZ["Hyjal Summit"] .. ")"] = {	-- T6 gloves
+		[ format("%s (%s)", BB["Azgalor"], BZ["Hyjal Summit"]) ] = {	-- T6 gloves
 			31034, 31032, 31035, 31001, 31055, 30985, 30982, 30983, 31060, 31061, 
 			31026, 31011, 31007, 31008, 31050, 30970, 30969, 
 		},
-		[BB["Archimonde"] .. " (" .. BZ["Hyjal Summit"] .. ")"] = {	-- T6 helm
+		[ format("%s (%s)", BB["Archimonde"], BZ["Hyjal Summit"]) ] = {	-- T6 helm
 			31039, 31037, 31040, 31003, 31056, 30987, 30989, 30988, 31063, 31064, 
 			31027, 31015, 31012, 31014, 31051, 30974, 30972,
 		},
-		[BB["Mother Shahraz"] .. " (" .. BZ["Black Temple"] .. ")"] = {	-- T6 shoulders
+		[ format("%s (%s)", BB["Mother Shahraz"], BZ["Black Temple"]) ] = {	-- T6 shoulders
 			31048, 31047, 31049, 31006, 31059, 30997, 30998, 30996, 31069, 31070, 
 			31030, 31024, 31022, 31023, 31054, 30980, 30979, 
 		},
-		[BB["The Illidari Council"] .. " (" .. BZ["Black Temple"] .. ")"] = {	-- T6 leggings
+		[ format("%s (%s)", BB["The Illidari Council"], BZ["Black Temple"]) ] = {	-- T6 leggings
 			31044, 31045, 31046, 31005, 31058, 30995, 30993, 30994, 31068, 31067, 
 			31029, 31021, 31019, 31020, 31053, 30978, 30977, 
 		},
-		[BB["Illidan Stormrage"] .. " (" .. BZ["Black Temple"] .. ")"] = {	-- T6 chest
+		[ format("%s (%s)", BB["Illidan Stormrage"], BZ["Black Temple"]) ] = {	-- T6 chest
 			31042, 31041, 31043, 31004, 31057, 30991, 30990, 30992, 31066, 31065, 
 			31028, 31018, 31016, 31017, 31052, 30976, 30975, 
 		},
-		[BB["Kalecgos"] .. " (" .. BZ["Sunwell Plateau"] .. ")"] = {	-- T6 bracers
+		[ format("%s/ %s (%s)", BB["Kalecgos"], BB["The Eredar Twins"], BZ["Sunwell Plateau"]) ] = {	-- T6 bracers
 			34444, 34445, 34446, 34443, 34447, 34433, 34431, 34432, 34435, 34434, 
 			34448, 34439, 34438, 34437, 34436, 34442, 34441, 
 		},
-		[BB["Brutallus"] .. " (" .. BZ["Sunwell Plateau"] .. ")"] = {	-- T6 belt
+		[ format("%s/ %s (%s)", BB["Brutallus"], BB["The Eredar Twins"], BZ["Sunwell Plateau"]) ] = {	-- T6 belt
 			34556, 34554, 34555, 34549, 34557, 34488, 34485, 34487, 34527, 34528, 
 			34558, 34545, 34543, 34542, 34541, 34547, 34546, 
 		},
-		[BB["Felmyst"] .. " (" .. BZ["Sunwell Plateau"] .. ")"] = {	-- T6 boots
+		[ format("%s/ %s (%s)", BB["Felmyst"], BB["The Eredar Twins"], BZ["Sunwell Plateau"]) ] = {	-- T6 boots
 			34573, 34571, 34572, 34570, 34574, 34560, 34561, 34559, 34562, 34563, 
 			34575, 34567, 34565, 34566, 34564, 34568, 34569, 
 		},
