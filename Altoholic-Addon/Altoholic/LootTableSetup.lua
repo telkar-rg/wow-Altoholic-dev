@@ -158,7 +158,7 @@ db.lootTable = {
 			43070, 	-- Blessed Gauntlets of Undead Slaying
 			43071, 	-- Blessed Legplates of Undead Slaying
 		},
-		[BB["Prince Tenris Mirkblood‎"]] = {
+		[L["Prince Tenris Mirkblood"]] = {
 			38658, 	-- Vampiric Batling
 			39769, 	-- Arcanite Ripper
 		},
@@ -213,28 +213,348 @@ db.lootTable = {
 	},
 	
 	-- World Events
-	[L["Children's Week"]] = {	
-		[BZ["Azeroth"]] = { 23007, 23015, 23002, 23022, },
-		[BZ["Outland"]] = { 32616, 32622, 32617, }
-		[BZ["Northrend"]] = { 46545, 46544, }
+	[L["Lunar Festival"]] = {	
+		[L["Miscellaneous"]] = {
+			21540, 21713, 21100,
+		},
+		[L["Fireworks Pack"]] = {
+			21558, 21559, 21557, 21561, 21562, 21589, 21590, 21592, 21593, 21595, 
+		},
+		[L["Lucky Red Envelope"]] = { 21744, 21745, },
+		[BI["Engineering"]] = {
+			21738, 21724, 21725, 21726, 21727, 21728, 21729, 21737, 21730, 21731, 
+			21732, 21733, 21734, 21735, 
+		},
+		[BI["Tailoring"]] = { 21722, 21723, },
+		[ format("%s x%d", L["Coin of Ancestry"], 1) ] = {
+			21537, 	-- Festival Dumplings
+		},
+		[ format("%s x%d", L["Coin of Ancestry"], 5) ] = {
+			44916, 	-- Tailoring-Pattern: Festival Dress
+			44917, 	-- Tailoring-Pattern: Festival Suit
+			44918, 	-- Engineering-Schematic: Cluster Launcher
+			44919, 	-- Engineering-Schematic: Firework Launcher
+			21157, 	-- Festive Green Dress
+			21538, 	-- Festive Pink Dress
+			21539, 	-- Festive Purple Dress
+			21541, 	-- Festive Black Pant Suit
+			21543, 	-- Festive Teal Pant Suit
+			21544, 	-- Festive Blue Pant Suit
+			21640, 	-- Lunar Festival Fireworks Pack
+			21740, 	-- Small Rocket Recipes
+			21741, 	-- Cluster Rocket Recipes
+			21742, 	-- Large Rocket Recipes
+			21743, 	-- Large Cluster Rocket Recipes
+		},
 	},
-	[L["Love is in the air"]] = {	
-		[L["Gift of Adoration"]] = { 34480, 22279, 22235, 22200, 22261, 22218, 21813, 34258, },
+	[L["Love is in the air"]] = {
+		[ format("%s x%d", L["Love Token"], 1) ] = {
+			49856, 	-- "VICTORY" Perfume
+			49857, 	-- "Enchantress" Perfume
+			49858, 	-- "Forever" Perfume
+			49859, 	-- "Bravado" Cologne
+			49860, 	-- "Wizardry" Cologne
+			49861, 	-- "STALWART" Cologne
+		},
+		[ format("%s x%d", L["Love Token"], 2) ] = {
+			21813, 	-- Bag of Heart Candies
+			22218, 	-- Handful of Rose Petals
+		},
+		[ format("%s x%d", L["Love Token"], 5) ] = {
+			22200, 	-- Silver Shafted Arrow
+			34258, 	-- Love Rocket
+			50163, 	-- Lovely Rose
+		},
+		[ format("%s x%d", L["Love Token"], 10) ] = {
+			22261, 	-- Love Fool
+			34480, 	-- Romantic Picnic Basket
+			49909, 	-- Box of Chocolates
+		},
+		[ format("%s x%d", L["Love Token"], 20) ] = {
+			50160, 	-- Lovely Dress Box
+			50161, 	-- Dinner Suit Box
+		},
+		[ format("%s x%d", L["Love Token"], 40) ] = {
+			22235, 	-- Truesilver Shafted Arrow
+		},
 		[L["Box of Chocolates"]] = { 22237, 22238, 22236, 22239, },
-		[L["Quest rewards"]] = { 22276, 22278, 22280, 22277, 22281, 22282, }
+		[L["Lovely Dress Box"]] = {
+			22276, 	-- Lovely Red Dress
+			22278, 	-- Lovely Blue Dress
+			22279, 	-- Lovely Black Dress
+			22280, 	-- Lovely Purple Dress
+		},
+		[L["Dinner Suit Box"]] = {
+			22277, 	-- Red Dinner Suit
+			22281, 	-- Blue Dinner Suit
+			22282, 	-- Purple Dinner Suit
+		},
+		[ L["Apothecary Trio"] ] = {
+			51804,  -- Winking Eye of Love
+			51805,  -- Heartbreak Charm
+			51806,  -- Shard of Pirouetting Happiness
+			51807,  -- Sweet Perfume Broach
+			51808,  -- Choker of the Pure Heart
+		},
+		[ LOOKING_FOR_DUNGEON .. " " .. LFD_REWARDS ] = {	-- global string for "Dungeon Finder" and "Rewards"
+			49715,  -- Forever-Lovely Rose
+			50250,  -- Big Love Rocket
+			50446,  -- Toxic Wasteling
+			50471,  -- The Heartbreaker
+			50741,  -- Vile Fumigator's Mask
+		},
 	},
-	[L["Hallow's End"]] = {	
+	[L["Noblegarden"]] = {
+		[L["Brightly Colored Egg"]] = { 19028, 6833, 6835, 7807, 7808, 7806, }
+	},
+	[L["Children's Week"]] = {
+		[BZ["Azeroth"]] = { 23007, 23015, 23002, 23022, },
+		[BZ["Outland"]] = { 32616, 32622, 32617, },
+		[BZ["Northrend"]] = { 46545, 46544, },
+	},
+	[L["Midsummer Fire Festival"]] = {
+		[ CURRENCY ] = {
+			23247, 	-- Burning Blossom
+		},
+		[L["Burning Blossom"] .. format(" x%d", 350) ] = { 	
+			23083, 	-- Captured Flame
+			34686, 	-- Brazier of Dancing Flames
+		},
+		[L["Burning Blossom"] .. format(" x%d", 100) ] = { 	
+			23324, 	-- Mantle of the Fire Festival
+			34685, 	-- Vestment of Summer
+		},
+		[L["Burning Blossom"] .. format(" x%d", 200) ] = { 	34683, }, 	-- Sandals of Summer
+		[L["Burning Blossom"] .. format(" x%d", 2) ] = {
+			23246, 	-- Fiery Festival Brew
+			34684, 	-- Handful of Summer Petals
+		},
+		[L["Burning Blossom"] .. format(" x%d", 5) ] = {
+			23211, 	-- Toasted Smorc
+			23215, 	-- Bag of Smorc Ingredients
+			23326, 	-- Midsummer Sausage
+			23327, 	-- Fire-toasted Bun
+			23435, 	-- Elderberry Pie
+			34599, 	-- Juggling Torch
+		},
+		[L["Miscellaneous"]] = {
+			23323, 	-- Crown of the Fire Festival
+			23379, 	-- Cinder Bracers (removed Lv60 Quest)
+		},
+		[L["Lord Ahune"] .. " (Lv70)"] = {
+			34955, 	-- Scorched Stone
+			
+			35494, 	-- Shroud of Winter's Chill
+			35495, 	-- The Frost Lord's War Cloak
+			35496, 	-- Icebound Cloak
+			35497, 	-- Cloak of the Frigid Winds
+			35507, 	-- Amulet of Bitter Hatred
+			35508, 	-- Choker of the Arctic Flow
+			35509, 	-- Amulet of Glacial Tranquility
+			35511, 	-- Hailstone Pendant
+			35514, 	-- Frostscythe of Lord Ahune
+		},
+		[L["Lord Ahune"]] = {
+			35279, 	-- Tabard of Summer Skies
+			35280, 	-- Tabard of Summer Flames
+			35498, 	-- Formula: Enchant Weapon - Deathfrost
+			35720, 	-- Lord of Frost's Private Label
+			35723, 	-- Shards of Ahune
+			
+			54801, 	-- Icebound Cloak
+			54802, 	-- The Frost Lord's War Cloak
+			54803, 	-- The Frost Lord's Battle Shroud
+			54804, 	-- Shroud of Winter's Chill
+			54805, 	-- Cloak of the Frigid Winds
+		},
+		[ LOOKING_FOR_DUNGEON .. " " .. LFD_REWARDS ] = {	-- global string for "Dungeon Finder" and "Rewards"
+			53641,  -- Ice Chip
+			54806,  -- Frostscythe of Lord Ahune
+		},
+	},
+	[L["Harvest Festival"]] = {
+		[L["Quest rewards"]] = { 19697, 20009, 20010, },
+		[L["Food"]] = { 19994, 19995, 19996, 19997, },
+	},
+	[L["Brewfest"]] = {
+		[ format("%s x%d", L["Brewfest Prize Token"], 2) ] = {
+			37750, 	-- Fresh Brewfest Hops
+		},
+		[ format("%s x%d", L["Brewfest Prize Token"], 5) ] = {
+			39476, 	-- Fresh Goblin Brewfest Hops
+			39477, 	-- Fresh Dwarven Brewfest Hops
+		},
+		[ format("%s x%d", L["Brewfest Prize Token"], 20) ] = {
+			37816, 	-- Preserved Brewfest Hops
+		},
+		[ format("%s x%d", L["Brewfest Prize Token"], 50) ] = {
+			33864, 	-- Brown Brewfest Hat
+			33967, 	-- Green Brewfest Hat
+			33968, 	-- Blue Brewfest Hat
+			33969, 	-- Purple Brewfest Hat
+		},
+		[ format("%s x%d", L["Brewfest Prize Token"], 100) ] = {
+			33047, 	-- Belbi's Eyesight Enhancing Romance Goggles
+			33868, 	-- Brewfest Boots
+			33927, 	-- Brewfest Pony Keg
+			33966, 	-- Brewfest Slippers
+			34008, 	-- Blix's Eyesight Enhancing Romance Goggles
+			46707, 	-- Pint-Sized Pink Pachyderm
+		},
+		[ format("%s x%d", L["Brewfest Prize Token"], 200) ] = {
+			33862, 	-- Brewfest Regalia
+			33863, 	-- Brewfest Dress
+			37736, 	-- "Brew of the Month" Club Membership Form
+			37737, 	-- "Brew of the Month" Club Membership Form
+		},
+		[ format("%s 2007", L["Quest rewards"]) ] = {
+			33976, 	-- Brewfest Ram
+			34140, 	-- Dark Iron Tankard
+			32912, 	-- Yellow Brewfest Stein
+			33455, 	-- Brewfest Prize Ticket
+		},
+		[ format("%s 2008", L["Quest rewards"]) ] = {
+			33016, 	-- Blue Brewfest Stein
+		},
+		[ L["Quest rewards"] ] = {
+			37892, 	-- Green Brewfest Stein (2009)
+			32233, 	-- Wolpertinger's Tankard
+		},
+		[L["Vendor"]] = {
+			33023	, -- 	Savory Sausage
+			33024	, -- 	Pickled Sausage
+			33025	, -- 	Spicy Smoked Sausage
+			33026	, -- 	The Golden Link
+			33043	, -- 	The Essential Brewfest Pretzel
+			34063	, -- 	Dried Sausage
+			34064	, -- 	Succulent Sausage
+			34065	, -- 	Spiced Onion Cheese
+		},
+		[L["Barleybrew Brewery"]] = { 33030, 33028, 33029, },
+		[L["Thunderbrew Brewery"]] = { 33031, 33032, 33033, },
+		[L["Gordok Brewery"]] = { 33034, 33036, 33035, },
+		[L["Drohn's Distillery"]] = { 34017, 34018, 34019, },
+		[L["T'chali's Voodoo Brewery"]] = { 34020, 34021, 34022, },
+		[BB["Coren Direbrew"] .. " (Lv70)"] = {
+			37127, 38289, 38290, 38288, 38287, 37597, 
+		},
+		[BB["Coren Direbrew"]] = { 
+			38280,  -- Direbrew's Dire Brew (Quest Item)
+			38281,  -- Direbrew's Dire Brew (Quest Item)
+			
+			49078,  -- Ancient Pickled Egg
+			49118,  -- Bubbling Balebrew Charm
+			49116,  -- Bitter Brightbrew Charm
+			49080,  -- Brawler's Souvenir
+			49074,  -- Coren's Chromium Coaster
+			49076,  -- Mithril Pocketwatch
+		},
+		[ LOOKING_FOR_DUNGEON .. " " .. LFD_REWARDS ] = {	-- global string for "Dungeon Finder" and "Rewards"
+			49120,  -- Direbrew's Shanker 2.0
+			48663,  -- Tankard O' Terror
+			37828,  -- Great Brewfest Kodo
+			33977,  -- Swift Brewfest Ram
+			37863,  -- Direbrew's Remote
+		},
+	},
+	[L["Hallow's End"]] = {
 		[L["Various Locations"]] = {
-			33117, 20400, 18633, 18632, 18635, 20557, 
+			33117, 20400, 18633, 18632, 18635, 20557,
+		},
+		[L["Miscellaneous"]] = {
+			33189, 	-- Rickety Magic Broom
+		},
+		[L["Candy Bucket"]] = {
+			37582, 	-- Pyroblast Cinnamon Ball
+			37583, 	-- G.N.E.R.D.S.
+			37584, 	-- Soothing Spearmint Candy
+			37585, 	-- Chewy Fel Taffy
+			37586, 	-- Handful of Candy
 		},
 		[L["Treat Bag"]] = {
-			20410, 20409, 20399, 20398, 20397, 20413, 20411, 20414, 20389, 20388, 
-			20390, 20561, 20391, 20566, 20564, 20570, 20572, 20568, 20573, 20562, 
-			20392, 20565, 20563, 20569, 20571, 20567, 20574, 
+			20388, 	-- Lollipop
+			20389, 	-- Candy Corn
+			20390, 	-- Candy Bar
+			37604, 	-- Tooth Pick
+			
+			20397, 	-- Hallowed Wand - Pirate
+			20398, 	-- Hallowed Wand - Ninja
+			20399, 	-- Hallowed Wand - Leper Gnome
+			20409, 	-- Hallowed Wand - Ghost
+			20410, 	-- Hallowed Wand - Bat
+			20411, 	-- Hallowed Wand - Skeleton
+			20413, 	-- Hallowed Wand - Random
+			20414, 	-- Hallowed Wand - Wisp
+			
+			20391, 	-- Flimsy Male Gnome Mask
+			20392, 	-- Flimsy Female Gnome Mask
+			20561, 	-- Flimsy Male Dwarf Mask
+			20562, 	-- Flimsy Female Dwarf Mask
+			20563, 	-- Flimsy Female Night Elf Mask
+			20564, 	-- Flimsy Male Night Elf Mask
+			20565, 	-- Flimsy Female Human Mask
+			20566, 	-- Flimsy Male Human Mask
+			20567, 	-- Flimsy Female Troll Mask
+			20568, 	-- Flimsy Male Troll Mask
+			20569, 	-- Flimsy Female Orc Mask
+			20570, 	-- Flimsy Male Orc Mask
+			20571, 	-- Flimsy Female Tauren Mask
+			20572, 	-- Flimsy Male Tauren Mask
+			20573, 	-- Flimsy Male Undead Mask
+			20574, 	-- Flimsy Female Undead Mask
+			34000, 	-- Flimsy Female Blood Elf Mask
+			34001, 	-- Flimsy Female Draenei Mask
+			34002, 	-- Flimsy Male Blood Elf Mask
+			34003, 	-- Flimsy Male Draenei Mask
+		},
+		[ format("%s (Lv70)", L["Headless Horseman"]) ] = {
+			33176, 	-- Flying Broom
+			33182, 	-- Swift Flying Broom
+			33183, 	-- Old Magic Broom
+			33184, 	-- Swift Magic Broom
+			33808, 	-- The Horseman's Helm
+			34073, 	-- The Horseman's Signet Ring
+			34074, 	-- Witches Band
+			34075, 	-- Ring of Ghoulish Delight
+			38175, 	-- The Horseman's Blade
 		},
 		[L["Headless Horseman"]] = {
-			33808, 34075, 34073, 34074, 33292, 33154, 34068, 33226, 33182, 33184, 
-			33176, 33183, 33189, 
+			49121, 	-- Ring of Ghoulish Glee
+			49123, 	-- The Horseman's Seal
+			49124, 	-- Wicked Witch's Band
+			49126, 	-- The Horseman's Horrific Helm
+			49128, 	-- The Horseman's Baleful Blade
+		},
+		[ LOOKING_FOR_DUNGEON .. " " .. LFD_REWARDS ] = {	-- global string for "Dungeon Finder" and "Rewards"
+			33154,  -- Sinister Squashling
+			33226,  -- Tricky Treat
+			33292,  -- Hallowed Helm
+			34068, 	-- Weighted Jack-o'-Lantern
+			37011,  -- Magic Broom
+			37012,  -- The Horseman's Reins
+		},
+	},
+	[L["Day of the Dead"]] = {	
+		[L["Vendor"]] = {
+			46710, 	-- Bread of the Dead
+		},
+	},
+	[L["Pilgrim's Bounty"]] = {	
+		[L["Vendor"]] = {
+			46809, 	-- Bountiful Cookbook (Alliance)
+			46810, 	-- Bountiful Cookbook (Horde)
+			
+			44858, 	-- Cooking-Recipe: Cranberry Chutney (Alliance)
+			44859, 	-- Cooking-Recipe: Candied Sweet Potato (Alliance)
+			44860, 	-- Cooking-Recipe: Spice Bread Stuffing (Alliance)
+			44861, 	-- Cooking-Recipe: Slow-Roasted Turkey (Alliance)
+			44862, 	-- Cooking-Recipe: Pumpkin Pie (Alliance)
+			
+			46803, 	-- Cooking-Recipe: Spice Bread Stuffing (Horde)
+			46804, 	-- Cooking-Recipe: Pumpkin Pie (Horde)
+			46805, 	-- Cooking-Recipe: Cranberry Chutney (Horde)
+			46806, 	-- Cooking-Recipe: Candied Sweet Potato (Horde)
+			46807, 	-- Cooking-Recipe: Slow-Roasted Turkey (Horde)
 		},
 	},
 	[L["Feast of Winter Veil"]] = {
@@ -302,164 +622,8 @@ db.lootTable = {
 		},
 		[L["Smokywood Pastures Extra-Special Gift"]] = { 21215, },
 	},
-	[L["Noblegarden"]] = {	
-		[L["Brightly Colored Egg"]] = { 19028, 6833, 6835, 7807, 7808, 7806, }
-	},	
-	[L["Harvest Festival"]] = {	
-		[L["Quest rewards"]] = { 19697, 20009, 20010, },
-		[L["Food"]] = { 19994, 19995, 19996, 19997, },
-	},
-	[L["Lunar Festival"]] = {	
-		[L["Miscellaneous"]] = {
-			21540, 21713, 21100,
-		},
-		[L["Fireworks Pack"]] = {
-			21558, 21559, 21557, 21561, 21562, 21589, 21590, 21592, 21593, 21595, 
-		},
-		[L["Lucky Red Envelope"]] = { 21744, 21745, },
-		[BI["Engineering"]] = {
-			21738, 21724, 21725, 21726, 21727, 21728, 21729, 21737, 21730, 21731, 
-			21732, 21733, 21734, 21735, 
-		},
-		[BI["Tailoring"]] = { 21722, 21723, },
-		[ format("%s x%d", L["Coin of Ancestry"], 1) ] = {
-			21537, 	-- Festival Dumplings
-		},
-		[ format("%s x%d", L["Coin of Ancestry"], 5) ] = {
-			44916, 	-- Tailoring-Pattern: Festival Dress
-			44917, 	-- Tailoring-Pattern: Festival Suit
-			44918, 	-- Engineering-Schematic: Cluster Launcher
-			44919, 	-- Engineering-Schematic: Firework Launcher
-			21157, 	-- Festive Green Dress
-			21538, 	-- Festive Pink Dress
-			21539, 	-- Festive Purple Dress
-			21541, 	-- Festive Black Pant Suit
-			21543, 	-- Festive Teal Pant Suit
-			21544, 	-- Festive Blue Pant Suit
-			21640, 	-- Lunar Festival Fireworks Pack
-			21740, 	-- Small Rocket Recipes
-			21741, 	-- Cluster Rocket Recipes
-			21742, 	-- Large Rocket Recipes
-			21743, 	-- Large Cluster Rocket Recipes
-		},
-	},
-	[L["Midsummer Fire Festival"]] = {
-		[ CURRENCY ] = {
-			23247, 	-- Burning Blossom
-		},
-		[L["Burning Blossom"] .. format(" x%d", 350) ] = { 	
-			23083, 	-- Captured Flame
-			34686, 	-- Brazier of Dancing Flames
-		},
-		[L["Burning Blossom"] .. format(" x%d", 100) ] = { 	
-			23324, 	-- Mantle of the Fire Festival
-			34685, 	-- Vestment of Summer
-		},
-		[L["Burning Blossom"] .. format(" x%d", 200) ] = { 	34683, }, 	-- Sandals of Summer
-		[L["Burning Blossom"] .. format(" x%d", 2) ] = {
-			23246, 	-- Fiery Festival Brew
-			34684, 	-- Handful of Summer Petals
-		},
-		[L["Burning Blossom"] .. format(" x%d", 5) ] = {
-			23211, 	-- Toasted Smorc
-			23215, 	-- Bag of Smorc Ingredients
-			23326, 	-- Midsummer Sausage
-			23327, 	-- Fire-toasted Bun
-			23435, 	-- Elderberry Pie
-			34599, 	-- Juggling Torch
-		},
-		[L["Miscellaneous"]] = {
-			23323, 	-- Crown of the Fire Festival
-			23379, 	-- Cinder Bracers (removed Lv60 Quest)
-		},
-		[L["Lord Ahune"] .. " (Lv70)"] = {
-			34955, 	-- Scorched Stone
-			
-			35494, 	-- Shroud of Winter's Chill
-			35495, 	-- The Frost Lord's War Cloak
-			35496, 	-- Icebound Cloak
-			35497, 	-- Cloak of the Frigid Winds
-			35507, 	-- Amulet of Bitter Hatred
-			35508, 	-- Choker of the Arctic Flow
-			35509, 	-- Amulet of Glacial Tranquility
-			35511, 	-- Hailstone Pendant
-			35514, 	-- Frostscythe of Lord Ahune
-		},
-		[L["Lord Ahune"]] = {
-			35279, 	-- Tabard of Summer Skies
-			35280, 	-- Tabard of Summer Flames
-			35498, 	-- Formula: Enchant Weapon - Deathfrost
-			35720, 	-- Lord of Frost's Private Label
-			35723, 	-- Shards of Ahune
-			
-			54801, 	-- Icebound Cloak
-			54802, 	-- The Frost Lord's War Cloak
-			54803, 	-- The Frost Lord's Battle Shroud
-			54804, 	-- Shroud of Winter's Chill
-			54805, 	-- Cloak of the Frigid Winds
-		},
-		[ LOOKING_FOR_DUNGEON .. " " .. LFD_REWARDS ] = {	-- global string for "Dungeon Finder" and "Rewards"
-			53641,  -- Ice Chip
-			54806,  -- Frostscythe of Lord Ahune
-		},
-	},
-	[L["Brewfest"]] = {	
-		[L["Miscellaneous"]] = {
-			33927, 33047, 33968, 33864, 33967, 33969, 33862, 33863, 33868, 33966, 
-			33978, 33977, 33976, 32912, 34140, 32233, 33455, 34063, 34064, 33023, 
-			33024, 33025, 33026, 33043, 33929, 
-		},						
-		[L["Barleybrew Brewery"]] = { 33030, 33028, 33029, },
-		[L["Thunderbrew Brewery"]] = { 33031, 33032, 33033, },
-		[L["Gordok Brewery"]] = { 33034, 33036, 33035, },
-		[L["Drohn's Distillery"]] = { 34017, 34018, 34019, },
-		[L["T'chali's Voodoo Brewery"]] = { 34020, 34021, 34022, },
-		[BB["Coren Direbrew"] .. " (Lv70)"] = {
-			37127, 38289, 38290, 38288, 38287, 37597, 
-		},
-		[BB["Coren Direbrew"]] = { 
-			38280,  -- Direbrew's Dire Brew (Quest Item)
-			38281,  -- Direbrew's Dire Brew (Quest Item)
-			
-			49078,  -- Ancient Pickled Egg
-			49118,  -- Bubbling Balebrew Charm
-			49116,  -- Bitter Brightbrew Charm
-			49080,  -- Brawler's Souvenir
-			49074,  -- Coren's Chromium Coaster
-			49076,  -- Mithril Pocketwatch
-		},
-		[ LOOKING_FOR_DUNGEON .. " " .. LFD_REWARDS ] = {	-- global string for "Dungeon Finder" and "Rewards"
-			49120,  -- Direbrew's Shanker 2.0
-			48663,  -- Tankard O' Terror
-			37828,  -- Great Brewfest Kodo
-			-- 33977,  -- Swift Brewfest Ram (can also be bought)
-			37863,  -- Direbrew's Remote
-		},
-	},
-	[L["Day of the Dead"]] = {	
-		[L["Vendor"]] = {
-			46710, 	-- Bread of the Dead
-		},
-	},
-	[L["Pilgrim's Bounty"]] = {	
-		[L["Vendor"]] = {
-			46809, 	-- Bountiful Cookbook (Alliance)
-			46810, 	-- Bountiful Cookbook (Horde)
-			
-			44858, 	-- Cooking-Recipe: Cranberry Chutney (Alliance)
-			44859, 	-- Cooking-Recipe: Candied Sweet Potato (Alliance)
-			44860, 	-- Cooking-Recipe: Spice Bread Stuffing (Alliance)
-			44861, 	-- Cooking-Recipe: Slow-Roasted Turkey (Alliance)
-			44862, 	-- Cooking-Recipe: Pumpkin Pie (Alliance)
-			
-			46803, 	-- Cooking-Recipe: Spice Bread Stuffing (Horde)
-			46804, 	-- Cooking-Recipe: Pumpkin Pie (Horde)
-			46805, 	-- Cooking-Recipe: Cranberry Chutney (Horde)
-			46806, 	-- Cooking-Recipe: Candied Sweet Potato (Horde)
-			46807, 	-- Cooking-Recipe: Slow-Roasted Turkey (Horde)
-		},
-	},
-	
+
+
 	-- -- -- -- -- -- -- --
 	-- ** Sets & PVP ***
 	-- -- -- -- -- -- -- --
@@ -1267,6 +1431,7 @@ db.lootTable = {
 		},
 	},
 	
+
 	[ BZ["Molten Core"] ] = {
 		[ L["Random Boss"] ] = {
 			18265,	-- Tailoring-Pattern: Flarecore Wraps
@@ -1517,10 +1682,12 @@ db.lootTable = {
 			11903, 	-- Cat Carrier (Corrupted Kitten)
 		},
 		[ "Online Store" ] = {
-			49693, 	-- Lil' Phylactery
+			49662, 	-- Gryphon Hatchling
+			49663, 	-- Wind Rider Cub
 			49665, 	-- Pandaren Monk
-			54847, 	-- Lil' XT
+			49693, 	-- Lil' Phylactery
 			54811, 	-- Celestial Steed
+			54847, 	-- Lil' XT
 		},
 		[ "WoW Collector Edition" ] = {
 			13582, 	-- Zergling Leash
@@ -1575,6 +1742,12 @@ db.lootTable = {
 		},
 		[ "Korean Server-only collectable" ] = {
 			48527, 	-- Enchanted Onyx
+		},
+		[ "WoW's 5th Anniversary" ] = {
+			49362, 	-- Onyxian Whelpling
+		},
+		[ "Battle.net Mobile Authenticator Promotion" ] = {
+			49646, 	-- Core Hound Pup
 		},
 		[ "Patch 4.2.0" ] = {
 			54810, 	-- Celestial Dragon
@@ -5172,7 +5345,19 @@ local additionalLootTable = {
 	-- -- -- -- --
 	-- Misc
 	-- -- -- -- --
+	{ 48120, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Breanni"]) }, 	-- Obsidian Hatchling
+	{ 46398, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Breanni"]) }, 	-- Calico Cat
+	
 	{ 54436, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Jepetto Joybuzz"]) }, 	-- Blue Clockwork Rocket Bot
+	{ 49912, 	ACHIEVEMENTS, 				L["Looking For Multitudes"] }, 	-- Perky Pug
+	{ 48126, 	BZ["Zul'Gurub"], 			L["Razzashi Raptor"] }, 	-- Razzashi Hatchling
+	{ 48124, 	BZ["Wetlands"], 			L["Razormaw Matriach's Nest"] }, 	-- Razormaw Hatchling
+	{ 48122, 	BZ["Un'Goro Crater"], 		L["Ravasaur Matriarch's Nest"] }, 	-- Ravasaur Hatchling
+	{ 48118, 	BZ["The Barrens"], 			L["Takk's Nest"] }, 	-- Leaping Hatchling
+	{ 48116, 	BZ["Zul'Drak"], 			L["Gundrak Raptor"] }, 	-- Gundrak Hatchling
+	{ 48114, 	BZ["Wailing Caverns"], 		L["Deviate Guardian"] }, 	-- Deviate Hatchling
+	{ 48114, 	BZ["Wailing Caverns"], 		L["Deviate Ravager"] }, 	-- Deviate Hatchling
+	{ 48112, 	BZ["Dustwallow Marsh"], 	L["Dart's Nest"] }, 	-- Darting Hatchling
 }
 
 local recipeFactionDuplicates	= {
