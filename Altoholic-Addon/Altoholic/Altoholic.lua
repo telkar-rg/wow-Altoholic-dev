@@ -488,11 +488,38 @@ function addon:SetItemButtonTexture(button, texture, width, height)
 	SetItemButtonTexture(_G[button], texture)
 end
 
-function addon:TextureToFontstring(name, width, height)
-	return format("|T%s:%s:%s|t", name, width, height)
+function addon:TextureToFontstring(name, height, width)
+	return format("|T%s:%s:%s|t", name, height, width)
+end
+
+function addon:TextureToFontstring2(name, height, width, insetLeft, insetRight, insetTop, insetBottom)
+	local w = width + insetLeft + insetRight
+	local h = height + insetTop + insetBottom
+	local coordx2 = width + insetLeft
+	local coordy2 = height + insetTop
+	
+	-- |TTexturePath:size1:size2:xoffset:yoffset:dimx:dimy:coordx1:coordx2:coordy1:coordy2|t
+	return format("|T%s:%s:%s:0:0:%s:%s:%s:%s:%s:%s|t", name, height, width, w, h, insetLeft, coordx2, insetTop, coordy2)
+end
+
+function addon:TextureToFontstringCut(name, heightOrig, widthOrig, insetLeft, insetRight, insetTop, insetBottom)
+	local h = heightOrig - insetTop - insetBottom
+	local w = widthOrig - insetLeft - insetRight
+	
+	local coordy1 = insetTop
+	local coordy2 = h - insetBottom
+	
+	local coordx1 = insetLeft
+	local coordx2 = w - insetRight
+	
+	-- |TTexturePath:height:width:xoffset:yoffset:dimx:dimy:coordx1:coordx2:coordy1:coordy2|t
+	return format("|T%s:%s:%s:0:0:%s:%s:%s:%s:%s:%s|t", name, h, w, widthOrig, heightOrig, coordx1, coordx2, coordy1, coordy2)
 end
 
 function addon:GetSpellIcon(spellID)
+	if spellID == 13614 then 	-- Herbalism
+		spellID = 2383 	-- Find Herbs
+	end
 	return select(3, GetSpellInfo(spellID))
 end
 

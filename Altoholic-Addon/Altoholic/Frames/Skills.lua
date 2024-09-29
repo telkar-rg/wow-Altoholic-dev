@@ -25,6 +25,9 @@ local ICON_FACTION_ALLIANCE = "Interface\\Icons\\INV_BannerPVP_02"
 local ns = addon.TradeSkills		-- ns = namespace
 local Characters = addon.Characters
 
+local size = 22
+local inset = 2
+
 function ns:Update()
 	local VisibleLines = 14
 	local frame = "AltoholicFrameSkills"
@@ -95,9 +98,11 @@ function ns:Update()
 					
 					local icon
 					if DS:GetCharacterFaction(character) == "Alliance" then
-						icon = addon:TextureToFontstring(ICON_FACTION_ALLIANCE, 18, 18) .. " "
+						-- icon = addon:TextureToFontstring(ICON_FACTION_ALLIANCE, size, size) .. " "
+						icon = addon:TextureToFontstring2(ICON_FACTION_ALLIANCE, size, size, inset, inset, inset, inset) .. " "
 					else
-						icon = addon:TextureToFontstring(ICON_FACTION_HORDE, 18, 18) .. " "
+						-- icon = addon:TextureToFontstring(ICON_FACTION_HORDE, size, size) .. " "
+						icon = addon:TextureToFontstring2(ICON_FACTION_HORDE, size, size, inset, inset, inset, inset) .. " "
 					end
 					
 					_G[entry..i.."Collapse"]:Hide()
@@ -106,11 +111,12 @@ function ns:Update()
 					_G[entry..i.."NameNormalText"]:SetWidth(170)
 					_G[entry..i.."NameNormalText"]:SetText(icon .. format("%s (%s)", DS:GetColoredCharacterName(character), DS:GetCharacterClass(character)))
 					_G[entry..i.."Level"]:SetText(GREEN .. DS:GetCharacterLevel(character))
-
+					
 					-- profession 1
 					local field = Characters:GetField(line, "spellID1")
 					if field then
-						icon = addon:TextureToFontstring(addon:GetSpellIcon(field), 18, 18) .. " "
+						-- icon = addon:TextureToFontstring(addon:GetSpellIcon(field), size, size) .. " "
+						icon = addon:TextureToFontstring2(addon:GetSpellIcon(field), size, size, inset, inset, inset, inset) .. " "
 					else
 						icon = ""
 					end
@@ -120,7 +126,8 @@ function ns:Update()
 					-- profession 2
 					field = Characters:GetField(line, "spellID2")
 					if field then
-						icon = addon:TextureToFontstring(addon:GetSpellIcon(field), 18, 18) .. " "
+						-- icon = addon:TextureToFontstring(addon:GetSpellIcon(field), size, size) .. " "
+						icon = addon:TextureToFontstring2(addon:GetSpellIcon(field), size, size, inset, inset, inset, inset) .. " "
 					else
 						icon = ""
 					end
@@ -128,29 +135,62 @@ function ns:Update()
 					_G[entry..i.."Skill2NormalText"]:SetText(icon .. ns:GetColor(field) .. field)
 					
 					-- cooking
-					icon = addon:TextureToFontstring(addon:GetSpellIcon(2550), 18, 18) .. " "
+					-- icon = addon:TextureToFontstring(addon:GetSpellIcon(2550), size, size) .. " "
+					icon = addon:TextureToFontstring2(addon:GetSpellIcon(2550), size, size, inset, inset, inset, inset) .. " "
 					field = Characters:GetField(line, "cooking")
 					_G[entry..i.."CookingNormalText"]:SetText(icon .. ns:GetColor(field) .. field)
 					
 					-- first aid
-					icon = addon:TextureToFontstring(addon:GetSpellIcon(3273), 18, 18) .. " "
+					-- icon = addon:TextureToFontstring(addon:GetSpellIcon(3273), size, size) .. " "
+					icon = addon:TextureToFontstring2(addon:GetSpellIcon(3273), size, size, inset, inset, inset, inset) .. " "
 					field = Characters:GetField(line, "firstaid")
 					_G[entry..i.."FirstAidNormalText"]:SetText(icon .. ns:GetColor(field) .. field)
 					
 					-- fishing
-					icon = addon:TextureToFontstring(addon:GetSpellIcon(7733), 18, 18) .. " "
+					-- icon = addon:TextureToFontstring(addon:GetSpellIcon(7733), size, size) .. " "
+					icon = addon:TextureToFontstring2(addon:GetSpellIcon(7733), size, size, inset, inset, inset, inset) .. " "
 					field = Characters:GetField(line, "fishing")
 					_G[entry..i.."FishingNormalText"]:SetText(icon .. ns:GetColor(field) .. field)
 					
 					-- riding
 					field = Characters:GetField(line, "riding")
-					if DS:IsSpellKnown(character, 54197) then
-						icon = addon:TextureToFontstring(addon:GetSpellIcon(54197), 18, 18) .. " "
+					if field >= 300 then
+						-- icon = addon:TextureToFontstring("Interface\\Icons\\Ability_Mount_Gryphon_01", size, size) .. " "
+						icon = addon:TextureToFontstring2("Interface\\Icons\\ability_mount_drake_bronze", size, size, inset, inset, inset, inset)
+						
+						for _,spId in pairs({63956, 63963, 60024, 72808, 72807, 63796, 40192, 69395, 60021, 59976, 64927, 67336, 65439, 49193, 71810, 44317, 44744, 58615, 37015, 3363, 32345}) do
+							-- IsPetKnown(character, companionType, spellID)
+							if DS:IsPetKnown(character, "MOUNT", spId) then
+								icon = addon:TextureToFontstring2("Interface\\Icons\\inv_misc_enggizmos_03", size, size, inset, inset, inset, inset)
+								break
+							end
+						end
 					elseif field >= 225 then
-						icon = addon:TextureToFontstring("Interface\\Icons\\Ability_Mount_Gryphon_01", 18, 18) .. " "
+						icon = addon:TextureToFontstring2("Interface\\Icons\\ability_mount_goldengryphon", size, size, inset, inset, inset, inset)
+					elseif field >= 150 then
+						icon = addon:TextureToFontstring2("Interface\\Icons\\ability_mount_charger", size, size, inset, inset, inset, inset)
+					elseif field >= 75 then
+						icon = addon:TextureToFontstring2("Interface\\Icons\\spell_nature_swiftness", size, size, inset, inset, inset, inset)
 					else
-						icon = addon:TextureToFontstring("Interface\\Icons\\Ability_Mount_RidingHorse", 18, 18) .. " "
+						icon = addon:TextureToFontstring2("Interface\\Icons\\inv_boots_03", size, size, inset, inset, inset, inset)
 					end
+					
+					if DS:IsSpellKnown(character, 54197) then 	-- KNOWS [Cold Weather Flying]
+						-- Interface\Icons\Spell_Frost_FrostShock
+						-- icon = addon:TextureToFontstring(addon:GetSpellIcon(54197), size, size) .. " "
+						-- TextureToFontstringHalfSquare(name, side, inset, isRight)
+						-- icon = addon:TextureToFontstringHalfSquare(addon:GetSpellIcon(54197), size, inset, true) .. " "
+						-- icon = icon .. addon:TextureToFontstringHalfSquare(addon:GetSpellIcon(54197), size, inset, 0.7, 1.0) .. " "
+						
+						-- TextureToFontstringCut(name, heightOrig, widthOrig, insetLeft, insetRight, insetTop, insetBottom)
+						-- local sTemp = size+2*inset
+						-- icon = icon .. addon:TextureToFontstringCut(addon:GetSpellIcon(54197), sTemp, sTemp, floor(0.7*sTemp), floor(0.1*sTemp), inset, inset) .. " "
+						icon = addon:TextureToFontstring(addon:GetSpellIcon(54197), size, size) .. " " .. icon .. " "
+						
+					else 	-- DOES NOT KNOW [Cold Weather Flying]
+						icon = format("|T%s:%s:%s:0:0:%s:%s:%s:%s:%s:%s|t", addon:GetSpellIcon(54197), size, size, size, size, 0, 0, 0, 0) .. " " .. icon .. " "
+					end
+					
 					_G[entry..i.."RidingNormalText"]:SetText(icon .. ns:GetColor(field, 300) .. field)
 				elseif (lineType == INFO_TOTAL_LINE) then
 					_G[entry..i.."Collapse"]:Hide()
