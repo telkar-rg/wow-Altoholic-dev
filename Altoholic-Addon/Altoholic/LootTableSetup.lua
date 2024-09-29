@@ -213,7 +213,7 @@ db.lootTable = {
 	},
 	
 	-- World Events
-	[L["Lunar Festival"]] = {	
+	[L["Lunar Festival"]] = {
 		[L["Miscellaneous"]] = {
 			21540, 21713, 21100,
 		},
@@ -305,7 +305,29 @@ db.lootTable = {
 		},
 	},
 	[L["Noblegarden"]] = {
-		[L["Brightly Colored Egg"]] = { 19028, 6833, 6835, 7807, 7808, 7806, }
+		[L["Brightly Colored Egg"]] = {
+			44791, 	-- Noblegarden Chocolate
+		},
+		[ format("%s x%d", L["Noblegarden Chocolate"], 5) ] = {
+			44818, 	-- Noblegarden Egg
+		},
+		[ format("%s x%d", L["Noblegarden Chocolate"], 10) ] = {
+			44792, 	-- Blossoming Branch
+		},
+		[ format("%s x%d", L["Noblegarden Chocolate"], 25) ] = {
+			6833, 	-- White Tuxedo Shirt
+			6835, 	-- Black Tuxedo Pants
+		},
+		[ format("%s x%d", L["Noblegarden Chocolate"], 50) ] = {
+			19028, 	-- Elegant Dress
+			44800, 	-- Spring Robes
+			44803, 	-- Spring Circlet
+			45073, 	-- Spring Flowers
+		},
+		[ format("%s x%d", L["Noblegarden Chocolate"], 100) ] = {
+			44793, 	-- Tome of Polymorph: Rabbit
+			44794, 	-- Spring Rabbit's Foot
+		},
 	},
 	[L["Children's Week"]] = {
 		[BZ["Azeroth"]] = { 23007, 23015, 23002, 23022, },
@@ -534,12 +556,12 @@ db.lootTable = {
 			37012,  -- The Horseman's Reins
 		},
 	},
-	[L["Day of the Dead"]] = {	
+	[L["Day of the Dead"]] = {
 		[L["Vendor"]] = {
 			46710, 	-- Bread of the Dead
 		},
 	},
-	[L["Pilgrim's Bounty"]] = {	
+	[L["Pilgrim's Bounty"]] = {
 		[L["Vendor"]] = {
 			46809, 	-- Bountiful Cookbook (Alliance)
 			46810, 	-- Bountiful Cookbook (Horde)
@@ -555,6 +577,9 @@ db.lootTable = {
 			46805, 	-- Cooking-Recipe: Cranberry Chutney (Horde)
 			46806, 	-- Cooking-Recipe: Candied Sweet Potato (Horde)
 			46807, 	-- Cooking-Recipe: Slow-Roasted Turkey (Horde)
+		},
+		[ ACHIEVEMENTS ] = {
+			44810, 	-- Turkey Cage
 		},
 	},
 	[L["Feast of Winter Veil"]] = {
@@ -622,7 +647,152 @@ db.lootTable = {
 		},
 		[L["Smokywood Pastures Extra-Special Gift"]] = { 21215, },
 	},
-
+	
+	[L["Argent Tournament"]] = {
+		[ CURRENCY ] = {
+			44990, 	-- Champion's Seal
+		},
+		[ L["Quest rewards"] ] = {
+			44998, 	-- Argent Squire
+			45022, 	-- Argent Gruntling
+		},
+		[ format("400g + %s x%d", L["Champion's Seal"], 5) ] = {
+			46750, 	-- Great Golden Kodo
+			46755, 	-- Great Golden Kodo
+			46745, 	-- Great Red Elekk
+			46756, 	-- Great Red Elekk
+			46749, 	-- Swift Burgundy Wolf
+			46757, 	-- Swift Burgundy Wolf
+			46752, 	-- Swift Gray Steed
+			46758, 	-- Swift Gray Steed
+			46744, 	-- Swift Moonsaber
+			46759, 	-- Swift Moonsaber
+			46743, 	-- Swift Purple Raptor
+			46760, 	-- Swift Purple Raptor
+			46751, 	-- Swift Red Hawkstrider
+			46761, 	-- Swift Red Hawkstrider
+			46748, 	-- Swift Violet Ram
+			46762, 	-- Swift Violet Ram
+			46747, 	-- Turbostrider
+			46763, 	-- Turbostrider
+			46746, 	-- White Skeletal Warhorse
+			46764, 	-- White Skeletal Warhorse
+		},
+		[ format("%s x%d", L["Champion's Seal"], 10) ] = {
+			45131	, --	Jouster's Fury
+			45152	, --	Pendant of Azure Dreams
+			45153	, --	Susurrating Shell Necklace
+			45154	, --	Necklace of Valiant Blood
+			45155	, --	Choker of Spiral Focus
+			45156	, --	Sash of Shattering Hearts
+			45159	, --	Treads of Nimble Evasion
+			45160	, --	Girdle of Valorous Defeat
+			45163	, --	Stanchions of Unseatable Furor
+			45181	, --	Wrap of the Everliving Tree
+			45182	, --	Gauntlets of Shattered Pride
+			45183	, --	Treads of the Glorious Spirit
+			45184	, --	Cinch of Bonded Servitude
+			45206	, --	Choker of Feral Fury
+			45207	, --	Necklace of Stolen Skulls
+			45209	, --	Sash of Trumpted Pride
+			45211	, --	Waistguard of Equine Fury
+			45213	, --	Pendant of Emerald Crusader
+			45215	, --	Links of Unquenched Savagery
+			45216	, --	Gauntlets of Mending Touch
+			45217	, --	Clinch of Savage Fury
+			45218	, --	Blood-Caked Stompers
+			45219	, --	Jouster's Fury
+			45220	, --	Treads of the Earnest Squire
+			45221	, --	Treads of Whispering Dreams
+			45223	, --	Razor's Edge Pendant
+		},
+		[ format("%s x%d", L["Champion's Seal"], 15) ] = {
+			45011	, --	Stormwind Banner
+			45013	, --	Thunder Bluff Banner
+			45014	, --	Orgrimmar Banner
+			45015	, --	Sen'jin Banner
+			45016	, --	Undercity Banner
+			45017	, --	Silvermoon City Banner
+			45018	, --	Ironforge Banner
+			45019	, --	Gnomeregan Banner
+			45020	, --	Exodar Banner
+			45021	, --	Darnassus Banner
+			46843	, --	Argent Crusader's Banner
+		},
+		[ format("%s x%d", L["Champion's Seal"], 25) ] = {
+			45074	, --	Claymore of the Prophet
+			45075	, --	Ironforge Smasher
+			45076	, --	Teldrassil Protector
+			45077	, --	Dagger of the Rising Moon
+			45078	, --	Dagger of Lunar Purity
+			45128	, --	Silvery Sylvan Stave
+			45129	, --	Gnomeregan Bonechopper
+			45130	, --	Blunderbuss of Khaz Modan
+			45203	, --	Grimhorn Crusher
+			45204	, --	Axe of the Sen'jin Protector
+			45205	, --	Greatsword of the Sin'dorei
+			45208	, --	Blade of the Keening Banshee
+			45210	, --	Sen'jin Beakblade Longrifle
+			45212	, --	Staff of Feral Furies
+			45214	, --	Scalpel of the Royal Apothecary
+			45222	, --	Spinal Destroyer
+		},
+		[ format("%s x%d", L["Champion's Seal"], 40) ] = {
+			44965	, --	Teldrassil Sproutling
+			44970	, --	Dun Morogh Cub
+			44971	, --	Tirisfal Batling
+			44973	, --	Durotar Scorpion
+			44974	, --	Elwynn Lamb
+			44980	, --	Mulgore Hatchling
+			44982	, --	Enchanted Broom
+			44984	, --	Ammen Vale Lashling
+			45002	, --	Mechanopeep
+			45606	, --	Sen'jin Fetish
+			46820	, --	Shimmering Wyrmling
+			46821	, --	Shimmering Wyrmling
+		},
+		[ format("%s x%d", L["Champion's Seal"], 50) ] = {
+			45574	, --	Stormwind Tabard
+			45577	, --	Ironforge Tabard
+			45578	, --	Gnomeregan Tabard
+			45579	, --	Darnassus Tabard
+			45580	, --	Exodar Tabard
+			45581	, --	Orgrimmar Tabard
+			45582	, --	Sen'jin Tabard
+			45583	, --	Undercity Tabard
+			45584	, --	Thunder Bluff Tabard
+			45585	, --	Silvermoon City Tabard
+			46817	, --	Silver Covenant Tabard
+			46818	, --	Sunreaver Tabard
+			46874	, --	Argent Crusader's Tabard
+		},
+		[ format("%s x%d", L["Champion's Seal"], 100) ] = {
+			45125	, --	Stormwind Steed
+			45586	, --	Ironforge Ram
+			45589	, --	Gnomeregan Mechanostrider
+			45590	, --	Exodar Elekk
+			45591	, --	Darnassian Nightsaber
+			45592	, --	Thunder Bluff Kodo
+			45593	, --	Darkspear Raptor
+			45595	, --	Orgrimmar Wolf
+			45596	, --	Silvermoon Hawkstrider
+			45597	, --	Forsaken Warhorse
+			46815	, --	Quel'dorei Steed
+			46816	, --	Sunreaver Hawkstrider
+			47179	, --	Argent Charger
+			47180	, --	Argent Warhorse
+		},
+		[ format("%s x%d", L["Champion's Seal"], 150) ] = {
+			45725	, --	Argent Hippogryph
+			46813	, --	Silver Covenant Hippogryph
+			46814	, --	Sunreaver Dragonhawk
+			47541	, --	Argent Pony Bridle
+		},
+		[L["Vendor"]] = {
+			33023	, -- 	Savory Sausage
+		},
+	},
+	
 
 	-- -- -- -- -- -- -- --
 	-- ** Sets & PVP ***
@@ -1464,6 +1634,8 @@ db.lootTable = {
 	-- -- -- -- -- -- -- --
 	[ BZ["Magisters' Terrace"] ] = {
 		[ BB["Kael'thas Sunstrider"] ] = {
+			35504,	-- Phoenix Hatchling
+			
 			24296,	-- Tailoring-Pattern: Unyielding Bracers (World Drop)
 			35308,	-- Tailoring-Pattern: Unyielding Bracers
 			24302,	-- Tailoring-Pattern: Unyielding Girdle (World Drop)
@@ -1725,11 +1897,17 @@ db.lootTable = {
 			37297, 	-- Gold Medallion
 			37298, 	-- Competitor's Souvenir
 		},
+		[ "WotLK Collector Edition" ] = {
+			39286, 	-- Frosty's Collar
+		},
 		[ "Worldwide Invitational Paris 2008" ] = {
 			39656, 	-- Tyrael's Hilt
 		},
 		[ "Switching to Battle.net Promotion" ] = {
 			41133, 	-- Unhatched Mr. Chilly
+		},
+		[ "WoW's 4th Anniversary" ] = {
+			44819, 	-- Baby Blizzard Bear
 		},
 		[ "Arena Tournament 2009" ] = {
 			45180, 	-- Murkimus' Little Spear
@@ -1756,7 +1934,7 @@ db.lootTable = {
 			56806, 	-- Mini Thor
 		},
 	},
-	[ "WoW Trading Card Game" ] = {
+	[ "WoW TCG" ] = {
 		[ "UDE points redemption" ] = {
 			23709, 	-- Tabard of Frost
 			38309, 	-- Tabard of Nature
@@ -1767,67 +1945,67 @@ db.lootTable = {
 			38314, 	-- Tabard of the Defender
 			49703, 	-- Perpetual Purple Firework
 		},
-		[ "'Heroes of Azeroth'" ] = {
+		[ L["'Heroes of Azeroth'"] ] = {
 			23705, 	-- Tabard of Flame
 			23713, 	-- Hippogryph Hatchling
 			23720, 	-- Riding Turtle
 		},
-		[ "'Through the Dark Portal'" ] = {
+		[ L["'Through the Dark Portal'"] ] = {
 			32566, 	-- Picnic Basket
 			32588, 	-- Banana Charm
 			32542, 	-- Imp in a Ball
 		},
-		[ "'Fires of Outland'" ] = {
+		[ L["'Fires of Outland'"] ] = {
 			33219, 	-- Goblin Gumbo Kettle
 			33223, 	-- Fishing Chair
 			33224, 	-- Reins of the Spectral Tiger
 			33225, 	-- Reins of the Swift Spectral Tiger
 		},
-		[ "'March of the Legion'" ] = {
+		[ L["'March of the Legion'"] ] = {
 			34492, 	-- Rocket Chicken
 			34493, 	-- Dragon Kite
 			34499, 	-- Paper Flying Machine Kit
 		},
-		[ "'Servants of the Betrayer'" ] = {
+		[ L["'Servants of the Betrayer'"] ] = {
 			35223, 	-- Papa Hummel's Old-Fashioned Pet Biscuit
 			35227, 	-- Goblin Weather Machine - Prototype 01-B
 			35225, 	-- X-51 Nether-Rocket
 			35226, 	-- X-51 Nether-Rocket X-TREME
 		},
-		[ "'Hunt for Illidan'" ] = {
+		[ L["'Hunt for Illidan'"] ] = {
 			38233, 	-- Path of Illidan
 			38301, 	-- D.I.S.C.O.
 			38050, 	-- Soul-Trader Beacon
 		},
-		[ "'Drums of War'" ] = {
+		[ L["'Drums of War'"] ] = {
 			38577, 	-- Party G.R.E.N.A.D.E.
 			38578, 	-- The Flag of Ownership
 			38576, 	-- Big Battle Bear
 			49282, 	-- Big Battle Bear
 		},
-		[ "'Blood of Gladiators'" ] = {
+		[ L["'Blood of Gladiators'"] ] = {
 			45047, 	-- Sandbox Tiger
 			45037, 	-- Epic Purple Shirt
 			45063, 	-- Foam Sword Rack
 		},
-		[ "'Fields of Honor'" ] = {
+		[ L["'Fields of Honor'"] ] = {
 			46779, 	-- Path of Cenarius
 			46780, 	-- Ogre Pinata
 			49290, 	-- Magic Rooster Egg
 			46778, 	-- Magic Rooster Egg
 		},
-		[ "'Scourgewar'" ] = {
+		[ L["'Scourgewar'"] ] = {
 			49343, 	-- Spectral Tiger Cub
 			49287, 	-- Tuskarr Kite
 			49289, 	-- Little White Stallion Bridle
 			49288, 	-- Little Ivory Raptor Whistle
 		},
-		[ "'Wrathgate'" ] = {
+		[ L["'Wrathgate'"] ] = {
 			54069, 	-- Blazing Hippogryph
 			54218, 	-- Landro's Gift Box
 			54212, 	-- Instant Statue Pedestal
 		},
-		[ "'Icecrown'" ] = {
+		[ L["'Icecrown'"] ] = {
 			54068, 	-- Wooly White Rhino
 			54452, 	-- Ethereal Portal
 			54455, 	-- Paint Bomb
@@ -2550,6 +2728,32 @@ db.lootTable = {
 	},
 	
 	-- Missing Faction Recipes
+	[ BF["Sporeggar"] ] = {
+		[ format("%s x%d", L["Glowcap"], 1) ] = {
+			30156, 	-- Cooking-Recipe: Clam Bar
+		},
+		[ format("%s x%d", L["Glowcap"], 2) ] = {
+			27689, 	-- Cooking-Recipe: Sporeling Snack
+		},
+		[ format("%s x%d", L["Glowcap"], 25) ] = {
+			22916, 	-- Alchemy-Recipe: Transmute Primal Earth to Water
+			38229, 	-- Tailoring-Pattern: Mycah's Botanical Bag
+		},
+		[ format("%s x%d", L["Glowcap"], 30) ] = {
+			22906, 	-- Alchemy-Recipe: Shrouding Potion
+			34478, 	-- Tiny Sporebat
+		},
+	},
+	[ BF["The Oracles"] ] = {
+		[ L["Mysterious Egg"] ] = {
+			39883, 	-- Cracked Egg
+			39896, 	-- Tickbird Hatchling
+			39898, 	-- Cobra Hatchling
+			39899, 	-- White Tickbird Hatchling
+			44707, 	-- Reins of the Green Proto-Drake
+			44721, 	-- Proto-Drake Whelp
+		},
+	},
 	[ BF["The Kalu'ak"] ] = {
 		[ rep_Friendly ] = {
 			41568, 	-- Jewelcrafting-Design: Seer's Dark Jade
@@ -4948,8 +5152,6 @@ local additionalLootTable = {
 	{ 21547, 	BZ["Searing Gorge"], 		L["Dark Iron Taskmaster"] },	-- Alchemy-Recipe: Elixir of Greater Firepower
 	{ 21547, 	BZ["Searing Gorge"], 		L["Dark Iron Watchman"] },	-- Alchemy-Recipe: Elixir of Greater Firepower
 	
-	{ 22906, 	BF["Sporeggar"], 			format("%s x%d", L["Glowcap"], 30) },	-- Alchemy-Recipe: Shrouding Potion
-	{ 22916, 	BF["Sporeggar"], 			format("%s x%d", L["Glowcap"], 25) },	-- Alchemy-Recipe: Transmute Primal Earth to Water
 	-- { 22905, 	BF["Honor Hold"], 			rep_Honored },	-- Alchemy-Recipe: Elixir of Major Agility
 	-- { 24001, 	BF["Thrallmar"], 			rep_Honored },	-- Alchemy-Recipe: Elixir of Major Agility
 	-- { 22908, 	BF["The Scryers"], 			rep_Revered },	-- Alchemy-Recipe: Elixir of Major Firepower
@@ -5070,8 +5272,6 @@ local additionalLootTable = {
 	
 	{ 21025, 	BZ["Tanaris"], 				L["Quest rewards"] },	-- Cooking-Recipe: Dirge's Kickin' Chimaerok Chops
 	
-	{ 27689, 	BF["Sporeggar"], 			format("%s x%d", L["Glowcap"], 2) },	-- Cooking-Recipe: Sporeling Snack
-	{ 30156, 	BF["Sporeggar"], 			format("%s x%d", L["Glowcap"], 1) },	-- Cooking-Recipe: Clam Bar
 	
 	{ 31674, 	BZ["Blade's Edge Mountains"], format("%s: %s", L["Vendor"], L["Xerintha Ravenoak"]) }, 	-- Cooking-Recipe: Crunchy Serpent
 	{ 31675, 	BZ["Blade's Edge Mountains"], format("%s: %s", L["Vendor"], L["Xerintha Ravenoak"]) }, 	-- Cooking-Recipe: Mok'Nathal Shortribs
@@ -5204,7 +5404,6 @@ local additionalLootTable = {
 	{ 21906, 	BZ["The Mechanar"], 		L["Sunseeker Astromage"] },	-- Tailoring-Pattern: Arcanoweave Boots
 	{ 24310, 	BZ["The Botanica"], 		BB["Thorngrin the Tender"] },	-- Tailoring-Pattern: Battlecast Pants
 	{ 24313, 	BZ["The Steamvault"], 		BB["Warlord Kalithresh"] },	-- Tailoring-Pattern: Battlecast Hood
-	{ 38229, 	BF["Sporeggar"], 			format("%s x%d", L["Glowcap"], 25) },	-- Tailoring-Pattern: Mycah's Botanical Bag
 	{ 24292, 	BF["The Scryers"], 			rep_Honored },	-- Tailoring-Pattern: Mystic Spellthread
 	{ 24293, 	BF["The Aldor"], 			rep_Honored },	-- Tailoring-Pattern: Silver Spellthread
 	
@@ -5347,6 +5546,7 @@ local additionalLootTable = {
 	-- -- -- -- --
 	{ 48120, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Breanni"]) }, 	-- Obsidian Hatchling
 	{ 46398, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Breanni"]) }, 	-- Calico Cat
+	{ 44822, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Breanni"]) }, 	-- Albino Snake
 	
 	{ 54436, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Jepetto Joybuzz"]) }, 	-- Blue Clockwork Rocket Bot
 	{ 49912, 	ACHIEVEMENTS, 				L["Looking For Multitudes"] }, 	-- Perky Pug
@@ -5358,6 +5558,35 @@ local additionalLootTable = {
 	{ 48114, 	BZ["Wailing Caverns"], 		L["Deviate Guardian"] }, 	-- Deviate Hatchling
 	{ 48114, 	BZ["Wailing Caverns"], 		L["Deviate Ravager"] }, 	-- Deviate Hatchling
 	{ 48112, 	BZ["Dustwallow Marsh"], 	L["Dart's Nest"] }, 	-- Darting Hatchling
+	
+	{ 44983, 	BZ["Dalaran"], 				L["Fishing Daily"] }, 	-- Strand Crawler
+	{ 44841, 	ACHIEVEMENTS, 				format(L["Obtain %d companion pets"], 75) }, 	-- Little Fawn's Salt Lick
+	{ 40653, 	ACHIEVEMENTS, 				format(L["Obtain %d companion pets"], 50) }, 	-- Reeking Pet Carrier
+	
+	{ 44738, 	ACHIEVEMENTS, 				L["Higher Learning"] }, 	-- Kirin Tor Familiar
+	{ 43824, 	ACHIEVEMENTS, 				L["Higher Learning"] }, 	-- The Schools of Arcane Magic - Mastery
+	
+	{ 44983, 	BZ["Dalaran"], 				format("%s (%s)", BI["Fishing"], L["The Underbelly"]) }, 	-- Giant Sewer Rat
+	{ 44822, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Darahir"]) }, 	-- Ghostly Skull
+	
+	{ 33816, 	BZ["Shattrath City"], 		L["Fishing Daily"] }, 	-- Toothy's Bucket
+	{ 33818, 	BZ["Shattrath City"], 		L["Fishing Daily"] }, 	-- Muckbreath's Bucket
+	{ 35349, 	BZ["Shattrath City"], 		L["Fishing Daily"] }, 	-- Snarly's Bucket
+	{ 35350, 	BZ["Shattrath City"], 		L["Fishing Daily"] }, 	-- Chuck's Bucket
+	
+	{ 8498, 	BZ["Swamp of Sorrows"], 	L["Adolescent Whelp"] }, 	-- Tiny Emerald Whelpling
+	{ 8498, 	BZ["Swamp of Sorrows"], 	L["Dreaming Whelp"] }, 	-- Tiny Emerald Whelpling
+	
+	{ 8499, 	BZ["Wetlands"], 			L["Red Whelp"] }, 	-- Tiny Crimson Whelpling
+	{ 8499, 	BZ["Wetlands"], 			L["Flamesnorting Whelp"] }, 	-- Tiny Crimson Whelpling
+	{ 8499, 	BZ["Wetlands"], 			L["Crimson Whelp"] }, 	-- Tiny Crimson Whelpling
+	
+	{ 10822, 	BZ["Badlands"], 			L["Scalding Whelp"] }, 	-- Dark Whelpling
+	{ 10822, 	BZ["Dustwallow Marsh"], 	L["Searing Whelp"] }, 	-- Dark Whelpling
+	
+	{ 34535, 	BZ["Azshara"], 				L["Blue Scalebane"] }, 	-- Azure Whelpling
+	{ 34535, 	BZ["Azshara"], 				L["Draconic Magelord"] }, 	-- Azure Whelpling
+	{ 34535, 	BZ["Azshara"], 				L["Draconic Mageweaver"] }, 	-- Azure Whelpling
 }
 
 local recipeFactionDuplicates	= {

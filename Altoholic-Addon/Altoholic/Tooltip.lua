@@ -310,6 +310,7 @@ local function GetCharacterItemCount(character, searchedID)
 	itemCounts[6] = DataStore:GetCurrencyItemCount(character, searchedID)
 	
 	if searchedID==6948 then return 0 end
+	if searchedID==43523 then return 0 end
 	
 	local charCount = 0
 	for _, v in pairs(itemCounts) do
