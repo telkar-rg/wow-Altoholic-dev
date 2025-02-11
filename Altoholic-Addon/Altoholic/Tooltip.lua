@@ -208,6 +208,7 @@ local QuestStartItemList = {
 	[16305] = 2,  -- Sharptalon's Claw
 	[16304] = 24,  -- Shadumbra's Head
 	[16303] = 23,  -- Ursangous's Paw
+	[13140] = 5202,  -- Blutroter Schlüssel
 	[11463] = 4281,  -- Undelivered Parcel
 	[11116] = 3884,  -- A Mangled Journal
 	[10454] = 3373,  -- Essence of Eranikus
