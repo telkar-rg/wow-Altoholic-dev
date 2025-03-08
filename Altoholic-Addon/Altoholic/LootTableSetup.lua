@@ -194,18 +194,18 @@ db.lootTable = {
 			32540, 32541, 31556, 31564, 31572, 31580, 32535, 32534, 32782, 32536, 32537, 
 		},
 	},
-	[L["Ethereum Prison"]] = {
-		[L["Armbreaker Huffaz"]] = { 31943, },
-		[L["Fel Tinkerer Zortan"]] = { 31573, },
-		[L["Forgosh"]] = { 31565, },
-		[L["Gul'bor"]] = {31940, },
-		[L["Malevus the Mad"]] = { 31581, },
-		[L["Porfus the Gem Gorger"]] = { 31557, },
-		[L["Wrathbringer Laz-tarash"]] = { 32520, },
-		["Shared loot"] = { 31925, 31926, 31927, 31928, 31929, 31935, 31936, 31937, 31938, 31939, 31957 },
+	[BZ["Netherstorm"]] = {
+		[ format("%s (%s)", L["Armbreaker Huffaz"], L["Ethereum Prison"]) ] = { 31943, },
+		[ format("%s (%s)", L["Fel Tinkerer Zortan"], L["Ethereum Prison"]) ] = { 31573, },
+		[ format("%s (%s)", L["Forgosh"], L["Ethereum Prison"]) ] = { 31565, },
+		[ format("%s (%s)", L["Gul'bor"], L["Ethereum Prison"]) ] = {31940, },
+		[ format("%s (%s)", L["Malevus the Mad"], L["Ethereum Prison"]) ] = { 31581, },
+		[ format("%s (%s)", L["Porfus the Gem Gorger"], L["Ethereum Prison"]) ] = { 31557, },
+		[ format("%s (%s)", L["Wrathbringer Laz-tarash"], L["Ethereum Prison"]) ] = { 32520, },
+		[ L["Ethereum Prison"] ] = { 31925, 31926, 31927, 31928, 31929, 31935, 31936, 31937, 31938, 31939, 31957 },
 	},
-	[L["Shartuul"]] = {	
-		[L["Blade Edge Mountains"]] = {
+	[BZ["Blade's Edge Mountains"]] = {
+		[L["Shartuul"]] = {
 			32941, 32676, 32675, 32677, 32678, 32672, 32673, 32674, 32670, 32671, 
 			32679, 32942, 32655, 32656, 32665, 32664, 32658, 32659, 32660, 32663, 
 			32661, 32662, 
@@ -1593,11 +1593,13 @@ db.lootTable = {
 			18416,	-- Tailoring-Pattern: Inferno Gloves
 			18417,	-- Tailoring-Pattern: Mooncloth Gloves
 			18418,	-- Tailoring-Pattern: Cloak of Warding
-		},
-	},
-	[ BZ["Blackrock Spire"] ] = {
-		[ L["Firebrand Pyromancer"] ] = {
-			14513,	-- Tailoring-Pattern: Robe of the Archmage
+			
+			18514,	-- Leatherworking-Pattern: Girdle of Insight
+			18515,	-- Leatherworking-Pattern: Mongoose Boots
+			18516,	-- Leatherworking-Pattern: Swift Flight Bracers
+			18517,	-- Leatherworking-Pattern: Chromatic Cloak
+			18518,	-- Leatherworking-Pattern: Hide of the Wild
+			18519,	-- Leatherworking-Pattern: Shifting Cloak
 		},
 	},
 	
@@ -1608,6 +1610,8 @@ db.lootTable = {
 			21371,	-- Tailoring-Pattern: Core Felcloth Bag
 			
 			18264,	-- Blacksmithing-Plans: Elemental Sharpening Stone
+			
+			18252,	-- Leatherworking-Pattern: Core Armor Kit
 		},
 	},
 	
@@ -1648,6 +1652,15 @@ db.lootTable = {
 			
 			33186,	 -- Blacksmithing-Plans: Adamantite Weapon Chain (World Drop)
 			35296,	 -- Blacksmithing-Plans: Adamantite Weapon Chain
+			
+			29731,	-- Leatherworking-Pattern: Windstrike Gloves (World Drop)
+			35300,	-- Leatherworking-Pattern: Windstrike Gloves
+			29733,	-- Leatherworking-Pattern: Netherdrake Gloves (World Drop)
+			35301,	-- Leatherworking-Pattern: Netherdrake Gloves
+			29724,	-- Leatherworking-Pattern: Cobrascale Gloves (World Drop)
+			35302,	-- Leatherworking-Pattern: Cobrascale Gloves
+			29727,	-- Leatherworking-Pattern: Gloves of the Living Touch (World Drop)
+			35303,	-- Leatherworking-Pattern: Gloves of the Living Touch
 		},
 	},
 	[ BZ["Karazhan"] ] = {
@@ -1669,6 +1682,15 @@ db.lootTable = {
 			30322,	-- Blacksmithing-Plans: Red Belt of Battle
 			30323,	-- Blacksmithing-Plans: Boots of the Protector
 			30324,	-- Blacksmithing-Plans: Red Havoc Boots
+			
+			30301,	-- Leatherworking-Pattern: Belt of Natural Power
+			30302,	-- Leatherworking-Pattern: Belt of Deep Shadow
+			30303,	-- Leatherworking-Pattern: Belt of the Black Eagle
+			30304,	-- Leatherworking-Pattern: Monsoon Belt
+			30305,	-- Leatherworking-Pattern: Boots of Natural Grace
+			30306,	-- Leatherworking-Pattern: Boots of Utter Darkness
+			30307,	-- Leatherworking-Pattern: Boots of the Crimson Hawk
+			30308,	-- Leatherworking-Pattern: Hurricane Boots
 		},
 	},
 	[ format("%s/ %s", BZ["Black Temple"], BZ["Hyjal Summit"]) ] = {
@@ -1678,6 +1700,11 @@ db.lootTable = {
 			
 			32736,	-- Blacksmithing-Plans: Swiftsteel Bracers
 			32739,	-- Blacksmithing-Plans: Dawnsteel Shoulders
+			
+			32745,	-- Leatherworking-Pattern: Shoulderpads of Renewed Life
+			32746,	-- Leatherworking-Pattern: Swiftstrike Bracers
+			32748,	-- Leatherworking-Pattern: Bindings of Lightning Reflexes
+			32751,	-- Leatherworking-Pattern: Living Earth Shoulders
 		},
 	},
 	[ BZ["Hyjal Summit"] ] = {
@@ -1714,6 +1741,11 @@ db.lootTable = {
 			
 			32737,	-- Blacksmithing-Plans: Swiftsteel Shoulders
 			32738,	-- Blacksmithing-Plans: Dawnsteel Bracers
+			
+			32744,	-- Leatherworking-Pattern: Bracers of Renewed Life
+			32747,	-- Leatherworking-Pattern: Swiftstrike Shoulders
+			32749,	-- Leatherworking-Pattern: Shoulders of Lightning Reflexes
+			32750,	-- Leatherworking-Pattern: Living Earth Bindings
 		},
 	},
 	[ BZ["Sunwell Plateau"] ] = {
@@ -1753,7 +1785,16 @@ db.lootTable = {
 			35210,	-- Blacksmithing-Plans: Sunblessed Breastplate
 			35211,	-- Blacksmithing-Plans: Hard Khorium Battleplate
 			35208,	-- Blacksmithing-Plans: Sunblessed Gauntlets
-			35555,	-- Blacksmithing-Plans: Sunblessed Breastplate
+			
+			35212, -- Leatherworking-Pattern: Leather Gauntlets of the Sun
+			35213, -- Leatherworking-Pattern: Fletcher's Gloves of the Phoenix
+			35214, -- Leatherworking-Pattern: Gloves of Immortal Dusk
+			35215, -- Leatherworking-Pattern: Sun-Drenched Scale Gloves
+			35216, -- Leatherworking-Pattern: Leather Chestguard of the Sun
+			35217, -- Leatherworking-Pattern: Embrace of the Phoenix
+			35218, -- Leatherworking-Pattern: Carapace of Sun and Shadow
+			35219, -- Leatherworking-Pattern: Sun-Drenched Scale Chestguard
+
 		},
 	},
 	
@@ -2363,6 +2404,8 @@ db.lootTable = {
 			2553,	 -- Alchemy-Recipe: Elixir of Minor Agility
 			
 			3609,	 -- Blacksmithing-Plans: Copper Chain Vest
+			
+			7288,	 -- Leatherworking-Pattern: Rugged Leather Pants
 		},
 		[ format(L["Level %d-%d"], 10, 20) ] = {
 			2555,	 -- Alchemy-Recipe: Swiftness Potion
@@ -2371,6 +2414,9 @@ db.lootTable = {
 			6271,	 -- Tailoring-Pattern: Red Linen Vest
 			
 			3610,	 -- Blacksmithing-Plans: Gemmed Copper Gauntlets
+			
+			2407,	 -- Leatherworking-Pattern: White Leather Jerkin
+			2408,	 -- Leatherworking-Pattern: Fine Leather Gloves
 		},
 		[ format(L["Level %d-%d"], 15, 25) ] = {
 			3393,	 -- Alchemy-Recipe: Minor Magic Resistance Potion
@@ -2382,6 +2428,10 @@ db.lootTable = {
 			4346,	 -- Tailoring-Pattern: Heavy Woolen Cloak
 			
 			2881,	 -- Blacksmithing-Plans: Runed Copper Breastplate
+			
+			2406,	 -- Leatherworking-Pattern: Fine Leather Boots
+			2409,	 -- Leatherworking-Pattern: Dark Leather Tunic
+			4293,	 -- Leatherworking-Pattern: Hillman's Leather Vest
 		},
 		[ format(L["Level %d-%d"], 20, 30) ] = {
 			3394,	 -- Alchemy-Recipe: Potion of Curing
@@ -2396,6 +2446,9 @@ db.lootTable = {
 			2882,	 -- Blacksmithing-Plans: Silvered Bronze Shoulders
 			2883,	 -- Blacksmithing-Plans: Deadly Bronze Poniard
 			5578,	 -- Blacksmithing-Plans: Silvered Bronze Breastplate
+			
+			4294,	 -- Leatherworking-Pattern: Hillman's Belt
+			7360,	 -- Leatherworking-Pattern: Dark Leather Gloves
 		},
 		[ format(L["Level %d-%d"], 25, 35) ] = {
 			3396,	 -- Alchemy-Recipe: Elixir of Lesser Agility
@@ -2414,6 +2467,13 @@ db.lootTable = {
 			5543,	 -- Blacksmithing-Plans: Iridescent Hammer
 			6044,	 -- Blacksmithing-Plans: Iron Shield Spike
 			10424,	 -- Blacksmithing-Plans: Silvered Bronze Leggings
+			
+			4296,	 -- Leatherworking-Pattern: Dark Leather Shoulders
+			4297,	 -- Leatherworking-Pattern: Barbaric Gloves
+			5972,	 -- Leatherworking-Pattern: Fine Leather Pants
+			7361,	 -- Leatherworking-Pattern: Herbalist's Gloves
+			7363,	 -- Leatherworking-Pattern: Pilferer's Gloves
+			7364,	 -- Leatherworking-Pattern: Heavy Earthen Gloves
 		},
 		[ format(L["Level %d-%d"], 30, 40) ] = {
 			867, 	 -- Gloves of Holy Might
@@ -2439,6 +2499,11 @@ db.lootTable = {
 			3871,	 -- Blacksmithing-Plans: Golden Scale Shoulders
 			3872,	 -- Blacksmithing-Plans: Golden Scale Leggings
 			6045,	 -- Blacksmithing-Plans: Iron Counterweight
+			
+			4298,	 -- Leatherworking-Pattern: Guardian Belt
+			4299,	 -- Leatherworking-Pattern: Guardian Armor
+			7449,	 -- Leatherworking-Pattern: Dusky Leather Leggings
+			7450,	 -- Leatherworking-Pattern: Green Whelp Armor
 		},
 		[ format(L["Level %d-%d"], 35, 45) ] = {
 			3832,	 -- Alchemy-Recipe: Elixir of Detect Lesser Invisibility
@@ -2458,6 +2523,13 @@ db.lootTable = {
 			6046,	 -- Blacksmithing-Plans: Steel Weapon Chain
 			7975,	 -- Blacksmithing-Plans: Heavy Mithril Pants
 			12261,	 -- Blacksmithing-Plans: Searing Golden Blade
+			
+			4300,	 -- Leatherworking-Pattern: Guardian Leather Bracers
+			4301,	 -- Leatherworking-Pattern: Barbaric Belt
+			5974,	 -- Leatherworking-Pattern: Guardian Cloak
+			7452,	 -- Leatherworking-Pattern: Dusky Boots
+			7453,	 -- Leatherworking-Pattern: Swift Boots
+			8384,	 -- Leatherworking-Pattern: Comfortable Leather Hat
 		},
 		[ format(L["Level %d-%d"], 40, 50) ] = {
 			809, 	 -- Bloodrazor
@@ -2494,6 +2566,11 @@ db.lootTable = {
 			7991,	 -- Blacksmithing-Plans: Mithril Scale Shoulders
 			7992,	 -- Blacksmithing-Plans: Blue Glittering Axe
 			8029,	 -- Blacksmithing-Plans: Wicked Mithril Blade
+			
+			8386,	 -- Leatherworking-Pattern: Big Voodoo Robe
+			8387,	 -- Leatherworking-Pattern: Big Voodoo Mask
+			8395,	 -- Leatherworking-Pattern: Tough Scorpid Breastplate
+			8397,	 -- Leatherworking-Pattern: Tough Scorpid Bracers
 		},
 		[ format(L["Level %d-%d"], 45, 55) ] = {
 			3395,	 -- Alchemy-Recipe: Limited Invulnerability Potion
@@ -2507,6 +2584,14 @@ db.lootTable = {
 			7990,	 -- Blacksmithing-Plans: Heavy Mithril Helm
 			7993,	 -- Blacksmithing-Plans: Dazzling Mithril Rapier
 			8028,	 -- Blacksmithing-Plans: Runed Mithril Hammer
+			
+			8389,	 -- Leatherworking-Pattern: Big Voodoo Pants
+			8390,	 -- Leatherworking-Pattern: Big Voodoo Cloak
+			8398,	 -- Leatherworking-Pattern: Tough Scorpid Gloves
+			8399,	 -- Leatherworking-Pattern: Tough Scorpid Boots
+			8400,	 -- Leatherworking-Pattern: Tough Scorpid Shoulders
+			8401,	 -- Leatherworking-Pattern: Tough Scorpid Leggings
+			8402,	 -- Leatherworking-Pattern: Tough Scorpid Helm
 		},
 		[ format(L["Level %d-%d"], 50, 60) ] = {
 			647, 	 -- Destiny
@@ -2549,6 +2634,13 @@ db.lootTable = {
 			12713,	 -- Blacksmithing-Plans: Radiant Leggings
 			12691,	 -- Blacksmithing-Plans: Wildthorn Mail
 			12692,	 -- Blacksmithing-Plans: Thorium Shield Spike
+			
+			15737,	 -- Leatherworking-Pattern: Chimeric Boots
+			15742,	 -- Leatherworking-Pattern: Warbear Harness
+			20253,	 -- Leatherworking-Pattern: Warbear Harness
+			15743,	 -- Leatherworking-Pattern: Heavy Scorpid Belt
+			15746,	 -- Leatherworking-Pattern: Chimeric Leggings
+			15755,	 -- Leatherworking-Pattern: Chimeric Vest
 		},
 		[ format(L["Level %d-%d"], 55, 60) ] = {
 			13518,	 -- Alchemy-Recipe: Potion of Petrification
@@ -2560,6 +2652,9 @@ db.lootTable = {
 			12698,	 -- Blacksmithing-Plans: Dawnbringer Shoulders
 			12711,	 -- Blacksmithing-Plans: Whitesoul Helm
 			12716,	 -- Blacksmithing-Plans: Helm of the Great Chief
+			
+			15754,	 -- Leatherworking-Pattern: Warbear Woolies
+			20254,	 -- Leatherworking-Pattern: Warbear Woolies
 		},
 		[ format(L["Level %d"], 60) ] = {
 			14509,	 -- Tailoring-Pattern: Mooncloth Circlet
@@ -2618,6 +2713,14 @@ db.lootTable = {
 			24301,	 -- Tailoring-Pattern: White Remedy Cape
 			
 			33186,	 -- Blacksmithing-Plans: Adamantite Weapon Chain
+			
+			29714,	 -- Leatherworking-Pattern: Drums of Restoration
+			34174,	 -- Leatherworking-Pattern: Drums of Restoration
+			34175,	 -- Leatherworking-Pattern: Drums of Restoration
+			
+			29718,	 -- Leatherworking-Pattern: Drums of Speed
+			34173,	 -- Leatherworking-Pattern: Drums of Speed
+			34172,	 -- Leatherworking-Pattern: Drums of Speed
 		},
 		[ format(L["Level %d-%d"], 68, 70) ] = {
 			24302,	 -- Tailoring-Pattern: Unyielding Girdle
@@ -2646,6 +2749,20 @@ db.lootTable = {
 			23636,	 -- Blacksmithing-Plans: Dirge
 			23637,	 -- Blacksmithing-Plans: Hand of Eternity
 			33954,	 -- Blacksmithing-Plans: Hammer of Righteous Might
+			
+			29723,	 -- Leatherworking-Pattern: Cobrascale Hood
+			29724,	 -- Leatherworking-Pattern: Cobrascale Gloves
+			29725,	 -- Leatherworking-Pattern: Windscale Hood
+			29726,	 -- Leatherworking-Pattern: Hood of Primal Life
+			29727,	 -- Leatherworking-Pattern: Gloves of the Living Touch
+			29728,	 -- Leatherworking-Pattern: Windslayer Wraps
+			29729,	 -- Leatherworking-Pattern: Living Dragonscale Helm
+			29730,	 -- Leatherworking-Pattern: Earthen Netherscale Boots
+			29731,	 -- Leatherworking-Pattern: Windstrike Gloves
+			29732,	 -- Leatherworking-Pattern: Netherdrake Helm
+			29733,	 -- Leatherworking-Pattern: Netherdrake Gloves
+			29734,	 -- Leatherworking-Pattern: Thick Netherscale Breastplate
+
 		},
 		[ BZ["Northrend"] ] = {
 			37254,  -- Super Simian Sphere
@@ -2673,6 +2790,59 @@ db.lootTable = {
 		
 		[format("%s (%s)", L["Nascent Val'kyr"], BZ["The Storm Peaks"])] = {
 			43573,  -- Tears of Bitter Anguish
+		},
+	},
+	
+	[BZ["Dalaran"]] = {
+		[format("%s: %s", L["Vendor"], L["Braeg Stoutbeard"])] = {
+			44513, -- Leatherworking-Pattern: Eviscerator's Facemask
+			44514, -- Leatherworking-Pattern: Eviscerator's Shoulderpads
+			44515, -- Leatherworking-Pattern: Eviscerator's Chestguard
+			44516, -- Leatherworking-Pattern: Eviscerator's Bindings
+			44517, -- Leatherworking-Pattern: Eviscerator's Gauntlets
+			44518, -- Leatherworking-Pattern: Eviscerator's Waistguard
+			44519, -- Leatherworking-Pattern: Eviscerator's Legguards
+			44520, -- Leatherworking-Pattern: Eviscerator's Treads
+			44521, -- Leatherworking-Pattern: Overcast Headguard
+			44522, -- Leatherworking-Pattern: Overcast Spaulders
+			44523, -- Leatherworking-Pattern: Overcast Chestguard
+			44524, -- Leatherworking-Pattern: Overcast Bracers
+			44525, -- Leatherworking-Pattern: Overcast Handwraps
+			44526, -- Leatherworking-Pattern: Overcast Belt
+			44527, -- Leatherworking-Pattern: Overcast Leggings
+			44528, -- Leatherworking-Pattern: Overcast Boots
+			44530, -- Leatherworking-Pattern: Swiftarrow Helm
+			44531, -- Leatherworking-Pattern: Swiftarrow Shoulderguards
+			44532, -- Leatherworking-Pattern: Swiftarrow Hauberk
+			44533, -- Leatherworking-Pattern: Swiftarrow Bracers
+			44534, -- Leatherworking-Pattern: Swiftarrow Gauntlets
+			44535, -- Leatherworking-Pattern: Swiftarrow Belt
+			44536, -- Leatherworking-Pattern: Swiftarrow Leggings
+			44537, -- Leatherworking-Pattern: Swiftarrow Boots
+			44538, -- Leatherworking-Pattern: Stormhide Crown
+			44539, -- Leatherworking-Pattern: Stormhide Shoulders
+			44540, -- Leatherworking-Pattern: Stormhide Hauberk
+			44541, -- Leatherworking-Pattern: Stormhide Wristguards
+			44542, -- Leatherworking-Pattern: Stormhide Grips
+			44543, -- Leatherworking-Pattern: Stormhide Belt
+			44544, -- Leatherworking-Pattern: Stormhide Legguards
+			44545, -- Leatherworking-Pattern: Stormhide Stompers
+			44546, -- Leatherworking-Pattern: Giantmaim Legguards
+			44547, -- Leatherworking-Pattern: Giantmaim Bracers
+			44548, -- Leatherworking-Pattern: Revenant's Breastplate
+			44549, -- Leatherworking-Pattern: Revenant's Treads
+			44550, -- Leatherworking-Pattern: Trollwoven Spaulders
+			44551, -- Leatherworking-Pattern: Trollwoven Girdle
+			44552, -- Leatherworking-Pattern: Earthgiving Legguards
+			44553, -- Leatherworking-Pattern: Earthgiving Boots
+			44584, -- Leatherworking-Pattern: Polar Vest
+			44585, -- Leatherworking-Pattern: Polar Cord
+			44586, -- Leatherworking-Pattern: Polar Boots
+			44587, -- Leatherworking-Pattern: Icy Scale Chestguard
+			44588, -- Leatherworking-Pattern: Icy Scale Belt
+			44589, -- Leatherworking-Pattern: Icy Scale Boots
+			44932, -- Leatherworking-Pattern: Windripper Boots
+			44933, -- Leatherworking-Pattern: Windripper Leggings
 		},
 	},
 	
@@ -5256,6 +5426,98 @@ local npcList = {
 
 local additionalLootTable = {
 	-- -- -- -- --
+	-- Leatherworking
+	-- -- -- -- --
+	{ 5083, 	BZ["Thunder Bluff"], 		format("%s (%s)", L["Quest rewards"], FACTION_HORDE) },	-- Leatherworking-Pattern: Kodo Hide Bag
+	{ 5788, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Blixrez Goodstitch"]) },	-- Leatherworking-Pattern: Thick Murloc Armor
+	{ 5789, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Blixrez Goodstitch"]) },	-- Leatherworking-Pattern: Murloc Scale Bracers
+	{ 6474, 	BZ["The Barrens"], 			format("%s: %s", L["Vendor"], L["Kalldan Felmoon"]) },	-- Leatherworking-Pattern: Deviate Scale Cloak
+	{ 6475, 	BZ["The Barrens"], 			format("%s: %s", L["Vendor"], L["Kalldan Felmoon"]) },	-- Leatherworking-Pattern: Deviate Scale Gloves
+	{ 6476, 	BZ["The Barrens"], 			L["Quest rewards"] },	-- Leatherworking-Pattern: Deviate Scale Belt
+	{ 6710, 	BZ["Darnassus"], 			format("%s (%s)", L["Quest rewards"], FACTION_ALLIANCE) },	-- Leatherworking-Pattern: Moonglow Vest
+	{ 7289, 	BZ["Redridge Mountains"], 	format("%s: %s (%s)", L["Vendor"], L["Clyde Ranthal"], FACTION_ALLIANCE) },	-- Leatherworking-Pattern: Black Whelp Cloak (Alliance only)
+	{ 7290, 	BZ["Wetlands"], 			format("%s: %s (%s)", L["Vendor"], L["Wenna Silkbeard"], FACTION_ALLIANCE) },	-- Leatherworking-Pattern: Red Whelp Gloves (Alliance only)
+	{ 7362, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Zixil"]) },	-- Leatherworking-Pattern: Earthen Leather Shoulders
+	{ 8403, 	BZ["Feralas"], 				L["Quest rewards"] },	-- Leatherworking-Pattern: Wild Leather Vest
+	{ 8405, 	BZ["Feralas"], 				L["Quest rewards"] },	-- Leatherworking-Pattern: Wild Leather Helmet
+	{ 8406, 	BZ["Feralas"], 				L["Quest rewards"] },	-- Leatherworking-Pattern: Wild Leather Boots
+	{ 8407, 	BZ["Feralas"], 				L["Quest rewards"] },	-- Leatherworking-Pattern: Wild Leather Leggings
+	{ 8408, 	BZ["Feralas"], 				L["Quest rewards"] },	-- Leatherworking-Pattern: Wild Leather Cloak
+	{ 13287, 	BZ["Arathi Highlands"], 	format("%s: %s (%s)", L["Vendor"], L["Tunkk"], FACTION_HORDE) },	-- Leatherworking-Pattern: Raptor Hide Harness (Horde only)
+	{ 13288, 	BZ["Arathi Highlands"], 	format("%s: %s (%s)", L["Vendor"], L["Androd Fadran"], FACTION_ALLIANCE) },	-- Leatherworking-Pattern: Raptor Hide Belt (Alliance only)
+	{ 14635, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Rikqiz"]) },	-- Leatherworking-Pattern: Gem-studded Leather Belt
+	{ 15724, 	BZ["Silithus"], 			format("%s: %s", L["Vendor"], L["Zannok Hidepiercer"]) },	-- Leatherworking-Pattern: Heavy Scorpid Bracers
+	{ 15726, 	BZ["Swamp of Sorrows"], 	format("%s: %s", L["Vendor"], L["Masat T'andr"]) },	-- Leatherworking-Pattern: Green Dragonscale Breastplate
+	{ 15727, 	BZ["Blasted Lands"], 		L["Shadowsworn Thug"] },	-- Leatherworking-Pattern: Heavy Scorpid Vest
+	{ 15729, 	BZ["Azshara"], 				format("%s: %s", L["Vendor"], L["Blimo Gadgetspring"]) },	-- Leatherworking-Pattern: Chimeric Gloves
+	{ 15732, 	BZ["Burning Steppes"], 		L["Firegut Brute"] },	-- Leatherworking-Pattern: Volcanic Leggings
+	{ 15732, 	BZ["Sunken Temple"], 		L["Murk Worm"] },	-- Leatherworking-Pattern: Green Dragonscale Leggings
+	{ 15735, 	BZ["The Hinterlands"], 		format("%s: %s", L["Vendor"], L["Gigget Zipcoil"]) },	-- Leatherworking-Pattern: Ironfeather Shoulders
+	{ 15738, 	BZ["Burning Steppes"], 		L["Blackrock Soldier"] },	-- Leatherworking-Pattern: Heavy Scorpid Gauntlets
+	{ 15740, 	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Qia"]) },	-- Leatherworking-Pattern: Frostsaber Boots
+	
+	{ 15742, 	BF["Timbermaw Hold"], 		rep_Friendly },	-- Leatherworking-Pattern: Frostsaber Boots
+	{ 20253, 	BF["Timbermaw Hold"], 		rep_Friendly },	-- Leatherworking-Pattern: Frostsaber Boots
+	{ 15754, 	BF["Timbermaw Hold"], 		rep_Friendly },	-- Leatherworking-Pattern: Frostsaber Boots
+	{ 20254, 	BF["Timbermaw Hold"], 		rep_Friendly },	-- Leatherworking-Pattern: Frostsaber Boots
+	
+	{ 15738, 	BZ["Winterspring"], 		L["Winterfall Den Watcher"] },	-- Leatherworking-Pattern: Frostsaber Leggings
+	{ 15748, 	BZ["Burning Steppes"], 		L["Blackrock Slayer"] },	-- Leatherworking-Pattern: Heavy Scorpid Leggings
+	{ 15748, 	BZ["Blackrock Spire"], 		L["Firebrand Grunt"] },	-- Leatherworking-Pattern: Heavy Scorpid Leggings
+	{ 15751, 	BZ["Azshara"], 				format("%s: %s", L["Vendor"], L["Blimo Gadgetspring"]) },	-- Leatherworking-Pattern: Blue Dragonscale Breastplate
+	{ 15752, 	BZ["Felwood"], 				L["Deadwood Shaman"] },	-- Leatherworking-Pattern: Living Leggings
+	{ 15753, 	BZ["Azshara"], 				L["Arkkoran Oracle"] },	-- Leatherworking-Pattern: Stormshroud Armor
+	{ 15758, 	BZ["Un'Goro Crater"], 		format("%s: %s", L["Vendor"], L["Nergal"]) },	-- Leatherworking-Pattern: Devilsaur Gauntlets
+	{ 15759, 	BZ["Blackrock Depths"], 	format("%s: %s", L["Vendor"], BB["Plugger Spazzring"]) },	-- Leatherworking-Pattern: Black Dragonscale Breastplate
+	{ 15760, 	BZ["The Hinterlands"], 		L["Vilebranch Hideskinner"] },	-- Leatherworking-Pattern: Ironfeather Breastplate
+	{ 15761, 	BZ["Winterspring"], 		L["Winterfall Totemic"] },	-- Leatherworking-Pattern: Frostsaber Gloves
+	{ 15762, 	BZ["Silithus"], 			format("%s: %s", L["Vendor"], L["Zannok Hidepiercer"]) },	-- Leatherworking-Pattern: Heavy Scorpid Helm
+	{ 15763, 	BZ["Azshara"], 				L["Cliff Breaker"] },	-- Leatherworking-Pattern: Blue Dragonscale Shoulders
+	{ 15764, 	BZ["Azshara"], 				L["Son of Arkkoroc"] },	-- Leatherworking-Pattern: Stormshroud Shoulders
+	{ 15770, 	BZ["Blackrock Depths"], 	L["Anvilrage Marshal"] },	-- Leatherworking-Pattern: Black Dragonscale Shoulders
+	{ 15771, 	BZ["Western Plaguelands"], 	L["Decaying Horror"] },	-- Leatherworking-Pattern: Living Breastplate
+	{ 15771, 	BZ["Un'Goro Crater"], 		"Ooze Mobs" },	-- Leatherworking-Pattern: Devilsaur Leggingss
+	{ 15774, 	BZ["Burning Steppes"], 		L["Blackrock Battlemaster"] },	-- Leatherworking-Pattern: Heavy Scorpid Shoulders
+	{ 15775, 	BZ["Blackrock Spire"], 		L["Firebrand Legionnaire"] },	-- Leatherworking-Pattern: Volcanic Shoulders
+	{ 15779, 	BZ["Winterspring"], 		L["Winterfall Ursa"] },	-- Leatherworking-Pattern: Frostsaber Tunic
+	{ 15781, 	BZ["Blackrock Depths"], 	L["Anvilrage Captain"] },	-- Leatherworking-Pattern: Black Dragonscale Leggings
+	
+	{ 18239, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Rikqiz"]) },	-- Leatherworking-Pattern: Shadowskin Gloves
+	{ 20576, 	BZ["Redridge Mountains"], 	format("%s: %s (%s)", L["Vendor"], L["Amy Davenport"], FACTION_ALLIANCE) },	-- Leatherworking-Pattern: Black Whelp Tunic (Alliance only)
+	
+	{ 25720, 	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Cro Threadstrong"]) },	-- Leatherworking-Pattern: Heavy Knothide Leather
+	{ 25725, 	BZ["Old Hillsbrad Foothills"],	format("%s: %s", L["Vendor"], L["Thomas Yance"]) },	-- Leatherworking-Pattern: Riding Crop
+	{ 25729, 	BZ["Old Hillsbrad Foothills"],	L["Durnholde Rifleman"] },	-- Leatherworking-Pattern: Stylin' Adventure Hat
+	{ 25730, 	BZ["The Black Morass"],		L["Rift Keeper"] },	-- Leatherworking-Pattern: Stylin' Jungle Hat
+	{ 25730, 	BZ["The Black Morass"],		L["Rift Lord"] },	-- Leatherworking-Pattern: Stylin' Jungle Hat
+	{ 25725, 	BZ["Sethekk Halls"],		L["Sethekk Ravenguard"] },	-- Leatherworking-Pattern: Stylin' Crimson Hat
+	
+	{ 29669, 	BZ["Sethekk Halls"],		L["Time-Lost Shadowmage"] },	-- Leatherworking-Pattern: Shadow Armor Kit
+	{ 29672, 	BZ["The Arcatraz"],			L["Gargantuan Abyssal"] },	-- Leatherworking-Pattern: Flame Armor Kit
+	
+	{ 34491, 	BZ["Terokkar Forest"], 		"Gordunni Mobs" },	-- Leatherworking-Pattern: Bag of Many Hides
+	
+	{ 44559, 	BZ["Icecrown"], 			L["Skeletal Runesmith"] },	-- Leatherworking-Pattern: Fur Lining - Fire Resist
+	{ 44560, 	BZ["Icecrown"], 			L["Damned Apothecary"] },	-- Leatherworking-Pattern: Fur Lining - Frost Resist
+	{ 44561, 	BZ["Icecrown"], 			L["Cultist Shard Watcher"] },	-- Leatherworking-Pattern: Fur Lining - Shadow Resist
+	{ 44562, 	BZ["Icecrown"], 			L["Cult Alchemist"] },	-- Leatherworking-Pattern: Fur Lining - Nature Resist
+	{ 44563, 	BZ["Icecrown"], 			L["Cult Researcher"] },	-- Leatherworking-Pattern: Fur Lining - Arcane Resist
+	
+	{ 15728, 	trainersName, 				BI["Leatherworking"] },	-- Leatherworking-Pattern: Leather Bracers
+	{ 15731, 	trainersName, 				BI["Leatherworking"] },	-- Leatherworking-Pattern: Runic Leather Gauntlets
+	{ 15739, 	trainersName, 				BI["Leatherworking"] },	-- Leatherworking-Pattern: Runic Leather Bracers
+	{ 15744, 	trainersName, 				BI["Leatherworking"] },	-- Leatherworking-Pattern: Wicked Leather Headband
+	{ 15745, 	trainersName, 				BI["Leatherworking"] },	-- Leatherworking-Pattern: Runic Leather Belt
+	{ 15756, 	trainersName, 				BI["Leatherworking"] },	-- Leatherworking-Pattern: Runic Leather Headband
+	{ 15757, 	trainersName, 				BI["Leatherworking"] },	-- Leatherworking-Pattern: Wicked Leather Pants
+	{ 15765, 	trainersName, 				BI["Leatherworking"] },	-- Leatherworking-Pattern: Runic Leather Pants
+	{ 15768, 	trainersName, 				BI["Leatherworking"] },	-- Leatherworking-Pattern: Wicked Leather Belt
+	{ 15773, 	trainersName, 				BI["Leatherworking"] },	-- Leatherworking-Pattern: Wicked Leather Armor
+	{ 15776, 	trainersName, 				BI["Leatherworking"] },	-- Leatherworking-Pattern: Runic Leather Armor
+	{ 15777, 	trainersName, 				BI["Leatherworking"] },	-- Leatherworking-Pattern: Runic Leather Shoulders
+	
+	
+	-- -- -- -- --
 	-- Alchemy
 	-- -- -- -- --
 	{ 3830, 	trainersName, 				BI["Alchemy"] },	-- Alchemy-Recipe: Elixir of Fortitude
@@ -5505,6 +5767,7 @@ local additionalLootTable = {
 	{ 14476,	BZ["Searing Gorge"], 		L["Twilight Fire Guard"] },	-- Tailoring-Pattern: Cindercloth Gloves
 	{ 14482,	BZ["Burning Steppes"], 		L["Thaurissan Firewalker"] },	-- Tailoring-Pattern: Cindercloth Cloak
 	{ 14490,	BZ["Burning Steppes"], 		L["Thaurissan Firewalker"] },	-- Tailoring-Pattern: Cindercloth Pants
+	{ 14513,	BZ["Blackrock Spire"], 		L["Firebrand Pyromancer"] },	-- Tailoring-Pattern: Robe of the Archmage
 	
 	{ 14468,	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Qia"]) },	-- Tailoring-Pattern: Runecloth Bag
 	{ 14526,	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Qia"]) },	-- Tailoring-Pattern: Mooncloth
@@ -5779,6 +6042,38 @@ local additionalLootTable = {
 local recipeFactionDuplicates	= {
 	Alliance	= {
 		-- -- -- -- --
+		-- Leatherworking
+		-- -- -- -- --
+		{ 5083, 	BZ["Westfall"], 			format("%s: %s", L["Vendor"], L["Gina MacGregor"]) },	-- Leatherworking-Pattern: Murloc Scale Belt
+		{ 5083, 	BZ["Darkshore"], 			format("%s: %s", L["Vendor"], L["Mavralyn"]) },	-- Leatherworking-Pattern: Murloc Scale Belt
+		{ 5787, 	BZ["Westfall"], 			format("%s: %s", L["Vendor"], L["Gina MacGregor"]) },	-- Leatherworking-Pattern: Murloc Scale Breastplate
+		{ 5787, 	BZ["Darkshore"], 			format("%s: %s", L["Vendor"], L["Mavralyn"]) },	-- Leatherworking-Pattern: Murloc Scale Breastplate
+		{ 5788, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Micha Yance"]) },	-- Leatherworking-Pattern: Thick Murloc Armor
+		{ 5789, 	BZ["Dustwallow Marsh"], 	format("%s: %s", L["Vendor"], L["Helenia Olden"]) },	-- Leatherworking-Pattern: Murloc Scale Bracers
+		{ 5973, 	BZ["Ashenvale"], 			format("%s: %s", L["Vendor"], L["Lardan"]) },	-- Leatherworking-Pattern: Barbaric Leggings
+		{ 5973, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Vendor"], L["Hammon Karwn"]) },	-- Leatherworking-Pattern: Barbaric Leggings
+		{ 7451, 	BZ["Darnassus"], 			format("%s: %s", L["Vendor"], L["Saenorion"]) },	-- Leatherworking-Pattern: Green Whelp Bracers
+		{ 7451, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Pratt McGrubben"]) },	-- Leatherworking-Pattern: Green Whelp Bracers
+		{ 7613, 	BZ["Wetlands"], 			format("%s: %s", L["Vendor"], L["Wenna Silkbeard"]) },	-- Leatherworking-Pattern: Green Leather Armor
+		{ 8385, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Pratt McGrubben"]) },	-- Leatherworking-Pattern: Turtle Scale Gloves
+		{ 8409, 	BZ["The Hinterlands"], 		format("%s: %s", L["Vendor"], L["Nioma"]) },	-- Leatherworking-Pattern: Nightscape Shoulders
+		{ 8409, 	BZ["Western Plaguelands"], 	format("%s: %s", L["Vendor"], L["Leonard Porter"]) },	-- Leatherworking-Pattern: Wicked Leather Gauntlets
+		{ 15734, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Pratt McGrubben"]) },	-- Leatherworking-Pattern: Living Shoulders
+		{ 15741, 	BZ["Western Plaguelands"], 	format("%s: %s", L["Vendor"], L["Leonard Porter"]) },	-- Leatherworking-Pattern: Stormshroud Pants
+		
+		{ 18731, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Bombus Finespindle"]) },	-- Leatherworking-Pattern: Heavy Leather Ball
+		{ 18949, 	BZ["Darnassus"], 			format("%s: %s", L["Vendor"], L["Saenorion"]) },	-- Leatherworking-Pattern: Barbaric Bracers
+		
+		{ 25720, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Haferet"]) },	-- Leatherworking-Pattern: Heavy Knothide Leather
+		{ 25726, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Haferet"]) },	-- Leatherworking-Pattern: Comfortable Insoles
+		
+		{ 29714, 	BF["Kurenai"], 			rep_Honored },	-- Leatherworking-Pattern: Drums of Restoration
+		{ 34175, 	BF["Kurenai"], 			rep_Honored },	-- Leatherworking-Pattern: Drums of Restoration
+		{ 29718, 	BF["Kurenai"], 			rep_Honored },	-- Leatherworking-Pattern: Drums of Speed
+		{ 34173, 	BF["Kurenai"], 			rep_Honored },	-- Leatherworking-Pattern: Drums of Speed
+		
+		
+		-- -- -- -- --
 		-- Alchemy
 		-- -- -- -- --
 		{ 5640, 	BZ["Loch Modan"], 			format("%s: %s", L["Vendor"], L["Xandar Goodbeard"]) },	-- Alchemy-Recipe: Rage Potion
@@ -5912,6 +6207,35 @@ local recipeFactionDuplicates	= {
 		{ 21897,	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Netherweave Tunic
 	},
 	Horde	= {
+		-- -- -- -- --
+		-- Leatherworking
+		-- -- -- -- --
+		{ 5083, 	BZ["Silverpine Forest"], 	format("%s: %s", L["Vendor"], L["Andrew Hilbert"]) },	-- Leatherworking-Pattern: Murloc Scale Belt
+		{ 5787, 	BZ["Silverpine Forest"], 	format("%s: %s", L["Vendor"], L["Andrew Hilbert"]) },	-- Leatherworking-Pattern: Murloc Scale Breastplate
+		{ 5788, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Christoph Jeffcoat"]) },	-- Leatherworking-Pattern: Thick Murloc Armor
+		{ 5973, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Vendor"], L["Keena"]) },	-- Leatherworking-Pattern: Barbaric Leggings
+		{ 5973, 	BZ["Thousand Needles"], 	format("%s: %s", L["Vendor"], L["Jandia"]) },	-- Leatherworking-Pattern: Barbaric Leggings
+		{ 7451, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Jangdor Swiftstrider"]) },	-- Leatherworking-Pattern: Green Whelp Bracers
+		{ 7451, 	BZ["Undercity"], 			format("%s: %s", L["Vendor"], L["Joseph Moore"]) },	-- Leatherworking-Pattern: Green Whelp Bracers
+		{ 7613, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["George Candarte"]) },	-- Leatherworking-Pattern: Green Leather Armor
+		{ 8385, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Jangdor Swiftstrider"]) },	-- Leatherworking-Pattern: Turtle Scale Gloves
+		{ 8409, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Jangdor Swiftstrider"]) },	-- Leatherworking-Pattern: Nightscape Shoulders
+		{ 8409, 	BZ["Tirisfal Glades"], 		format("%s: %s", L["Vendor"], L["Werg Thickblade"]) },	-- Leatherworking-Pattern: Wicked Leather Gauntlets
+		{ 15734, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Jangdor Swiftstrider"]) },	-- Leatherworking-Pattern: Living Shoulders
+		{ 15741, 	BZ["Tirisfal Glades"], 		format("%s: %s", L["Vendor"], L["Werg Thickblade"]) },	-- Leatherworking-Pattern: Stormshroud Pants
+		
+		{ 18731, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Tamar"]) },	-- Leatherworking-Pattern: Heavy Leather Ball
+		{ 18949, 	BZ["Undercity"], 			format("%s: %s", L["Vendor"], L["Joseph Moore"]) },	-- Leatherworking-Pattern: Barbaric Bracers
+		
+		{ 25720, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Zaralda"]) },	-- Leatherworking-Pattern: Heavy Knothide Leather
+		{ 25726, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Zaralda"]) },	-- Leatherworking-Pattern: Comfortable Insoles
+		
+		{ 29714, 	BF["The Mag'har"], 			rep_Honored },	-- Leatherworking-Pattern: Drums of Restoration
+		{ 34174, 	BF["The Mag'har"], 			rep_Honored },	-- Leatherworking-Pattern: Drums of Restoration
+		{ 29718, 	BF["The Mag'har"], 			rep_Honored },	-- Leatherworking-Pattern: Drums of Speed
+		{ 34172, 	BF["The Mag'har"], 			rep_Honored },	-- Leatherworking-Pattern: Drums of Speed
+		
+		
 		-- -- -- -- --
 		-- Alchemy
 		-- -- -- -- --
