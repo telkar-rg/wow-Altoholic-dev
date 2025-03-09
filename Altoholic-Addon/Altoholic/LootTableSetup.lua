@@ -1603,9 +1603,11 @@ db.lootTable = {
 		},
 	},
 	
-
+	
 	[ BZ["Molten Core"] ] = {
 		[ L["Random Boss"] ] = {
+			18257,	-- Alchemy-Recipe: Major Rejuvenation Potion
+			
 			18265,	-- Tailoring-Pattern: Flarecore Wraps
 			21371,	-- Tailoring-Pattern: Core Felcloth Bag
 			
@@ -1616,6 +1618,22 @@ db.lootTable = {
 			18290,	-- Engineering-Schematic: Biznicks 247x128 Accurascope
 			18291,	-- Engineering-Schematic: Force Reactive Disk
 			18292,	-- Engineering-Schematic: Core Marksman Rifle
+			
+			18259,	-- Enchanting-Formula: Enchant Weapon - Spellpower
+			18260,	-- Enchanting-Formula: Enchant Weapon - Healing Power
+		},
+	},
+	
+	
+	[ format("%s/ %s", BZ["Temple of Ahn'Qiraj"], BZ["Ruins of Ahn'Qiraj"]) ] = {
+		[ L["Random Boss"] ] = {
+			20727,	-- Enchanting-Formula: Enchant Gloves - Shadow Power
+			20728,	-- Enchanting-Formula: Enchant Gloves - Frost Power
+			20729,	-- Enchanting-Formula: Enchant Gloves - Fire Power
+			20730,	-- Enchanting-Formula: Enchant Gloves - Healing Power
+			20731,	-- Enchanting-Formula: Enchant Gloves - Superior Agility
+			20734,	-- Enchanting-Formula: Enchant Cloak - Stealth
+			20736,	-- Enchanting-Formula: Enchant Cloak - Dodge
 		},
 	},
 	
@@ -1670,6 +1688,13 @@ db.lootTable = {
 			35310,	-- Engineering-Schematic: Healing Potion Injector
 			23884,	-- Engineering-Schematic: Mana  Potion Injector (World Drop)
 			35311,	-- Engineering-Schematic: Mana  Potion Injector
+			
+			28280,	-- Enchanting-Formula: Enchant Boots - Boar's Speed (World Drop)
+			35297,	-- Enchanting-Formula: Enchant Boots - Boar's Speed
+			22542,	-- Enchanting-Formula: Enchant Boots - Vitality (World Drop)
+			35298,	-- Enchanting-Formula: Enchant Boots - Vitality
+			28279,	-- Enchanting-Formula: Enchant Boots - Cat's Swiftness (World Drop)
+			35299,	-- Enchanting-Formula: Enchant Boots - Cat's Swiftness
 		},
 	},
 	[ BZ["Karazhan"] ] = {
@@ -2441,6 +2466,8 @@ db.lootTable = {
 			2408,	 -- Leatherworking-Pattern: Fine Leather Gloves
 			
 			4408,	 -- Engineering-Schematic: Mechanical Squirrel Box
+			
+			6342,	 -- Enchanting-Formula: Enchant Chest - Minor Mana
 		},
 		[ format(L["Level %d-%d"], 15, 25) ] = {
 			3393,	 -- Alchemy-Recipe: Minor Magic Resistance Potion
@@ -2459,6 +2486,14 @@ db.lootTable = {
 			
 			4409,	 -- Engineering-Schematic: Small Seaforium Charge
 			6716,	 -- Engineering-Schematic: EZ-Thro Dynamite
+			
+			6344,	 -- Enchanting-Formula: Enchant Bracer - Minor Spirit
+			6347,	 -- Enchanting-Formula: Enchant Bracer - Minor Strength
+			6348,	 -- Enchanting-Formula: Enchant Weapon - Minor Beastslayer
+			6375,	 -- Enchanting-Formula: Enchant Bracer - Lesser Spirit
+			11038,	 -- Enchanting-Formula: Enchant 2H Weapon - Lesser Spirit
+			11039,	 -- Enchanting-Formula: Enchant Cloak - Minor Agility
+			11081,	 -- Enchanting-Formula: Enchant Shield - Lesser Protection
 		},
 		[ format(L["Level %d-%d"], 20, 30) ] = {
 			3394,	 -- Alchemy-Recipe: Potion of Curing
@@ -2508,6 +2543,9 @@ db.lootTable = {
 			4412,	 -- Engineering-Schematic: Moonsight Rifle
 			4414,	 -- Engineering-Schematic: Portable Bronze Mortar
 			10601,	 -- Engineering-Schematic: Bright-Eye Goggles
+			
+			11164,	 -- Enchanting-Formula: Enchant Weapon - Lesser Beastslayer
+			11165,	 -- Enchanting-Formula: Enchant Weapon - Lesser Elemental Slayer
 		},
 		[ format(L["Level %d-%d"], 30, 40) ] = {
 			867, 	 -- Gloves of Holy Might
@@ -2538,6 +2576,9 @@ db.lootTable = {
 			4299,	 -- Leatherworking-Pattern: Guardian Armor
 			7449,	 -- Leatherworking-Pattern: Dusky Leather Leggings
 			7450,	 -- Leatherworking-Pattern: Green Whelp Armor
+			
+			11167,	 -- Enchanting-Formula: Enchant Boots - Lesser Spirit
+			11168,	 -- Enchanting-Formula: Enchant Shield - Lesser Block
 		},
 		[ format(L["Level %d-%d"], 35, 45) ] = {
 			3832,	 -- Alchemy-Recipe: Elixir of Detect Lesser Invisibility
@@ -2570,6 +2611,9 @@ db.lootTable = {
 			10603,	 -- Engineering-Schematic: Catseye Ultra Goggles
 			10604,	 -- Engineering-Schematic: Mithril Heavy-bore Rifle
 			10606,	 -- Engineering-Schematic: Parachute Cloak
+			
+			11202,	 -- Enchanting-Formula: Enchant Shield - Stamina
+			11204,	 -- Enchanting-Formula: Enchant Bracer - Greater Spirit
 		},
 		[ format(L["Level %d-%d"], 40, 50) ] = {
 			809, 	 -- Bloodrazor
@@ -2611,6 +2655,8 @@ db.lootTable = {
 			8387,	 -- Leatherworking-Pattern: Big Voodoo Mask
 			8395,	 -- Leatherworking-Pattern: Tough Scorpid Breastplate
 			8397,	 -- Leatherworking-Pattern: Tough Scorpid Bracers
+			
+			11208,	 -- Enchanting-Formula: Enchant Weapon - Demonslaying
 		},
 		[ format(L["Level %d-%d"], 45, 55) ] = {
 			3395,	 -- Alchemy-Recipe: Limited Invulnerability Potion
@@ -2634,6 +2680,11 @@ db.lootTable = {
 			8402,	 -- Leatherworking-Pattern: Tough Scorpid Helm
 			
 			10608,	 -- Engineering-Schematic: Sniper Scope
+			
+			11224,	 -- Enchanting-Formula: Enchant Shield - Frost Resistance
+			11225,	 -- Enchanting-Formula: Enchant Bracer - Greater Stamina
+			11226,	 -- Enchanting-Formula: Enchant Gloves - Riding Skill
+			16215,	 -- Enchanting-Formula: Enchant Boots - Greater Stamina
 		},
 		[ format(L["Level %d-%d"], 50, 60) ] = {
 			647, 	 -- Destiny
@@ -2685,6 +2736,9 @@ db.lootTable = {
 			15755,	 -- Leatherworking-Pattern: Chimeric Vest
 			
 			16044,	 -- Engineering-Schematic: Lifelike Mechanical Toad
+			
+			16218,	 -- Enchanting-Formula: Enchant Bracer - Superior Spirit
+			16220,	 -- Enchanting-Formula: Enchant Boots - Spirit
 		},
 		[ format(L["Level %d-%d"], 55, 60) ] = {
 			13518,	 -- Alchemy-Recipe: Potion of Petrification
@@ -2699,6 +2753,8 @@ db.lootTable = {
 			
 			15754,	 -- Leatherworking-Pattern: Warbear Woolies
 			20254,	 -- Leatherworking-Pattern: Warbear Woolies
+			
+			16251,	 -- Enchanting-Formula: Enchant Bracer - Superior Stamina
 		},
 		[ format(L["Level %d"], 60) ] = {
 			14509,	 -- Tailoring-Pattern: Mooncloth Circlet
@@ -2771,6 +2827,17 @@ db.lootTable = {
 			23802,	 -- Engineering-Schematic: Ornate Khorium Rifle
 			23804,	 -- Engineering-Schematic: Power Amplification Goggles
 			25887,	 -- Engineering-Schematic: Purple Smoke Flare
+			
+			16253,	 -- Enchanting-Formula: Enchant Chest - Greater Stats
+			22532,	 -- Enchanting-Formula: Enchant Bracer - Restore Mana Prime
+			22540,	 -- Enchanting-Formula: Enchant Shield - Shield Block
+			22541,	 -- Enchanting-Formula: Enchant Shield - Resistance
+			22542,	 -- Enchanting-Formula: Enchant Boots - Vitality
+			22548,	 -- Enchanting-Formula: Enchant Cloak - Major Resistance
+			22553,	 -- Enchanting-Formula: Enchant Weapon - Potency
+			22557,	 -- Enchanting-Formula: Enchant Weapon - Battlemaster
+			22558,	 -- Enchanting-Formula: Enchant Weapon - Spellsurge
+			28270,	 -- Enchanting-Formula: Enchant Chest - Major Resilience
 		},
 		[ format(L["Level %d-%d"], 68, 70) ] = {
 			24302,	 -- Tailoring-Pattern: Unyielding Girdle
@@ -2816,6 +2883,9 @@ db.lootTable = {
 			23810,	 -- Engineering-Schematic: Crashin' Thrashin' Robot
 			23883,	 -- Engineering-Schematic: Healing Potion Injector
 			23884,	 -- Engineering-Schematic: Mana Potion Injector
+			
+			28279,	 -- Enchanting-Formula: Enchant Boots - Cat's Swiftness
+			28280,	 -- Enchanting-Formula: Enchant Boots - Boar's Speed
 		},
 		[ BZ["Northrend"] ] = {
 			37254,  -- Super Simian Sphere
@@ -2896,6 +2966,32 @@ db.lootTable = {
 			44589, -- Leatherworking-Pattern: Icy Scale Boots
 			44932, -- Leatherworking-Pattern: Windripper Boots
 			44933, -- Leatherworking-Pattern: Windripper Leggings
+		},
+		[format("%s: %s", L["Vendor"], L["Vanessa Sellers"])] = {
+			37339, -- Enchanting-Formula: Enchant Weapon - Giant Slayer
+			37340, -- Enchanting-Formula: Enchant Chest - Exceptional Resilience
+			37344, -- Enchanting-Formula: Enchant Weapon - Icebreaker
+			37347, -- Enchanting-Formula: Enchant Cloak - Titanweave
+			37349, -- Enchanting-Formula: Enchant Cloak - Shadow Armor
+			44471, -- Enchanting-Formula: Enchant Cloak - Mighty Armor
+			44472, -- Enchanting-Formula: Enchant Cloak - Greater Speed
+			44473, -- Enchanting-Formula: Enchant Weapon - Scourgebane
+			44483, -- Enchanting-Formula: Enchant 2H Weapon - Massacre
+			44484, -- Enchanting-Formula: Enchant Bracers - Greater Assault
+			44485, -- Enchanting-Formula: Enchant Gloves - Armsman
+			44486, -- Enchanting-Formula: Enchant Weapon - Superior Potency
+			44487, -- Enchanting-Formula: Enchant Weapon - Mighty Spellpower
+			44488, -- Enchanting-Formula: Enchant Cloak - Wisdom
+			44489, -- Enchanting-Formula: Enchant Chest - Powerful Stats
+			44490, -- Enchanting-Formula: Enchant Boots - Greater Assault
+			44491, -- Enchanting-Formula: Enchant Boots - Tuskarr's Vitality
+			44492, -- Enchanting-Formula: Enchant Weapon - Berserking
+			44494, -- Enchanting-Formula: Enchant Weapon - Lifeward
+			44495, -- Enchanting-Formula: Enchant Weapon - Black Magic
+			44496, -- Enchanting-Formula: Enchant Weapon - Accuracy
+			44498, -- Enchanting-Formula: Enchant Bracer - Superior Spellpower
+			44944, -- Enchanting-Formula: Enchant Bracer - Major Stamina
+			45059, -- Enchanting-Formula: Enchant Staff - Greater Spellpower
 		},
 	},
 	
@@ -5479,6 +5575,111 @@ local npcList = {
 
 local additionalLootTable = {
 	-- -- -- -- --
+	-- Enchanting
+	-- -- -- -- --
+	{ 6346, 	BZ["Orgrimmar"], 			format("%s: %s (%s)", L["Vendor"], L["Kithas"], FACTION_HORDE) }, 	-- Enchanting-Formula: Enchant Chest - Lesser Mana
+	{ 6346, 	BZ["Silverpine Forest"], 	format("%s: %s (%s)", L["Vendor"], L["Lilly"], FACTION_HORDE) }, 	-- Enchanting-Formula: Enchant Chest - Lesser Mana
+	{ 6377, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Zixil"]) }, 	-- Enchanting-Formula: Enchant Boots - Minor Agility
+	
+	{ 11150, 	BZ["Wetlands"], 			L["Dark Iron Dwarf"] }, 	-- Enchanting-Formula: Enchant Gloves - Mining
+	
+	{ 11151, 	BZ["Stonetalon Mountains"], L["Blackened Ancient"] }, 	-- Enchanting-Formula: Enchant Gloves - Herbalism
+	{ 11151, 	BZ["Stonetalon Mountains"], L["Charred Ancient"] }, 	-- Enchanting-Formula: Enchant Gloves - Herbalism
+	{ 11151, 	BZ["Stonetalon Mountains"], L["Vengeful Ancient"] }, 	-- Enchanting-Formula: Enchant Gloves - Herbalism
+	{ 11151, 	BZ["Ashenvale"], 			L["Withered Ancient"] }, 	-- Enchanting-Formula: Enchant Gloves - Herbalism
+	{ 11151, 	BZ["Ashenvale"], 			L["Crazed Ancient"] }, 	-- Enchanting-Formula: Enchant Gloves - Herbalism
+	
+	{ 11152, 	BZ["Hillsbrad Foothills"], 	L["Torn Fin Muckdweller"] }, 	-- Enchanting-Formula: Enchant Gloves - Fishing
+	{ 11152, 	BZ["Hillsbrad Foothills"], 	L["Torn Fin Oracle"] }, 	-- Enchanting-Formula: Enchant Gloves - Fishing
+	{ 11152, 	BZ["Hillsbrad Foothills"], 	L["Torn Fin Tidehunter"] }, 	-- Enchanting-Formula: Enchant Gloves - Fishing
+	{ 11152, 	BZ["Hillsbrad Foothills"], 	L["Torn Fin Coastrunner"] }, 	-- Enchanting-Formula: Enchant Gloves - Fishing
+	
+	{ 11166, 	BZ["Arathi Highlands"], 	L["Witherbark Headhunter"] }, 	-- Enchanting-Formula: Enchant Gloves - Skinning
+	{ 11166, 	BZ["Arathi Highlands"], 	L["Witherbark Shadow Hunter"] }, 	-- Enchanting-Formula: Enchant Gloves - Skinning
+	{ 11166, 	BZ["Arathi Highlands"], 	L["Witherbark Berserker"] }, 	-- Enchanting-Formula: Enchant Gloves - Skinning
+	
+	{ 11203, 	BZ["Stranglethorn Vale"], 	L["Venture Co. Strip Miner"] }, 	-- Enchanting-Formula: Enchant Gloves - Advanced Mining
+	
+	{ 11205, 	BZ["Swamp of Sorrows"], 	L["Swampwalker"] }, 	-- Enchanting-Formula: Enchant Gloves - Advanced Herbalism
+	{ 11205, 	BZ["Swamp of Sorrows"], 	L["Swampwalker Elder"] }, 	-- Enchanting-Formula: Enchant Gloves - Advanced Herbalism
+	{ 11205, 	BZ["Swamp of Sorrows"], 	L["Tangled Horror"] }, 	-- Enchanting-Formula: Enchant Gloves - Advanced Herbalism
+	
+	{ 11206, 	BZ["Tanaris"], 				L["Wastewander Assassin"] }, 	-- Enchanting-Formula: Enchant Cloak - Lesser Agility
+	{ 11206, 	BZ["Alterac Mountains"], 	L["Syndicate Assassin"] }, 	-- Enchanting-Formula: Enchant Cloak - Lesser Agility
+	
+	{ 16221, 	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Qia"]) }, 	-- Enchanting-Formula: Enchant Chest - Major Health
+	{ 16221, 	BZ["Winterspring"], 		L["Anguished Highborne"] }, 	-- Enchanting-Formula: Enchant Weapon - Icy Chill
+	{ 16224, 	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Lorelae Wintersong"]) }, 	-- Enchanting-Formula: Enchant Cloak - Superior Defense
+	{ 16243, 	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Lorelae Wintersong"]) }, 	-- Enchanting-Formula: Runed Arcanite Rod
+	{ 16246, 	BZ["Deadwind Pass"], 		L["Deadwind Warlock"] }, 	-- Enchanting-Formula: Enchant Bracer - Superior Strength
+	{ 16246, 	BZ["Blackrock Spire"], 		L["Blackhand Elite"] }, 	-- Enchanting-Formula: Enchant 2H Weapon - Superior Impact
+	
+	{ 16248, 	BZ["Stratholme"], 			L["Thuzadin Shadowcaster"] }, 	-- Enchanting-Formula: Enchant Weapon - Unholy
+	{ 16248, 	BZ["Terokkar Forest"], 		L["Bonechewer Backbreaker"] }, 	-- Enchanting-Formula: Enchant Weapon - Unholy
+	
+	{ 16249, 	BZ["Stratholme"], 			L["Crimson Sorcerer"] }, 	-- Enchanting-Formula: Enchant 2H Weapon - Major Intellect
+	{ 16250, 	BZ["Blackrock Spire"], 		L["Spirestone Warlord"] }, 	-- Enchanting-Formula: Enchant Weapon - Superior Striking
+	
+	{ 16252, 	BZ["Eastern Plaguelands"], 	L["Scarlet Archmage"] }, 	-- Enchanting-Formula: Enchant Weapon - Crusader
+	{ 16252, 	BZ["Western Plaguelands"], 	L["Scarlet Spellbinder"] }, 	-- Enchanting-Formula: Enchant Weapon - Crusader
+	
+	{ 16254, 	BZ["Scholomance"], 			L["Spectral Researcher"] }, 	-- Enchanting-Formula: Enchant Weapon - Lifestealing
+	{ 16255, 	BZ["Scholomance"], 			L["Scholomance Adept"] }, 	-- Enchanting-Formula: Enchant 2H Weapon - Major Spirit
+	
+	{ 20752, 	L["Vendor"], 				L["Enchanting Supplies"] }, 	-- Enchanting-Formula: Minor Mana Oil
+	{ 20753, 	L["Vendor"], 				L["Enchanting Supplies"] }, 	-- Enchanting-Formula: Lesser Wizard Oil
+	{ 20758, 	L["Vendor"], 				L["Enchanting Supplies"] }, 	-- Enchanting-Formula: Minor Wizard Oil
+	
+	{ 20754, 	BZ["Silithus"], 			format("%s: %s", L["Vendor"], L["Kania"]) }, 	-- Enchanting-Formula: Lesser Mana Oil
+	{ 20755, 	BZ["Silithus"], 			format("%s: %s", L["Vendor"], L["Kania"]) }, 	-- Enchanting-Formula: Wizard Oil
+	{ 20755, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Rin'wosho the Trader"]) }, 	-- Enchanting-Formula: Brilliant Wizard Oil
+	{ 20757, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Rin'wosho the Trader"]) }, 	-- Enchanting-Formula: Brilliant Mana Oil
+	
+	{ 22530, 	BZ["Netherstorm"], 			L["Ethereum Nullifier"] }, 	-- Enchanting-Formula: Enchant Bracer - Major Defense
+	{ 22533, 	BZ["The Steamvault"], 		L["Coilfang Oracle"] }, 	-- Enchanting-Formula: Enchant Bracer - Fortitude
+	{ 22534, 	BZ["Blade's Edge Mountains"], L["Bloodmaul Geomancer"] }, 	-- Enchanting-Formula: Enchant Bracer - Spellpower
+	{ 22539, 	BZ["Old Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Aged Dalaran Wizard"]) }, 	-- Enchanting-Formula: Enchant Shield - Intellect
+	{ 22543, 	BZ["Mana-Tombs"], 			L["Ethereal Priest"] }, 	-- Enchanting-Formula: Enchant Boots - Fortitude
+	{ 22544, 	BZ["Auchenai Crypts"], 		L["Raging Skeleton"] }, 	-- Enchanting-Formula: Enchant Boots - Dexterity
+	{ 22545, 	BZ["Karazhan"], 			L["Phantom Stagehand"] }, 	-- Enchanting-Formula: Enchant Boots - Surefooted
+	{ 22551, 	BZ["Netherstorm"], 			L["Sunfury Researcher"] }, 	-- Enchanting-Formula: Enchant Weapon - Major Intellect
+	{ 22554, 	BZ["The Shattered Halls"], 	L["Shattered Hand Centurion"] }, 	-- Enchanting-Formula: Enchant 2H Weapon - Savagery
+	
+	{ 22555, 	BZ["Blade's Edge Mountains"], L["Bash'ir Arcanist"] }, 	-- Enchanting-Formula: Enchant Weapon - Major Spellpower
+	{ 22563, 	BZ["Blade's Edge Mountains"], L["Bash'ir Spell-Thief"] }, 	-- Enchanting-Formula: Superior Wizard Oil
+	
+	{ 22556, 	BZ["The Arcatraz"], 		L["Eredar Deathbringer"] }, 	-- Enchanting-Formula: Enchant 2H Weapon - Major Agility
+	{ 22562, 	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Madame Ruby"]) }, 	-- Enchanting-Formula: Superior Mana Oil
+	{ 22563, 	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Madame Ruby"]) }, 	-- Enchanting-Formula: Superior Wizard Oil
+	{ 22565, 	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Madame Ruby"]) }, 	-- Enchanting-Formula: Large Prismatic Shard
+	{ 25849, 	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Madame Ruby"]) }, 	-- Enchanting-Formula: Runed Eternium Rod
+	{ 28276, 	BZ["Shadowmoon Valley"], 	L["Eclipsion Archmage"] }, 	-- Enchanting-Formula: Enchant Cloak - Greater Arcane Resistance
+	{ 28277, 	BZ["Netherstorm"], 			L["Voidshrieker"] }, 	-- Enchanting-Formula: Enchant Cloak - Greater Shadow Resistance
+	{ 33307, 	BZ["Zul'Aman"], 			L["Random Boss"] }, 	-- Enchanting-Formula: Enchant Weapon - Executioner
+	
+	{ 37330, 	BZ["Icecrown"], 			L["Cult Researcher"] }, 	-- Enchanting-Formula: Enchant Cloak - Superior Arcane Resistance
+	{ 37330, 	BZ["Icecrown"], 			L["Frostbrood Spawn"] }, 	-- Enchanting-Formula: Enchant Cloak - Superior Arcane Resistance
+	
+	{ 37331, 	BZ["Icecrown"], 			L["Skeletal Runesmith"] }, 	-- Enchanting-Formula: Enchant Cloak - Superior Fire Resistance
+	{ 37332, 	BZ["Icecrown"], 			L["Damned Apothecary"] }, 	-- Enchanting-Formula: Enchant Cloak - Superior Frost Resistance
+	{ 37333, 	BZ["Icecrown"], 			L["Cult Alchemist"] }, 	-- Enchanting-Formula: Enchant Cloak - Superior Nature Resistance
+	{ 37334, 	BZ["Icecrown"], 			L["Cultist Shard Watcher"] }, 	-- Enchanting-Formula: Enchant Cloak - Superior Shadow Resistance
+	
+	{ 50406, 	BZ["Dragonblight"], 		L["Indu'le Fisherman"] }, 	-- Enchanting-Formula: Enchant Gloves - Angler
+	{ 50406, 	BZ["Dragonblight"], 		L["Indu'le Mystic"] }, 	-- Enchanting-Formula: Enchant Gloves - Angler
+	{ 50406, 	BZ["Dragonblight"], 		L["Indu'le Warrior"] }, 	-- Enchanting-Formula: Enchant Gloves - Angler
+	
+	
+	{ 16214, 	trainersName, 				BI["Enchanting"] }, 	-- Enchanting-Formula: Enchant Bracer - Greater Intellect
+	{ 16216, 	trainersName, 				BI["Enchanting"] }, 	-- Enchanting-Formula: Enchant Cloak - Greater Resistance
+	{ 16219, 	trainersName, 				BI["Enchanting"] }, 	-- Enchanting-Formula: Enchant Gloves - Greater Agility
+	{ 16222, 	trainersName, 				BI["Enchanting"] }, 	-- Enchanting-Formula: Enchant Shield - Vitality
+	{ 16242, 	trainersName, 				BI["Enchanting"] }, 	-- Enchanting-Formula: Enchant Chest - Major Mana
+	{ 16244, 	trainersName, 				BI["Enchanting"] }, 	-- Enchanting-Formula: Enchant Gloves - Greater Strength
+	{ 16245, 	trainersName, 				BI["Enchanting"] }, 	-- Enchanting-Formula: Enchant Boots - Greater Agility
+	
+	
+	-- -- -- -- --
 	-- Inscription
 	-- -- -- -- --
 	{ 46108, 	BZ["Grizzly Hills"], 		L["Silverbrook Villager"] },	-- Inscription-Technique: Rituals of the New Moon
@@ -5742,7 +5943,6 @@ local additionalLootTable = {
 	
 	{ 14634, 	BZ["Alterac Mountains"], 	format("%s: %s", L["Vendor"], L["Bro'kin"]) },	-- Alchemy-Recipe: Frost Oil
 	
-	{ 18257, 	BZ["Molten Core"], 			L["Random Boss"] },	-- Alchemy-Recipe: Major Rejuvenation Potion
 	
 	-- { 20011, 	BF["Zandalar Tribe"], 		rep_Revered },	-- Alchemy-Recipe: Mageblood Elixir
 	-- { 20012, 	BF["Zandalar Tribe"], 		rep_Friendly },	-- Alchemy-Recipe: Greater Dreamless Sleep Potion
@@ -6194,6 +6394,20 @@ local additionalLootTable = {
 local recipeFactionDuplicates	= {
 	Alliance	= {
 		-- -- -- -- --
+		-- Enchanting
+		-- -- -- -- --
+		{ 6349, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Tilli Thistlefuzz"]) },	-- Enchanting-Formula: Enchant 2H Weapon - Lesser Intellect
+		{ 11101, 	BZ["Ashenvale"], 			format("%s: %s", L["Vendor"], L["Dalria"]) },	-- Enchanting-Formula: Enchant Bracer - Lesser Strength
+		{ 11163, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Micha Yance"]) },	-- Enchanting-Formula: Enchant Bracer - Lesser Deflection
+		{ 11223, 	BZ["Darnassus"], 			format("%s: %s", L["Vendor"], L["Mythrin'dir"]) },	-- Enchanting-Formula: Enchant Bracer - Deflection
+		{ 16217, 	BZ["Darnassus"], 			format("%s: %s", L["Vendor"], L["Mythrin'dir"]) },	-- Enchanting-Formula: Enchant Shield - Greater Stamina
+		{ 22562, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Egomis"]) },	-- Enchanting-Formula: Superior Mana Oil
+		{ 22563, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Egomis"]) },	-- Enchanting-Formula: Superior Wizard Oil
+		{ 22565, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Egomis"]) },	-- Enchanting-Formula: Large Prismatic Shard
+		{ 25848, 	BZ["Hellfire Peninsula"], 	format("%s: %s", L["Vendor"], L["Vodesiin"]) },	-- Enchanting-Formula: Runed Adamantite Rod
+		
+		
+		-- -- -- -- --
 		-- Engineering
 		-- -- -- -- --
 		{ 7560, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Gearcutter Cogspinner"]) },	-- Engineering-Schematic: Gnomish Universal Remote
@@ -6377,6 +6591,23 @@ local recipeFactionDuplicates	= {
 		{ 21897,	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Netherweave Tunic
 	},
 	Horde	= {
+		-- -- -- -- --
+		-- Enchanting
+		-- -- -- -- --
+		{ 6349, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Kithas"]) },	-- Enchanting-Formula: Enchant 2H Weapon - Lesser Intellect
+		{ 6349, 	BZ["Silverpine Forest"], 	format("%s: %s", L["Vendor"], L["Leo Sarn"]) },	-- Enchanting-Formula: Enchant 2H Weapon - Lesser Intellect
+		{ 6349, 	BZ["Thunder Bluff"], 		format("%s: %s", L["Vendor"], L["Nata Dawnstrider"]) },	-- Enchanting-Formula: Enchant 2H Weapon - Lesser Intellect
+		{ 6377, 	BZ["Thunder Bluff"], 		format("%s: %s", L["Vendor"], L["Nata Dawnstrider"]) },	-- Enchanting-Formula: Enchant Boots - Minor Agility
+		{ 11101, 	BZ["Stonetalon Mountains"], format("%s: %s", L["Vendor"], L["Kulwia"]) },	-- Enchanting-Formula: Enchant Bracer - Lesser Strength
+		{ 11163, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Vendor"], L["Keena"]) },	-- Enchanting-Formula: Enchant Bracer - Lesser Deflection
+		{ 11223, 	BZ["Swamp of Sorrows"], 	format("%s: %s", L["Vendor"], L["Banalash"]) },	-- Enchanting-Formula: Enchant Bracer - Deflection
+		{ 16217, 	BZ["Undercity"], 			format("%s: %s", L["Vendor"], L["Daniel Bartlett"]) },	-- Enchanting-Formula: Enchant Shield - Greater Stamina
+		{ 22562, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Lyna"]) },	-- Enchanting-Formula: Superior Mana Oil
+		{ 22563, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Lyna"]) },	-- Enchanting-Formula: Superior Wizard Oil
+		{ 22565, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Lyna"]) },	-- Enchanting-Formula: Large Prismatic Shard
+		{ 25848, 	BZ["Terokkar Forest"], 		format("%s: %s", L["Vendor"], L["Rungor"]) },	-- Enchanting-Formula: Runed Adamantite Rod
+		
+		
 		-- -- -- -- --
 		-- Engineering
 		-- -- -- -- --
