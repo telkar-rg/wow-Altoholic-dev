@@ -11,7 +11,7 @@ local GREEN		= "|cFF00FF00"
 
 local lootTable, lootTableRev_Single, lootTableRev_Multi
 local LootSourceTooltipDB = {}
-local LootSourceTooltip_VERSION = 18.021
+local LootSourceTooltip_VERSION = 18.024
 
 
 local DataProviders

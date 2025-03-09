@@ -1612,6 +1612,10 @@ db.lootTable = {
 			18264,	-- Blacksmithing-Plans: Elemental Sharpening Stone
 			
 			18252,	-- Leatherworking-Pattern: Core Armor Kit
+			
+			18290,	-- Engineering-Schematic: Biznicks 247x128 Accurascope
+			18291,	-- Engineering-Schematic: Force Reactive Disk
+			18292,	-- Engineering-Schematic: Core Marksman Rifle
 		},
 	},
 	
@@ -1661,6 +1665,11 @@ db.lootTable = {
 			35302,	-- Leatherworking-Pattern: Cobrascale Gloves
 			29727,	-- Leatherworking-Pattern: Gloves of the Living Touch (World Drop)
 			35303,	-- Leatherworking-Pattern: Gloves of the Living Touch
+			
+			23883,	-- Engineering-Schematic: Healing Potion Injector (World Drop)
+			35310,	-- Engineering-Schematic: Healing Potion Injector
+			23884,	-- Engineering-Schematic: Mana  Potion Injector (World Drop)
+			35311,	-- Engineering-Schematic: Mana  Potion Injector
 		},
 	},
 	[ BZ["Karazhan"] ] = {
@@ -1794,7 +1803,20 @@ db.lootTable = {
 			35217, -- Leatherworking-Pattern: Embrace of the Phoenix
 			35218, -- Leatherworking-Pattern: Carapace of Sun and Shadow
 			35219, -- Leatherworking-Pattern: Sun-Drenched Scale Chestguard
+			
+			35273, 	-- Study of Advanced Smelting (Smelt Hardened Khorium)
 
+			35186, -- Engineering-Schematic: Annihilator Holo-Gogs
+			35187, -- Engineering-Schematic: Justicebringer 3000 Specs
+			35189, -- Engineering-Schematic: Powerheal 9000 Lens
+			35190, -- Engineering-Schematic: Hyper-Magnified Moon Specs
+			35191, -- Engineering-Schematic: Wonderheal XT68 Shades
+			35192, -- Engineering-Schematic: Primal-Attuned Goggles
+			35193, -- Engineering-Schematic: Lightning Etched Specs
+			35194, -- Engineering-Schematic: Surestrike Goggles v3.0
+			35195, -- Engineering-Schematic: Mayhem Projection Goggles
+			35196, -- Engineering-Schematic: Hard Khorium Goggles
+			35197, -- Engineering-Schematic: Quad Deathblow X44 Goggles
 		},
 	},
 	
@@ -2417,6 +2439,8 @@ db.lootTable = {
 			
 			2407,	 -- Leatherworking-Pattern: White Leather Jerkin
 			2408,	 -- Leatherworking-Pattern: Fine Leather Gloves
+			
+			4408,	 -- Engineering-Schematic: Mechanical Squirrel Box
 		},
 		[ format(L["Level %d-%d"], 15, 25) ] = {
 			3393,	 -- Alchemy-Recipe: Minor Magic Resistance Potion
@@ -2432,6 +2456,9 @@ db.lootTable = {
 			2406,	 -- Leatherworking-Pattern: Fine Leather Boots
 			2409,	 -- Leatherworking-Pattern: Dark Leather Tunic
 			4293,	 -- Leatherworking-Pattern: Hillman's Leather Vest
+			
+			4409,	 -- Engineering-Schematic: Small Seaforium Charge
+			6716,	 -- Engineering-Schematic: EZ-Thro Dynamite
 		},
 		[ format(L["Level %d-%d"], 20, 30) ] = {
 			3394,	 -- Alchemy-Recipe: Potion of Curing
@@ -2449,6 +2476,9 @@ db.lootTable = {
 			
 			4294,	 -- Leatherworking-Pattern: Hillman's Belt
 			7360,	 -- Leatherworking-Pattern: Dark Leather Gloves
+			
+			4410,	 -- Engineering-Schematic: Shadow Goggles
+			4411,	 -- Engineering-Schematic: Flame Deflector
 		},
 		[ format(L["Level %d-%d"], 25, 35) ] = {
 			3396,	 -- Alchemy-Recipe: Elixir of Lesser Agility
@@ -2474,6 +2504,10 @@ db.lootTable = {
 			7361,	 -- Leatherworking-Pattern: Herbalist's Gloves
 			7363,	 -- Leatherworking-Pattern: Pilferer's Gloves
 			7364,	 -- Leatherworking-Pattern: Heavy Earthen Gloves
+			
+			4412,	 -- Engineering-Schematic: Moonsight Rifle
+			4414,	 -- Engineering-Schematic: Portable Bronze Mortar
+			10601,	 -- Engineering-Schematic: Bright-Eye Goggles
 		},
 		[ format(L["Level %d-%d"], 30, 40) ] = {
 			867, 	 -- Gloves of Holy Might
@@ -2530,6 +2564,12 @@ db.lootTable = {
 			7452,	 -- Leatherworking-Pattern: Dusky Boots
 			7453,	 -- Leatherworking-Pattern: Swift Boots
 			8384,	 -- Leatherworking-Pattern: Comfortable Leather Hat
+			
+			4416,	 -- Engineering-Schematic: Goblin Land Mine
+			4417,	 -- Engineering-Schematic: Large Seaforium Charge
+			10603,	 -- Engineering-Schematic: Catseye Ultra Goggles
+			10604,	 -- Engineering-Schematic: Mithril Heavy-bore Rifle
+			10606,	 -- Engineering-Schematic: Parachute Cloak
 		},
 		[ format(L["Level %d-%d"], 40, 50) ] = {
 			809, 	 -- Bloodrazor
@@ -2592,6 +2632,8 @@ db.lootTable = {
 			8400,	 -- Leatherworking-Pattern: Tough Scorpid Shoulders
 			8401,	 -- Leatherworking-Pattern: Tough Scorpid Leggings
 			8402,	 -- Leatherworking-Pattern: Tough Scorpid Helm
+			
+			10608,	 -- Engineering-Schematic: Sniper Scope
 		},
 		[ format(L["Level %d-%d"], 50, 60) ] = {
 			647, 	 -- Destiny
@@ -2641,6 +2683,8 @@ db.lootTable = {
 			15743,	 -- Leatherworking-Pattern: Heavy Scorpid Belt
 			15746,	 -- Leatherworking-Pattern: Chimeric Leggings
 			15755,	 -- Leatherworking-Pattern: Chimeric Vest
+			
+			16044,	 -- Engineering-Schematic: Lifelike Mechanical Toad
 		},
 		[ format(L["Level %d-%d"], 55, 60) ] = {
 			13518,	 -- Alchemy-Recipe: Potion of Petrification
@@ -2667,6 +2711,8 @@ db.lootTable = {
 			22388,	 -- Blacksmithing-Plans: Titanic Leggings
 			22389,	 -- Blacksmithing-Plans: Sageblade
 			22390,	 -- Blacksmithing-Plans: Persuader
+			
+			16055,	 -- Engineering-Schematic: Arcane Bomb
 		},
 		
 		[ BZ["The Barrens"] ] = {
@@ -2721,6 +2767,10 @@ db.lootTable = {
 			29718,	 -- Leatherworking-Pattern: Drums of Speed
 			34173,	 -- Leatherworking-Pattern: Drums of Speed
 			34172,	 -- Leatherworking-Pattern: Drums of Speed
+			
+			23802,	 -- Engineering-Schematic: Ornate Khorium Rifle
+			23804,	 -- Engineering-Schematic: Power Amplification Goggles
+			25887,	 -- Engineering-Schematic: Purple Smoke Flare
 		},
 		[ format(L["Level %d-%d"], 68, 70) ] = {
 			24302,	 -- Tailoring-Pattern: Unyielding Girdle
@@ -2762,7 +2812,10 @@ db.lootTable = {
 			29732,	 -- Leatherworking-Pattern: Netherdrake Helm
 			29733,	 -- Leatherworking-Pattern: Netherdrake Gloves
 			29734,	 -- Leatherworking-Pattern: Thick Netherscale Breastplate
-
+			
+			23810,	 -- Engineering-Schematic: Crashin' Thrashin' Robot
+			23883,	 -- Engineering-Schematic: Healing Potion Injector
+			23884,	 -- Engineering-Schematic: Mana Potion Injector
 		},
 		[ BZ["Northrend"] ] = {
 			37254,  -- Super Simian Sphere
@@ -5426,6 +5479,105 @@ local npcList = {
 
 local additionalLootTable = {
 	-- -- -- -- --
+	-- Inscription
+	-- -- -- -- --
+	{ 46108, 	BZ["Grizzly Hills"], 		L["Silverbrook Villager"] },	-- Inscription-Technique: Rituals of the New Moon
+	
+	
+	-- -- -- -- --
+	-- Engineering
+	-- -- -- -- --
+	{ 4413, 	BZ["Gnomeregan"], 			BB["Mekgineer Thermaplugg"] },	-- Engineering-Schematic: Discombobulator Ray
+	{ 4413, 	BZ["Gnomeregan"], 			"Security DELTA Data Access Card" },	-- Engineering-Schematic: Discombobulator Ray
+	{ 4415, 	BZ["Gnomeregan"], 			BB["Mekgineer Thermaplugg"] },	-- Engineering-Schematic: Craftsman's Monocle
+	{ 6672, 	BZ["Badlands"], 			L["Quest rewards"] },	-- Engineering-Schematic: Flash Bomb
+	
+	{ 7560, 	BZ["Thousand Needles"], 	format("%s: %s", L["Vendor"], L["Jinky Twizzlefixxit"]) },	-- Engineering-Schematic: Gnomish Universal Remote
+	
+	{ 7561, 	BZ["Duskwood"], 			format("%s: %s", L["Vendor"], L["Kzixx"]) },	-- Engineering-Schematic: Goblin Jumper Cables
+	{ 7561, 	BZ["Stonetalon Mountains"], format("%s: %s", L["Vendor"], L["Veenix"]) },	-- Engineering-Schematic: Goblin Jumper Cables
+	{ 7561, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Zixil"]) },	-- Engineering-Schematic: Goblin Jumper Cables
+	
+	{ 7742, 	BZ["Gnomeregan"], 			BB["Mekgineer Thermaplugg"] },	-- Engineering-Schematic: Gnomish Cloaking Device
+	{ 7742, 	BZ["Alterac Mountains"], 	format("%s: %s", L["Vendor"], L["Zan Shivsproket"]) },	-- Engineering-Schematic: Gnomish Cloaking Device
+	
+	{ 10602, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Knaz Blunderflame"]) }, 	-- Engineering-Schematic: Deadly Scope
+	{ 10602, 	BZ["Burning Steppes"], 		format("%s: %s", L["Vendor"], L["Yuka Screwspigot"]) }, 	-- Engineering-Schematic: Deadly Scope
+	
+	{ 10602, 	BZ["Azshara"], 				format("%s: %s", L["Vendor"], L["Jubie Gadgetspring"]) }, 	-- Engineering-Schematic: Deepdive Helmet
+	
+	{ 10609, 	BZ["The Hinterlands"], 		format("%s: %s", L["Vendor"], L["Ruppo Zipcoil"]) }, 	-- Engineering-Schematic: Mithril Mechanical Dragonling
+	
+	{ 11827, 	BZ["Gnomeregan"], 			L["Peacekeeper Security Suit"] }, 	-- Engineering-Schematic: Lil' Smoky
+	{ 11827, 	BZ["Gnomeregan"], 			L["Arcane Nullifier X-21"] }, 	-- Engineering-Schematic: Lil' Smoky
+	{ 11827, 	BZ["Gnomeregan"], 			BB["Crowd Pummeler 9-60"] }, 	-- Engineering-Schematic: Lil' Smoky
+	
+	{ 13308, 	BZ["Alterac Mountains"], 	format("%s: %s", L["Vendor"], L["Rizz Loosebolt"]) }, 	-- Engineering-Schematic: Ice Deflector
+	{ 13309, 	BZ["Thousand Needles"], 	format("%s: %s", L["Vendor"], L["Jinky Twizzlefixxit"]) }, 	-- Engineering-Schematic: Lovingly Crafted Boomstick
+	{ 13310, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Mazk Snipeshot"]) }, 	-- Engineering-Schematic: Accurate Scope
+	{ 13311, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Gnaz Blunderflame"]) }, 	-- Engineering-Schematic: Mechanical Dragonling
+	{ 14639, 	BZ["The Barrens"], 			format("%s: %s", L["Vendor"], L["Gagsprocket"]) }, 	-- Engineering-Schematic: Minor Recombobulator
+	{ 16046, 	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Xizzer Fizzbolt"]) }, 	-- Engineering-Schematic: Masterwork Target Dummy
+	{ 16048, 	BZ["Blackrock Depths"], 	L["Doomforge Craftsman"] }, 	-- Engineering-Schematic: Dark Iron Rifle
+	{ 16049, 	BZ["Blackrock Depths"], 	L["Weapon Technician"] }, 	-- Engineering-Schematic: Dark Iron Bomb
+	{ 16050, 	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Xizzer Fizzbolt"]) }, 	-- Engineering-Schematic: Delicate Arcanite Converter
+	{ 16052, 	BZ["Stratholme"], 			L["Crimson Inquisitor"] }, 	-- Engineering-Schematic: Voice Amplification Modulator
+	{ 16054, 	BZ["Winterspring"], 		L["Cobalt Mageweaver"] }, 	-- Engineering-Schematic: Arcanite Dragonling
+	{ 16056, 	BZ["Eastern Plaguelands"], 	L["Mossflayer Shadowhunter"] }, 	-- Engineering-Schematic: Flawless Arcanite Rifle
+	{ 16056, 	BZ["Orgrimmar"], 			format("%s: %s (%s)", L["Vendor"], L["Sovik"], FACTION_HORDE) }, 	-- Engineering-Schematic: Red Firework
+	{ 18648, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Crazk Sparks"]) }, 	-- Engineering-Schematic: Green Firework
+	{ 18648, 	BZ["The Barrens"], 			format("%s: %s", L["Vendor"], L["Gagsprocket"]) }, 	-- Engineering-Schematic: Green Firework
+	{ 18649, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Darian Singh"], FACTION_ALLIANCE) }, 	-- Engineering-Schematic: Blue Firework
+	{ 18649, 	BZ["Ironforge"], 			format("%s: %s (%s)", L["Vendor"], L["Gearcutter Cogspinner"], FACTION_ALLIANCE) }, 	-- Engineering-Schematic: Blue Firework
+	{ 18650, 	BZ["Tanaris"], 				format("%s: %s", L["Vendor"], L["Blizrik Buckshot"]) }, 	-- Engineering-Schematic: EZ-Thro Dynamite II
+	{ 18652, 	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Xizzer Fizzbolt"]) }, 	-- Engineering-Schematic: Gyrofreeze Ice Reflector
+	{ 18653, 	BZ["Blackrock Depths"], 	BB["Plugger Spazzring"] },	-- Engineering-Schematic: Goblin Jumper Cables XL
+	{ 18654, 	BZ["Blackrock Depths"], 	L["Weapon Technician"] },	-- Engineering-Schematic: Gnomish Alarm-o-Bot
+	{ 18655, 	BZ["Dire Maul"], 			"Gordok Tribute" },	-- Engineering-Schematic: Major Recombobulator
+	{ 18656, 	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Xizzer Fizzbolt"]) }, 	-- Engineering-Schematic: Powerful Seaforium Charge
+	{ 18658, 	BZ["Stratholme"], 			L["Crimson Inquisitor"] },	-- Engineering-Schematic: Ultra-Flash Shadow Reflector
+	{ 18661, 	BZ["Blackrock Depths"], 	L["Weapon Technician"] },	-- Engineering-Schematic: World Enlarger
+	{ 19027, 	BZ["Feralas"], 				format("%s: %s", L["Vendor"], L["Zorbin Fandazzle"]) }, 	-- Engineering-Schematic: Snake Burst Firework
+	
+	{ 23799, 	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Viggz Shinesparked"]) }, 	-- Engineering-Schematic: Adamantite Rifle
+	{ 23800, 	BZ["Blade's Edge Mountains"], L["Doomforge Engineer"] }, 	-- Engineering-Schematic: Felsteel Boomstick
+	{ 23806, 	BZ["Shadowmoon Valley"], 	L["Mo'arg Weaponsmith"] }, 	-- Engineering-Schematic: Hyper-Vision Goggles
+	{ 23806, 	BZ["Netherstorm"], 			L["Sunfury Bowman"] }, 	-- Engineering-Schematic: Khorium Scope
+	{ 23811, 	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Wind Trader Lathrai"]) }, 	-- Engineering-Schematic: White Smoke Flare
+	{ 23814, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Fedryen Swiftspear"]) }, 	-- Engineering-Schematic: Green Smoke Flare
+	{ 23815, 	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Wind Trader Lathrai"]) }, 	-- Engineering-Schematic: Adamantite Shell Machine
+	{ 23816, 	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Wind Trader Lathrai"]) }, 	-- Engineering-Schematic: Fel Iron Toolbox
+	
+	{ 23817, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Bryan Landers"]) }, 	-- Engineering-Schematic: Titanium Toolbox
+	{ 23817, 	BZ["Icecrown"], 			format("%s: %s", L["Vendor"], L["Fizzix Blastbolt"]) }, 	-- Engineering-Schematic: Titanium Toolbox
+	
+	{ 23874, 	BF["The Consortium"], 		rep_Revered }, 	-- Engineering-Schematic: Elemental Seaforium Charge
+	{ 23888, 	BZ["Zangarmarsh"], 			L["Quest rewards"] },	-- Engineering-Schematic: Zapthrottle Mote Extractor
+	
+	{ 32381, 	BZ["Shattrath City"], 		format("%s: %s", L["Vendor"], L["Viggz Shinesparked"]) }, 	-- Engineering-Schematic: Fused Wiring
+	{ 32381, 	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Xizzer Fizzbolt"]) }, 	-- Engineering-Schematic: Fused Wiring
+	
+	{ 33804, 	BZ["Netherstorm"], 			L["Sunfury Archer"] },	-- Engineering-Schematic: Adamantite Arrow Maker
+	{ 34114, 	BZ["Blade's Edge Mountains"], L["Gan'arg Analyzer"] },	-- Engineering-Schematic: Field Repair Bot 110G
+	
+	
+	{ 10605, 	trainersName, 				BI["Engineering"] }, 	-- Engineering-Schematic: Spellpower Goggles Xtreme
+	{ 16041, 	trainersName, 				BI["Engineering"] }, 	-- Engineering-Schematic: Thorium Grenade
+	{ 16042, 	trainersName, 				BI["Engineering"] }, 	-- Engineering-Schematic: Thorium Widget
+	{ 16043, 	trainersName, 				BI["Engineering"] }, 	-- Engineering-Schematic: Thorium Rifle
+	{ 16045, 	trainersName, 				BI["Engineering"] }, 	-- Engineering-Schematic: Spellpower Goggles Xtreme Plus
+	{ 16047, 	trainersName, 				BI["Engineering"] }, 	-- Engineering-Schematic: Thorium Tube
+	{ 16051, 	trainersName, 				BI["Engineering"] }, 	-- Engineering-Schematic: Thorium Shells
+	{ 19825, 	trainersName, 				BI["Engineering"] }, 	-- Engineering-Schematic: Master Engineer's Goggles
+	
+	
+	-- -- -- -- --
+	-- Mining
+	-- -- -- -- --
+	{ 44956, 	BZ["Blackwing Lair"], 		L["Master Elemental Shaper Krixix"] },	-- Goblin's Guide to Elementium (Smelt Elementium)
+	
+	
+	-- -- -- -- --
 	-- Leatherworking
 	-- -- -- -- --
 	{ 5083, 	BZ["Thunder Bluff"], 		format("%s (%s)", L["Quest rewards"], FACTION_HORDE) },	-- Leatherworking-Pattern: Kodo Hide Bag
@@ -5476,7 +5628,7 @@ local additionalLootTable = {
 	{ 15764, 	BZ["Azshara"], 				L["Son of Arkkoroc"] },	-- Leatherworking-Pattern: Stormshroud Shoulders
 	{ 15770, 	BZ["Blackrock Depths"], 	L["Anvilrage Marshal"] },	-- Leatherworking-Pattern: Black Dragonscale Shoulders
 	{ 15771, 	BZ["Western Plaguelands"], 	L["Decaying Horror"] },	-- Leatherworking-Pattern: Living Breastplate
-	{ 15771, 	BZ["Un'Goro Crater"], 		"Ooze Mobs" },	-- Leatherworking-Pattern: Devilsaur Leggingss
+	{ 15771, 	BZ["Un'Goro Crater"], 		L["Oozes"] },	-- Leatherworking-Pattern: Devilsaur Leggingss
 	{ 15774, 	BZ["Burning Steppes"], 		L["Blackrock Battlemaster"] },	-- Leatherworking-Pattern: Heavy Scorpid Shoulders
 	{ 15775, 	BZ["Blackrock Spire"], 		L["Firebrand Legionnaire"] },	-- Leatherworking-Pattern: Volcanic Shoulders
 	{ 15779, 	BZ["Winterspring"], 		L["Winterfall Ursa"] },	-- Leatherworking-Pattern: Frostsaber Tunic
@@ -5495,7 +5647,7 @@ local additionalLootTable = {
 	{ 29669, 	BZ["Sethekk Halls"],		L["Time-Lost Shadowmage"] },	-- Leatherworking-Pattern: Shadow Armor Kit
 	{ 29672, 	BZ["The Arcatraz"],			L["Gargantuan Abyssal"] },	-- Leatherworking-Pattern: Flame Armor Kit
 	
-	{ 34491, 	BZ["Terokkar Forest"], 		"Gordunni Mobs" },	-- Leatherworking-Pattern: Bag of Many Hides
+	{ 34491, 	BZ["Terokkar Forest"], 		L["Gordunni Ogre"] },	-- Leatherworking-Pattern: Bag of Many Hides
 	
 	{ 44559, 	BZ["Icecrown"], 			L["Skeletal Runesmith"] },	-- Leatherworking-Pattern: Fur Lining - Fire Resist
 	{ 44560, 	BZ["Icecrown"], 			L["Damned Apothecary"] },	-- Leatherworking-Pattern: Fur Lining - Frost Resist
@@ -6042,6 +6194,24 @@ local additionalLootTable = {
 local recipeFactionDuplicates	= {
 	Alliance	= {
 		-- -- -- -- --
+		-- Engineering
+		-- -- -- -- --
+		{ 7560, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Gearcutter Cogspinner"]) },	-- Engineering-Schematic: Gnomish Universal Remote
+		{ 13309, 	BZ["Wetlands"], 			format("%s: %s", L["Vendor"], L["Fradd Swiftgear"]) }, 	-- Engineering-Schematic: Lovingly Crafted Boomstick
+		
+		{ 14639, 	BZ["Wetlands"], 			format("%s: %s", L["Vendor"], L["Fradd Swiftgear"]) }, 	-- Engineering-Schematic: Minor Recombobulator
+		{ 14639, 	BZ["Gnomeregan"], 			format("%s: %s", L["Vendor"], L["Namdo Bizzfizzle"]) }, 	-- Engineering-Schematic: Minor Recombobulator
+		
+		{ 22729, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Gearcutter Cogspinner"]) },	-- Engineering-Schematic: Steam Tonk Controller
+		{ 23799, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Feera"]) }, 	-- Engineering-Schematic: Adamantite Rifle
+		{ 23803, 	BZ["Hellfire Peninsula"], 	format("%s: %s", L["Vendor"], L["Lebowski"]) }, 	-- Engineering-Schematic: Cogspinner Goggles
+		{ 23805, 	BZ["Hellfire Peninsula"], 	format("%s: %s", L["Vendor"], L["Lebowski"]) }, 	-- Engineering-Schematic: Ultra-Spectropic Detection Goggles
+		{ 23805, 	BZ["Shadowmoon Valley"], 	format("%s: %s", L["Vendor"], L["Daggle Ironshaper"]) }, 	-- Engineering-Schematic: Adamantite Scope
+		{ 23811, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Feera"]) }, 	-- Engineering-Schematic: White Smoke Flare
+		{ 23815, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Feera"]) }, 	-- Engineering-Schematic: Adamantite Shell Machine
+		{ 23816, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Feera"]) }, 	-- Engineering-Schematic: Fel Iron Toolbox
+		
+		-- -- -- -- --
 		-- Leatherworking
 		-- -- -- -- --
 		{ 5083, 	BZ["Westfall"], 			format("%s: %s", L["Vendor"], L["Gina MacGregor"]) },	-- Leatherworking-Pattern: Murloc Scale Belt
@@ -6207,6 +6377,20 @@ local recipeFactionDuplicates	= {
 		{ 21897,	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Netherweave Tunic
 	},
 	Horde	= {
+		-- -- -- -- --
+		-- Engineering
+		-- -- -- -- --
+		{ 22729, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Sovik"]) },	-- Engineering-Schematic: Steam Tonk Controller
+		{ 23799, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Yatheon"]) }, 	-- Engineering-Schematic: Adamantite Rifle
+		{ 23803, 	BZ["Hellfire Peninsula"], 	format("%s: %s", L["Vendor"], L["Mixie Farshot"]) }, 	-- Engineering-Schematic: Cogspinner Goggles
+		{ 23805, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Captured Gnome"]) }, 	-- Engineering-Schematic: Ultra-Spectropic Detection Goggles
+		{ 23805, 	BZ["Hellfire Peninsula"], 	format("%s: %s", L["Vendor"], L["Mixie Farshot"]) }, 	-- Engineering-Schematic: Adamantite Scope
+		{ 23811, 	BZ["Zangarmarsh"], 			format("%s: %s", L["Vendor"], L["Captured Gnome"]) }, 	-- Engineering-Schematic: White Smoke Flare
+		{ 23811, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Yatheon"]) }, 	-- Engineering-Schematic: White Smoke Flare
+		{ 23815, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Yatheon"]) }, 	-- Engineering-Schematic: Adamantite Shell Machine
+		{ 23816, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Yatheon"]) }, 	-- Engineering-Schematic: Fel Iron Toolbox
+		
+		
 		-- -- -- -- --
 		-- Leatherworking
 		-- -- -- -- --
