@@ -868,6 +868,14 @@ L["Jewelcrafting Daily"]        = true
 L["Barrel of Fish"]             = true
 L["Crate of Meat"]              = true
 L["Dalaran Cooking Award"]      = true
+L["Dalaran Jewelcrafter's Token"] = true
+L["Simply Enchanting"]          = true
+L["Dream Shard"]                = true
+L["Abyss Crystal"]              = true
+L["Legendary Leathers"]         = true
+L["Heavy Borean Leather"]       = true
+L["Arctic Fur"]                 = true
+L["Mammoths"]                   = true
 
 L["Aaron Hollman"]              = true
 L["Abigail Shiel"]              = true

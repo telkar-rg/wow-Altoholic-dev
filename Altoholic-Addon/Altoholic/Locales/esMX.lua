@@ -726,6 +726,14 @@ L["Jewelcrafting Daily"]        = "Joyería diaria"
 L["Barrel of Fish"]             = "Barrica de pescado"
 L["Crate of Meat"]              = "Cajón de carne"
 L["Dalaran Cooking Award"]      = "Premio de cocina de Dalaran"
+L["Dalaran Jewelcrafter's Token"] = "Muestra de joyero de Dalaran"
+L["Simply Enchanting"]          = "Simplemente encantador"
+L["Dream Shard"]                = "Fragmento onírico"
+L["Abyss Crystal"]              = "Cristal abisal"
+L["Legendary Leathers"]         = "Pieles legendarias"
+L["Heavy Borean Leather"]       = "Cuero boreal pesado"
+L["Arctic Fur"]                 = "Pelaje ártico"
+L["Mammoths"]                   = "Mamuts"
 
 L["Aaron Hollman"]              = true
 L["Abigail Shiel"]              = true

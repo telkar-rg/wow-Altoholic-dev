@@ -1695,6 +1695,15 @@ db.lootTable = {
 			35298,	-- Enchanting-Formula: Enchant Boots - Vitality
 			28279,	-- Enchanting-Formula: Enchant Boots - Cat's Swiftness (World Drop)
 			35299,	-- Enchanting-Formula: Enchant Boots - Cat's Swiftness
+			
+			24199,	-- Jewelcrafting-Design: Solid Star of Elune (World Drop)
+			35304,	-- Jewelcrafting-Design: Solid Star of Elune
+			24196,	-- Jewelcrafting-Design: Runed Living Ruby (World Drop)
+			35305,	-- Jewelcrafting-Design: Runed Living Ruby
+			24192,	-- Jewelcrafting-Design: Bright Living Ruby (World Drop)
+			35306,	-- Jewelcrafting-Design: Bright Living Ruby
+			24205,	-- Jewelcrafting-Design: Rigid Dawnstone (World Drop)
+			35307,	-- Jewelcrafting-Design: Rigid Dawnstone
 		},
 	},
 	[ BZ["Karazhan"] ] = {
@@ -1752,6 +1761,23 @@ db.lootTable = {
 			31096,	-- Helm of the Forgotten Vanquisher
 			31097,	-- Helm of the Forgotten Conqueror
 		},
+		[ L["Random Boss"] ] = {
+			32285, -- Jewelcrafting-Design: Flashing Crimson Spinel
+			32289, -- Jewelcrafting-Design: Stormy Empyrean Sapphire
+			32295, -- Jewelcrafting-Design: Mystic Lionseye
+			32296, -- Jewelcrafting-Design: Great Lionseye
+			32297, -- Jewelcrafting-Design: Sovereign Shadowsong Amethyst
+			32298, -- Jewelcrafting-Design: Shifting Shadowsong Amethyst
+			32303, -- Jewelcrafting-Design: Inscribed Pyrestone
+			32307, -- Jewelcrafting-Design: Veiled Pyrestone
+			
+			32295, -- Jewelcrafting-Design: Mystic Lionseye
+			32296, -- Jewelcrafting-Design: Great Lionseye
+			32297, -- Jewelcrafting-Design: Sovereign Shadowsong Amethyst
+			32298, -- Jewelcrafting-Design: Shifting Shadowsong Amethyst
+			32303, -- Jewelcrafting-Design: Inscribed Pyrestone
+			32307, -- Jewelcrafting-Design: Veiled Pyrestone
+		},
 	},
 	[ BZ["Black Temple"] ] = {
 		[ BB["Illidan Stormrage"] ] = {
@@ -1769,6 +1795,7 @@ db.lootTable = {
 			31102,	-- Pauldrons of the Forgotten Vanquisher
 			31103,	-- Pauldrons of the Forgotten Protector
 		},
+		
 		[ L["Trash Mobs"] ] = {
 			32753,	-- Tailoring-Pattern: Swiftheal Mantle
 			32754,	-- Tailoring-Pattern: Bracers of Nimble Thought
@@ -1842,6 +1869,13 @@ db.lootTable = {
 			35195, -- Engineering-Schematic: Mayhem Projection Goggles
 			35196, -- Engineering-Schematic: Hard Khorium Goggles
 			35197, -- Engineering-Schematic: Quad Deathblow X44 Goggles
+			
+			35198, -- Jewelcrafting-Design: Loop of Forged Power
+			35199, -- Jewelcrafting-Design: Ring of Flowing Life
+			35200, -- Jewelcrafting-Design: Hard Khorium Band
+			35201, -- Jewelcrafting-Design: Pendant of Sunfire
+			35202, -- Jewelcrafting-Design: Amulet of Flowing Life
+			35203, -- Jewelcrafting-Design: Hard Khorium Choker
 		},
 	},
 	
@@ -2579,6 +2613,8 @@ db.lootTable = {
 			
 			11167,	 -- Enchanting-Formula: Enchant Boots - Lesser Spirit
 			11168,	 -- Enchanting-Formula: Enchant Shield - Lesser Block
+			
+			20974,	 -- Jewelcrafting-Design: Jade Pendant of Blasting
 		},
 		[ format(L["Level %d-%d"], 35, 45) ] = {
 			3832,	 -- Alchemy-Recipe: Elixir of Detect Lesser Invisibility
@@ -2614,6 +2650,9 @@ db.lootTable = {
 			
 			11202,	 -- Enchanting-Formula: Enchant Shield - Stamina
 			11204,	 -- Enchanting-Formula: Enchant Bracer - Greater Spirit
+			
+			20976,	 -- Jewelcrafting-Design: Citrine Pendant of Golden Healing
+			21940,	 -- Jewelcrafting-Design: Golden Hare
 		},
 		[ format(L["Level %d-%d"], 40, 50) ] = {
 			809, 	 -- Bloodrazor
@@ -2685,6 +2724,11 @@ db.lootTable = {
 			11225,	 -- Enchanting-Formula: Enchant Bracer - Greater Stamina
 			11226,	 -- Enchanting-Formula: Enchant Gloves - Riding Skill
 			16215,	 -- Enchanting-Formula: Enchant Boots - Greater Stamina
+			
+			21944,	 -- Jewelcrafting-Design: Truesilver Boar
+			21945,	 -- Jewelcrafting-Design: The Aquamarine Ward
+			21947,	 -- Jewelcrafting-Design: Gem Studded Band
+			21949,	 -- Jewelcrafting-Design: Ruby Serpent
 		},
 		[ format(L["Level %d-%d"], 50, 60) ] = {
 			647, 	 -- Destiny
@@ -2739,6 +2783,8 @@ db.lootTable = {
 			
 			16218,	 -- Enchanting-Formula: Enchant Bracer - Superior Spirit
 			16220,	 -- Enchanting-Formula: Enchant Boots - Spirit
+			
+			21953,	 -- Jewelcrafting-Design: Emerald Owl
 		},
 		[ format(L["Level %d-%d"], 55, 60) ] = {
 			13518,	 -- Alchemy-Recipe: Potion of Petrification
@@ -2809,8 +2855,8 @@ db.lootTable = {
 			
 			24296,	 -- Tailoring-Pattern: Unyielding Bracers
 			24297,	 -- Tailoring-Pattern: Bracers of Havok
-			24298,	 -- Tailoring-Pattern: Bracers of Havok
-			24299,	 -- Tailoring-Pattern: Bracers of Havok
+			24298,	 -- Tailoring-Pattern: Blackstrike Bracers
+			24299,	 -- Tailoring-Pattern: Cloak of the Black Void
 			24300,	 -- Tailoring-Pattern: Cloak of Eternity
 			24301,	 -- Tailoring-Pattern: White Remedy Cape
 			
@@ -2838,6 +2884,57 @@ db.lootTable = {
 			22557,	 -- Enchanting-Formula: Enchant Weapon - Battlemaster
 			22558,	 -- Enchanting-Formula: Enchant Weapon - Spellsurge
 			28270,	 -- Enchanting-Formula: Enchant Chest - Major Resilience
+			
+			23154,	 -- Jewelcrafting-Design: Stormy Azure Moonstone
+			24163,	 -- Jewelcrafting-Design: Heavy Felsteel Ring
+			24164,	 -- Jewelcrafting-Design: Delicate Eternium Ring
+			24165,	 -- Jewelcrafting-Design: Blazing Eternium Band
+			24166,	 -- Jewelcrafting-Design: Thick Felsteel Necklace
+			24167,	 -- Jewelcrafting-Design: Living Ruby Pendant
+			24168,	 -- Jewelcrafting-Design: Braided Eternium Chain
+			24169,	 -- Jewelcrafting-Design: Eye of the Night
+			24170,	 -- Jewelcrafting-Design: Embrace of the Dawn
+			24171,	 -- Jewelcrafting-Design: Chain of the Twilight Owl
+			
+			24192, -- Jewelcrafting-Design: Bright Living Ruby
+			24193, -- Jewelcrafting-Design: Bold Living Ruby
+			24194, -- Jewelcrafting-Design: Delicate Living Ruby
+			24195, -- Jewelcrafting-Design: Teardrop Living Ruby
+			24196, -- Jewelcrafting-Design: Runed Living Ruby
+			24197, -- Jewelcrafting-Design: Subtle Living Ruby
+			24198, -- Jewelcrafting-Design: Flashing Living Ruby
+			24199, -- Jewelcrafting-Design: Solid Star of Elune
+			24200, -- Jewelcrafting-Design: Sparkling Star of Elune
+			24201, -- Jewelcrafting-Design: Lustrous Star of Elune
+			24202, -- Jewelcrafting-Design: Stormy Star of Elune
+			24203, -- Jewelcrafting-Design: Brilliant Dawnstone
+			24204, -- Jewelcrafting-Design: Smooth Dawnstone
+			24205, -- Jewelcrafting-Design: Rigid Dawnstone
+			24206, -- Jewelcrafting-Design: Gleaming Dawnstone
+			24207, -- Jewelcrafting-Design: Thick Dawnstone
+			24209, -- Jewelcrafting-Design: Sovereign Nightseye
+			24210, -- Jewelcrafting-Design: Shifting Nightseye
+			24211, -- Jewelcrafting-Design: Glowing Nightseye
+			24212, -- Jewelcrafting-Design: Royal Nightseye
+			24213, -- Jewelcrafting-Design: Inscribed Noble Topaz
+			24214, -- Jewelcrafting-Design: Potent Noble Topaz
+			24215, -- Jewelcrafting-Design: Luminous Noble Topaz
+			24216, -- Jewelcrafting-Design: Glinting Noble Topaz
+			24217, -- Jewelcrafting-Design: Enduring Talasite
+			24218, -- Jewelcrafting-Design: Radiant Talasite
+			24219, -- Jewelcrafting-Design: Dazzling Talasite
+			24220, -- Jewelcrafting-Design: Jagged Talasite
+			
+			25905, -- Jewelcrafting-Design: Tenacious Earthstorm Diamond
+			25906, -- Jewelcrafting-Design: Brutal Earthstorm Diamond
+			25907, -- Jewelcrafting-Design: Destructive Skyfire Diamond
+			25909, -- Jewelcrafting-Design: Mystical Skyfire Diamond
+			
+			31875, -- Jewelcrafting-Design: Great Dawnstone
+			31876, -- Jewelcrafting-Design: Balanced Nightseye
+			31877, -- Jewelcrafting-Design: Infused Nightseye
+			31878, -- Jewelcrafting-Design: Veiled Noble Topaz
+			31879, -- Jewelcrafting-Design: Wicked Noble Topaz
 		},
 		[ format(L["Level %d-%d"], 68, 70) ] = {
 			24302,	 -- Tailoring-Pattern: Unyielding Girdle
@@ -2909,91 +3006,31 @@ db.lootTable = {
 			42177, 	-- Tailoring-Pattern: Red Workman's Shirt
 			42178, 	-- Tailoring-Pattern: Rustic Workman's Shirt
 			42179, 	-- Tailoring-Pattern: Green Workman's Shirt
+			
+			41777, -- Design: Etched Monarch Topaz
+			41778, -- Design: Resolute Monarch Topaz
+			41779, -- Design: Stalwart Monarch Topaz
+			41780, -- Design: Champion's Monarch Topaz
+			41781, -- Design: Misty Forest Emerald
+			41782, -- Design: Shining Forest Emerald
+			41783, -- Design: Purified Twilight Opal
+			41784, -- Design: Sovereign Twilight Opal
+			41785, -- Design: Tenuous Twilight Opal
+			41786, -- Design: Destructive Skyflare Diamond
+			41787, -- Design: Thundering Skyflare Diamond
+			41788, -- Design: Beaming Earthsiege Diamond
+			41789, -- Design: Inscribed Monarch Topaz
 		},
 		
 		[format("%s (%s)", L["Nascent Val'kyr"], BZ["The Storm Peaks"])] = {
 			43573,  -- Tears of Bitter Anguish
 		},
+		
+		[ format("%s (Lv77+)", L["Mammoths"]) ] = {
+			41818,  -- Design: Accurate Monarch Topaz
+		},
 	},
 	
-	[BZ["Dalaran"]] = {
-		[format("%s: %s", L["Vendor"], L["Braeg Stoutbeard"])] = {
-			44513, -- Leatherworking-Pattern: Eviscerator's Facemask
-			44514, -- Leatherworking-Pattern: Eviscerator's Shoulderpads
-			44515, -- Leatherworking-Pattern: Eviscerator's Chestguard
-			44516, -- Leatherworking-Pattern: Eviscerator's Bindings
-			44517, -- Leatherworking-Pattern: Eviscerator's Gauntlets
-			44518, -- Leatherworking-Pattern: Eviscerator's Waistguard
-			44519, -- Leatherworking-Pattern: Eviscerator's Legguards
-			44520, -- Leatherworking-Pattern: Eviscerator's Treads
-			44521, -- Leatherworking-Pattern: Overcast Headguard
-			44522, -- Leatherworking-Pattern: Overcast Spaulders
-			44523, -- Leatherworking-Pattern: Overcast Chestguard
-			44524, -- Leatherworking-Pattern: Overcast Bracers
-			44525, -- Leatherworking-Pattern: Overcast Handwraps
-			44526, -- Leatherworking-Pattern: Overcast Belt
-			44527, -- Leatherworking-Pattern: Overcast Leggings
-			44528, -- Leatherworking-Pattern: Overcast Boots
-			44530, -- Leatherworking-Pattern: Swiftarrow Helm
-			44531, -- Leatherworking-Pattern: Swiftarrow Shoulderguards
-			44532, -- Leatherworking-Pattern: Swiftarrow Hauberk
-			44533, -- Leatherworking-Pattern: Swiftarrow Bracers
-			44534, -- Leatherworking-Pattern: Swiftarrow Gauntlets
-			44535, -- Leatherworking-Pattern: Swiftarrow Belt
-			44536, -- Leatherworking-Pattern: Swiftarrow Leggings
-			44537, -- Leatherworking-Pattern: Swiftarrow Boots
-			44538, -- Leatherworking-Pattern: Stormhide Crown
-			44539, -- Leatherworking-Pattern: Stormhide Shoulders
-			44540, -- Leatherworking-Pattern: Stormhide Hauberk
-			44541, -- Leatherworking-Pattern: Stormhide Wristguards
-			44542, -- Leatherworking-Pattern: Stormhide Grips
-			44543, -- Leatherworking-Pattern: Stormhide Belt
-			44544, -- Leatherworking-Pattern: Stormhide Legguards
-			44545, -- Leatherworking-Pattern: Stormhide Stompers
-			44546, -- Leatherworking-Pattern: Giantmaim Legguards
-			44547, -- Leatherworking-Pattern: Giantmaim Bracers
-			44548, -- Leatherworking-Pattern: Revenant's Breastplate
-			44549, -- Leatherworking-Pattern: Revenant's Treads
-			44550, -- Leatherworking-Pattern: Trollwoven Spaulders
-			44551, -- Leatherworking-Pattern: Trollwoven Girdle
-			44552, -- Leatherworking-Pattern: Earthgiving Legguards
-			44553, -- Leatherworking-Pattern: Earthgiving Boots
-			44584, -- Leatherworking-Pattern: Polar Vest
-			44585, -- Leatherworking-Pattern: Polar Cord
-			44586, -- Leatherworking-Pattern: Polar Boots
-			44587, -- Leatherworking-Pattern: Icy Scale Chestguard
-			44588, -- Leatherworking-Pattern: Icy Scale Belt
-			44589, -- Leatherworking-Pattern: Icy Scale Boots
-			44932, -- Leatherworking-Pattern: Windripper Boots
-			44933, -- Leatherworking-Pattern: Windripper Leggings
-		},
-		[format("%s: %s", L["Vendor"], L["Vanessa Sellers"])] = {
-			37339, -- Enchanting-Formula: Enchant Weapon - Giant Slayer
-			37340, -- Enchanting-Formula: Enchant Chest - Exceptional Resilience
-			37344, -- Enchanting-Formula: Enchant Weapon - Icebreaker
-			37347, -- Enchanting-Formula: Enchant Cloak - Titanweave
-			37349, -- Enchanting-Formula: Enchant Cloak - Shadow Armor
-			44471, -- Enchanting-Formula: Enchant Cloak - Mighty Armor
-			44472, -- Enchanting-Formula: Enchant Cloak - Greater Speed
-			44473, -- Enchanting-Formula: Enchant Weapon - Scourgebane
-			44483, -- Enchanting-Formula: Enchant 2H Weapon - Massacre
-			44484, -- Enchanting-Formula: Enchant Bracers - Greater Assault
-			44485, -- Enchanting-Formula: Enchant Gloves - Armsman
-			44486, -- Enchanting-Formula: Enchant Weapon - Superior Potency
-			44487, -- Enchanting-Formula: Enchant Weapon - Mighty Spellpower
-			44488, -- Enchanting-Formula: Enchant Cloak - Wisdom
-			44489, -- Enchanting-Formula: Enchant Chest - Powerful Stats
-			44490, -- Enchanting-Formula: Enchant Boots - Greater Assault
-			44491, -- Enchanting-Formula: Enchant Boots - Tuskarr's Vitality
-			44492, -- Enchanting-Formula: Enchant Weapon - Berserking
-			44494, -- Enchanting-Formula: Enchant Weapon - Lifeward
-			44495, -- Enchanting-Formula: Enchant Weapon - Black Magic
-			44496, -- Enchanting-Formula: Enchant Weapon - Accuracy
-			44498, -- Enchanting-Formula: Enchant Bracer - Superior Spellpower
-			44944, -- Enchanting-Formula: Enchant Bracer - Major Stamina
-			45059, -- Enchanting-Formula: Enchant Staff - Greater Spellpower
-		},
-	},
 	
 	[L["Pick Pocket"]] = {
 		[BZ["Northrend"]] = {
@@ -3045,6 +3082,251 @@ db.lootTable = {
 			46349, 	-- Chef's Hat
 		},
 	},
+	[L["Dalaran Jewelcrafter's Token"]] = {
+		["x1"] = {
+			42225,	 -- Dragon's Eye
+		},
+		["x2"] = {
+			42298, -- Design: Bold Dragon's Eye
+			42299, -- Design: Bright Dragon's Eye
+			42300, -- Design: Brilliant Dragon's Eye
+			42301, -- Design: Delicate Dragon's Eye
+			42302, -- Design: Flashing Dragon's Eye
+			42303, -- Design: Fractured Dragon's Eye
+			42304, -- Design: Lustrous Dragon's Eye
+			42305, -- Design: Mystic Dragon's Eye
+			42306, -- Design: Precise Dragon's Eye
+			42307, -- Design: Quick Dragon's Eye
+			42308, -- Design: Rigid Dragon's Eye
+			42309, -- Design: Runed Dragon's Eye
+			42310, -- Design: Smooth Dragon's Eye
+			42311, -- Design: Solid Dragon's Eye
+			42312, -- Design: Sparkling Dragon's Eye
+			42313, -- Design: Stormy Dragon's Eye
+			42314, -- Design: Subtle Dragon's Eye
+			42315, -- Design: Thick Dragon's Eye
+		},
+		["x3"] = {
+			41576, -- Design: Bold Scarlet Ruby
+			41577, -- Design: Delicate Scarlet Ruby
+			41578, -- Design: Flashing Scarlet Ruby
+			41579, -- Design: Quick Autumn's Glow
+			41580, -- Design: Rigid Autumn's Glow
+			41581, -- Design: Lustrous Sky Sapphire
+			41582, -- Design: Glinting Monarch Topaz
+			41686, -- Design: Potent Monarch Topaz
+			41687, -- Design: Stark Monarch Topaz
+			41688, -- Design: Veiled Monarch Topaz
+			41689, -- Design: Luminous Monarch Topaz
+			41690, -- Design: Reckless Monarch Topaz
+			41692, -- Design: Energized Forest Emerald
+			41693, -- Design: Forceful Forest Emerald
+			41694, -- Design: Intricate Forest Emerald
+			41696, -- Design: Lambent Forest Emerald
+			41697, -- Design: Enduring Forest Emerald
+			41698, -- Design: Vivid Forest Emerald
+			41699, -- Design: Seer's Forest Emerald
+			41701, -- Design: Royal Twilight Opal
+			41702, -- Design: Puissant Twilight Opal
+			41703, -- Design: Regal Twilight Opal
+			41719, -- Design: Subtle Scarlet Ruby
+			41747, -- Design: Shifting Twilight Opal
+			42138, -- Design: Solid Sky Sapphire
+		},
+		["x4"] = {
+			43317, -- Design: Ring of Earthen Might
+			43318, -- Design: Ring of Scarlet Shadows
+			43319, -- Design: Windfire Band
+			43320, -- Design: Ring of Northern Tears
+			43485, -- Design: Savage Titanium Ring
+			43497, -- Design: Savage Titanium Band
+			46897, -- Design: Enduring Eye of Zul
+			46898, -- Design: Steady Eye of Zul
+			46899, -- Design: Vivid Eye of Zul
+			46900, -- Design: Dazzling Eye of Zul
+			46901, -- Design: Jagged Eye of Zul
+			46902, -- Design: Timeless Eye of Zul
+			46903, -- Design: Seer's Eye of Zul
+			46904, -- Design: Forceful Eye of Zul
+			46905, -- Design: Misty Eye of Zul
+			46906, -- Design: Sundered Eye of Zul
+			46907, -- Design: Shining Eye of Zul
+			46908, -- Design: Tense Eye of Zul
+			46909, -- Design: Lambent Eye of Zul
+			46910, -- Design: Intricate Eye of Zul
+			46911, -- Design: Radiant Eye of Zul
+			46912, -- Design: Energized Eye of Zul
+			46913, -- Design: Shattered Eye of Zul
+			46914, -- Design: Opaque Eye of Zul
+			46915, -- Design: Turbid Eye of Zul
+			46916, -- Design: Runed Cardinal Ruby
+			46917, -- Design: Bold Cardinal Ruby
+			46918, -- Design: Delicate Cardinal Ruby
+			46919, -- Design: Bright Cardinal Ruby
+			46920, -- Design: Precise Cardinal Ruby
+			46921, -- Design: Fractured Cardinal Ruby
+			46922, -- Design: Subtle Cardinal Ruby
+			46923, -- Design: Flashing Cardinal Ruby
+			46924, -- Design: Solid Majestic Zircon
+			46925, -- Design: Sparkling Majestic Zircon
+			46926, -- Design: Stormy Majestic Zircon
+			46927, -- Design: Lustrous Majestic Zircon
+			46928, -- Design: Rigid King's Amber
+			46929, -- Design: Smooth King's Amber
+			46930, -- Design: Brilliant King's Amber
+			46931, -- Design: Thick King's Amber
+			46932, -- Design: Mystic King's Amber
+			46933, -- Design: Quick King's Amber
+			46934, -- Design: Balanced Dreadstone
+			46935, -- Design: Sovereign Dreadstone
+			46936, -- Design: Glowing Dreadstone
+			46937, -- Design: Purified Dreadstone
+			46938, -- Design: Shifting Dreadstone
+			46939, -- Design: Royal Dreadstone
+			46940, -- Design: Regal Dreadstone
+			46941, -- Design: Defender's Dreadstone
+			46942, -- Design: Guardian's Dreadstone
+			46943, -- Design: Mysterious Dreadstone
+			46944, -- Design: Puissant Dreadstone
+			46945, -- Design: Infused Dreadstone
+			46946, -- Design: Tenuous Dreadstone
+			46947, -- Design: Luminous Ametrine
+			46948, -- Design: Inscribed Ametrine
+			46949, -- Design: Deadly Ametrine
+			46950, -- Design: Potent Ametrine
+			46951, -- Design: Veiled Ametrine
+			46952, -- Design: Durable Ametrine
+			46953, -- Design: Etched Ametrine
+			46956, -- Design: Pristine Ametrine
+			47007, -- Design: Reckless Ametrine
+			47008, -- Design: Glinting Ametrine
+			47010, -- Design: Accurate Ametrine
+			47011, -- Design: Wicked Ametrine
+			47012, -- Design: Glimmering Ametrine
+			47015, -- Design: Champion's Ametrine
+			47016, -- Design: Empowered Ametrine
+			47017, -- Design: Stalwart Ametrine
+			47018, -- Design: Resplendent Ametrine
+			47019, -- Design: Fierce Ametrine
+			47020, -- Design: Deft Ametrine
+			47021, -- Design: Lucent Ametrine
+			47022, -- Design: Resolute Ametrine
+			47023, -- Design: Stark Ametrine
+			49112, -- Design: Nightmare Tear
+		},
+		["x5"] = {
+			41704, -- Design: Chaotic Skyflare Diamond
+			41705, -- Design: Effulgent Skyflare Diamond
+			41706, -- Design: Ember Skyflare Diamond
+			41707, -- Design: Revitalizing Skyflare Diamond
+			41708, -- Design: Insightful Earthsiege Diamond
+			41709, -- Design: Invigorating Earthsiege Diamond
+			41710, -- Design: Relentless Earthsiege Diamond
+			41711, -- Design: Trenchant Earthsiege Diamond
+		},
+		["x6"] = {
+			42648, -- Design: Titanium Impact Band
+			42649, -- Design: Titanium Earthguard Ring
+			42650, -- Design: Titanium Spellshock Ring
+			42651, -- Design: Titanium Impact Choker
+			42652, -- Design: Titanium Earthguard Chain
+			42653, -- Design: Titanium Spellshock Necklace
+			43597, -- Design: Titanium Frostguard Ring
+		},
+	},
+	
+	[BZ["Dalaran"] .. " - " .. L["Simply Enchanting"]] = {
+		[L["Dream Shard"] .. " x4"] = {
+			37340, -- Formula: Enchant Chest - Exceptional Resilience
+			37347, -- Formula: Enchant Cloak - Titanweave
+			37349, -- Formula: Enchant Cloak - Shadow Armor
+			44471, -- Formula: Enchant Cloak - Mighty Armor
+			44472, -- Formula: Enchant Cloak - Greater Speed
+			44484, -- Formula: Enchant Bracers - Greater Assault
+			44485, -- Formula: Enchant Gloves - Armsman
+			44488, -- Formula: Enchant Cloak - Wisdom
+			44489, -- Formula: Enchant Chest - Powerful Stats
+			44490, -- Formula: Enchant Boots - Greater Assault
+			44491, -- Formula: Enchant Boots - Tuskarr's Vitality
+			44498, -- Formula: Enchant Bracer - Superior Spellpower
+		},
+		[L["Dream Shard"] .. " x10"] = {
+			37339, -- Formula: Enchant Weapon - Giant Slayer
+			37344, -- Formula: Enchant Weapon - Icebreaker
+			44473, -- Formula: Enchant Weapon - Scourgebane
+			44483, -- Formula: Enchant 2H Weapon - Massacre
+			44486, -- Formula: Enchant Weapon - Superior Potency
+			44487, -- Formula: Enchant Weapon - Mighty Spellpower
+			44492, -- Formula: Enchant Weapon - Berserking
+			44494, -- Formula: Enchant Weapon - Lifeward
+			44495, -- Formula: Enchant Weapon - Black Magic
+			44496, -- Formula: Enchant Weapon - Accuracy
+			45059, -- Formula: Enchant Staff - Greater Spellpower
+		},
+		[L["Abyss Crystal"] .. " x5"] = {
+			44944, -- Formula: Enchant Bracer - Major Stamina
+		},
+	},
+	
+	[BZ["Dalaran"] .. " - " .. L["Legendary Leathers"]] = {
+		[L["Heavy Borean Leather"] .. " x10"] = {
+			44128, -- Arctic Fur
+		},
+		[L["Heavy Borean Leather"] .. " x3"] = {
+			44513, -- Pattern: Eviscerator's Facemask
+			44514, -- Pattern: Eviscerator's Shoulderpads
+			44515, -- Pattern: Eviscerator's Chestguard
+			44516, -- Pattern: Eviscerator's Bindings
+			44517, -- Pattern: Eviscerator's Gauntlets
+			44518, -- Pattern: Eviscerator's Waistguard
+			44519, -- Pattern: Eviscerator's Legguards
+			44520, -- Pattern: Eviscerator's Treads
+			44521, -- Pattern: Overcast Headguard
+			44522, -- Pattern: Overcast Spaulders
+			44523, -- Pattern: Overcast Chestguard
+			44524, -- Pattern: Overcast Bracers
+			44525, -- Pattern: Overcast Handwraps
+			44526, -- Pattern: Overcast Belt
+			44527, -- Pattern: Overcast Leggings
+			44528, -- Pattern: Overcast Boots
+			44530, -- Pattern: Swiftarrow Helm
+			44531, -- Pattern: Swiftarrow Shoulderguards
+			44532, -- Pattern: Swiftarrow Hauberk
+			44533, -- Pattern: Swiftarrow Bracers
+			44534, -- Pattern: Swiftarrow Gauntlets
+			44535, -- Pattern: Swiftarrow Belt
+			44536, -- Pattern: Swiftarrow Leggings
+			44537, -- Pattern: Swiftarrow Boots
+			44538, -- Pattern: Stormhide Crown
+			44539, -- Pattern: Stormhide Shoulders
+			44540, -- Pattern: Stormhide Hauberk
+			44541, -- Pattern: Stormhide Wristguards
+			44542, -- Pattern: Stormhide Grips
+			44543, -- Pattern: Stormhide Belt
+			44544, -- Pattern: Stormhide Legguards
+			44545, -- Pattern: Stormhide Stompers
+			44584, -- Pattern: Polar Vest
+			44585, -- Pattern: Polar Cord
+			44586, -- Pattern: Polar Boots
+			44587, -- Pattern: Icy Scale Chestguard
+			44588, -- Pattern: Icy Scale Belt
+			44589, -- Pattern: Icy Scale Boots
+
+		},
+		[L["Arctic Fur"] .. " x2"] = {
+			44546, -- Pattern: Giantmaim Legguards
+			44547, -- Pattern: Giantmaim Bracers
+			44548, -- Pattern: Revenant's Breastplate
+			44549, -- Pattern: Revenant's Treads
+			44550, -- Pattern: Trollwoven Spaulders
+			44551, -- Pattern: Trollwoven Girdle
+			44552, -- Pattern: Earthgiving Legguards
+			44553, -- Pattern: Earthgiving Boots
+			44932, -- Pattern: Windripper Boots
+			44933, -- Pattern: Windripper Leggings
+		},
+	},
+	
 	
 	-- Missing Faction Recipes
 	[ BF["Sporeggar"] ] = {
@@ -5575,6 +5857,28 @@ local npcList = {
 
 local additionalLootTable = {
 	-- -- -- -- --
+	-- Jewelcrafting
+	-- -- -- -- --
+	{ 20855, 	BZ["The Barrens"], 			format("%s: %s", L["Vendor"], L["Ranik"]) },	-- Jewelcrafting-Design: Wicked Moonstone Ring
+	{ 21952, 	BZ["Silithus"], 			format("%s: %s", L["Vendor"], L["Mishta"]) },	-- Jewelcrafting-Design: Emerald Crown of Destruction
+	{ 21954, 	BZ["Eastern Plaguelands"], 	format("%s: %s", L["Vendor"], L["Jase Farlane"]) },	-- Jewelcrafting-Design: Emerald Crown of Destruction
+	{ 21957, 	BZ["Winterspring"], 		format("%s: %s", L["Vendor"], L["Qia"]) }, 	-- Jewelcrafting-Design: Necklace of the Diamond Tower
+	
+	{ 24158, 	BZ["Shadowmoon Valley"], 	L["Dark Conclave Shadowmancer"] }, 	-- Jewelcrafting-Design: Khorium Band of Shadows
+	{ 24159, 	BZ["The Steamvault"], 		L["Coilfang Sorceress"] }, 	-- Jewelcrafting-Design: Khorium Band of Frost
+	{ 24161, 	BZ["Blade's Edge Mountains"], L["Vekh'nir Dreadhawk"] }, 	-- Jewelcrafting-Design: Khorium Band of Leaves
+	{ 24162, 	BZ["Netherstorm"], 			L["Mageslayer"] }, 	-- Jewelcrafting-Design: Arcane Khorium Band
+	{ 24172, 	BZ["The Botanica"], 		L["Sunseeker Botanist"] }, 	-- Jewelcrafting-Design: Coronet of Verdant Flame
+	
+	{ 31870, 	BZ["Blade's Edge Mountains"], ELITE .. " Mobs" }, 	-- Jewelcrafting-Design: Great Golden Draenite
+	{ 31871, 	BZ["Blade's Edge Mountains"], ELITE .. " Mobs" }, 	-- Jewelcrafting-Design: Balanced Shadow Draenite
+	{ 31872, 	BZ["Blade's Edge Mountains"], ELITE .. " Mobs" }, 	-- Jewelcrafting-Design: Infused Shadow Draenite
+	{ 31873, 	BZ["Blade's Edge Mountains"], ELITE .. " Mobs" }, 	-- Jewelcrafting-Design: Veiled Flame Spessarite
+	{ 31874, 	BZ["Blade's Edge Mountains"], ELITE .. " Mobs" }, 	-- Jewelcrafting-Design: Wicked Flame Spessarite
+	
+			
+	
+	-- -- -- -- --
 	-- Enchanting
 	-- -- -- -- --
 	{ 6346, 	BZ["Orgrimmar"], 			format("%s: %s (%s)", L["Vendor"], L["Kithas"], FACTION_HORDE) }, 	-- Enchanting-Formula: Enchant Chest - Lesser Mana
@@ -6394,6 +6698,48 @@ local additionalLootTable = {
 local recipeFactionDuplicates	= {
 	Alliance	= {
 		-- -- -- -- --
+		-- Jewelcrafting
+		-- -- -- -- --
+		{ 20854, 	BZ["Darnassus"], 			format("%s: %s", L["Vendor"], L["Mythrin'dir"]) },	-- Jewelcrafting-Design: Amulet of the Moon
+		{ 20854, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Arred"]) },	-- Jewelcrafting-Design: Amulet of the Moon
+		
+		{ 20855, 	BZ["Ashenvale"], 			format("%s: %s", L["Vendor"], L["Dalria"]) },	-- Jewelcrafting-Design: Wicked Moonstone Ring
+		
+		{ 20856, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Arred"]) },	-- Jewelcrafting-Design: Heavy Golden Necklace of Battle
+		{ 20856, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Edna Mullby"]) },	-- Jewelcrafting-Design: Heavy Golden Necklace of Battle
+		
+		{ 20970, 	BZ["Wetlands"], 			format("%s: %s", L["Vendor"], L["Neal Allen"]) },	-- Jewelcrafting-Design: Pendant of the Agate Shield
+		{ 20971, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Micha Yance"]) },	-- Jewelcrafting-Design: Heavy Iron Knuckles
+		{ 20973, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Micha Yance"]) },	-- Jewelcrafting-Design: Blazing Citrine Ring
+		
+		{ 20975, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Arred"]) },	-- Jewelcrafting-Design: The Jade Eye
+		{ 20975, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Burbik Gearspanner"]) },	-- Jewelcrafting-Design: The Jade Eye
+		
+		{ 21941, 	BZ["Dustwallow Marsh"], 	format("%s: %s", L["Vendor"], L["Helenia Olden"]) },	-- Jewelcrafting-Design: Black Pearl Panther
+		{ 21942, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Vendor"], L["Hammon Karwn"]) },	-- Jewelcrafting-Design: Ruby Crown of Restoration
+		{ 21943, 	BZ["Dustwallow Marsh"], 	format("%s: %s", L["Vendor"], L["Helenia Olden"]) },	-- Jewelcrafting-Design: Truesilver Crab
+		
+		{ 21948, 	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Arred"]) },	-- Jewelcrafting-Design: Opal Necklace of Impact
+		{ 21948, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Burbik Gearspanner"]) },	-- Jewelcrafting-Design: Opal Necklace of Impact
+		
+		{ 24208, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Aldraan"]) },	-- Jewelcrafting-Design: Mystic Dawnstone
+		
+		{ 41559, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Captain O'Neal"]) },	-- Jewelcrafting-Design: Mystic Sun Crystal
+		{ 41560, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Captain O'Neal"]) },	-- Jewelcrafting-Design: Stormy Chalcedony
+		{ 41563, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Captain O'Neal"]) },	-- Jewelcrafting-Design: Durable Huge Citrine
+		{ 41564, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Captain O'Neal"]) },	-- Jewelcrafting-Design: Empowered Huge Citrine
+		{ 41565, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Captain O'Neal"]) },	-- Jewelcrafting-Design: Lucent Huge Citrine
+		{ 41566, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Captain O'Neal"]) },	-- Jewelcrafting-Design: Resplendent Huge Citrine
+		{ 41569, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Captain O'Neal"]) },	-- Jewelcrafting-Design: Shattered Dark Jade
+		{ 41570, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Captain O'Neal"]) },	-- Jewelcrafting-Design: Tense Dark Jade
+		{ 41571, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Captain O'Neal"]) },	-- Jewelcrafting-Design: Turbid Dark Jade
+		{ 41572, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Captain O'Neal"]) },	-- Jewelcrafting-Design: Steady Dark Jade
+		{ 41573, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Captain O'Neal"]) },	-- Jewelcrafting-Design: Opaque Dark Jade
+		{ 41575, 	BZ["Stormwind City"], 		format("%s: %s", L["Vendor"], L["Captain O'Neal"]) },	-- Jewelcrafting-Design: Mysterious Shadow Crystal
+
+		
+		
+		-- -- -- -- --
 		-- Enchanting
 		-- -- -- -- --
 		{ 6349, 	BZ["Ironforge"], 			format("%s: %s", L["Vendor"], L["Tilli Thistlefuzz"]) },	-- Enchanting-Formula: Enchant 2H Weapon - Lesser Intellect
@@ -6591,6 +6937,45 @@ local recipeFactionDuplicates	= {
 		{ 21897,	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Netherweave Tunic
 	},
 	Horde	= {
+		-- -- -- -- --
+		-- Jewelcrafting
+		-- -- -- -- --
+		{ 20854, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Gelanthis"]) },	-- Jewelcrafting-Design: Amulet of the Moon
+		{ 20854, 	BZ["Undercity"], 			format("%s: %s", L["Vendor"], L["Daniel Bartlett"]) },	-- Jewelcrafting-Design: Amulet of the Moon
+		
+		{ 20856, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Felika"]) },	-- Jewelcrafting-Design: Heavy Golden Necklace of Battle
+		{ 20856, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Gelanthis"]) },	-- Jewelcrafting-Design: Heavy Golden Necklace of Battle
+		
+		{ 20970, 	BZ["Thousand Needles"], 	format("%s: %s", L["Vendor"], L["Jandia"]) },	-- Jewelcrafting-Design: Pendant of the Agate Shield
+		{ 20971, 	BZ["Hillsbrad Foothills"], 	format("%s: %s", L["Vendor"], L["Christoph Jeffcoat"]) },	-- Jewelcrafting-Design: Heavy Iron Knuckles
+		{ 20973, 	BZ["Desolace"], 			format("%s: %s", L["Vendor"], L["Kireena"]) },	-- Jewelcrafting-Design: Blazing Citrine Ring
+		
+		{ 20975, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Gelanthis"]) },	-- Jewelcrafting-Design: The Jade Eye
+		{ 20975, 	BZ["Undercity"], 			format("%s: %s", L["Vendor"], L["Felicia Doan"]) },	-- Jewelcrafting-Design: The Jade Eye
+		
+		{ 21941, 	BZ["Swamp of Sorrows"], 	format("%s: %s", L["Vendor"], L["Banalash"]) },	-- Jewelcrafting-Design: Black Pearl Panther
+		{ 21942, 	BZ["Arathi Highlands"], 	format("%s: %s", L["Vendor"], L["Keena"]) },	-- Jewelcrafting-Design: Ruby Crown of Restoration
+		{ 21943, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Nerrist"]) },	-- Jewelcrafting-Design: Truesilver Crab
+		
+		{ 21948, 	BZ["Silvermoon City"], 		format("%s: %s", L["Vendor"], L["Gelanthis"]) },	-- Jewelcrafting-Design: Opal Necklace of Impact
+		{ 21948, 	BZ["Thunder Bluff"], 		format("%s: %s", L["Vendor"], L["Shadi Mistrunner"]) },	-- Jewelcrafting-Design: Opal Necklace of Impact
+		
+		{ 24208, 	BZ["Nagrand"], 				format("%s: %s", L["Vendor"], L["Coreiel"]) },	-- Jewelcrafting-Design: Mystic Dawnstone
+		
+		{ 41559, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Lady Palanseer"]) },	-- Jewelcrafting-Design: Mystic Sun Crystal
+		{ 41560, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Lady Palanseer"]) },	-- Jewelcrafting-Design: Stormy Chalcedony
+		{ 41563, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Lady Palanseer"]) },	-- Jewelcrafting-Design: Durable Huge Citrine
+		{ 41564, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Lady Palanseer"]) },	-- Jewelcrafting-Design: Empowered Huge Citrine
+		{ 41565, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Lady Palanseer"]) },	-- Jewelcrafting-Design: Lucent Huge Citrine
+		{ 41566, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Lady Palanseer"]) },	-- Jewelcrafting-Design: Resplendent Huge Citrine
+		{ 41569, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Lady Palanseer"]) },	-- Jewelcrafting-Design: Shattered Dark Jade
+		{ 41570, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Lady Palanseer"]) },	-- Jewelcrafting-Design: Tense Dark Jade
+		{ 41571, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Lady Palanseer"]) },	-- Jewelcrafting-Design: Turbid Dark Jade
+		{ 41572, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Lady Palanseer"]) },	-- Jewelcrafting-Design: Steady Dark Jade
+		{ 41573, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Lady Palanseer"]) },	-- Jewelcrafting-Design: Opaque Dark Jade
+		{ 41575, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Lady Palanseer"]) },	-- Jewelcrafting-Design: Mysterious Shadow Crystal
+		
+		
 		-- -- -- -- --
 		-- Enchanting
 		-- -- -- -- --
