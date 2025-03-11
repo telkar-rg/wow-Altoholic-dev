@@ -1,5 +1,5 @@
 ﻿## Interface: 30300
-## Title: Altoholic (Telkar-RG 1.02)
+## Title: Altoholic (Telkar-RG 1.03)
 ## Title-zhCN: |cffeedd99 [物品] |r: 全角色统计 Altoholic
 ## X-Curse-Packaged-Version: r90
 ## X-Curse-Project-Name: Altoholic
