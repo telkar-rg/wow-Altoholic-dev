@@ -1974,6 +1974,8 @@ db.lootTable = {
 	[ "Blizzard" ] = {
 		[ format("[%s]", QUEUE_TIME_UNAVAILABLE) ] = { 	-- UNAVAILABLE
 			11903, 	-- Cat Carrier (Corrupted Kitten)
+			21168, 	-- Baby Shark
+			23712, 	-- White Tiger Cub
 		},
 		[ "Online Store" ] = {
 			49662, 	-- Gryphon Hatchling
@@ -2040,8 +2042,15 @@ db.lootTable = {
 		[ "Blizzcon 2009" ] = {
 			46802, 	-- Heavy Murloc Egg
 		},
-		[ "Korean Server-only collectable" ] = {
+		[ "Korean Servers" ] = {
+			20651, 	-- Orange Murloc Egg
 			48527, 	-- Enchanted Onyx
+		},
+		[ "Taiwan Servers" ] = {
+			22780, 	-- White Murloc Egg
+		},
+		[ "Chinese Servers" ] = {
+			22781, 	-- Polar Bear Collar
 		},
 		[ "WoW's 5th Anniversary" ] = {
 			49362, 	-- Onyxian Whelpling
@@ -5857,6 +5866,107 @@ local npcList = {
 
 local additionalLootTable = {
 	-- -- -- -- --
+	-- Pets
+	-- -- -- -- --
+	{ 48120, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Breanni"]) }, 	-- Obsidian Hatchling
+	{ 46398, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Breanni"]) }, 	-- Calico Cat
+	{ 44822, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Breanni"]) }, 	-- Albino Snake
+	
+	{ 54436, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Jepetto Joybuzz"]) }, 	-- Blue Clockwork Rocket Bot
+	{ 49912, 	ACHIEVEMENTS, 				L["Looking For Multitudes"] }, 	-- Perky Pug
+	{ 48126, 	BZ["Zul'Gurub"], 			L["Razzashi Raptor"] }, 	-- Razzashi Hatchling
+	{ 48124, 	BZ["Wetlands"], 			L["Razormaw Matriach's Nest"] }, 	-- Razormaw Hatchling
+	{ 48122, 	BZ["Un'Goro Crater"], 		L["Ravasaur Matriarch's Nest"] }, 	-- Ravasaur Hatchling
+	{ 48118, 	BZ["The Barrens"], 			L["Takk's Nest"] }, 	-- Leaping Hatchling
+	{ 48116, 	BZ["Zul'Drak"], 			L["Gundrak Raptor"] }, 	-- Gundrak Hatchling
+	{ 48114, 	BZ["Wailing Caverns"], 		L["Deviate Guardian"] }, 	-- Deviate Hatchling
+	{ 48114, 	BZ["Wailing Caverns"], 		L["Deviate Ravager"] }, 	-- Deviate Hatchling
+	{ 48112, 	BZ["Dustwallow Marsh"], 	L["Dart's Nest"] }, 	-- Darting Hatchling
+	
+	{ 44983, 	BZ["Dalaran"], 				L["Fishing Daily"] }, 	-- Strand Crawler
+	{ 44841, 	ACHIEVEMENTS, 				format(L["Obtain %d companion pets"], 75) }, 	-- Little Fawn's Salt Lick
+	{ 40653, 	ACHIEVEMENTS, 				format(L["Obtain %d companion pets"], 50) }, 	-- Reeking Pet Carrier
+	
+	{ 44738, 	ACHIEVEMENTS, 				L["Higher Learning"] }, 	-- Kirin Tor Familiar
+	{ 43824, 	ACHIEVEMENTS, 				L["Higher Learning"] }, 	-- The Schools of Arcane Magic - Mastery
+	
+	{ 33816, 	BZ["Shattrath City"], 		L["Fishing Daily"] }, 	-- Toothy's Bucket
+	{ 33818, 	BZ["Shattrath City"], 		L["Fishing Daily"] }, 	-- Muckbreath's Bucket
+	{ 35349, 	BZ["Shattrath City"], 		L["Fishing Daily"] }, 	-- Snarly's Bucket
+	{ 35350, 	BZ["Shattrath City"], 		L["Fishing Daily"] }, 	-- Chuck's Bucket
+	
+	{ 8498, 	BZ["Swamp of Sorrows"], 	L["Adolescent Whelp"] }, 	-- Tiny Emerald Whelpling
+	{ 8498, 	BZ["Swamp of Sorrows"], 	L["Dreaming Whelp"] }, 	-- Tiny Emerald Whelpling
+	
+	{ 8499, 	BZ["Wetlands"], 			L["Red Whelp"] }, 	-- Tiny Crimson Whelpling
+	{ 8499, 	BZ["Wetlands"], 			L["Flamesnorting Whelp"] }, 	-- Tiny Crimson Whelpling
+	{ 8499, 	BZ["Wetlands"], 			L["Crimson Whelp"] }, 	-- Tiny Crimson Whelpling
+	
+	{ 10822, 	BZ["Badlands"], 			L["Scalding Whelp"] }, 	-- Dark Whelpling
+	{ 10822, 	BZ["Dustwallow Marsh"], 	L["Searing Whelp"] }, 	-- Dark Whelpling
+	
+	{ 34535, 	BZ["Azshara"], 				L["Blue Scalebane"] }, 	-- Azure Whelpling
+	{ 34535, 	BZ["Azshara"], 				L["Draconic Magelord"] }, 	-- Azure Whelpling
+	{ 34535, 	BZ["Azshara"], 				L["Draconic Mageweaver"] }, 	-- Azure Whelpling
+	
+	{ 8485, 	BZ["Elwynn Forest"], 		format("%s: %s (%s)", L["Vendor"], L["Donni Anthania"], FACTION_ALLIANCE) },	-- Cat Carrier (Bombay)
+	{ 8486, 	BZ["Elwynn Forest"], 		format("%s: %s (%s)", L["Vendor"], L["Donni Anthania"], FACTION_ALLIANCE) },	-- Cat Carrier (Cornish Rex)
+	{ 8487, 	BZ["Elwynn Forest"], 		format("%s: %s (%s)", L["Vendor"], L["Donni Anthania"], FACTION_ALLIANCE) },	-- Cat Carrier (Orange Tabby)
+	{ 8488, 	BZ["Elwynn Forest"], 		format("%s: %s (%s)", L["Vendor"], L["Donni Anthania"], FACTION_ALLIANCE) },	-- Cat Carrier (Silver Tabby)
+	{ 8489, 	BZ["Stormwind City"], 		format("%s: %s (%s)", L["Vendor"], L["Lil Timmy"], FACTION_ALLIANCE) },	-- Cat Carrier (White Kitten)
+	
+	{ 8490, 	BZ["The Deadmines"],	 	BB["Cookie"] }, 	-- Cat Carrier (Siamese)
+	{ 8490, 	BZ["Netherstorm"],	 		format("%s: %s", L["Vendor"], L["Dealer Rashaad"]) },	-- Cat Carrier (Siamese)
+	
+	{ 8491, 	BZ["Alterac Mountains"], 	L["Dalaran Shield Guard"] }, 	-- Cat Carrier (Black Tabby)
+	{ 8491, 	BZ["Alterac Mountains"], 	L["Dalaran Summoner"] }, 	-- Cat Carrier (Black Tabby)
+	{ 8491, 	BZ["Alterac Mountains"], 	L["Dalaran Theurgist"] }, 	-- Cat Carrier (Black Tabby)
+	
+	{ 8492, 	BZ["The Deadmines"], 		L["Defias Pirate"] }, 	-- Parrot Cage (Green Wing Macaw)
+	{ 8492, 	BZ["Stranglethorn Vale"], 	BF["Bloodsail Buccaneers"] .. " Mobs" }, 	-- Parrot Cage (Hyacinth Macaw)
+	
+	{ 8495, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Narkk"]) },	-- Parrot Cage (Senegal)
+	{ 8495, 	BZ["Netherstorm"],	 		format("%s: %s", L["Vendor"], L["Dealer Rashaad"]) },	-- Parrot Cage (Senegal)
+	
+	{ 8496, 	BZ["Stranglethorn Vale"], 	format("%s: %s", L["Vendor"], L["Narkk"]) },	-- Parrot Cage (Cockatiel)
+	{ 8497, 	BZ["Elwynn Forest"], 		format("%s: %s (%s)", L["Vendor"], L["Yarlyn Amberstill"], FACTION_ALLIANCE) },	-- Rabbit Crate (Snowshoe)
+	{ 8500, 	BZ["Darnassus"], 			format("%s: %s (%s)", L["Vendor"], L["Shylenai"], FACTION_ALLIANCE) },	-- Great Horned Owl
+	{ 8501, 	BZ["Darnassus"], 			format("%s: %s (%s)", L["Vendor"], L["Shylenai"], FACTION_ALLIANCE) },	-- Hawk Owl
+	{ 10360, 	BZ["Orgrimmar"], 			format("%s: %s (%s)", L["Vendor"], L["Xan'tish"], FACTION_HORDE) },	-- Black Kingsnake
+	{ 10361, 	BZ["Orgrimmar"], 			format("%s: %s (%s)", L["Vendor"], L["Xan'tish"], FACTION_HORDE) },	-- Brown Snake
+	{ 10392, 	BZ["Netherstorm"],	 		format("%s: %s", L["Vendor"], L["Dealer Rashaad"]) },	-- Crimson Snake
+	{ 10393, 	BZ["Netherstorm"],	 		format("%s: %s", L["Vendor"], L["Dealer Rashaad"]) },	-- Cockroach
+	{ 10394, 	BZ["Thunder Bluff"], 		format("%s: %s (%s)", L["Vendor"], L["Halpa"], FACTION_HORDE) },	-- Prairie Dog Whistle
+	{ 10398, 	BZ["Stranglethorn Vale"], 	L["Quest rewards"] },	-- Mechanical Chicken
+	{ 11023, 	BZ["Thousand Needles"],	 	format("%s: %s", L["Vendor"], L["Magus Tirth"]) },	-- Ancona Chicken
+	{ 11026, 	BZ["Darkmoon Faire"],	 	format("%s: %s", L["Vendor"], L["Flik"]) },	-- Tree Frog Box
+	{ 11027, 	BZ["Darkmoon Faire"],	 	format("%s: %s", L["Vendor"], L["Flik"]) },	-- Wood Frog Box
+	{ 11110, 	SPECIAL,	 				format("%s %s", EMOTE22_CMD1, CHAT_MSG_EMOTE) },	-- Chicken Egg
+	{ 12264, 	BZ["Burning Steppes"], 		L["Quest rewards"] },	-- Worg Carrier
+	{ 12529, 	BZ["Burning Steppes"], 		L["Quest rewards"] },	-- Smolderweb Carrier
+	{ 19450, 	BZ["Darkmoon Faire"], 		L["Quest rewards"] },	-- A Jubling's Tiny Home
+	{ 19462, 	BZ["Darkmoon Faire"], 		L["Quest rewards"] },	-- Unhatched Jubling Egg
+	{ 20769, 	L["Lv 50+ Oozes/Slimes"], 	L["Oozing Bag"] },	-- Disgusting Oozeling
+	{ 27445, 	BI["Fishing"], 				L["Mr. Pinchy"] },	-- Magical Crawdad Box
+	{ 27388, 	BZ["Terokkar Forest"], 		format("%s (%s)", L["Highland Mixed School"], BI["Fishing"]) },	-- Mr. Pinchy
+	{ 29363, 	BZ["Netherstorm"],	 		format("%s: %s", L["Vendor"], L["Dealer Rashaad"]) },	-- Mana Wyrmling
+	{ 29364, 	BZ["Netherstorm"],	 		format("%s: %s", L["Vendor"], L["Dealer Rashaad"]) },	-- Brown Rabbit Crate
+	{ 29901, 	BZ["The Exodar"],	 		format("%s: %s (%s)", L["Vendor"], L["Sixx"], FACTION_ALLIANCE) },	-- Blue Moth Egg
+	{ 29902, 	BZ["Netherstorm"],	 		format("%s: %s", L["Vendor"], L["Dealer Rashaad"]) },	-- Red Moth Egg
+	{ 29903, 	BZ["The Exodar"],	 		format("%s: %s (%s)", L["Vendor"], L["Sixx"], FACTION_ALLIANCE) },	-- Yellow Moth Egg
+	{ 29904, 	BZ["The Exodar"],	 		format("%s: %s (%s)", L["Vendor"], L["Sixx"], FACTION_ALLIANCE) },	-- White Moth Egg
+	{ 29953, 	BZ["Eversong Woods"],	 	format("%s: %s (%s)", L["Vendor"], L["Jilanne"], FACTION_HORDE) },	-- Golden Dragonhawk Hatchling
+	{ 29956, 	BZ["Eversong Woods"],	 	format("%s: %s (%s)", L["Vendor"], L["Jilanne"], FACTION_HORDE) },	-- Red Dragonhawk Hatchling
+	{ 29957, 	BZ["Eversong Woods"],	 	format("%s: %s (%s)", L["Vendor"], L["Jilanne"], FACTION_HORDE) },	-- Silver Dragonhawk Hatchling
+	{ 29958, 	BZ["Netherstorm"],	 		format("%s: %s", L["Vendor"], L["Dealer Rashaad"]) },	-- Blue Dragonhawk Hatchling
+	{ 29960, 	BZ["Zangarmarsh"], 			L["Bogflare Needler"] },	-- Captured Firefly
+	{ 31760, 	BZ["Terokkar Forest"], 		L["Quest rewards"] },	-- Miniwing
+	{ 33993, 	BZ["Zul'Aman"], 			L["Amani Hex Stick"] },	-- Mojo
+	{ 39973, 	format("%s: %s", BZ["Dalaran"], L["The Underbelly"]), format("%s: %s", L["Vendor"], L["Darahir"]) },	-- Ghostly Skull
+	{ 43698, 	format("%s: %s", BZ["Dalaran"], L["The Underbelly"]), BI["Fishing"] },	-- Giant Sewer Rat
+	
+	
+	-- -- -- -- --
 	-- Jewelcrafting
 	-- -- -- -- --
 	{ 20855, 	BZ["The Barrens"], 			format("%s: %s", L["Vendor"], L["Ranik"]) },	-- Jewelcrafting-Design: Wicked Moonstone Ring
@@ -5876,7 +5986,6 @@ local additionalLootTable = {
 	{ 31873, 	BZ["Blade's Edge Mountains"], ELITE .. " Mobs" }, 	-- Jewelcrafting-Design: Veiled Flame Spessarite
 	{ 31874, 	BZ["Blade's Edge Mountains"], ELITE .. " Mobs" }, 	-- Jewelcrafting-Design: Wicked Flame Spessarite
 	
-			
 	
 	-- -- -- -- --
 	-- Enchanting
@@ -6650,53 +6759,16 @@ local additionalLootTable = {
 	-- -- -- -- --
 	-- Misc
 	-- -- -- -- --
-	{ 48120, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Breanni"]) }, 	-- Obsidian Hatchling
-	{ 46398, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Breanni"]) }, 	-- Calico Cat
-	{ 44822, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Breanni"]) }, 	-- Albino Snake
-	
-	{ 54436, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Jepetto Joybuzz"]) }, 	-- Blue Clockwork Rocket Bot
-	{ 49912, 	ACHIEVEMENTS, 				L["Looking For Multitudes"] }, 	-- Perky Pug
-	{ 48126, 	BZ["Zul'Gurub"], 			L["Razzashi Raptor"] }, 	-- Razzashi Hatchling
-	{ 48124, 	BZ["Wetlands"], 			L["Razormaw Matriach's Nest"] }, 	-- Razormaw Hatchling
-	{ 48122, 	BZ["Un'Goro Crater"], 		L["Ravasaur Matriarch's Nest"] }, 	-- Ravasaur Hatchling
-	{ 48118, 	BZ["The Barrens"], 			L["Takk's Nest"] }, 	-- Leaping Hatchling
-	{ 48116, 	BZ["Zul'Drak"], 			L["Gundrak Raptor"] }, 	-- Gundrak Hatchling
-	{ 48114, 	BZ["Wailing Caverns"], 		L["Deviate Guardian"] }, 	-- Deviate Hatchling
-	{ 48114, 	BZ["Wailing Caverns"], 		L["Deviate Ravager"] }, 	-- Deviate Hatchling
-	{ 48112, 	BZ["Dustwallow Marsh"], 	L["Dart's Nest"] }, 	-- Darting Hatchling
-	
-	{ 44983, 	BZ["Dalaran"], 				L["Fishing Daily"] }, 	-- Strand Crawler
-	{ 44841, 	ACHIEVEMENTS, 				format(L["Obtain %d companion pets"], 75) }, 	-- Little Fawn's Salt Lick
-	{ 40653, 	ACHIEVEMENTS, 				format(L["Obtain %d companion pets"], 50) }, 	-- Reeking Pet Carrier
-	
-	{ 44738, 	ACHIEVEMENTS, 				L["Higher Learning"] }, 	-- Kirin Tor Familiar
-	{ 43824, 	ACHIEVEMENTS, 				L["Higher Learning"] }, 	-- The Schools of Arcane Magic - Mastery
-	
-	{ 44983, 	BZ["Dalaran"], 				format("%s (%s)", BI["Fishing"], L["The Underbelly"]) }, 	-- Giant Sewer Rat
-	{ 44822, 	BZ["Dalaran"], 				format("%s: %s", L["Vendor"], L["Darahir"]) }, 	-- Ghostly Skull
-	
-	{ 33816, 	BZ["Shattrath City"], 		L["Fishing Daily"] }, 	-- Toothy's Bucket
-	{ 33818, 	BZ["Shattrath City"], 		L["Fishing Daily"] }, 	-- Muckbreath's Bucket
-	{ 35349, 	BZ["Shattrath City"], 		L["Fishing Daily"] }, 	-- Snarly's Bucket
-	{ 35350, 	BZ["Shattrath City"], 		L["Fishing Daily"] }, 	-- Chuck's Bucket
-	
-	{ 8498, 	BZ["Swamp of Sorrows"], 	L["Adolescent Whelp"] }, 	-- Tiny Emerald Whelpling
-	{ 8498, 	BZ["Swamp of Sorrows"], 	L["Dreaming Whelp"] }, 	-- Tiny Emerald Whelpling
-	
-	{ 8499, 	BZ["Wetlands"], 			L["Red Whelp"] }, 	-- Tiny Crimson Whelpling
-	{ 8499, 	BZ["Wetlands"], 			L["Flamesnorting Whelp"] }, 	-- Tiny Crimson Whelpling
-	{ 8499, 	BZ["Wetlands"], 			L["Crimson Whelp"] }, 	-- Tiny Crimson Whelpling
-	
-	{ 10822, 	BZ["Badlands"], 			L["Scalding Whelp"] }, 	-- Dark Whelpling
-	{ 10822, 	BZ["Dustwallow Marsh"], 	L["Searing Whelp"] }, 	-- Dark Whelpling
-	
-	{ 34535, 	BZ["Azshara"], 				L["Blue Scalebane"] }, 	-- Azure Whelpling
-	{ 34535, 	BZ["Azshara"], 				L["Draconic Magelord"] }, 	-- Azure Whelpling
-	{ 34535, 	BZ["Azshara"], 				L["Draconic Mageweaver"] }, 	-- Azure Whelpling
 }
 
 local recipeFactionDuplicates	= {
 	Alliance	= {
+		-- -- -- -- --
+		-- Pets
+		-- -- -- -- --
+		{ 11474, 	BZ["The Hinterlands"], 	L["Quest rewards"] },	-- Sprite Darter Egg
+		
+		
 		-- -- -- -- --
 		-- Jewelcrafting
 		-- -- -- -- --
@@ -6937,6 +7009,13 @@ local recipeFactionDuplicates	= {
 		{ 21897,	BZ["The Exodar"], 			format("%s: %s", L["Vendor"], L["Neii"]) },	-- Tailoring-Pattern: Netherweave Tunic
 	},
 	Horde	= {
+		-- -- -- -- --
+		-- Pets
+		-- -- -- -- --
+		{ 10392, 	BZ["Orgrimmar"], 			format("%s: %s", L["Vendor"], L["Xan'tish"]) },	-- Crimson Snake
+		{ 10393, 	BZ["Undercity"],	 		format("%s: %s", L["Vendor"], L["Jeremiah Payson"]) },	-- Cockroach
+		{ 11474, 	BZ["Feralas"], 				L["Sprite Darter"] }, 	-- Sprite Darter Egg
+		
 		-- -- -- -- --
 		-- Jewelcrafting
 		-- -- -- -- --
