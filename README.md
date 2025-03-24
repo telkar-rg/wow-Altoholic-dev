@@ -3,6 +3,9 @@ Altoholic: modified development for WotLK
 
 Added "Keys" Tab for better overview of owned keys and some attunement quests.
 ## Changes
+- [Edited Version 1.03a](https://github.com/telkar-rg/wow-Altoholic-dev/releases/tag/t1.03a)
+  - Added source information to recipes and pets
+    
 - [Edited Version 1.02](https://github.com/telkar-rg/wow-Altoholic-dev/releases/tag/t1.02)
   - Small fix for "Known Pets" display (thanks to "[UsernameUsername](https://www.rising-gods.de/forum/63-programmiererecke/830273-addon-altoholic-haustier-info.html)") 
 
