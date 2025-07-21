@@ -12,7 +12,7 @@ if not DataStore then return end
 
 local addonName = "DataStore_Containers"
 
-_G[addonName] = LibStub("AceAddon-3.0"):NewAddon(addonName, "AceConsole-3.0", "AceEvent-3.0", "AceComm-3.0", "AceSerializer-3.0")
+_G[addonName] = LibStub("AceAddon-3.0"):NewAddon(addonName, "AceConsole-3.0", "AceEvent-3.0", "AceComm-3.0", "AceSerializer-3.0", "AceTimer-3.0")
 
 local addon = _G[addonName]
 
@@ -21,6 +21,9 @@ local commPrefix = "DS_Cont"		-- let's keep it a bit shorter than the addon name
 local BI = LibStub("LibBabble-Inventory-3.0"):GetLookupTable()
 
 local guildMembers = {} 	-- hash table containing guild member info (tab timestamps)
+
+-- Func Call Spam Protection
+local FCSP_timer_table_OnBagUpdate = {}
 
 -- Message types
 local MSG_SEND_BANK_TIMESTAMPS				= 1	-- broacast at login
@@ -396,18 +399,37 @@ end
 
 -- *** Event Handlers ***
 local function OnBagUpdate(event, bag)
-	if bag < 0 then
-		return
-	end
+	FCSP_timer_table_OnBagUpdate[bag] = nil -- manual reset (safety redundancy)
 	
-	if (bag >= 5) and (bag <= 11) and not addon.isBankOpen then
-		return
-	end
+	-- if bag < 0 then
+		-- return
+	-- end
+	
+	-- if (bag >= 5) and (bag <= 11) and not addon.isBankOpen then
+		-- return
+	-- end
+	
+	-- print("DataStore_Containers.lua -- OnBagUpdate(event, ",bag,")", DEBUG_CNT, format("%.3f",GetTime()%100))  -- DEBUG 2025 07 21 - 2
 	
 	if bag == 0 then					-- bag is 0 for both the keyring and the original backpack
 		ScanKeyRing()
 	end
 	ScanBag(bag)
+end
+local function FCSP_OnBagUpdate(event, bag)
+	-- this function limits calls to "OnBagUpdate" to max 1 every second
+	
+	-- old limitations from "OnBagUpdate"
+	if bag < 0 then
+		return
+	end
+	if (bag >= 5) and (bag <= 11) and not addon.isBankOpen then
+		return
+	end
+	
+	if FCSP_timer_table_OnBagUpdate[bag] then return end
+	FCSP_timer_table_OnBagUpdate[bag] = addon:ScheduleTimer(OnBagUpdate, 1, event, bag)
+
 end
 
 local function OnBankFrameClosed()
@@ -806,7 +828,8 @@ function addon:OnEnable()
 	end
 	ScanKeyRing()
 	
-	addon:RegisterEvent("BAG_UPDATE", OnBagUpdate)
+	-- addon:RegisterEvent("BAG_UPDATE", OnBagUpdate)
+	addon:RegisterEvent("BAG_UPDATE", FCSP_OnBagUpdate)
 	addon:RegisterEvent("BANKFRAME_OPENED", OnBankFrameOpened)
 	addon:RegisterEvent("GUILDBANKFRAME_OPENED", OnGuildBankFrameOpened)
 end
