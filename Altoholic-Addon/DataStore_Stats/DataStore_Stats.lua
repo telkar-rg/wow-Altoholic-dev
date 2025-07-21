@@ -6,11 +6,14 @@ if not DataStore then return end
 
 local addonName = "DataStore_Stats"
 
-_G[addonName] = LibStub("AceAddon-3.0"):NewAddon(addonName, "AceConsole-3.0", "AceEvent-3.0")
+_G[addonName] = LibStub("AceAddon-3.0"):NewAddon(addonName, "AceConsole-3.0", "AceEvent-3.0", "AceTimer-3.0")
 
 local addon = _G[addonName]
 
 local THIS_ACCOUNT = "Default"
+
+-- Func Call Spam Protection
+local FCSP_timer_UNIT_INVENTORY_CHANGED
 
 local AddonDB_Defaults = {
 	global = {
@@ -48,6 +51,9 @@ end
 
 -- *** Scanning functions ***
 local function ScanStats()
+	FCSP_timer_UNIT_INVENTORY_CHANGED = nil -- manual reset (safety redundancy)
+	-- print("DataStore_Stats.lua -- ScanStats", format("%.3f",GetTime()%100))  -- DEBUG 2025 07 21 - 3
+	
 	local stats = addon.ThisCharacter.Stats
 	wipe(stats)
 	
@@ -135,9 +141,11 @@ local function ScanStats()
 	addon.ThisCharacter.lastUpdate = time()
 end
 
+
 function addon:OnEnable()
 	addon:RegisterEvent("PLAYER_ALIVE")
-	addon:RegisterEvent("UNIT_INVENTORY_CHANGED", ScanStats)
+	-- addon:RegisterEvent("UNIT_INVENTORY_CHANGED", ScanStats)
+	addon:RegisterEvent("UNIT_INVENTORY_CHANGED")
 end
 
 function addon:OnDisable()
@@ -151,4 +159,13 @@ function addon:PLAYER_ALIVE()
 	if not UnitIsGhost("player") then return end -- only scan if player released spirit and went to graveyard
 	
 	ScanStats()
+end
+
+function addon:UNIT_INVENTORY_CHANGED()
+	-- this function limits calls to "ScanStats" to max 1 every second
+	
+	-- print("DataStore_Stats.lua -- UNIT_INVENTORY_CHANGED", DEBUG_CNT, format("%.3f",GetTime()%100))  -- DEBUG 2025 07 21 - 3
+	
+	if FCSP_timer_UNIT_INVENTORY_CHANGED then return end
+	FCSP_timer_UNIT_INVENTORY_CHANGED = addon:ScheduleTimer(ScanStats, 1)
 end
