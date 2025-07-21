@@ -6,11 +6,14 @@ if not DataStore then return end
 
 local addonName = "DataStore_Currencies"
 
-_G[addonName] = LibStub("AceAddon-3.0"):NewAddon(addonName, "AceConsole-3.0", "AceEvent-3.0")
+_G[addonName] = LibStub("AceAddon-3.0"):NewAddon(addonName, "AceConsole-3.0", "AceEvent-3.0", "AceTimer-3.0")
 
 local addon = _G[addonName]
 
 local THIS_ACCOUNT = "Default"
+
+-- Func Call Spam Protection
+local FCSP_timer_OnCurrencyDisplayUpdate
 
 local AddonDB_Defaults = {
 	global = {
@@ -81,7 +84,14 @@ end
 
 -- *** Event Handlers ***
 local function OnCurrencyDisplayUpdate()
+	FCSP_timer_UNIT_INVENTORY_CHANGED = nil
 	ScanCurrencies()
+end
+local function FCSP_timer_OnCurrencyDisplayUpdate()
+	-- this function limits calls to "ScanCurrencies" to max 1 every second
+	
+	if FCSP_timer_UNIT_INVENTORY_CHANGED then return end
+	FCSP_timer_UNIT_INVENTORY_CHANGED = addon:ScheduleTimer(OnCurrencyDisplayUpdate, 1)
 end
 
 -- ** Mixins **
@@ -178,7 +188,8 @@ function addon:OnInitialize()
 end
 
 function addon:OnEnable()
-	addon:RegisterEvent("CURRENCY_DISPLAY_UPDATE", OnCurrencyDisplayUpdate)
+	-- addon:RegisterEvent("CURRENCY_DISPLAY_UPDATE", OnCurrencyDisplayUpdate)
+	addon:RegisterEvent("CURRENCY_DISPLAY_UPDATE", FCSP_timer_OnCurrencyDisplayUpdate)
 end
 
 function addon:OnDisable()
