@@ -14,6 +14,9 @@ local THIS_ACCOUNT = "Default"
 local commPrefix = "DS_Mails"		-- let's keep it a bit shorter than the addon name, this goes on a comm channel, a byte is a byte ffs :p
 local MAIL_EXPIRY = 30		-- Mails expire after 30 days
 
+-- Func Call Spam Protection
+local FCSP_timer_OnBagUpdate
+
 -- Message types
 local MSG_SENDMAIL_INIT							= 1
 local MSG_SENDMAIL_END							= 2
@@ -217,8 +220,25 @@ end
 
 -- *** Event Handlers ***
 local function OnBagUpdate(event, bag)
+	FCSP_timer_OnBagUpdate = nil -- manual reset (safety redundancy)
+	
 	if addon.isOpen then	-- if a bag is updated while the mailbox is opened, this means an attachment has been taken.
+		-- print("DataStore_Mails.lua -- OnBagUpdate(event, ",bag,")", DEBUG_CNT, format("%.3f",GetTime()%100))  -- DEBUG 2025 07 21 - 2
+	
 		ScanMailbox()		-- I could not hook TakeInboxItem because mailbox content is not updated yet
+	end
+end
+
+local function FCSP_OnBagUpdate(event, bag)
+	-- this function limits calls to "OnBagUpdate" to max 1 every second
+	
+	if bag < 0 then
+		return
+	end
+	
+	if addon.isOpen then	-- if a bag is updated while the mailbox is opened, this means an attachment has been taken.
+		if FCSP_timer_OnBagUpdate then return end
+		FCSP_timer_OnBagUpdate = addon:ScheduleTimer(OnBagUpdate, 1, event, bag)
 	end
 end
 
@@ -463,7 +483,8 @@ end
 
 function addon:OnEnable()
 	addon:RegisterEvent("MAIL_SHOW", OnMailShow)
-	addon:RegisterEvent("BAG_UPDATE", OnBagUpdate)
+	-- addon:RegisterEvent("BAG_UPDATE", OnBagUpdate)
+	addon:RegisterEvent("BAG_UPDATE", FCSP_OnBagUpdate)
 	
 	addon:SetupOptions()
 	if GetOption("CheckMailExpiry") == 1 then
