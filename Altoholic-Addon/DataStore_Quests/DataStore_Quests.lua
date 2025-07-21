@@ -176,6 +176,9 @@ end
 
 -- *** Event Handlers ***
 local function OnPlayerAlive()
+	-- print("DataStore_Quests.lua") -- DEBUG 2025 07 21
+	if not UnitIsGhost("player") then return end -- only scan if player released spirit and went to graveyard
+	
 	ScanQuests()
 end
 

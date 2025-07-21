@@ -234,6 +234,9 @@ end
 
 -- *** EVENT HANDLERS ***
 function addon:PLAYER_ALIVE()
+	-- print("DataStore_Achievements.lua") -- DEBUG 2025 07 21
+	if not UnitIsGhost("player") then return end -- only scan if player released spirit and went to graveyard
+	
 	ScanAllAchievements()
 	ScanProgress()
 	addon.ThisCharacter.guid = strsub(UnitGUID("player"), 3)	-- get rid at the 0x at the beginning of the string

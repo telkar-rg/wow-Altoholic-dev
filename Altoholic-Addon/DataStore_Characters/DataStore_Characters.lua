@@ -87,6 +87,9 @@ local function OnPlayerMoney()
 end
 
 local function OnPlayerAlive()
+	-- print("DataStore_Characters.lua") -- DEBUG 2025 07 21
+	if not UnitIsGhost("player") then return end -- only scan if player released spirit and went to graveyard
+	
 	local character = addon.ThisCharacter
 
 	character.name = UnitName("player")		-- to simplify processing a bit, the name is saved in the table too, in addition to being part of the key

@@ -45,6 +45,9 @@ end
 
 -- *** Event Handlers ***
 local function OnPlayerAlive()
+	-- print("DataStore_Pets.lua") -- DEBUG 2025 07 21
+	if not UnitIsGhost("player") then return end -- only scan if player released spirit and went to graveyard
+	
 	ScanCompanions("CRITTER")
 	ScanCompanions("MOUNT")
 end

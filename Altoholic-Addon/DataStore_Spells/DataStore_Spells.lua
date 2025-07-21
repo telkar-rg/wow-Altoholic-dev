@@ -104,6 +104,9 @@ end
 
 -- *** EVENT HANDLERS ***
 function addon:PLAYER_ALIVE()
+	-- print("DataStore_Spells.lua") -- DEBUG 2025 07 21
+	if not UnitIsGhost("player") then return end -- only scan if player released spirit and went to graveyard
+	
 	ScanSpells()
 end
 
