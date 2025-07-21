@@ -17,7 +17,7 @@ local TEAL		= "|cFF00FF9A"
 local GOLD		= "|cFFFFD700"
 
 local THIS_ACCOUNT = "Default"
-local VERSION_STRING = "1.03a"
+local VERSION_STRING = "1.04"
 
 Altoholic.ClassInfo = {
 	["MAGE"] = "|cFF69CCF0",

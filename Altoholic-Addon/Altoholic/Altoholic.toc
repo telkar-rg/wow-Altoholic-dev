@@ -1,5 +1,5 @@
 ﻿## Interface: 30300
-## Title: Altoholic (|cFF69CCF0Telkar-RG|cFFFFFFFF 1.03a|r)
+## Title: Altoholic (|cFF69CCF0Telkar-RG|cFFFFFFFF 1.04|r)
 
 ## X-Curse-Packaged-Version: r90
 ## X-Curse-Project-Name: Altoholic
