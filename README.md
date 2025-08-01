@@ -3,7 +3,7 @@ Altoholic: modified development for WotLK
 
 Added "Keys" Tab for better overview of owned keys and some attunement quests.
 ## Changes
-- [Edited Version 1.04](https://github.com/telkar-rg/wow-Altoholic-dev/releases/tag/t1.04)
+- [Edited Version 1.04a](https://github.com/telkar-rg/wow-Altoholic-dev/releases/tag/t1.04a)
   - Some game lag issues addressed by adjusting how some Scan functions were called by triggering Game Events
 
 - [Edited Version 1.03a](https://github.com/telkar-rg/wow-Altoholic-dev/releases/tag/t1.03a)
