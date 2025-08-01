@@ -219,7 +219,10 @@ end
 
 
 -- *** Event Handlers ***
-local function OnBagUpdate(event, bag)
+-- local function OnBagUpdate(event, bag)
+local function OnBagUpdate(arg)
+	local bag = arg
+	
 	FCSP_timer_OnBagUpdate = nil -- manual reset (safety redundancy)
 	
 	if addon.isOpen then	-- if a bag is updated while the mailbox is opened, this means an attachment has been taken.
@@ -238,7 +241,8 @@ local function FCSP_OnBagUpdate(event, bag)
 	
 	if addon.isOpen then	-- if a bag is updated while the mailbox is opened, this means an attachment has been taken.
 		if FCSP_timer_OnBagUpdate then return end
-		FCSP_timer_OnBagUpdate = addon:ScheduleTimer(OnBagUpdate, 1, event, bag)
+		-- FCSP_timer_OnBagUpdate = addon:ScheduleTimer(OnBagUpdate, 1, event, bag)
+		FCSP_timer_OnBagUpdate = addon:ScheduleTimer(OnBagUpdate, 1, bag)
 	end
 end
 

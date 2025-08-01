@@ -398,7 +398,10 @@ local function ScanKeyRing()
 end
 
 -- *** Event Handlers ***
-local function OnBagUpdate(event, bag)
+-- local function OnBagUpdate(event, bag)
+local function OnBagUpdate(arg)
+	local bag = arg
+	
 	FCSP_timer_table_OnBagUpdate[bag] = nil -- manual reset (safety redundancy)
 	
 	-- if bag < 0 then
@@ -428,7 +431,8 @@ local function FCSP_OnBagUpdate(event, bag)
 	end
 	
 	if FCSP_timer_table_OnBagUpdate[bag] then return end
-	FCSP_timer_table_OnBagUpdate[bag] = addon:ScheduleTimer(OnBagUpdate, 1, event, bag)
+	-- FCSP_timer_table_OnBagUpdate[bag] = addon:ScheduleTimer(OnBagUpdate, 1, event, bag)
+	FCSP_timer_table_OnBagUpdate[bag] = addon:ScheduleTimer(OnBagUpdate, 1, bag)
 
 end
 
